@@ -1,0 +1,1 @@
+- **2026-10-17:** All 11 clinical modules built (L&D, NICU, PICU, Codes, Stroke, Trauma, Anticoagulation, ID, Adult Critical Care, IV Room, Med Safety and Florida Law). Drug hub: 10 monographs, Antimicrobial Guide, IV Compatibility. 5 journal club trials. Simulator: 38 cases. Joint Commission National Performance Goals replaced the NPSGs on January 1, 2026. See [[log]].

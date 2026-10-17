@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verification Simulator</title>
+<style>
+:root{--bg:#eef1f5;--panel:#fff;--ink:#1d2733;--muted:#5d6b7a;--line:#cfd6df;--bar:#1f3b5a;--bar2:#2d5279;--accent:#2f6fb0;--ok:#1e7a46;--bad:#b3261e;--warn:#a15c00;--chip:#e3e9f1}
+@media (prefers-color-scheme:dark){:root{--bg:#12161c;--panel:#1b222b;--ink:#e6ebf1;--muted:#9aa7b5;--line:#2c3642;--bar:#0f2238;--bar2:#18324f;--accent:#6aa5e0;--ok:#4cc184;--bad:#ff7b72;--warn:#e3a54a;--chip:#26303b}}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--bar);color:#fff;padding:8px 14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+header b{font-size:15px}header .sp{flex:1}header .score{background:var(--bar2);padding:4px 10px;border-radius:4px}
+.wrap{display:grid;grid-template-columns:260px 1fr;gap:10px;padding:10px;max-width:1300px;margin:0 auto}
+@media(max-width:820px){.wrap{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.queue h3,.panel h3{margin:0;padding:8px 10px;font-size:13px;background:var(--chip);border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.qi{padding:8px 10px;border-bottom:1px solid var(--line);cursor:pointer}.qi:hover{background:var(--chip)}.qi.sel{border-left:4px solid var(--accent);background:var(--chip)}
+.qi small{color:var(--muted);display:block}.tag{font-size:11px;padding:1px 6px;border-radius:3px;background:var(--chip);margin-left:4px}.tag.stat{background:var(--bad);color:#fff}
+.done-ok{color:var(--ok)}.done-bad{color:var(--bad)}
+.banner{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:4px 14px;padding:10px;border-bottom:3px solid var(--accent);background:var(--panel)}
+.banner div span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase}
+.allergy{color:var(--bad);font-weight:600}
+.tabs{display:flex;border-bottom:1px solid var(--line);flex-wrap:wrap}.tabs button{border:0;background:none;padding:8px 12px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;font:inherit}.tabs button.on{color:var(--ink);border-color:var(--accent);font-weight:600}
+.tabc{padding:12px;min-height:150px}
+table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted)}
+.flag{color:var(--bad);font-weight:600}
+.order{border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--chip)}
+.order .rx{font-size:16px;font-weight:600}
+.label{font-family:ui-monospace,Menlo,monospace;border:2px dashed var(--muted);padding:10px;border-radius:6px;white-space:pre-wrap;background:var(--panel)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;padding:10px;border-top:1px solid var(--line)}
+.actions button{padding:9px 14px;border-radius:5px;border:1px solid var(--line);cursor:pointer;font:inherit;font-weight:600;background:var(--panel);color:var(--ink)}
+.b-ok{border-color:var(--ok)!important;color:var(--ok)!important}.b-mod{border-color:var(--warn)!important;color:var(--warn)!important}.b-rej{border-color:var(--bad)!important;color:var(--bad)!important}
+textarea{width:100%;min-height:60px;padding:8px;border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--ink);font:inherit}
+.fb{margin:10px;padding:12px;border-radius:6px;border:1px solid var(--line)}.fb.right{border-color:var(--ok)}.fb.wrong{border-color:var(--bad)}
+.fb h4{margin:0 0 6px}.ref{font-size:12px;color:var(--muted)}.ref a{color:var(--accent)}
+.hint{font-size:12px;color:var(--muted);padding:0 10px 10px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header><b>Pharmacy Verification Simulator</b><span>Practice queue · invented patients · not a real EHR</span><span class="sp"></span><span class="score" id="score">Score 0 / 0</span><a href="/" style="color:#fff">Residency home</a></header>
+<div class="wrap">
+ <div class="panel queue"><h3>Pending verification</h3><div id="queue"></div>
+  <p class="hint">Work each order the way you would on shift: check the banner, labs and active meds, then decide. Write your reason before you submit.</p></div>
+ <div class="panel" id="main"></div>
+</div>
+<script>
+// ponytail: cases are inline data; move to a JSON file when the bank passes ~40 cases.
+const CASES=[
+{id:1,type:"Order",stat:false,title:"Heparin infusion (VTE)",pt:{name:"TEST, ALPHA",mrn:"SIM0001",age:"58 y",sex:"M",wt:"90 kg",ht:"180 cm",allergy:"NKDA",loc:"4 West 412",dx:"Acute PE"},
+ labs:[["aPTT (baseline)","31 s",""],["Platelets","232 K",""],["Hgb","13.8",""],["SCr","1.0",""]],
+ meds:["Pantoprazole 40 mg PO daily","Acetaminophen 650 mg PO q6h PRN"],
+ notes:"New PE on CT. No enoxaparin given. No bleeding history.",
+ order:"Heparin 7,200 units IV bolus once, then 1,620 units/h continuous infusion. aPTT 6 h after bolus. Per VTE nomogram.",
+ answer:"verify",why:"Weight based VTE dosing is 80 units/kg bolus and 18 units/kg/h (Raschke 1993). At 90 kg: 7,200 units and 1,620 units/h. Labs drawn, no recent enoxaparin, platelets normal. Correct order; verify.",ref:["Heparin","/drug-hub/monographs/heparin"]},
+{id:2,type:"Order",stat:false,title:"Enoxaparin treatment dose",pt:{name:"TEST, BRAVO",mrn:"SIM0002",age:"71 y",sex:"F",wt:"64 kg",ht:"160 cm",allergy:"Sulfa (rash)",loc:"5 East 520",dx:"Left leg DVT"},
+ labs:[["SCr","2.1","H"],["CrCl (Cockcroft Gault)","24 mL/min","L"],["Platelets","198 K",""]],
+ meds:["Amlodipine 5 mg daily","Metoprolol tartrate 25 mg BID"],
+ notes:"CKD stage 4. Not on dialysis.",
+ order:"Enoxaparin 65 mg SC every 12 hours.",
+ answer:"modify",why:"CrCl is below 30 mL/min. The label adjusts DVT treatment to 1 mg/kg SC once daily: 65 mg SC every 24 hours. Recommend that change and an anti Xa level after the 3rd dose.",ref:["Enoxaparin","/drug-hub/monographs/enoxaparin"]},
+{id:3,type:"Order",stat:true,title:"Enoxaparin in STEMI, age 80",pt:{name:"TEST, CHARLIE",mrn:"SIM0003",age:"80 y",sex:"M",wt:"82 kg",ht:"175 cm",allergy:"NKDA",loc:"ED Bay 6",dx:"STEMI, fibrinolysis planned"},
+ labs:[["SCr","1.1",""],["CrCl","58 mL/min",""],["Platelets","245 K",""]],
+ meds:["Aspirin 325 mg chewed (given)"],
+ notes:"Transfer delay for PCI; tenecteplase planned.",
+ order:"Enoxaparin 30 mg IV bolus once, then 82 mg SC every 12 hours.",
+ answer:"modify",why:"For STEMI patients 75 years or older the label says no IV bolus and 0.75 mg/kg SC every 12 hours, max 75 mg for the first two doses. At 82 kg: 0.75 x 82 = 61.5 mg, so about 60 mg SC every 12 hours. Remove the bolus.",ref:["Enoxaparin","/drug-hub/monographs/enoxaparin"]},
+{id:4,type:"Order",stat:true,title:"Postpartum hemorrhage",pt:{name:"TEST, DELTA",mrn:"SIM0004",age:"29 y",sex:"F",wt:"78 kg",ht:"165 cm",allergy:"NKDA",loc:"L&D 3",dx:"PPH after vaginal delivery; preeclampsia this pregnancy"},
+ labs:[["BP","164/104","H"],["Hgb","9.1","L"]],
+ meds:["Oxytocin infusion running","Magnesium sulfate 2 g/h"],
+ notes:"Delivered 40 minutes ago. Uterine atony.",
+ order:"Methylergonovine 0.2 mg IM now.",
+ answer:"reject",why:"Methylergonovine is contraindicated with hypertension and preeclampsia. Recommend carboprost 250 mcg IM (no asthma history) or misoprostol, plus tranexamic acid 1 g IV over 10 minutes since she is within 3 hours of birth (WOMAN trial).",ref:["L&D module","/clinical/ld_obstetrics_core"]},
+{id:5,type:"Order",stat:false,title:"Neonatal antibiotic",pt:{name:"TEST, BABY ECHO",mrn:"SIM0005",age:"4 days",sex:"F",wt:"3.1 kg",ht:"50 cm",allergy:"NKDA",loc:"NICU 12",dx:"Suspected sepsis; jaundice"},
+ labs:[["Total bilirubin","15.8 mg/dL","H"],["Ionized Ca","0.95 mmol/L","L"]],
+ meds:["Calcium gluconate IV infusion"],
+ notes:"Term infant. Phototherapy started.",
+ order:"Ceftriaxone 155 mg IV every 24 hours.",
+ answer:"reject",why:"Two problems. Ceftriaxone displaces bilirubin and should be avoided in jaundiced neonates, and in neonates it must not be given with IV calcium (fatal precipitates; FDA). Recommend cefepime or ceftazidime with ampicillin per the neonatal sepsis protocol.",ref:["NICU module","/clinical/nicu_core"]},
+{id:6,type:"Order",stat:false,title:"Nimodipine, SAH",pt:{name:"TEST, FOXTROT",mrn:"SIM0006",age:"52 y",sex:"F",wt:"70 kg",ht:"168 cm",allergy:"NKDA",loc:"Neuro ICU 3",dx:"Aneurysmal SAH, coiled"},
+ labs:[["Na","138",""],["BP","138/82",""]],
+ meds:["Levetiracetam 500 mg BID"],
+ notes:"NG tube in place.",
+ order:"Nimodipine 60 mg IV every 4 hours x 21 days.",
+ answer:"modify",why:"Nimodipine is given by mouth or feeding tube only, never IV (FDA boxed warning; deaths have occurred when capsule contents were injected). Change to 60 mg via NG every 4 hours for 21 days (AHA/ASA 2023).",ref:["Stroke module","/clinical/stroke_core"]},
+{id:7,type:"Order",stat:true,title:"Stroke thrombolytic",pt:{name:"TEST, GOLF",mrn:"SIM0007",age:"66 y",sex:"M",wt:"78 kg",ht:"178 cm",allergy:"NKDA",loc:"ED CT 1",dx:"Acute ischemic stroke, LKW 2 h ago, NIHSS 9"},
+ labs:[["Glucose","142",""],["BP","176/98",""],["Platelets","210 K",""]],
+ meds:["No anticoagulants"],
+ notes:"Team chose tenecteplase.",
+ order:"Tenecteplase 40 mg IV bolus once.",
+ answer:"reject",why:"40 mg is in the cardiac (STEMI) weight band. The stroke dose is 0.25 mg/kg, max 25 mg: 0.25 x 78 = 19.5 mg as a single IV bolus. Call and correct before it is prepared.",ref:["Stroke module","/clinical/stroke_core"]},
+{id:8,type:"Order",stat:false,title:"Pediatric DKA insulin",pt:{name:"TEST, HOTEL",mrn:"SIM0008",age:"10 y",sex:"M",wt:"30 kg",ht:"138 cm",allergy:"NKDA",loc:"PICU 2",dx:"DKA"},
+ labs:[["Glucose","512","H"],["K","3.0","L"],["pH","7.12","L"]],
+ meds:["0.9% NaCl bolus 20 mL/kg (given)"],
+ notes:"New onset type 1 diabetes.",
+ order:"Insulin regular 3 units IV bolus, then 3 units/h infusion.",
+ answer:"modify",why:"No insulin bolus in children (ISPAD 2022, cerebral edema risk). With K 3.0, start potassium replacement first; many protocols hold insulin until K is at least 3.3 (check St. Mary's cutoff). Then 0.05 to 0.1 units/kg/h: 1.5 to 3 units/h.",ref:["PICU module","/clinical/picu_core"]},
+{id:9,type:"IV room",stat:false,title:"Product check: vancomycin bag",pt:{name:"TEST, INDIA",mrn:"SIM0009",age:"45 y",sex:"M",wt:"88 kg",ht:"183 cm",allergy:"NKDA",loc:"3 West 318",dx:"Cellulitis"},
+ labs:[["SCr","0.9",""]],meds:[],notes:"Order: vancomycin 1,250 mg IV every 12 hours in 250 mL NS.",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, INDIA   MRN SIM0009\nVANCOMYCIN 1,500 mg\nin 0.9% Sodium Chloride 250 mL\nInfuse over 90 minutes\nPrepared: 10/17 08:10   BUD: per USP 797 category\nCheck: tech __  RPh __",
+ answer:"reject",why:"The order is 1,250 mg; the bag is labeled 1,500 mg. A dose mismatch means the product does not leave the IV room. Remake it and check the vials used.",ref:["Drug hub","/drug-hub/drug_hub"]},
+{id:10,type:"IV room",stat:true,title:"Product check: 23.4% sodium chloride",pt:{name:"TEST, JULIET",mrn:"SIM0010",age:"39 y",sex:"F",wt:"65 kg",ht:"170 cm",allergy:"NKDA",loc:"Trauma ICU 7",dx:"TBI with rising ICP"},
+ labs:[["Na","141",""]],meds:["Peripheral IV x2 (no central line documented)"],notes:"",
+ order:"Sodium chloride 23.4% 30 mL IV push over 10 minutes via peripheral IV.",
+ label:"",
+ answer:"modify",why:"23.4% sodium chloride is central line only (ISMP high alert). There is no central line documented. Call: confirm central access is placed, or recommend 3% sodium chloride 250 mL or mannitol 0.25 to 1 g/kg peripherally per protocol.",ref:["Trauma module","/clinical/trauma_core"]},
+{id:11,type:"Order",stat:false,title:"Apixaban for AF, age 82",pt:{name:"TEST, KILO",mrn:"SIM0011",age:"82 y",sex:"F",wt:"58 kg",ht:"155 cm",allergy:"NKDA",loc:"5 West 503",dx:"Atrial fibrillation"},
+ labs:[["SCr","1.1",""],["Hgb","12.1",""],["Platelets","210 K",""]],meds:["Metoprolol succinate 50 mg daily"],notes:"New AF. No prior anticoagulation.",
+ order:"Apixaban 5 mg PO BID.",
+ answer:"modify",why:"She meets 2 of 3 dose reduction criteria (age 80 or older, weight 60 kg or less). AF dose should be apixaban 2.5 mg PO BID (Eliquis label).",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:12,type:"Order",stat:false,title:"Apixaban 2.5 mg for AF",pt:{name:"TEST, LIMA",mrn:"SIM0012",age:"81 y",sex:"M",wt:"78 kg",ht:"178 cm",allergy:"NKDA",loc:"4 East 418",dx:"Atrial fibrillation"},
+ labs:[["SCr","0.9",""]],meds:["Atorvastatin 40 mg daily"],notes:"Prescriber note: reduced dose because of age.",
+ order:"Apixaban 2.5 mg PO BID.",
+ answer:"modify",why:"Only 1 of 3 criteria (age). Weight is above 60 kg and SCr is below 1.5. Underdosing raises stroke risk. Recommend 5 mg PO BID.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:13,type:"Order",stat:false,title:"Rivaroxaban for AF, CrCl 42",pt:{name:"TEST, MIKE",mrn:"SIM0013",age:"76 y",sex:"M",wt:"70 kg",ht:"172 cm",allergy:"NKDA",loc:"3 East 305",dx:"Atrial fibrillation"},
+ labs:[["SCr","1.6","H"],["CrCl (Cockcroft Gault)","42 mL/min","L"]],meds:[],notes:"Eating normally.",
+ order:"Rivaroxaban 20 mg PO daily at 0800.",
+ answer:"modify",why:"CrCl 15 to 50: AF dose is 15 mg daily, and it must be taken with the evening meal. Recommend rivaroxaban 15 mg PO daily with supper.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:14,type:"Order",stat:false,title:"Rivaroxaban for new DVT",pt:{name:"TEST, NOVEMBER",mrn:"SIM0014",age:"49 y",sex:"F",wt:"80 kg",ht:"168 cm",allergy:"NKDA",loc:"ED Obs 2",dx:"Right leg DVT"},
+ labs:[["SCr","0.8",""],["CrCl (Cockcroft Gault)","110 mL/min",""],["Platelets","260 K",""]],meds:[],notes:"No heparin or enoxaparin given.",
+ order:"Rivaroxaban 15 mg PO BID with food x 21 days, then 20 mg PO daily with food.",
+ answer:"verify",why:"Correct VTE treatment regimen per label: 15 mg BID with food for 21 days, then 20 mg daily with food. Kidney function is fine. Verify.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:15,type:"Order",stat:false,title:"Dabigatran, CrCl 22",pt:{name:"TEST, OSCAR",mrn:"SIM0015",age:"79 y",sex:"M",wt:"68 kg",ht:"175 cm",allergy:"NKDA",loc:"5 East 511",dx:"Atrial fibrillation"},
+ labs:[["SCr","2.4","H"],["CrCl (Cockcroft Gault)","22 mL/min","L"]],meds:["Furosemide 40 mg daily"],notes:"Home med.",
+ order:"Dabigatran 150 mg PO BID.",
+ answer:"modify",why:"US label: 75 mg BID for CrCl 15 to 30 in AF. Recommend 75 mg BID, or a different anticoagulant per the team. Swallow capsules whole.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:16,type:"Order",stat:false,title:"Edoxaban, CrCl 110",pt:{name:"TEST, PAPA",mrn:"SIM0016",age:"54 y",sex:"M",wt:"92 kg",ht:"185 cm",allergy:"NKDA",loc:"4 West 409",dx:"Atrial fibrillation"},
+ labs:[["SCr","0.8",""],["CrCl (Cockcroft Gault)","110 mL/min",""]],meds:[],notes:"",
+ order:"Edoxaban 60 mg PO daily.",
+ answer:"modify",why:"Edoxaban is not for AF patients with CrCl above 95 (lower efficacy in that group). Call and recommend another anticoagulant (for example apixaban 5 mg BID).",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:17,type:"Order",stat:false,title:"Apixaban hold before surgery",pt:{name:"TEST, QUEBEC",mrn:"SIM0017",age:"68 y",sex:"F",wt:"75 kg",ht:"165 cm",allergy:"NKDA",loc:"Pre op clinic",dx:"Elective total hip replacement in 4 days"},
+ labs:[["CrCl (Cockcroft Gault)","72 mL/min",""]],meds:["Apixaban 5 mg BID (AF)"],notes:"Surgeon: high bleed risk procedure.",
+ order:"Continue apixaban through the evening before surgery. Enoxaparin 1 mg/kg SC q12h bridge starting 2 days before.",
+ answer:"modify",why:"PAUSE and CHEST 2022: for high bleed risk, skip apixaban 2 days before and the day of surgery (last dose 3 days before), and no bridging for a DOAC. Remove the enoxaparin bridge.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:18,type:"Order",stat:false,title:"Warfarin bridge for colonoscopy",pt:{name:"TEST, ROMEO",mrn:"SIM0018",age:"71 y",sex:"M",wt:"84 kg",ht:"178 cm",allergy:"NKDA",loc:"GI pre procedure",dx:"AF, no prior stroke, no mechanical valve"},
+ labs:[["INR","2.4",""],["CrCl","65 mL/min",""]],meds:["Warfarin 5 mg daily"],notes:"Colonoscopy with likely polypectomy.",
+ order:"Hold warfarin 5 days. Enoxaparin 1 mg/kg SC q12h bridge until the procedure.",
+ answer:"modify",why:"CHEST 2022 recommends against bridging in AF (strong). BRIDGE: no bridging was noninferior for clots with less major bleeding. Recommend holding warfarin 5 days without bridging.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:19,type:"Order",stat:false,title:"Epidural timing on enoxaparin",pt:{name:"TEST, SIERRA",mrn:"SIM0019",age:"31 y",sex:"F",wt:"77 kg",ht:"165 cm",allergy:"NKDA",loc:"L&D 6",dx:"Labor at 39 weeks"},
+ labs:[["Platelets","182 K",""]],meds:["Enoxaparin 40 mg SC daily (last dose 0600)"],notes:"It is 1400. Anesthesia plans the epidural now.",
+ order:"Epidural placement now.",
+ answer:"modify",why:"Prophylactic enoxaparin needs 12 hours before neuraxial placement (ASRA): not before 1800. Treatment doses need 24 hours. Call anesthesia and OB.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:20,type:"Order",stat:false,title:"INR 7.2, no bleeding",pt:{name:"TEST, TANGO",mrn:"SIM0020",age:"66 y",sex:"M",wt:"70 kg",ht:"175 cm",allergy:"NKDA",loc:"4 West 420",dx:"AF on warfarin"},
+ labs:[["INR","7.2","H"],["Hgb","13.5",""]],meds:["Warfarin 5 mg daily","Ciprofloxacin started 4 days ago"],notes:"No bleeding.",
+ order:"Vitamin K 10 mg IV once now.",
+ answer:"modify",why:"INR 4.5 to 10 without bleeding: hold warfarin; vitamin K isn't needed (Crowther 2009), and 10 mg IV risks warfarin resistance. Also flag the ciprofloxacin interaction.",ref:["Anticoagulation","/clinical/anticoagulation_core"]},
+{id:21,type:"Order",stat:true,title:"Warfarin GI bleed reversal",pt:{name:"TEST, UNIFORM",mrn:"SIM0021",age:"66 y",sex:"M",wt:"70 kg",ht:"175 cm",allergy:"NKDA",loc:"MICU 4",dx:"Major GI bleed on warfarin"},
+ labs:[["INR","5.1","H"],["Hgb","7.2","L"]],meds:["Warfarin (held)"],notes:"Hypotensive. Transfusion started.",
+ order:"Kcentra (4F-PCC) 2,450 units IV once. Vitamin K 10 mg IV slow infusion.",
+ answer:"verify",why:"INR 4 to 6: 35 units/kg = 2,450 units (max 3,500), plus vitamin K 10 mg IV. Correct per label; verify and get it out fast.",ref:["4F-PCC","/drug-hub/monographs/4f_pcc"]},
+{id:22,type:"Order",stat:false,title:"Heparin drip with enoxaparin active",pt:{name:"TEST, VICTOR",mrn:"SIM0022",age:"60 y",sex:"F",wt:"80 kg",ht:"165 cm",allergy:"NKDA",loc:"4 West 415",dx:"New PE"},
+ labs:[["aPTT","30 s",""],["Platelets","240 K",""]],meds:["Enoxaparin 40 mg SC daily (VTE prophylaxis, still active)"],notes:"",
+ order:"Heparin 6,400 units IV bolus, then 1,440 units/h per VTE nomogram.",
+ answer:"modify",why:"Heparin math is right (80 units/kg, 18 units/kg/h at 80 kg), but enoxaparin prophylaxis is still active. Discontinue enoxaparin to avoid duplicate anticoagulation; confirm when the last dose was given.",ref:["Heparin","/drug-hub/monographs/heparin"]},
+{id:23,type:"Order",stat:false,title:"Heparin flush, platelets falling",pt:{name:"TEST, WHISKEY",mrn:"SIM0023",age:"72 y",sex:"M",wt:"85 kg",ht:"180 cm",allergy:"NKDA",loc:"CVICU 9",dx:"Heparin day 7"},
+ labs:[["Platelets (day 0)","240 K",""],["Platelets (today)","95 K","L"],["CrCl","18 mL/min","L"]],meds:["Heparin infusion"],notes:"New swelling in the left arm.",
+ order:"Heparin 10 units/mL flush per line protocol.",
+ answer:"reject",why:"Suspected HIT: more than 50% drop at day 5 to 10 with new thrombosis. Stop all heparin including flushes, send PF4 antibodies, and recommend argatroban (liver cleared; fits CrCl 18). Add heparin allergy.",ref:["Heparin","/drug-hub/monographs/heparin"]},
+{id:24,type:"IV room",stat:false,title:"Product check: heparin drip rate",pt:{name:"TEST, XRAY",mrn:"SIM0024",age:"57 y",sex:"M",wt:"80 kg",ht:"178 cm",allergy:"NKDA",loc:"4 West 402",dx:"DVT"},
+ labs:[],meds:[],notes:"Order: heparin 18 units/kg/h, premix 25,000 units in 250 mL.",
+ order:"Verify the label below against the order.",
+ label:"PATIENT: TEST, XRAY   MRN SIM0024\nHEPARIN 25,000 units in 250 mL (100 units/mL)\nDose: 1,440 units/h\nRATE: 144 mL/h\nCheck: tech __  RPh __",
+ answer:"reject",why:"1,440 units/h divided by 100 units/mL is 14.4 mL/h, not 144. A 10 fold rate error. Correct the label before it leaves.",ref:["Heparin","/drug-hub/monographs/heparin"]},
+{id:25,type:"IV room",stat:true,title:"Product check: norepinephrine",pt:{name:"TEST, YANKEE",mrn:"SIM0025",age:"63 y",sex:"F",wt:"70 kg",ht:"163 cm",allergy:"NKDA",loc:"MICU 2",dx:"Septic shock"},
+ labs:[["MAP","58","L"]],meds:["Central line in place"],notes:"Order: norepinephrine 4 mg in D5W 250 mL, start 5 mcg/min, titrate to MAP 65.",
+ order:"Verify the label below against the order.",
+ label:"PATIENT: TEST, YANKEE   MRN SIM0025\nNOREPINEPHRINE 4 mg in 5% Dextrose 250 mL (16 mcg/mL)\nStart 5 mcg/min = 18.8 mL/h\nTitrate to MAP 65 or higher\nCheck: tech __  RPh __",
+ answer:"verify",why:"4 mg in 250 mL = 16 mcg/mL. 5 mcg/min x 60 = 300 mcg/h, divided by 16 = 18.75 mL/h. Diluent, dose and rate match. Verify.",ref:["Norepinephrine","/drug-hub/monographs/norepinephrine"]},
+{id:26,type:"IV room",stat:true,title:"Product check: phenytoin load",pt:{name:"TEST, ZULU",mrn:"SIM0026",age:"44 y",sex:"M",wt:"80 kg",ht:"180 cm",allergy:"NKDA",loc:"ED Bay 3",dx:"Seizure"},
+ labs:[],meds:[],notes:"Order: phenytoin 1,600 mg IV once (20 mg/kg).",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, ZULU   MRN SIM0026\nPHENYTOIN 1,600 mg\nin 5% Dextrose 100 mL\nInfuse over 30 minutes\nCheck: tech __  RPh __",
+ answer:"reject",why:"Two problems. Phenytoin precipitates in dextrose: remake in normal saline with a 0.22 to 0.5 micron in line filter and finish within 1 hour of mixing. And 1,600 mg over 30 min is 53 mg/min, above the 50 mg/min adult max: run it over at least 32 minutes with ECG and BP monitoring.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:27,type:"IV room",stat:false,title:"Product check: liposomal amphotericin",pt:{name:"TEST, AMBER",mrn:"SIM0027",age:"52 y",sex:"F",wt:"60 kg",ht:"163 cm",allergy:"NKDA",loc:"Oncology 6",dx:"Invasive fungal infection"},
+ labs:[],meds:[],notes:"Order: amphotericin B liposomal 300 mg IV daily.",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, AMBER   MRN SIM0027\nAMPHOTERICIN B LIPOSOMAL 300 mg\nin 0.9% Sodium Chloride 250 mL\nInfuse over 2 hours\nCheck: tech __  RPh __",
+ answer:"reject",why:"Liposomal amphotericin is incompatible with saline. Remake in D5W, flush the line with D5W before and after, and protect from light.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:28,type:"IV room",stat:false,title:"Product check: nitroglycerin drip",pt:{name:"TEST, BRAVA",mrn:"SIM0028",age:"67 y",sex:"M",wt:"88 kg",ht:"178 cm",allergy:"NKDA",loc:"CVICU 3",dx:"Acute heart failure"},
+ labs:[],meds:[],notes:"Order: nitroglycerin 50 mg in 250 mL D5W, start 5 mcg/min.",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, BRAVA   MRN SIM0028\nNITROGLYCERIN 50 mg in 5% Dextrose 250 mL (200 mcg/mL)\nContainer: PVC bag\nStart 5 mcg/min = 1.5 mL/h\nCheck: tech __  RPh __",
+ answer:"reject",why:"Math is right (200 mcg/mL; 5 mcg/min = 300 mcg/h = 1.5 mL/h), but PVC absorbs nitroglycerin. It goes in a glass bottle with non PVC tubing.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:29,type:"Order",stat:false,title:"Amiodarone drip, peripheral line",pt:{name:"TEST, CORAL",mrn:"SIM0029",age:"71 y",sex:"F",wt:"70 kg",ht:"160 cm",allergy:"NKDA",loc:"Step down 8",dx:"AF with RVR"},
+ labs:[],meds:["Peripheral IV only"],notes:"",
+ order:"Amiodarone 900 mg in 250 mL D5W (3.6 mg/mL), 1 mg/min x 6 h then 0.5 mg/min, via peripheral IV.",
+ answer:"modify",why:"Above 2 mg/mL needs a central line (label). Recommend a peripheral concentration of 2 mg/mL or less (for example 450 mg in 250 mL = 1.8 mg/mL), or central access. Use an in line filter and a non PVC container for infusions over 2 h.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:30,type:"Order",stat:false,title:"Parenteral nutrition, peripheral line",pt:{name:"TEST, DELTA",mrn:"SIM0030",age:"58 y",sex:"M",wt:"72 kg",ht:"175 cm",allergy:"NKDA",loc:"4 East 404",dx:"Postoperative ileus"},
+ labs:[["Calculated osmolarity","1,450 mOsm/L","H"]],meds:["Peripheral IV only"],notes:"",
+ order:"Parenteral nutrition (dextrose 20%, amino acids 5%) via peripheral IV at 80 mL/h.",
+ answer:"modify",why:"Peripheral PN must be 900 mOsm/L or less. At 1,450 it needs a central line, or a reformulated peripheral PN.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:31,type:"IV room",stat:false,title:"Product check: lipid PN filter",pt:{name:"TEST, ECHO",mrn:"SIM0031",age:"40 y",sex:"F",wt:"55 kg",ht:"165 cm",allergy:"NKDA",loc:"SICU 5",dx:"Short bowel"},
+ labs:[],meds:["Central line in place"],notes:"Order: 3 in 1 PN (with lipids) via central line.",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, ECHO   MRN SIM0031\n3 IN 1 PARENTERAL NUTRITION (contains lipid emulsion)\nFilter: 0.22 micron in line\nInfuse over 24 h, central line\nCheck: tech __  RPh __",
+ answer:"modify",why:"Lipid containing PN needs a 1.2 micron filter; a 0.22 micron filter can't pass lipids. Correct the filter on the label.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:32,type:"IV room",stat:false,title:"Product check: BUD on a Category 1 bag",pt:{name:"TEST, FOXTROT",mrn:"SIM0032",age:"35 y",sex:"M",wt:"82 kg",ht:"183 cm",allergy:"NKDA",loc:"3 West 312",dx:"Cellulitis"},
+ labs:[],meds:[],notes:"Order: cefazolin 2 g IV q8h. Made in the segregated compounding area (Category 1).",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, FOXTROT   MRN SIM0032\nCEFAZOLIN 2 g in 0.9% Sodium Chloride 100 mL\nCategory 1   BUD: 48 h refrigerated\nCheck: tech __  RPh __",
+ answer:"reject",why:"Category 1 BUD is 12 h at room temperature or 24 h refrigerated (USP 797, 2023). Relabel with the correct BUD.",ref:["IV Room","/clinical/iv_room_core"]},
+{id:33,type:"IV room",stat:false,title:"Product check: cefazolin Category 2",pt:{name:"TEST, GOLF",mrn:"SIM0033",age:"62 y",sex:"F",wt:"75 kg",ht:"165 cm",allergy:"Penicillin (childhood rash)",loc:"Pre op",dx:"Hip replacement prophylaxis"},
+ labs:[],meds:[],notes:"Order: cefazolin 2 g IV once within 60 min before incision. Made in the cleanroom (Category 2, aseptic from sterile ingredients).",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, GOLF   MRN SIM0033\nCEFAZOLIN 2 g in 0.9% Sodium Chloride 100 mL\nCategory 2   BUD: 4 days room temperature\nCheck: tech __  RPh __",
+ answer:"verify",why:"Dose, diluent and patient match. Category 2 aseptic from sterile ingredients: 4 days room temperature is within USP 797 (drug stability permitting). A childhood rash is not a reason to avoid cefazolin. Verify.",ref:["IV Room","/clinical/iv_room_core"]},
+{id:34,type:"IV room",stat:true,title:"Product check: vincristine",pt:{name:"TEST, HOTEL",mrn:"SIM0034",age:"8 y",sex:"M",wt:"26 kg",ht:"128 cm",allergy:"NKDA",loc:"Peds Onc 2",dx:"ALL"},
+ labs:[],meds:["Methotrexate intrathecal also due today"],notes:"Order: vincristine 1.5 mg/m2 IV.",
+ order:"Verify the compounded product below against the order.",
+ label:"PATIENT: TEST, HOTEL   MRN SIM0034\nVINCRISTINE 1.4 mg in 10 mL syringe\nCheck: tech __  RPh __",
+ answer:"reject",why:"Vincristine must never go in a syringe: minibag only, labeled 'For intravenous use only. Fatal if given by other routes,' kept apart from intrathecal doses (ISMP). Remake as a minibag.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:35,type:"Order",stat:false,title:"Propofol day 4, triglycerides high",pt:{name:"TEST, INDIGO",mrn:"SIM0035",age:"46 y",sex:"M",wt:"90 kg",ht:"183 cm",allergy:"NKDA",loc:"MICU 6",dx:"ARDS, ventilated"},
+ labs:[["Triglycerides","620 mg/dL","H"],["CK","2,400","H"],["Lactate","3.8","H"]],meds:["Propofol 75 mcg/kg/min (day 4)","Norepinephrine 0.1 mcg/kg/min"],notes:"RASS goal 0 to -1. Current RASS -4.",
+ order:"Continue propofol 75 mcg/kg/min.",
+ answer:"modify",why:"Above 4 mg/kg/h (about 67 mcg/kg/min) for more than 48 h with a pressor, plus high triglycerides, CK and lactate: watch for propofol infusion syndrome. Over sedated for a light target. Recommend reducing or stopping propofol, analgesia first, and dexmedetomidine or another agent per PADIS.",ref:["Adult Critical Care","/clinical/adult_critical_care"]},
+{id:36,type:"Order",stat:true,title:"Hyperkalemia in kidney failure",pt:{name:"TEST, JADE",mrn:"SIM0036",age:"74 y",sex:"F",wt:"52 kg",ht:"155 cm",allergy:"NKDA",loc:"ED Bay 9",dx:"Missed dialysis"},
+ labs:[["K","7.1","H"],["Glucose","96",""],["ECG","Peaked T waves","H"]],meds:[],notes:"",
+ order:"Insulin regular 10 units IV once. Sodium zirconium cyclosilicate 10 g PO.",
+ answer:"modify",why:"Missing calcium gluconate 1 g IV first for ECG changes, and missing dextrose 25 g with the insulin. With kidney failure, 52 kg and glucose 96, consider 5 units of insulin and check glucose hourly for 4 to 6 h. Arrange dialysis.",ref:["Adult Critical Care","/clinical/adult_critical_care"]},
+{id:37,type:"Order",stat:false,title:"3% saline drip for chronic hyponatremia",pt:{name:"TEST, KIWI",mrn:"SIM0037",age:"59 y",sex:"M",wt:"62 kg",ht:"175 cm",allergy:"NKDA",loc:"MICU 3",dx:"Na 112, alcohol use disorder, confused but no seizures"},
+ labs:[["Na","112","L"],["K","2.9","L"]],meds:[],notes:"Team goal: Na 130 by tomorrow.",
+ order:"Sodium chloride 3% at 100 mL/h continuous. Goal Na 130 in 24 h.",
+ answer:"modify",why:"An 18 mmol/L rise in 24 h is far above safe limits. He is high risk (alcohol, low K): max 8 mmol/L per 24 h. Use 3% boluses only for severe symptoms, check Na often, replace K, and have a plan for overcorrection (hypotonic fluid, desmopressin).",ref:["Adult Critical Care","/clinical/adult_critical_care"]},
+{id:38,type:"Order",stat:false,title:"ICU insulin infusion target",pt:{name:"TEST, LEMON",mrn:"SIM0038",age:"66 y",sex:"F",wt:"80 kg",ht:"165 cm",allergy:"NKDA",loc:"SICU 2",dx:"Postoperative sepsis"},
+ labs:[["Glucose","242","H"]],meds:[],notes:"",
+ order:"Insulin infusion, titrate to glucose 80 to 110 mg/dL.",
+ answer:"modify",why:"NICE-SUGAR: tight control (81 to 108) increased 90 day deaths and severe hypoglycemia. Recommend a target of 140 to 180 mg/dL per ADA and AACE, using the ICU insulin protocol.",ref:["Adult Critical Care","/clinical/adult_critical_care"]}
+];
+let st={sel:0,res:{}},tab="order";
+const q=document.getElementById('queue'),m=document.getElementById('main');
+function drawQ(){q.innerHTML=CASES.map((c,i)=>{const r=st.res[c.id];const mark=r?(r.right?'<span class="done-ok">✔</span> ':'<span class="done-bad">✘</span> '):'';return `<div class="qi ${i===st.sel?'sel':''}" onclick="pick(${i})">${mark}${c.title}${c.stat?'<span class="tag stat">STAT</span>':''}<span class="tag">${c.type}</span><small>${c.pt.name} · ${c.pt.loc}</small></div>`}).join('');
+ const done=Object.values(st.res);document.getElementById('score').textContent=`Score ${done.filter(x=>x.right).length} / ${done.length} (of ${CASES.length})`}
+function pick(i){st.sel=i;tab="order";draw()}
+function setTab(t){tab=t;draw()}
+function draw(){drawQ();const c=CASES[st.sel],p=c.pt,r=st.res[c.id];
+ const tabs=[["order",c.type==="IV room"?"Product":"Order"],["labs","Labs"],["meds","Active meds"],["notes","Notes"]];
+ let body="";
+ if(tab==="order")body=`<div class="order"><div class="ref">${c.type} · ${c.stat?'STAT':'Routine'}</div><div class="rx">${c.order}</div></div>${c.label?`<p><b>Product label</b></p><div class="label">${c.label}</div>`:''}`;
+ if(tab==="labs")body=`<table><tr><th>Result</th><th>Value</th><th></th></tr>${c.labs.map(l=>`<tr><td>${l[0]}</td><td class="${l[2]?'flag':''}">${l[1]}</td><td class="flag">${l[2]}</td></tr>`).join('')}</table>`;
+ if(tab==="meds")body=c.meds.length?`<ul>${c.meds.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<p class="ref">No active medications listed.</p>';
+ if(tab==="notes")body=`<p>${c.notes||'No notes.'}</p>`;
+ m.innerHTML=`<div class="banner"><div><span>Patient</span><b>${p.name}</b></div><div><span>MRN</span>${p.mrn}</div><div><span>Age / Sex</span>${p.age} / ${p.sex}</div><div><span>Weight / Height</span>${p.wt} / ${p.ht}</div><div><span>Allergies</span><span class="allergy">${p.allergy}</span></div><div><span>Location</span>${p.loc}</div><div><span>Diagnosis</span>${p.dx}</div></div>
+ <div class="tabs">${tabs.map(t=>`<button class="${tab===t[0]?'on':''}" onclick="setTab('${t[0]}')">${t[1]}</button>`).join('')}</div><div class="tabc">${body}</div>
+ ${r?fb(c,r):`<div style="padding:0 10px"><textarea id="why" placeholder="Your reasoning and what you would say to the prescriber (required)"></textarea></div>
+ <div class="actions"><button class="b-ok" onclick="act('verify')">Verify</button><button class="b-mod" onclick="act('modify')">Modify / contact prescriber</button><button class="b-rej" onclick="act('reject')">Reject / do not dispense</button></div>`}`}
+function act(a){const t=document.getElementById('why').value.trim();if(!t){alert('Write your reasoning first.');return}const c=CASES[st.sel];st.res[c.id]={a,right:a===c.answer,t};draw()}
+function fb(c,r){const name={verify:"Verify",modify:"Modify / contact prescriber",reject:"Reject / do not dispense"};
+ return `<div class="fb ${r.right?'right':'wrong'}"><h4>${r.right?'Correct':'Not quite'}: you chose ${name[r.a]}; best action is ${name[c.answer]}.</h4><p>${c.why}</p><p class="ref">Your reasoning: ${r.t.replace(/</g,'&lt;')}</p><p class="ref">Study page: <a href="${c.ref[1]}" target="_top">${c.ref[0]}</a></p><button onclick="delete st.res[${c.id}];draw()">Try again</button> <button onclick="next()">Next order</button></div>`}
+function next(){st.sel=(st.sel+1)%CASES.length;tab="order";draw()}
+draw();
+</script>
+</body>
+</html>
