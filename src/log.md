@@ -83,3 +83,9 @@
 - Built Module 11 Med_Safety_and_Florida_Law: ISMP 2024 high alert list (TXA added), Joint Commission National Performance Goals (replaced NPSGs January 1, 2026), Do Not Use abbreviations, just culture, Florida CE (30 h, 2 h med errors, 2 h controlled substances, HIV once) and E-FORCSE reporting.
 - Open [VERIFY]: full ISMP list against the PDF, current Do Not Use list, live CE hours conflict, her first renewal rules in CE Broker, PDMP rules for discharge prescriptions, just culture source.
 - Next: Batch 8 (monthly What's New scheduled task).
+
+## 2026-10-17 (Batch 8)
+- Repo now holds the source in src/ (wiki, index, log, whats_new.md, CLAUDE.md, tool pages; raw/ is never copied) plus build.sh, which builds the site from a fresh clone (Quartz pinned to 97a2d05).
+- What's New now comes from src/whats_new.md.
+- Scheduled task "Residency monthly update" runs on the 1st of each month at 8:52 AM Eastern: checks FDA, ISMP, guideline bodies, Florida Board and shortages; edits src/; opens a pull request. She merges to publish.
+- All planned batches done. Module 12 (practice project) is chosen on the job.
