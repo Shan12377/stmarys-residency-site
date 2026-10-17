@@ -17,7 +17,7 @@ Order is set by risk at St. Mary's: the specialty areas (NICU, PICU, L&D) and th
 | 9 | Adult Critical Care: vasopressors, sedation (PADIS), DKA, electrolytes | Overnight ICU calls | Built |
 | 10 | IV Room and Sterile Compounding (USP 797, 800), pediatric and neonatal TPN | Big at St. Mary's | Built |
 | 11 | Medication Safety and Regulatory: ISMP high alert list, Joint Commission NPSGs, Florida law | What leadership is judged on | Built |
-| 12 | Practice Advancement: pick and start one project (see below) | What makes you look like a resident | |
+| 12 | [[Practice_Advancement]]: pick and start one project | What makes you look like a resident | Built |
 
 ## Residency style deliverables (do these and leadership notices)
 - **One medication use evaluation (MUE) or quality project in your first 6 months.** Examples: time to TXA in trauma activations, magnesium monitoring compliance on L&D, IV to PO opportunities, vancomycin AUC target attainment. Ask your manager which one helps the department.

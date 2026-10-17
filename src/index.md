@@ -7,6 +7,7 @@
 
 ## Curriculum
 - [[12_Week_Plan]]: week by week modules, deliverables, CE priorities.
+- [[Practice_Advancement]]: Module 12. Recommended project (magnesium safety MUE on L&D), backups, criteria, ASHP MUE method, QI vs research, 6 month timeline, inservice outline.
 - [[Daily_Routine]]: pharmacist workup, SBAR calls, daily and weekly habits.
 
 ## St. Mary's

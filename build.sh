@@ -22,6 +22,7 @@ title: St. Mary's Virtual Residency
 
 ## My Tools
 - <a href="/tools/verify_sim" target="_blank">Verification Simulator (orders and IV room)</a>
+- <a href="/tools/intervention_log" target="_blank">Intervention Log</a>
 - <a href="/tools/mtm_clinical_workbench" target="_blank">MTM Clinical Workbench</a>
 - <a href="/tools/cmr_command_center" target="_blank">CMR Command Center</a>
 - <a href="https://app.pyrls.com/home" target="_blank">Pyrls</a>
@@ -34,5 +35,6 @@ rm -f public/CNAME; mkdir -p public/tools
 sed 's/MTM_Clinical_Workbench\.html/mtm_clinical_workbench.html/g' "$G/src/tools/CMR_Command_Center.html" > public/tools/cmr_command_center.html
 sed 's/CMR_Command_Center\.html/cmr_command_center.html/g' "$G/src/tools/MTM_Clinical_Workbench.html" > public/tools/mtm_clinical_workbench.html
 cp "$G/src/tools/verify_sim.html" public/tools/verify_sim.html
+cp "$G/src/tools/intervention_log.html" public/tools/intervention_log.html
 rm -rf "$G/public" && cp -r public "$G/public"
 echo "built $(find "$G/public" -name '*.html' | wc -l) pages"

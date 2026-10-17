@@ -89,3 +89,8 @@
 - What's New now comes from src/whats_new.md.
 - Scheduled task "Residency monthly update" runs on the 1st of each month at 8:52 AM Eastern: checks FDA, ISMP, guideline bodies, Florida Board and shortages; edits src/; opens a pull request. She merges to publish.
 - All planned batches done. Module 12 (practice project) is chosen on the job.
+
+## 2026-10-17 (Module 12)
+- Built Practice_Advancement: recommended project magnesium sulfate infusion safety MUE on L&D (backups: TXA timing, thrombolytic dose accuracy, DOAC admission dosing, vancomycin 48 h stop), draft criteria, ASHP MUE guideline 2021 steps, IHI model, QI vs research, 6 month timeline, inservice outline.
+- Added tools/intervention_log.html (browser storage, CSV export, blocks MRN and DOB patterns). Linked in My Tools.
+- Open [VERIFY]: St. Mary's magnesium order set, Tenet IRB process, FSHP and ASHP abstract dates, typical MUE sample size.
