@@ -6,7 +6,7 @@
 > "WOMAN (Lancet 2017) randomized about 20,000 women with postpartum hemorrhage to tranexamic acid 1 g IV (second 1 g if bleeding continued after 30 minutes) or placebo. The primary outcome, death or hysterectomy, did not differ (5.3% vs 5.5%). Death due to bleeding was lower, 1.5% vs 1.9% (RR 0.81, 95% CI 0.65 to 1.00; NNT about 250), and the benefit was concentrated in women treated within 3 hours. The main limitation is a negative primary outcome and a fragile secondary result. For our L&D patients, TXA is an add on to uterotonics, given early." ✅✅ [1][2]
 
 ## 1. Citation and context
-WOMAN Trial Collaborators. Lancet 2017. ✅✅ [1][2] Volume and pages ⚠️ [VERIFY]. Partly funded by Pfizer, which makes TXA ✅ [1].
+WOMAN Trial Collaborators. Lancet 2017;389(10084):2105-2116 ✅ [Fiocruz portal: WOMAN citation](https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/effect-of-early-tranexamic-acid-administration-on-mortality-hysterectomy/). Partly funded by Pfizer, which makes TXA ✅ [1].
 
 ## 2. PICO
 | | |
@@ -15,7 +15,7 @@ WOMAN Trial Collaborators. Lancet 2017. ✅✅ [1][2] Volume and pages ⚠️ [V
 | Intervention | TXA 1 g IV slowly (about 1 mL/min of 100 mg/mL); second 1 g if bleeding continued after 30 min or restarted within 24 h ✅✅ [1][2] |
 | Comparator | Placebo |
 | Outcomes | Primary: death from any cause or hysterectomy within 42 days. Secondary: death due to bleeding |
-| Design | Double blind, placebo controlled, 21 countries ⚠️ [VERIFY count] |
+| Design | Double blind, placebo controlled, 21 countries, 193 hospitals ✅ [Fiocruz portal: WOMAN citation](https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/effect-of-early-tranexamic-acid-administration-on-mortality-hysterectomy/) |
 
 ## 3. Validity
 - Strengths: large, blinded, placebo controlled.

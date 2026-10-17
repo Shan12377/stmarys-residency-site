@@ -13,12 +13,12 @@
 | Pediatrics 3 months to 12 years | 60 to 80 mg/kg/day divided every 6 h; same AUC target | ✅ | [1] |
 | Pediatrics 12 years and older | 60 to 70 mg/kg/day divided every 6 to 8 h | ✅ | [1] |
 | Pediatric empiric max | 3,600 mg/day (normal kidneys) | ✅ | [1] |
-| Maintenance (adults) | Usually 15 to 20 mg/kg every 8 to 12 h, then adjust to AUC | ⚠️ | [VERIFY full guideline] |
+| Maintenance (adults) | 15 to 20 mg/kg actual body weight every 8 to 12 h, then adjust to AUC; children 3 months and older 60 to 80 mg/kg/day divided q6 to 8h | ✅✅ | [Consultant360: 2020 vancomycin guideline](https://consultant360.com/infectious-diseases/bacterial-infections/updated-consensus-guidelines-vancomycin-monitoring); [US Pharmacist: optimizing vancomycin (2023)](https://uspharmacist.com/article/optimizing-vancomycin-efficacy-and-reducing-nephrotoxicity-1) |
 | Neonates | AUC guided where possible; use the neonatal dosing reference | ⚠️ | see [[NICU_Core]] |
 
 ## Safety
 - Higher AUC (above 600) and troughs above 15 to 20 raise acute kidney injury risk; watch with piperacillin tazobactam, contrast, loop diuretics ⚠️ [VERIFY second source].
-- **Vancomycin infusion reaction** (formerly "red man syndrome"): slow the infusion (commonly at least 60 minutes per 1 g); antihistamine. It's not a true allergy ⚠️ [VERIFY label rate].
+- **Vancomycin infusion reaction** (formerly "red man syndrome"): slow the infusion (at least 60 minutes, max 10 mg/min for doses over 500 mg; 90 to 120 min after a prior reaction); antihistamine. It's not a true allergy ✅ [RCH Melbourne: vancomycin IV guideline](https://pig.rch.org.au/pages/vancomycin).
 
 ## Pharmacist checklist
 1. Indication and whether a loading dose is needed.

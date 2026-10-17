@@ -61,7 +61,7 @@ Adequate prophylaxis = a beta lactam (penicillin, ampicillin or cefazolin) start
 Many "penicillin allergies" are low risk; allergy clarification is a high value pharmacist intervention here.
 
 ## 6. Other L&D drugs to know
-- **Antenatal corticosteroids:** betamethasone 12 mg IM every 24 hours for 2 doses (24 0/7 to 33 6/7 weeks; late preterm use has specific criteria) (ACOG CO 713, 2017; updated guidance [VERIFY]).
+- **Antenatal corticosteroids:** betamethasone 12 mg IM every 24 hours for 2 doses (24 0/7 to 33 6/7 weeks; late preterm use has specific criteria) (ACOG CO 713, 2017). **Late preterm (34 0/7 to 36 6/7 weeks):** one course of betamethasone if at risk of delivery within 7 days and no prior course; not studied in multiples or pregestational diabetes; not with chorioamnionitis; watch the newborn for hypoglycemia (ALPS trial) ✅ [MDedge: late preterm antenatal steroids (ALPS, ACOG)](https://mdedge.com/content/start-offering-antenatal-corticosteroids-women-delivering-between-34-0/7-and-36-6/7-weeks).
 - **Tocolytics:** nifedipine; indomethacin only before 32 weeks and for no more than 48 hours (ductus arteriosus constriction, oligohydramnios). Terbutaline: FDA boxed warning against prolonged use (beyond 48 to 72 hours) for preterm labor.
 - **Rh(D) immune globulin:** 300 mcg IM at about 28 weeks and within 72 hours after delivery when an Rh negative mother has an Rh positive infant.
 - **Epidural and neuraxial:** know your anticoagulation timing rules before neuraxial procedures (ASRA guidelines) [module 7].

@@ -27,5 +27,5 @@ Order is set by risk at St. Mary's: the specialty areas (NICU, PICU, L&D) and th
 
 ## Continuing education priorities
 - ASHP Midyear (December) and ASHP Summer Meetings; FSHP (Florida Society of Health System Pharmacists) annual meeting.
-- Florida license renewal CE, including the required medication error and controlled substance hours [VERIFY current Florida Board of Pharmacy rule].
+- Florida license renewal CE, including the required medication error and controlled substance hours (her first renewal by September 30, 2027: 15 hours, see [[Med_Safety_and_Florida_Law]]) ✅ [Florida Board of Pharmacy: renewal](https://floridaspharmacy.gov/pharmacist-renewal/).
 - PALS and ACLS provider courses are worth taking even if not required for your role. They give you the code language the teams use.

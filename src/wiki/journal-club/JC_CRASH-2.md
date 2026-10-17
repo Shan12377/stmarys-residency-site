@@ -39,8 +39,8 @@ Level I trauma center: TXA belongs in the trauma bay and massive transfusion wor
 ## 7. Pharmacist's angle
 - Check the time of injury before verifying.
 - Second gram runs over 8 hours: make sure the infusion is actually ordered.
-- Renal adjustment applies to repeated dosing, not the trauma load ⚠️ [VERIFY label].
-- Seizure risk rises with high doses ⚠️ [VERIFY].
+- Label renal adjustment (SCr 1.36 to 2.83: 10 mg/kg BID; 2.83 to 5.66: daily; above 5.66: q48h) is for repeated dosing; trauma practice gives the standard load ✅✅ [Cyklokapron US label (Drugs.com)](https://www.drugs.com/pro/cyklokapron.html); [Cyklokapron SmPC (UK)](https://www.medicines.org.uk/emc/product/1077/smpc/print) (trauma load ⚠️ protocol).
+- Seizures are linked to high doses (cardiac surgery) and wrong route; IV only, never neuraxial (fatal); label TXA syringes clearly ✅✅ [Cyklokapron US label (Drugs.com)](https://www.drugs.com/pro/cyklokapron.html); [Cyklokapron SmPC (UK)](https://www.medicines.org.uk/emc/product/1077/smpc/print).
 
 ## Sources
 1. [Critical Care Reviews: CRASH-2](https://criticalcarereviews.com/foundational-trials/crashl-2)

@@ -30,7 +30,7 @@ Her own quick reference for the IV room and bedside questions: diluent, line, fi
 | Vinca alkaloids | Hyaluronidase | **Warm** (cold makes it worse) | ✅✅ [9][10] |
 | Paclitaxel, docetaxel | Hyaluronidase (conditional) | Warm with hyaluronidase, otherwise cold | ✅ [9] |
 | Cisplatin (concentrated, large volume), bendamustine | Sodium thiosulfate | | ✅ [9] |
-| Hyperosmolar (dextrose over 10%, calcium, PN) | Hyaluronidase | ⚠️ | ⚠️ [VERIFY] |
+| Hyperosmolar (dextrose 10 to 50%, calcium, potassium, PN, contrast, mannitol) | Hyaluronidase (an adjunct that spreads the fluid): one protocol uses 15 units/mL, five 0.2 mL intradermal injections around the site; best within 1 h, still useful up to 12 h. **Not for vasopressors** (use phentolamine) | Warm is more common for non cytotoxic agents | ✅✅ [Univ. of Calgary CPT pearl: extravasation injuries](https://cumming.ucalgary.ca/sites/default/files/teams/127/CPT%20Pearl%20Extravasation%20Injuries%20Part%201.pdf); [LHSC NICU: hyaluronidase](https://www.lhsc.on.ca/nicu/hyaluronidase-0) |
 
 **First steps for all:** stop the infusion, leave the catheter in, aspirate, disconnect, give the antidote, compress, elevate, document, and watch the site for days ✅ [9].
 

@@ -18,7 +18,7 @@ ISMP High Alert Medication (concentrated potassium). **Never give IV push.** Use
 - About 20 mEq IV raises serum K by roughly 0.25 mEq/L ✅ [2].
 - Use only with a calibrated infusion pump; confirm catheter placement ✅ [1].
 - Extravasation causes severe tissue injury ✅ [1].
-- Check magnesium too: low magnesium makes hypokalemia hard to correct ⚠️ [VERIFY second source].
+- Check magnesium too: low magnesium makes hypokalemia hard to correct ✅✅ [WikEM: hypokalemia](https://wikem.org/wiki/Hypokalemia); [Huang and Kuo, JASN 2007: hypokalemia in magnesium deficiency](https://nutrition-evidence.com/article/104974/mechanism-of-hypokalemia-in-magnesium-deficiency).
 
 ## Pharmacist checklist
 1. Rate at or below 10 mEq/h peripherally.

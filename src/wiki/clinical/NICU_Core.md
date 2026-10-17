@@ -24,7 +24,7 @@ Sources: AHA/AAP Neonatal Resuscitation Guidelines (2025); NRP Textbook 8th ed.;
 
 ## 3. Delivery room and resuscitation (AHA/AAP 2025; NRP)
 - Ventilation is the priority. 2025 update: ventilation rate 30 to 60 per minute; deferred cord clamping for 60 seconds or longer in vigorous infants.
-- **Epinephrine:** use 0.1 mg/mL (1 mg/10 mL). IV or UVC: 0.02 mg/kg (range 0.01 to 0.03 mg/kg) every 3 to 5 minutes. Endotracheal: 0.1 mg/kg (range 0.05 to 0.1). The IV route is preferred (NRP 8th ed.) [VERIFY against 2025 Part 5 text].
+- **Epinephrine:** use 0.1 mg/mL (1 mg/10 mL). IV or UVC: 0.02 mg/kg (range 0.01 to 0.03 mg/kg) every 3 to 5 minutes. Endotracheal: 0.1 mg/kg (range 0.05 to 0.1). The IV route is preferred ✅✅ [LHSC NICU: epinephrine](https://www.lhsc.on.ca/nicu/epinephrine); [Vali et al. on NRP epinephrine ranges (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11864038) (ILCOR ranges: IV 0.01 to 0.03, ETT 0.05 to 0.1 mg/kg).
 - **Volume expansion:** normal saline 10 mL/kg over 5 to 10 minutes for suspected hypovolemia.
 - **Pharmacist role:** have the neonatal code doses calculated by weight before delivery for high risk births, if St. Mary's uses a pre calculated sheet.
 

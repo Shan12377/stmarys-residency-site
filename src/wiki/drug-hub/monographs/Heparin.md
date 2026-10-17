@@ -14,7 +14,7 @@ ISMP High Alert Medication. Independent double check per St. Mary's policy.
 | VTE treatment (weight based) | 80 units/kg IV bolus, then 18 units/kg/h; adjust by nomogram | ✅✅ | [1] Raschke 1993; [2] WikEM summary of StatPearls |
 | ACS (NSTE-ACS, STEMI with fibrinolysis) | 60 units/kg bolus (max 4,000 units), then 12 units/kg/h (max 1,000 units/h) | ✅✅ | [3] ESC/ACC/AHA dosing as summarized by Termedia review; [4] hospital ACS heparin order set (Southern Health) |
 | PCI | 70 to 100 units/kg bolus (50 to 70 units/kg with a GP IIb/IIIa inhibitor), ACT guided | ⚠️ | [3] gives 100 units/kg (60 with GP IIb/IIIa) [VERIFY current ACC/AHA PCI wording] |
-| VTE prophylaxis | 5,000 units SC every 8 to 12 hours | ⚠️ | [VERIFY CHEST prophylaxis guideline] |
+| VTE prophylaxis | 5,000 units SC every 8 to 12 hours | ✅✅ | [Comparative Effectiveness Research: UFH prophylaxis review](https://becarispublishing.com/doi/full/10.2217/cer.14.78); [InfoPOEMs: UFH q8h vs q12h meta analysis (King, Chest 2007)](https://evidence.unboundmedicine.com/evidence/pview/infoPOEMs/426123/all/Optimal%20dosing%20for%20thromboprophylaxis%20in%20medical%20inpatients) (q8h may prevent slightly more clots but bleeds more) |
 | Label continuous infusion (fixed dosing) | 5,000 unit IV bolus, then 20,000 to 40,000 units/24 h | ✅ | [5] FDA label (DailyMed) |
 | Monitoring target | aPTT 1.5 to 2 times control (label) or per hospital anti Xa range | ✅ | [5] label; anti Xa 0.3 to 0.7 units/mL commonly used ⚠️ [VERIFY St. Mary's] |
 | Monitoring timing | aPTT 6 hours after bolus and after each rate change, then daily when therapeutic | ✅ | [4] |
@@ -34,7 +34,7 @@ ISMP High Alert Medication. Independent double check per St. Mary's policy.
 - If HIT is suspected (intermediate or high 4Ts): **stop all heparin** (including flushes and heparin coated catheters) and start a non heparin anticoagulant: argatroban, bivalirudin, fondaparinux or a DOAC (conditional) ✅ [7].
 - **Argatroban:** 2 mcg/kg/min; **0.5 mcg/kg/min in moderate or severe hepatic impairment**; max 10 mcg/kg/min; aPTT 1.5 to 3 times baseline (not above 100 seconds), check 2 hours after starting or changing ✅ [8] FDA label.
 - **Warfarin overlap with argatroban:** no loading dose; stop argatroban when INR is above 4 on combined therapy (at argatroban 2 mcg/kg/min or less), recheck INR in 4 to 6 hours ✅ [8].
-- Start warfarin only after platelets recover (commonly at least 150,000) ⚠️ [VERIFY ASH 2018 full text].
+- Start warfarin only after platelets recover (at least 150,000), with overlap; ASH 2018 prefers a DOAC when appropriate; treat 3 to 6 months with thrombosis, about 4 to 6 weeks without ✅ [The Blood Project: switching off argatroban in HIT (ASH 2018)](https://www.thebloodproject.com/ufaq/in-a-patient-with-hit-when-can-i-stop-iv-argatroban-or-bivalirudin-what-do-i-switch-to-and-for-how-long/).
 
 ## Pharmacist verification checklist
 1. Indication and the right nomogram (VTE vs ACS vs low intensity).

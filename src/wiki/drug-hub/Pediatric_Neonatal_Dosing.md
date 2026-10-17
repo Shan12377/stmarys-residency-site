@@ -30,7 +30,7 @@ Her own quick reference for the floor, ED and NICU questions that come at night.
 | Ceftriaxone (otitis) | 50 mg/kg IM/IV once daily | Max 2 g; 1 to 3 days | ✅ | [8] |
 | Amoxicillin, strep throat | 50 mg/kg once daily x 10 days | Max 1,000 mg | ✅ | [8] |
 | Benzathine penicillin G, strep throat | Under 27 kg: 600,000 units IM; 27 kg and up: 1.2 million units IM | Single dose | ✅ | [8] |
-| Ondansetron | ⚠️ | ⚠️ | ⚠️ | [VERIFY: 0.15 mg/kg, max 4 mg is common] |
+| **Ondansetron** (oral, gastroenteritis) | 0.15 mg/kg once, **max 8 mg**; or by weight: 8 to 15 kg 2 mg, 15 to 30 kg 4 mg, over 30 kg 6 to 8 mg | Age 6 months or older; single dose (repeat once if vomited within 15 min); diarrhea is the main side effect | ✅✅ | [Canadian Paediatric Society: oral ondansetron](https://cps.ca/documents/position/oral-ondansetron); [AAFP: ondansetron in gastroenteritis](https://www.aafp.org/pubs/afp/issues/2006/0901/p830.html) |
 
 **FDA restrictions:** codeine (pain or cough) and tramadol (pain) are contraindicated under age 12, and tramadol is contraindicated under 18 after tonsillectomy or adenoidectomy ✅ [10].
 

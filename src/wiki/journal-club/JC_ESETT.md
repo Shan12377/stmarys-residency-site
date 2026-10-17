@@ -6,7 +6,7 @@
 > "ESETT (NEJM 2019) randomized children and adults with benzodiazepine refractory convulsive status epilepticus to levetiracetam 60 mg/kg, fosphenytoin 20 mg PE/kg, or valproate 40 mg/kg over 10 minutes. Seizures stopped with improved responsiveness at 60 minutes in 47%, 45% and 46%: no meaningful difference. Safety was similar, with numerically more hypotension and intubation with fosphenytoin. The main limitation is early stopping and unblinding. For our ED and PICU, any of the three is acceptable second line, so pick by patient factors." ✅✅ [1][2]
 
 ## 1. Citation and context
-Kapur J, et al. N Engl J Med 2019 ✅ [2]. Volume and pages ⚠️ [VERIFY]. NIH funded ✅ [1]. Before ESETT, second line choice had little head to head evidence.
+Kapur J, et al. N Engl J Med 2019;381(22):2103-2113 ✅ [PubMed 31774955](https://pubmed.ncbi.nlm.nih.gov/31774955/). NIH funded ✅ [1]. Before ESETT, second line choice had little head to head evidence.
 
 ## 2. PICO
 | | |
@@ -37,7 +37,7 @@ Children's hospital and adult ED both apply (age 2 and up). Choose by patient: v
 
 ## 7. Pharmacist's angle
 - Check weight and the max dose for each drug.
-- Fosphenytoin dosed in PE; check rate limits ⚠️ [VERIFY label].
+- Fosphenytoin is dosed in PE; max rate 150 mg PE/min in adults, and in children 2 mg PE/kg/min or 150 mg PE/min, whichever is slower; monitor ECG and BP during and 10 to 20 min after ✅ [Fosphenytoin label (Hikma, via Janusinfo)](https://janusinfo.se/download/18.3a466c131894862aa4257a2e/1689331426425/Fosphenytoin%20sodium.pdf).
 - Valproate: pregnancy, liver, and age under 2 risks.
 - Have the third line (anesthetic infusion) ready.
 

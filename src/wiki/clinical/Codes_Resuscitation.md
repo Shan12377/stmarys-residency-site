@@ -37,7 +37,7 @@ IV is preferred for drug delivery; IO if IV can't be placed quickly (AHA 2025).
 
 ## 4. After ROSC (post cardiac arrest care)
 - Avoid hypotension: common targets SBP at least 90 and MAP at least 65 mmHg; norepinephrine is the usual first vasopressor.
-- Temperature control and fever prevention in comatose patients [VERIFY 2025 duration and target wording].
+- Temperature control in comatose patients: keeping temperature below 37.5 °C is reasonable (AHA 2023 focused update, after TTM2), with strict fever prevention and continuous temperature monitoring ✅✅ [TCTMD: AHA temperature statement](https://www.tctmd.com/news/aha-wider-temperature-management-range-okay-cardiac-arrest-care); [MDedge: AHA normothermia advisory](https://mdedge.com/content/aha-advocates-normothermia-most-comatose-ohca-patients). Exact 2025 duration wording ⚠️ [VERIFY].
 - Avoid hypoxia and hyperoxia (SpO2 about 92 to 98%).
 - Check glucose, potassium, magnesium; sedation and analgesia after intubation.
 

@@ -6,7 +6,7 @@
 > "NICE-SUGAR (NEJM 2009) randomized 6,104 medical and surgical ICU patients to intensive glucose control (81 to 108 mg/dL) or conventional control (180 or less) with IV insulin. Ninety day death was higher with intensive control, 27.5% vs 24.9% (OR 1.14, 95% CI 1.02 to 1.28; NNH about 38), and severe hypoglycemia was 6.8% vs 0.5%. The main limitation is no blinding. For our ICU patients, target 140 to 180 mg/dL." ✅✅ [1][2]
 
 ## 1. Citation and context
-NICE-SUGAR Study Investigators. N Engl J Med 2009;360:1283-1297 ⚠️ [VERIFY pages]. 42 centers in Australia, New Zealand, Canada and the US; enrolled 2004 to 2008; publicly funded ✅ [1]. It answered the Leuven trials, which had suggested tight control helped surgical ICU patients.
+NICE-SUGAR Study Investigators. N Engl J Med 2009;360:1283-97 ✅ [ACC: NICE-SUGAR](https://www.acc.org/latest-in-cardiology/clinical-trials/2013/06/09/23/03/nicesugar). 42 centers in Australia, New Zealand, Canada and the US; enrolled 2004 to 2008; publicly funded ✅ [1]. It answered the Leuven trials, which had suggested tight control helped surgical ICU patients.
 
 ## 2. PICO
 | | |

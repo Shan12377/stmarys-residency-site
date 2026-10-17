@@ -17,7 +17,7 @@ Regimens by infection: [[Antimicrobial_Guide]]. Drug pages: [[Vancomycin]] · [[
 | Beta lactam maintenance | Prolonged infusion suggested over standard infusion | ✅ [1] |
 | Fluids | At least 30 mL/kg crystalloid in the first 3 h; balanced crystalloids suggested over saline | ✅ [1] |
 | Pressors | Norepinephrine first; add vasopressin rather than raising norepinephrine | ✅ [1] · [[Norepinephrine]] |
-| Steroids | Suggested when norepinephrine or epinephrine is 0.25 mcg/kg/min or more for at least 4 h | ✅ [1]; dose (hydrocortisone 200 mg/day) ⚠️ [VERIFY] |
+| Steroids | Suggested when norepinephrine or epinephrine is 0.25 mcg/kg/min or more for at least 4 h | ✅ [1]; hydrocortisone 200 mg/day (50 mg q6h or infusion) ✅✅ [iatroX: steroids in refractory septic shock (SSC 2021)](https://www.iatrox.com/q/6a080366ba841a69964a57e8/steroid-use-in-refractory-septic-shock); [The Bottom Line: steroids in sepsis](https://www.thebottomline.org.uk/blog/steroids-in-sepsis/) |
 | Stopping | Reassess daily; procalcitonin plus clinical judgment can guide stopping | ✅ [1] |
 
 **Pharmacist moves:** first doses go STAT; give a full loading dose even when kidney function is poor, then adjust maintenance; vancomycin load 20 to 35 mg/kg ([[Vancomycin]]).
@@ -37,11 +37,11 @@ Stable, afebrile, improving, working gut, taking other oral meds. Good oral opti
 
 ## 5. Daily catches
 - **Duplicate anaerobic coverage:** metronidazole plus piperacillin tazobactam or a carbapenem ⚠️ [VERIFY local policy].
-- **Cefepime and kidneys:** accumulation can cause neurotoxicity; dose by CrCl ⚠️ [VERIFY label].
+- **Cefepime and kidneys:** accumulation can cause neurotoxicity; FDA (2012): nonconvulsive status epilepticus mostly in kidney impairment without dose adjustment; adjust when CrCl is 60 mL/min or less ✅ [FDA alert on cefepime and seizures (Drugs.com)](https://www.drugs.com/fda-alerts/544-0.html).
 - **Vancomycin plus piperacillin tazobactam:** more AKI; watch SCr ([[Vancomycin]]).
 - **Linezolid:** serotonin syndrome with SSRIs and SNRIs; low platelets with long courses ✅ (FDA).
 - **Ceftriaxone plus IV calcium in neonates:** contraindicated ([[NICU_Core]]).
-- **Asymptomatic bacteriuria:** don't treat positive urine cultures without symptoms (except pregnancy and before urologic procedures) ✅ [6] ⚠️ [VERIFY exceptions].
+- **Asymptomatic bacteriuria:** don't treat positive urine cultures without symptoms Screen and treat only in **pregnancy** (4 to 7 days) and **before urologic procedures with mucosal trauma** (culture directed, 1 to 2 doses 30 to 60 min before). Don't treat in older adults with delirium or a fall without urinary or systemic signs, catheters, diabetes, or nonurologic surgery ✅✅ [AAFP: asymptomatic bacteriuria (IDSA 2019)](https://www.aafp.org/afp/2020/0715/p99.html); [ACP IM Matters: IDSA 2019 ASB guideline](https://immattersacp.org/weekly/archives/2019/03/26/2.htm).
 - **Durations are shorter than habit:** CAP at least 5 days, HAP 7 days [10], cUTI 7 days (5 to 7 with a fluoroquinolone), cellulitis about 5 days ✅✅ [7][5][8].
 
 ## 6. Stewardship workflow (every antibiotic, day 2 to 3)

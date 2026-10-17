@@ -16,14 +16,14 @@ An 82 year old, 58 kg, SCr 1.1, takes apixaban 5 mg BID for atrial fibrillation.
 ## Case 2 (Warfarin): INR 7.2, then a bleed
 A 70 kg man on warfarin for AF has an INR of 7.2 and no bleeding. The resident orders vitamin K 10 mg IV. Two days later he has a GI bleed, INR 5.1.
 
-**Model answer:** "Day 1: hold warfarin and recheck the INR. With INR 4.5 to 10 and no bleeding, vitamin K isn't needed (Crowther, Ann Intern Med 2009), and 10 mg IV is too much: it risks warfarin resistance when we restart. Day 2, major bleed: vitamin K 10 mg IV slow infusion plus 4F-PCC. INR 4 to 6 is 35 units/kg, so 2,450 units, under the 3,500 max. Recheck INR 30 minutes after PCC per label."
-**Source check:** INR 4.5 to 10 ✅✅ (UMEM on Crowther; Sunnybrook); PCC dosing ✅✅ ([[4F_PCC]]); recheck timing ⚠️ [VERIFY label wording].
+**Model answer:** "Day 1: hold warfarin and recheck the INR. With INR 4.5 to 10 and no bleeding, vitamin K isn't needed (Crowther, Ann Intern Med 2009), and 10 mg IV is too much: it risks warfarin resistance when we restart. Day 2, major bleed: vitamin K 10 mg IV slow infusion plus 4F-PCC. INR 4 to 6 is 35 units/kg, so 2,450 units, under the 3,500 max. In the label trials the INR was checked 30 minutes after the infusion; repeat PCC dosing is not recommended."
+**Source check:** INR 4.5 to 10 ✅✅ (UMEM on Crowther; Sunnybrook); PCC dosing ✅✅ ([[4F_PCC]]); 30 minute INR and no repeat dosing ✅ [Kcentra prescribing information (Drugs.com)](https://Drugs.com/pro/kcentra.html).
 
 ## Case 3 (HIT): Day 7 on heparin, kidneys failing
 A patient on a heparin drip for 7 days: platelets fell from 240 K to 95 K. New thrombosis in the left arm. CrCl 18. A heparin flush order is pending.
 
 **Model answer:** "This looks like HIT: more than a 50% drop, 5 to 10 days in, plus a new clot. Reject the flush and stop all heparin, including flushes and enoxaparin. Send a PF4 antibody test. With CrCl 18, argatroban fits because it's cleared by the liver; it raises the INR, which matters when we switch to warfarin. No warfarin until platelets recover, and no routine platelet transfusion. Add heparin to the allergy list."
-**Source check:** see [[Heparin]] HIT section ✅; warfarin start threshold ⚠️ [VERIFY ASH 2018].
+**Source check:** see [[Heparin]] HIT section ✅; warfarin after platelets reach 150,000 ✅ [The Blood Project: switching off argatroban in HIT (ASH 2018)](https://www.thebloodproject.com/ufaq/in-a-patient-with-hit-when-can-i-stop-iv-argatroban-or-bivalirudin-what-do-i-switch-to-and-for-how-long/).
 
 ## Case 4 (Anticoag + L&D): Epidural on enoxaparin
 A pregnant patient on enoxaparin 40 mg SC daily got her last dose at 0600. Anesthesia wants to place an epidural at 1400.
@@ -59,7 +59,7 @@ Order: morphine 4 mg IV q2h PRN pain, patient on hemodialysis.
 Order: "Insulin regular 10U IV x1" for K 6.8 with peaked T waves. No dextrose ordered. CrCl 12.
 
 **Model answer:** "Three things. Calcium gluconate 1 g IV first to stabilize the heart. 'U' is an ISMP Do Not Use abbreviation (read as 0 or 4), so rewrite as '10 units.' And insulin needs dextrose 25 g; with CrCl 12, consider 5 units to lower hypoglycemia risk, and check glucose hourly for several hours."
-**Source check:** Do Not Use list ✅ (ISMP); 5 unit option ⚠️ [VERIFY]. See [[Insulin_IV_DKA]].
+**Source check:** Do Not Use list ✅ (ISMP); 5 unit option ✅ (see [[Adult_Critical_Care]] section 3). See [[Insulin_IV_DKA]].
 
 ## Case 10 (Oncology safety): Methotrexate daily, vincristine in a syringe
 Two orders on one patient: methotrexate 7.5 mg PO daily for rheumatoid arthritis (home med), and vincristine 2 mg prepared in a 10 mL syringe while intrathecal methotrexate is also scheduled.

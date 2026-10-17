@@ -104,3 +104,11 @@
 - Built JC_BRIDGE, JC_PAUSE, JC_NICE-SUGAR and JC_Tenecteplase_Followups (TRACE-2, ORIGINAL, ATTEST-2). Journal club library now 9 trials.
 - Florida CE: her license was issued November 2025, so the first renewal (September 30, 2027) needs 15 hours including 2 h medication errors, 2 h controlled substances, 1 h HIV/AIDS.
 - Open [VERIFY]: BRIDGE mean CHADS2, NICE-SUGAR pages, blinding of outcome assessment in tenecteplase trials, ORIGINAL second source.
+
+## 2026-10-17 (reverification pass 1)
+- Cleared 38 [VERIFY] items with public sources across 24 pages.
+- Corrections (before and after on each page):
+  - Stress ulcer prophylaxis: was "ventilation over 48 h, coagulopathy"; now coagulopathy, shock or chronic liver disease (SCCM/ASHP 2024). Also fixed on Trauma_Core.
+  - Pediatric ondansetron max: was "4 mg in most protocols"; now 0.15 mg/kg, max 8 mg (CPS) with weight bands. Also fixed on PICU_Core.
+- Confirmed: hydrocortisone 200 mg/day in septic shock; US 3% saline bolus 100 to 150 mL; post arrest temperature below 37.5 °C with fever prevention; NRP epinephrine ranges; late preterm steroids (ALPS); USP 797 immediate use (4 h, 3 products) and ISO classes; cefepime renal threshold (CrCl 60 or less); asymptomatic bacteriuria exceptions; Do Not Use list; hyaluronidase for hyperosmolar extravasation; meningitis second source; UFH prophylaxis; warfarin after HIT; vancomycin dose and infusion rate; magnesium and refractory hypokalemia; TXA renal dosing and seizures; fosphenytoin rate; Kcentra INR timing; LactMed acetaminophen, magnesium, methylergonovine, oxycodone; trial citations (AcT, WOMAN, ESETT, NICE-SUGAR).
+- Open: 58 items; 34 need St. Mary's policies or order sets, 24 need more public sources.

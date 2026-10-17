@@ -63,7 +63,7 @@ Pharmacist watch: fosphenytoin is dosed in **PE (phenytoin equivalents)**; valpr
 - Acetaminophen 15 mg/kg every 6 hours (max 75 mg/kg/day, not over 4 g/day).
 - Ibuprofen 10 mg/kg every 6 to 8 hours (6 months and older; max 40 mg/kg/day).
 - Maintenance fluids: Holliday Segar 4/2/1 rule for rate; AAP 2018 recommends isotonic fluids with appropriate KCl and dextrose for most hospitalized children 28 days to 18 years.
-- Ondansetron 0.15 mg/kg (max 4 mg per dose in most protocols, 8 mg in some).
+- Ondansetron 0.15 mg/kg (max 8 mg per the Canadian Paediatric Society; weight bands 2, 4, 6 to 8 mg); age 6 months or older. Updated 2026-10-17 (was "max 4 mg in most protocols"); see [[Pediatric_Neonatal_Dosing]].
 
 ## 8. Pediatric toxicology to know cold
 - Acetaminophen: NAC (21 hour IV protocol; know St. Mary's regimen, many sites now use a two bag protocol).

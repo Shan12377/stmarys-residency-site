@@ -10,7 +10,7 @@ Related: [[Norepinephrine]] · [[Insulin_IV_DKA]] · [[Potassium_Chloride_IV]] �
 ## 1. Shock and pressors (SSC 2021)
 - Norepinephrine first; add vasopressin instead of raising norepinephrine; then epinephrine; dobutamine for heart dysfunction ✅ [1] · [[Norepinephrine]].
 - MAP goal 65 ✅ [[Norepinephrine]].
-- Steroids when norepinephrine or epinephrine is 0.25 mcg/kg/min or more for at least 4 h ✅ [1]; dose ⚠️ [VERIFY].
+- Steroids when norepinephrine or epinephrine is 0.25 mcg/kg/min or more for at least 4 h ✅ [1]; hydrocortisone 200 mg/day (50 mg IV every 6 h or a continuous infusion) ✅✅ [iatroX: steroids in refractory septic shock (SSC 2021)](https://www.iatrox.com/q/6a080366ba841a69964a57e8/steroid-use-in-refractory-septic-shock); [The Bottom Line: steroids in sepsis](https://www.thebottomline.org.uk/blog/steroids-in-sepsis/).
 
 ## 2. Pain, sedation and delirium (PADIS 2018)
 | Topic | Recommendation | Check |
@@ -36,7 +36,7 @@ Related: [[Norepinephrine]] · [[Insulin_IV_DKA]] · [[Potassium_Chloride_IV]] �
 KDIGO severity: severe = K above 6.5, or 6.1 to 6.5 with ECG changes ✅ [5].
 
 ## 4. Hyponatremia
-- **Severe symptoms (seizure, coma):** 3% saline **bolus** 150 mL over 20 min, repeat if needed; aim for about a 5 mmol/L rise in the first hour ✅ [6]. US practice uses 100 mL boluses ⚠️ [VERIFY].
+- **Severe symptoms (seizure, coma):** 3% saline **bolus** 150 mL over 20 min, repeat if needed; aim for about a 5 mmol/L rise in the first hour ✅ [6]. US practice: 100 to 150 mL of 3% over 10 to 20 min, repeat up to 3 times; 100 mL raises Na about 2 to 3 mmol/L; first goal a 4 to 6 rise ✅✅ [6] · [ACEP: severe hyponatremia](https://acep.org/criticalcare/newsroom/newsroom-articles/september2022/the-resuscitationists-approach-to-severe-hyponatremia).
 - **Limits:** 10 mmol/L in the first 24 h, then 8 per 24 h (European) ✅✅ [6][7]. **High risk** (alcohol use disorder, low potassium, malnutrition, liver disease): 8 per 24 h max ✅ [7].
 - **Overcorrection:** stop hypertonic fluid; hypotonic fluid with or without desmopressin ✅ [6].
 - **Debate:** newer data (MacMillan 2023) suggest osmotic demyelination is rare and slow correction has its own risks; follow St. Mary's protocol ✅ [7].
@@ -47,7 +47,7 @@ KDIGO severity: severe = K above 6.5, or 6.1 to 6.5 with ECG changes ✅ [5].
 - DKA is its own protocol: [[Insulin_IV_DKA]].
 
 ## 6. Other daily ICU checks
-- Stress ulcer prophylaxis only with a real risk factor (ventilation over 48 h, coagulopathy); stop at transfer ⚠️ [VERIFY guideline].
+- **Updated 2026-10-17.** Before: "ventilation over 48 h, coagulopathy." After: stress ulcer prophylaxis for **coagulopathy, shock or chronic liver disease** (SCCM/ASHP 2024); mechanical ventilation alone is not an established indication; not for low risk patients on tube feeds; PPI or H2 blocker; stop when the risk resolves or at ICU transfer ✅✅ [SCCM/ASHP 2024 stress ulcer prophylaxis guideline](https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib); [HelixTalk 185: 2024 SUP guideline](https://www.rosalindfranklin.edu/academics/college-of-pharmacy/helixtalk/helixtalk-185-they-are-late-but-don-t-stress-the-new-2024-stress-ulcer-prophylaxis-guidelines).
 - VTE prophylaxis unless bleeding; trauma uses enoxaparin per [[Trauma_Core]].
 - Drips through compatible lines ([[IV_Compatibility]]); concentrated drips central.
 - Renal dosing as CrCl changes; augmented clearance in young trauma patients ⚠️ [VERIFY].

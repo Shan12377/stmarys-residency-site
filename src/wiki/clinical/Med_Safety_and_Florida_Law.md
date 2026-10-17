@@ -26,7 +26,7 @@ Full list: [ISMP high alert medications in acute care settings](https://home.ecr
 - In interviews, saying "National Performance Goals, which replaced the NPSGs in 2026" shows you are current.
 
 ## 3. Do Not Use abbreviations and order safety
-- "U" for units, "IU", "QD", "QOD", trailing zero (1.0 mg), missing leading zero (.5 mg), "MS", "MSO4", "MgSO4" ⚠️ [VERIFY current Joint Commission list].
+- "U" for units, "IU", "QD", "QOD", trailing zero (1.0 mg), missing leading zero (.5 mg), "MS", "MSO4", "MgSO4": write "unit," "International Unit," "daily," "every other day," "X mg," "0.X mg" and the full drug name ✅ [Becker's: Joint Commission Do Not Use list](https://beckersasc.com/asc-accreditation-and-patient-safety/the-joint-commission-eliminate-these-5-abbreviations.html).
 - Weekly methotrexate, vincristine minibags, and weight in kg only are classic ISMP best practices ([[Cases_Anticoag_and_Verification]]).
 
 ## 4. Error reporting and just culture

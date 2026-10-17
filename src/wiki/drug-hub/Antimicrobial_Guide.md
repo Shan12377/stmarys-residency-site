@@ -40,7 +40,7 @@ Steroids are not routine for CAP or influenza pneumonia; they follow the sepsis 
 ## Meningitis (adults)
 | Situation | Regimen | Check |
 |---|---|---|
-| Empiric, age 18 to 50 | Vancomycin 15 to 20 mg/kg q8 to 12h **plus** ceftriaxone 2 g IV q12h | ✅ [9] ⚠️ [VERIFY second source] |
+| Empiric, age 18 to 50 | Vancomycin 15 to 20 mg/kg q8 to 12h **plus** ceftriaxone 2 g IV q12h | ✅✅ [9] · [UCLA ASP: CNS infections guidebook](https://asp.mednet.ucla.edu/asp/files/view/guidebook/Central_nervous_system_infections.pdf) |
 | Age over 50, pregnant or immunocompromised | Add ampicillin 2 g IV q4h (Listeria) | ✅ [9] |
 | Severe beta lactam allergy | Replace ceftriaxone with moxifloxacin 400 mg IV daily (keep vancomycin) | ✅ [9] |
 | Dexamethasone | 0.15 mg/kg (about 10 mg) IV q6h for 2 to 4 days, started 10 to 20 minutes before or with the first antibiotic; not after antibiotics have started; continue only if pneumococcal | ✅✅ [9][10] |
@@ -51,7 +51,7 @@ Steroids are not routine for CAP or influenza pneumonia; they follow the sepsis 
 Fidaxomicin 200 mg PO BID x 10 days, or vancomycin 125 mg PO QID x 10 days ✅✅ (see [[ID_Core]]).
 
 ## Surgical prophylaxis
-Cefazolin 2 g IV (3 g if 120 kg or more) within 60 minutes before incision ⚠️ [VERIFY ASHP 2013 guideline]. See [[Trauma_Core]] for open fractures.
+Cefazolin 2 g IV (3 g if 120 kg or more) within 60 minutes before incision; redose every 4 h during surgery or if blood loss is over 1,500 mL; vancomycin and fluoroquinolones start within 120 minutes ✅ [Nebraska Medicine: surgical prophylaxis](https://www.unmc.edu/intmed/_documents/id/asp/surgical-antimicrobial-surgical-prophylaxis.pdf) ⚠️ [second source: ASHP 2013 full text]. See [[Trauma_Core]] for open fractures.
 
 ---
 

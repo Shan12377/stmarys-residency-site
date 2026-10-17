@@ -52,7 +52,7 @@ Same reversal table as ICH ([[Stroke_Core]] section 3). Find out the anticoagula
 - **VTE prophylaxis:** enoxaparin (commonly 30 mg every 12 hours or 40 mg daily, weight and anti Xa adjusted per protocol) once bleeding risk allows, often within 24 to 48 hours (EAST, ACS TQIP) [VERIFY protocol].
 - **Pain:** multimodal (acetaminophen, NSAIDs if no bleeding or kidney concern, regional anesthesia, ketamine, opioids). Rib fractures benefit from regional blocks and scheduled nonopioids.
 - **Alcohol withdrawal:** CIWA based benzodiazepines or phenobarbital protocols; thiamine before glucose.
-- **Stress ulcer prophylaxis** for ventilated or coagulopathic patients.
+- **Stress ulcer prophylaxis** for coagulopathy, shock or chronic liver disease (SCCM/ASHP 2024; ventilation alone is not an established indication). Updated 2026-10-17 (was "ventilated or coagulopathic"); see [[Adult_Critical_Care]].
 - **Burns:** Parkland formula, 4 mL/kg per % TBSA of lactated Ringer's in 24 hours, half in the first 8 hours (from time of burn).
 - **Spinal cord injury:** high dose methylprednisolone is not recommended routinely.
 

@@ -6,7 +6,7 @@
 > "AcT (Lancet 2022) randomized 1,600 thrombolysis eligible stroke patients within 4.5 hours at 22 Canadian centers to tenecteplase 0.25 mg/kg (max 25 mg) or alteplase 0.9 mg/kg. Excellent outcome (mRS 0 to 1 at 90 to 120 days) was 36.9% vs 34.8% (difference 2.1%, 95% CI minus 2.6 to 6.9), meeting the minus 5% noninferiority margin. Symptomatic ICH (3.4% vs 3.2%) and death (15.3% vs 15.4%) were similar. The main limitation is open label treatment. For our patients, tenecteplase is a one bolus option with the same results, and the dose must be the stroke dose, not the cardiac dose." ✅✅ [1][2]
 
 ## 1. Citation and context
-Menon BK, Buck BH, Singh N, et al. Lancet 2022 (published online June 28). ✅✅ [1][2] Volume and pages ⚠️ [VERIFY]. Pragmatic, registry linked.
+Menon BK, Buck BH, Singh N, et al. Lancet 2022;400(10347):161-169 ✅ [McMaster Optimal Aging: AcT citation](https://www.mcmasteroptimalaging.org/full-article/plus/intravenous-tenecteplase-compared-alteplase-acute-ischaemic-stroke-canada-act-105365). Pragmatic, registry linked.
 
 ## 2. PICO
 | | |
