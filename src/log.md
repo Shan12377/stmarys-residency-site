@@ -99,3 +99,8 @@
 - Built Pediatric_Neonatal_Dosing and Pregnancy_Lactation.
 - Correction to Med_Safety_and_Florida_Law: Florida dropped the 10 live CE hours rule (amended effective May 22, 2025). First renewal rules added from the Board page.
 - Open [VERIFY]: acetaminophen daily mg cap, croup dexamethasone max (12 vs 16 mg), ondansetron, auto injector bands, term neonate ampicillin interval, neonatal cefepime dose, several LactMed entries (opioids, magnesium, methylergonovine, ibuprofen, acetaminophen).
+
+## 2026-10-17 (journal club 2)
+- Built JC_BRIDGE, JC_PAUSE, JC_NICE-SUGAR and JC_Tenecteplase_Followups (TRACE-2, ORIGINAL, ATTEST-2). Journal club library now 9 trials.
+- Florida CE: her license was issued November 2025, so the first renewal (September 30, 2027) needs 15 hours including 2 h medication errors, 2 h controlled substances, 1 h HIV/AIDS.
+- Open [VERIFY]: BRIDGE mean CHADS2, NICE-SUGAR pages, blinding of outcome assessment in tenecteplase trials, ORIGINAL second source.

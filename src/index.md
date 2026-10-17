@@ -43,6 +43,7 @@
 ## Journal club
 - [[Journal_Club_Template]]: 60 second bottom line, PICO, validity, results (ARR, NNT, CI), applicability, role in therapy.
 - Trials: [[JC_CRASH-2]] (TXA in trauma), [[JC_NINDS]] (alteplase), [[JC_AcT]] (tenecteplase vs alteplase), [[JC_WOMAN]] (TXA in PPH), [[JC_ESETT]] (status epilepticus second line).
+- More trials: [[JC_BRIDGE]] (no bridging in AF), [[JC_PAUSE]] (DOAC holds), [[JC_NICE-SUGAR]] (ICU glucose), [[JC_Tenecteplase_Followups]] (TRACE-2, ORIGINAL, ATTEST-2).
 
 ## Cases
 - [[Cases_LD_NICU_PICU]]: 8 timed cases with model answers.

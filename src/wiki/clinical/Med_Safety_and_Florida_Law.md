@@ -42,6 +42,7 @@ Full list: [ISMP high alert medications in acute care settings](https://home.ecr
 | Required topics | 2 h medication errors and 2 h controlled substances (both Board approved, within the 24 months); 1 h HIV/AIDS at the first renewal | ✅✅ | [5][6][9] |
 | Live hours | **No live hour requirement** since the rule was amended effective May 22, 2025 (the old rule required 10 of 30 live). The Board renewal page lists none | ✅✅ | [9][10] (Updated 2026-10-17; course vendor pages still show the old rule) |
 | First renewal | License issued **less than 12 months** before the September 30, 2027 expiration: Board page lists 1 h HIV/AIDS, 2 h medication errors, 2 h controlled substances (the rule text itself says no courses besides HIV/AIDS). Issued **12 months or more** before: 15 hours, including those 5 | ✅✅ | [9][10]; follow the Board page and CE Broker |
+| **Her first renewal** | License issued November 2025, which is more than 12 months before September 30, 2027: **15 hours**, including 2 h medication errors, 2 h controlled substances and 1 h HIV/AIDS; no live hours required | ✅✅ | [9][10] |
 | Immunizations | 3 h every 2 years if certified to vaccinate | ✅✅ | [5][6] |
 | Consultant pharmacist | 24 extra hours every 2 years | ✅✅ | [5][6] |
 | PDMP (E-FORCSE) | Dispensers report by close of the next business day; institutional pharmacies that **administer** controlled substances to patients can file an exemption | ✅ | [8] |
