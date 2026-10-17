@@ -8,8 +8,8 @@ Her own references, organized by the job each one does. Content comes from publi
 | Drug Monographs | Lexicomp or Micromedex type reference | Pilot complete: 10 high alert drugs |
 | [[IV_Compatibility]] | Trissel's or King Guide type reference | Built: diluents, lines, filters, containers, extravasation |
 | [[Antimicrobial_Guide]] | Sanford type guide | Built: pneumonia, UTI, skin, meningitis, C. diff |
-| Pediatric and Neonatal Dosing | pediatric dosage handbook or Neofax type reference | Planned |
-| Pregnancy and Lactation | Briggs type reference | Planned (links to LactMed) |
+| [[Pediatric_Neonatal_Dosing]] | pediatric dosage handbook or Neofax type reference | Built: 6 checks, everyday doses, neonatal sepsis antibiotics |
+| [[Pregnancy_Lactation]] | Briggs type reference | Built: PLLR, relative infant dose, L&D and postpartum quick answers |
 
 ## Pilot list (high alert drugs first)
 1. [[Heparin]] (done)

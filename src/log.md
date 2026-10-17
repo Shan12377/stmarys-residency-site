@@ -94,3 +94,8 @@
 - Built Practice_Advancement: recommended project magnesium sulfate infusion safety MUE on L&D (backups: TXA timing, thrombolytic dose accuracy, DOAC admission dosing, vancomycin 48 h stop), draft criteria, ASHP MUE guideline 2021 steps, IHI model, QI vs research, 6 month timeline, inservice outline.
 - Added tools/intervention_log.html (browser storage, CSV export, blocks MRN and DOB patterns). Linked in My Tools.
 - Open [VERIFY]: St. Mary's magnesium order set, Tenet IRB process, FSHP and ASHP abstract dates, typical MUE sample size.
+
+## 2026-10-17 (drug hub sections)
+- Built Pediatric_Neonatal_Dosing and Pregnancy_Lactation.
+- Correction to Med_Safety_and_Florida_Law: Florida dropped the 10 live CE hours rule (amended effective May 22, 2025). First renewal rules added from the Board page.
+- Open [VERIFY]: acetaminophen daily mg cap, croup dexamethasone max (12 vs 16 mg), ondansetron, auto injector bands, term neonate ampicillin interval, neonatal cefepime dose, several LactMed entries (opioids, magnesium, methylergonovine, ibuprofen, acetaminophen).

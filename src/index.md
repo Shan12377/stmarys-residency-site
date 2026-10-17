@@ -34,6 +34,8 @@
 - [[Drug_Hub]]: her own references by job, pilot list, free and subscription references.
 - [[Antimicrobial_Guide]]: empiric regimens by infection with doses, durations and links.
 - [[IV_Compatibility]]: diluent, line, filter, container and rate rules by drug; extravasation antidotes.
+- [[Pediatric_Neonatal_Dosing]]: 6 checks on every pediatric order, everyday doses with max limits, neonatal sepsis antibiotics.
+- [[Pregnancy_Lactation]]: PLLR (no letter categories), relative infant dose, NSAIDs after 20 weeks, codeine and tramadol, antihypertensives, statins.
 - [[Heparin]]: pilot monograph with two source verification and links.
 - [[Enoxaparin]]: dosing by indication with renal column, anti Xa, neuraxial timing, protamine.
 - [[Insulin_IV_DKA]], [[Magnesium_Sulfate]], [[Potassium_Chloride_IV]], [[Vancomycin]], [[Gentamicin]], [[Norepinephrine]], [[Thrombolytics_Stroke]], [[4F_PCC]]: rest of the high alert pilot.
