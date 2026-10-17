@@ -209,7 +209,23 @@ const CASES=[
  labs:[],meds:["Methotrexate intrathecal also due today"],notes:"Order: vincristine 1.5 mg/m2 IV.",
  order:"Verify the compounded product below against the order.",
  label:"PATIENT: TEST, HOTEL   MRN SIM0034\nVINCRISTINE 1.4 mg in 10 mL syringe\nCheck: tech __  RPh __",
- answer:"reject",why:"Vincristine must never go in a syringe: minibag only, labeled 'For intravenous use only. Fatal if given by other routes,' kept apart from intrathecal doses (ISMP). Remake as a minibag.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]}
+ answer:"reject",why:"Vincristine must never go in a syringe: minibag only, labeled 'For intravenous use only. Fatal if given by other routes,' kept apart from intrathecal doses (ISMP). Remake as a minibag.",ref:["IV Compatibility","/drug-hub/iv_compatibility"]},
+{id:35,type:"Order",stat:false,title:"Propofol day 4, triglycerides high",pt:{name:"TEST, INDIGO",mrn:"SIM0035",age:"46 y",sex:"M",wt:"90 kg",ht:"183 cm",allergy:"NKDA",loc:"MICU 6",dx:"ARDS, ventilated"},
+ labs:[["Triglycerides","620 mg/dL","H"],["CK","2,400","H"],["Lactate","3.8","H"]],meds:["Propofol 75 mcg/kg/min (day 4)","Norepinephrine 0.1 mcg/kg/min"],notes:"RASS goal 0 to -1. Current RASS -4.",
+ order:"Continue propofol 75 mcg/kg/min.",
+ answer:"modify",why:"Above 4 mg/kg/h (about 67 mcg/kg/min) for more than 48 h with a pressor, plus high triglycerides, CK and lactate: watch for propofol infusion syndrome. Over sedated for a light target. Recommend reducing or stopping propofol, analgesia first, and dexmedetomidine or another agent per PADIS.",ref:["Adult Critical Care","/clinical/adult_critical_care"]},
+{id:36,type:"Order",stat:true,title:"Hyperkalemia in kidney failure",pt:{name:"TEST, JADE",mrn:"SIM0036",age:"74 y",sex:"F",wt:"52 kg",ht:"155 cm",allergy:"NKDA",loc:"ED Bay 9",dx:"Missed dialysis"},
+ labs:[["K","7.1","H"],["Glucose","96",""],["ECG","Peaked T waves","H"]],meds:[],notes:"",
+ order:"Insulin regular 10 units IV once. Sodium zirconium cyclosilicate 10 g PO.",
+ answer:"modify",why:"Missing calcium gluconate 1 g IV first for ECG changes, and missing dextrose 25 g with the insulin. With kidney failure, 52 kg and glucose 96, consider 5 units of insulin and check glucose hourly for 4 to 6 h. Arrange dialysis.",ref:["Adult Critical Care","/clinical/adult_critical_care"]},
+{id:37,type:"Order",stat:false,title:"3% saline drip for chronic hyponatremia",pt:{name:"TEST, KIWI",mrn:"SIM0037",age:"59 y",sex:"M",wt:"62 kg",ht:"175 cm",allergy:"NKDA",loc:"MICU 3",dx:"Na 112, alcohol use disorder, confused but no seizures"},
+ labs:[["Na","112","L"],["K","2.9","L"]],meds:[],notes:"Team goal: Na 130 by tomorrow.",
+ order:"Sodium chloride 3% at 100 mL/h continuous. Goal Na 130 in 24 h.",
+ answer:"modify",why:"An 18 mmol/L rise in 24 h is far above safe limits. He is high risk (alcohol, low K): max 8 mmol/L per 24 h. Use 3% boluses only for severe symptoms, check Na often, replace K, and have a plan for overcorrection (hypotonic fluid, desmopressin).",ref:["Adult Critical Care","/clinical/adult_critical_care"]},
+{id:38,type:"Order",stat:false,title:"ICU insulin infusion target",pt:{name:"TEST, LEMON",mrn:"SIM0038",age:"66 y",sex:"F",wt:"80 kg",ht:"165 cm",allergy:"NKDA",loc:"SICU 2",dx:"Postoperative sepsis"},
+ labs:[["Glucose","242","H"]],meds:[],notes:"",
+ order:"Insulin infusion, titrate to glucose 80 to 110 mg/dL.",
+ answer:"modify",why:"NICE-SUGAR: tight control (81 to 108) increased 90 day deaths and severe hypoglycemia. Recommend a target of 140 to 180 mg/dL per ADA and AACE, using the ICU insulin protocol.",ref:["Adult Critical Care","/clinical/adult_critical_care"]}
 ];
 let st={sel:0,res:{}},tab="order";
 const q=document.getElementById('queue'),m=document.getElementById('main');
