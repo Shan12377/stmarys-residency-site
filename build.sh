@@ -25,6 +25,7 @@ title: St. Mary's Virtual Residency
 - <a href="/tools/intervention_log" target="_blank">Intervention Log</a>
 - <a href="/tools/mtm_clinical_workbench" target="_blank">MTM Clinical Workbench</a>
 - <a href="/tools/cmr_command_center" target="_blank">CMR Command Center</a>
+- <a href="https://notebook.google.com/notebook/57e84ff1-88ae-4b28-863e-38afc3cf0636" target="_blank">Ask my notebook (Gemini Notebook)</a>
 - <a href="https://app.pyrls.com/home" target="_blank">Pyrls</a>
 
 ## Contents""",1).replace("- [[CLAUDE]]: rules for maintaining the wiki.\n","")
