@@ -1,3 +1,4 @@
+- **2026-10-19:** Every page now has a **Listen** button (bottom right) that reads the page aloud in a natural voice, with speed control.
 - **2026-10-17:** Reverification: 38 open items confirmed with sources. Two corrections: stress ulcer prophylaxis indications ([[Adult_Critical_Care]], SCCM/ASHP 2024) and pediatric ondansetron max 8 mg ([[Pediatric_Neonatal_Dosing]]).
 - **2026-10-17:** Journal club: [[JC_BRIDGE]], [[JC_PAUSE]], [[JC_NICE-SUGAR]] and [[JC_Tenecteplase_Followups]] added (9 trials total).
 - **2026-10-17:** Drug hub: [[Pediatric_Neonatal_Dosing]] and [[Pregnancy_Lactation]] built. Correction: Florida no longer requires 10 live CE hours (rule amended May 2025); see [[Med_Safety_and_Florida_Law]].
