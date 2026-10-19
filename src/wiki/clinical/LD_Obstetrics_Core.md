@@ -2,6 +2,8 @@
 
 **Pharmacist's job on L&D:** verify high alert infusions (magnesium, oxytocin), get emergency drugs out fast (hypertension, hemorrhage, eclampsia), check every drug for pregnancy and lactation safety, and catch the classic contraindications.
 
+**Watch first:** <a href="https://notebook.google.com/notebook/57e84ff1-88ae-4b28-863e-38afc3cf0636/artifact/edc9d903-2199-4d0d-adc0-57e84ace4849" target="_blank">Night Shift L&D Playbook</a> (8 minute video made from this page in your notebook; opens in Gemini Notebook).
+
 Sources: ACOG Practice Bulletin 222 (2020, gestational hypertension and preeclampsia); ACOG Committee Opinion 767 (2019, acute severe hypertension); ACOG Committee Opinion 797 (2020, GBS prophylaxis); ACOG Practice Bulletin 183 (2017, postpartum hemorrhage); WOMAN trial (Lancet 2017, TXA); ISMP High Alert list (magnesium sulfate IV, oxytocin IV).
 
 ---
