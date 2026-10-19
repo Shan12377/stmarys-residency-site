@@ -22,6 +22,29 @@ All three: **D** glucose 200 mg/dL or higher, or known diabetes at any glucose (
 
 **Change from older teaching:** the 2009 statement used K 3.3 as the cutoff and allowed a 0.1 units/kg bolus. The 2024 consensus uses **3.5** and no routine bolus ✅ [1]. Pediatric DKA follows ISPAD 2022 (see [[PICU_Core]]).
 
+### Potassium decision path before starting insulin
+
+```mermaid
+flowchart TD
+    Start["Check baseline serum potassium (K)<br/>before starting IV regular insulin ✅ [1]"] --> Decision{"What is the serum K?"}
+    Decision -->|"Below 3.5"| Red["HOLD INSULIN<br/>Give potassium about 10 mmol/h<br/>until K is above 3.5 ✅✅ [1][2]"]
+    Decision -->|"3.5 to 5.0"| Amber["ADD POTASSIUM + START INSULIN<br/>Add 10 to 20 mmol K per liter of fluid (goal K 4 to 5)<br/>Fixed rate IV regular insulin 0.1 units/kg/h ✅✅ [1][2]"]
+    Decision -->|"Above 5.0"| Green["START INSULIN ONLY<br/>No potassium; recheck every 2 h<br/>Fixed rate IV regular insulin 0.1 units/kg/h ✅ [1]"]
+    Red -->|"Once K is above 3.5"| Amber
+
+    style Start fill:#1e293b,stroke:#475569,color:#f8fafc
+    style Decision fill:#334155,stroke:#64748b,color:#f8fafc
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+```
+*Sources: Umpierrez GE et al., Diabetes Care 2024 consensus report [1][2] ✅✅*
+
+## How it works in the body (plain English for fast recall)
+- **Why potassium comes before insulin (the two door rule):** Think of insulin as a key that opens two doors on every cell at the same time: one door pulls sugar (glucose) out of the blood into the cell, and a second door (the sodium potassium pump) pulls potassium out of the blood into the cell. In DKA, acid in the blood has pushed potassium out of the cells, and high urine output has washed potassium out of the body. If serum potassium is already **below 3.5** and you turn on an insulin drip, insulin pushes the remaining potassium out of the blood into the cells, and serum potassium drops to a level that can cause dangerous heart rhythms. That is why you **hold insulin** and give potassium (about 10 mmol/h) until K is above 3.5 ✅✅ [1][2].
+- **Why you add dextrose when glucose falls below 250 (clear the acid, not just the sugar):** Blood glucose drops much faster than blood ketones (acid) clear. When glucose reaches **below 250 mg/dL**, do **not** turn off the insulin drip, because the body still needs insulin to shut off ketone production. Instead, add **D5 or D10** to the IV fluids to prevent hypoglycemia and lower the DKA insulin drip to **0.05 units/kg/h** until ketones clear ✅✅ [1][2].
+- **Timing in the body (why basal insulin goes in 1 to 2 hours before stopping the drip):** IV regular insulin starts working within minutes, and once you stop the pump its effect fades within 30 to 60 minutes. Subcutaneous basal insulin takes **1 to 2 hours** to absorb and take over. Giving subcutaneous basal insulin at least **1 to 2 hours before** stopping the IV drip prevents a gap with zero insulin in the body, which would let ketone production rebound ✅✅ [1][2].
+
 ## Fluids
 Isotonic saline or balanced crystalloid 500 to 1,000 mL/h for 2 to 4 h if heart and kidneys allow; smaller boluses in older adults and heart or kidney failure ✅ [1].
 

@@ -1,3 +1,4 @@
+- **2026-10-19:** Added potassium rules visual flowchart (below 3.5, 3.5 to 5.0, above 5.0) and plain English mechanism and timing guide to [[Insulin_IV_DKA]].
 - **2026-10-19:** First module video: **Night Shift L&D Playbook** (8 min), linked at the top of [[LD_Obstetrics_Core]].
 - **2026-10-19:** Highlight any word or phrase and tap **Explain** for a short explanation in context, with a Listen button. Rules for Antigravity and other AI editors are in AGENTS.md.
 - **2026-10-19:** Every page now has a **Listen** button (bottom right) that reads the page aloud in a natural voice, with speed control.
