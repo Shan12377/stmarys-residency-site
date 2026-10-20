@@ -17,6 +17,10 @@ Sources: ACOG Practice Bulletin 222 (2020, gestational hypertension and preeclam
 | Hydralazine IV | 5 to 10 mg over 2 min; repeat BP in 20 min; if high, 10 mg; if still high, switch to labetalol | Maternal hypotension and tachycardia; watch fetal heart rate |
 | Nifedipine immediate release PO | 10 mg; repeat BP in 20 min; if high, 20 mg; then 20 mg; if still high, switch to labetalol | Oral only. Never sublingual. Good option with no IV access |
 
+**How it works and timing in the body (plain English):**
+- **Why recheck BP at 10 minutes for IV labetalol vs 20 minutes for IV hydralazine and oral nifedipine:** IV labetalol blocks alpha 1 and beta receptors right away (onset 2 to 5 minutes, peak 5 to 15 minutes), so you know by **10 minutes** if the dose worked. IV hydralazine directly relaxes arterial muscle and takes longer to peak (10 to 20 minutes), and immediate release oral nifedipine must be swallowed and absorbed from the gut (15 to 20 minutes), so both are rechecked at **20 minutes** (ACOG CO 767, 2019) ✅.
+- **Why nifedipine is PO only (never sublingual, never bitten, never IV):** Nifedipine opens arteries by blocking calcium channels. If a capsule is bitten, placed under the tongue, or given IV, the entire dose hits the blood at once and drops the mother's blood pressure too fast. Because the placenta cannot auto regulate its own blood pressure, a sudden maternal BP crash starves the baby of blood flow (causing fetal heart rate drops) and triggers maternal reflex tachycardia (ACOG CO 767, 2019) ✅.
+
 **Quote it:** "ACOG recommends treating BP of 160 or 110 within 30 to 60 minutes with IV labetalol, IV hydralazine or immediate release oral nifedipine."
 
 ## 2. Magnesium sulfate (ISMP high alert)
@@ -30,11 +34,32 @@ Sources: ACOG Practice Bulletin 222 (2020, gestational hypertension and preeclam
 - **Antidote:** stop the infusion; calcium gluconate 1 g IV (10 mL of 10%) over about 3 minutes; support ventilation.
 - **Safety:** use premixed bags and a dedicated pump channel; the classic error is the loading bag running at the maintenance setting or a 20 g bag running wide open (ISMP). Avoid with myasthenia gravis.
 
+### Magnesium sulfate dosing and toxicity ladder
+
+```mermaid
+flowchart TD
+    Green["GREEN · THERAPEUTIC TARGET (2.5 to 5 mEq/L)<br/>Load: Magnesium sulfate 4 to 6 g IV over 15 to 20 min<br/>Maintenance: 1 to 2 g/h IV for 24 h after delivery or last seizure<br/>Severe renal impairment: 4 g load, then 1 g/h (max 20 g per 48 h)<br/>Check: reflexes present, respiratory rate at least 12, urine at least 100 mL per 4 h ✅✅"]
+    Amber["AMBER · EARLY TOXICITY WARNING (Above about 4 mEq/L)<br/>Sign: Patellar deep tendon reflexes weaken or disappear<br/>Action: Hold magnesium infusion and check serum magnesium level ✅"]
+    Red["RED · RESPIRATORY PARALYSIS RISK (About 10 mEq/L)<br/>Action: STOP magnesium infusion immediately<br/>Antidote: Calcium gluconate 1 g IV (10 mL of 10%) over about 3 minutes<br/>Support ventilation ✅✅"]
+
+    Green --> Amber --> Red
+
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+```
+*Sources: ACOG Practice Bulletin 222 (2020); FDA label, Magnesium Sulfate in 5% Dextrose Injection (2019) ✅✅*
+
+**How it works in the body (plain English):**
+- **The brake pedal on nerves:** Magnesium sits on calcium channels at nerve endings so overexcited brain nerves cannot fire into an eclamptic seizure.
+- **Why knee reflexes vanish before breathing stops:** The nerves that control your knee jerk reflex are more sensitive to rising magnesium than your breathing muscle (diaphragm) is. Losing knee reflexes (above about 4 mEq/L) is your built in alarm bell to stop the pump before magnesium reaches the level that stops breathing (about 10 mEq/L) (FDA label) ✅.
+- **Why calcium gluconate fixes it in minutes:** Calcium and magnesium compete for the exact same doorway on nerves and muscles. Flooding the blood with **calcium gluconate 1 g IV over about 3 minutes** pushes magnesium out of the way so the diaphragm can contract again (FDA label) ✅.
+
 **Quote it:** "Loss of deep tendon reflexes comes before respiratory depression; that's why nurses check reflexes on magnesium, and the antidote is 1 g of calcium gluconate."
 
 ## 3. Oxytocin (ISMP high alert)
 - Standardized concentration and pump library are the safety net [VERIFY St. Mary's concentration, for example 30 units in 500 mL].
-- Watch for tachysystole (more than 5 contractions in 10 minutes) and water intoxication (hyponatremia) with long, high dose infusions.
+- Watch for tachysystole (more than 5 contractions in 10 minutes) and water intoxication (hyponatremia) with long, high dose infusions (oxytocin looks structurally similar to antidiuretic hormone, so high doses tell the kidneys to hold onto free water).
 - Look alike risk: oxytocin bags near magnesium bags. Check the label every time.
 
 ## 4. Postpartum hemorrhage (ACOG PB 183, 2017; WOMAN 2017)
@@ -47,6 +72,29 @@ Order of use and the one contraindication to remember for each:
 | Carboprost (15 methyl PGF2 alpha) | 250 mcg IM every 15 to 90 minutes, max 8 doses (2 mg) | **Asthma** |
 | Misoprostol | 600 to 1,000 mcg rectal, sublingual or oral, once | (fever and shivering are common) |
 | Tranexamic acid | 1 g IV over 10 minutes; may repeat 1 g after 30 minutes if bleeding continues | Give within 3 hours of birth (WOMAN trial) |
+
+### Postpartum hemorrhage (PPH) drug order ladder
+
+```mermaid
+flowchart TD
+    Step1["GREEN · FIRST LINE UTEROTONIC (Start First)<br/>Oxytocin 10 to 40 units in 500 to 1,000 mL IV infusion, or 10 units IM ✅"]
+    Step2["AMBER · SECOND LINE UTEROTONICS + CLOT STABILIZER<br/>Methylergonovine 0.2 mg IM every 2 to 4 hours<br/>Carboprost (15 methyl PGF2 alpha) 250 mcg IM every 15 to 90 min (max 8 doses or 2 mg)<br/>Misoprostol 600 to 1,000 mcg rectal, sublingual or oral, once<br/>Tranexamic acid 1 g IV over 10 min within 3 hours of birth (may repeat 1 g after 30 min) ✅✅"]
+    Step3["RED · HARD CONTRAINDICATIONS (Check Before Giving)<br/>NO Methylergonovine in Hypertension or Preeclampsia (causes severe vasoconstriction)<br/>NO Carboprost in Asthma (causes bronchospasm)<br/>NO Tranexamic acid if more than 3 hours after birth ✅✅"]
+
+    Step1 --> Step2 --> Step3
+
+    style Step1 fill:#166534,stroke:#16a34a,color:#ffffff
+    style Step2 fill:#92400e,stroke:#d97706,color:#ffffff
+    style Step3 fill:#991b1b,stroke:#dc2626,color:#ffffff
+```
+*Sources: ACOG Practice Bulletin 183 (2017, postpartum hemorrhage); WOMAN trial (Lancet 2017, tranexamic acid) ✅✅*
+
+**How each PPH drug works in the body (why the contraindications exist):**
+- **The goal:** After the placenta delivers, the uterus must squeeze tightly like a fist to pinch shut the open blood vessels where the placenta was attached.
+- **Oxytocin (first line):** Squeezes the upper uterus rhythmically; works in 1 to 2 minutes IV (3 to 5 minutes IM) and is safe in both hypertension and asthma (ACOG PB 183, 2017) ✅.
+- **Methylergonovine (why never in hypertension):** Clamps down smooth muscle in the uterus **and** inside blood vessel walls. In a patient with high blood pressure or preeclampsia, clamping blood vessels can spike blood pressure into stroke range (ACOG PB 183, 2017) ✅.
+- **Carboprost (why never in asthma):** A prostaglandin F2 alpha drug that squeezes smooth muscle in the uterus **and** in the lung airways. In a patient with asthma, squeezing the airways triggers severe bronchospasm (ACOG PB 183, 2017) ✅.
+- **Tranexamic acid (why within 3 hours):** Instead of squeezing the uterus, TXA stops the body from dissolving blood clots that are trying to seal the bleeding vessels. Giving 1 g IV within **3 hours** of birth reduces death from bleeding (WOMAN trial, 2017) ✅.
 
 **Quote it:** "No methylergonovine in hypertension, no carboprost in asthma, and TXA within 3 hours."
 
