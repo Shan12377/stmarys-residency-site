@@ -15,6 +15,7 @@ This is Dr. Shallanda Hunter's private St. Mary's Virtual Residency site. Full c
 5. Run `git pull` before starting, every time; other agents also push here.
 
 ## Content rules (short version)
+- Sources go in a numbered "## Sources" list at the bottom, one per line as `n. [Title](url)`; the build turns each [n] in the text into a link. Put the original guideline or paper first (doi.org link when there is one), then a free summary after "· summary:".
 - Every dose or threshold has its source and year and a mark: ✅✅ two independent sources, ✅ one source, ⚠️ [VERIFY]. Link the source. Two versions of the same label count as one source.
 - No patient information. Cases are invented and labeled as teaching cases.
 - Never name or describe colleagues, managers or leaders.
