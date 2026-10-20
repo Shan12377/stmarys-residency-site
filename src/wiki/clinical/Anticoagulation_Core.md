@@ -10,7 +10,7 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 ## 1. DOAC dosing (the numbers you verify every shift)
 | Drug | Atrial fibrillation | VTE treatment | Kidney and other adjustments | Check | Sources |
 |---|---|---|---|---|---|
-| **Apixaban** | 5 mg BID | 10 mg BID x 7 days, then 5 mg BID; after 6 months, 2.5 mg BID for prevention | AF: 2.5 mg BID if **2 of 3**: age 80 or older, weight 60 kg or less, SCr 1.5 or higher | ✅✅ | [1] SmPC; [9] Pfizer label (India). Dialysis: NVAF trials excluded dialysis; VTE needs no renal adjustment per [9] ⚠️ [VERIFY US label wording] |
+| **Apixaban** | 5 mg BID | 10 mg BID x 7 days, then 5 mg BID; after at least 6 months of treatment, 2.5 mg BID to reduce recurrence (no set stop date; reassess at least yearly, CHEST 2021 [15]; AMPLIFY-EXT [16]; RENOVE [17]) | AF: 2.5 mg BID if **2 of 3**: age 80 or older, weight 60 kg or less, SCr 1.5 or higher | ✅✅ | [1] SmPC; [9] Pfizer label (India). Dialysis: NVAF trials excluded dialysis; VTE needs no renal adjustment per [9] ⚠️ [VERIFY US label wording] |
 | **Rivaroxaban** | 20 mg daily **with the evening meal**; 15 mg if CrCl 15 to 50 | 15 mg BID with food x 21 days, then 20 mg daily with food | 15 and 20 mg tablets must be taken with food | ✅✅ | [2] EBM Consult monograph (US label); [3] GlobalRPh renal page (avoid if CrCl below 15 in AF, below 30 in VTE) |
 | **Dabigatran** | 150 mg BID; 75 mg BID if CrCl 15 to 30 | After 5 to 10 days of parenteral therapy, 150 mg BID ⚠️ | Swallow capsules whole (opening raises exposure); P-gp interactions with renal impairment | ✅ (AF) | [4] FDA label (2012 version) |
 | **Edoxaban** | 60 mg daily; 30 mg if CrCl 15 to 50; **don't use in AF if CrCl above 95** (less effective) | After 5 to 10 days parenteral; 60 mg daily (30 mg if CrCl 15 to 50, weight 60 kg or less, or certain P-gp inhibitors) | With or without food; tablets may be crushed | ✅ | [13] Drugs.com label summary; [14] label PDF (HemOnc) to recheck |
@@ -22,6 +22,8 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 - **Why rivaroxaban 15 mg and 20 mg must be taken with food:** At the 15 mg and 20 mg strengths, an empty stomach absorbs only about two thirds of the tablet (66% bioavailability); taking it with food slows stomach emptying so nearly 100% is absorbed ✅ [2].
 - **Why dabigatran capsules can NEVER be opened, crushed, or put down a feeding tube:** Dabigatran comes inside a special tartaric acid pellet shell designed to slow absorption. Opening the capsule and sprinkling the pellets increases drug absorption into the blood by **75%**, turning a normal dose into an overdose that causes severe bleeding ✅ [4].
 - **Why edoxaban is avoided in atrial fibrillation when CrCl is above 95 mL/min:** About half of edoxaban is cleared by the kidneys; healthy kidneys clearing above 95 mL/min wash the drug out so fast that blood levels drop too low to prevent strokes ✅ [13][14].
+
+**Extended VTE treatment (after the first 3 to 6 months):** for unprovoked VTE or a persistent risk factor, CHEST 2021 suggests reduced dose apixaban 2.5 mg BID or rivaroxaban 10 mg daily over full dose, with no predefined stop date and a review at least yearly; not for VTE provoked by a major transient risk factor such as surgery ✅ [15]. AMPLIFY-EXT: recurrent VTE 1.7% (2.5 mg) vs 8.8% (placebo) over 12 months ✅ [16]. RENOVE: recurrence 2.2% reduced vs 1.8% full dose (noninferiority not met), clinically relevant bleeding 9.9% vs 15.2% ✅ [17].
 
 ## 2. Warfarin
 - **Supratherapeutic INR, no bleeding:** INR 4.5 to 10: hold doses; oral vitamin K is usually not needed (Crowther, Ann Intern Med 2009: vitamin K 1.25 mg did not reduce bleeding vs placebo) ✅✅ [5][6]. INR above 10: hold and give oral vitamin K 2.5 to 5 mg ✅ [6].
@@ -91,6 +93,9 @@ flowchart TD
 12. [NYSORA: Regional anesthesia in anticoagulated patients](https://www.nysora.com/regional-anesthesia-in-anticoagulated-patients)
 13. [Drugs.com: Savaysa dosage](https://www.drugs.com/dosage/savaysa.html)
 14. [Edoxaban label PDF (HemOnc)](https://hemonc.org/w/images/archive/9/96/20211231232858%21Edoxaban.pdf)
+15. [InpharmD: CHEST 2021 VTE guideline updates (extended phase, no predefined stop date, reassess yearly)](https://inpharmd.com/inquiries/07f4986748090377e7b55453247537ee1548098c5fee0b697ecb39673dbfddf8)
+16. [WikiJournalClub: AMPLIFY-EXT (NEJM 2013, 12 months of extended apixaban)](https://www.wikijournalclub.org/wiki/AMPLIFY-EXT)
+17. [The Hospitalist: RENOVE (Lancet 2025, reduced vs full dose extended DOAC)](https://www.the-hospitalist.org/hospitalist/article/39034/circulatory/evidence-for-reduced-dose-doac-in-those-at-high-risk-for-vte-recurrence-in-extended-phase-anticoagulation-the-renove-trial/)
 
 ## Verify locally at St. Mary's
 - Pharmacy to dose anticoagulation policy (warfarin, heparin, enoxaparin, argatroban).
