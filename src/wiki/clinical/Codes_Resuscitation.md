@@ -17,6 +17,22 @@ Sources: AHA Guidelines for CPR and ECC (2025; adult ALS, PALS Part 8, NRP Part 
 
 IV is preferred for drug delivery; IO if IV can't be placed quickly (AHA 2025).
 
+### Adult cardiac arrest drug sequence ladder (AHA 2025)
+
+```mermaid
+flowchart TD
+    Green["GREEN · NONSHOCKABLE RHYTHM (Asystole or PEA)<br/>High quality CPR + Epinephrine 1 mg IV/IO as soon as possible, repeat every 3 to 5 minutes ✅<br/>Search and treat reversible H's and T's ✅"]
+    Amber["AMBER · SHOCKABLE RHYTHM (VF or Pulseless VT)<br/>Defibrillate first; give Epinephrine 1 mg IV/IO every 3 to 5 minutes after initial defibrillation attempts fail ✅<br/>Refractory VF or pulseless VT: Amiodarone 300 mg IV/IO push, then 150 mg<br/>OR Lidocaine 1 to 1.5 mg/kg IV/IO, then 0.5 to 0.75 mg/kg ✅"]
+    Red["RED · DO NOT GIVE ROUTINELY IN ARREST (Specific Causes Only)<br/>NO routine Calcium, Sodium Bicarbonate, or Magnesium unless hyperkalemia, torsades, or tricyclic overdose ✅<br/>NO Vasopressin (removed from algorithm) ✅"]
+
+    Green --> Amber --> Red
+
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+```
+*Sources: AHA Guidelines for CPR and ECC (2025); AHA 2023 Toxicology Focused Update ✅✅*
+
 ## 2. Reversible causes and the drug you hand them (H's and T's)
 | Cause | Drug |
 |---|---|
@@ -34,6 +50,11 @@ IV is preferred for drug delivery; IO if IV can't be placed quickly (AHA 2025).
 - **Stable SVT:** adenosine 6 mg rapid push, then 12 mg (use 3 mg if central line, heart transplant, or patient on dipyridamole or carbamazepine; caffeine and theophylline reduce effect).
 - **Anaphylaxis:** epinephrine 0.5 mg IM (1 mg/mL) in the thigh, repeat every 5 to 15 minutes; refractory: epinephrine infusion.
 - **Malignant hyperthermia (after succinylcholine or volatile anesthetic):** dantrolene 2.5 mg/kg IV, repeat to effect (MHAUS). Know where the MH cart is and which product (Ryanodex reconstitutes much faster than Dantrium).
+
+**How code drugs work and timing in the body (plain English):**
+- **Why adenosine must be pushed in 1 second with an immediate flush (half life under 10 seconds):** Red blood cells and blood vessel walls destroy adenosine in **less than 10 seconds**. If you push it slowly or without a fast saline chase, it gets destroyed in the arm vein before it ever reaches the heart. Conversely, if the patient has a **central line** (which dumps straight into the heart), dipyridamole (which blocks adenosine breakdown), or a **transplanted heart** (denervated receptors are hypersensitive), standard 6 mg hits too hard and causes prolonged heart block, so you cut the first dose in half to **3 mg** ✅.
+- **Why 20% lipid emulsion saves a life in local anesthetic toxicity (the lipid sink):** Local anesthetics (like bupivacaine) are fat soluble drugs that lock onto heart sodium channels and stop the heart. Infusing **20% lipid emulsion** creates a "fat sponge" in the bloodstream that pulls the fat soluble anesthetic out of heart tissue and shuttles it safely to the liver and muscle (ASRA) ✅.
+- **Why sodium bicarbonate narrows a wide QRS in tricyclic antidepressant overdose:** Tricyclic overdoses block fast sodium channels on the heart. Giving **sodium bicarbonate 1 to 2 mEq/kg IV** does two things at once: the high load of sodium pushes past the blocked sodium channels, and raising blood pH (alkalinization) pulls the tricyclic drug off the heart receptors ✅.
 
 ## 4. After ROSC (post cardiac arrest care)
 - Avoid hypotension: common targets SBP at least 90 and MAP at least 65 mmHg; norepinephrine is the usual first vasopressor.

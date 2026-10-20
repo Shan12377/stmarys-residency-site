@@ -16,6 +16,22 @@
 
 BUD can never be longer than the drug's own stability allows ✅ [1].
 
+### USP 797 (2023) beyond use date (BUD) ladder
+
+```mermaid
+flowchart TD
+    Red["RED · IMMEDIATE USE (Emergencies Only, Outside a Hood)<br/>Start administration within 4 hours of beginning preparation<br/>No more than 3 sterile products; label with ingredients, preparer, and 4 h expiration ✅✅"]
+    Amber["AMBER · CATEGORY 1 (ISO 5 Hood in Unclassified Segregated Area)<br/>Room temperature: up to 12 hours<br/>Refrigerated: up to 24 hours ✅✅ [1][2]"]
+    Green["GREEN · CATEGORY 2 ASEPTIC (ISO 5 Hood in Classified Cleanroom Suite, No Sterility Test)<br/>Room temperature: up to 4 days<br/>Refrigerated: up to 10 days · Frozen: up to 45 days ✅✅ [1][2]"]
+
+    Red --> Amber --> Green
+
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+```
+*Sources: USP Chapter 797 (2023) via Wolters Kluwer [1] and Helmer [2]; Florida DOH USP 797 Checklist (2024) ✅✅*
+
 ## 2. Rooms and garbing
 - ISO 5 = hood (primary engineering control); ISO 7 = buffer room; ISO 8 = ante room (ISO 7 if it opens to a negative pressure buffer room) ✅ [Florida DOH: USP 797 inspection checklist (2024)](https://www.floridahealth.gov/licensing-and-regulation/enforcement/inspection-program/SterileCompounding-Revision1,USP7972022.August2024.pdf).
 - First air: never block HEPA air between the filter and the critical site.
@@ -32,21 +48,26 @@ BUD can never be longer than the drug's own stability allows ✅ [1].
 7. Look at the bag: particles, cloudiness, leaks.
 8. Peds and neonatal: recheck weight based math and the max dose; watch preservatives.
 
-## 4. Classic IV room catches
-- Phenytoin in dextrose, or pushed faster than 50 mg/min.
-- Liposomal amphotericin in saline.
-- Nitroglycerin in a PVC bag.
-- Amiodarone above 2 mg/mL going peripheral.
-- PN above 900 mOsm/L going peripheral.
-- 0.22 micron filter on a lipid containing PN.
-- Vincristine in a syringe.
-- 10 fold rate errors (144 vs 14.4 mL/h).
-- A Category 1 product labeled with a 48 h refrigerated BUD.
+## 4. Classic IV room catches (and the plain English reason why)
+- **Phenytoin in dextrose, or pushed faster than 50 mg/min:** Phenytoin is only soluble at very high, alkaline pH (around pH 12). Dextrose bags are slightly acidic (around pH 4 to 5), which immediately turns phenytoin into solid white crystals in the bag or line (use normal saline only and a 0.22 micron in line filter). Pushing faster than 50 mg/min (mainly because of its propylene glycol solvent) causes severe hypotension and arrhythmias ✅.
+- **Liposomal amphotericin in saline:** Salt ions in normal saline break apart the delicate fat spheres (liposomes) holding amphotericin, causing the drug to clump and precipitate. Mix in **dextrose (D5W) only** ✅.
+- **Nitroglycerin in a PVC bag:** Nitroglycerin is fat loving and sticks right into soft PVC plastic walls (losing up to 40 to 80% of the dose into the bag wall). Always use **glass or non PVC polyolefin bags** ✅.
+- **Amiodarone above 2 mg/mL going peripheral:** Concentrations above 2 mg/mL burn and clot peripheral veins (phlebitis); use a central line for concentrated infusions ✅.
+- **PN above 900 mOsm/L going peripheral:** High osmolarity sucks water out of delicate peripheral vein walls and causes thrombosis and extravasation injury ✅.
+- **0.22 micron filter on a lipid containing PN:** Fat droplets in lipid emulsions are larger than 0.22 microns and clog a 0.22 micron bacterial filter; lipids and 3 in 1 TPN bags use a **1.2 micron filter** ✅.
+- **Vincristine in a syringe:** Vincristine is fatal if given intrathecally (into the spine). Dispense vincristine in a **minibag**, never a syringe, so it can never be connected to a spinal needle (ISMP) ✅.
+- **10 fold rate errors (144 vs 14.4 mL/h).**
+- **A Category 1 product labeled with a 48 h refrigerated BUD:** Category 1 max is 12 h room temp or 24 h refrigerated ✅✅ [1][2].
 
 Practice these in the simulator (My Tools, IV room cases).
 
 ## Sources
 1. [Wolters Kluwer: USP 797 categories and BUDs](https://www.wolterskluwer.com/en/expert-insights/usp-797-translating-low-medium-and-high-risk-compounding-into-categories)
 2. [Helmer: USP 797 cold storage and BUD table](https://blog.helmerinc.com/usp-797-cold-storage-requirements-what-compounding-pharmacies-need-to-know-in-2025)
+
+## Verify locally at St. Mary's
+- Cleanroom classification (Category 1 segregated area vs Category 2 cleanroom suite) and default BUD labels.
+- IV workflow camera system (DoseEdge, Epic Dispense Prep, or pull back policy).
+- Standard peripheral vs central concentration limits in the hospital IV guidelines.
 
 *Last verified: 2026-10-17.*

@@ -22,6 +22,25 @@ Regimens by infection: [[Antimicrobial_Guide]]. Drug pages: [[Vancomycin]] · [[
 
 **Pharmacist moves:** first doses go STAT; give a full loading dose even when kidney function is poor, then adjust maintenance; vancomycin load 20 to 35 mg/kg ([[Vancomycin]]).
 
+### Sepsis first hour priority ladder (Surviving Sepsis Campaign 2021)
+
+```mermaid
+flowchart TD
+    Green["GREEN · HOUR 1: EMPIRIC ANTIMICROBIALS + FLUID RESUSCITATION<br/>Sepsis or septic shock likely: Give IV antimicrobials within 1 hour ✅ [1]<br/>Give FULL loading dose regardless of kidney function (vancomycin 20 to 35 mg/kg actual weight, max 3,000 mg) ✅✅<br/>Fluids: At least 30 mL/kg balanced crystalloid within first 3 hours ✅ [1]"]
+    Amber["AMBER · VASOPRESSOR ESCALATION FOR SEPTIC SHOCK (MAP Goal 65)<br/>First pressor: Norepinephrine to target MAP 65 mmHg ✅ [1]<br/>Second pressor: Add Vasopressin rather than pushing norepinephrine higher ✅ [1]<br/>Refractory shock (norepinephrine or epinephrine 0.25 mcg/kg/min or more for at least 4 h): Add Hydrocortisone 200 mg/day IV (50 mg q6h or infusion) ✅✅ [1]"]
+    Red["RED · STEWARDSHIP AND KIDNEY TRAPS TO CATCH<br/>Maintenance doses: Adjust for CrCl AFTER the full loading dose (watch cefepime neurotoxicity when CrCl is 60 or less) ✅<br/>Prolonged infusion suggested for beta lactam maintenance doses ✅ [1]<br/>Narrow or stop MRSA and double gram negative coverage once cultures or MRSA nares return ✅ [1]"]
+
+    Green --> Amber --> Red
+
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+```
+*Sources: Surviving Sepsis Campaign 2021 Guideline [1]; 2020 Vancomycin Consensus Guideline [[Vancomycin]] ✅✅*
+
+**Why the first antibiotic dose is NEVER reduced for bad kidneys (plain English):**
+- **The bucket rule (volume of distribution vs clearance):** Think of the patient's body as an empty bucket that needs to be filled to the top line right now to kill bacteria. Your **first dose (loading dose)** fills the bucket, which depends only on the size of the bucket (body weight and fluid volume), **not** on the drain at the bottom (the kidneys). In sepsis, leaky capillaries and IV fluids actually make the bucket *bigger*. Your **maintenance doses** replace what leaks out the drain over time, so you only adjust the second dose onward for kidney function ✅ [1].
+
 ## 2. Beta lactam allergy
 - Cross reactivity between penicillins and cephalosporins comes from the **R1 side chain**, not the beta lactam ring ✅ [2].
 - **Cefazolin** shares no side chains with other US beta lactams, so cross reactivity is near zero ✅ [2].
@@ -29,8 +48,14 @@ Regimens by infection: [[Antimicrobial_Guide]]. Drug pages: [[Vancomycin]] · [[
 - Severe delayed reactions (SJS, TEN, DRESS) mean avoid the class and call allergy or ID ⚠️ [VERIFY parameter wording].
 - Ask: what happened, when, how was it treated, and has the patient taken a beta lactam since? Clarifying a label is one of the highest value pharmacist interventions.
 
+![3D visual memory aid: two beta lactam antibiotic molecules sharing the same central silver square ring while only the outer green side chain determines whether the golden immune antibody can bind](images/id_betalactam_sidechain.jpg)
+
+**Why cefazolin is safe in almost all penicillin allergies (plain English):**
+- Old teaching blamed the square beta lactam core ring for allergies, but the immune system actually recognizes the **R1 side chain** sticking off the side like a name tag. **Cefazolin** has a completely unique side chain that does not match penicillin, amoxicillin, or any other US beta lactam, so the allergy antibody does not recognize it ✅ [2].
+
 ## 3. C. difficile (IDSA 2021)
 Fidaxomicin 200 mg PO BID x 10 days preferred; vancomycin 125 mg **PO** QID x 10 days alternative. IV vancomycin does not treat C. diff ✅✅ [3][4]. See [[Cases_Anticoag_and_Verification]] case 5.
+- **Why IV vancomycin fails for C. diff and PO vancomycin fails for everything else:** Vancomycin is a giant molecule that cannot cross the gut wall in either direction. Given **IV**, it stays in the blood and never reaches the inside of the colon where *C. diff* lives. Given **PO**, it stays trapped inside the gut tube (which is why it kills *C. diff* right where the toxin is made, and why oral vancomycin never treats pneumonia, skin infections, or bloodstream infections) ✅✅ [3][4].
 
 ## 4. IV to PO switch
 Stable, afebrile, improving, working gut, taking other oral meds. Good oral options: fluoroquinolones, linezolid, metronidazole, TMP SMX, doxycycline, fluconazole. Separate fluoroquinolones and tetracyclines from calcium, iron, magnesium and binders ✅ (labels). Not for meningitis, endocarditis or S. aureus bacteremia without ID input ⚠️ [VERIFY]. cUTI with gram negative bacteremia can step down to oral when improving ✅ [5].
@@ -41,7 +66,7 @@ Stable, afebrile, improving, working gut, taking other oral meds. Good oral opti
 - **Vancomycin plus piperacillin tazobactam:** more AKI; watch SCr ([[Vancomycin]]).
 - **Linezolid:** serotonin syndrome with SSRIs and SNRIs; low platelets with long courses ✅ (FDA).
 - **Ceftriaxone plus IV calcium in neonates:** contraindicated ([[NICU_Core]]).
-- **Asymptomatic bacteriuria:** don't treat positive urine cultures without symptoms Screen and treat only in **pregnancy** (4 to 7 days) and **before urologic procedures with mucosal trauma** (culture directed, 1 to 2 doses 30 to 60 min before). Don't treat in older adults with delirium or a fall without urinary or systemic signs, catheters, diabetes, or nonurologic surgery ✅✅ [AAFP: asymptomatic bacteriuria (IDSA 2019)](https://www.aafp.org/afp/2020/0715/p99.html); [ACP IM Matters: IDSA 2019 ASB guideline](https://immattersacp.org/weekly/archives/2019/03/26/2.htm).
+- **Asymptomatic bacteriuria:** don't treat positive urine cultures without symptoms. Screen and treat only in **pregnancy** (4 to 7 days) and **before urologic procedures with mucosal trauma** (culture directed, 1 to 2 doses 30 to 60 min before). Don't treat in older adults with delirium or a fall without urinary or systemic signs, catheters, diabetes, or nonurologic surgery ✅✅ [AAFP: asymptomatic bacteriuria (IDSA 2019)](https://www.aafp.org/afp/2020/0715/p99.html); [ACP IM Matters: IDSA 2019 ASB guideline](https://immattersacp.org/weekly/archives/2019/03/26/2.htm).
 - **Durations are shorter than habit:** CAP at least 5 days, HAP 7 days [10], cUTI 7 days (5 to 7 with a fluoroquinolone), cellulitis about 5 days ✅✅ [7][5][8].
 
 ## 6. Stewardship workflow (every antibiotic, day 2 to 3)
@@ -61,5 +86,11 @@ Stable, afebrile, improving, working gut, taking other oral meds. Good oral opti
 8. [AHRQ: Cellulitis clinician guide](https://www.ahrq.gov/sites/default/files/wysiwyg/antibiotic-use/telemedicine/cellulitis-clinician-guide.pdf)
 9. [UCSF: HAP/VAP algorithm](https://idmp.ucsf.edu/node/16091)
 10. [Emergency Care BC: HAP treatment](https://emergencycarebc.ca/clinical_resource/hospital-acquired-pneumonia-adult-treatment)
+
+## Verify locally at St. Mary's
+- Sepsis order set and whether beta lactams run as extended infusions after the first STAT dose.
+- Pharmacy to dose vancomycin and aminoglycoside policy (Bayesian software vs two level pharmacokinetics).
+- IV to PO automatic conversion policy and eligible medications.
+- Restricted antimicrobial approval list and C. difficile testing/treatment algorithm.
 
 *Last verified: 2026-10-17.*

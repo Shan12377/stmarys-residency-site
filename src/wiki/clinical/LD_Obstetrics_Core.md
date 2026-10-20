@@ -50,6 +50,8 @@ flowchart TD
 ```
 *Sources: ACOG Practice Bulletin 222 (2020); FDA label, Magnesium Sulfate in 5% Dextrose Injection (2019) ✅✅*
 
+![3D visual memory aid: glowing blue violet magnesium ions sitting inside nerve terminal calcium channels as a calm brake pedal while golden calcium ions compete outside to reopen the channel](images/ld_magnesium_calcium_synapse.jpg)
+
 **How it works in the body (plain English):**
 - **The brake pedal on nerves:** Magnesium sits on calcium channels at nerve endings so overexcited brain nerves cannot fire into an eclamptic seizure.
 - **Why knee reflexes vanish before breathing stops:** The nerves that control your knee jerk reflex are more sensitive to rising magnesium than your breathing muscle (diaphragm) is. Losing knee reflexes (above about 4 mEq/L) is your built in alarm bell to stop the pump before magnesium reaches the level that stops breathing (about 10 mEq/L) (FDA label) ✅.
@@ -88,6 +90,8 @@ flowchart TD
     style Step3 fill:#991b1b,stroke:#dc2626,color:#ffffff
 ```
 *Sources: ACOG Practice Bulletin 183 (2017, postpartum hemorrhage); WOMAN trial (Lancet 2017, tranexamic acid) ✅✅*
+
+![3D visual memory aid: three side by side smooth muscle targets showing a contracting uterus on the left, a constricted blood vessel in the center for methylergonovine in hypertension, and narrowed lung airways on the right for carboprost in asthma](images/ld_uterine_contraction_vascular.jpg)
 
 **How each PPH drug works in the body (why the contraindications exist):**
 - **The goal:** After the placenta delivers, the uterus must squeeze tightly like a fist to pinch shut the open blood vessels where the placenta was attached.

@@ -38,12 +38,32 @@ Sources: AHA/AAP Pediatric Advanced Life Support guideline (2025, Part 8, Circul
 
 Pharmacist watch: fosphenytoin is dosed in **PE (phenytoin equivalents)**; valproate is avoided in suspected mitochondrial or metabolic disease and in young children with unknown liver disease.
 
+### Status epilepticus timed ladder (AES 2016 and ESETT 2019)
+
+```mermaid
+flowchart TD
+    Green["GREEN · 0 TO 20 MINUTES: CHECK GLUCOSE + FIRST LINE BENZODIAZEPINE<br/>0 to 5 min: Stabilize airway and breathing; check fingerstick glucose (give Dextrose D10W 5 to 10 mL/kg if low)<br/>5 to 20 min: Lorazepam 0.1 mg/kg IV (max 4 mg, may repeat once) OR Midazolam 0.2 mg/kg IM (max 10 mg) ✅"]
+    Amber["AMBER · 20 TO 40 MINUTES: ESETT SECOND LINE (All 3 Equally Effective, Pick One Fast)<br/>Levetiracetam 60 mg/kg IV (max 4,500 mg)<br/>OR Fosphenytoin 20 mg PE/kg IV (max 1,500 mg PE)<br/>OR Valproate 40 mg/kg IV (max 3,000 mg; avoid in young children with unknown liver or mitochondrial disease) ✅✅"]
+    Red["RED · 40+ MINUTES: REFRACTORY STATUS EPILEPTICUS<br/>Continuous IV infusion (Midazolam, Pentobarbital, or Ketamine) with intubation and continuous EEG ✅"]
+
+    Green --> Amber --> Red
+
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+```
+*Sources: American Epilepsy Society Status Epilepticus Guideline (2016); ESETT trial (NEJM 2019) ✅✅*
+
+**Why benzodiazepines stop working if a seizure goes past 20 minutes (plain English):**
+- **The disappearing GABA doors:** Benzodiazepines (lorazepam, midazolam) stop seizures by locking onto **GABA receptors** (the brain's natural calm down brakes). During the first 5 to 15 minutes of a seizure, those GABA receptors sit on the outside of brain cells where the drug can reach them. After 15 to 20 minutes of nonstop seizing, brain cells pull their GABA receptors inside the cell where benzodiazepines cannot reach them anymore, while excitatory receptors multiply on the surface. That is why giving a first benzodiazepine on time is critical, and why at 20 minutes you must switch to a **second line drug** (levetiracetam, fosphenytoin, or valproate) that works through a completely different door ✅✅.
+
 ## 4. Pediatric DKA (ISPAD 2022)
 - Fluids first: 10 to 20 mL/kg isotonic bolus.
 - **Insulin 0.05 to 0.1 units/kg/h IV, no bolus**, started after the first hour of fluids.
 - Potassium: if the child is hypokalemic, start potassium replacement before insulin (ISPAD 2022); many protocols hold insulin until K is at least 3.3 [VERIFY St. Mary's cutoff]. If K is normal, add it with insulin; if high, wait for urine output. **Adults are different:** the 2024 adult consensus holds insulin until K is above 3.5 (see [[Insulin_IV_DKA]]).
 - Add dextrose when glucose falls to about 250 to 300 mg/dL (two bag system).
 - **Cerebral edema** (headache, falling heart rate, rising BP, change in mental status): mannitol 0.5 to 1 g/kg over 10 to 15 min, or 3% saline 2.5 to 5 mL/kg. Have it available.
+- **Why pediatric DKA never gets an insulin bolus (plain English):** A child's brain is still growing inside a tight skull. If you push an IV insulin bolus or drop blood glucose too fast in the first hour, blood osmolality drops faster than brain cells can adjust, and water rushes into the child's brain (cerebral edema, which can cause brain herniation). Giving isotonic fluids for the first hour and starting a gentle drip at **0.05 to 0.1 units/kg/h with no bolus** lets blood sugar come down smoothly (ISPAD 2022) ✅.
 
 ## 5. Rapid sequence intubation (pediatric)
 | Drug | Dose |

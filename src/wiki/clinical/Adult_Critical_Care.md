@@ -24,6 +24,7 @@ Related: [[Norepinephrine]] · [[Insulin_IV_DKA]] · [[Potassium_Chloride_IV]] �
 | Sleep | No melatonin recommendation; don't use propofol for sleep | ✅ [2] |
 
 **Propofol infusion syndrome (PRIS):** risk rises above 4 mg/kg/h (about 67 mcg/kg/min) and after 48 h, plus catecholamines or steroids. Signs: metabolic acidosis, bradycardia, rhabdomyolysis, high triglycerides, AKI. Stop propofol ✅ [3]. Monitor triglycerides and CK on longer infusions; count propofol's lipid calories (about 1.1 kcal/mL) in nutrition ⚠️ [VERIFY label].
+- **Why PRIS happens in the body:** At high doses over 48 hours, propofol blocks mitochondria from burning fatty acids for energy. Starved heart and skeletal muscle cells break down (rhabdomyolysis, lactic acidosis, bradycardia), and unburned fat piles up in the blood (high triglycerides) ✅ [3].
 
 ## 3. Hyperkalemia
 | Step | Drug and dose | Check |
@@ -35,11 +36,37 @@ Related: [[Norepinephrine]] · [[Insulin_IV_DKA]] · [[Potassium_Chloride_IV]] �
 
 KDIGO severity: severe = K above 6.5, or 6.1 to 6.5 with ECG changes ✅ [5].
 
+### Hyperkalemia 3 step rescue ladder (Protect, Shift, Remove)
+
+```mermaid
+flowchart TD
+    Step1["RED · STEP 1: SHIELD THE HEART IMMEDIATELY (Does NOT lower K)<br/>Calcium gluconate 1 g (10 mL of 10%) IV over 2 to 5 min<br/>Repeat in 5 min if ECG changes persist ✅✅ [4][5]"]
+    Step2["AMBER · STEP 2: SHIFT POTASSIUM INTO CELLS (Temporary hiding place)<br/>Regular insulin 10 units IV + Dextrose 25 g (50 mL D50)<br/>Use 5 units insulin if kidney failure, low weight, or elderly; check glucose hourly for 4 to 6 h<br/>Adjunct: Nebulized albuterol 10 to 20 mg; sodium bicarbonate only if acidotic ✅✅ [4][5]"]
+    Step3["GREEN · STEP 3: REMOVE POTASSIUM FROM THE BODY (Permanent exit)<br/>Sodium zirconium cyclosilicate 10 g PO or Patiromer 8.4 g PO<br/>Loop diuretic (furosemide) if kidneys make urine, or hemodialysis ✅✅ [4][5]"]
+
+    Step1 --> Step2 --> Step3
+
+    style Step1 fill:#991b1b,stroke:#dc2626,color:#ffffff
+    style Step2 fill:#92400e,stroke:#d97706,color:#ffffff
+    style Step3 fill:#166534,stroke:#16a34a,color:#ffffff
+```
+*Sources: Emergency Care BC [4]; Munson Healthcare Adult Acute Hyperkalemia Reference / KDIGO [5] ✅✅*
+
+![3D visual memory aid: split view showing a human heart surrounded by a protective golden calcium shield on the left while golden potassium ions shift from the blood vessel into skeletal muscle fibers on the right](images/icu_hyperkalemia_heart_shield.jpg)
+
+**How hyperkalemia treatment works and timing in the body (plain English):**
+- **Step 1 (Calcium gluconate, works in 1 to 3 minutes, lasts 30 to 60 minutes):** High blood potassium makes heart muscle trigger happy and ready to fibrillate. Calcium does **not** change the potassium number on the lab test at all; it raises the electrical firing threshold of heart cells so the heart does not arrest while you wait for Step 2 to work ✅✅ [4][5].
+- **Step 2 (IV regular insulin + dextrose, starts in 15 to 30 minutes, lasts 4 to 6 hours):** Insulin turns on the sodium potassium pump and hides potassium inside muscle cells (dropping serum K by about 0.5 to 1.2 mEq/L). In kidney failure, kidneys cannot clear insulin, so insulin stays in the blood much longer than dextrose (1 hour) and causes late hypoglycemia 3 to 6 hours later. That is why kidney failure patients get **5 units** of insulin instead of 10 units and get hourly glucose checks for 4 to 6 hours ✅✅ [4][5].
+- **Step 3 (Binders, diuretics, dialysis):** Because insulin only hides potassium inside cells temporarily, potassium will leak right back out into the blood unless you actually remove it in the stool (binders) or urine/dialysis ✅✅ [4][5].
+
 ## 4. Hyponatremia
 - **Severe symptoms (seizure, coma):** 3% saline **bolus** 150 mL over 20 min, repeat if needed; aim for about a 5 mmol/L rise in the first hour ✅ [6]. US practice: 100 to 150 mL of 3% over 10 to 20 min, repeat up to 3 times; 100 mL raises Na about 2 to 3 mmol/L; first goal a 4 to 6 rise ✅✅ [6] · [ACEP: severe hyponatremia](https://acep.org/criticalcare/newsroom/newsroom-articles/september2022/the-resuscitationists-approach-to-severe-hyponatremia).
 - **Limits:** 10 mmol/L in the first 24 h, then 8 per 24 h (European) ✅✅ [6][7]. **High risk** (alcohol use disorder, low potassium, malnutrition, liver disease): 8 per 24 h max ✅ [7].
 - **Overcorrection:** stop hypertonic fluid; hypotonic fluid with or without desmopressin ✅ [6].
 - **Debate:** newer data (MacMillan 2023) suggest osmotic demyelination is rare and slow correction has its own risks; follow St. Mary's protocol ✅ [7].
+- **Why the 8 to 10 mmol/L per 24 hour speed limit exists (plain English):** Water always follows salt. When blood sodium is low, water moves into brain cells and makes them swell (causing seizures). If you dump too much salt into the blood too fast, water gets sucked violently out of brain cells, shrinking them and ripping off their protective nerve insulation (osmotic demyelination syndrome). Raising sodium by **4 to 6 mmol/L** in the first hour stops the seizure safely, and staying under **8 to 10 mmol/L per 24 hours** protects the brain's myelin insulation ✅✅ [6][7].
+
+![3D visual memory aid: glowing human brain neuron with myelinated axon surrounded by balanced water droplets and golden sodium spheres illustrating delicate osmotic balance](images/icu_hyponatremia_brain_osmosis.jpg)
 
 ## 5. ICU glucose
 - Start an insulin infusion above 180 mg/dL; target **140 to 180 mg/dL** (ADA, AACE) ✅✅ [8][9].
@@ -62,5 +89,11 @@ KDIGO severity: severe = K above 6.5, or 6.1 to 6.5 with ECG changes ✅ [5].
 7. [AJKD blog: NephMadness 2024 hyponatremia correction](https://ajkdblog.org/2024/03/01/nephmadness-2024-hyponatremia-region/)
 8. [AACE: IV insulin hospital protocol](https://pro.aace.com/pdfs/diabetes/IV-Insulin-Hospital-Protocol-FINAL-090320.pdf)
 9. [WikiJournalClub: NICE-SUGAR](https://www.wikijournalclub.org/wiki/NICE-SUGAR)
+
+## Verify locally at St. Mary's
+- ICU vasopressor standard concentrations and central vs peripheral line policy.
+- Adult hyperkalemia order set (insulin dose in renal impairment, potassium binder on formulary).
+- 3% hypertonic saline storage and central vs peripheral bolus policy for severe hyponatremia.
+- ICU insulin infusion calculator or column protocol.
 
 *Last verified: 2026-10-17.*

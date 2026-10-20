@@ -17,11 +17,22 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 
 **Classic catches:** rivaroxaban 15 or 20 mg without food; apixaban reduced to 2.5 mg with only one criterion; DOAC plus a heparin product at the same time; DOAC in a prosthetic or mechanical heart valve (not recommended per label) ✅ [9]; strong CYP3A4 and P-gp inducers or inhibitors.
 
+**How DOACs work and why their weird rules exist (plain English):**
+- **Apixaban 2 of 3 rule (Age 80 or older, Weight 60 kg or less, SCr 1.5 or higher):** Apixaban blocks Factor Xa directly. Having only 1 of the 3 risk factors does not raise drug levels enough to justify cutting the dose in half, and underdosing leaves the patient unprotected against a stroke in atrial fibrillation. You only reduce to **2.5 mg BID** when **at least 2 of the 3** are present ✅✅ [1][9].
+- **Why rivaroxaban 15 mg and 20 mg must be taken with food:** At the 15 mg and 20 mg strengths, an empty stomach absorbs only about two thirds of the tablet (66% bioavailability); taking it with food slows stomach emptying so nearly 100% is absorbed ✅ [2].
+- **Why dabigatran capsules can NEVER be opened, crushed, or put down a feeding tube:** Dabigatran comes inside a special tartaric acid pellet shell designed to slow absorption. Opening the capsule and sprinkling the pellets increases drug absorption into the blood by **75%**, turning a normal dose into an overdose that causes severe bleeding ✅ [4].
+- **Why edoxaban is avoided in atrial fibrillation when CrCl is above 95 mL/min:** About half of edoxaban is cleared by the kidneys; healthy kidneys clearing above 95 mL/min wash the drug out so fast that blood levels drop too low to prevent strokes ✅ [13][14].
+
 ## 2. Warfarin
 - **Supratherapeutic INR, no bleeding:** INR 4.5 to 10: hold doses; oral vitamin K is usually not needed (Crowther, Ann Intern Med 2009: vitamin K 1.25 mg did not reduce bleeding vs placebo) ✅✅ [5][6]. INR above 10: hold and give oral vitamin K 2.5 to 5 mg ✅ [6].
 - **Major bleeding:** hold warfarin, vitamin K 10 mg IV, plus 4F-PCC by INR ✅✅ [6][[4F_PCC]].
 - Route: oral for non urgent reversal; IV when faster reversal is needed; avoid IM; avoid high doses (5 to 10 mg) without bleeding because they cause warfarin resistance ✅ [6].
 - Interactions to catch: antibiotics (TMP SMX, fluoroquinolones, metronidazole, fluconazole), amiodarone, rifampin; new diet or illness.
+
+**How warfarin reversal works in the body (why you give 4F-PCC + vitamin K together):**
+- **The relay race in the liver:** Warfarin stops the liver from using vitamin K to build clotting Factors II, VII, IX, and X (plus Proteins C and S).
+- **4F-PCC is the instant borrowed army (works in 15 to 30 minutes, wears off in 12 to 24 hours):** 4F-PCC puts pre made human clotting Factors II, VII, IX, and X directly into the vein so bleeding stops right now, but those borrowed factors start wearing off after 12 to 24 hours ✅✅ [6][[4F_PCC]].
+- **Vitamin K 10 mg IV restarts the patient's own factory (takes 6 to 24 hours to take over):** Warfarin stays in the body for days (half life 20 to 60 hours). If you give 4F-PCC without vitamin K, the INR rebounds right back up once the 4F-PCC wears off ✅✅ [6][[4F_PCC]].
 
 ## 3. Around procedures (CHEST 2022 and PAUSE)
 - **Warfarin:** stop about 5 days before ✅✅ [7] (BRIDGE protocol); [8] UConn handout.
@@ -38,6 +49,24 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 | Apixaban, rivaroxaban, edoxaban | 72 h | 6 h | ✅ | [12] NYSORA summary of ASRA 2021 |
 | Dabigatran | 120 h by default (shorter by CrCl) | 6 h | ✅ | [12] |
 | Warfarin | Normal INR (usually about 5 days off) | | ⚠️ | [VERIFY ASRA current edition] |
+
+### Epidural and spinal catheter timing ladder (ASRA)
+
+```mermaid
+flowchart TD
+    Green["GREEN · SAFE TO RESTART AFTER CATHETER REMOVAL<br/>Enoxaparin: Wait at least 4 hours after catheter removal ✅<br/>Apixaban, Rivaroxaban, Edoxaban, Dabigatran: Wait at least 6 hours after catheter removal ✅"]
+    Amber["AMBER · HOLD BEFORE EPIDURAL PLACEMENT OR REMOVAL (LMWH)<br/>Enoxaparin prophylaxis (40 mg daily or 30 mg q12h): Hold at least 12 hours ✅✅<br/>Enoxaparin treatment (1 mg/kg q12h or 1.5 mg/kg daily): Hold at least 24 hours ✅✅"]
+    Red["RED · LONG HOLD BEFORE EPIDURAL (DOACs and Warfarin)<br/>Apixaban, Rivaroxaban, Edoxaban: Hold 72 hours before neuraxial procedure ✅<br/>Dabigatran: Hold 120 hours by default (shorter by CrCl) ✅<br/>Warfarin: Hold about 5 days and confirm normal INR ⚠️"]
+
+    Red --> Amber --> Green
+
+    style Green fill:#166534,stroke:#16a34a,color:#ffffff
+    style Amber fill:#92400e,stroke:#d97706,color:#ffffff
+    style Red fill:#991b1b,stroke:#dc2626,color:#ffffff
+```
+*Sources: FDA Lovenox label [1]; ASRA Neuraxial Guideline summary via NYSORA [12] ✅✅*
+
+**Why pulling an epidural catheter is just as dangerous as placing it:** Pulling an epidural tube out of the spine scrapes tiny veins inside the tight bony spinal canal. If a blood thinner is active when the nurse pulls the catheter out, blood pools inside that closed bony space (spinal epidural hematoma) and crushes the spinal cord, causing permanent paralysis. Always hold the blood thinner before **both** placement and removal ✅✅ [[Enoxaparin]][12].
 
 ## 5. Pharmacist verification checklist
 1. Indication and the right dose for it.
@@ -62,5 +91,10 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 12. [NYSORA: Regional anesthesia in anticoagulated patients](https://www.nysora.com/regional-anesthesia-in-anticoagulated-patients)
 13. [Drugs.com: Savaysa dosage](https://www.drugs.com/dosage/savaysa.html)
 14. [Edoxaban label PDF (HemOnc)](https://hemonc.org/w/images/archive/9/96/20211231232858%21Edoxaban.pdf)
+
+## Verify locally at St. Mary's
+- Pharmacy to dose anticoagulation policy (warfarin, heparin, enoxaparin, argatroban).
+- Anticoagulant reversal order set (4F-PCC fixed vs weight based dosing for Factor Xa inhibitors).
+- Anesthesia neuraxial hold protocol and EHR hard stops when an epidural catheter is in place.
 
 *Last verified: 2026-10-17.*

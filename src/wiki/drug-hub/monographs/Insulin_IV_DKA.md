@@ -40,6 +40,8 @@ flowchart TD
 ```
 *Sources: Umpierrez GE et al., Diabetes Care 2024 consensus report [1][2] ✅✅*
 
+![3D visual memory aid: insulin acting as a glowing molecular key on the cell membrane that opens two doors at once, pulling white glucose crystals through one channel and golden potassium ions through the adjacent pump channel into the cell](images/dka_insulin_potassium_cell_doors.jpg)
+
 ## How it works in the body (plain English for fast recall)
 - **Why potassium comes before insulin (the two door rule):** Think of insulin as a key that opens two doors on every cell at the same time: one door pulls sugar (glucose) out of the blood into the cell, and a second door (the sodium potassium pump) pulls potassium out of the blood into the cell. In DKA, acid in the blood has pushed potassium out of the cells, and high urine output has washed potassium out of the body. If serum potassium is already **below 3.5** and you turn on an insulin drip, insulin pushes the remaining potassium out of the blood into the cells, and serum potassium drops to a level that can cause dangerous heart rhythms. That is why you **hold insulin** and give potassium (about 10 mmol/h) until K is above 3.5 ✅✅ [1][2].
 - **Why you add dextrose when glucose falls below 250 (clear the acid, not just the sugar):** Blood glucose drops much faster than blood ketones (acid) clear. When glucose reaches **below 250 mg/dL**, do **not** turn off the insulin drip, because the body still needs insulin to shut off ketone production. Instead, add **D5 or D10** to the IV fluids to prevent hypoglycemia and lower the DKA insulin drip to **0.05 units/kg/h** until ketones clear ✅✅ [1][2].
