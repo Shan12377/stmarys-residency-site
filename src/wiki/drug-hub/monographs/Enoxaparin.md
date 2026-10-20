@@ -24,6 +24,33 @@ ISMP High Alert Medication (anticoagulant). **Boxed warning: spinal and epidural
 - **Low body weight** (women under 45 kg, men under 57 kg): higher exposure on fixed prophylaxis doses; watch for bleeding ✅ [1].
 - **Obesity (BMI over 30):** no consensus on prophylaxis dose adjustment per the label ✅ [1]. Know St. Mary's obesity protocol ⚠️ [VERIFY].
 
+## Visual decision ladder: Enoxaparin renal cutoff (`CrCl 30 mL/min`) and epidural timing
+
+```mermaid
+flowchart TD
+    ORD["Enoxaparin Order Arrives"] --> CRCL["Calculate Cockcroft-Gault CrCl first"]
+    CRCL --> NORM["CrCl 30 mL/min or above:<br/>• Prophylaxis: 40 mg SC once daily (or 30 mg q12h ortho)<br/>• DVT/PE or NSTEMI treatment: 1 mg/kg SC every 12 hours<br/>(or 1.5 mg/kg once daily inpatient)"]
+    CRCL --> LOW["CrCl BELOW 30 mL/min (Renal Cut in Half):<br/>• Prophylaxis: 30 mg SC once daily<br/>• DVT/PE or NSTEMI treatment: 1 mg/kg SC ONCE DAILY (every 24 hours)"]
+
+    NORM --> EPID["Epidural or Spinal Catheter Check:<br/>• Prophylactic dose: Wait at least 12 hours before placement or removal<br/>• Treatment dose: Wait at least 24 hours before placement or removal<br/>• Wait at least 4 hours AFTER catheter removal before next dose"]
+    LOW --> EPID
+
+    style ORD fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
+    style CRCL fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style NORM fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style LOW fill:#fee2e2,stroke:#991b1b,color:#7f1d1d,stroke-width:2px
+    style EPID fill:#fee2e2,stroke:#991b1b,color:#7f1d1d,stroke-width:2px
+```
+*Sources: Lovenox FDA label (revised 05/2025) [1]; StatPearls 2023 [2]; ASRA neuraxial guideline summary [4].*
+
+## Plain English memory guide: Mechanism, body timing, and "why never"
+
+| Concept | Plain English picture | Clinical rule on shift |
+|---|---|---|
+| **How it works (Mechanism)** | Enoxaparin is unfractionated heparin chopped into **short sugar chains** (low molecular weight). Because the chain is short, it still supercharges Antithrombin to block **Factor Xa**, but its tail is too short to wrap around **Factor IIa (thrombin)**. | Because it mainly targets **Factor Xa**, routine **aPTT and PT/INR will NOT measure enoxaparin**; if you need a level (renal impairment, pregnancy, obesity, pediatrics), you must order a **peak LMWH Anti-Xa level 4 hours after the 3rd dose** ✅ [1][2][3]. |
+| **How long it takes in the body (Body Timing)** | • **Peak effect:** **3 to 5 hours** after SC injection (that is why peak anti Xa is drawn at **4 hours**) ✅ [2][3].<br>• **Elimination:** Cleared almost entirely by the **kidneys** (unlike unfractionated heparin, which can also be cleared by macrophages and the liver). | When **CrCl drops below 30 mL/min**, enoxaparin stacks up in the blood; you **must cut treatment dosing from every 12 hours to once every 24 hours (`1 mg/kg` once daily)** and prophylaxis to `30 mg` once daily ✅ [1][2]. |
+| **Why NEVER pull an epidural catheter early, and why Protamine only works ~60%** | • **Spinal hematoma paralysis:** Pulling or placing an epidural needle while enoxaparin is active causes bleeding inside the tight bony spinal canal, crushing the spinal cord (**Boxed Warning**) ✅ [1][2].<br>• **Why protamine only reverses ~60%:** Protamine binds long negatively charged heparin chains well, but enoxaparin's short chains slip past it ✅ [1][2]. | Hold prophylactic enoxaparin **12 hours** and treatment enoxaparin **24 hours** before neuraxial needle placement or catheter removal, and wait at least **4 hours** after removal before the next dose ✅ [2][4]. |
+
 ## Monitoring
 - PT and aPTT do **not** measure enoxaparin effect ✅ [1].
 - Anti Xa is used in renal impairment, obesity, pregnancy, children or bleeding ✅✅ [1][2].

@@ -21,6 +21,34 @@
 - Neonates 1 week old or younger: 2.5 mg/kg every 12 h. Infants: 2.5 mg/kg every 8 h. Children: 2 to 2.5 mg/kg every 8 h ✅ [1].
 - Most NICUs use extended interval dosing by gestational and postnatal age instead (see [[NICU_Core]]) ⚠️ [VERIFY unit chart].
 
+## Visual decision ladder: Gentamicin Extended Interval (Hartford `7 mg/kg`) vs Traditional dosing
+
+```mermaid
+flowchart TD
+    START["Adult Gentamicin IV Order"] --> MODE{"Which Dosing Strategy?"}
+    MODE -->|"Extended Interval (Hartford)"| HART["Dose: 7 mg/kg IV once<br/>Draw 1 random level 6 to 14 h after start of infusion"]
+    MODE -->|"Traditional (q8h or Renal Failure)"| TRAD["Dose: 3 mg/kg/day divided every 8 h<br/>(up to 5 mg/kg/day for life-threatening infection)<br/>Renal interval (h) ≈ SCr × 8"]
+
+    HART --> PLOT["Plot level on Hartford Nomogram:<br/>• Falls in q24h, q36h, or q48h zone: use that interval<br/>• Falls ON a line: pick the LONGER interval<br/>• Falls ABOVE the q48h zone: switch to Traditional dosing"]
+    TRAD --> TARG["Traditional Safety Targets:<br/>Keep Peak below 12 mcg/mL and Trough below 2 mcg/mL<br/>(Boxed Warning: Nephrotoxicity, Irreversible Ototoxicity, Neuromuscular Blockade)"]
+
+    style START fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
+    style MODE fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
+    style HART fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style TRAD fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style PLOT fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style TARG fill:#fee2e2,stroke:#991b1b,color:#7f1d1d,stroke-width:2px
+```
+*Sources: Gentamicin FDA label (DailyMed) [1]; Nicolau 1995 Hartford nomogram [2]; Bugs and Drugs Hartford guide [3].*
+
+## Plain English memory guide: Mechanism, body timing, and "why never"
+
+| Concept | Plain English picture | Clinical rule on shift |
+|---|---|---|
+| **How it works (Mechanism)** | Gentamicin sneaks inside aerobic Gram negative bacteria (using an **oxygen powered** door) and locks onto the **30S ribosome**, forcing the bacteria to print scrambled, toxic proteins until the cell dies. **Why one big dose works (`7 mg/kg`):** It is **concentration dependent** (higher peak = faster kill) and has a **post antibiotic effect** (bacteria stay stunned for hours even after serum gentamicin drops to zero). | Giving **one large dose (`7 mg/kg`)** gets a high peak to kill Gram negative rods, and then gives the kidneys and inner ear a **drug free holiday** for the second half of the day ✅ [2][3]. |
+| **How long it takes in the body (Body Timing)** | • **Distribution (`Vd ≈ 0.3 L/kg` in adults, larger in neonates):** Stays mostly in extracellular water ✅ [3].<br>• **Elimination:** Cleared **100% unchanged by the kidneys**. | Why low troughs (`< 2 mcg/mL` traditional, or drug free interval on Hartford) save the kidneys and ears: kidney proximal tubule cells and inner ear hair cells **saturate** when they take up gentamicin; they only get poisoned when the drug sits around continuously **24 hours a day** without a trough holiday ✅ [1][2]. |
+| **Why NEVER use Hartford nomogram for a 3 mg/kg dose, and why gentamicin NEVER kills anaerobes alone** | • **Never plot a non 7 mg/kg dose on the Hartford chart:** The Hartford nomogram lines were mathematically drawn **only for a `7 mg/kg` dose**; plotting a `5 mg/kg` or `3 mg/kg` level on that graph gives a completely wrong interval ✅ [3].<br>• **Why it never covers anaerobes:** The door that pulls gentamicin inside a bacterium requires **oxygen**; anaerobic bacteria don't use oxygen, so gentamicin is locked out. | Always verify that a Hartford level came from a **`7 mg/kg`** dose drawn between **6 and 14 hours** after the start of the infusion, and avoid stacking loop diuretics or other nephrotoxins ✅ [1][3]. |
+
 ## Pharmacist checklist
 1. Which method: traditional or extended interval?
 2. Weight (actual vs adjusted), SCr and urine output.

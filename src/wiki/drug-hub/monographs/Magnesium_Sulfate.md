@@ -16,6 +16,37 @@ ISMP High Alert Medication (IV magnesium). Use premixed bags and a dedicated pum
 | Duration | 24 h after delivery or last seizure; label: do not use beyond 5 to 7 days (fetal hypocalcemia, bone demineralization, neonatal fractures) | ✅✅ | [1][2] |
 | **Severe renal impairment or oliguria** | 4 g load, then **1 g/h**, max **20 g per 48 h**; check serum levels | ✅ | [1] |
 
+## Visual decision ladder: Magnesium dosing, renal adjustment, and toxicity thresholds
+
+```mermaid
+flowchart TD
+    START["Magnesium Sulfate IV for Eclampsia / Preeclampsia"] --> KID["Check Urine Output (at least 100 mL per 4 h) and SCr"]
+    KID --> NORM["Normal Kidneys:<br/>Load 4 to 6 g IV over 15 to 20 min,<br/>then Maintenance 1 to 2 g/h by pump"]
+    KID --> REN["Severe Renal Impairment or Oliguria:<br/>Load 4 g IV, then reduce Maintenance to 1 g/h<br/>(Max 20 g per 48 h) + check serum Mg levels"]
+
+    NORM --> MON["Therapeutic Eclampsia Target: 2.5 to 5 mEq/L (3 to 6 mg/dL)<br/>Monitor patellar reflexes, respiratory rate (keep 16 or above), and urine output"]
+    REN --> MON
+    MON --> WARN["Above about 4 mEq/L: Patellar reflexes weaken or disappear<br/>About 10 mEq/L: Respiratory paralysis risk"]
+    WARN --> ANT["TOXICITY ACTION:<br/>STOP magnesium infusion immediately.<br/>Give Calcium Gluconate 1 g (10 mL of 10%) IV over about 3 minutes + support breathing"]
+
+    style START fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
+    style KID fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style NORM fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style REN fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style MON fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style WARN fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style ANT fill:#fee2e2,stroke:#991b1b,color:#7f1d1d,stroke-width:2px
+```
+*Sources: Magnesium Sulfate in 5% Dextrose FDA label (Hospira 2019) [1]; UT Southwestern CME 2026 [2].*
+
+## Plain English memory guide: Mechanism, body timing, and "why never"
+
+| Concept | Plain English picture | Clinical rule on shift |
+|---|---|---|
+| **How it works (Mechanism)** | Calcium is the "spark" that makes nerves fire acetylcholine and muscles contract. **Magnesium is calcium's calm twin brother**: it sits inside the calcium channels at the neuromuscular junction and brain synapses so nerves stop misfiring into eclampsia seizures. | **Why Calcium Gluconate is the antidote:** When magnesium climbs too high and paralyzes the diaphragm, **1 g IV calcium gluconate** floods the synapse with calcium to push magnesium off the receptors so the patient can breathe again ✅ [1][2]. |
+| **How long it takes in the body (Body Timing)** | • **IV loading dose (4 to 6 g over 15 to 20 min):** Reaches seizure preventing levels immediately.<br>• **IM option:** Takes about 60 minutes for onset.<br>• **Elimination:** **100% cleared by the kidneys** in the urine. | Because ONLY the kidneys clear magnesium, if **urine output drops below 100 mL over 4 hours** (or SCr rises), the maintenance drip will rapidly build up to toxic levels (`> 4 to 10 mEq/L`) ✅ [1][2]. |
+| **Why NEVER push fast, why NEVER run over 5 to 7 days in pregnancy, and why NEVER give in myasthenia gravis** | • **Never push fast:** Rapid IV bolus causes severe flushing, hypotension, and cardiac conduction block.<br>• **Never run past 5 to 7 days in pregnancy:** Pulls calcium out of the baby's developing bones, causing fetal hypocalcemia and neonatal bone fractures ✅ [1][2].<br>• **Never give in myasthenia gravis:** Those patients barely have working acetylcholine receptors; blocking calcium release triggers instant respiratory failure ✅ [1]. | Always infuse the loading dose over **15 to 20 minutes** on a dedicated pump channel, cap therapy at **24 hours postpartum**, and keep **calcium gluconate 1 g (10 mL of 10%)** at the bedside ✅ [1][2]. |
+
 ## Monitoring and toxicity
 - Check patellar reflexes, respiratory rate (concern below about 16 per label), urine output (keep at least 100 mL per 4 h; stop if lower, especially with rising SCr), serum magnesium ✅✅ [1][2].
 - Label levels: reflexes weaken above about **4 mEq/L**; respiratory paralysis risk at about **10 mEq/L** ✅ [1]. Eclampsia target per label 2.5 to 5 mEq/L (3 to 6 mg/dL) ✅ [1].

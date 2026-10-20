@@ -24,6 +24,37 @@ ISMP High Alert Medication. Independent double check per St. Mary's policy.
 | Neonates and infants | Use **preservative free** heparin (benzyl alcohol causes gasping syndrome) | ✅ | [5] |
 | Pediatric treatment dosing | Load 75 to 100 units/kg, then about 28 units/kg/h (infants) or 20 units/kg/h (over 1 year) | ⚠️ | [VERIFY CHEST pediatric antithrombotic guideline and St. Mary's pediatric protocol] |
 
+## Visual decision ladder: Heparin indication, dosing, and HIT safety
+
+```mermaid
+flowchart TD
+    START["Unfractionated Heparin Order"] --> CHECK["Pre-Check: Platelets, baseline aPTT or anti-Xa,<br/>any Enoxaparin in last 12 hours? (If yes: DO NOT bolus)"]
+    CHECK --> VTE["VTE Treatment (DVT or PE):<br/>80 units/kg IV bolus, then 18 units/kg/h"]
+    CHECK --> ACS["ACS (NSTE-ACS or STEMI):<br/>60 units/kg IV bolus (max 4,000 units),<br/>then 12 units/kg/h (max 1,000 units/h)"]
+    CHECK --> PPX["VTE Prophylaxis:<br/>5,000 units SC every 8 to 12 hours"]
+
+    VTE --> MON["Check aPTT or anti-Xa 6 hours after bolus<br/>and 6 hours after every rate change"]
+    ACS --> MON
+    MON --> HIT["If platelets drop below 100,000 or new clot forms:<br/>Calculate 4Ts score. If intermediate or high:<br/>STOP ALL HEPARIN and start Argatroban (2 mcg/kg/min;<br/>0.5 mcg/kg/min in moderate or severe hepatic impairment)"]
+
+    style START fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
+    style CHECK fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style VTE fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style ACS fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style PPX fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
+    style MON fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px
+    style HIT fill:#fee2e2,stroke:#991b1b,color:#7f1d1d,stroke-width:2px
+```
+*Sources: Raschke 1993 [1]; ESC/ACC/AHA ACS summary [3]; Southern Health ACS order set [4]; FDA label [5]; ASH 2018 HIT guideline [7]; Argatroban FDA label 2019 [8].*
+
+## Plain English memory guide: Mechanism, body timing, and "why never"
+
+| Concept | Plain English picture | Clinical rule on shift |
+|---|---|---|
+| **How it works (Mechanism)** | Think of **Antithrombin III** as the body's natural police officer that handcuffs clotting factors (**Factor IIa [thrombin]** and **Factor Xa**). By itself, Antithrombin walks slowly. **Unfractionated heparin** straps a jetpack onto Antithrombin so it handcuffs clotting factors **1,000 times faster**. Because unfractionated heparin has a long sugar tail, it can wrap around **both** Factor Xa and Factor IIa. | Because it blocks thrombin immediately, it stops existing clots from growing right away while the body dissolves them ✅ [5]. |
+| **How long it takes in the body (Body Timing)** | • **IV bolus onset:** Immediate.<br>• **Half life:** **30 to 90 minutes** (dose dependent: higher doses saturate clearance and last longer) ✅ [5][6].<br>• **Steady state after rate change:** **6 hours** ✅ [4]. | That 30 to 90 minute half life is why surgeons love IV heparin in the ICU (turn the pump off and the effect fades in a few hours) and why you **check aPTT or anti Xa 6 hours after every rate change** ✅ [4][5]. |
+| **Why NEVER bolus after recent Enoxaparin, and why NEVER give benzyl alcohol vials to babies** | • **No bolus on top of Enoxaparin:** If the patient received treatment dose enoxaparin within the last 12 hours, their Factor Xa is already blocked; giving a full heparin bolus on top causes major hemorrhage ✅ [4].<br>• **No benzyl alcohol in neonates:** Multi dose heparin vials preserved with benzyl alcohol cause fatal neonatal **gasping syndrome** (metabolic acidosis and respiratory collapse) ✅ [5].<br>• **Why heparin raises K+:** Heparin suppresses **aldosterone** in the adrenal gland after several days, causing the kidneys to hold onto potassium ✅ [5]. | Always check the MAR for prior enoxaparin before verifying a heparin bolus, always use **preservative free** syringes in neonates, and watch serum K+ when therapy runs over 5 days ✅ [4][5]. |
+
 ## Safety (why it's high alert)
 - **Look alike strengths:** 1,000, 5,000 and 10,000 units/mL vials look alike. Fatal pediatric hemorrhages have happened when 1 mL heparin vials were confused with 1 mL catheter lock flush vials (FDA label section 5.1) ✅ [5].
 - Use premixed bags and smart pump libraries for infusions.

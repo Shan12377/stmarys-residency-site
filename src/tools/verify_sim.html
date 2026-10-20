@@ -737,6 +737,44 @@ function ibwCalc(sex,htCm){
   return Math.max(3,Math.round(ibw*10)/10);
 }
 
+function getShiftLookup(c){
+  const t=(c.title+" "+c.order+" "+c.why).toLowerCase();
+  if(c.type==="IV room"){
+    if(t.includes("bud")||t.includes("category"))return "1. USP <797> (2023) BUD Table + St. Mary's Cleanroom Policy · 2. Trissel's Extended Stability / Package Insert (DailyMed)";
+    if(t.includes("vincristine"))return "1. ISMP High-Alert / Oncology Intrathecal Safety Policy · 2. NIOSH Hazardous Drug Table + Package Insert";
+    return "1. St. Mary's IV Room Standard Concentration Chart · 2. Trissel's IV Compatibility (Solution/Admixture Tab) + Package Insert";
+  }
+  if(c.svc==="L&D"){
+    if(t.includes("breast")||t.includes("lact"))return "1. LactMed (NIH, check Relative Infant Dose RID < 10%) · 2. Briggs Drugs in Pregnancy and Lactation";
+    if(t.includes("magnesium")||t.includes("oxytocin"))return "1. St. Mary's L&D Cerner Order Set & Smart Pump Library (Check First!) · 2. Lexicomp + ACOG Protocol";
+    return "1. St. Mary's L&D Hypertension / PPH / GBS Protocol · 2. Briggs (Pregnancy PLLR) + Lexicomp";
+  }
+  if(c.svc==="NICU/PICU"){
+    if(c.pt.age<0.1||t.includes("nicu")||t.includes("neonate")||t.includes("pma"))return "1. NeoFax (Check Gestational/Postmenstrual Age PMA + Postnatal Age PNA) · 2. St. Mary's NICU Guardrails Pump Library (NEVER use Adult Lexicomp!)";
+    return "1. Lexi-Peds (Taketomo Pediatric Dosage Handbook) — Check mg/kg AND Adult Ceiling Cap · 2. PALS 2025 / Hospital PICU Order Set";
+  }
+  if(c.svc==="Stroke"){
+    return "1. St. Mary's Acute Stroke Alert Order Set (Check First!) · 2. Trissel's / Package Insert (NS vs Dextrose line compatibility) + Lexicomp";
+  }
+  if(c.svc==="Anticoag"){
+    if(t.includes("epidural")||t.includes("spinal"))return "1. ASRA Neuraxial Anticoagulation Timing Table + Hospital Anesthesia Policy · 2. Lexicomp Boxed Warning";
+    return "1. St. Mary's Anticoagulation Protocol / Heparin Nomogram · 2. Lexicomp (Cockcroft-Gault CrCl Renal Dosing Tab) + DailyMed Label";
+  }
+  if(t.includes("y-site")||t.includes("compatib")||t.includes("precip")||t.includes("diluent")||t.includes("filter")||t.includes("extravasation")){
+    return "1. Trissel's IV Compatibility (Check Y-Site vs Admixture Tab, Exact Concentration, and Diluent) · 2. Hospital Extravasation Antidote Policy";
+  }
+  if(t.includes("crush")||t.includes("ng tube")||t.includes("og tube")){
+    return "1. ISMP Do Not Crush List · 2. Lexicomp 'Administration' Tab (Oral / Enteral Feeding Tube section)";
+  }
+  if(t.includes("qtc")||t.includes("torsades")){
+    return "1. CredibleMeds (Known TdP Risk vs Possible Risk) + Cerner ECG / MAR Interaction Check · 2. Lexicomp Drug Interactions";
+  }
+  if(c.svc==="ID/Floor"){
+    return "1. St. Mary's Pharmacy-to-Dose Protocol & Local Antibiogram · 2. Sanford Guide + Lexicomp Renal Dosing Tab";
+  }
+  return "1. St. Mary's ICU Protocol & Smart Pump Library (Check First!) · 2. Lexicomp / Micromedex + Trissel's IV Compatibility";
+}
+
 function drawFilters(){
   const fb=document.getElementById("filters");
   fb.innerHTML=FILTERS.map(f=>`<button class="fbtn ${st.filter===f?'on':''}" onclick="setFilter('${f}')">${f}</button>`).join("");
@@ -808,6 +846,10 @@ function draw(){
       </div>
       <div class="order-rx">${c.order}</div>
       ${c.label?`<div class="label-box"><b>IV ROOM PRODUCT LABEL &amp; PULL-BACK CHECK:</b>\n${c.label}</div>`:''}
+      <div style="padding:7px 12px;background:var(--accent-bg);border-top:1px solid var(--line);font-size:12px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+        <span>📚 <b>Where to Look This Up on Shift:</b> ${getShiftLookup(c)}</span>
+        <a href="/drug-hub/drug_hub" target="_blank" style="color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap">Full Reference Guide ↗</a>
+      </div>
     </div>
 
     <div class="chart-grid">
@@ -831,7 +873,7 @@ function draw(){
     </div>
   `;
 
-  // Right Column: Required Calculation + Scratchpad + 6-Point Check + Sign-Off
+  // Right Column: Required Calculation + Scratchpad + Reference Guide + 6-Point Check + Sign-Off
   const right=document.getElementById("right-col");
   const scrNum=scrLab?parseFloat(scrLab[1]):1.0;
   const calcDone=st.calcOk[c.id];
@@ -873,6 +915,19 @@ function draw(){
             <label>SCr (mg/dL)<input type="number" step="any" id="cg-scr" value="${scrNum||1.0}" oninput="runCG()"></label>
           </div>
           <div class="sp-out" id="cg-out"></div>
+        </div>
+      </details>
+
+      <details class="panel" style="margin-bottom:10px">
+        <summary class="ph" style="cursor:pointer"><span>📚 Which Reference Do I Open? (10-Sec Cheat Sheet)</span><span>Open / Close</span></summary>
+        <div style="padding:8px 10px;font-size:12px;line-height:1.45;display:grid;gap:5px">
+          <div><b>0. St. Mary's Policy / Cerner Order Set / Pump Library:</b> ALWAYS check first for Heparin, DKA, Mag Sulfate, Stroke, Vanc AUC, and standard IV concentrations.</div>
+          <div><b>1. Trissel's IV Compatibility:</b> Can Drug A + B run together? Check <i>Y-Site tab</i> (tubing) vs <i>Admixture tab</i> (in bag), exact concentration, and diluent.</div>
+          <div><b>2. NeoFax vs Lexi-Peds:</b> Under 28 days / NICU = <b>NeoFax</b> (uses PMA + PNA). 1 mo to 18 y = <b>Lexi-Peds</b> (check mg/kg + adult ceiling cap). Never use Adult Lexicomp for neonates!</div>
+          <div><b>3. Lexicomp / Micromedex:</b> Adult CrCl cutoffs, hepatic dosing, max daily dose, administration rate, and Poisindex toxicology.</div>
+          <div><b>4. Sanford Guide + Local Antibiogram:</b> Bug-drug coverage and local hospital susceptibility rates.</div>
+          <div><b>5. Briggs &amp; LactMed:</b> Pregnancy (PLLR) &amp; Breastfeeding (look for Relative Infant Dose <b>RID &lt; 10%</b>).</div>
+          <div><b>6. CredibleMeds &amp; ISMP Do Not Crush:</b> QTc prolongation risk tiers and NG/enteral tube crushing safety.</div>
         </div>
       </details>
 
