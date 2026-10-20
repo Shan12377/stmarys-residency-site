@@ -10,7 +10,8 @@ if [ ! -d "$Q/node_modules" ]; then
 fi
 cp "$G/quartz.config.yaml" "$Q/quartz.config.yaml"
 cd "$Q" && rm -rf content public && mkdir content
-cp -r "$G/src/wiki/"* content/ && cp "$G/src/00_START_HERE.md" "$G/src/APP_BUILD_SPEC.md" "$G/src/log.md" content/
+cp -r "$G/src/wiki/"* content/ && python3 "$G/src/link_refs.py" content
+cp "$G/src/00_START_HERE.md" "$G/src/APP_BUILD_SPEC.md" "$G/src/log.md" content/
 python3 - "$G" <<'PY'
 import sys; G=sys.argv[1]
 s=open(G+"/src/index.md").read(); new=open(G+"/src/whats_new.md").read().strip()

@@ -93,9 +93,9 @@ flowchart TD
 12. [NYSORA: Regional anesthesia in anticoagulated patients](https://www.nysora.com/regional-anesthesia-in-anticoagulated-patients)
 13. [Drugs.com: Savaysa dosage](https://www.drugs.com/dosage/savaysa.html)
 14. [Edoxaban label PDF (HemOnc)](https://hemonc.org/w/images/archive/9/96/20211231232858%21Edoxaban.pdf)
-15. [InpharmD: CHEST 2021 VTE guideline updates (extended phase, no predefined stop date, reassess yearly)](https://inpharmd.com/inquiries/07f4986748090377e7b55453247537ee1548098c5fee0b697ecb39673dbfddf8)
-16. [WikiJournalClub: AMPLIFY-EXT (NEJM 2013, 12 months of extended apixaban)](https://www.wikijournalclub.org/wiki/AMPLIFY-EXT)
-17. [The Hospitalist: RENOVE (Lancet 2025, reduced vs full dose extended DOAC)](https://www.the-hospitalist.org/hospitalist/article/39034/circulatory/evidence-for-reduced-dose-doac-in-those-at-high-risk-for-vte-recurrence-in-extended-phase-anticoagulation-the-renove-trial/)
+15. [Stevens SM, et al. Antithrombotic Therapy for VTE Disease: Second Update of the CHEST Guideline. Chest 2021;160(6):e545-e608](https://doi.org/10.1016/j.chest.2021.07.055) · summary: [InpharmD](https://inpharmd.com/inquiries/07f4986748090377e7b55453247537ee1548098c5fee0b697ecb39673dbfddf8)
+16. [Agnelli G, et al. Apixaban for extended treatment of VTE (AMPLIFY-EXT). N Engl J Med 2013;368:699-708](https://doi.org/10.1056/NEJMoa1207541) · summary: [WikiJournalClub](https://www.wikijournalclub.org/wiki/AMPLIFY-EXT)
+17. [Couturaud F, et al. Reduced dose vs full dose DOAC for extended VTE treatment (RENOVE). Lancet 2025;405:725-735](https://doi.org/10.1016/S0140-6736(24)02842-3) · summary: [The Hospitalist](https://www.the-hospitalist.org/hospitalist/article/39034/circulatory/evidence-for-reduced-dose-doac-in-those-at-high-risk-for-vte-recurrence-in-extended-phase-anticoagulation-the-renove-trial/)
 
 ## Verify locally at St. Mary's
 - Pharmacy to dose anticoagulation policy (warfarin, heparin, enoxaparin, argatroban).
