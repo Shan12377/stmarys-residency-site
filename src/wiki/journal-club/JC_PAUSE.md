@@ -36,7 +36,7 @@ CHEST 2022 adopted this approach. "For AF patients on a DOAC having elective sur
 - Practice: [[Cases_Anticoag_and_Verification]] case 1; simulator case 17.
 
 ## Sources
-1. [WikiJournalClub: PAUSE](https://www.wikijournalclub.org/wiki/PAUSE)
-2. [CHEST 2022 perioperative guideline press release](https://chestnet.org/Newsroom/Press-Releases/2022/08/CHEST-releases-clinical-practice-guideline-on-perioperative-management-of-antithrombotic-therapy)
+1. [Douketis JD, et al. Perioperative management of AF patients on a DOAC (PAUSE). JAMA Intern Med 2019;179:1469-1478](https://doi.org/10.1001/jamainternmed.2019.2431) · summary: [WikiJournalClub: PAUSE](https://www.wikijournalclub.org/wiki/PAUSE)
+2. [Douketis JD, et al. Perioperative management of antithrombotic therapy: CHEST guideline. Chest 2022;162:e207-e243](https://doi.org/10.1016/j.chest.2022.07.025) · summary: [CHEST 2022 perioperative guideline press release](https://chestnet.org/Newsroom/Press-Releases/2022/08/CHEST-releases-clinical-practice-guideline-on-perioperative-management-of-antithrombotic-therapy)
 
 *Last verified: 2026-10-17.*

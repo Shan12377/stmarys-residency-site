@@ -36,7 +36,7 @@ NICE-SUGAR Study Investigators. N Engl J Med 2009;360:1283-97 ✅ [ACC: NICE-SUG
 - Watch hypoglycemia when nutrition stops but insulin keeps running.
 
 ## Sources
-1. [WikiJournalClub: NICE-SUGAR](https://www.wikijournalclub.org/wiki/NICE-SUGAR)
+1. [NICE-SUGAR Study Investigators. Intensive vs conventional glucose control in critically ill patients. N Engl J Med 2009;360:1283-1297](https://doi.org/10.1056/NEJMoa0810625) · summary: [WikiJournalClub: NICE-SUGAR](https://www.wikijournalclub.org/wiki/NICE-SUGAR)
 2. [AACE: IV insulin hospital protocol (targets and NICE-SUGAR context)](https://pro.aace.com/pdfs/diabetes/IV-Insulin-Hospital-Protocol-FINAL-090320.pdf)
 
 *Last verified: 2026-10-17.*

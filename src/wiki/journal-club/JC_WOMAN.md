@@ -42,7 +42,7 @@ Most deaths in WOMAN occurred in low resource settings, so the absolute benefit 
 - No change to the uterotonic sequence: oxytocin first; no methylergonovine with hypertension; no carboprost with asthma.
 
 ## Sources
-1. [SGEM #214: WOMAN trial review](https://thesgem.com/2018/04/sgem214-woman-the-txa-trial-for-post-partum-hemorrhage/)
+1. [WOMAN Trial Collaborators. Early tranexamic acid in postpartum haemorrhage. Lancet 2017;389:2105-2116](https://doi.org/10.1016/S0140-6736(17)30638-4) · summary: [SGEM #214: WOMAN trial review](https://thesgem.com/2018/04/sgem214-woman-the-txa-trial-for-post-partum-hemorrhage/)
 2. [AAFP POEM: WOMAN trial](https://www.aafp.org/afp/2017/1015/od1)
 3. [UMEM pearl: WOMAN trial](https://em.umaryland.edu/educational_pearls/3257/)
 

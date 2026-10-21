@@ -41,7 +41,7 @@ Single bolus helps with transfers and drip and ship. Our biggest risk is the dos
 - Same BP and antithrombotic rules as alteplase.
 
 ## Sources
-1. [ACC: AcT trial summary](https://www.acc.org/latest-in-cardiology/clinical-trials/2022/07/11/17/15/act)
+1. [Menon BK, et al. Tenecteplase vs alteplase (AcT). Lancet 2022;400:161-169](https://doi.org/10.1016/S0140-6736(22)01054-6) · summary: [ACC: AcT trial summary](https://www.acc.org/latest-in-cardiology/clinical-trials/2022/07/11/17/15/act)
 2. [Calgary EM: AcT trial summary (PDF)](https://calgaryem.com/admin/storage/uploads/2023/02/01/63dac5954c566ACT-Trial-Summary.pdf)
 
 Follow up trials: [[JC_Tenecteplase_Followups]] (TRACE-2, ORIGINAL, ATTEST-2).

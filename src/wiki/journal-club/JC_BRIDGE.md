@@ -40,7 +40,7 @@ Matches CHEST 2022: strong recommendation against bridging in AF. Mechanical val
 - Restart warfarin the evening of or day after surgery at the usual dose ✅ [1].
 
 ## Sources
-1. [NHLBI BioLINCC: BRIDGE study](https://biolincc.nhlbi.nih.gov/studies/bridge)
+1. [Douketis JD, et al. Perioperative bridging in AF (BRIDGE). N Engl J Med 2015;373:823-833](https://doi.org/10.1056/NEJMoa1501035) · summary: [NHLBI BioLINCC: BRIDGE study](https://biolincc.nhlbi.nih.gov/studies/bridge)
 2. [Pharmacy Times: Anticoagulation bridgegate](https://www.pharmacytimes.com/view/anticoagulation-bridgegate)
 
 *Last verified: 2026-10-17.*

@@ -65,7 +65,7 @@ Thresholds are drafts; set them with the L&D team. ⚠️ [VERIFY against St. Ma
 - **One 15 minute inservice:** "Magnesium sulfate toxicity: what the nurse sees first" pairs with this project. Outline: why it matters (high alert), reflexes before breathing, the numbers (label levels), the antidote, one case, 3 questions.
 
 ## Sources
-1. [ASHP Guidelines on Medication Use Evaluation (AJHP 2021)](https://wwwtest.sop.pharmacy.wisc.edu/wp-content/uploads/sites/3/728-742-ASHP-guideline-MUE.pdf)
+1. [Afanasjeva J, et al. ASHP guidelines on medication use evaluation. Am J Health Syst Pharm 2021;78:168-175](https://doi.org/10.1093/ajhp/zxaa393) · summary: [ASHP Guidelines on Medication Use Evaluation (AJHP 2021)](https://wwwtest.sop.pharmacy.wisc.edu/wp-content/uploads/sites/3/728-742-ASHP-guideline-MUE.pdf)
 2. [IHI: Model for Improvement](https://www.ihi.org/resources/how-to-improve)
 3. [UConn Health HSPP: Quality assurance, quality improvement and research](https://ovpr.uchc.edu/services/rics/hspp/resources/quality-assurance-quality-improvement-and-research/)
 

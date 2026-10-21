@@ -62,7 +62,7 @@ flowchart TD
 Practice these in the simulator (My Tools, IV room cases).
 
 ## Sources
-1. [Wolters Kluwer: USP 797 categories and BUDs](https://www.wolterskluwer.com/en/expert-insights/usp-797-translating-low-medium-and-high-risk-compounding-into-categories)
+1. [USP General Chapter 797 Pharmaceutical Compounding: Sterile Preparations (official 2023)](https://www.usp.org/compounding/general-chapter-797) · summary: [Wolters Kluwer: USP 797 categories and BUDs](https://www.wolterskluwer.com/en/expert-insights/usp-797-translating-low-medium-and-high-risk-compounding-into-categories)
 2. [Helmer: USP 797 cold storage and BUD table](https://blog.helmerinc.com/usp-797-cold-storage-requirements-what-compounding-pharmacies-need-to-know-in-2025)
 
 ## Verify locally at St. Mary's

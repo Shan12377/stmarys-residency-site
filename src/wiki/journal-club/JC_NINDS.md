@@ -42,7 +42,7 @@ Comprehensive stroke center: alteplase is still used, though AHA/ASA 2026 lists 
 - No antithrombotics for 24 h.
 
 ## Sources
-1. [ClinCalc: NINDS brief summary](https://clincalc.com/blog/2013/10/ninds-trial-alteplase-ischemic-stroke/)
+1. [NINDS rt-PA Stroke Study Group. Tissue plasminogen activator for acute ischemic stroke. N Engl J Med 1995;333:1581-1588](https://doi.org/10.1056/NEJM199512143332401) · summary: [ClinCalc: NINDS brief summary](https://clincalc.com/blog/2013/10/ninds-trial-alteplase-ischemic-stroke/)
 2. [WikEM: NINDS](https://wikem.org/wiki/NINDS)
 3. [PubMed 7477192](https://pubmed.ncbi.nlm.nih.gov/7477192/)
 

@@ -44,6 +44,8 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 - **Aspirin:** generally continue for elective noncardiac surgery ✅ [10].
 
 ## 4. Epidural and spinal timing (ASRA)
+⚠️ [VERIFY] ASRA published a 5th edition in January 2025 (Kopp SL, et al., Reg Anesth Pain Med 2025, [doi 10.1136/rapm-2024-105766](https://doi.org/10.1136/rapm-2024-105766)) with renal based DOAC holds and "low dose" and "high dose" in place of prophylactic and treatment. The hours below come from the earlier editions; recheck them against the 5th edition and St. Mary's anesthesia policy before relying on them.
+
 | Drug | Stop before neuraxial | Restart after catheter removal | Check | Sources |
 |---|---|---|---|---|
 | Enoxaparin prophylaxis | 12 h | 4 h (label) | ✅✅ | [[Enoxaparin]] |
@@ -80,18 +82,18 @@ flowchart TD
 
 ## Sources
 1. [Eliquis SmPC (UK electronic medicines compendium)](https://www.medicines.org.uk/emc/product/2878/smpc)
-2. [EBM Consult: Rivaroxaban monograph](https://www.ebmconsult.com/articles/monograph-rivaroxaban-xarelto)
+2. [Xarelto (rivaroxaban) prescribing information, DailyMed](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=xarelto) · summary: [EBM Consult: Rivaroxaban monograph](https://www.ebmconsult.com/articles/monograph-rivaroxaban-xarelto)
 3. [GlobalRPh: Rivaroxaban renal dosing](https://globalrph.com/renal/rivaroxaban-xarelto/)
 4. [Pradaxa label (2012, via HemOnc)](https://hemonc.org/docs/packageinsert/dabigatran.pdf)
-5. [UMEM pearl on Crowther 2009, Ann Intern Med 150:293](https://stg.umem.org/t4/educational_pearls/?id=1762)
+5. [Crowther MA, et al. Oral vitamin K vs placebo for excessive anticoagulation. Ann Intern Med 2009;150:293-300](https://doi.org/10.7326/0003-4819-150-5-200903030-00005) · summary: [UMEM pearl on Crowther 2009, Ann Intern Med 150:293](https://stg.umem.org/t4/educational_pearls/?id=1762)
 6. [Sunnybrook: Reversal of warfarin over anticoagulation, focus on vitamin K](https://sunnybrook.ca/uploads/Reversal_of_Warfarin_Over-Anitcoagulation_-_Focus_on_Vitamin_K.pdf)
-7. [Pharmacy Times: Anticoagulation bridgegate (BRIDGE trial)](https://www.pharmacytimes.com/view/anticoagulation-bridgegate)
+7. [Douketis JD, et al. Perioperative bridging in AF (BRIDGE). N Engl J Med 2015;373:823-833](https://doi.org/10.1056/NEJMoa1501035) · summary: [Pharmacy Times: Anticoagulation bridgegate (BRIDGE trial)](https://www.pharmacytimes.com/view/anticoagulation-bridgegate)
 8. [UConn: Perioperative management handout](https://pharmacy.uconn.edu/wp-content/uploads/sites/2740/2020/02/Handouts-Perioperative-Management.pdf)
 9. [Eliquis label (Pfizer)](https://labeling.pfizer.com/ShowLabeling.aspx?id=14028)
-10. [CHEST 2022 perioperative guideline press release](https://chestnet.org/Newsroom/Press-Releases/2022/08/CHEST-releases-clinical-practice-guideline-on-perioperative-management-of-antithrombotic-therapy) · [Full guideline](https://journal.chestnet.org/article/S0012-3692%2822%2901359-9/fulltext)
-11. [WikiJournalClub: PAUSE (Douketis, JAMA Intern Med 2019)](https://www.wikijournalclub.org/wiki/PAUSE)
-12. [NYSORA: Regional anesthesia in anticoagulated patients](https://www.nysora.com/regional-anesthesia-in-anticoagulated-patients)
-13. [Drugs.com: Savaysa dosage](https://www.drugs.com/dosage/savaysa.html)
+10. [Douketis JD, et al. Perioperative management of antithrombotic therapy: CHEST guideline. Chest 2022;162:e207-e243](https://doi.org/10.1016/j.chest.2022.07.025) · summary: [CHEST 2022 perioperative guideline press release](https://chestnet.org/Newsroom/Press-Releases/2022/08/CHEST-releases-clinical-practice-guideline-on-perioperative-management-of-antithrombotic-therapy) · [Full guideline](https://journal.chestnet.org/article/S0012-3692%2822%2901359-9/fulltext)
+11. [Douketis JD, et al. Perioperative management of AF patients on a DOAC (PAUSE). JAMA Intern Med 2019;179:1469-1478](https://doi.org/10.1001/jamainternmed.2019.2431) · summary: [WikiJournalClub: PAUSE (Douketis, JAMA Intern Med 2019)](https://www.wikijournalclub.org/wiki/PAUSE)
+12. [Horlocker TT, et al. ASRA guidelines, 4th edition. Reg Anesth Pain Med 2018;43:263-309 (5th edition: Kopp SL, et al. 2025, doi 10.1136/rapm-2024-105766)](https://doi.org/10.1097/AAP.0000000000000763) · summary: [NYSORA: Regional anesthesia in anticoagulated patients](https://www.nysora.com/regional-anesthesia-in-anticoagulated-patients)
+13. [Savaysa (edoxaban) prescribing information, DailyMed](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=savaysa) · summary: [Drugs.com: Savaysa dosage](https://www.drugs.com/dosage/savaysa.html)
 14. [Edoxaban label PDF (HemOnc)](https://hemonc.org/w/images/archive/9/96/20211231232858%21Edoxaban.pdf)
 15. [Stevens SM, et al. Antithrombotic Therapy for VTE Disease: Second Update of the CHEST Guideline. Chest 2021;160(6):e545-e608](https://doi.org/10.1016/j.chest.2021.07.055) · summary: [InpharmD](https://inpharmd.com/inquiries/07f4986748090377e7b55453247537ee1548098c5fee0b697ecb39673dbfddf8)
 16. [Agnelli G, et al. Apixaban for extended treatment of VTE (AMPLIFY-EXT). N Engl J Med 2013;368:699-708](https://doi.org/10.1056/NEJMoa1207541) · summary: [WikiJournalClub](https://www.wikijournalclub.org/wiki/AMPLIFY-EXT)

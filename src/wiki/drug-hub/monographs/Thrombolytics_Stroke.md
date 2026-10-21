@@ -60,8 +60,8 @@ flowchart TD
 5. Document bolus time.
 
 ## Sources
-1. [SUNY Downstate: Tenecteplase education, pharmacy update (Dec 2025)](https://www.downstate.edu/education-training/fellowship-residency-programs/pharmacy/tenecteplase-education-pharmacy-update-dec-2025.pdf)
-2. [HelixTalk 196: 2026 acute ischemic stroke guidelines review](https://www.rosalindfranklin.edu/academics/college-of-pharmacy/helixtalk/helixtalk-196-stretching-the-stroke-clock-to-2026-a-brief-review-of-the-2026-acute-ischemic-stroke-guidelines/)
+1. [TNKase (tenecteplase) prescribing information, DailyMed](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tnkase) · summary: [SUNY Downstate: Tenecteplase education, pharmacy update (Dec 2025)](https://www.downstate.edu/education-training/fellowship-residency-programs/pharmacy/tenecteplase-education-pharmacy-update-dec-2025.pdf)
+2. [Prabhakaran S, et al. 2026 AHA/ASA guideline for early management of acute ischemic stroke. Stroke 2026](https://doi.org/10.1161/STR.0000000000000513) · summary: [HelixTalk 196: 2026 acute ischemic stroke guidelines review](https://www.rosalindfranklin.edu/academics/college-of-pharmacy/helixtalk/helixtalk-196-stretching-the-stroke-clock-to-2026-a-brief-review-of-the-2026-acute-ischemic-stroke-guidelines/)
 3. [HCPLive: FDA approves tenecteplase for acute ischemic stroke (March 4, 2025)](https://www.hcplive.com/view/fda-approves-tenecteplase-tnkase-for-acute-ischemic-stroke)
 4. [[Stroke_Core]] source list
 5. [JournalFeed: 2026 stroke guidelines and updates](https://journalfeed.org/article-a-day/2026/new-2026-stroke-guidelines-and-updates/)

@@ -76,13 +76,13 @@ flowchart TD
 6. Lab draw times ordered.
 
 ## Sources (open these to verify)
-1. Raschke RA, et al. The weight based heparin dosing nomogram compared with a "standard care" nomogram. Ann Intern Med. 1993;119(9):874-881. [University of Arizona record](https://experts.arizona.edu/en/publications/the-weight-based-heparin-dosing-nomogram-compared-with-a-standard/)
+1. [Raschke RA, et al. Weight based heparin dosing nomogram. Ann Intern Med 1993;119:874-881](https://doi.org/10.7326/0003-4819-119-9-199311010-00002) · summary: [University of Arizona record](https://experts.arizona.edu/en/publications/the-weight-based-heparin-dosing-nomogram-compared-with-a-standard/)
 2. [WikEM: Unfractionated heparin](https://wikem.org/wiki/Unfractionated_heparin) (secondary summary; cites StatPearls)
 3. [Termedia: Anticoagulation therapy in acute coronary syndromes according to current guidelines](https://termedia.pl/Acute-management-of-ACS-Anticoagulation-therapy-in-acute-coronary-syndromes-according-to-current-guidelines,52,14059,1,1.html)
 4. [Southern Health: Heparin Infusion Standard Orders, Acute Coronary Syndrome](https://staffnet.southernhealth.ca/wp-content/uploads/Heparin-Infusion-Standard-Orders-Acute-Coronary-Syndrome.pdf)
 5. [FDA label, Heparin Sodium Injection USP (DailyMed)](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=45dc6b8b-ed5d-40a2-8d9c-084c863ae93a&type=display)
 6. [FDA label, Heparin Sodium in 0.9% Sodium Chloride, Baxter (DailyMed)](https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=0d929726-76c3-48fc-b4e7-fd06409f9fb3&type=pdf&name=0d929726-76c3-48fc-b4e7-fd06409f9fb3)
-7. Cuker A, et al. ASH 2018 guidelines: heparin induced thrombocytopenia. Blood Adv. 2018;2(22):3360-3392. [McMaster record](https://experts.mcmaster.ca/scholarly-works/1612254) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30482768/)
+7. [Cuker A, et al. ASH 2018 guidelines: heparin induced thrombocytopenia. Blood Adv 2018;2:3360-3392](https://doi.org/10.1182/bloodadvances.2018024489) · summary: [McMaster record](https://experts.mcmaster.ca/scholarly-works/1612254) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30482768/)
 8. [FDA label, Argatroban Injection (2019)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/022485s013lbl.pdf)
 
 **Pyrls:** search "heparin" in Drug Summaries.

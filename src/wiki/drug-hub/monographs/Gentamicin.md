@@ -58,7 +58,7 @@ flowchart TD
 
 ## Sources
 1. [FDA label, Gentamicin Injection USP 40 mg/mL (DailyMed)](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=09cf88af-59da-f147-e063-6294a90aac99)
-2. Nicolau DP, et al. Experience with a once daily aminoglycoside program administered to 2,184 adult patients. Antimicrob Agents Chemother. 1995;39(3):650-655. [Record](https://www.qxmd.com/r/7793867)
+2. [Nicolau DP, et al. Once daily aminoglycoside program in 2,184 adults. Antimicrob Agents Chemother 1995;39:650-655](https://doi.org/10.1128/AAC.39.3.650) · summary: [Record](https://www.qxmd.com/r/7793867)
 3. [Bugs and Drugs: Interpretation of aminoglycoside interval level, Hartford nomogram](https://bugsanddrugs.org/FA5428C4-4A03-4175-B670-55FF25DDBCB1)
 
 *Last verified: 2026-10-17.*

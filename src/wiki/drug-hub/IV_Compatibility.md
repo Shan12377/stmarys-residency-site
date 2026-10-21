@@ -37,13 +37,13 @@ Her own quick reference for the IV room and bedside questions: diluent, line, fi
 ## Sources
 1. [Phenytoin sodium injection SmPC](https://www.medicines.org.uk/emc/product/4326/smpc/print)
 2. [UK MHRA: Ceftriaxone incompatible with calcium solutions](https://www.gov.uk/drug-safety-update/ceftriaxone-rocephin-incompatible-with-solutions-containing-calcium)
-3. [CHEO Parenteral Manual: Amphotericin B liposomal](https://outreach.cheo.on.ca/node/1477)
+3. [AmBisome (amphotericin B liposomal) prescribing information, DailyMed](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ambisome) · summary: [CHEO Parenteral Manual: Amphotericin B liposomal](https://outreach.cheo.on.ca/node/1477)
 4. [LHSC NICU: Amphotericin B liposomal](https://www.lhsc.on.ca/nicu/amphotericin-b-liposomal)
 5. [Nitroglycerin injection prescribing information (American Regent)](https://www.americanregent.com/media/1783/nitroglycerin-prescribing-information.pdf)
-6. [Amiodarone injection label (MedLibrary)](https://medlibrary.org/lib/rx/meds/amiodarone-hci/page/4/)
-7. [Merck Manual Professional: Parenteral nutrition](https://www.merckmanuals.com/professional/nutritional-disorders/nutritional-support/parenteral-nutrition-pn)
+6. [Amiodarone HCl injection prescribing information, DailyMed](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amiodarone+injection) · summary: [Amiodarone injection label (MedLibrary)](https://medlibrary.org/lib/rx/meds/amiodarone-hci/page/4/)
+7. [Boullata JI, et al. ASPEN safe practices for parenteral nutrition. JPEN 2014;38:334-377](https://doi.org/10.1177/0148607114521833) · summary: [Merck Manual Professional: Parenteral nutrition](https://www.merckmanuals.com/professional/nutritional-disorders/nutritional-support/parenteral-nutrition-pn)
 8. [UIC Drug Information Group: Filtering PN](https://dig.pharmacy.uic.edu/faqs/2021-2/august-2021-faqs/what-are-current-recommendations-for-filtering-parenteral-nutrition-pn-admixtures)
-9. [ONS: 2025 ONS/ASCO extravasation guideline](https://www.ons.org/publications-research/voice/news-views/10-2025/new-extravasation-guidelines-provide-recommendations)
+9. [ONS/ASCO guideline on management of antineoplastic extravasation. Clin J Oncol Nurs 2025](https://doi.org/10.1188/25.CJON.384-399) · summary: [ONS: 2025 ONS/ASCO extravasation guideline](https://www.ons.org/publications-research/voice/news-views/10-2025/new-extravasation-guidelines-provide-recommendations)
 10. [POGO: Antidotes for extravasation](https://www.pogo.ca/satellite-manual/3-0-chemotherapy-administration/3-3-extravasation-management/3-3-2-antidotes-and-treatments-for-extravasation/)
 
 *Last verified: 2026-10-17.*

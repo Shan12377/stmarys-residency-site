@@ -91,7 +91,7 @@ Not FDA approved for neonates or infants, though it is used off label with anti 
 1. [FDA label, Lovenox (Sanofi, revised 05/2025)](https://products.sanofi.us/lovenox/lovenox.pdf) · earlier version on [Drugs@FDA (2021)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020164s129lbl.pdf)
 2. Jupalli A, Iqbal AM. [Enoxaparin. StatPearls (updated Aug 2023)](https://www.ncbi.nlm.nih.gov/sites/books/NBK539865/)
 3. [University of Michigan Medical Laboratories: LMWH anti Xa test](https://mlabs.umich.edu/tests/lmwh-anti-xa)
-4. [Pharmacy Times: Neuraxial anesthesia and anticoagulation](https://pharmacytimes.com/view/neuraxial-anesthesia-and-anticoagulation) (summarizes ASRA 3rd edition, Horlocker et al., Reg Anesth Pain Med 2010;35:64)
+4. [Horlocker TT, et al. ASRA guidelines, 3rd edition. Reg Anesth Pain Med 2010;35:64-101](https://doi.org/10.1097/AAP.0b013e3181c15c70) · summary: [Pharmacy Times: Neuraxial anesthesia and anticoagulation](https://pharmacytimes.com/view/neuraxial-anesthesia-and-anticoagulation) (summarizes ASRA 3rd edition, Horlocker et al., Reg Anesth Pain Med 2010;35:64)
 
 **Pyrls:** search "enoxaparin" in Drug Summaries.
 

@@ -66,7 +66,7 @@ flowchart TD
 5. INR 30 minutes after; no routine repeat dose.
 
 ## Sources
-1. [Kcentra prescribing information (Drugs.com)](https://www.drugs.com/pro/kcentra.html)
+1. [Kcentra prescribing information, DailyMed](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra) · summary: [Kcentra prescribing information (Drugs.com)](https://www.drugs.com/pro/kcentra.html)
 2. [Children's Mercy Kansas City: Warfarin antidotes clinical practice guideline](https://www.childrensmercy.org/health-care-providers/evidence-based-practice/clinical-practice-guidelines/anticoagulation-therapy-warfarin-therapy/warfarin-antidotes/)
 
 *Last verified: 2026-10-17.*

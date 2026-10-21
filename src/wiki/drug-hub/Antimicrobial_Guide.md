@@ -56,15 +56,15 @@ Cefazolin 2 g IV (3 g if 120 kg or more) within 60 minutes before incision; redo
 ---
 
 ## Sources
-1. [emDocs: ATS/IDSA 2019 CAP guideline update](https://www.emdocs.net/community-acquired-pneumonia-ats-idsa-guidelines-update/)
+1. [Metlay JP, et al. ATS/IDSA CAP guideline. Am J Respir Crit Care Med 2019;200:e45-e67](https://doi.org/10.1164/rccm.201908-1581ST) · summary: [emDocs: ATS/IDSA 2019 CAP guideline update](https://www.emdocs.net/community-acquired-pneumonia-ats-idsa-guidelines-update/)
 2. [AAFP: CAP 2019 guideline summary (PDF)](https://www.aafp.org/pubs/afp/issues/2020/0715/p121.pdf)
-3. [Emergency Care BC: HAP treatment (based on IDSA/ATS 2016)](https://emergencycarebc.ca/clinical_resource/hospital-acquired-pneumonia-adult-treatment)
+3. [Kalil AC, et al. IDSA/ATS HAP and VAP guideline. Clin Infect Dis 2016;63:e61-e111](https://doi.org/10.1093/cid/ciw353) · summary: [Emergency Care BC: HAP treatment (based on IDSA/ATS 2016)](https://emergencycarebc.ca/clinical_resource/hospital-acquired-pneumonia-adult-treatment)
 4. [UCSF: HAP/VAP algorithm](https://idmp.ucsf.edu/node/16091)
-5. [emDocs: 2025 IDSA complicated UTI guideline](https://www.emdocs.net/guideline-update-2025-idsa-management-of-complicated-uti/)
+5. [Trautner BW, et al. IDSA 2025 guideline on complicated UTI. Clin Infect Dis 2025](https://doi.org/10.1093/cid/ciaf460) · summary: [emDocs: 2025 IDSA complicated UTI guideline](https://www.emdocs.net/guideline-update-2025-idsa-management-of-complicated-uti/)
 6. [UNMC: cUTI summary](https://www.unmc.edu/intmed/_documents/id/asp/cuti_summary.pdf)
 7. [AHRQ: Cellulitis clinician guide](https://www.ahrq.gov/sites/default/files/wysiwyg/antibiotic-use/telemedicine/cellulitis-clinician-guide.pdf)
-8. [UNMC: SSTI clinical pathway](https://www.unmc.edu/intmed/_documents/id/asp/clinicpath-ssti.pdf)
-9. [Emergency Care BC: Meningitis management](https://emergencycarebc.ca/clinical_resource/clinical-summary/meningitis-management/)
+8. [Stevens DL, et al. IDSA skin and soft tissue infection guideline. Clin Infect Dis 2014;59:e10-e52](https://doi.org/10.1093/cid/ciu296) · summary: [UNMC: SSTI clinical pathway](https://www.unmc.edu/intmed/_documents/id/asp/clinicpath-ssti.pdf)
+9. [Tunkel AR, et al. IDSA bacterial meningitis guideline. Clin Infect Dis 2004;39:1267-1284](https://doi.org/10.1086/425368) · summary: [Emergency Care BC: Meningitis management](https://emergencycarebc.ca/clinical_resource/clinical-summary/meningitis-management/)
 10. [AAFP: IDSA bacterial meningitis guideline (2005)](https://www.aafp.org/afp/2005/0515/p2003.html)
 
 Subscription equivalent: Sanford Guide (through St. Mary's). Free: [IDSA guidelines](https://www.idsociety.org/practice-guideline/practice-guidelines/).

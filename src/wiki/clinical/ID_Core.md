@@ -76,15 +76,15 @@ Stable, afebrile, improving, working gut, taking other oral meds. Good oral opti
 4. Stop date written?
 
 ## Sources
-1. [UIC Drug Information Group: SSC 2021 pharmacotherapy updates](https://dig.pharmacy.uic.edu/faqs/2022-2/march-2022-faqs/update-what-are-the-2021-pharmacotherapy-updates-to-the-surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock) · [SCCM guideline page](https://sccm.org/sepsisguidelines)
+1. [Evans L, et al. Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143](https://doi.org/10.1097/CCM.0000000000005337) · summary: [UIC Drug Information Group: SSC 2021 pharmacotherapy updates](https://dig.pharmacy.uic.edu/faqs/2022-2/march-2022-faqs/update-what-are-the-2021-pharmacotherapy-updates-to-the-surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock) · [SCCM guideline page](https://sccm.org/sepsisguidelines)
 2. [Brameli, Stone, Phillips. J Allergy Clin Immunol Glob 2024 (cites 2022 practice parameter)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11609518)
-3. [AAFP: IDSA 2021 C. difficile update](https://www.aafp.org/afp/2022/0600/p678)
+3. [Johnson S, et al. IDSA/SHEA 2021 focused update on C. difficile. Clin Infect Dis 2021;73:e1029-e1044](https://doi.org/10.1093/cid/ciab549) · summary: [AAFP: IDSA 2021 C. difficile update](https://www.aafp.org/afp/2022/0600/p678)
 4. [UIC Drug Information Group: 2021 C. difficile update](https://dig.pharmacy.uic.edu/faqs/2021-2/november-2021-faqs/what-are-the-2021-guideline-updates-on-the-management-of-clostridioides-difficile-infection-cdi-in-adults)
-5. [emDocs: 2025 IDSA complicated UTI guideline](https://www.emdocs.net/guideline-update-2025-idsa-management-of-complicated-uti/)
+5. [Trautner BW, et al. IDSA 2025 guideline on complicated UTI. Clin Infect Dis 2025](https://doi.org/10.1093/cid/ciaf460) · summary: [emDocs: 2025 IDSA complicated UTI guideline](https://www.emdocs.net/guideline-update-2025-idsa-management-of-complicated-uti/)
 6. [UNMC: cUTI summary](https://www.unmc.edu/intmed/_documents/id/asp/cuti_summary.pdf)
-7. [emDocs: ATS/IDSA 2019 CAP update](https://www.emdocs.net/community-acquired-pneumonia-ats-idsa-guidelines-update/) · [AAFP: CAP 2019 guideline](https://www.aafp.org/pubs/afp/issues/2020/0715/p121.pdf)
+7. [Metlay JP, et al. ATS/IDSA CAP guideline. Am J Respir Crit Care Med 2019;200:e45-e67](https://doi.org/10.1164/rccm.201908-1581ST) · summary: [emDocs: ATS/IDSA 2019 CAP update](https://www.emdocs.net/community-acquired-pneumonia-ats-idsa-guidelines-update/) · [AAFP: CAP 2019 guideline](https://www.aafp.org/pubs/afp/issues/2020/0715/p121.pdf)
 8. [AHRQ: Cellulitis clinician guide](https://www.ahrq.gov/sites/default/files/wysiwyg/antibiotic-use/telemedicine/cellulitis-clinician-guide.pdf)
-9. [UCSF: HAP/VAP algorithm](https://idmp.ucsf.edu/node/16091)
+9. [Kalil AC, et al. IDSA/ATS HAP and VAP guideline. Clin Infect Dis 2016;63:e61-e111](https://doi.org/10.1093/cid/ciw353) · summary: [UCSF: HAP/VAP algorithm](https://idmp.ucsf.edu/node/16091)
 10. [Emergency Care BC: HAP treatment](https://emergencycarebc.ca/clinical_resource/hospital-acquired-pneumonia-adult-treatment)
 
 ## Verify locally at St. Mary's

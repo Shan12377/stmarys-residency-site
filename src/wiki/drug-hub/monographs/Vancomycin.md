@@ -55,7 +55,7 @@ flowchart TD
 5. Infusion time matches dose.
 
 ## Sources
-1. [Pharmacy Times: New guidelines released for monitoring vancomycin in serious MRSA infections](https://pharmacytimes.com/news/new-guidelines-released-for-monitoring-vancomycin-in-serious-mrsa-infections) (summarizes Rybak MJ, et al. Am J Health Syst Pharm. 2020;77(11):835-864)
+1. [Rybak MJ, et al. Vancomycin therapeutic monitoring consensus. Am J Health Syst Pharm 2020;77:835-864](https://doi.org/10.1093/ajhp/zxaa036) · summary: [Pharmacy Times: New guidelines released for monitoring vancomycin in serious MRSA infections](https://pharmacytimes.com/news/new-guidelines-released-for-monitoring-vancomycin-in-serious-mrsa-infections) (summarizes Rybak MJ, et al. Am J Health Syst Pharm. 2020;77(11):835-864)
 2. [PMC record of the 2020 consensus guideline](https://pmc.ncbi.nlm.nih.gov/articles/PMC8034673) (PubMed's bot check blocked the full text; open it directly to confirm)
 
 *Last verified: 2026-10-17.*

@@ -37,7 +37,7 @@ Her own quick reference for L&D, postpartum and NICU mothers. **LactMed is the p
 - Document the source you used (LactMed date) when you answer a nurse or mother.
 
 ## Sources
-1. [US Pharmacist: Medications and breastfeeding (July 2022)](https://www.qgdigitalpublishing.com/article/Consult+Your+Pharmacist/4303347/752390/article.html)
+1. [Sachs HC, AAP Committee on Drugs. Transfer of drugs into human milk. Pediatrics 2013;132:e796-e809](https://doi.org/10.1542/peds.2013-1985) · summary: [US Pharmacist: Medications and breastfeeding (July 2022)](https://www.qgdigitalpublishing.com/article/Consult+Your+Pharmacist/4303347/752390/article.html)
 2. [FDA: Pregnancy and Lactation Labeling Final Rule](https://www.fda.gov/vaccines-blood-biologics/biologics-rules/pregnancy-and-lactation-labeling-final-rule)
 3. [Women's Mental Health: The Pregnancy and Lactation Labeling Rule](https://womensmentalhealth.org/posts/the-pregnancy-and-lactation-labeling-rule/)
 4. [FDA: Avoid NSAIDs at 20 weeks or later in pregnancy (2020)](https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic)

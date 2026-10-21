@@ -42,7 +42,7 @@ Children's hospital and adult ED both apply (age 2 and up). Choose by patient: v
 - Have the third line (anesthetic infusion) ready.
 
 ## Sources
-1. [WikiJournalClub: ESETT](https://www.wikijournalclub.org/wiki/ESETT)
+1. [Kapur J, et al. Three anticonvulsants for status epilepticus (ESETT). N Engl J Med 2019;381:2103-2113](https://doi.org/10.1056/NEJMoa1905795) · summary: [WikiJournalClub: ESETT](https://www.wikijournalclub.org/wiki/ESETT)
 2. [The Bottom Line: ESETT](https://www.thebottomline.org.uk/summaries/icm/esett/)
 3. [NINDS press release](https://www.ninds.nih.gov/news-events/news/press-releases/head-head-comparison-finds-three-anti-seizure-drugs-equally-effective-severe-form-epilepsy)
 4. [Full text (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7098487)

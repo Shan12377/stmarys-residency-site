@@ -29,9 +29,9 @@
 - One bolus means no infusion to run out or be stopped early during transfer.
 
 ## Sources
-1. [ACC: TRACE-2 summary](https://www.acc.org/latest-in-cardiology/clinical-trials/2023/02/21/21/35/trace-2)
+1. [Wang Y, et al. Tenecteplase vs alteplase (TRACE-2). Lancet 2023;401:645-654](https://doi.org/10.1016/S0140-6736(22)02600-9) · summary: [ACC: TRACE-2 summary](https://www.acc.org/latest-in-cardiology/clinical-trials/2023/02/21/21/35/trace-2)
 2. [TCTMD: TRACE-2 news](https://www.tctmd.com/news/tenecteplase-matches-well-alteplase-acute-stroke-trace-2)
-3. [ACC: ORIGINAL summary](https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2024/09/25/14/33/original)
-4. [UK DRI: ATTEST-2 publication](https://ukdri.ac.uk/publications/tenecteplase-versus-alteplase-acute-stroke-within-45-h-onset-attest-2-randomised)
+3. [Meng X, et al. Tenecteplase vs alteplase (ORIGINAL). JAMA 2024;332:1437](https://doi.org/10.1001/jama.2024.14721) · summary: [ACC: ORIGINAL summary](https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2024/09/25/14/33/original)
+4. [Muir KW, et al. Tenecteplase vs alteplase (ATTEST-2). Lancet Neurol 2024;23:1087-1096](https://doi.org/10.1016/S1474-4422(24)00377-6) · summary: [UK DRI: ATTEST-2 publication](https://ukdri.ac.uk/publications/tenecteplase-versus-alteplase-acute-stroke-within-45-h-onset-attest-2-randomised)
 
 *Last verified: 2026-10-17.*

@@ -65,7 +65,7 @@ K at baseline, 2 h after insulin starts, then every 4 h; glucose hourly ✅ [1].
 5. Basal insulin ordered 1 to 2 h before the drip stops.
 
 ## Sources
-1. Rodriguez Alvarez P, et al. [Hyperglycemic crises in adults: a look at the 2024 consensus report. Cleve Clin J Med. 2025;92(3):152-158](https://www.ccjm.org/content/92/3/152.full.pdf). Summarizes Umpierrez GE, et al. Diabetes Care. 2024;47(8):1257-1275 (doi:10.2337/dci24-0032).
+1. [Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: consensus report. Diabetes Care 2024;47:1257-1275](https://doi.org/10.2337/dci24-0032) · summary: [Hyperglycemic crises in adults: a look at the 2024 consensus report. Cleve Clin J Med. 2025;92(3):152-158](https://www.ccjm.org/content/92/3/152.full.pdf)
 2. [Cleveland Clinic Consult QD: Hyperglycemic crises in adults, the 2024 consensus report](https://consultqd.clevelandclinic.org/hyperglycemic-crises-in-adults-the-2024-consensus-report)
 
 *Last verified: 2026-10-17.*

@@ -56,6 +56,6 @@ flowchart TD
 ## Sources
 1. [FDA label, Norepinephrine Bitartrate in Sodium Chloride (2022)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215700s000lbl.pdf)
 2. [SCCM: Surviving Sepsis Campaign 2021, vasoactive agents infographic](https://www.sccm.org/sccm/media/PDFs/Surviving-Sepsis-Campaign-2021-Guidelines-Infographic_Vasoactive-Agent.pdf?lang=en-US)
-3. [EMdocs: Surviving Sepsis Campaign 2021 updates](https://www.emdocs.net/surviving-sepsis-campaign-2021-updates/)
+3. [Evans L, et al. Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143](https://doi.org/10.1097/CCM.0000000000005337) · summary: [EMdocs: Surviving Sepsis Campaign 2021 updates](https://www.emdocs.net/surviving-sepsis-campaign-2021-updates/)
 
 *Last verified: 2026-10-17.*

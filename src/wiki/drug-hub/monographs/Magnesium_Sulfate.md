@@ -61,6 +61,6 @@ flowchart TD
 
 ## Sources
 1. [FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, rev. 4/2019)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf)
-2. [UT Southwestern CME: Hypertensive Disorders in Pregnancy (2026)](https://cme.utsouthwestern.edu/sites/default/files/course/2026-04/1045am_Hypertensive%20Disorders%20in%20Pregnancy_Ambia.pdf) (cites ACOG)
+2. [ACOG Practice Bulletin 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260](https://doi.org/10.1097/AOG.0000000000003891) · summary: [UT Southwestern CME: Hypertensive Disorders in Pregnancy (2026)](https://cme.utsouthwestern.edu/sites/default/files/course/2026-04/1045am_Hypertensive%20Disorders%20in%20Pregnancy_Ambia.pdf) (cites ACOG)
 
 *Last verified: 2026-10-17.*

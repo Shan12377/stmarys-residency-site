@@ -1,3 +1,4 @@
+- **2026-10-21:** 55 sources across 27 pages now open the original guideline, trial or FDA label first, with the free summary kept after it. Flag added: ASRA published a 5th edition (2025); epidural hold times on [[Anticoagulation_Core]] need a recheck.
 - **2026-10-21:** Bigger **🔊 Listen to this page** button at the top of every page (reads the whole page with the natural voice).
 - **2026-10-20:** Every citation number like [15] is now a link that opens that source in a new tab. [[Anticoagulation_Core]] sources 15 to 17 now point to the original CHEST 2021 guideline, AMPLIFY-EXT and RENOVE papers.
 - **2026-10-20:** [[Anticoagulation_Core]]: extended apixaban 2.5 mg BID clarified (after at least 6 months, no set stop date, reassess yearly; CHEST 2021, AMPLIFY-EXT, RENOVE).

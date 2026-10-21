@@ -80,15 +80,15 @@ flowchart TD
 - Renal dosing as CrCl changes; augmented clearance in young trauma patients ⚠️ [VERIFY].
 
 ## Sources
-1. [UIC Drug Information Group: SSC 2021 updates](https://dig.pharmacy.uic.edu/faqs/2022-2/march-2022-faqs/update-what-are-the-2021-pharmacotherapy-updates-to-the-surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock)
-2. [US Pharmacist: PAD guideline updates for pharmacists](https://www.uspharmacist.com/article/pain-agitation-and-delirium-a-review-of-pertinent-guideline-updates-for-pharmacists) · [SCCM PADIS page](https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline)
-3. [WikEM: Propofol infusion syndrome](https://wikem.org/wiki/Propofol_infusion_syndrome)
-4. [Emergency Care BC: Hyperkalemia](https://emergencycarebc.ca/clinical_resource/clinical-summary/hyperkalemia-diagnosis-and-treatment)
+1. [Evans L, et al. Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143](https://doi.org/10.1097/CCM.0000000000005337) · summary: [UIC Drug Information Group: SSC 2021 updates](https://dig.pharmacy.uic.edu/faqs/2022-2/march-2022-faqs/update-what-are-the-2021-pharmacotherapy-updates-to-the-surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock)
+2. [Devlin JW, et al. PADIS guideline. Crit Care Med 2018;46:e825-e873](https://doi.org/10.1097/CCM.0000000000003299) · summary: [US Pharmacist: PAD guideline updates for pharmacists](https://www.uspharmacist.com/article/pain-agitation-and-delirium-a-review-of-pertinent-guideline-updates-for-pharmacists) · [SCCM PADIS page](https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline)
+3. [Kam PCA, Cardone D. Propofol infusion syndrome. Anaesthesia 2007;62:690-701](https://doi.org/10.1111/j.1365-2044.2007.05055.x) · summary: [WikEM: Propofol infusion syndrome](https://wikem.org/wiki/Propofol_infusion_syndrome)
+4. [Clase CM, et al. Potassium homeostasis and management of dyskalemia (KDIGO conference). Kidney Int 2020;97:42-61](https://doi.org/10.1016/j.kint.2019.09.018) · summary: [Emergency Care BC: Hyperkalemia](https://emergencycarebc.ca/clinical_resource/clinical-summary/hyperkalemia-diagnosis-and-treatment)
 5. [Munson Healthcare: Adult acute hyperkalemia reference](https://www.munsonhealthcare.org/media/file/Physician%20Services/Clinical%20Resources/Adult%20Acute%20Hyperkalemia%20Management%20Reference%20Text.pdf)
 6. [Society for Endocrinology: Emergency management of severe hyponatraemia (2022)](https://www.endocrinology.org/media/xhrhxhxm/emergency-management-of-severe-and-moderately-severely-symptomatic-hyponatraemia-in-adult-patients-2022.pdf)
-7. [AJKD blog: NephMadness 2024 hyponatremia correction](https://ajkdblog.org/2024/03/01/nephmadness-2024-hyponatremia-region/)
+7. [MacMillan TE, et al. Osmotic demyelination syndrome in patients hospitalized with hyponatremia. NEJM Evid 2023](https://doi.org/10.1056/EVIDoa2200215) · summary: [AJKD blog: NephMadness 2024 hyponatremia correction](https://ajkdblog.org/2024/03/01/nephmadness-2024-hyponatremia-region/)
 8. [AACE: IV insulin hospital protocol](https://pro.aace.com/pdfs/diabetes/IV-Insulin-Hospital-Protocol-FINAL-090320.pdf)
-9. [WikiJournalClub: NICE-SUGAR](https://www.wikijournalclub.org/wiki/NICE-SUGAR)
+9. [NICE-SUGAR Study Investigators. Intensive vs conventional glucose control in critically ill patients. N Engl J Med 2009;360:1283-1297](https://doi.org/10.1056/NEJMoa0810625) · summary: [WikiJournalClub: NICE-SUGAR](https://www.wikijournalclub.org/wiki/NICE-SUGAR)
 
 ## Verify locally at St. Mary's
 - ICU vasopressor standard concentrations and central vs peripheral line policy.

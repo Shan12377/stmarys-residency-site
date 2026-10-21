@@ -43,7 +43,7 @@ Level I trauma center: TXA belongs in the trauma bay and massive transfusion wor
 - Seizures are linked to high doses (cardiac surgery) and wrong route; IV only, never neuraxial (fatal); label TXA syringes clearly ✅✅ [Cyklokapron US label (Drugs.com)](https://www.drugs.com/pro/cyklokapron.html); [Cyklokapron SmPC (UK)](https://www.medicines.org.uk/emc/product/1077/smpc/print).
 
 ## Sources
-1. [Critical Care Reviews: CRASH-2](https://criticalcarereviews.com/foundational-trials/crashl-2)
+1. [CRASH-2 trial collaborators. Tranexamic acid in bleeding trauma patients. Lancet 2010;376:23-32](https://doi.org/10.1016/S0140-6736(10)60835-5) · summary: [Critical Care Reviews: CRASH-2](https://criticalcarereviews.com/foundational-trials/crashl-2)
 2. [RCEMLearning: CRASH-2 trial](https://www.rcemlearning.co.uk/?p=235905)
 3. [LSHTM research online: CRASH-2 paper](https://researchonline.lshtm.ac.uk/3305)
 
