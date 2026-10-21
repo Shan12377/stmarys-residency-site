@@ -56,7 +56,7 @@
     const art = document.querySelector('article');
     if (!art) return;
     // Skip the link list at the bottom ("Sources" heading onward).
-    chunks = split(clean(art.innerText.split(/\n\s*Sources[^\n:]*\n/)[0])); next = null; run++;
+    chunks = split(clean(art.innerText.replace(/^\s*\S*\s*(Listen to this page|Pause reading|Resume reading)\s*/, '').split(/\n\s*Sources[^\n:]*\n/)[0])); next = null; run++;
     play(0, run);
   }
 
@@ -67,12 +67,24 @@
   }
 
   function label(btn, status) {
-    const b = document.getElementById('rx-listen-btn'), s = document.getElementById('rx-listen-status');
+    const b = document.getElementById('rx-listen-btn'), s = document.getElementById('rx-listen-status'), t = document.getElementById('rx-listen-top');
     if (b) b.textContent = btn === 'Listen' ? '▶ Listen' : btn === 'Pause' ? '❚❚ Pause' : '▶ Resume';
+    if (t) t.textContent = btn === 'Listen' ? '🔊 Listen to this page' : btn === 'Pause' ? '❚❚ Pause reading' : '▶ Resume reading';
     if (s && status !== undefined) s.textContent = status;
   }
 
+  function mountTop() {
+    const art = document.querySelector('article');
+    if (!art || document.getElementById('rx-listen-top')) return;
+    const t = document.createElement('button');
+    t.id = 'rx-listen-top'; t.type = 'button'; t.textContent = '🔊 Listen to this page';
+    t.style.cssText = 'display:inline-block;margin:0 0 14px;padding:9px 16px;border-radius:999px;border:0;background:var(--secondary,#1f3b5a);color:#fff;font:600 15px system-ui,sans-serif;cursor:pointer';
+    t.onclick = toggle;
+    art.prepend(t);
+  }
+
   function mount() {
+    mountTop();
     if (document.getElementById('rx-listen') || !document.querySelector('article')) return;
     audio = audio || new Audio();
     const bar = document.createElement('div');
