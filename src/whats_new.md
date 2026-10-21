@@ -1,3 +1,4 @@
+- **2026-10-21:** Every page now has the free natural voice. Tap **🔊 Listen to this page**.
 - **2026-10-21:** Free natural voice (Kokoro) for Listen, made once per page so there is no daily limit and no cost. Clinical modules first; the rest are being added.
 - **2026-10-21:** Listen fix: the backup browser voice now reads sentence by sentence (it was going silent on long pages), and phones are unlocked on the first tap.
 - **2026-10-21:** 55 sources across 27 pages now open the original guideline, trial or FDA label first, with the free summary kept after it. Flag added: ASRA published a 5th edition (2025); epidural hold times on [[Anticoagulation_Core]] need a recheck.
