@@ -1,3 +1,4 @@
+- **2026-10-21:** Listen fix: the backup browser voice now reads sentence by sentence (it was going silent on long pages), and phones are unlocked on the first tap.
 - **2026-10-21:** 55 sources across 27 pages now open the original guideline, trial or FDA label first, with the free summary kept after it. Flag added: ASRA published a 5th edition (2025); epidural hold times on [[Anticoagulation_Core]] need a recheck.
 - **2026-10-21:** Bigger **🔊 Listen to this page** button at the top of every page (reads the whole page with the natural voice).
 - **2026-10-20:** Every citation number like [15] is now a link that opens that source in a new tab. [[Anticoagulation_Core]] sources 15 to 17 now point to the original CHEST 2021 guideline, AMPLIFY-EXT and RENOVE papers.

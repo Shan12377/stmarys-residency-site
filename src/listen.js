@@ -1,6 +1,7 @@
 // Read aloud bar for every wiki page. Audio comes from /api/tts (Aura-2 or ElevenLabs).
 // Falls back to the browser's own voice if the server voice fails.
 (() => {
+  const SILENT = 'data:audio/wav;base64,UklGRrQBAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YZABAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA';
   let audio = null, chunks = [], i = 0, next = null, rate = 1, playing = false, run = 0;
 
   const clean = t => t
@@ -25,12 +26,22 @@
         .then(r => r.ok ? r.blob() : Promise.reject(r.status))
     : Promise.resolve(null);
 
-  function browserVoice(from) {
-    const u = new SpeechSynthesisUtterance(chunks.slice(from).join(' '));
-    const vs = speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
-    u.voice = vs.find(v => /premium|enhanced|natural|google us/i.test(v.name)) || vs[0] || null;
-    u.rate = rate; u.onend = stop;
-    speechSynthesis.speak(u); label('Pause', 'Browser voice');
+  // Browser voice fallback: Chrome goes silent on very long utterances, so speak one sentence at a time.
+  function browserVoice(from, why) {
+    const parts = chunks.slice(from).join(' ').split(/(?<=[.!?;:])\s+/).flatMap(p => p.match(/.{1,220}(\s|$)/g) || []);
+    const id = run; let k = 0;
+    const pickVoice = () => {
+      const vs = speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+      return vs.find(v => /premium|enhanced|natural|google us|samantha|ava|allison/i.test(v.name)) || vs[0] || null;
+    };
+    const say = () => {
+      if (id !== run) return;
+      if (k >= parts.length) return stop();
+      const u = new SpeechSynthesisUtterance(parts[k++]);
+      u.voice = pickVoice(); u.rate = rate; u.onend = say; u.onerror = say;
+      speechSynthesis.speak(u);
+    };
+    speechSynthesis.cancel(); label('Pause', why || 'Browser voice'); say();
   }
 
   async function play(n, id) {
@@ -38,12 +49,12 @@
     if (n >= chunks.length) return stop();
     i = n; label('Pause', `Part ${n + 1} of ${chunks.length}`);
     let blob;
-    try { blob = await (next || fetchChunk(n)); } catch { return id === run && browserVoice(n); }
+    try { blob = await (next || fetchChunk(n)); } catch (e) { return id === run && browserVoice(n, e === 429 ? 'Browser voice (natural voice limit reached today)' : 'Browser voice'); }
     if (id !== run) return;
     next = fetchChunk(n + 1); next.catch(() => {});
     audio.src = URL.createObjectURL(blob); audio.playbackRate = rate;
     audio.onended = () => { URL.revokeObjectURL(audio.src); play(n + 1, id); };
-    audio.play();
+    audio.play().catch(() => id === run && browserVoice(n));
   }
 
   function toggle() {
@@ -55,6 +66,9 @@
     if (speechSynthesis.paused) { speechSynthesis.resume(); return label('Pause'); }
     const art = document.querySelector('article');
     if (!art) return;
+    // Unlock audio inside the tap so phones allow playback after the voice loads.
+    audio.src = SILENT; audio.play().catch(() => {});
+    label('Pause', 'Loading voice...');
     // Skip the link list at the bottom ("Sources" heading onward).
     chunks = split(clean(art.innerText.replace(/^\s*\S*\s*(Listen to this page|Pause reading|Resume reading)\s*/, '').split(/\n\s*Sources[^\n:]*\n/)[0])); next = null; run++;
     play(0, run);
