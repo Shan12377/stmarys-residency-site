@@ -35,6 +35,7 @@ PY
 npx quartz build >/dev/null 2>&1
 rm -f public/CNAME; mkdir -p public/tools
 cp "$G/src/listen.js" "$G/src/explain.js" public/
+[ -d "$G/src/audio" ] && cp -r "$G/src/audio" public/audio
 find public -name '*.html' -exec sed -i 's#</body>#</body><script src="/listen.js" data-persist="true"></script><script src="/explain.js" data-persist="true"></script>#' {} +
 sed 's/MTM_Clinical_Workbench\.html/mtm_clinical_workbench.html/g' "$G/src/tools/CMR_Command_Center.html" > public/tools/cmr_command_center.html
 sed 's/CMR_Command_Center\.html/cmr_command_center.html/g' "$G/src/tools/MTM_Clinical_Workbench.html" > public/tools/mtm_clinical_workbench.html

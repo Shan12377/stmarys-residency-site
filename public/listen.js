@@ -1,5 +1,5 @@
-// Read aloud bar for every wiki page. Audio comes from /api/tts (Aura-2 or ElevenLabs).
-// Falls back to the browser's own voice if the server voice fails.
+// Read aloud bar for every wiki page. Order: 1) free pre-made audio in /audio (Kokoro, made by src/make_audio.py)
+// when its text fingerprint matches the page, 2) /api/tts (free daily allowance), 3) the browser's own voice.
 (() => {
   const SILENT = 'data:audio/wav;base64,UklGRrQBAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YZABAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA';
   let audio = null, chunks = [], i = 0, next = null, rate = 1, playing = false, run = 0;
@@ -8,6 +8,53 @@
     .replace(/✅✅/g, ' two sources. ').replace(/✅/g, ' one source. ').replace(/⚠️/g, ' verify. ')
     .replace(/\[(\d+)\]/g, '').replace(/[·❯]/g, ', ').replace(/\s*\|\s*/g, ', ')
     .replace(/\t+/g, ', ').replace(/[  ]+/g, ' ');
+
+  // Say units and abbreviations the way a pharmacist would read them aloud.
+  const UNITS = [['mcg/kg/min','micrograms per kilogram per minute'],['mg/kg/day','milligrams per kilogram per day'],['mg/kg/h','milligrams per kilogram per hour'],
+    ['units/kg/h','units per kilogram per hour'],['mg/kg','milligrams per kilogram'],['units/kg','units per kilogram'],['mL/kg','milliliters per kilogram'],
+    ['units/h','units per hour'],['mEq/L','milliequivalents per liter'],['mEq/h','milliequivalents per hour'],['mmol/L','millimoles per liter'],['mg/dL','milligrams per deciliter'],
+    ['mcg/mL','micrograms per milliliter'],['mg/mL','milligrams per milliliter'],['mL/h','milliliters per hour'],['mL/min','milliliters per minute'],['mg/min','milligrams per minute'],
+    ['mcg/min','micrograms per minute'],['g/h','grams per hour'],['mEq','milliequivalents'],['mcg','micrograms'],['mg','milligrams'],['mL','milliliters'],['kg','kilograms'],['g','grams'],['h','hours'],['min','minutes']];
+  const ABBR = [[/\bBID\b/g,'twice daily'],[/\bTID\b/g,'three times daily'],[/\bQID\b/g,'four times daily'],[/\bq(\d+)h\b/g,'every $1 hours'],[/\bq(\d+) to (\d+)h\b/g,'every $1 to $2 hours'],
+    [/\bPRN\b/g,'as needed'],[/\bPO\b/g,'by mouth'],[/\bSC\b/g,'subcutaneous'],[/\bIM\b/g,'I M'],[/\bx (\d)/g,'for $1'],[/\b(\d{2,3})\/(\d{2,3})\b/g,'$1 over $2']];
+  const say = t => {
+    for (const [r, w] of ABBR) t = t.replace(r, w);
+    for (const [u, w] of UNITS) t = t.replace(new RegExp('(\\d)\\s*' + u.replace(/\//g, '\\/') + '(?![A-Za-z/])', 'g'), '$1 ' + w);
+    return t.replace(/(^|[^\d.])1 (gram|milligram|microgram|milliliter|kilogram|hour|minute|milliequivalent)s\b/g, '$11 $2');
+  };
+
+  // The exact text that is read aloud for this page (the audio generator calls this too).
+  function pageText() {
+    const art = document.querySelector('article');
+    if (!art) return '';
+    // Leave out diagrams and code blocks (they render late and read badly), then restore them.
+    const hide = [...art.querySelectorAll('.mermaid, pre, svg, figure, img, script, style')];
+    const was = hide.map(e => e.style.display); hide.forEach(e => { e.style.display = 'none'; });
+    const raw = art.innerText;
+    hide.forEach((e, n) => { e.style.display = was[n]; });
+    // Skip the button label and the link list at the bottom ("Sources" heading onward).
+    return say(clean(raw.replace(/^\s*\S*\s*(Listen to this page|Pause reading|Resume reading)\s*/, '').split(/\n\s*Sources[^\n:]*\n/)[0]));
+  }
+  window.__rxSpeechText = pageText;
+
+  async function sha(t) {
+    const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
+    return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
+  }
+
+  // 1) Pre-made audio, only if it was made from exactly this text.
+  async function premade(text, id) {
+    try {
+      const base = '/audio' + location.pathname.replace(/\/$/, '/index');
+      const meta = await fetch(base + '.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null);
+      if (!meta || id !== run || meta.hash !== await sha(text)) return false;
+      audio.src = base + '.mp3?v=' + meta.hash.slice(0, 8); audio.playbackRate = rate;
+      audio.onended = stop;
+      await audio.play();
+      label('Pause', 'Natural voice');
+      return true;
+    } catch { return false; }
+  }
 
   function split(text) {
     const out = []; let cur = '';
@@ -64,14 +111,13 @@
     playing = true;
     if (audio.src && !audio.ended && audio.currentTime) { audio.play(); return label('Pause'); }
     if (speechSynthesis.paused) { speechSynthesis.resume(); return label('Pause'); }
-    const art = document.querySelector('article');
-    if (!art) return;
+    const text = pageText();
+    if (!text) return;
     // Unlock audio inside the tap so phones allow playback after the voice loads.
     audio.src = SILENT; audio.play().catch(() => {});
     label('Pause', 'Loading voice...');
-    // Skip the link list at the bottom ("Sources" heading onward).
-    chunks = split(clean(art.innerText.replace(/^\s*\S*\s*(Listen to this page|Pause reading|Resume reading)\s*/, '').split(/\n\s*Sources[^\n:]*\n/)[0])); next = null; run++;
-    play(0, run);
+    chunks = split(text); next = null; const id = ++run;
+    premade(text, id).then(ok => { if (!ok && id === run) play(0, id); });
   }
 
   function stop() {

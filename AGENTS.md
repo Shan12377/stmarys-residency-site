@@ -3,7 +3,7 @@
 This is Dr. Shallanda Hunter's private St. Mary's Virtual Residency site. Full content rules: `src/CLAUDE.md`. Read it before editing.
 
 ## Where things live
-- Edit only `src/`. Wiki pages are `src/wiki/<section>/<Page_Name>.md` (sections: clinical, curriculum, drug-hub, journal-club, cases, sources, st-marys). Home page: `src/index.md`. Tools: `src/tools/*.html`. Read aloud bar: `src/listen.js`.
+- Edit only `src/`. Wiki pages are `src/wiki/<section>/<Page_Name>.md` (sections: clinical, curriculum, drug-hub, journal-club, cases, sources, st-marys). Home page: `src/index.md`. Tools: `src/tools/*.html`. Read aloud bar: `src/listen.js`. Free natural voice audio lives in `src/audio/` (made by Claude with `src/get_speech_text.mjs` and `src/make_audio.py`); don't edit or delete it. If you change a page, its old audio is skipped automatically until it is remade.
 - Never edit `public/` by hand. It is build output.
 - Never add a `raw/` folder or anything from the private interview prep or St. Mary's internal documents.
 
