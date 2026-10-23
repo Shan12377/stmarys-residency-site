@@ -1,0 +1,690 @@
+{
+ "id": "m13",
+ "title": "Module 13 · Medication Safety and Florida Law",
+ "intro": "ISMP high alert drugs, look alike names, Do Not Use abbreviations, weekly methotrexate, Joint Commission 2026 goals, error reporting and just culture, controlled substance diversion and DEA reporting, Florida CE and PDMP, discharge reconciliation.",
+ "cases": [
+  {
+   "id": "ms01",
+   "title": "What makes a drug high alert?",
+   "setting": "Pharmacy · orientation",
+   "topics": [
+    "ISMP",
+    "High alert"
+   ],
+   "stem": "You are learning the ISMP high alert list.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which of these are on the ISMP acute care high alert list?",
+     "options": [
+      {
+       "t": "Insulin",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Heparin and other anticoagulants",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Concentrated potassium chloride and potassium phosphate injection",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Tranexamic acid injection (added in 2024)",
+       "correct": true,
+       "why": "Mix ups with spinal anesthetic vials; intrathecal TXA is a potent neurotoxin."
+      },
+      {
+       "t": "Oral amoxicillin",
+       "correct": false,
+       "why": "Not high alert."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recall",
+     "type": "multi"
+    },
+    {
+     "q": "Which safeguards work best?",
+     "options": [
+      {
+       "t": "Standard concentrations matched to smart pump libraries, premixes, and removing concentrated electrolytes from units",
+       "correct": true,
+       "why": "System fixes beat \"be careful.\""
+      },
+      {
+       "t": "Telling staff to try harder",
+       "correct": false,
+       "why": "Weak."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Systems"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**High alert = big harm when wrong. Standardize, premix, pump library, separate storage.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ISMP (via ECRI): high alert medications in acute care settings (2024 list)",
+     "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+     "mark": "✅✅"
+    },
+    {
+     "t": "ISMP (via ECRI): ISMP updates high alert medication list (Jan 2024)",
+     "url": "https://home.ecri.org/blogs/ismp-news/ismp-updates-high-alert-medication-list",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ms02",
+   "title": "Look alike, sound alike",
+   "setting": "Pharmacy · verification",
+   "topics": [
+    "Safety",
+    "LASA"
+   ],
+   "stem": "Orders arrive for hydroxyzine and hydralazine on the same patient; another for \"Celebrex\" that the nurse heard as \"Celexa.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which strategies reduce look alike and sound alike errors?",
+     "options": [
+      {
+       "t": "Tall man lettering (hydrOXYzine, hydrALAZINE)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Include the indication on orders",
+       "correct": true,
+       "why": "Celecoxib for pain vs citalopram for depression."
+      },
+      {
+       "t": "Separate storage and barcode scanning",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Storing them alphabetically side by side",
+       "correct": false,
+       "why": "Causes picking errors."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prevent",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**LASA: tall man letters, indication on the order, separate bins, scan.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ISMP (via ECRI): high alert medications in acute care settings (2024 list)",
+     "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "ms03",
+   "title": "Do Not Use abbreviations",
+   "setting": "Med surg · handwritten downtime order",
+   "topics": [
+    "Safety",
+    "Abbreviations"
+   ],
+   "stem": "During EHR downtime: \"MSO4 2.0 mg IV q4h PRN\" and \"insulin 10 U QD.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is wrong?",
+     "options": [
+      {
+       "t": "MSO4 can be misread as magnesium sulfate: write morphine sulfate",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Trailing zero (2.0) can be read as 20",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "\"U\" can be read as 0 or 4, and \"QD\" as QID",
+       "correct": true,
+       "why": "Write \"units\" and \"daily.\""
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**No U, IU, QD, QOD, MS, MSO4, MgSO4, trailing zeros. Always a leading zero.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Becker's: Joint Commission Do Not Use list",
+     "url": "https://beckersasc.com/asc-accreditation-and-patient-safety/the-joint-commission-eliminate-these-5-abbreviations.html",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ms04",
+   "title": "Weekly methotrexate",
+   "setting": "Med rec · admission",
+   "topics": [
+    "Safety",
+    "Methotrexate"
+   ],
+   "stem": "Home med list: \"methotrexate 15 mg daily.\" The patient has rheumatoid arthritis.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "Oral methotrexate for RA is usually weekly; daily dosing has caused deaths",
+       "correct": true,
+       "why": "A classic ISMP best practice: default to weekly and require the indication."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Dangerous."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    },
+    {
+     "q": "What do you do?",
+     "options": [
+      {
+       "t": "Confirm with the patient and outpatient pharmacy, and enter it as weekly with the day of the week",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Verify as daily",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Oral methotrexate for RA or psoriasis: weekly, with the day named.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ISMP (via ECRI): high alert medications in acute care settings (2024 list)",
+     "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's medication safety, controlled substance and reporting policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ms05",
+   "title": "Joint Commission in 2026",
+   "setting": "Survey prep · pharmacy",
+   "topics": [
+    "Joint Commission",
+    "Accreditation"
+   ],
+   "stem": "A surveyor asks how pharmacy supports the Joint Commission goals.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What replaced the National Patient Safety Goals in January 2026?",
+     "options": [
+      {
+       "t": "14 National Performance Goals (existing requirements reorganized)",
+       "correct": true,
+       "why": "Saying this shows you are current."
+      },
+      {
+       "t": "Nothing; NPSGs continue unchanged",
+       "correct": false,
+       "why": "Outdated."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Current"
+    },
+    {
+     "q": "Which items fall under the medication management goal?",
+     "options": [
+      {
+       "t": "Labeling all medications on and off the sterile field",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Reducing harm from anticoagulants",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Pharmacist review of orders, dispensing cabinet override review, and standardized concentrations",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Antimicrobial stewardship",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Parking policy",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recall",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**2026: National Performance Goals replaced NPSGs. Medications: label, anticoagulants, review, concentrations, stewardship.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Relias: Joint Commission National Performance Goals (replaced NPSGs January 2026)",
+     "url": "https://www.relias.com/blog/joint-commission-national-performance-goals-are-here",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "ms06",
+   "title": "Reporting an error you made",
+   "setting": "Night shift · you verified a wrong dose",
+   "topics": [
+    "Safety",
+    "Just culture"
+   ],
+   "stem": "You verified a cefazolin dose meant for another patient. The nurse caught it before giving it.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you do?",
+     "options": [
+      {
+       "t": "Fix it, then report the near miss in St. Mary's reporting system",
+       "correct": true,
+       "why": "Reports find system causes (look alike names, two patients with similar names)."
+      },
+      {
+       "t": "Fix it and say nothing",
+       "correct": false,
+       "why": "Lost lesson for the system."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Report"
+    },
+    {
+     "q": "In a just culture, how is a human slip treated?",
+     "options": [
+      {
+       "t": "Console the person and fix the system; coach at risk behavior; act on reckless behavior",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Punish every error",
+       "correct": false,
+       "why": "Drives errors underground."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Culture"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Report near misses, including your own. Just culture fixes systems.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's medication safety, controlled substance and reporting policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ms07",
+   "title": "Controlled substance discrepancy",
+   "setting": "Pharmacy · cabinet count",
+   "topics": [
+    "Controlled substances",
+    "Diversion"
+   ],
+   "stem": "A cabinet count is short two hydromorphone vials, and one nurse has far more wastes than peers.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does this suggest and what do you do?",
+     "options": [
+      {
+       "t": "Possible diversion: follow St. Mary's policy to report to the pharmacy manager or diversion team right away; do not investigate alone or confront",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Adjust the count and move on",
+       "correct": false,
+       "why": "Never."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    },
+    {
+     "q": "If theft or significant loss is confirmed, what does federal law require of the registrant?",
+     "options": [
+      {
+       "t": "Notify the DEA in writing within 1 business day of discovery, then file DEA Form 106",
+       "correct": true,
+       "why": "21 CFR 1301.76(b). The pharmacy leadership handles the filing."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Reporting is required."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Law"
+    },
+    {
+     "q": "Which waste practice prevents diversion?",
+     "options": [
+      {
+       "t": "Witnessed waste documented in real time by a second licensed person",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Waste later when convenient",
+       "correct": false,
+       "why": "Opens the door to diversion."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prevent"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Count off or odd waste patterns: report, do not confront. Theft: DEA within 1 business day + Form 106.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "21 CFR 1301.76: security controls, theft or significant loss reporting (eCFR)",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/section-1301.76",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's medication safety, controlled substance and reporting policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ms08",
+   "title": "Florida license renewal",
+   "setting": "Florida · your license",
+   "topics": [
+    "Florida law",
+    "CE"
+   ],
+   "stem": "A Florida pharmacist is planning renewal.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How often, and how many hours?",
+     "options": [
+      {
+       "t": "Every 2 years; 30 hours per renewal",
+       "correct": true,
+       "why": "Report CE in CE Broker."
+      },
+      {
+       "t": "Every year; 15 hours",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Rule"
+    },
+    {
+     "q": "Which topics are required each renewal?",
+     "options": [
+      {
+       "t": "2 hours medication errors and 2 hours controlled substances (Board approved)",
+       "correct": true,
+       "why": "Plus 1 hour HIV/AIDS at the first renewal."
+      },
+      {
+       "t": "10 live hours",
+       "correct": false,
+       "why": "The live hour requirement was removed in 2025."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Rule"
+    },
+    {
+     "q": "Other renewal requirements?",
+     "options": [
+      {
+       "t": "3 hours every 2 years if certified to give immunizations",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "24 extra hours for consultant pharmacists",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "A practical exam",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Rule",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Florida: 30 h every 2 years, 2 h med errors, 2 h controlled substances, no live hours since 2025.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Florida Board of Pharmacy: pharmacist renewal",
+     "url": "https://floridaspharmacy.gov/pharmacist-renewal/",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Rule 64B16-26.103 (Cornell LII)",
+     "url": "https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-64B16-26-103",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ms09",
+   "title": "The PDMP (E-FORCSE)",
+   "setting": "Discharge · opioid prescription",
+   "topics": [
+    "Florida law",
+    "PDMP"
+   ],
+   "stem": "A discharge opioid prescription will be filled at the hospital's outpatient pharmacy.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does Florida require of dispensers?",
+     "options": [
+      {
+       "t": "Report controlled substance dispensing to E-FORCSE by the close of the next business day",
+       "correct": true,
+       "why": "Institutional pharmacies that only administer to inpatients can file an exemption."
+      },
+      {
+       "t": "No reporting",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Law"
+    },
+    {
+     "q": "Why check the PDMP before filling?",
+     "options": [
+      {
+       "t": "To spot overlapping prescriptions, multiple prescribers or pharmacies, and high combined doses",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "It is only for police",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Practice"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Florida PDMP (E-FORCSE): report by next business day; check before you fill.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Florida DOH: E-FORCSE dispenser information",
+     "url": "https://www.floridahealth.gov/statistics-and-data/e-forcse/dispenser",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's medication safety, controlled substance and reporting policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ms10",
+   "title": "Discharge medication reconciliation",
+   "setting": "Discharge · going home",
+   "topics": [
+    "Med rec",
+    "Transitions"
+   ],
+   "stem": "A patient leaving after a GI bleed. Home list: aspirin, warfarin, omeprazole. Hospital: pantoprazole, warfarin held.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you check?",
+     "options": [
+      {
+       "t": "Each home drug: continue, change or stop, with clear instructions (for example whether warfarin restarts and when)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Duplicates between home and hospital drugs (omeprazole and pantoprazole)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Follow up labs (INR) and who manages them",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Nothing; discharge is the doctor's job",
+       "correct": false,
+       "why": "Transitions are where errors happen."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Check",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Discharge: every home drug gets continue, change or stop. No duplicates. Lab follow up named.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Relias: Joint Commission National Performance Goals (replaced NPSGs January 2026)",
+     "url": "https://www.relias.com/blog/joint-commission-national-performance-goals-are-here",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's medication safety, controlled substance and reporting policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
