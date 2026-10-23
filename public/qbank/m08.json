@@ -1,0 +1,783 @@
+{
+ "id": "m08",
+ "title": "Module 8 · Codes and Resuscitation",
+ "intro": "Adult arrest drugs and timing, reversible causes (hyperkalemia, torsades, opioids, local anesthetic toxicity, tricyclics), bradycardia, adenosine, anaphylaxis, malignant hyperthermia and post arrest care.",
+ "cases": [
+  {
+   "id": "cd01",
+   "title": "Asystole: the first drug",
+   "setting": "Med surg · code blue",
+   "topics": [
+    "Cardiac arrest",
+    "Nonshockable"
+   ],
+   "stem": "You arrive at a code. Rhythm: asystole. CPR is in progress, IV in place.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What drug and when?",
+     "options": [
+      {
+       "t": "Epinephrine 1 mg IV as soon as possible, then every 3 to 5 minutes",
+       "correct": true,
+       "why": "For nonshockable rhythms, early epinephrine (AHA 2025)."
+      },
+      {
+       "t": "Amiodarone 300 mg",
+       "correct": false,
+       "why": "Amiodarone is for shockable rhythms."
+      },
+      {
+       "t": "Atropine 1 mg",
+       "correct": false,
+       "why": "Atropine is no longer in the arrest algorithm."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug"
+    },
+    {
+     "q": "What is your job during the code?",
+     "options": [
+      {
+       "t": "Call out epinephrine timing (\"Epi due in one minute\")",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Prepare the next doses and ask about reversible causes (H's and T's)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Confirm weight and allergies, and help document drugs and times",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Run the code",
+       "correct": false,
+       "why": "The code leader runs the code; you run the medications."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Role",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Asystole or PEA: epinephrine 1 mg now, every 3 to 5 minutes.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's code team policy, crash cart contents and post arrest order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "cd02",
+   "title": "VF: shock first",
+   "setting": "ICU · VF arrest",
+   "topics": [
+    "Cardiac arrest",
+    "Shockable"
+   ],
+   "stem": "VF. Two shocks given, still VF.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "When does epinephrine go in for VF?",
+     "options": [
+      {
+       "t": "After the initial defibrillation attempts fail (commonly after the second shock), then every 3 to 5 minutes",
+       "correct": true,
+       "why": "Shock first in shockable rhythms."
+      },
+      {
+       "t": "Before the first shock",
+       "correct": false,
+       "why": "Defibrillation comes first."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "Still VF after the third shock. Which antiarrhythmic?",
+     "options": [
+      {
+       "t": "Amiodarone 300 mg IV/IO push, then 150 mg if needed",
+       "correct": true,
+       "why": "AHA 2025."
+      },
+      {
+       "t": "Lidocaine 1 to 1.5 mg/kg, then 0.5 to 0.75 mg/kg",
+       "correct": true,
+       "why": "An accepted alternative."
+      },
+      {
+       "t": "Adenosine 6 mg",
+       "correct": false,
+       "why": "For stable SVT, not VF."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug",
+     "type": "multi"
+    },
+    {
+     "q": "Are calcium, bicarbonate or magnesium routine in arrest?",
+     "options": [
+      {
+       "t": "No: only for specific causes (hyperkalemia, torsades, tricyclic overdose)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Yes, every code",
+       "correct": false,
+       "why": "Not routine."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Not routine"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**VF: shock, epi after shocks fail, amiodarone 300 then 150 (or lidocaine).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "cd03",
+   "title": "Hyperkalemia arrest",
+   "setting": "Dialysis patient · PEA",
+   "topics": [
+    "Cardiac arrest",
+    "Reversible causes"
+   ],
+   "stem": "A dialysis patient who missed two sessions arrests (PEA). K was 7.8 an hour ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you have ready?",
+     "options": [
+      {
+       "t": "Calcium chloride 1 g IV (or calcium gluconate 3 g)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Regular insulin 10 units IV with dextrose 25 g",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Sodium bicarbonate 50 mEq if acidotic",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Amiodarone 300 mg",
+       "correct": false,
+       "why": "Not for PEA from hyperkalemia."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drugs",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Hyperkalemia arrest: calcium, insulin + dextrose, bicarbonate if acidotic.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "cd04",
+   "title": "Torsades",
+   "setting": "Telemetry · polymorphic VT",
+   "topics": [
+    "Cardiac arrest",
+    "Torsades"
+   ],
+   "stem": "Polymorphic VT with a long QT on methadone and ondansetron. Pulseless.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which drug besides defibrillation?",
+     "options": [
+      {
+       "t": "Magnesium sulfate 1 to 2 g IV push (in arrest)",
+       "correct": true,
+       "why": "Magnesium stabilizes the heart in torsades."
+      },
+      {
+       "t": "Procainamide",
+       "correct": false,
+       "why": "Prolongs QT."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug"
+    },
+    {
+     "q": "After ROSC, what do you do with the med list?",
+     "options": [
+      {
+       "t": "Stop QT prolonging drugs, check and replace K and Mg, and use CredibleMeds to review the list",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Find the cause."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prevent"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Torsades: magnesium 1 to 2 g. Then stop QT drugs and fix K and Mg.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "cd05",
+   "title": "Opioid overdose",
+   "setting": "Med surg · unresponsive",
+   "topics": [
+    "Toxicology",
+    "Opioids"
+   ],
+   "stem": "An unresponsive patient on a PCA with RR 4, pinpoint pupils, pulse present.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Ventilate (bag mask) and give naloxone 0.4 mg IV, repeating or increasing as needed (up to 2 mg); 4 mg intranasal if no IV",
+       "correct": true,
+       "why": "Breathing support first; small IV doses avoid severe withdrawal in opioid dependent patients."
+      },
+      {
+       "t": "Wait to see if they wake up",
+       "correct": false,
+       "why": "RR 4 is life threatening."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    },
+    {
+     "q": "Why might naloxone wear off before the opioid?",
+     "options": [
+      {
+       "t": "Naloxone lasts about 30 to 90 minutes; many opioids last longer, so repeat doses or an infusion may be needed",
+       "correct": true,
+       "why": "Keep monitoring after the patient wakes."
+      },
+      {
+       "t": "It never wears off",
+       "correct": false,
+       "why": "It does."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Opioid OD: breathe for them, naloxone 0.4 mg IV and repeat. Watch for it wearing off.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA 2023 focused update on adult ACLS (toxicology and drug use)",
+     "url": "https://doi.org/10.1161/CIR.0000000000001161",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "cd06",
+   "title": "Local anesthetic toxicity",
+   "setting": "OR · after a nerve block",
+   "topics": [
+    "Toxicology",
+    "LAST"
+   ],
+   "stem": "Minutes after a bupivacaine nerve block, a 70 kg patient seizes and then develops wide complex bradycardia.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the antidote and dose?",
+     "options": [
+      {
+       "t": "Lipid emulsion 20%: 1.5 mL/kg (105 mL) bolus over 2 to 3 minutes, then 0.25 mL/kg/min",
+       "correct": true,
+       "why": "ASRA checklist."
+      },
+      {
+       "t": "Naloxone",
+       "correct": false,
+       "why": "Not an opioid problem."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Antidote"
+    },
+    {
+     "q": "How does epinephrine change in this arrest?",
+     "options": [
+      {
+       "t": "Smaller doses: 1 mcg/kg or less",
+       "correct": true,
+       "why": "ASRA: high dose epinephrine can worsen the outcome."
+      },
+      {
+       "t": "Double the usual dose",
+       "correct": false,
+       "why": "Opposite."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**LAST: lipid 20% 1.5 mL/kg, then 0.25 mL/kg/min. Small epi doses.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Neal JM, et al. Third ASRA practice advisory on local anesthetic systemic toxicity. Reg Anesth Pain Med 2018;43:113-123",
+     "url": "https://doi.org/10.1097/AAP.0000000000000720",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's code team policy, crash cart contents and post arrest order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "cd07",
+   "title": "Tricyclic overdose",
+   "setting": "ED · wide QRS",
+   "topics": [
+    "Toxicology",
+    "TCA"
+   ],
+   "stem": "Amitriptyline overdose, QRS 140 ms, BP 84/50.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Sodium bicarbonate 1 to 2 mEq/kg IV, repeat to narrow the QRS",
+       "correct": true,
+       "why": "Sodium load plus alkalinization."
+      },
+      {
+       "t": "Procainamide",
+       "correct": false,
+       "why": "Worsens sodium channel block."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**TCA wide QRS: bicarbonate 1 to 2 mEq/kg.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA 2023 focused update on adult ACLS (toxicology and drug use)",
+     "url": "https://doi.org/10.1161/CIR.0000000000001161",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "cd08",
+   "title": "Symptomatic bradycardia",
+   "setting": "Telemetry · HR 34",
+   "topics": [
+    "Peri arrest",
+    "Bradycardia"
+   ],
+   "stem": "HR 34, BP 78/40, dizzy.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "First drug?",
+     "options": [
+      {
+       "t": "Atropine 1 mg IV every 3 to 5 minutes, max 3 mg",
+       "correct": true,
+       "why": "AHA adult bradycardia."
+      },
+      {
+       "t": "Adenosine",
+       "correct": false,
+       "why": "Wrong rhythm."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug"
+    },
+    {
+     "q": "No response. Next options?",
+     "options": [
+      {
+       "t": "Epinephrine infusion 2 to 10 mcg/min, dopamine 5 to 20 mcg/kg/min, or pacing",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Metoprolol",
+       "correct": false,
+       "why": "Slows it further."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Escalate"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Brady: atropine 1 mg (max 3), then epi drip, dopamine or pacing.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "cd09",
+   "title": "Adenosine for SVT",
+   "setting": "ED · stable SVT",
+   "topics": [
+    "Peri arrest",
+    "SVT"
+   ],
+   "stem": "Stable narrow complex SVT at 190. The patient has a central line.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How is adenosine given?",
+     "options": [
+      {
+       "t": "Rapid IV push followed immediately by a saline flush",
+       "correct": true,
+       "why": "Half life under 10 seconds."
+      },
+      {
+       "t": "Slow over 2 minutes",
+       "correct": false,
+       "why": "It would be destroyed before reaching the heart."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Technique"
+    },
+    {
+     "q": "What dose with a central line?",
+     "options": [
+      {
+       "t": "3 mg first (instead of 6 mg)",
+       "correct": true,
+       "why": "Also for heart transplant and dipyridamole or carbamazepine. Caffeine and theophylline blunt the effect."
+      },
+      {
+       "t": "12 mg first",
+       "correct": false,
+       "why": "Too much through a central line."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Adenosine: fast push and flush. 6 then 12; 3 mg if central line, transplant, dipyridamole.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "cd10",
+   "title": "Anaphylaxis",
+   "setting": "Infusion center · after the first dose",
+   "topics": [
+    "Peri arrest",
+    "Anaphylaxis"
+   ],
+   "stem": "Five minutes into an IV antibiotic: hives, wheeze, BP 80/45.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "First drug and route?",
+     "options": [
+      {
+       "t": "Epinephrine 0.5 mg IM (1 mg/mL) in the outer thigh, repeat every 5 to 15 minutes",
+       "correct": true,
+       "why": "Antihistamines and steroids are add ons, not first line."
+      },
+      {
+       "t": "Diphenhydramine 50 mg IV first",
+       "correct": false,
+       "why": "Does not treat airway or shock."
+      },
+      {
+       "t": "Epinephrine 1 mg IV push (cardiac arrest dose)",
+       "correct": false,
+       "why": "IV push 1 mg in a patient with a pulse can cause arrhythmia and severe hypertension."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug"
+    },
+    {
+     "q": "Not responding to IM doses. Next?",
+     "options": [
+      {
+       "t": "Epinephrine infusion and fluids, with the team",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "More diphenhydramine",
+       "correct": false,
+       "why": "Not enough."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Escalate"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Anaphylaxis: epi 0.5 mg IM thigh. Never 1 mg IV push when there is a pulse.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "cd11",
+   "title": "Malignant hyperthermia",
+   "setting": "OR · after succinylcholine",
+   "topics": [
+    "Peri arrest",
+    "MH"
+   ],
+   "stem": "Rising end tidal CO2, rigidity and fever after succinylcholine and sevoflurane.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the drug and dose?",
+     "options": [
+      {
+       "t": "Dantrolene 2.5 mg/kg IV, repeated until signs resolve",
+       "correct": true,
+       "why": "MHAUS."
+      },
+      {
+       "t": "Acetaminophen",
+       "correct": false,
+       "why": "Does not treat the cause."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drug"
+    },
+    {
+     "q": "What pharmacist detail matters most?",
+     "options": [
+      {
+       "t": "Knowing where the MH cart is and which product you stock (Ryanodex reconstitutes much faster than Dantrium)",
+       "correct": true,
+       "why": "Dantrium takes many vials and time."
+      },
+      {
+       "t": "None",
+       "correct": false,
+       "why": "Speed saves lives."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Logistics"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**MH: dantrolene 2.5 mg/kg, repeat. Know your cart.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "NYSORA: updated guidelines for managing malignant hyperthermia (MHAUS based)",
+     "url": "https://www.nysora.com/education-news/updated-guidelines-for-managing-malignant-hyperthermia/",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's code team policy, crash cart contents and post arrest order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "cd12",
+   "title": "After ROSC",
+   "setting": "ICU · post arrest",
+   "topics": [
+    "Post arrest",
+    "ROSC"
+   ],
+   "stem": "Pulse is back after VF arrest. Comatose. BP 82/48.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which targets are common?",
+     "options": [
+      {
+       "t": "SBP at least 90 and MAP at least 65; norepinephrine usual first pressor",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "SpO2 about 92 to 98%, avoiding both low oxygen and too much",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Temperature control: keep below 37.5 °C with strict fever prevention",
+       "correct": true,
+       "why": "AHA 2023 after TTM2."
+      },
+      {
+       "t": "Glucose 80 to 110",
+       "correct": false,
+       "why": "Tight control is not recommended."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Targets",
+     "type": "multi"
+    },
+    {
+     "q": "Amiodarone infusion after VF. Usual regimen?",
+     "options": [
+      {
+       "t": "1 mg/min for 6 hours, then 0.5 mg/min for 18 hours (after the 150 mg load if not already given)",
+       "correct": true,
+       "why": "Amiodarone label regimen."
+      },
+      {
+       "t": "10 mg/min",
+       "correct": false,
+       "why": "Far too much."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Drip"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Post ROSC: MAP 65+, SpO2 92 to 98, temp below 37.5, amio 1 then 0.5 mg/min.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA Guidelines for CPR and Emergency Cardiovascular Care (2025)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅✅"
+    },
+    {
+     "t": "TCTMD: AHA statement on temperature control after cardiac arrest (2023)",
+     "url": "https://www.tctmd.com/news/aha-wider-temperature-management-range-okay-cardiac-arrest-care",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's code team policy, crash cart contents and post arrest order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
