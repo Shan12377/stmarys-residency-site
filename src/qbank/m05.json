@@ -1,0 +1,1239 @@
+{
+ "id": "m05",
+ "title": "Module 5 · Anticoagulation",
+ "intro": "DOAC dosing rules and catches, extended VTE therapy, warfarin interactions and reversal, DOAC reversal, heparin dosing, HIT, enoxaparin in kidney failure, procedures and bridging, duplicates and a night shift simulation.",
+ "cases": [
+  {
+   "id": "ac01",
+   "title": "The apixaban 2 of 3 rule",
+   "setting": "Med surg · new atrial fibrillation",
+   "topics": [
+    "DOACs",
+    "Apixaban"
+   ],
+   "stem": "An 82 year old woman, 64 kg, SCr 1.2 mg/dL, new atrial fibrillation. Order: apixaban 2.5 mg BID \"because she is elderly.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which criteria reduce apixaban to 2.5 mg BID in atrial fibrillation?",
+     "options": [
+      {
+       "t": "Any 2 of these 3: age 80 or older, weight 60 kg or less, SCr 1.5 mg/dL or higher",
+       "correct": true,
+       "why": "Eliquis label. One criterion is not enough."
+      },
+      {
+       "t": "Age over 75 alone",
+       "correct": false,
+       "why": "Age alone does not qualify."
+      },
+      {
+       "t": "CrCl below 50",
+       "correct": false,
+       "why": "The apixaban AF rule uses SCr, age and weight, not CrCl."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Rule"
+    },
+    {
+     "q": "How many does she meet?",
+     "options": [
+      {
+       "t": "One: age 82. Weight 64 kg and SCr 1.2 do not qualify",
+       "correct": true,
+       "why": "So the correct dose is 5 mg BID."
+      },
+      {
+       "t": "Two",
+       "correct": false,
+       "why": "Recheck: 64 kg is above 60, and 1.2 is below 1.5."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Apply"
+    },
+    {
+     "q": "Why does underdosing matter?",
+     "options": [
+      {
+       "t": "Underdosed apixaban leaves her less protected from stroke without a proven bleeding benefit",
+       "correct": true,
+       "why": "Off label dose reduction is one of the most common DOAC errors."
+      },
+      {
+       "t": "It does not matter; lower is always safer",
+       "correct": false,
+       "why": "Stroke is the harm you are preventing."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Why"
+    }
+   ],
+   "call": "**S/B:** 82 years old, 64 kg, SCr 1.2, AF, apixaban 2.5 mg BID ordered. **A:** She meets only 1 of the 3 dose reduction criteria. **R:** I recommend apixaban 5 mg BID, which the label supports for her.",
+   "monitor": "",
+   "pearl": "**Apixaban AF: 2.5 mg only with 2 of 3 (80, 60, 1.5).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Eliquis (apixaban) prescribing information, Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "ac02",
+   "title": "Rivaroxaban and food",
+   "setting": "Med surg · VTE treatment day 1",
+   "topics": [
+    "DOACs",
+    "Rivaroxaban"
+   ],
+   "stem": "New DVT. Order: rivaroxaban 15 mg BID at 0600 and 1800, \"may give on empty stomach.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "Rivaroxaban 15 mg and 20 mg tablets must be taken with food; absorption drops a lot when fasting",
+       "correct": true,
+       "why": "With food, absorption of the 15 and 20 mg doses is nearly complete."
+      },
+      {
+       "t": "No problem",
+       "correct": false,
+       "why": "Fasting lowers exposure for these strengths."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    },
+    {
+     "q": "What is the VTE treatment schedule?",
+     "options": [
+      {
+       "t": "15 mg BID with food for 21 days, then 20 mg daily with food",
+       "correct": true,
+       "why": "Rivaroxaban label."
+      },
+      {
+       "t": "10 mg daily from day 1",
+       "correct": false,
+       "why": "10 mg daily is for extended prevention after the treatment phase."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Rivaroxaban 15 and 20 mg: always with food. VTE: 15 BID x 21 days, then 20 daily.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Xarelto (rivaroxaban) prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=xarelto",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac03",
+   "title": "Dabigatran down the tube",
+   "setting": "ICU · new NG tube",
+   "topics": [
+    "DOACs",
+    "Dabigatran"
+   ],
+   "stem": "A patient on dabigatran 150 mg BID now has an NG tube. The nurse asks to open the capsule.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Can the capsule be opened?",
+     "options": [
+      {
+       "t": "No: opening the capsule raises exposure by about 75%, risking bleeding",
+       "correct": true,
+       "why": "Dabigatran must be swallowed whole."
+      },
+      {
+       "t": "Yes, mix pellets with water",
+       "correct": false,
+       "why": "Not allowed for dabigatran capsules."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    },
+    {
+     "q": "What do you suggest?",
+     "options": [
+      {
+       "t": "Switch to an anticoagulant that can go through a tube (for example crushed apixaban or rivaroxaban per label, or a heparin product) after team review",
+       "correct": true,
+       "why": "Check the label for each drug's tube instructions and the patient's kidney function."
+      },
+      {
+       "t": "Hold anticoagulation indefinitely",
+       "correct": false,
+       "why": "Leaves the patient unprotected."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternatives"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Dabigatran: never open, never crush.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Pradaxa (dabigatran) prescribing information (via HemOnc)",
+     "url": "https://hemonc.org/docs/packageinsert/dabigatran.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "Eliquis (apixaban) prescribing information, Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Xarelto (rivaroxaban) prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=xarelto",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac04",
+   "title": "Edoxaban and great kidneys",
+   "setting": "Clinic transfer · AF",
+   "topics": [
+    "DOACs",
+    "Edoxaban"
+   ],
+   "stem": "A 45 year old man with AF, CrCl 118 mL/min, is admitted on edoxaban 60 mg daily.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the label warn about?",
+     "options": [
+      {
+       "t": "In AF, edoxaban should not be used when CrCl is above 95 mL/min because it was less effective at preventing stroke",
+       "correct": true,
+       "why": "High clearance lowers levels. Suggest another anticoagulant."
+      },
+      {
+       "t": "Nothing; higher kidney function is always better",
+       "correct": false,
+       "why": "This is the boxed warning for edoxaban in AF."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Edoxaban in AF: not if CrCl above 95.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Savaysa (edoxaban) prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=savaysa",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac05",
+   "title": "DOAC with a mechanical valve",
+   "setting": "Cardiology · admission",
+   "topics": [
+    "DOACs",
+    "Contraindications"
+   ],
+   "stem": "A patient with a mechanical mitral valve is admitted on apixaban, started by an outside clinic.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "DOACs are not recommended for mechanical heart valves; warfarin is the standard",
+       "correct": true,
+       "why": "A dabigatran trial in mechanical valves showed more clots and more bleeding. The apixaban label says use is not recommended."
+      },
+      {
+       "t": "No problem",
+       "correct": false,
+       "why": "This is a serious catch."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    },
+    {
+     "q": "Which other condition is a classic reason to prefer warfarin over a DOAC?",
+     "options": [
+      {
+       "t": "High risk antiphospholipid syndrome (especially triple positive)",
+       "correct": true,
+       "why": "DOACs had more clots than warfarin in these patients."
+      },
+      {
+       "t": "Simple first DVT after knee surgery",
+       "correct": false,
+       "why": "DOACs are fine there."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Mechanical valve or high risk antiphospholipid syndrome: warfarin, not a DOAC.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Eliquis (apixaban) prescribing information, Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ac06",
+   "title": "Extended VTE treatment",
+   "setting": "Med surg · 6 month follow up",
+   "topics": [
+    "DOACs",
+    "Extended therapy"
+   ],
+   "stem": "A patient with an unprovoked PE has finished 6 months of apixaban 5 mg BID. No bleeding. The team plans to continue.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does CHEST 2021 suggest for extended treatment?",
+     "options": [
+      {
+       "t": "Reduced dose apixaban 2.5 mg BID (or rivaroxaban 10 mg daily), with no set stop date and a review at least yearly",
+       "correct": true,
+       "why": "AMPLIFY-EXT: recurrent VTE 1.7% on 2.5 mg vs 8.8% on placebo over 12 months."
+      },
+      {
+       "t": "Stop at 6 months for every patient",
+       "correct": false,
+       "why": "Unprovoked VTE has high recurrence risk after stopping."
+      },
+      {
+       "t": "Keep 10 mg BID",
+       "correct": false,
+       "why": "10 mg BID is only for the first 7 days."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    },
+    {
+     "q": "When is extended treatment usually NOT recommended?",
+     "options": [
+      {
+       "t": "VTE provoked by a major transient risk factor such as surgery",
+       "correct": true,
+       "why": "Treat 3 months, then stop."
+      },
+      {
+       "t": "Unprovoked VTE with low bleeding risk",
+       "correct": false,
+       "why": "That is the group that benefits."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Unprovoked VTE after 6 months: apixaban 2.5 BID or rivaroxaban 10 daily, review yearly.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Stevens SM, et al. Antithrombotic therapy for VTE disease: second update of the CHEST guideline. Chest 2021;160:e545-e608",
+     "url": "https://doi.org/10.1016/j.chest.2021.07.055",
+     "mark": "✅"
+    },
+    {
+     "t": "Eliquis (apixaban) prescribing information, Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "ac07",
+   "title": "Warfarin INR of 7",
+   "setting": "Med surg · morning labs",
+   "topics": [
+    "Warfarin",
+    "Supratherapeutic"
+   ],
+   "stem": "INR 7.2 on warfarin 5 mg daily. No bleeding. She started TMP SMX 3 days ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the likely cause?",
+     "options": [
+      {
+       "t": "TMP SMX inhibits warfarin metabolism (CYP2C9) and raises INR",
+       "correct": true,
+       "why": "Antibiotics are the most common cause of a sudden INR rise."
+      },
+      {
+       "t": "Lab error",
+       "correct": false,
+       "why": "Possible, but the interaction explains it."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    },
+    {
+     "q": "What is the usual management for INR 4.5 to 10 without bleeding?",
+     "options": [
+      {
+       "t": "Hold warfarin, recheck INR; routine vitamin K is usually not needed",
+       "correct": true,
+       "why": "Low dose oral vitamin K did not reduce bleeding vs placebo in this range (Crowther 2009)."
+      },
+      {
+       "t": "Vitamin K 10 mg IV now",
+       "correct": false,
+       "why": "Too much: causes warfarin resistance when you restart."
+      },
+      {
+       "t": "4F-PCC",
+       "correct": false,
+       "why": "Only for major bleeding or urgent surgery."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    },
+    {
+     "q": "What other warfarin interactions do you watch for?",
+     "options": [
+      {
+       "t": "Fluoroquinolones, metronidazole, fluconazole, amiodarone (raise INR)",
+       "correct": true,
+       "why": "Common hospital starts."
+      },
+      {
+       "t": "Rifampin (lowers INR)",
+       "correct": true,
+       "why": "Strong inducer."
+      },
+      {
+       "t": "Acetaminophen at 650 mg once",
+       "correct": false,
+       "why": "Not a meaningful single dose interaction."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interactions",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**INR 4.5 to 10, no bleed: hold, recheck. Find the cause (often an antibiotic).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Crowther MA, et al. Oral vitamin K vs placebo for excessive anticoagulation. Ann Intern Med 2009;150:293-300",
+     "url": "https://doi.org/10.7326/0003-4819-150-5-200903030-00005",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ac08",
+   "title": "Warfarin and a major bleed",
+   "setting": "ED · GI bleed",
+   "topics": [
+    "Warfarin",
+    "Reversal"
+   ],
+   "stem": "GI bleed, hemoglobin dropping, INR 5.4, weight 70 kg, on warfarin for AF.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the 4F-PCC dose?",
+     "options": [
+      {
+       "t": "35 units/kg (INR 4 to 6): 2,450 units",
+       "correct": true,
+       "why": "Kcentra label: INR 2 to below 4: 25 units/kg (max 2,500); 4 to 6: 35 units/kg (max 3,500); above 6: 50 units/kg (max 5,000)."
+      },
+      {
+       "t": "25 units/kg",
+       "correct": false,
+       "why": "That is for INR 2 to below 4."
+      },
+      {
+       "t": "50 units/kg",
+       "correct": false,
+       "why": "That is for INR above 6."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What must be given with 4F-PCC?",
+     "options": [
+      {
+       "t": "Vitamin K 10 mg IV (slow infusion)",
+       "correct": true,
+       "why": "4F-PCC wears off; vitamin K lets the liver make its own factors so the INR does not rebound."
+      },
+      {
+       "t": "Nothing else",
+       "correct": false,
+       "why": "Without vitamin K the INR rises again."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Pair"
+    },
+    {
+     "q": "Which contraindication do you check on Kcentra?",
+     "options": [
+      {
+       "t": "Known history of heparin induced thrombocytopenia (the product contains heparin)",
+       "correct": true,
+       "why": "Also note the boxed warning for arterial and venous clots."
+      },
+      {
+       "t": "Penicillin allergy",
+       "correct": false,
+       "why": "Not related."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Warfarin major bleed: 4F-PCC by INR (25, 35, 50 units/kg; weight capped at 100 kg) + vitamin K 10 mg IV.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Kcentra prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac09",
+   "title": "Reversing a DOAC in a brain bleed",
+   "setting": "ED · intracerebral hemorrhage",
+   "topics": [
+    "DOACs",
+    "Reversal"
+   ],
+   "stem": "Intracerebral hemorrhage. Last apixaban dose 4 hours ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the usual reversal in the US now?",
+     "options": [
+      {
+       "t": "4F-PCC (commonly 50 units/kg or a fixed dose per protocol)",
+       "correct": true,
+       "why": "Andexanet alfa was withdrawn from the US market in December 2025, so 4F-PCC is the main option."
+      },
+      {
+       "t": "Vitamin K",
+       "correct": false,
+       "why": "Vitamin K does nothing for factor Xa inhibitors."
+      },
+      {
+       "t": "Protamine",
+       "correct": false,
+       "why": "Protamine reverses heparin, not apixaban."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Reversal"
+    },
+    {
+     "q": "And for dabigatran?",
+     "options": [
+      {
+       "t": "Idarucizumab 5 g IV (two 2.5 g vials)",
+       "correct": true,
+       "why": "A specific antibody that binds dabigatran."
+      },
+      {
+       "t": "4F-PCC first",
+       "correct": false,
+       "why": "Idarucizumab is the specific agent."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Reversal"
+    },
+    {
+     "q": "What BP target does the 2022 ICH guideline suggest when lowering SBP?",
+     "options": [
+      {
+       "t": "Target about 140 mmHg; avoid dropping below 130",
+       "correct": true,
+       "why": "Too low may harm brain perfusion."
+      },
+      {
+       "t": "Below 110 as fast as possible",
+       "correct": false,
+       "why": "Too aggressive."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Xa inhibitor bleed: 4F-PCC. Dabigatran: idarucizumab. Vitamin K only for warfarin.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Greenberg SM, et al. 2022 AHA/ASA guideline for spontaneous intracerebral hemorrhage. Stroke 2022;53:e282-e361",
+     "url": "https://doi.org/10.1161/STR.0000000000000407",
+     "mark": "✅"
+    },
+    {
+     "t": "Kcentra prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ac10",
+   "title": "Weight based heparin",
+   "setting": "Med surg · new PE",
+   "topics": [
+    "Heparin",
+    "Dosing"
+   ],
+   "stem": "90 kg man, new PE, normal kidneys, platelets 240,000. Heparin per protocol.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the weight based VTE regimen?",
+     "options": [
+      {
+       "t": "80 units/kg bolus (7,200 units), then 18 units/kg/h (1,620 units/h)",
+       "correct": true,
+       "why": "Raschke nomogram."
+      },
+      {
+       "t": "60 units/kg bolus, then 12 units/kg/h",
+       "correct": false,
+       "why": "That is the ACS regimen (with caps of 4,000 units and 1,000 units/h)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "When is the first aPTT or anti Xa drawn?",
+     "options": [
+      {
+       "t": "6 hours after the bolus and 6 hours after each rate change",
+       "correct": true,
+       "why": "Heparin reaches a new steady state in about 6 hours."
+      },
+      {
+       "t": "1 hour after starting",
+       "correct": false,
+       "why": "Too early."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor"
+    },
+    {
+     "q": "What do you check before verifying the bolus?",
+     "options": [
+      {
+       "t": "Recent enoxaparin or DOAC doses on the MAR",
+       "correct": true,
+       "why": "Overlapping anticoagulants cause bleeding. Many protocols skip the bolus after recent enoxaparin."
+      },
+      {
+       "t": "Platelets and hemoglobin baseline",
+       "correct": true,
+       "why": "Needed to detect HIT and bleeding later."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Check",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**VTE heparin: 80 bolus, 18 per hour. ACS: 60 (max 4,000), 12 (max 1,000). Levels at 6 hours.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Raschke RA, et al. Weight based heparin dosing nomogram. Ann Intern Med 1993;119:874-881",
+     "url": "https://doi.org/10.7326/0003-4819-119-9-199311010-00002",
+     "mark": "✅"
+    },
+    {
+     "t": "Heparin Sodium Injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=45dc6b8b-ed5d-40a2-8d9c-084c863ae93a&type=display",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ac11",
+   "title": "Suspected HIT",
+   "setting": "Med surg · day 7 heparin",
+   "topics": [
+    "Heparin",
+    "HIT"
+   ],
+   "stem": "Day 7 of heparin. Platelets fell from 260,000 to 110,000. New swollen left leg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How do you estimate the chance of HIT?",
+     "options": [
+      {
+       "t": "The 4Ts score: thrombocytopenia (a fall of more than 50%), timing (day 5 to 10), thrombosis, other causes",
+       "correct": true,
+       "why": "This patient scores intermediate to high: a 58% fall, day 7, a new clot."
+      },
+      {
+       "t": "Wait for platelets below 50,000",
+       "correct": false,
+       "why": "HIT is about the size of the drop, not a cutoff."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Assess"
+    },
+    {
+     "q": "What do you recommend now, before test results?",
+     "options": [
+      {
+       "t": "Stop ALL heparin, including flushes and heparin coated catheters",
+       "correct": true,
+       "why": "ASH 2018."
+      },
+      {
+       "t": "Start a non heparin anticoagulant such as argatroban (2 mcg/kg/min; 0.5 mcg/kg/min in hepatic impairment)",
+       "correct": true,
+       "why": "HIT causes clots; stopping heparin alone is not enough."
+      },
+      {
+       "t": "Switch to enoxaparin",
+       "correct": false,
+       "why": "Enoxaparin cross reacts with HIT antibodies."
+      },
+      {
+       "t": "Transfuse platelets",
+       "correct": false,
+       "why": "Not routinely; may worsen clotting."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    },
+    {
+     "q": "When can warfarin start?",
+     "options": [
+      {
+       "t": "Only after platelets recover (usually 150,000 or more), overlapping with a non heparin agent for at least 5 days",
+       "correct": true,
+       "why": "Warfarin alone in acute HIT can cause venous limb gangrene."
+      },
+      {
+       "t": "Today",
+       "correct": false,
+       "why": "Too early."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**HIT: 4Ts. Stop all heparin. Start argatroban (or another non heparin agent). No warfarin until platelets recover.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Cuker A, et al. ASH 2018 guidelines: heparin induced thrombocytopenia. Blood Adv 2018;2:3360-3392",
+     "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+     "mark": "✅"
+    },
+    {
+     "t": "Argatroban Injection prescribing information (2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/022485s013lbl.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac12",
+   "title": "Enoxaparin and kidneys",
+   "setting": "Med surg · treatment dose",
+   "topics": [
+    "Enoxaparin",
+    "Renal"
+   ],
+   "stem": "75 kg woman, DVT, CrCl 24 mL/min. Order: enoxaparin 75 mg SC every 12 hours.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the label dose when CrCl is below 30?",
+     "options": [
+      {
+       "t": "1 mg/kg SC once daily (75 mg every 24 hours)",
+       "correct": true,
+       "why": "Enoxaparin builds up in kidney failure."
+      },
+      {
+       "t": "No change",
+       "correct": false,
+       "why": "Twice daily dosing accumulates."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What about prophylaxis with CrCl below 30?",
+     "options": [
+      {
+       "t": "30 mg SC once daily",
+       "correct": true,
+       "why": "Lovenox label."
+      },
+      {
+       "t": "40 mg twice daily",
+       "correct": false,
+       "why": "Too much."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "When would you check an anti Xa level?",
+     "options": [
+      {
+       "t": "Kidney impairment, pregnancy, extremes of weight; peak about 4 hours after the dose, at steady state (around the third or fourth dose)",
+       "correct": true,
+       "why": "Not routine for most patients."
+      },
+      {
+       "t": "Never",
+       "correct": false,
+       "why": "Useful in special populations."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Enoxaparin CrCl below 30: treatment 1 mg/kg daily, prophylaxis 30 mg daily.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Lovenox (enoxaparin) prescribing information, Sanofi (2025)",
+     "url": "https://products.sanofi.us/lovenox/lovenox.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac13",
+   "title": "Stopping a DOAC before surgery",
+   "setting": "Pre op · elective hip replacement",
+   "topics": [
+    "DOACs",
+    "Perioperative"
+   ],
+   "stem": "Apixaban 5 mg BID for AF, CrCl 70 mL/min. Elective hip replacement (high bleed risk) on Friday.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "By the PAUSE schedule, when is the last dose?",
+     "options": [
+      {
+       "t": "Tuesday is the last day of dosing: skip the 2 days before (Wednesday and Thursday) and the day of surgery",
+       "correct": true,
+       "why": "High bleed risk: about 60 to 68 hours off before surgery."
+      },
+      {
+       "t": "Thursday evening",
+       "correct": false,
+       "why": "Too close for high bleed risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "Should she get bridging with enoxaparin?",
+     "options": [
+      {
+       "t": "No: DOACs are not bridged",
+       "correct": true,
+       "why": "PAUSE and CHEST 2022: no bridging for DOACs."
+      },
+      {
+       "t": "Yes, always",
+       "correct": false,
+       "why": "Bridging adds bleeding without benefit."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Bridge"
+    },
+    {
+     "q": "When does apixaban usually restart after high bleed risk surgery?",
+     "options": [
+      {
+       "t": "About 48 to 72 hours after, once bleeding is controlled",
+       "correct": true,
+       "why": "Prophylactic doses may be used before that per the surgical team."
+      },
+      {
+       "t": "2 hours after surgery",
+       "correct": false,
+       "why": "Too early."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**PAUSE: high bleed risk, skip 2 days before and the day of. No bridging for DOACs.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Douketis JD, et al. PAUSE. JAMA Intern Med 2019;179:1469-1478",
+     "url": "https://doi.org/10.1001/jamainternmed.2019.2431",
+     "mark": "✅"
+    },
+    {
+     "t": "Douketis JD, et al. Perioperative management of antithrombotic therapy: CHEST guideline. Chest 2022;162:e207-e243",
+     "url": "https://doi.org/10.1016/j.chest.2022.07.025",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ac14",
+   "title": "Bridging warfarin",
+   "setting": "Pre op · colonoscopy with polypectomy",
+   "topics": [
+    "Warfarin",
+    "Perioperative"
+   ],
+   "stem": "Warfarin for AF (CHA2DS2-VASc 3), stopping for a procedure. The team orders enoxaparin bridging.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the evidence say?",
+     "options": [
+      {
+       "t": "CHEST 2022 recommends against bridging in AF; BRIDGE showed no difference in clots and more major bleeding with bridging (3.2% vs 1.3%)",
+       "correct": true,
+       "why": "Strong recommendation against bridging in AF."
+      },
+      {
+       "t": "Always bridge warfarin",
+       "correct": false,
+       "why": "That was old practice."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    },
+    {
+     "q": "Who may still be bridged?",
+     "options": [
+      {
+       "t": "Very high risk patients, for example a mechanical mitral valve or a clot in the last 3 months, per cardiology or hematology",
+       "correct": true,
+       "why": "Individual decision; check St. Mary's policy."
+      },
+      {
+       "t": "Nobody",
+       "correct": false,
+       "why": "Some very high risk patients are bridged."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exceptions"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**AF on warfarin: do not bridge. Stop about 5 days before.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Douketis JD, et al. Perioperative management of antithrombotic therapy: CHEST guideline. Chest 2022;162:e207-e243",
+     "url": "https://doi.org/10.1016/j.chest.2022.07.025",
+     "mark": "✅"
+    },
+    {
+     "t": "Douketis JD, et al. Perioperative bridging in AF (BRIDGE). N Engl J Med 2015;373:823-833",
+     "url": "https://doi.org/10.1056/NEJMoa1501035",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ac15",
+   "title": "The duplicate anticoagulant",
+   "setting": "Med surg · transfer from ICU",
+   "topics": [
+    "Safety",
+    "Duplicates"
+   ],
+   "stem": "A patient transferred from the ICU has heparin infusion running, apixaban 5 mg BID newly ordered, and heparin 5,000 units SC every 8 hours still active.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you find?",
+     "options": [
+      {
+       "t": "Three anticoagulants active at once",
+       "correct": true,
+       "why": "Transfers are where duplicates happen."
+      },
+      {
+       "t": "Nothing unusual",
+       "correct": false,
+       "why": "Major bleeding risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    },
+    {
+     "q": "How should a heparin infusion transition to apixaban?",
+     "options": [
+      {
+       "t": "Start apixaban when the heparin infusion is stopped (within about the same time), and discontinue the SC heparin",
+       "correct": true,
+       "why": "Per labels, switch at the time the infusion stops."
+      },
+      {
+       "t": "Overlap all three for 24 hours",
+       "correct": false,
+       "why": "Unsafe."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Transition"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**On every transfer: count the anticoagulants. One at a time.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Eliquis (apixaban) prescribing information, Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ac16",
+   "title": "Shift simulation: anticoagulation calls",
+   "setting": "Night shift · 0300",
+   "topics": [
+    "Anticoagulation",
+    "Prioritize"
+   ],
+   "stem": "Three calls: (1) aPTT came back very high on a heparin drip, patient now has blood in the urine; (2) a question about whether apixaban can be crushed; (3) an INR of 3.4 (goal 2 to 3) on a stable patient.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which first?",
+     "options": [
+      {
+       "t": "The heparin patient who is bleeding with a high aPTT",
+       "correct": true,
+       "why": "Active bleeding on a drug that can be stopped right now."
+      },
+      {
+       "t": "The crushing question",
+       "correct": false,
+       "why": "Can wait."
+      },
+      {
+       "t": "The INR of 3.4",
+       "correct": false,
+       "why": "Mildly high, stable."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "What do you advise for the bleeding heparin patient?",
+     "options": [
+      {
+       "t": "Hold the infusion per protocol, notify the prescriber, check hemoglobin; consider protamine if bleeding is serious (1 mg per 100 units given in the last 2 to 3 hours, max 50 mg)",
+       "correct": true,
+       "why": "Heparin half life is short, so stopping often works quickly."
+      },
+      {
+       "t": "Increase the rate",
+       "correct": false,
+       "why": "Wrong direction."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    },
+    {
+     "q": "Can apixaban be crushed?",
+     "options": [
+      {
+       "t": "Yes: tablets may be crushed and given in water, D5W or apple juice, or through an NG tube, per label",
+       "correct": true,
+       "why": "Unlike dabigatran."
+      },
+      {
+       "t": "No, never",
+       "correct": false,
+       "why": "Apixaban can be crushed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recall"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Bleeding on a drip first. Protamine 1 mg per 100 units (max 50 mg).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Heparin Sodium Injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=45dc6b8b-ed5d-40a2-8d9c-084c863ae93a&type=display",
+     "mark": "✅"
+    },
+    {
+     "t": "Eliquis (apixaban) prescribing information, Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose anticoagulation policy and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
