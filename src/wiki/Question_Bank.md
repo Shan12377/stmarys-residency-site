@@ -1,0 +1,10 @@
+---
+title: "🧠 Question Bank: Think Like a Pharmacist"
+---
+## <a href="/tools/qbank" target="_blank">▶ Open the question bank</a>
+
+Stepwise cases that walk you to the answer: the questions to ask, why each choice is right or wrong, how a pharmacist thinks, where to find it and who to ask, the SBAR call, and what to monitor. Focus sounds are built in.
+
+**Modules ready:** Hospital Pharmacy 101 (14 cases) and Labor & Delivery (40 cases). More are added as each one passes its accuracy audit.
+
+Direct link: [stmarys-residency-site.pages.dev/tools/qbank](https://stmarys-residency-site.pages.dev/tools/qbank)
