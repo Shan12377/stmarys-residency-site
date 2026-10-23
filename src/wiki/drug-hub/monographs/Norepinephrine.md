@@ -26,7 +26,7 @@ At 16 mcg/mL, 5 mcg/min = 0.31 mL/min = **about 18.8 mL/h**. (See [[Codes_Resusc
 ```mermaid
 flowchart TD
     START["Septic Shock (Fluids Given): Start Norepinephrine First-Line"] --> LINE["Line Check: Central line preferred;<br/>short-term peripheral start OK in proximal vein above antecubital fossa while central access is placed"]
-    LINE --> TITR["Titrate to MAP Target 65 mmHg<br/>(Standard premixed bags: 4 mg/250 mL [16 mcg/mL], 8 mg/250 mL [32 mcg/mL], 16 mg/250 mL [64 mcg/mL])"]
+    LINE --> TITR["Titrate to MAP Target 65 mmHg<br/>(Standard premixed bags: 4 mg/250 mL [16 mcg/mL], 8 mg/250 mL [32 mcg/mL], 16 mg/250 mL [64 mcg/mL]; use only the concentrations in St. Mary's pump library ⚠️)"]
     TITR --> NEXT["MAP still inadequate on low to moderate Norepinephrine?<br/>Add Vasopressin (rather than escalating Norepinephrine alone).<br/>If cardiac dysfunction with poor perfusion: add Dobutamine or switch to Epinephrine"]
     LINE --> EXT["IF EXTRAVASATION OCCURS (Pale, Cold, Blanched Skin):<br/>Infiltrate Phentolamine 5 to 10 mg in 10 to 15 mL NS into the area ASAP (best within 12 h)"]
 

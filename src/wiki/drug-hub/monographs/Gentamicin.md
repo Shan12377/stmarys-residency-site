@@ -13,7 +13,7 @@
 | Renal (label method) | Interval (h) ≈ SCr × 8, or divide dose by SCr for every 8 h dosing | ✅ | [1] |
 | Hemodialysis | 1 to 1.7 mg/kg after dialysis | ✅ | [1] |
 | **Extended interval (Hartford)** | **7 mg/kg**; one random level; plot on the nomogram for every 24, 36 or 48 h | ✅✅ | [2] Nicolau 1995; [3] nomogram guide |
-| Hartford rules | Only valid for 7 mg/kg; assumes Vd 0.3 L/kg; level above the q48h zone means switch to traditional dosing; on a line, pick the longer interval | ✅ | [3] |
+| Hartford rules | Only valid for 7 mg/kg; assumes Vd 0.3 L/kg; level above the q48h zone means stop scheduled doses, follow serial levels and redose when below 1 mcg/mL; on a line, pick the longer interval | ✅ | [3] |
 | Level timing for Hartford | 6 to 14 h after the start of the dose | ⚠️ | [VERIFY original paper] |
 | Weight for dosing | Actual weight, or adjusted weight in obesity per protocol | ⚠️ | [VERIFY St. Mary's] |
 
@@ -29,7 +29,7 @@ flowchart TD
     MODE -->|"Extended Interval (Hartford)"| HART["Dose: 7 mg/kg IV once<br/>Draw 1 random level 6 to 14 h after start of infusion"]
     MODE -->|"Traditional (q8h or Renal Failure)"| TRAD["Dose: 3 mg/kg/day divided every 8 h<br/>(up to 5 mg/kg/day for life-threatening infection)<br/>Renal interval (h) ≈ SCr × 8"]
 
-    HART --> PLOT["Plot level on Hartford Nomogram:<br/>• Falls in q24h, q36h, or q48h zone: use that interval<br/>• Falls ON a line: pick the LONGER interval<br/>• Falls ABOVE the q48h zone: switch to Traditional dosing"]
+    HART --> PLOT["Plot level on Hartford Nomogram:<br/>• Falls in q24h, q36h, or q48h zone: use that interval<br/>• Falls ON a line: pick the LONGER interval<br/>• Falls ABOVE the q48h zone: stop scheduled doses, follow serial levels, redose when below 1 mcg/mL"]
     TRAD --> TARG["Traditional Safety Targets:<br/>Keep Peak below 12 mcg/mL and Trough below 2 mcg/mL<br/>(Boxed Warning: Nephrotoxicity, Irreversible Ototoxicity, Neuromuscular Blockade)"]
 
     style START fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
@@ -39,6 +39,8 @@ flowchart TD
     style PLOT fill:#dcfce7,stroke:#166534,color:#14532d,stroke-width:2px
     style TARG fill:#fee2e2,stroke:#991b1b,color:#7f1d1d,stroke-width:2px
 ```
+**Do not use the Hartford nomogram in these patients** (they were excluded from the original study, so use traditional dosing or individualized kinetics): pregnancy, burns over 20% of body surface, ascites or large fluid shifts, CrCl below 20 mL/min or dialysis, endocarditis or synergy dosing, cystic fibrosis, children, and major obesity without a dosing weight adjustment ✅ [2] ⚠️ check St. Mary's aminoglycoside protocol.
+
 *Sources: Gentamicin FDA label (DailyMed) [1]; Nicolau 1995 Hartford nomogram [2]; Bugs and Drugs Hartford guide [3].*
 
 ## Plain English memory guide: Mechanism, body timing, and "why never"

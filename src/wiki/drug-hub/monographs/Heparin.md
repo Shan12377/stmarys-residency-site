@@ -28,14 +28,14 @@ ISMP High Alert Medication. Independent double check per St. Mary's policy.
 
 ```mermaid
 flowchart TD
-    START["Unfractionated Heparin Order"] --> CHECK["Pre-Check: Platelets, baseline aPTT or anti-Xa,<br/>any Enoxaparin in last 12 hours? (If yes: DO NOT bolus)"]
+    START["Unfractionated Heparin Order"] --> CHECK["Pre-Check: Platelets, baseline aPTT or anti-Xa,<br/>any Enoxaparin in last 12 hours? (If yes: usually no bolus; follow St. Mary's protocol ⚠️)"]
     CHECK --> VTE["VTE Treatment (DVT or PE):<br/>80 units/kg IV bolus, then 18 units/kg/h"]
     CHECK --> ACS["ACS (NSTE-ACS or STEMI):<br/>60 units/kg IV bolus (max 4,000 units),<br/>then 12 units/kg/h (max 1,000 units/h)"]
     CHECK --> PPX["VTE Prophylaxis:<br/>5,000 units SC every 8 to 12 hours"]
 
     VTE --> MON["Check aPTT or anti-Xa 6 hours after bolus<br/>and 6 hours after every rate change"]
     ACS --> MON
-    MON --> HIT["If platelets drop below 100,000 or new clot forms:<br/>Calculate 4Ts score. If intermediate or high:<br/>STOP ALL HEPARIN and start Argatroban (2 mcg/kg/min;<br/>0.5 mcg/kg/min in moderate or severe hepatic impairment)"]
+    MON --> HIT["If platelets fall 50% or more from baseline (classically day 5 to 10) or a new clot forms:<br/>Calculate 4Ts score. If intermediate or high:<br/>STOP ALL HEPARIN and start Argatroban (2 mcg/kg/min;<br/>0.5 mcg/kg/min in moderate or severe hepatic impairment)"]
 
     style START fill:#f8fafc,stroke:#334155,color:#0f172a,stroke-width:2px
     style CHECK fill:#fef3c7,stroke:#92400e,color:#78350f,stroke-width:2px

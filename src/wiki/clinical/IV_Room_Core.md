@@ -22,7 +22,7 @@ BUD can never be longer than the drug's own stability allows ✅ [1].
 flowchart TD
     Red["RED · IMMEDIATE USE (Emergencies Only, Outside a Hood)<br/>Start administration within 4 hours of beginning preparation<br/>No more than 3 sterile products; label with ingredients, preparer, and 4 h expiration ✅✅"]
     Amber["AMBER · CATEGORY 1 (ISO 5 Hood in Unclassified Segregated Area)<br/>Room temperature: up to 12 hours<br/>Refrigerated: up to 24 hours ✅✅ [1][2]"]
-    Green["GREEN · CATEGORY 2 ASEPTIC (ISO 5 Hood in Classified Cleanroom Suite, No Sterility Test)<br/>Room temperature: up to 4 days<br/>Refrigerated: up to 10 days · Frozen: up to 45 days ✅✅ [1][2]"]
+    Green["GREEN · CATEGORY 2 ASEPTIC (ISO 5 Hood in Classified Cleanroom Suite, No Sterility Test, all sterile starting ingredients)<br/>Room temperature: up to 4 days<br/>Refrigerated: up to 10 days · Frozen: up to 45 days ✅✅ [1][2]"]
 
     Red --> Amber --> Green
 

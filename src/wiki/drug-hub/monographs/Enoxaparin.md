@@ -29,7 +29,7 @@ ISMP High Alert Medication (anticoagulant). **Boxed warning: spinal and epidural
 ```mermaid
 flowchart TD
     ORD["Enoxaparin Order Arrives"] --> CRCL["Calculate Cockcroft-Gault CrCl first"]
-    CRCL --> NORM["CrCl 30 mL/min or above:<br/>• Prophylaxis: 40 mg SC once daily (or 30 mg q12h ortho)<br/>• DVT/PE or NSTEMI treatment: 1 mg/kg SC every 12 hours<br/>(or 1.5 mg/kg once daily inpatient)"]
+    CRCL --> NORM["CrCl 30 mL/min or above:<br/>• Prophylaxis: 40 mg SC once daily (or 30 mg q12h ortho)<br/>• DVT/PE or NSTEMI treatment: 1 mg/kg SC every 12 hours<br/>(DVT/PE inpatients only: 1.5 mg/kg once daily is a label option)"]
     CRCL --> LOW["CrCl BELOW 30 mL/min (Renal Cut in Half):<br/>• Prophylaxis: 30 mg SC once daily<br/>• DVT/PE or NSTEMI treatment: 1 mg/kg SC ONCE DAILY (every 24 hours)"]
 
     NORM --> EPID["Epidural or Spinal Catheter Check:<br/>• Prophylactic dose: Wait at least 12 hours before placement or removal<br/>• Treatment dose: Wait at least 24 hours before placement or removal<br/>• Wait at least 4 hours AFTER catheter removal before next dose"]

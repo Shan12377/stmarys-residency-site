@@ -40,7 +40,7 @@ KDIGO severity: severe = K above 6.5, or 6.1 to 6.5 with ECG changes ✅ [5].
 
 ```mermaid
 flowchart TD
-    Step1["RED · STEP 1: SHIELD THE HEART IMMEDIATELY (Does NOT lower K)<br/>Calcium gluconate 1 g (10 mL of 10%) IV over 2 to 5 min<br/>Repeat in 5 min if ECG changes persist ✅✅ [4][5]"]
+    Step1["RED · STEP 1: SHIELD THE HEART IMMEDIATELY (Does NOT lower K)<br/>Calcium gluconate 1 g (10 mL of 10%) IV over 2 to 5 min (some protocols use 3 g)<br/>Repeat in 5 min if ECG changes persist ✅✅ [4][5] ⚠️ check St. Mary's order set"]
     Step2["AMBER · STEP 2: SHIFT POTASSIUM INTO CELLS (Temporary hiding place)<br/>Regular insulin 10 units IV + Dextrose 25 g (50 mL D50)<br/>Use 5 units insulin if kidney failure, low weight, or elderly; check glucose hourly for 4 to 6 h<br/>Adjunct: Nebulized albuterol 10 to 20 mg; sodium bicarbonate only if acidotic ✅✅ [4][5]"]
     Step3["GREEN · STEP 3: REMOVE POTASSIUM FROM THE BODY (Permanent exit)<br/>Sodium zirconium cyclosilicate 10 g PO or Patiromer 8.4 g PO<br/>Loop diuretic (furosemide) if kidneys make urine, or hemodialysis ✅✅ [4][5]"]
 

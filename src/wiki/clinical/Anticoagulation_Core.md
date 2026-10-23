@@ -60,7 +60,7 @@ Drug pages: [[Heparin]] · [[Enoxaparin]] · [[4F_PCC]]. Reversal table: [[Strok
 flowchart TD
     Green["GREEN · SAFE TO RESTART AFTER CATHETER REMOVAL<br/>Enoxaparin: Wait at least 4 hours after catheter removal ✅<br/>Apixaban, Rivaroxaban, Edoxaban, Dabigatran: Wait at least 6 hours after catheter removal ✅"]
     Amber["AMBER · HOLD BEFORE EPIDURAL PLACEMENT OR REMOVAL (LMWH)<br/>Enoxaparin prophylaxis (40 mg daily or 30 mg q12h): Hold at least 12 hours ✅✅<br/>Enoxaparin treatment (1 mg/kg q12h or 1.5 mg/kg daily): Hold at least 24 hours ✅✅"]
-    Red["RED · LONG HOLD BEFORE EPIDURAL (DOACs and Warfarin)<br/>Apixaban, Rivaroxaban, Edoxaban: Hold 72 hours before neuraxial procedure ✅<br/>Dabigatran: Hold 120 hours by default (shorter by CrCl) ✅<br/>Warfarin: Hold about 5 days and confirm normal INR ⚠️"]
+    Red["RED · LONG HOLD BEFORE EPIDURAL (DOACs and Warfarin)<br/>Apixaban, Rivaroxaban, Edoxaban: Hold 72 hours before neuraxial procedure (ASRA 4th ed) ⚠️ [VERIFY 5th ed 2025: now low vs high dose, renal based]<br/>Dabigatran: Hold 120 hours by default (shorter by CrCl) ⚠️ [VERIFY 5th ed]<br/>Warfarin: Hold about 5 days and confirm normal INR ⚠️"]
 
     Red --> Amber --> Green
 

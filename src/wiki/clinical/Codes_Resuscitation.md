@@ -23,7 +23,7 @@ IV is preferred for drug delivery; IO if IV can't be placed quickly (AHA 2025).
 flowchart TD
     Green["GREEN · NONSHOCKABLE RHYTHM (Asystole or PEA)<br/>High quality CPR + Epinephrine 1 mg IV/IO as soon as possible, repeat every 3 to 5 minutes ✅<br/>Search and treat reversible H's and T's ✅"]
     Amber["AMBER · SHOCKABLE RHYTHM (VF or Pulseless VT)<br/>Defibrillate first; give Epinephrine 1 mg IV/IO every 3 to 5 minutes after initial defibrillation attempts fail ✅<br/>Refractory VF or pulseless VT: Amiodarone 300 mg IV/IO push, then 150 mg<br/>OR Lidocaine 1 to 1.5 mg/kg IV/IO, then 0.5 to 0.75 mg/kg ✅"]
-    Red["RED · DO NOT GIVE ROUTINELY IN ARREST (Specific Causes Only)<br/>NO routine Calcium, Sodium Bicarbonate, or Magnesium unless hyperkalemia, torsades, or tricyclic overdose ✅<br/>NO Vasopressin (removed from algorithm) ✅"]
+    Red["RED · DO NOT GIVE ROUTINELY IN ARREST (Specific Causes Only)<br/>NO routine Calcium, Sodium Bicarbonate, or Magnesium unless hyperkalemia, torsades, or tricyclic overdose ✅<br/>Vasopressin: no advantage over epinephrine and not part of the standard algorithm ✅"]
 
     Green --> Amber --> Red
 

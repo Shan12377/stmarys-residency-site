@@ -42,7 +42,7 @@ Pharmacist watch: fosphenytoin is dosed in **PE (phenytoin equivalents)**; valpr
 
 ```mermaid
 flowchart TD
-    Green["GREEN · 0 TO 20 MINUTES: CHECK GLUCOSE + FIRST LINE BENZODIAZEPINE<br/>0 to 5 min: Stabilize airway and breathing; check fingerstick glucose (give Dextrose D10W 5 to 10 mL/kg if low)<br/>5 to 20 min: Lorazepam 0.1 mg/kg IV (max 4 mg, may repeat once) OR Midazolam 0.2 mg/kg IM (max 10 mg) ✅"]
+    Green["GREEN · 0 TO 20 MINUTES: CHECK GLUCOSE + FIRST LINE BENZODIAZEPINE<br/>0 to 5 min: Stabilize airway and breathing; check fingerstick glucose (give Dextrose D10W 5 to 10 mL/kg if low)<br/>5 to 20 min: Lorazepam 0.1 mg/kg IV (max 4 mg, may repeat once) OR Midazolam IM 10 mg (over 40 kg) or 5 mg (13 to 40 kg), single dose ✅"]
     Amber["AMBER · 20 TO 40 MINUTES: ESETT SECOND LINE (All 3 Equally Effective, Pick One Fast)<br/>Levetiracetam 60 mg/kg IV (max 4,500 mg)<br/>OR Fosphenytoin 20 mg PE/kg IV (max 1,500 mg PE)<br/>OR Valproate 40 mg/kg IV (max 3,000 mg; avoid in young children with unknown liver or mitochondrial disease) ✅✅"]
     Red["RED · 40+ MINUTES: REFRACTORY STATUS EPILEPTICUS<br/>Continuous IV infusion (Midazolam, Pentobarbital, or Ketamine) with intubation and continuous EEG ✅"]
 
