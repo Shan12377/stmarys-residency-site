@@ -133,7 +133,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "iv02",
@@ -244,7 +245,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "iv03",
@@ -327,7 +329,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "iv04",
@@ -415,7 +418,8 @@
      "url": "https://www.floridahealth.gov/licensing-and-regulation/enforcement/inspection-program/SterileCompounding-Revision1,USP7972022.August2024.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "iv05",
@@ -498,7 +502,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "iv06",
@@ -581,7 +586,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "iv07",
@@ -641,7 +647,8 @@
      "url": "https://www.usp.org/compounding/general-chapter-797",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "iv08",
@@ -747,7 +754,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "iv09",
@@ -807,7 +815,8 @@
      "url": "https://www.usp.org/compounding/general-chapter-797",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "iv10",
@@ -901,7 +910,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "iv11",
@@ -943,7 +953,8 @@
      "url": "https://home.ecri.org/blogs/ismp-news/due-to-ismp-advocacy-vincristine-labeling-and-packaging-changed-to-prevent-wrong-route-administration",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "iv12",
@@ -1014,7 +1025,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "iv13",
@@ -1097,7 +1109,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "iv14",
@@ -1173,7 +1186,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "iv15",
@@ -1243,7 +1257,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

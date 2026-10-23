@@ -82,7 +82,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "cd02",
@@ -166,7 +167,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "cd03",
@@ -219,7 +221,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cd04",
@@ -279,7 +282,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cd05",
@@ -339,7 +343,8 @@
      "url": "https://doi.org/10.1161/CIR.0000000000001161",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cd06",
@@ -404,7 +409,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "cd07",
@@ -446,7 +452,8 @@
      "url": "https://doi.org/10.1161/CIR.0000000000001161",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cd08",
@@ -506,7 +513,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cd09",
@@ -566,7 +574,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cd10",
@@ -631,7 +640,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "cd11",
@@ -696,7 +706,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "cd12",
@@ -777,7 +788,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   }
  ]
 }

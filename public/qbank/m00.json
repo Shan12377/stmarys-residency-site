@@ -132,7 +132,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h02",
@@ -236,7 +237,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h03",
@@ -311,7 +313,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h04",
@@ -409,7 +412,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h05",
@@ -478,7 +482,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h06",
@@ -548,7 +553,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h07",
@@ -636,7 +642,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h08",
@@ -723,7 +730,8 @@
      "url": "https://doi.org/10.37573/9781585287048.079",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h09",
@@ -799,7 +807,8 @@
      "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h10",
@@ -865,7 +874,8 @@
      "url": "https://beckersasc.com/asc-accreditation-and-patient-safety/the-joint-commission-eliminate-these-5-abbreviations.html",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h11",
@@ -916,7 +926,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h12",
@@ -962,7 +973,8 @@
      "url": "https://www.ihi.org/resources/Pages/Tools/SBARToolkit.aspx",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h13",
@@ -1032,7 +1044,8 @@
      "url": "https://www.lammico.com/article/NPG-2026",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "h14",
@@ -1079,7 +1092,8 @@
      "url": "https://www.lammico.com/article/NPG-2026",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   }
  ]
 }

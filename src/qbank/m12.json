@@ -72,7 +72,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pi02",
@@ -142,7 +143,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pi03",
@@ -202,7 +204,8 @@
      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pi04",
@@ -301,7 +304,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pi05",
@@ -384,7 +388,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pi06",
@@ -444,7 +449,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pi07",
@@ -504,7 +510,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pi08",
@@ -582,7 +589,8 @@
      "url": "https://doi.org/10.1542/peds.2018-3083",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pi09",
@@ -642,7 +650,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

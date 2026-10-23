@@ -77,7 +77,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "id02",
@@ -142,7 +143,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "id03",
@@ -226,7 +228,8 @@
      "url": "https://doi.org/10.1164/rccm.201908-1581ST",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "id04",
@@ -273,7 +276,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id05",
@@ -362,7 +366,8 @@
      "url": "https://doi.org/10.1093/cid/ciw353",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id06",
@@ -422,7 +427,8 @@
      "url": "https://www.drugs.com/fda-alerts/544-0.html",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "id07",
@@ -511,7 +517,8 @@
      "url": "https://doi.org/10.1093/cid/ciaf460",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id08",
@@ -577,7 +584,8 @@
      "url": "https://www.aafp.org/afp/2020/0715/p99.html",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "id09",
@@ -637,7 +645,8 @@
      "url": "https://doi.org/10.1093/cid/ciu296",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "id10",
@@ -715,7 +724,8 @@
      "url": "https://doi.org/10.1086/425368",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id11",
@@ -791,7 +801,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "id12",
@@ -838,7 +849,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "id13",
@@ -926,7 +938,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id14",
@@ -968,7 +981,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id15",
@@ -1031,7 +1045,8 @@
      "url": "https://doi.org/10.1093/cid/ciaf460",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "id16",
@@ -1101,7 +1116,8 @@
      "url": "https://doi.org/10.1093/cid/ciq146",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

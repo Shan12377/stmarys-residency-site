@@ -120,7 +120,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld02",
@@ -229,7 +230,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld03",
@@ -318,7 +320,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003075",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld04",
@@ -411,7 +414,8 @@
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld05",
@@ -510,7 +514,8 @@
      "url": "/drug-hub/pregnancy_lactation",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld06",
@@ -586,7 +591,8 @@
      "url": "https://www.acc.org/latest-in-cardiology/articles/2026/07/02/15/04/antihypertensive-medications-in-pregnancy-and-lactation",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld07",
@@ -718,7 +724,8 @@
      "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld08",
@@ -835,7 +842,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003891",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld09",
@@ -900,7 +908,8 @@
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld10",
@@ -960,7 +969,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003891",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld11",
@@ -1020,7 +1030,8 @@
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld12",
@@ -1095,7 +1106,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld13",
@@ -1150,7 +1162,8 @@
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld14",
@@ -1221,7 +1234,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld15",
@@ -1280,7 +1294,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000002351",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld16",
@@ -1374,7 +1389,8 @@
      "url": "https://doi.org/10.1016/S0140-6736(17)30638-4",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld17",
@@ -1434,7 +1450,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000002351",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld18",
@@ -1505,7 +1522,8 @@
      "url": "https://doi.org/10.1016/S0140-6736(17)30638-4",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld19",
@@ -1588,7 +1606,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000002351",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld20",
@@ -1655,7 +1674,8 @@
      "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld21",
@@ -1727,7 +1747,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003668",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld22",
@@ -1798,7 +1819,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003668",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld23",
@@ -1858,7 +1880,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003668",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld24",
@@ -1924,7 +1947,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003668",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld25",
@@ -2031,7 +2055,8 @@
      "url": "https://www.merckmanuals.com/professional/multimedia/table/antibiotic-regimens-for-treatment-of-intraamniotic-infection",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld26",
@@ -2091,7 +2116,8 @@
      "url": "https://www.merckmanuals.com/professional/multimedia/table/antibiotic-regimens-for-treatment-of-intraamniotic-infection",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld27",
@@ -2151,7 +2177,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000002237",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld28",
@@ -2221,7 +2248,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000002237",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld29",
@@ -2287,7 +2315,8 @@
      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld30",
@@ -2341,7 +2370,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000002232",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld31",
@@ -2416,7 +2446,8 @@
      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/low-dose-aspirin-use-for-the-prevention-of-morbidity-and-mortality-from-preeclampsia-preventive-medication",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld32",
@@ -2480,7 +2511,8 @@
      "url": "https://www.aafp.org/pubs/afp/issues/2006/0201/p511.html",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld33",
@@ -2553,7 +2585,8 @@
      "url": "https://doi.org/10.1097/AAP.0000000000000763",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld34",
@@ -2612,7 +2645,8 @@
      "url": "https://doi.org/10.2337/dc25-S015",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld35",
@@ -2685,7 +2719,8 @@
      "url": "/drug-hub/pregnancy_lactation",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ld36",
@@ -2756,7 +2791,8 @@
      "url": "/drug-hub/pregnancy_lactation",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld37",
@@ -2845,7 +2881,8 @@
      "url": "https://www.qgdigitalpublishing.com/article/Consult+Your+Pharmacist/4303347/752390/article.html",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ld38",
@@ -2904,7 +2941,8 @@
      "url": "/drug-hub/pregnancy_lactation",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld39",
@@ -2946,7 +2984,8 @@
      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ld40",
@@ -3011,7 +3050,8 @@
      "url": "https://doi.org/10.1097/AOG.0000000000003668",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   }
  ]
 }

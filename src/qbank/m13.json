@@ -82,7 +82,8 @@
      "url": "https://home.ecri.org/blogs/ismp-news/ismp-updates-high-alert-medication-list",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ms02",
@@ -135,7 +136,8 @@
      "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ms03",
@@ -188,7 +190,8 @@
      "url": "https://beckersasc.com/asc-accreditation-and-patient-safety/the-joint-commission-eliminate-these-5-abbreviations.html",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ms04",
@@ -253,7 +256,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ms05",
@@ -329,7 +333,8 @@
      "url": "https://www.relias.com/blog/joint-commission-national-performance-goals-are-here",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ms06",
@@ -389,7 +394,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ms07",
@@ -472,7 +478,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ms08",
@@ -561,7 +568,8 @@
      "url": "https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-64B16-26-103",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ms09",
@@ -626,7 +634,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ms10",
@@ -684,7 +693,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

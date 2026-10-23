@@ -72,7 +72,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pa02",
@@ -137,7 +138,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pa03",
@@ -197,7 +199,8 @@
      "url": "https://www.ihi.org/resources/how-to-improve",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pa04",
@@ -257,7 +260,8 @@
      "url": "https://doi.org/10.1056/NEJMoa0810625",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pa05",
@@ -322,7 +326,8 @@
      "url": "https://doi.org/10.1056/NEJMoa1501035",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pa06",
@@ -382,7 +387,8 @@
      "url": "https://doi.org/10.1016/S0140-6736(24)02842-3",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pa07",
@@ -424,7 +430,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pa08",
@@ -466,7 +473,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   }
  ]
 }

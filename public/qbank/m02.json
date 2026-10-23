@@ -105,7 +105,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pk02",
@@ -208,7 +209,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pk03",
@@ -301,7 +303,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pk04",
@@ -435,7 +438,8 @@
      "url": "https://doi.org/10.1093/ajhp/zxaa036",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk05",
@@ -500,7 +504,8 @@
      "url": "https://doi.org/10.1093/ajhp/zxaa036",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk06",
@@ -594,7 +599,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk07",
@@ -665,7 +671,8 @@
      "url": "https://doi.org/10.1093/ajhp/zxaa036",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pk08",
@@ -735,7 +742,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk09",
@@ -800,7 +808,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk10",
@@ -878,7 +887,8 @@
      "url": "https://doi.org/10.1093/ajhp/zxaa036",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk11",
@@ -961,7 +971,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pk12",
@@ -1021,7 +1032,8 @@
      "url": "https://doi.org/10.1093/cid/ciab549",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pk13",
@@ -1121,7 +1133,8 @@
      "url": "https://doi.org/10.1128/AAC.39.3.650",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "pk14",
@@ -1214,7 +1227,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pk15",
@@ -1321,7 +1335,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pk16",
@@ -1404,7 +1419,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pk17",
@@ -1469,7 +1485,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "pk18",
@@ -1535,7 +1552,8 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "pk19",
@@ -1629,7 +1647,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

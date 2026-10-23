@@ -95,7 +95,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "st02",
@@ -183,7 +184,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "st03",
@@ -248,7 +250,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "st04",
@@ -329,7 +332,8 @@
      "url": "https://www.guidelinecentral.com/insights/feb-2026-ahaasa-earlymanagementacuteischemicstroke-guideline-spotlight",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "st05",
@@ -389,7 +393,8 @@
      "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "st06",
@@ -454,7 +459,8 @@
      "url": "https://www.guidelinecentral.com/insights/feb-2026-ahaasa-earlymanagementacuteischemicstroke-guideline-spotlight",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "st07",
@@ -525,7 +531,8 @@
      "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "st08",
@@ -618,7 +625,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "st09",
@@ -683,7 +691,8 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "st10",
@@ -748,7 +757,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

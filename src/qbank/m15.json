@@ -1,0 +1,785 @@
+{
+ "id": "m15",
+ "title": "Module 15 · Mixed Patients (Top 10%)",
+ "intro": "Real patients cross modules. Each case stacks problems the way a night shift does: magnesium plus infection plus kidneys, sepsis plus renal dosing, a bleed caused by a dosing error, crush injury, DKA with QT risk, postpartum clots while breastfeeding, HIT history and falling platelets.",
+ "cases": [
+  {
+   "id": "mx01",
+   "title": "Magnesium, fever and falling urine",
+   "setting": "L&D · 0200 · preeclampsia with severe features",
+   "topics": [
+    "L&D",
+    "ID",
+    "Aminoglycosides",
+    "Renal"
+   ],
+   "stem": "On magnesium 2 g/h for 10 hours. Now temperature 39 °C, fetal tachycardia: intraamniotic infection. Urine output 20 mL/h for 3 hours, SCr up from 0.6 to 1.3. Weight 90 kg. No allergies.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Before any antibiotic, what do you do about the magnesium?",
+     "options": [
+      {
+       "t": "Check reflexes, breathing and a serum magnesium level now; ask the team to lower the rate (label: 1 g/h maintenance in severe renal impairment or oliguria, max 20 g per 48 h)",
+       "correct": true,
+       "why": "Low urine output means magnesium is building up."
+      },
+      {
+       "t": "Nothing, magnesium does not depend on the kidneys",
+       "correct": false,
+       "why": "Magnesium is cleared by the kidneys."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Renal"
+    },
+    {
+     "q": "Antibiotics for intraamniotic infection?",
+     "options": [
+      {
+       "t": "Ampicillin 2 g IV every 6 hours plus gentamicin",
+       "correct": true,
+       "why": "ACOG CO 712."
+      },
+      {
+       "t": "Vancomycin alone",
+       "correct": false,
+       "why": "Misses gram negatives."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    },
+    {
+     "q": "How do falling kidney function and magnesium change your gentamicin thinking?",
+     "options": [
+      {
+       "t": "Kidney function is changing, so avoid assuming normal clearance: use levels and dose by kinetics; and know magnesium plus aminoglycosides both cause neuromuscular blockade",
+       "correct": true,
+       "why": "Gentamicin label warns about neuromuscular blockade with other blocking drugs. Watch breathing closely."
+      },
+      {
+       "t": "Give 7 mg/kg by the Hartford nomogram",
+       "correct": false,
+       "why": "Pregnancy and unstable kidney function are Hartford exclusions."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "**S/B:** On magnesium 2 g/h, new intraamniotic infection, urine 20 mL/h, SCr 0.6 to 1.3. **A:** Magnesium is accumulating, and gentamicin adds kidney and neuromuscular risk. **R:** Magnesium level and reflex check now, lower magnesium to 1 g/h per label, start ampicillin 2 g q6h plus gentamicin with levels guided dosing, and I will follow her kidney function.",
+   "monitor": "",
+   "pearl": "**One patient, three risks: magnesium build up, aminoglycoside kidney injury, and stacked neuromuscular blockade.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Magnesium Sulfate in 5% Dextrose label (MedLibrary)",
+     "url": "https://medlibrary.org/lib/rx/meds/magnesium-sulfate-in-dextrose/",
+     "mark": "✅✅"
+    },
+    {
+     "t": "ACOG Committee Opinion 712: intrapartum management of intraamniotic infection. Obstet Gynecol 2017",
+     "url": "https://doi.org/10.1097/AOG.0000000000002236",
+     "mark": "✅"
+    },
+    {
+     "t": "Gentamicin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's protocols for each step (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx02",
+   "title": "Septic shock with failing kidneys",
+   "setting": "ICU · 2300 · new admission",
+   "topics": [
+    "Sepsis",
+    "Vancomycin",
+    "Renal",
+    "ICU"
+   ],
+   "stem": "Septic shock from a pneumonia, 80 kg, CrCl 25 mL/min. Norepinephrine 0.3 mcg/kg/min for 5 hours. Orders: vancomycin 1,000 mg, cefepime 2 g every 8 hours, pantoprazole.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Vancomycin first dose?",
+     "options": [
+      {
+       "t": "Load 20 to 35 mg/kg actual weight (for example 2,000 mg), not reduced for kidneys; then choose maintenance by kidneys and levels",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "1,000 mg because of the kidneys",
+       "correct": false,
+       "why": "Underdosed load."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Load"
+    },
+    {
+     "q": "Cefepime?",
+     "options": [
+      {
+       "t": "Give the full first dose now, then adjust maintenance for CrCl 25 to avoid neurotoxicity",
+       "correct": true,
+       "why": "FDA alert: neurotoxicity mostly with kidney impairment and no adjustment."
+      },
+      {
+       "t": "2 g every 8 hours continued",
+       "correct": false,
+       "why": "Accumulates."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Renal"
+    },
+    {
+     "q": "Other bundle items?",
+     "options": [
+      {
+       "t": "Hydrocortisone 200 mg/day (pressor 0.25 or more for over 4 hours)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Add vasopressin rather than raising norepinephrine",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Stress ulcer prophylaxis is indicated (shock)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Tight glucose 80 to 110",
+       "correct": false,
+       "why": "140 to 180."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Bundle",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Septic shock + bad kidneys: full loads, adjust maintenance, steroids, vasopressin, SUP.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143",
+     "url": "https://doi.org/10.1097/CCM.0000000000005337",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Rybak MJ, et al. Vancomycin consensus guideline. Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅"
+    },
+    {
+     "t": "FDA safety alert: cefepime and nonconvulsive status epilepticus (2012)",
+     "url": "https://www.drugs.com/fda-alerts/544-0.html",
+     "mark": "✅"
+    },
+    {
+     "t": "SCCM/ASHP 2024 stress ulcer prophylaxis guideline",
+     "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib",
+     "mark": "✅"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx03",
+   "title": "The fall, the bleed, and what comes next",
+   "setting": "ED to neuro ICU · elderly woman",
+   "topics": [
+    "Stroke",
+    "Anticoagulation",
+    "Safety"
+   ],
+   "stem": "84 years old, 58 kg, fell at home. ICH on CT. Apixaban 5 mg BID for AF (SCr 1.6). SBP 188.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Reversal and BP?",
+     "options": [
+      {
+       "t": "4F-PCC per protocol, SBP target about 140 (not below 130)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Vitamin K and SBP below 110",
+       "correct": false,
+       "why": ""
+      },
+      {
+       "t": "Andexanet",
+       "correct": false,
+       "why": "Withdrawn from the US market in 2025."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Acute"
+    },
+    {
+     "q": "Looking back at her home dose, what do you notice?",
+     "options": [
+      {
+       "t": "She meets 3 of 3 apixaban reduction criteria (age 80+, weight 60 kg or less, SCr 1.5+), so her dose should have been 2.5 mg BID",
+       "correct": true,
+       "why": "An overdose contributed to bleeding risk. Report it and fix it before any restart."
+      },
+      {
+       "t": "Her dose was correct",
+       "correct": false,
+       "why": "Check the criteria."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    },
+    {
+     "q": "When can VTE prophylaxis start?",
+     "options": [
+      {
+       "t": "Heparin or enoxaparin prophylaxis is reasonable 24 to 48 hours after the bleed is stable",
+       "correct": true,
+       "why": "ICH 2022."
+      },
+      {
+       "t": "Never",
+       "correct": false,
+       "why": "Immobile patients clot."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Later"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Reverse, control BP, then find the error that set it up (wrong apixaban dose).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "2022 AHA/ASA guideline for spontaneous intracerebral hemorrhage. Stroke 2022;53:e282-e361",
+     "url": "https://doi.org/10.1161/STR.0000000000000407",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Kcentra prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+     "mark": "✅"
+    },
+    {
+     "t": "Eliquis prescribing information (lactation section), Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's protocols for each step (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx04",
+   "title": "Crush injury, day 3",
+   "setting": "Trauma ICU · 0400",
+   "topics": [
+    "Trauma",
+    "Electrolytes",
+    "Airway",
+    "Aminoglycosides"
+   ],
+   "stem": "Crush injury 3 days ago. CK 48,000, K 6.8 with peaked T waves, urine output falling. On gentamicin for an open fracture. Now needs reintubation.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Hyperkalemia plan?",
+     "options": [
+      {
+       "t": "Calcium first, then insulin and dextrose (consider 5 units with kidney injury), then remove potassium (binder, dialysis)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Calcium lowers potassium, so that is enough",
+       "correct": false,
+       "why": "Calcium only protects the heart."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Electrolytes"
+    },
+    {
+     "q": "Paralytic for the reintubation?",
+     "options": [
+      {
+       "t": "Rocuronium; avoid succinylcholine (crush injury after 24 to 48 hours and K 6.8)",
+       "correct": true,
+       "why": "Succinylcholine can cause a hyperkalemic arrest."
+      },
+      {
+       "t": "Succinylcholine",
+       "correct": false,
+       "why": "Dangerous here."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Airway"
+    },
+    {
+     "q": "What about the gentamicin?",
+     "options": [
+      {
+       "t": "Rhabdomyolysis and falling urine output: ask whether a non nephrotoxic option covers the fracture, and check levels if it continues",
+       "correct": true,
+       "why": "Stacked kidney risks."
+      },
+      {
+       "t": "Continue without change",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Crush day 3: no succinylcholine, treat K in 3 steps, and rethink nephrotoxins.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "KDIGO dyskalemia conference. Kidney Int 2020;97:42-61",
+     "url": "https://doi.org/10.1016/j.kint.2019.09.018",
+     "mark": "✅"
+    },
+    {
+     "t": "Gentamicin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's protocols for each step (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx05",
+   "title": "DKA with pneumonia",
+   "setting": "ICU · new DKA and fever",
+   "topics": [
+    "DKA",
+    "ID",
+    "Electrolytes",
+    "QT"
+   ],
+   "stem": "DKA, K 3.1, Mg 1.4, QTc 510. Chest X ray: lobar pneumonia, not severe. Orders: insulin drip, ceftriaxone, azithromycin, ondansetron.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Insulin first?",
+     "options": [
+      {
+       "t": "No: replace potassium to 3.5 or more before insulin (2024 consensus); replace magnesium too",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Yes",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "DKA"
+    },
+    {
+     "q": "What is the hidden danger in this order set?",
+     "options": [
+      {
+       "t": "QTc 510 with low K and low Mg, plus azithromycin and ondansetron (both prolong QT): torsades risk",
+       "correct": true,
+       "why": "Fix electrolytes and consider a non QT prolonging plan."
+      },
+      {
+       "t": "None",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    },
+    {
+     "q": "Which CAP option avoids adding QT risk?",
+     "options": [
+      {
+       "t": "Ceftriaxone plus doxycycline (the ATS/IDSA alternative when a macrolide should be avoided)",
+       "correct": true,
+       "why": "Fluoroquinolones also prolong QT."
+      },
+      {
+       "t": "Levofloxacin alone",
+       "correct": false,
+       "why": "Also prolongs QT."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternative"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Low K, low Mg, long QT: fix electrolytes, then choose drugs that do not stack QT.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Umpierrez GE, et al. Hyperglycemic crises consensus. Diabetes Care 2024;47:1257-1275",
+     "url": "https://doi.org/10.2337/dci24-0032",
+     "mark": "✅✅"
+    },
+    {
+     "t": "ATS/IDSA CAP guideline. Am J Respir Crit Care Med 2019;200:e45-e67",
+     "url": "https://doi.org/10.1164/rccm.201908-1581ST",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's protocols for each step (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx06",
+   "title": "Postpartum clot while breastfeeding",
+   "setting": "Postpartum unit · day 4",
+   "topics": [
+    "L&D",
+    "Anticoagulation",
+    "Lactation"
+   ],
+   "stem": "Day 4 after cesarean, new PE. Breastfeeding. BP 158/98 on two readings. Pain orders include acetaminophen with codeine.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which anticoagulants are compatible with breastfeeding?",
+     "options": [
+      {
+       "t": "Enoxaparin",
+       "correct": true,
+       "why": "Large molecule, minimal milk transfer, not orally absorbed by the infant."
+      },
+      {
+       "t": "Warfarin",
+       "correct": true,
+       "why": "Compatible per LactMed."
+      },
+      {
+       "t": "Apixaban",
+       "correct": false,
+       "why": "Labels advise against breastfeeding on DOACs (limited data)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Anticoagulant",
+     "type": "multi"
+    },
+    {
+     "q": "BP agent while breastfeeding?",
+     "options": [
+      {
+       "t": "Labetalol, nifedipine ER or enalapril",
+       "correct": true,
+       "why": "The pregnancy ban on ACE inhibitors ends at delivery."
+      },
+      {
+       "t": "Lisinopril is contraindicated because she was pregnant",
+       "correct": false,
+       "why": "Not after delivery; enalapril is the studied option."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "BP"
+    },
+    {
+     "q": "And the codeine?",
+     "options": [
+      {
+       "t": "Avoid codeine (and tramadol) while breastfeeding; use scheduled acetaminophen and ibuprofen, short low dose oxycodone if needed",
+       "correct": true,
+       "why": "FDA 2017."
+      },
+      {
+       "t": "Fine",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Pain"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Breastfeeding: enoxaparin or warfarin, labetalol or nifedipine or enalapril, no codeine.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "LactMed (NIH): warfarin, enoxaparin, enalapril, codeine",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
+     "mark": "✅"
+    },
+    {
+     "t": "Eliquis prescribing information (lactation section), Pfizer",
+     "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+     "mark": "✅"
+    },
+    {
+     "t": "ACC: antihypertensive medications in pregnancy and lactation (2026)",
+     "url": "https://www.acc.org/latest-in-cardiology/articles/2026/07/02/15/04/antihypertensive-medications-in-pregnancy-and-lactation",
+     "mark": "✅"
+    },
+    {
+     "t": "FDA: codeine and tramadol in breastfeeding (2017)",
+     "url": "https://www.fda.gov/Drugs/DrugSafety/ucm549679.htm",
+     "mark": "✅"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx07",
+   "title": "Warfarin bleed in a patient with HIT history",
+   "setting": "ED · GI bleed",
+   "topics": [
+    "Anticoagulation",
+    "Reversal",
+    "HIT"
+   ],
+   "stem": "GI bleed, INR 6.8 on warfarin. Allergy list: \"heparin: HIT 2023.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Can you give Kcentra (4F-PCC)?",
+     "options": [
+      {
+       "t": "No: Kcentra contains heparin and is contraindicated with known HIT",
+       "correct": true,
+       "why": "Kcentra label."
+      },
+      {
+       "t": "Yes",
+       "correct": false,
+       "why": "Check the contraindication."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    },
+    {
+     "q": "What do you recommend instead?",
+     "options": [
+      {
+       "t": "Vitamin K 10 mg IV plus plasma (FFP), with the team weighing volume, or a heparin free factor product if St. Mary's stocks one",
+       "correct": true,
+       "why": "Check what is on formulary."
+      },
+      {
+       "t": "Nothing; wait for vitamin K",
+       "correct": false,
+       "why": "Active bleed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternative"
+    },
+    {
+     "q": "Which other heparin exposures do you block for this patient?",
+     "options": [
+      {
+       "t": "Heparin flushes and heparin coated catheters",
+       "correct": true,
+       "why": "ASH 2018."
+      },
+      {
+       "t": "Enoxaparin",
+       "correct": true,
+       "why": "Cross reacts."
+      },
+      {
+       "t": "Nothing else",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prevent",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**HIT history: no Kcentra, no heparin flushes, no enoxaparin.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Kcentra prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+     "mark": "✅"
+    },
+    {
+     "t": "ASH 2018 HIT guideline. Blood Adv 2018;2:3360-3392",
+     "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's protocols for each step (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ],
+   "level": "Top 10%"
+  },
+  {
+   "id": "mx08",
+   "title": "Falling platelets on day 15",
+   "setting": "Med surg · VRE infection",
+   "topics": [
+    "ID",
+    "HIT",
+    "Interactions"
+   ],
+   "stem": "Day 15 of linezolid. On sertraline and heparin 5,000 units SC q8h since admission. Platelets 210,000 to 95,000. No new clot.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What are the leading causes?",
+     "options": [
+      {
+       "t": "Linezolid myelosuppression (usually after about 2 weeks)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "HIT is possible, but the timing (day 15) and another clear cause lower the 4Ts score",
+       "correct": true,
+       "why": "The 4Ts includes \"other causes.\""
+      },
+      {
+       "t": "Lab error only",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Differential",
+     "type": "multi"
+    },
+    {
+     "q": "What else about linezolid and sertraline?",
+     "options": [
+      {
+       "t": "Serotonin syndrome risk: monitor and discuss",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "No interaction",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    },
+    {
+     "q": "Next step?",
+     "options": [
+      {
+       "t": "Calculate the 4Ts with the team, consider HIT testing if intermediate, and ask ID about an alternative to linezolid",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Transfuse platelets",
+       "correct": false,
+       "why": "Not routine."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Plan"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Low platelets: list every cause (drug, HIT, sepsis). Linezolid after 2 weeks is a classic.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "DailyMed prescribing information (linezolid, sertraline)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/",
+     "mark": "✅"
+    },
+    {
+     "t": "ASH 2018 HIT guideline. Blood Adv 2018;2:3360-3392",
+     "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's protocols for each step (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ],
+   "level": "Top 10%"
+  }
+ ]
+}

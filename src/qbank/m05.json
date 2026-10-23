@@ -84,7 +84,8 @@
      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ac02",
@@ -144,7 +145,8 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=xarelto",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ac03",
@@ -214,7 +216,8 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=xarelto",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac04",
@@ -256,7 +259,8 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=savaysa",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac05",
@@ -321,7 +325,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ac06",
@@ -391,7 +396,8 @@
      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ac07",
@@ -485,7 +491,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac08",
@@ -568,7 +575,8 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac09",
@@ -661,7 +669,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac10",
@@ -750,7 +759,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ac11",
@@ -844,7 +854,8 @@
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/022485s013lbl.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ac12",
@@ -922,7 +933,8 @@
      "url": "https://products.sanofi.us/lovenox/lovenox.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "ac13",
@@ -1005,7 +1017,8 @@
      "url": "https://doi.org/10.1016/j.chest.2022.07.025",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "ac14",
@@ -1075,7 +1088,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac15",
@@ -1140,7 +1154,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "ac16",
@@ -1233,7 +1248,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   }
  ]
 }

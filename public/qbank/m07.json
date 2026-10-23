@@ -102,7 +102,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "cc02",
@@ -167,7 +168,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cc03",
@@ -245,7 +247,8 @@
      "url": "https://doi.org/10.1097/CCM.0000000000003299",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cc04",
@@ -328,7 +331,8 @@
      "url": "https://doi.org/10.1097/CCM.0000000000003299",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "cc05",
@@ -411,7 +415,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cc06",
@@ -504,7 +509,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "cc07",
@@ -551,7 +557,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cc08",
@@ -652,7 +659,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Top 10%"
   },
   {
    "id": "cc09",
@@ -735,7 +743,8 @@
      "url": "",
      "mark": "⚠️"
     }
-   ]
+   ],
+   "level": "Foundation"
   },
   {
    "id": "cc10",
@@ -801,7 +810,8 @@
      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib",
      "mark": "✅✅"
     }
-   ]
+   ],
+   "level": "Staff"
   },
   {
    "id": "cc11",
@@ -866,7 +876,8 @@
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215700s000lbl.pdf",
      "mark": "✅"
     }
-   ]
+   ],
+   "level": "Staff"
   }
  ]
 }

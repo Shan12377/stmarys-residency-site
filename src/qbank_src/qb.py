@@ -20,6 +20,8 @@ def src(t, url, mark='✅'):
     return {'t': t, 'url': url, 'mark': mark}
 
 def write(outdir, mid, title, intro, cases):
+    from levels import level
+    for c in cases: c['level'] = level(c['id'])
     ids = [c['id'] for c in cases]; assert len(ids) == len(set(ids)), 'duplicate case id'
     os.makedirs(outdir, exist_ok=True)
     json.dump({'id': mid, 'title': title, 'intro': intro, 'cases': cases}, open(f'{outdir}/{mid}.json', 'w'), ensure_ascii=False, indent=1)
