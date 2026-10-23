@@ -1,0 +1,756 @@
+{
+ "id": "m10",
+ "title": "Module 10 · Trauma",
+ "intro": "TXA timing, massive transfusion and calcium, RSI in shock, anticoagulated falls, TBI osmotherapy and seizure prophylaxis, open fractures, tetanus, VTE prophylaxis and pain, burns and a trauma night.",
+ "cases": [
+  {
+   "id": "tr01",
+   "title": "TXA in the trauma bay",
+   "setting": "Trauma bay · level 1 activation",
+   "topics": [
+    "TXA",
+    "Hemorrhage"
+   ],
+   "stem": "Motorcycle crash. Injury time 1:40 ago. HR 128, SBP 84. EMS gave nothing.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the TXA regimen?",
+     "options": [
+      {
+       "t": "1 g IV over 10 minutes, then 1 g over 8 hours (CRASH-2)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "2 g IV push over 1 minute",
+       "correct": false,
+       "why": "Some EMS systems give 2 g; the hospital regimen is CRASH-2 per protocol."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What is the time limit and why?",
+     "options": [
+      {
+       "t": "Within 3 hours of injury; benefit is greatest early and later use may be harmful",
+       "correct": true,
+       "why": "CRASH-2 analysis by time to treatment."
+      },
+      {
+       "t": "Any time in the first 24 hours",
+       "correct": false,
+       "why": "Late TXA was associated with more bleeding deaths."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "What do you ask EMS first?",
+     "options": [
+      {
+       "t": "The exact injury time and whether any TXA was already given",
+       "correct": true,
+       "why": "Prevents double dosing and late dosing."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Two key questions."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Check"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**TXA: 1 g over 10 min, then 1 g over 8 h, only within 3 hours. Ask EMS.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "CRASH-2 collaborators. Tranexamic acid in trauma patients with significant haemorrhage. Lancet 2010;376:23-32",
+     "url": "https://doi.org/10.1016/S0140-6736(10)60835-5",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr02",
+   "title": "Massive transfusion and calcium",
+   "setting": "Trauma bay · massive transfusion protocol",
+   "topics": [
+    "Transfusion",
+    "Calcium"
+   ],
+   "stem": "Ten units of blood products so far. Ionized calcium 0.82 mmol/L. BP still low.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Why is calcium low?",
+     "options": [
+      {
+       "t": "Citrate in stored blood binds calcium",
+       "correct": true,
+       "why": "Low calcium weakens the heart and worsens clotting."
+      },
+      {
+       "t": "Kidney failure",
+       "correct": false,
+       "why": "Not the main cause here."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Mechanism"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Calcium chloride 1 g IV (central preferred) or calcium gluconate 3 g IV, guided by ionized calcium",
+       "correct": true,
+       "why": "1 g chloride has about 3 times the calcium of 1 g gluconate."
+      },
+      {
+       "t": "Calcium gluconate 1 g once",
+       "correct": false,
+       "why": "Usually too little in massive transfusion."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What ratio of products do trauma programs aim for?",
+     "options": [
+      {
+       "t": "Close to 1:1:1 plasma, platelets and red cells",
+       "correct": true,
+       "why": "PROPPR and ACS TQIP."
+      },
+      {
+       "t": "Red cells only",
+       "correct": false,
+       "why": "Worsens coagulopathy."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Ratio"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Massive transfusion: 1:1:1, and replace calcium (CaCl 1 g or Ca gluconate 3 g).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Holcomb JB, et al. 1:1:1 vs 1:1:2 transfusion ratio (PROPPR). JAMA 2015;313:471-482",
+     "url": "https://doi.org/10.1001/jama.2015.12",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr03",
+   "title": "Intubating a trauma patient in shock",
+   "setting": "Trauma bay · RSI",
+   "topics": [
+    "RSI",
+    "Airway"
+   ],
+   "stem": "85 kg, SBP 78, needs intubation.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which induction agent fits shock?",
+     "options": [
+      {
+       "t": "Ketamine 1 to 2 mg/kg (85 to 170 mg)",
+       "correct": true,
+       "why": "Supports BP."
+      },
+      {
+       "t": "Etomidate 0.3 mg/kg (about 25 mg)",
+       "correct": true,
+       "why": "Hemodynamically neutral; single dose adrenal suppression."
+      },
+      {
+       "t": "Full dose propofol 2.5 mg/kg",
+       "correct": false,
+       "why": "Hypotension in shock."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Induction",
+     "type": "multi"
+    },
+    {
+     "q": "Which paralytic, and how long does it last?",
+     "options": [
+      {
+       "t": "Rocuronium 1 to 1.2 mg/kg (85 to 100 mg); lasts 45 to 60 minutes",
+       "correct": true,
+       "why": "Reversal: sugammadex 16 mg/kg for immediate reversal."
+      },
+      {
+       "t": "Succinylcholine in a patient with a crush injury from 3 days ago",
+       "correct": false,
+       "why": "Hyperkalemia risk after 24 to 48 hours."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Paralytic"
+    },
+    {
+     "q": "What must start right after the tube is in?",
+     "options": [
+      {
+       "t": "Analgesia and sedation (for example fentanyl, then propofol or dexmedetomidine as BP allows)",
+       "correct": true,
+       "why": "Etomidate wears off in minutes while rocuronium lasts an hour: awareness under paralysis."
+      },
+      {
+       "t": "Nothing until the patient moves",
+       "correct": false,
+       "why": "A paralyzed patient cannot move."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Post intubation"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Shock RSI: ketamine or etomidate + rocuronium, then analgesia and sedation right away.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr04",
+   "title": "Anticoagulated fall",
+   "setting": "ED · elderly fall, head strike",
+   "topics": [
+    "Reversal",
+    "Anticoagulants"
+   ],
+   "stem": "An 84 year old fell and hit her head. CT shows a subdural hematoma. Med list says \"blood thinner.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is your first job?",
+     "options": [
+      {
+       "t": "Identify the exact anticoagulant and the time of the last dose",
+       "correct": true,
+       "why": "Reversal depends on both."
+      },
+      {
+       "t": "Order vitamin K for everyone",
+       "correct": false,
+       "why": "Only works for warfarin."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "First"
+    },
+    {
+     "q": "She takes rivaroxaban, last dose 4 hours ago. Reversal?",
+     "options": [
+      {
+       "t": "4F-PCC per protocol (commonly 50 units/kg or a fixed dose)",
+       "correct": true,
+       "why": "Andexanet is no longer available in the US."
+      },
+      {
+       "t": "Protamine",
+       "correct": false,
+       "why": "Heparin only."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Reversal"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Which thinner, what time. Then reverse.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr05",
+   "title": "Severe TBI: osmotherapy",
+   "setting": "Neuro ICU · rising ICP",
+   "topics": [
+    "TBI",
+    "Osmotherapy"
+   ],
+   "stem": "Severe TBI with signs of herniation. Weight 80 kg. Central line in place.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which options fit?",
+     "options": [
+      {
+       "t": "Mannitol 0.25 to 1 g/kg IV (20 to 80 g)",
+       "correct": true,
+       "why": "Watch volume status and serum osmolality."
+      },
+      {
+       "t": "Hypertonic saline: 3% 250 mL, or 23.4% 30 mL through a central line only",
+       "correct": true,
+       "why": "23.4% is ISMP high alert; never peripheral."
+      },
+      {
+       "t": "Dexamethasone 10 mg IV",
+       "correct": false,
+       "why": "Steroids are not recommended in TBI (CRASH trial)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Options",
+     "type": "multi"
+    },
+    {
+     "q": "Seizure prophylaxis in severe TBI?",
+     "options": [
+      {
+       "t": "For 7 days (phenytoin per BTF; levetiracetam is widely used)",
+       "correct": true,
+       "why": "Check St. Mary's choice."
+      },
+      {
+       "t": "Lifelong",
+       "correct": false,
+       "why": "Early prophylaxis only."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prophylaxis"
+    },
+    {
+     "q": "TXA in TBI?",
+     "options": [
+      {
+       "t": "CRASH-3: benefit in mild to moderate TBI when given within 3 hours",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Never",
+       "correct": false,
+       "why": "CRASH-3 supports early use in selected patients."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**TBI: mannitol or hypertonic saline (23.4% central only), seizure prophylaxis 7 days, no steroids.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Carney N, et al. Brain Trauma Foundation guidelines for severe TBI, 4th edition. Neurosurgery 2017;80:6-15",
+     "url": "https://doi.org/10.1227/NEU.0000000000001432",
+     "mark": "✅"
+    },
+    {
+     "t": "CRASH-3 collaborators. Tranexamic acid in traumatic brain injury. Lancet 2019;394:1713-1723",
+     "url": "https://doi.org/10.1016/S0140-6736(19)32233-0",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr06",
+   "title": "Open fracture antibiotics",
+   "setting": "Trauma bay · open tibia fracture",
+   "topics": [
+    "Open fracture",
+    "Antibiotics"
+   ],
+   "stem": "Open tibia fracture with a large wound and soil contamination (type III). 130 kg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "First antibiotic and dose?",
+     "options": [
+      {
+       "t": "Cefazolin 3 g IV (120 kg or more) as soon as possible, within 1 hour",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Cefazolin 1 g",
+       "correct": false,
+       "why": "Underdosed for weight."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What else for type III?",
+     "options": [
+      {
+       "t": "Add gram negative coverage (for example ceftriaxone or gentamicin per protocol)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Add penicillin for farm or soil contamination per protocol",
+       "correct": true,
+       "why": "Clostridium coverage."
+      },
+      {
+       "t": "Nothing else",
+       "correct": false,
+       "why": "Type III needs more coverage."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Add",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Open fracture: cefazolin within 1 hour (3 g if 120 kg+). Type III: add gram negative.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "EAST practice management guideline: open fracture antibiotics (2022) and trauma VTE prophylaxis (via St. Mary's wiki Trauma page)",
+     "url": "https://www.east.org/education-resources/practice-management-guidelines",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr07",
+   "title": "Tetanus",
+   "setting": "ED · dirty wound",
+   "topics": [
+    "Tetanus",
+    "Vaccines"
+   ],
+   "stem": "A deep wound contaminated with soil. The patient is not sure he ever had tetanus shots.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does he need?",
+     "options": [
+      {
+       "t": "Tdap (or Td) now",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Tetanus immune globulin 250 units IM, because the history is unknown and the wound is dirty",
+       "correct": true,
+       "why": "CDC."
+      },
+      {
+       "t": "Nothing if he feels fine",
+       "correct": false,
+       "why": "Tetanus can be fatal."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    },
+    {
+     "q": "Clean minor wound, fully vaccinated, last dose 7 years ago. Vaccine?",
+     "options": [
+      {
+       "t": "No: for clean minor wounds, a booster is due only if more than 10 years",
+       "correct": true,
+       "why": "For dirty wounds, more than 5 years."
+      },
+      {
+       "t": "Yes, always",
+       "correct": false,
+       "why": "Not needed here."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Rule"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Clean wound: booster if over 10 years. Dirty: over 5 years. Unknown or fewer than 3 doses + dirty: add TIG 250 units.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "CDC: clinical guidance for wound management to prevent tetanus",
+     "url": "https://www.cdc.gov/tetanus/hcp/clinical-guidance/",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "tr08",
+   "title": "Trauma VTE prophylaxis and pain",
+   "setting": "Trauma floor · day 2",
+   "topics": [
+    "VTE",
+    "Pain"
+   ],
+   "stem": "Day 2 after pelvic fractures, bleeding stable, 90 kg, CrCl 100. Rib fractures too.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "VTE prophylaxis?",
+     "options": [
+      {
+       "t": "Enoxaparin (commonly 30 mg every 12 hours or 40 mg daily, adjusted by weight and anti Xa per protocol) once bleeding risk allows, often within 24 to 48 hours",
+       "correct": true,
+       "why": "Trauma patients have high clot risk."
+      },
+      {
+       "t": "Aspirin alone",
+       "correct": false,
+       "why": "Not the trauma standard for this risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "VTE"
+    },
+    {
+     "q": "Pain plan for rib fractures?",
+     "options": [
+      {
+       "t": "Multimodal: scheduled acetaminophen, regional blocks, NSAIDs if no bleeding or kidney concern, low dose ketamine, opioids as needed",
+       "correct": true,
+       "why": "Better breathing and less opioid."
+      },
+      {
+       "t": "Opioids alone",
+       "correct": false,
+       "why": "Respiratory depression and pneumonia risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Pain"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Trauma: enoxaparin early when safe. Ribs: multimodal pain control.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "EAST practice management guideline: open fracture antibiotics (2022) and trauma VTE prophylaxis (via St. Mary's wiki Trauma page)",
+     "url": "https://www.east.org/education-resources/practice-management-guidelines",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr09",
+   "title": "Burns: Parkland formula",
+   "setting": "Burn bay · 40% TBSA",
+   "topics": [
+    "Burns",
+    "Fluids"
+   ],
+   "stem": "80 kg, 40% total body surface area burn, burn time 2 hours ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Calculate the 24 hour fluid.",
+     "options": [
+      {
+       "t": "4 mL x 80 kg x 40 = 12,800 mL lactated Ringer's over 24 hours",
+       "correct": true,
+       "why": "Parkland."
+      },
+      {
+       "t": "1,280 mL",
+       "correct": false,
+       "why": "Check the math."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "How much in the first 8 hours, and from when?",
+     "options": [
+      {
+       "t": "Half (6,400 mL) in the first 8 hours from the time of the burn, so 6,400 mL over the next 6 hours",
+       "correct": true,
+       "why": "The clock starts at the burn, not arrival."
+      },
+      {
+       "t": "6,400 mL over 8 hours from arrival",
+       "correct": false,
+       "why": "Two hours are already gone."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Parkland: 4 x kg x %TBSA. Half in 8 hours from the burn time.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "tr10",
+   "title": "Shift simulation: trauma night",
+   "setting": "Trauma bay · 0230",
+   "topics": [
+    "Trauma",
+    "Prioritize"
+   ],
+   "stem": "Three items: (1) a hypotensive GSW patient arriving now, injury 25 minutes ago; (2) an open fracture patient whose cefazolin is 40 minutes late; (3) a CIWA question on the trauma floor.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "First?",
+     "options": [
+      {
+       "t": "GSW patient: TXA, RSI drugs, calcium for transfusion",
+       "correct": true,
+       "why": "Hemorrhagic shock."
+      },
+      {
+       "t": "CIWA question",
+       "correct": false,
+       "why": "Last."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "Second?",
+     "options": [
+      {
+       "t": "Get the late cefazolin given",
+       "correct": true,
+       "why": "Delays raise infection risk."
+      },
+      {
+       "t": "CIWA",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "For the alcohol withdrawal patient, what must come before glucose?",
+     "options": [
+      {
+       "t": "Thiamine",
+       "correct": true,
+       "why": "Prevents Wernicke encephalopathy."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Bleeding first, late antibiotics second, withdrawal questions third. Thiamine before glucose.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "CRASH-2 collaborators. Tranexamic acid in trauma patients with significant haemorrhage. Lancet 2010;376:23-32",
+     "url": "https://doi.org/10.1016/S0140-6736(10)60835-5",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's trauma activation, massive transfusion, TXA and open fracture protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}

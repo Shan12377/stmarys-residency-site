@@ -1,3 +1,4 @@
+- **2026-10-23:** Question bank: new **Module 10, Trauma** (10 cases): TXA, massive transfusion and calcium, RSI in shock, anticoagulated falls, TBI, open fractures, tetanus, VTE and pain, Parkland burns.
 - **2026-10-23:** Question bank: new **Module 9, Stroke** (10 cases): stroke alert checks, tenecteplase and alteplase math and safety, contraindications, angioedema, post lytic care, DAPT, ICH reversal and BP, nimodipine.
 - **2026-10-23:** Question bank: new **Module 8, Codes and Resuscitation** (12 cases): arrest drugs and timing, hyperkalemia arrest, torsades, opioid overdose, LAST, tricyclics, bradycardia, adenosine, anaphylaxis, malignant hyperthermia, post ROSC.
 - **2026-10-23:** Question bank: new **Module 7, Adult Critical Care** (11 cases): pressors and steroids, extravasation, PADIS sedation, PRIS, hyperkalemia, hyponatremia, ICU glucose, DKA (2024 consensus), IV potassium, stress ulcer prophylaxis.
