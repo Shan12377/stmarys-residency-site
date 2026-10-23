@@ -1,0 +1,754 @@
+{
+ "id": "m09",
+ "title": "Module 9 · Stroke",
+ "intro": "Stroke alert checks, tenecteplase and alteplase dosing and safety, contraindications and imaging selected windows, angioedema, post lytic care, DAPT, ICH reversal and BP, and nimodipine after SAH.",
+ "cases": [
+  {
+   "id": "st01",
+   "title": "Stroke alert: the pharmacist checks",
+   "setting": "ED · stroke alert, CT scanner",
+   "topics": [
+    "Ischemic stroke",
+    "Thrombolysis"
+   ],
+   "stem": "Stroke alert. Last known well 2 hours ago. Weight 82 kg (measured). BP 196/108. Glucose 132. On no anticoagulants.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Can the thrombolytic be given now?",
+     "options": [
+      {
+       "t": "Not yet: BP must be below 185/110 first",
+       "correct": true,
+       "why": "Treat the BP, then give the lytic."
+      },
+      {
+       "t": "Yes, BP does not matter",
+       "correct": false,
+       "why": "High BP raises bleeding risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Gate"
+    },
+    {
+     "q": "Which BP drugs fit?",
+     "options": [
+      {
+       "t": "Labetalol 10 to 20 mg IV over 1 to 2 minutes (may repeat once)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Nicardipine infusion 5 mg/h, titrate by 2.5 mg/h every 5 to 15 minutes (max 15 mg/h)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Clevidipine 1 to 2 mg/h, titrate (max 21 mg/h)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Sublingual nifedipine",
+       "correct": false,
+       "why": "Uncontrolled drops in BP."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "BP",
+     "type": "multi"
+    },
+    {
+     "q": "Why check glucose before thrombolysis?",
+     "options": [
+      {
+       "t": "Low glucose (below 50) can mimic a stroke",
+       "correct": true,
+       "why": "Treat it and reassess."
+      },
+      {
+       "t": "It does not matter",
+       "correct": false,
+       "why": "A classic mimic."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Mimic"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Before lytics: BP below 185/110, glucose checked, weight, last anticoagulant dose.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's stroke alert protocol, thrombolytic dosing chart and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "st02",
+   "title": "Tenecteplase dose",
+   "setting": "ED · stroke alert",
+   "topics": [
+    "Ischemic stroke",
+    "Tenecteplase"
+   ],
+   "stem": "BP is now 176/98. The team chooses tenecteplase. Weight 82 kg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the stroke dose?",
+     "options": [
+      {
+       "t": "0.25 mg/kg IV bolus over 5 seconds, max 25 mg: 20.5 mg",
+       "correct": true,
+       "why": "Many sites use a weight band chart; follow it."
+      },
+      {
+       "t": "0.5 mg/kg up to 50 mg (cardiac dose)",
+       "correct": false,
+       "why": "The STEMI dose is double. A classic, dangerous mix up."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Tenecteplase or alteplase per the 2026 guideline?",
+     "options": [
+      {
+       "t": "Either is endorsed in the 4.5 hour window",
+       "correct": true,
+       "why": "Tenecteplase is a single bolus, which reduces mixing and infusion errors."
+      },
+      {
+       "t": "Only alteplase",
+       "correct": false,
+       "why": "Outdated."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    },
+    {
+     "q": "What safety steps do you take when preparing it?",
+     "options": [
+      {
+       "t": "Independent double check of drug (tenecteplase vs alteplase) and dose, and waste the excess so only the stroke dose is in the syringe",
+       "correct": true,
+       "why": "Look alike packaging and the 50 mg vial are known risks."
+      },
+      {
+       "t": "Flush with D5W",
+       "correct": false,
+       "why": "Tenecteplase can precipitate with dextrose; use normal saline."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**TNK stroke: 0.25 mg/kg, max 25 mg, over 5 seconds. Never the cardiac dose.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Guideline Central: Feb 2026 AHA/ASA early management of acute ischemic stroke spotlight",
+     "url": "https://www.guidelinecentral.com/insights/feb-2026-ahaasa-earlymanagementacuteischemicstroke-guideline-spotlight",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's stroke alert protocol, thrombolytic dosing chart and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "st03",
+   "title": "Alteplase math",
+   "setting": "ED · stroke alert (alteplase site)",
+   "topics": [
+    "Ischemic stroke",
+    "Alteplase"
+   ],
+   "stem": "Weight 70 kg. Alteplase is chosen.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What are the total, bolus and infusion amounts?",
+     "options": [
+      {
+       "t": "Total 63 mg (0.9 mg/kg); bolus 6.3 mg over 1 minute; 56.7 mg over 60 minutes",
+       "correct": true,
+       "why": "Max total 90 mg."
+      },
+      {
+       "t": "Total 90 mg for everyone",
+       "correct": false,
+       "why": "90 mg is the cap, not the dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "What happens to the extra drug in the vial?",
+     "options": [
+      {
+       "t": "Remove and waste the excess before hanging the bag so the patient cannot get more than the calculated dose",
+       "correct": true,
+       "why": "Overdose risk if the whole vial is infused."
+      },
+      {
+       "t": "Infuse it all",
+       "correct": false,
+       "why": "Overdose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Alteplase: 0.9 mg/kg (max 90), 10% bolus, 90% over 60 minutes. Waste the excess.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's stroke alert protocol, thrombolytic dosing chart and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "st04",
+   "title": "Who should NOT get a thrombolytic?",
+   "setting": "ED · stroke alert",
+   "topics": [
+    "Ischemic stroke",
+    "Contraindications"
+   ],
+   "stem": "Four patients arrive.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which patients should not get a thrombolytic?",
+     "options": [
+      {
+       "t": "Apixaban taken 3 hours ago",
+       "correct": true,
+       "why": "Recent DOAC dose: bleeding risk."
+      },
+      {
+       "t": "Platelets 72,000",
+       "correct": true,
+       "why": "Below 100,000."
+      },
+      {
+       "t": "INR 2.4 on warfarin",
+       "correct": true,
+       "why": "Above 1.7."
+      },
+      {
+       "t": "Mild, nondisabling symptoms that do not affect daily activities",
+       "correct": true,
+       "why": "Not recommended for mild nondisabling stroke."
+      },
+      {
+       "t": "Last known well 2 hours ago, BP 170/90, no anticoagulant, disabling deficit",
+       "correct": false,
+       "why": "This is a candidate."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exclusions",
+     "type": "multi"
+    },
+    {
+     "q": "A patient woke up with symptoms (unknown onset). Is thrombolysis ever possible?",
+     "options": [
+      {
+       "t": "Yes, in selected patients with advanced imaging (for example DWI FLAIR or perfusion mismatch), up to about 9 hours",
+       "correct": true,
+       "why": "2026 guideline."
+      },
+      {
+       "t": "Never",
+       "correct": false,
+       "why": "Imaging can select patients."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**No lytic: recent DOAC, INR above 1.7, platelets below 100k, mild nondisabling symptoms.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Guideline Central: Feb 2026 AHA/ASA early management of acute ischemic stroke spotlight",
+     "url": "https://www.guidelinecentral.com/insights/feb-2026-ahaasa-earlymanagementacuteischemicstroke-guideline-spotlight",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "st05",
+   "title": "Tongue swelling during alteplase",
+   "setting": "ED · 20 minutes into the infusion",
+   "topics": [
+    "Ischemic stroke",
+    "Angioedema"
+   ],
+   "stem": "The patient takes lisinopril. Tongue and lips are swelling.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is happening and why?",
+     "options": [
+      {
+       "t": "Orolingual angioedema; plasmin raises bradykinin and ACE inhibitors block its breakdown",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Allergic reaction to saline",
+       "correct": false,
+       "why": "No."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Stop the infusion; methylprednisolone, diphenhydramine and famotidine; epinephrine if worsening; icatibant or C1 esterase inhibitor may be considered; protect the airway",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Continue and observe",
+       "correct": false,
+       "why": "Airway risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Lytic + ACE inhibitor + swelling: stop, steroid, H1, H2, epi if worse.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "st06",
+   "title": "After the thrombolytic",
+   "setting": "Neuro ICU · first 24 hours",
+   "topics": [
+    "Ischemic stroke",
+    "Post lytic"
+   ],
+   "stem": "Two hours after tenecteplase, an order for aspirin 325 mg and enoxaparin 40 mg appears.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is wrong?",
+     "options": [
+      {
+       "t": "No antithrombotics for 24 hours after thrombolysis (unless specifically indicated), usually until a repeat scan",
+       "correct": true,
+       "why": "Bleeding risk."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Wrong timing."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    },
+    {
+     "q": "What BP goal applies for the first 24 hours?",
+     "options": [
+      {
+       "t": "Below 180/105",
+       "correct": true,
+       "why": "Intensive lowering below 140 is not recommended (2026)."
+      },
+      {
+       "t": "Below 120/80",
+       "correct": false,
+       "why": "Too low."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "BP"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**After lytic: BP below 180/105, no antithrombotics for 24 hours.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Guideline Central: Feb 2026 AHA/ASA early management of acute ischemic stroke spotlight",
+     "url": "https://www.guidelinecentral.com/insights/feb-2026-ahaasa-earlymanagementacuteischemicstroke-guideline-spotlight",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "st07",
+   "title": "Minor stroke: DAPT",
+   "setting": "Neuro floor · NIHSS 3, no lytic",
+   "topics": [
+    "Ischemic stroke",
+    "Secondary prevention"
+   ],
+   "stem": "Minor ischemic stroke, NIHSS 3, no thrombolytic, no atrial fibrillation.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What antiplatelet plan fits?",
+     "options": [
+      {
+       "t": "Aspirin plus clopidogrel for 21 days (clopidogrel 300 to 600 mg load, then 75 mg; aspirin load then 81 mg), then one antiplatelet",
+       "correct": true,
+       "why": "2026 update allows NIHSS up to 5 and starts within 72 hours."
+      },
+      {
+       "t": "Aspirin plus clopidogrel for a year",
+       "correct": false,
+       "why": "Long DAPT raises bleeding."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "DAPT"
+    },
+    {
+     "q": "What else?",
+     "options": [
+      {
+       "t": "High intensity statin",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Glucose 140 to 180 in hospital",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "VTE prophylaxis once safe",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Routine seizure prophylaxis",
+       "correct": false,
+       "why": "Not indicated."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Bundle",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Minor stroke: DAPT 21 days, high intensity statin.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/ASA 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Top Things to Know)",
+     "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "st08",
+   "title": "ICH on apixaban",
+   "setting": "ED · intracerebral hemorrhage",
+   "topics": [
+    "ICH",
+    "Reversal"
+   ],
+   "stem": "ICH. Apixaban last taken 5 hours ago. SBP 196. Weight 80 kg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Reversal?",
+     "options": [
+      {
+       "t": "4F-PCC (commonly 50 units/kg, 4,000 units, or a fixed dose per protocol)",
+       "correct": true,
+       "why": "Andexanet was withdrawn in December 2025."
+      },
+      {
+       "t": "Vitamin K 10 mg",
+       "correct": false,
+       "why": "Only for warfarin."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Reversal"
+    },
+    {
+     "q": "BP target?",
+     "options": [
+      {
+       "t": "Target SBP about 140 (range 130 to 150); avoid below 130",
+       "correct": true,
+       "why": "ICH 2022."
+      },
+      {
+       "t": "Below 110",
+       "correct": false,
+       "why": "Too low."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "BP"
+    },
+    {
+     "q": "Should she get platelets if she also takes aspirin?",
+     "options": [
+      {
+       "t": "No, unless going to neurosurgery (PATCH: harm with transfusion)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Yes, always",
+       "correct": false,
+       "why": "PATCH showed worse outcomes."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**ICH: reverse fast, SBP to 140 (not below 130), no platelets for antiplatelet bleeds unless surgery.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Greenberg SM, et al. 2022 AHA/ASA guideline for spontaneous intracerebral hemorrhage. Stroke 2022;53:e282-e361",
+     "url": "https://doi.org/10.1161/STR.0000000000000407",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Baharoglu MI, et al. Platelet transfusion vs standard care after ICH on antiplatelet therapy (PATCH). Lancet 2016;387:2605-2613",
+     "url": "https://doi.org/10.1016/S0140-6736(16)30392-0",
+     "mark": "✅"
+    },
+    {
+     "t": "Kcentra prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's stroke alert protocol, thrombolytic dosing chart and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "st09",
+   "title": "ICH on warfarin or heparin",
+   "setting": "Neuro ICU · reversal math",
+   "topics": [
+    "ICH",
+    "Reversal"
+   ],
+   "stem": "Two patients with ICH: (A) warfarin, INR 3.1, 90 kg; (B) heparin infusion at 1,400 units/h for the last 3 hours.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Patient A?",
+     "options": [
+      {
+       "t": "4F-PCC 25 units/kg (INR 2 to below 4): 2,250 units + vitamin K 10 mg IV",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "FFP only",
+       "correct": false,
+       "why": "4F-PCC works faster with less volume."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Patient B: protamine dose?",
+     "options": [
+      {
+       "t": "About 42 mg (1 mg per 100 units given in the last 2 to 3 hours: 4,200 units), max 50 mg",
+       "correct": true,
+       "why": "Give slowly; watch for hypotension and anaphylaxis."
+      },
+      {
+       "t": "100 mg",
+       "correct": false,
+       "why": "Over the 50 mg cap."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Warfarin: PCC by INR + vit K. Heparin: protamine 1 mg per 100 units (last 2 to 3 h, max 50).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Greenberg SM, et al. 2022 AHA/ASA guideline for spontaneous intracerebral hemorrhage. Stroke 2022;53:e282-e361",
+     "url": "https://doi.org/10.1161/STR.0000000000000407",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Kcentra prescribing information, DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "st10",
+   "title": "Nimodipine after SAH",
+   "setting": "Neuro ICU · aneurysmal SAH",
+   "topics": [
+    "SAH",
+    "Nimodipine"
+   ],
+   "stem": "Aneurysmal SAH. The patient has an NG tube. A nurse asks to draw nimodipine liquid into a syringe.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the regimen?",
+     "options": [
+      {
+       "t": "Nimodipine 60 mg orally or by tube every 4 hours for 21 days; 30 mg every 2 hours if BP drops",
+       "correct": true,
+       "why": "SAH 2023."
+      },
+      {
+       "t": "Nimodipine IV infusion",
+       "correct": false,
+       "why": "Never IV."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What is the critical safety step?",
+     "options": [
+      {
+       "t": "Use an oral or enteral syringe that cannot connect to IV lines, labeled for oral use only",
+       "correct": true,
+       "why": "IV injection of capsule contents has caused deaths (boxed warning)."
+      },
+      {
+       "t": "A standard luer lock syringe is fine",
+       "correct": false,
+       "why": "Can connect to IV."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Nimodipine 60 mg q4h x 21 days, enteral syringe only. Never IV.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Hoh BL, et al. 2023 AHA/ASA guideline for aneurysmal subarachnoid hemorrhage. Stroke 2023;54:e314-e370",
+     "url": "https://doi.org/10.1161/STR.0000000000000436",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's stroke alert protocol, thrombolytic dosing chart and reversal order set (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
