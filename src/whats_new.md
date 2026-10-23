@@ -1,3 +1,4 @@
+- **2026-10-21:** Fix for "could not load static asset": pages and audio are now served directly; only Listen and Explain go through the server functions.
 - **2026-10-21:** Every page now has the free natural voice. Tap **🔊 Listen to this page**.
 - **2026-10-21:** Free natural voice (Kokoro) for Listen, made once per page so there is no daily limit and no cost. Clinical modules first; the rest are being added.
 - **2026-10-21:** Listen fix: the backup browser voice now reads sentence by sentence (it was going silent on long pages), and phones are unlocked on the first tap.
