@@ -1,0 +1,472 @@
+{
+ "id": "m14",
+ "title": "Module 14 · Practice Advancement",
+ "intro": "Choosing an MUE, QI vs research and the IRB, PDSA cycles, reading trials (ARR, NNT, NNH, noninferiority) with real trial numbers, documenting interventions and teaching an inservice.",
+ "cases": [
+  {
+   "id": "pa01",
+   "title": "Choosing a first project",
+   "setting": "Pharmacy · month 2",
+   "topics": [
+    "Projects",
+    "MUE"
+   ],
+   "stem": "You want one finished project in your first 6 months.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What makes a strong first MUE topic?",
+     "options": [
+      {
+       "t": "A high alert, high risk, high cost or high volume drug, or one with a new safety alert",
+       "correct": true,
+       "why": "ASHP MUE guideline."
+      },
+      {
+       "t": "Criteria that come straight from a label or guideline, and a small enough patient number to review by hand",
+       "correct": true,
+       "why": "For example magnesium on L&D."
+      },
+      {
+       "t": "Whatever topic is easiest to publish, without asking leadership",
+       "correct": false,
+       "why": "Ask your manager what helps the department."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Choose",
+     "type": "multi"
+    },
+    {
+     "q": "Which kind of fix does the MUE method favor when results miss targets?",
+     "options": [
+      {
+       "t": "Hard wired changes: order sets, pump library limits, defaults",
+       "correct": true,
+       "why": "They work even on a busy night."
+      },
+      {
+       "t": "Reminder emails",
+       "correct": false,
+       "why": "Weakest fix."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Fix"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Pick a high alert drug, guideline criteria, small numbers. Fix with order sets and pump limits.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Afanasjeva J, et al. ASHP guidelines on medication use evaluation. Am J Health Syst Pharm 2021;78:168-175",
+     "url": "https://doi.org/10.1093/ajhp/zxaa393",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy leadership, IRB and P&T processes (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pa02",
+   "title": "QI or research?",
+   "setting": "Pharmacy · planning a poster",
+   "topics": [
+    "Projects",
+    "IRB"
+   ],
+   "stem": "Your magnesium MUE is going well and you want to present a poster.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Is it QI or research?",
+     "options": [
+      {
+       "t": "QI for your own hospital usually is not research, but if you plan to present or publish, ask the IRB for a determination before collecting data",
+       "correct": true,
+       "why": "Research = systematic work for generalizable knowledge with human subjects."
+      },
+      {
+       "t": "Posters never need IRB input",
+       "correct": false,
+       "why": "Ask first."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Classify"
+    },
+    {
+     "q": "Where can patient data from the project go?",
+     "options": [
+      {
+       "t": "Only inside St. Mary's systems, de identified for any presentation",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Your personal laptop or email",
+       "correct": false,
+       "why": "Never."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Privacy"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Planning to present? Ask the IRB before collecting data. Data stays in the hospital.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "UConn Health HSPP: quality improvement vs research",
+     "url": "https://ovpr.uchc.edu/services/rics/hspp/resources/quality-assurance-quality-improvement-and-research/",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy leadership, IRB and P&T processes (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pa03",
+   "title": "PDSA cycles",
+   "setting": "L&D · testing a change",
+   "topics": [
+    "Projects",
+    "QI method"
+   ],
+   "stem": "Your MUE found that urine output was documented on time in only 70% of magnesium patients.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the IHI Model for Improvement's first question?",
+     "options": [
+      {
+       "t": "What are we trying to accomplish?",
+       "correct": true,
+       "why": "Then: how will we know a change is an improvement, and what change can we make?"
+      },
+      {
+       "t": "Who is to blame?",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Method"
+    },
+    {
+     "q": "How do you test a fix?",
+     "options": [
+      {
+       "t": "A small Plan Do Study Act cycle: try it on one unit or one shift, measure, adjust",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Roll it out hospital wide on day one",
+       "correct": false,
+       "why": "Test small first."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Method"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Aim, measure, change. Small PDSA cycles.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "IHI: Model for Improvement",
+     "url": "https://www.ihi.org/resources/how-to-improve",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pa04",
+   "title": "Reading a trial: absolute risk",
+   "setting": "Journal club · NICE-SUGAR",
+   "topics": [
+    "Evidence",
+    "Statistics"
+   ],
+   "stem": "NICE-SUGAR: 90 day death 27.5% with tight glucose control vs 24.9% with conventional control.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Absolute risk increase with tight control?",
+     "options": [
+      {
+       "t": "2.6 percentage points (27.5 minus 24.9)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "10%",
+       "correct": false,
+       "why": "That is close to the relative increase (2.6 / 24.9)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Number needed to harm?",
+     "options": [
+      {
+       "t": "About 38 (1 / 0.026)",
+       "correct": true,
+       "why": "Treat about 38 patients with tight control and one extra dies."
+      },
+      {
+       "t": "2.6",
+       "correct": false,
+       "why": "Invert the absolute difference."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**ARR = difference in rates. NNT or NNH = 1 / ARR.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "NICE-SUGAR Study Investigators. N Engl J Med 2009;360:1283-1297",
+     "url": "https://doi.org/10.1056/NEJMoa0810625",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pa05",
+   "title": "Reading a trial: NNT",
+   "setting": "Journal club · AMPLIFY-EXT",
+   "topics": [
+    "Evidence",
+    "Statistics"
+   ],
+   "stem": "AMPLIFY-EXT: recurrent VTE 8.8% on placebo vs 1.7% on apixaban 2.5 mg BID over 12 months.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Absolute risk reduction and NNT?",
+     "options": [
+      {
+       "t": "ARR 7.1 points; NNT about 14 for 12 months",
+       "correct": true,
+       "why": "1 / 0.071 = 14."
+      },
+      {
+       "t": "ARR 81%; NNT 1",
+       "correct": false,
+       "why": "81% is the relative reduction, not absolute."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "BRIDGE: major bleeding 3.2% with bridging vs 1.3% without. Number needed to harm from bridging?",
+     "options": [
+      {
+       "t": "About 53 (1 / 0.019)",
+       "correct": true,
+       "why": "Bridge about 53 patients and one extra has major bleeding."
+      },
+      {
+       "t": "About 2",
+       "correct": false,
+       "why": "Recheck."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Quote absolute numbers to prescribers: \"NNT 14,\" \"NNH 53.\"**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Agnelli G, et al. AMPLIFY-EXT. N Engl J Med 2013;368:699-708",
+     "url": "https://doi.org/10.1056/NEJMoa1207541",
+     "mark": "✅"
+    },
+    {
+     "t": "Douketis JD, et al. BRIDGE. N Engl J Med 2015;373:823-833",
+     "url": "https://doi.org/10.1056/NEJMoa1501035",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pa06",
+   "title": "Noninferiority",
+   "setting": "Journal club · RENOVE",
+   "topics": [
+    "Evidence",
+    "Trial design"
+   ],
+   "stem": "RENOVE compared reduced dose and full dose DOACs for extended VTE treatment. Recurrence 2.2% reduced vs 1.8% full; clinically relevant bleeding 9.9% vs 15.2%. Noninferiority was not met.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does \"noninferiority not met\" mean?",
+     "options": [
+      {
+       "t": "The trial could not prove reduced dose is not meaningfully worse at preventing recurrence; it does not prove it is worse either",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Reduced dose is proven dangerous",
+       "correct": false,
+       "why": "Not what the result says."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interpret"
+    },
+    {
+     "q": "How do you use this at the bedside?",
+     "options": [
+      {
+       "t": "Weigh lower bleeding against uncertain recurrence protection for each patient, alongside CHEST 2021 guidance",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Ignore it",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Apply"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Noninferiority not met = not proven as good, not proven worse. Weigh benefits and harms.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Couturaud F, et al. RENOVE. Lancet 2025;405:725-735",
+     "url": "https://doi.org/10.1016/S0140-6736(24)02842-3",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pa07",
+   "title": "Documenting your value",
+   "setting": "Pharmacy · monthly review",
+   "topics": [
+    "Professional",
+    "Interventions"
+   ],
+   "stem": "Your manager asks what you contributed this month.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you track?",
+     "options": [
+      {
+       "t": "Interventions by category (renal dose, allergy clarified, IV to PO, duplicates, errors caught), with no patient identifiers in your own notes",
+       "correct": true,
+       "why": "Use the official system for patient level documentation."
+      },
+      {
+       "t": "Nothing; it is all in your head",
+       "correct": false,
+       "why": "Undocumented work is invisible."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Track"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Count what you catch. Numbers show your value.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's pharmacy leadership, IRB and P&T processes (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pa08",
+   "title": "Giving an inservice",
+   "setting": "L&D · 15 minute nursing inservice",
+   "topics": [
+    "Professional",
+    "Teaching"
+   ],
+   "stem": "You will teach L&D nurses about magnesium toxicity.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which outline works best for 15 minutes?",
+     "options": [
+      {
+       "t": "Why it matters (high alert), what the nurse sees first (reflexes before breathing), the numbers, the antidote, one case, 3 questions",
+       "correct": true,
+       "why": "Short, practical, case based."
+      },
+      {
+       "t": "Forty slides of pharmacokinetics",
+       "correct": false,
+       "why": "Too long for the audience and time."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Teach"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Inservice: why, what you see, numbers, antidote, one case, three questions.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's pharmacy leadership, IRB and P&T processes (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}

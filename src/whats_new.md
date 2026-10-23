@@ -1,3 +1,4 @@
+- **2026-10-23:** Question bank complete: **Module 14, Practice Advancement** (MUE, QI vs research, PDSA, ARR, NNT and NNH with real trial numbers, noninferiority, inservices). All 15 modules, 208 cases.
 - **2026-10-23:** Question bank: new **Module 13, Medication Safety and Florida Law** (10 cases): high alert drugs, look alike names, abbreviations, weekly methotrexate, Joint Commission 2026, just culture, diversion and DEA reporting, Florida CE, E-FORCSE, discharge reconciliation.
 - **2026-10-23:** Question bank: new **Module 12, PICU and Pediatric Emergencies** (9 cases). Also fixed: [[PICU_Core]] status epilepticus table IM midazolam (10 mg over 40 kg, 5 mg for 13 to 40 kg; AES 2016).
 - **2026-10-23:** Question bank: new **Module 11, NICU** (10 cases): PMA math, 10 fold errors, NRP epinephrine, routine newborn drugs, early onset sepsis, ceftriaxone hard stops, caffeine salts, heparin vials, hypoglycemia, neonatal TPN.
