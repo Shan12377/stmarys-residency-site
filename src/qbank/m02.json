@@ -1,0 +1,1635 @@
+{
+ "id": "m02",
+ "title": "Module 2 · Vancomycin and Aminoglycoside Dosing",
+ "intro": "Vancomycin AUC dosing with full worked math, loading doses, obesity, dialysis, continuous infusion, children, oral vancomycin, and aminoglycosides: dosing weight, Hartford, traditional levels, synergy and toxicity.",
+ "cases": [
+  {
+   "id": "pk01",
+   "title": "Why vancomycin needs a pharmacist",
+   "setting": "Med surg · new MRSA bacteremia",
+   "topics": [
+    "Vancomycin",
+    "Concepts"
+   ],
+   "stem": "A 62 year old man has MRSA in 2 of 2 blood cultures. The team orders \"vancomycin per pharmacy.\" This is the first time you dose it alone.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does vancomycin exposure need to reach for serious MRSA infection?",
+     "options": [
+      {
+       "t": "An AUC over 24 hours of 400 to 600 (assuming MIC 1)",
+       "correct": true,
+       "why": "The 2020 consensus guideline target for serious MRSA infection (Rybak 2020, Recommendation 1)."
+      },
+      {
+       "t": "A trough of 15 to 20 mcg/mL",
+       "correct": false,
+       "why": "Trough only dosing to 15 to 20 is no longer recommended: it overshoots AUC in many patients and raises kidney injury."
+      },
+      {
+       "t": "A peak above 40 mcg/mL",
+       "correct": false,
+       "why": "Vancomycin kill depends on total exposure over time, not on a high peak."
+      },
+      {
+       "t": "Any detectable level",
+       "correct": false,
+       "why": "Too low exposure risks treatment failure."
+      }
+     ],
+     "teach": "Vancomycin is **time and exposure dependent**. Think \"area under the curve,\" the total drug the bug sees over a day, not one number at one moment.",
+     "where": "Rybak 2020 consensus guideline, Recommendation 1. St. Mary's pharmacy to dose policy tells you what software or method you use.",
+     "kind": "Concept"
+    },
+    {
+     "q": "What is the preferred way to estimate AUC?",
+     "options": [
+      {
+       "t": "Bayesian software using one or two levels",
+       "correct": true,
+       "why": "Preferred by the guideline: works with levels drawn at any time, even before steady state."
+      },
+      {
+       "t": "Two levels (a peak and a trough) with first order equations",
+       "correct": true,
+       "why": "An accepted alternative when Bayesian software is not available."
+      },
+      {
+       "t": "One trough only, compared to 15 to 20",
+       "correct": false,
+       "why": "This is the old method the guideline moved away from."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Method",
+     "type": "multi"
+    },
+    {
+     "q": "When should the AUC target be reached?",
+     "options": [
+      {
+       "t": "Preferably within the first 24 to 48 hours",
+       "correct": true,
+       "why": "Early target attainment matters in serious infection (Rybak 2020, Recommendation 3)."
+      },
+      {
+       "t": "Within a week",
+       "correct": false,
+       "why": "Too slow for bacteremia."
+      },
+      {
+       "t": "Only after the third day of therapy",
+       "correct": false,
+       "why": "Waiting for full steady state delays good exposure; Bayesian tools let you dose early."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    }
+   ],
+   "call": "",
+   "monitor": "Serum creatinine at least daily early on, urine output, AUC estimate once and again if kidney function changes, blood cultures until negative.",
+   "pearl": "**Vanc target: AUC 400 to 600, early, by Bayesian or two levels. No more trough only to 15 to 20.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk02",
+   "title": "The loading dose",
+   "setting": "ICU · septic shock, MRSA risk",
+   "topics": [
+    "Vancomycin",
+    "Loading dose"
+   ],
+   "stem": "An 80 kg woman in septic shock. CrCl about 35 mL/min and falling. The resident wants to \"reduce the first dose because of her kidneys.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Should the first (loading) dose be reduced for her kidney function?",
+     "options": [
+      {
+       "t": "No. The loading dose depends on body size (volume of distribution), not on kidney function",
+       "correct": true,
+       "why": "Kidney function decides how much and how often you give after the first dose. The load fills the \"bucket.\""
+      },
+      {
+       "t": "Yes, cut it in half",
+       "correct": false,
+       "why": "An underdosed first dose leaves a septic patient without effective exposure for a day or more."
+      },
+      {
+       "t": "Skip the load and start maintenance",
+       "correct": false,
+       "why": "Critically ill patients are the ones who benefit most from a load."
+      }
+     ],
+     "teach": "**Load by weight, maintain by kidneys.** That one sentence prevents a very common error.",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "What loading dose range does the guideline allow, and what maximum?",
+     "options": [
+      {
+       "t": "20 to 35 mg/kg actual body weight, maximum 3,000 mg",
+       "correct": true,
+       "why": "Rybak 2020, Recommendation 10. For her, 20 to 25 mg/kg is 1,600 to 2,000 mg."
+      },
+      {
+       "t": "10 mg/kg, maximum 1,000 mg",
+       "correct": false,
+       "why": "Too low for a load."
+      },
+      {
+       "t": "50 mg/kg with no maximum",
+       "correct": false,
+       "why": "Above the guideline range; the cap is 3,000 mg."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "You choose 2,000 mg. By the FDA label rate (no faster than 10 mg/min), how long is the minimum infusion?",
+     "options": [
+      {
+       "t": "200 minutes (about 3 hours 20 minutes)",
+       "correct": true,
+       "why": "2,000 mg divided by 10 mg/min = 200 minutes. Many hospitals use a faster 1 g per hour policy; follow St. Mary's."
+      },
+      {
+       "t": "60 minutes",
+       "correct": false,
+       "why": "Too fast for 2,000 mg by the label rate."
+      },
+      {
+       "t": "20 minutes",
+       "correct": false,
+       "why": "Far too fast: high risk of vancomycin infusion reaction and hypotension."
+      }
+     ],
+     "teach": "Infusion time is a safety check you do on every vancomycin order. Fast infusion causes flushing, itching and low BP (infusion reaction, not a true allergy).",
+     "where": "Vancomycin label, Dosage and Administration. St. Mary's IV administration guide for the local rate.",
+     "kind": "Math"
+    }
+   ],
+   "call": "**S/B:** Septic shock, 80 kg, CrCl 35 and falling, vancomycin ordered. **A:** The loading dose should not be reduced for kidney function. **R:** I recommend 2,000 mg IV now (25 mg/kg), then I will choose the maintenance dose by kidney function and check levels in the first 24 to 48 hours.",
+   "monitor": "",
+   "pearl": "**Load by weight (20 to 35 mg/kg, max 3 g). Maintain by kidneys.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Vancomycin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=vancomycin+injection",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk03",
+   "title": "Empiric maintenance dose",
+   "setting": "Med surg · osteomyelitis",
+   "topics": [
+    "Vancomycin",
+    "Maintenance"
+   ],
+   "stem": "A 58 year old man, 72 kg, SCr 1.0 mg/dL, normal and stable. MRSA osteomyelitis. You need a starting maintenance dose.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Calculate his CrCl (Cockcroft Gault).",
+     "options": [
+      {
+       "t": "About 82 mL/min",
+       "correct": true,
+       "why": "(140 minus 58) x 72 / (72 x 1.0) = 82 mL/min."
+      },
+      {
+       "t": "About 41 mL/min",
+       "correct": false,
+       "why": "Check the formula: (140 minus age) x weight / (72 x SCr)."
+      },
+      {
+       "t": "About 120 mL/min",
+       "correct": false,
+       "why": "Recheck the arithmetic."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Which starting regimen fits the usual adult range (15 to 20 mg/kg every 8 to 12 hours)?",
+     "options": [
+      {
+       "t": "1,250 mg IV every 12 hours (about 17 mg/kg)",
+       "correct": true,
+       "why": "Inside the guideline range for normal kidney function. Then confirm with levels."
+      },
+      {
+       "t": "500 mg IV every 24 hours",
+       "correct": false,
+       "why": "Much too low for normal kidneys."
+      },
+      {
+       "t": "2,500 mg IV every 8 hours",
+       "correct": false,
+       "why": "About 35 mg/kg every 8 hours: far above the range."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "When will you get levels?",
+     "options": [
+      {
+       "t": "Early, so an AUC estimate is available within 24 to 48 hours (often around the third or fourth dose with two levels, or sooner with Bayesian software)",
+       "correct": true,
+       "why": "Serious infection and a long course both call for AUC monitoring."
+      },
+      {
+       "t": "Never, because his kidneys are normal",
+       "correct": false,
+       "why": "Long, serious courses need monitoring even with normal kidneys."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**15 to 20 mg/kg every 8 to 12 hours to start, then let the levels decide.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk04",
+   "title": "Calculating AUC with two levels",
+   "setting": "Pharmacy · kinetics",
+   "topics": [
+    "Vancomycin",
+    "AUC math"
+   ],
+   "stem": "Vancomycin 1,000 mg IV every 12 hours, infused over 1 hour, at steady state. Peak drawn 1 hour after the end of the infusion (2 hours after the start): **30 mcg/mL**. Trough drawn 30 minutes before the next dose (11.5 hours after the start): **10 mcg/mL**.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Step 1: calculate the elimination rate constant (ke).",
+     "options": [
+      {
+       "t": "ke = ln(30/10) / 9.5 h = about 0.116 per hour",
+       "correct": true,
+       "why": "Time between the two levels: 11.5 minus 2 = 9.5 hours. ln(3) = 1.099; 1.099 / 9.5 = 0.116 per hour."
+      },
+      {
+       "t": "ke = (30 minus 10) / 12 = 1.67 per hour",
+       "correct": false,
+       "why": "Elimination is exponential, so you need the natural log of the ratio, and the time between the actual draws."
+      },
+      {
+       "t": "ke = 0.693 / 12",
+       "correct": false,
+       "why": "That would assume a 12 hour half life; you calculate the half life from ke, not the reverse."
+      }
+     ],
+     "teach": "**ke = ln(C1 / C2) / time between the draws.** Half life = 0.693 / ke. Here half life is about 6 hours.",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Step 2: estimate the true peak at the end of the infusion (1 hour after the start).",
+     "options": [
+      {
+       "t": "About 33.7 mcg/mL (30 x e raised to 0.116 x 1)",
+       "correct": true,
+       "why": "Back extrapolate 1 hour: 30 x 1.123 = 33.7."
+      },
+      {
+       "t": "30 mcg/mL",
+       "correct": false,
+       "why": "The drawn level is 1 hour after the end of the infusion; the true end of infusion peak is higher."
+      },
+      {
+       "t": "60 mcg/mL",
+       "correct": false,
+       "why": "Too high: one hour of decay at this ke is only about 12%."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Step 3: estimate the true trough at the end of the interval (12 hours).",
+     "options": [
+      {
+       "t": "About 9.4 mcg/mL (10 x e raised to minus 0.116 x 0.5)",
+       "correct": true,
+       "why": "Forward extrapolate 30 minutes: 10 x 0.944 = 9.4."
+      },
+      {
+       "t": "10 mcg/mL",
+       "correct": false,
+       "why": "Close, but the draw was 30 minutes early."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Step 4: calculate AUC for one dose, then AUC over 24 hours. Infusion part = infusion time x (Cmax + Cmin) / 2. Elimination part = (Cmax minus Cmin) / ke.",
+     "options": [
+      {
+       "t": "Infusion part 21.6 + elimination part 209.6 = 231 per dose; x 2 doses = AUC24 about 462",
+       "correct": true,
+       "why": "1 x (33.7 + 9.4) / 2 = 21.6. (33.7 minus 9.4) / 0.116 = 209.6. Total 231.2 per 12 hours, so about 462 mg·h/L per day."
+      },
+      {
+       "t": "AUC24 about 231",
+       "correct": false,
+       "why": "That is one dose interval. Multiply by 24 / 12 = 2."
+      },
+      {
+       "t": "AUC24 about 960",
+       "correct": false,
+       "why": "Recheck the math; that would be well above the toxic range."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "AUC24 is about 462. What do you do?",
+     "options": [
+      {
+       "t": "Continue the current regimen and keep monitoring kidney function",
+       "correct": true,
+       "why": "462 is inside 400 to 600."
+      },
+      {
+       "t": "Increase the dose because the trough is only 10",
+       "correct": false,
+       "why": "This is exactly the old trough thinking the guideline moved away from. The AUC is on target."
+      },
+      {
+       "t": "Decrease the dose",
+       "correct": false,
+       "why": "Not needed; the AUC is on target."
+      }
+     ],
+     "teach": "A trough of 10 can go with a perfect AUC. Pushing the trough to 15 to 20 would push this AUC far over 600.",
+     "where": "",
+     "kind": "Decide"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**ke = ln(C1/C2)/time. Extrapolate to true Cmax and Cmin. AUC = infusion part + elimination part, times doses per day.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "pk05",
+   "title": "Adjusting to the target",
+   "setting": "Pharmacy · kinetics",
+   "topics": [
+    "Vancomycin",
+    "AUC math"
+   ],
+   "stem": "On vancomycin 1,000 mg every 12 hours, the Bayesian estimate is AUC24 = 320. Kidney function is stable. Goal AUC about 500.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Vancomycin follows linear kinetics. What new total dose reaches about 500?",
+     "options": [
+      {
+       "t": "About 1,500 mg every 12 hours (1,000 x 500/320 = 1,560; round to 1,500, predicted AUC about 480)",
+       "correct": true,
+       "why": "Linear kinetics: AUC changes in proportion to the dose when the interval and kidney function stay the same."
+      },
+      {
+       "t": "2,500 mg every 12 hours",
+       "correct": false,
+       "why": "That predicts an AUC near 800: toxic range."
+      },
+      {
+       "t": "Keep 1,000 mg and recheck in a week",
+       "correct": false,
+       "why": "An AUC of 320 is below target for a serious infection."
+      }
+     ],
+     "teach": "**New dose = old dose x (target AUC / current AUC).** Round to a measurable dose and recheck after the change.",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "When do you recheck exposure after a dose change?",
+     "options": [
+      {
+       "t": "After the new regimen is close to steady state, or sooner with Bayesian software; and any time kidney function changes",
+       "correct": true,
+       "why": "Recheck is required when the dose or the kidneys change."
+      },
+      {
+       "t": "Never; one level is enough for the whole course",
+       "correct": false,
+       "why": "Kidney function changes during illness; exposure changes with it."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Linear: new dose = old dose x target / current.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "pk06",
+   "title": "Too much exposure",
+   "setting": "Med surg · day 5 vancomycin",
+   "topics": [
+    "Vancomycin",
+    "Toxicity"
+   ],
+   "stem": "Day 5 of vancomycin and piperacillin tazobactam for a diabetic foot infection. SCr rose from 0.9 to 1.5 mg/dL. Estimated AUC24 is 780.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is happening?",
+     "options": [
+      {
+       "t": "Drug exposure is above 600 and kidney injury is starting",
+       "correct": true,
+       "why": "AUC above 600 is linked to higher risk of acute kidney injury."
+      },
+      {
+       "t": "This is expected and needs no change",
+       "correct": false,
+       "why": "A 67% rise in creatinine meets the definition of kidney injury."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Hold the next dose, recheck a level, and restart at a lower dose or longer interval guided by the new AUC",
+       "correct": true,
+       "why": "The fastest way to protect the kidneys is to stop more drug going in until the level falls."
+      },
+      {
+       "t": "Ask if MRSA is actually suspected or confirmed, and whether vancomycin is still needed",
+       "correct": true,
+       "why": "Stewardship: if cultures do not show MRSA, stopping vancomycin is the best kidney protection."
+      },
+      {
+       "t": "Ask whether piperacillin tazobactam could be changed (for example to cefepime) if coverage allows",
+       "correct": true,
+       "why": "Observational studies link vancomycin plus piperacillin tazobactam to more kidney injury; it is a reasonable question to raise."
+      },
+      {
+       "t": "Add furosemide to protect the kidneys",
+       "correct": false,
+       "why": "Loop diuretics do not protect the kidneys and can add to the problem."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    },
+    {
+     "q": "How strong is the evidence that piperacillin tazobactam increases vancomycin kidney injury?",
+     "options": [
+      {
+       "t": "Mostly observational; the guideline says it has been reported to raise the risk",
+       "correct": true,
+       "why": "Raise it as a risk, not as proven cause. Whether creatinine changes reflect true injury is still debated."
+      },
+      {
+       "t": "Proven by large randomized trials",
+       "correct": false,
+       "why": "The data are mostly observational."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Evidence"
+    }
+   ],
+   "call": "**S/B:** Day 5 vancomycin plus pip tazo, SCr 0.9 to 1.5, AUC 780. **A:** Exposure is above target and kidney injury is starting. **R:** I recommend holding tonight's dose, a level in the morning, and restarting at a lower dose. Do the cultures still support MRSA coverage? If not, can we stop vancomycin?",
+   "monitor": "",
+   "pearl": "**AUC above 600 + rising creatinine = hold, recheck, re dose, and ask if vanc is still needed.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk07",
+   "title": "Red man? Infusion reaction",
+   "setting": "Med surg · 30 minutes into an infusion",
+   "topics": [
+    "Vancomycin",
+    "Safety"
+   ],
+   "stem": "A nurse calls: \"The vancomycin is running and my patient's face, neck and chest are bright red and itchy. BP 112/70, breathing fine, no wheeze.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is this most likely?",
+     "options": [
+      {
+       "t": "Vancomycin infusion reaction (histamine release from a fast infusion)",
+       "correct": true,
+       "why": "Rate related, not IgE mediated. Flushing of the upper body and itching are classic."
+      },
+      {
+       "t": "Anaphylaxis requiring permanent allergy listing",
+       "correct": false,
+       "why": "No hypotension, airway symptoms or wheeze. Listing it as an allergy wrongly can block a needed drug later."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What do you tell the nurse?",
+     "options": [
+      {
+       "t": "Pause the infusion, give an antihistamine (for example diphenhydramine) if ordered, and restart at a slower rate once symptoms ease",
+       "correct": true,
+       "why": "Most patients tolerate the drug when infused more slowly."
+      },
+      {
+       "t": "Document it as an infusion reaction, not an allergy, and consider antihistamine before future doses with a longer infusion time",
+       "correct": true,
+       "why": "Accurate documentation protects the patient later."
+      },
+      {
+       "t": "Stop vancomycin forever and switch to daptomycin",
+       "correct": false,
+       "why": "Not needed for an infusion reaction."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Red and itchy, BP fine = too fast. Pause, antihistamine, slower.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Vancomycin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=vancomycin+injection",
+     "mark": "✅"
+    },
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "pk08",
+   "title": "Vancomycin in obesity",
+   "setting": "Med surg · cellulitis with bacteremia",
+   "topics": [
+    "Vancomycin",
+    "Obesity"
+   ],
+   "stem": "A 41 year old woman, 160 kg, CrCl about 120 mL/min, MRSA bacteremia from a skin source.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which loading dose does the guideline suggest in obesity?",
+     "options": [
+      {
+       "t": "20 to 25 mg/kg actual body weight, maximum 3,000 mg",
+       "correct": true,
+       "why": "Rybak 2020, Recommendation 12. 20 mg/kg x 160 kg = 3,200 mg, so the cap of 3,000 mg applies."
+      },
+      {
+       "t": "25 mg/kg ideal body weight",
+       "correct": false,
+       "why": "Vancomycin loading uses actual body weight."
+      },
+      {
+       "t": "35 mg/kg actual weight with no cap",
+       "correct": false,
+       "why": "That is 5,600 mg: far above the 3,000 mg cap."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What is a usual ceiling for the empiric daily maintenance total in obese patients?",
+     "options": [
+      {
+       "t": "Usually not above 4,500 mg per day, depending on kidney function",
+       "correct": true,
+       "why": "Then let AUC monitoring guide changes."
+      },
+      {
+       "t": "No ceiling; give 20 mg/kg every 8 hours by actual weight (9,600 mg/day)",
+       "correct": false,
+       "why": "Clearance does not rise in proportion to weight. This overshoots badly."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Obese: load 20 to 25 mg/kg actual (max 3 g), maintenance usually 4.5 g/day or less, then AUC.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk09",
+   "title": "Vancomycin and hemodialysis",
+   "setting": "Dialysis unit · MRSA line infection",
+   "topics": [
+    "Vancomycin",
+    "Dialysis"
+   ],
+   "stem": "A 70 kg man on intermittent hemodialysis three times a week (high permeability dialyzer) has an MRSA line infection. Vancomycin is to be given after dialysis.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What loading dose does the guideline list after dialysis?",
+     "options": [
+      {
+       "t": "25 mg/kg (about 1,750 mg)",
+       "correct": true,
+       "why": "Rybak 2020, Recommendation 13: 25 mg/kg after dialysis ends, for either dialyzer type."
+      },
+      {
+       "t": "5 mg/kg because the kidneys do not work",
+       "correct": false,
+       "why": "The load fills the volume of distribution regardless of kidney function."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What maintenance dose follows, and how is it monitored?",
+     "options": [
+      {
+       "t": "About 10 mg/kg after each session (high permeability), with a pre dialysis level at least weekly; pre dialysis levels of 15 to 20 likely reach the AUC target",
+       "correct": true,
+       "why": "Dialysis removes vancomycin, so you redose after each session and check the level before dialysis."
+      },
+      {
+       "t": "A dose every day with daily troughs",
+       "correct": false,
+       "why": "Dosing is tied to the dialysis schedule."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**HD: 25 mg/kg load, then about 10 mg/kg after each session (high flux); check pre dialysis levels.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk10",
+   "title": "Continuous infusion vancomycin",
+   "setting": "ICU · MRSA pneumonia",
+   "topics": [
+    "Vancomycin",
+    "Continuous infusion"
+   ],
+   "stem": "The ICU uses continuous infusion vancomycin for a 75 kg patient.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the guideline suggest for loading and maintenance?",
+     "options": [
+      {
+       "t": "Load 15 to 20 mg/kg, then 30 to 40 mg/kg per day (up to 60) as a continuous infusion",
+       "correct": true,
+       "why": "Rybak 2020, Recommendation 7."
+      },
+      {
+       "t": "No load; 10 mg/kg per day",
+       "correct": false,
+       "why": "Too low."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "The steady state level is 22 mcg/mL. What is the AUC24?",
+     "options": [
+      {
+       "t": "About 528 (22 x 24)",
+       "correct": true,
+       "why": "With a continuous infusion, AUC24 = steady state concentration x 24. The guideline target level is 20 to 25."
+      },
+      {
+       "t": "22",
+       "correct": false,
+       "why": "Multiply by 24 hours."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "What line issue matters most with continuous vancomycin?",
+     "options": [
+      {
+       "t": "Y site compatibility with other drugs running in the same line, since it runs all day",
+       "correct": true,
+       "why": "Check Trissel's for every drug sharing the line, or give it a dedicated lumen."
+      },
+      {
+       "t": "None",
+       "correct": false,
+       "why": "A drug running 24 hours meets every other drug in that line."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Continuous vanc: AUC = level x 24. Target level 20 to 25.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "pk11",
+   "title": "Children and vancomycin",
+   "setting": "Pediatrics · MRSA osteomyelitis",
+   "topics": [
+    "Vancomycin",
+    "Pediatrics"
+   ],
+   "stem": "A 6 year old, 20 kg, normal kidney function, MRSA osteomyelitis.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which empiric total daily dose range does the guideline suggest for children 3 months and older?",
+     "options": [
+      {
+       "t": "60 to 80 mg/kg per day divided every 6 to 8 hours",
+       "correct": true,
+       "why": "Children clear vancomycin faster than adults; older lower doses often underdose. Children under 12 often need the upper end."
+      },
+      {
+       "t": "15 mg/kg once daily",
+       "correct": false,
+       "why": "Far too low for a child with normal kidneys."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "For 20 kg at 60 mg/kg/day every 6 hours, what is each dose?",
+     "options": [
+      {
+       "t": "300 mg every 6 hours",
+       "correct": true,
+       "why": "60 x 20 = 1,200 mg per day, divided by 4 = 300 mg."
+      },
+      {
+       "t": "1,200 mg every 6 hours",
+       "correct": false,
+       "why": "That is the whole day's dose given four times."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Which reference do you open for pediatric dosing?",
+     "options": [
+      {
+       "t": "A pediatric reference (Lexicomp Pediatric or Harriet Lane) and St. Mary's pediatric protocol",
+       "correct": true,
+       "why": "Never use the adult section for a child."
+      },
+      {
+       "t": "The adult Lexicomp monograph",
+       "correct": false,
+       "why": "Adult doses do not translate by weight alone."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Where to look"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Kids clear vanc fast: 60 to 80 mg/kg/day divided every 6 to 8 hours, then AUC.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk12",
+   "title": "Oral vancomycin is a different drug",
+   "setting": "Med surg · new C. difficile",
+   "topics": [
+    "Vancomycin",
+    "C. difficile"
+   ],
+   "stem": "A patient has a first episode of C. difficile infection. The order reads \"vancomycin 1 g IV every 12 hours.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is wrong?",
+     "options": [
+      {
+       "t": "IV vancomycin does not reach the colon; C. difficile needs oral vancomycin",
+       "correct": true,
+       "why": "Vancomycin is poorly absorbed from the gut and IV drug does not get into the colon lumen in useful amounts."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "IV vancomycin does not treat C. difficile colitis."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What does the IDSA/SHEA 2021 update recommend for a first episode?",
+     "options": [
+      {
+       "t": "Fidaxomicin 200 mg twice daily for 10 days preferred; oral vancomycin 125 mg four times daily for 10 days is an acceptable alternative",
+       "correct": true,
+       "why": "Fidaxomicin is preferred because it lowers recurrence; vancomycin is the common alternative, often for cost or access."
+      },
+      {
+       "t": "Metronidazole 500 mg three times daily as first choice for everyone",
+       "correct": false,
+       "why": "Metronidazole is now only for nonsevere disease when the others are unavailable."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    }
+   ],
+   "call": "**S/B:** First C. diff episode, IV vancomycin ordered. **A:** IV vancomycin does not reach the colon. **R:** Change to fidaxomicin 200 mg PO twice daily for 10 days, or vancomycin 125 mg PO four times daily for 10 days if fidaxomicin is not available.",
+   "monitor": "",
+   "pearl": "**C. diff = oral vancomycin (or fidaxomicin). IV vanc does nothing in the colon.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Johnson S, et al. IDSA/SHEA 2021 focused update: C. difficile infection in adults. Clin Infect Dis 2021;73:e1029-e1044",
+     "url": "https://doi.org/10.1093/cid/ciab549",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pk13",
+   "title": "How aminoglycosides kill",
+   "setting": "Pharmacy · concepts",
+   "topics": [
+    "Aminoglycosides",
+    "Concepts"
+   ],
+   "stem": "You are about to verify your first gentamicin order.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What kind of killing do aminoglycosides show?",
+     "options": [
+      {
+       "t": "Concentration dependent killing with a post antibiotic effect",
+       "correct": true,
+       "why": "Higher peaks kill faster, and bacteria stay suppressed for hours after levels fall. That is why one large dose a day works."
+      },
+      {
+       "t": "Time dependent killing like beta lactams",
+       "correct": false,
+       "why": "That describes penicillins and cephalosporins."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "What are the main toxicities?",
+     "options": [
+      {
+       "t": "Kidney injury (usually reversible)",
+       "correct": true,
+       "why": "Watch creatinine and urine output."
+      },
+      {
+       "t": "Ototoxicity, hearing and balance (often irreversible)",
+       "correct": true,
+       "why": "Ask about ringing in the ears, hearing loss and dizziness."
+      },
+      {
+       "t": "Neuromuscular blockade",
+       "correct": true,
+       "why": "A boxed warning: caution with paralytics and myasthenia gravis."
+      },
+      {
+       "t": "Red man syndrome",
+       "correct": false,
+       "why": "That is vancomycin."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety",
+     "type": "multi"
+    },
+    {
+     "q": "Which drugs add to aminoglycoside toxicity?",
+     "options": [
+      {
+       "t": "Loop diuretics (ototoxicity)",
+       "correct": true,
+       "why": "Furosemide and gentamicin together raise hearing risk."
+      },
+      {
+       "t": "Vancomycin, amphotericin B, IV contrast, NSAIDs (kidney)",
+       "correct": true,
+       "why": "Stacking nephrotoxins raises kidney injury."
+      },
+      {
+       "t": "Acetaminophen",
+       "correct": false,
+       "why": "Not a meaningful interaction."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interactions",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Big peak, long break. Watch kidneys, ears, and paralytics.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Gentamicin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
+     "mark": "✅"
+    },
+    {
+     "t": "Nicolau DP, et al. Experience with a once daily aminoglycoside program (Hartford). Antimicrob Agents Chemother 1995;39:650-655",
+     "url": "https://doi.org/10.1128/AAC.39.3.650",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pk14",
+   "title": "Which weight for gentamicin?",
+   "setting": "Med surg · urosepsis",
+   "topics": [
+    "Aminoglycosides",
+    "Dosing weight"
+   ],
+   "stem": "A man 5 ft 10 in, actual weight 110 kg, SCr 0.9. Gentamicin extended interval dosing is planned.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Calculate his ideal body weight (male: 50 kg + 2.3 kg per inch over 5 feet).",
+     "options": [
+      {
+       "t": "73 kg",
+       "correct": true,
+       "why": "50 + 2.3 x 10 = 73 kg."
+      },
+      {
+       "t": "110 kg",
+       "correct": false,
+       "why": "That is his actual weight."
+      },
+      {
+       "t": "68.5 kg",
+       "correct": false,
+       "why": "That would use the female formula (45.5 base)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "His actual weight is 151% of ideal. Which weight do you dose on?",
+     "options": [
+      {
+       "t": "Adjusted body weight: IBW + 0.4 x (actual minus IBW) = 73 + 0.4 x 37 = about 88 kg",
+       "correct": true,
+       "why": "Aminoglycosides stay mostly in body water, and fat holds little water. Most protocols switch to adjusted weight above about 120% of IBW."
+      },
+      {
+       "t": "Actual weight, 110 kg",
+       "correct": false,
+       "why": "Overdoses obese patients."
+      },
+      {
+       "t": "Ideal weight always",
+       "correct": false,
+       "why": "Underdoses obese patients, since some extra water goes with extra weight."
+      }
+     ],
+     "teach": "Know three weights cold: **actual, ideal, adjusted.** Write all three in your note.",
+     "where": "",
+     "kind": "Decide"
+    },
+    {
+     "q": "What is the 7 mg/kg dose?",
+     "options": [
+      {
+       "t": "About 615 mg (7 x 87.8), rounded per protocol, for example 620 mg",
+       "correct": true,
+       "why": "Round to the nearest 10 or 20 mg per your protocol."
+      },
+      {
+       "t": "770 mg",
+       "correct": false,
+       "why": "That uses actual weight."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**IBW: 50 (men) or 45.5 (women) + 2.3 per inch over 5 ft. Obese: adjusted = IBW + 0.4 x excess.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Nicolau DP, et al. Experience with a once daily aminoglycoside program (Hartford). Antimicrob Agents Chemother 1995;39:650-655",
+     "url": "https://doi.org/10.1128/AAC.39.3.650",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk15",
+   "title": "Reading the Hartford nomogram",
+   "setting": "Pharmacy · gentamicin level",
+   "topics": [
+    "Aminoglycosides",
+    "Hartford"
+   ],
+   "stem": "Gentamicin 7 mg/kg was given at 0800. A random level was drawn at 1800.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Is the level timing valid for the Hartford nomogram?",
+     "options": [
+      {
+       "t": "Yes: 10 hours after the start, inside the 6 to 14 hour window",
+       "correct": true,
+       "why": "The nomogram was built for a single level 6 to 14 hours after the start of a 7 mg/kg dose."
+      },
+      {
+       "t": "No: the level must be a trough just before the next dose",
+       "correct": false,
+       "why": "Hartford uses one random level, not a trough."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "The level falls exactly on the line between the q24h and q36h zones. Which interval?",
+     "options": [
+      {
+       "t": "q36h, the longer interval",
+       "correct": true,
+       "why": "On a line, choose the longer interval. Safer for the kidneys and ears."
+      },
+      {
+       "t": "q24h",
+       "correct": false,
+       "why": "On a line you choose the longer interval."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Decide"
+    },
+    {
+     "q": "Another patient's level is above the q48h zone. What do you do?",
+     "options": [
+      {
+       "t": "Do not schedule a dose; follow serial levels and redose when the level is below 1 mcg/mL (or switch approach)",
+       "correct": true,
+       "why": "Above the q48h zone means clearance is too slow for this method."
+      },
+      {
+       "t": "Give the next dose in 48 hours anyway",
+       "correct": false,
+       "why": "The patient still has too much drug on board."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Decide"
+    },
+    {
+     "q": "Which patients should NOT be dosed with the Hartford method?",
+     "options": [
+      {
+       "t": "Pregnancy, burns over 20%, ascites, CrCl below 20 mL/min or dialysis",
+       "correct": true,
+       "why": "These groups were excluded from the original study because their kinetics differ."
+      },
+      {
+       "t": "Endocarditis (synergy dosing), cystic fibrosis, children",
+       "correct": true,
+       "why": "Each needs its own regimen."
+      },
+      {
+       "t": "A healthy adult with pyelonephritis and normal kidneys",
+       "correct": false,
+       "why": "This is the classic good candidate."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exclusions",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**7 mg/kg, one level at 6 to 14 h, on a line pick longer. Know the exclusions.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Nicolau DP, et al. Experience with a once daily aminoglycoside program (Hartford). Antimicrob Agents Chemother 1995;39:650-655",
+     "url": "https://doi.org/10.1128/AAC.39.3.650",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk16",
+   "title": "Traditional gentamicin and levels",
+   "setting": "ICU · gram negative pneumonia",
+   "topics": [
+    "Aminoglycosides",
+    "Traditional"
+   ],
+   "stem": "A patient with unstable kidney function gets traditional gentamicin every 8 hours (30 minute infusion).",
+   "chart": null,
+   "steps": [
+    {
+     "q": "When are the peak and trough drawn?",
+     "options": [
+      {
+       "t": "Peak 30 minutes after the end of the 30 minute infusion; trough just before the next dose",
+       "correct": true,
+       "why": "The 30 minute wait after the infusion lets the drug finish distributing."
+      },
+      {
+       "t": "Both at random times",
+       "correct": false,
+       "why": "Traditional dosing needs timed peaks and troughs."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "What are the usual safety limits on the label for traditional dosing?",
+     "options": [
+      {
+       "t": "Avoid peaks above 12 mcg/mL and troughs above 2 mcg/mL",
+       "correct": true,
+       "why": "Gentamicin label: prolonged concentrations above these raise toxicity."
+      },
+      {
+       "t": "Peak above 25 is the goal",
+       "correct": false,
+       "why": "That is above the label safety limit for gentamicin (amikacin uses higher numbers)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Targets"
+    },
+    {
+     "q": "Levels: 7.0 mcg/mL drawn 1 hour after the start, 1.2 mcg/mL drawn 8 hours after the start. What is the half life?",
+     "options": [
+      {
+       "t": "About 2.8 hours: ke = ln(7/1.2) / 7 = 0.252 per hour; 0.693 / 0.252 = 2.75 h",
+       "correct": true,
+       "why": "Same exponential math as vancomycin."
+      },
+      {
+       "t": "About 7 hours",
+       "correct": false,
+       "why": "Recheck: use ln of the ratio over the 7 hours between draws."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Traditional: peak 30 min after a 30 min infusion, trough before the next dose. Label limits: peak 12, trough 2.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Gentamicin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk17",
+   "title": "Gentamicin for synergy in endocarditis",
+   "setting": "Cardiology · enterococcal endocarditis",
+   "topics": [
+    "Aminoglycosides",
+    "Synergy"
+   ],
+   "stem": "Enterococcus faecalis endocarditis. The ID team wants ampicillin plus gentamicin.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How is synergy dosing different from gram negative dosing?",
+     "options": [
+      {
+       "t": "Lower doses: about 3 mg/kg per day in divided doses (for example 1 mg/kg every 8 hours), targeting a peak of 3 to 4 and a trough below 1",
+       "correct": true,
+       "why": "For synergy, gentamicin helps the cell wall drug kill; you do not need high gram negative peaks (AHA 2015)."
+      },
+      {
+       "t": "7 mg/kg once daily by Hartford",
+       "correct": false,
+       "why": "Hartford is not for endocarditis synergy."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What alternative avoids aminoglycoside toxicity for E. faecalis endocarditis?",
+     "options": [
+      {
+       "t": "Ampicillin plus ceftriaxone (double beta lactam)",
+       "correct": true,
+       "why": "AHA 2015 lists it as a reasonable option, especially with kidney risk or high level aminoglycoside resistance."
+      },
+      {
+       "t": "Vancomycin alone",
+       "correct": false,
+       "why": "Not preferred for susceptible E. faecalis."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternatives"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Synergy gent: about 1 mg/kg every 8 h, peak 3 to 4, trough below 1. Or ampicillin + ceftriaxone.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Baddour LM, et al. Infective endocarditis in adults (AHA 2015). Circulation 2015;132:1435-1486",
+     "url": "https://doi.org/10.1161/CIR.0000000000000296",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pk18",
+   "title": "The patient who says \"my ears are ringing\"",
+   "setting": "Med surg · day 9 of gentamicin",
+   "topics": [
+    "Aminoglycosides",
+    "Toxicity"
+   ],
+   "stem": "Day 9 of gentamicin for a complicated urinary infection. The patient reports ringing in the ears and feels unsteady walking. She is also on IV furosemide.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the concern?",
+     "options": [
+      {
+       "t": "Aminoglycoside ototoxicity (cochlear and vestibular), made more likely by the long course and the loop diuretic",
+       "correct": true,
+       "why": "Ototoxicity is often irreversible, so early action matters."
+      },
+      {
+       "t": "Normal side effect, continue",
+       "correct": false,
+       "why": "Never ignore ear symptoms on an aminoglycoside."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Tell the team today; ask whether gentamicin can be stopped or switched based on cultures (for example to a beta lactam)",
+       "correct": true,
+       "why": "Most urinary gram negatives have options with less toxicity."
+      },
+      {
+       "t": "Check levels and kidney function, and review the need for furosemide",
+       "correct": true,
+       "why": "High troughs and stacked ototoxins raise risk."
+      },
+      {
+       "t": "Suggest an audiology evaluation",
+       "correct": true,
+       "why": "Documents the baseline of damage."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Ringing or dizziness on gent = call today. Ear damage may not come back.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Gentamicin injection prescribing information (DailyMed)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pk19",
+   "title": "Shift simulation: three kinetics calls",
+   "setting": "Night shift · 0200",
+   "topics": [
+    "Vancomycin",
+    "Aminoglycosides",
+    "Prioritize"
+   ],
+   "stem": "Three things land together: (1) a septic ICU patient needs a vancomycin load and no dose is ordered yet; (2) a gentamicin random level came back for a stable pyelonephritis patient; (3) a vancomycin AUC from yesterday reads 455 on a stable patient.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you do first?",
+     "options": [
+      {
+       "t": "Get the septic patient's vancomycin loading dose ordered and sent",
+       "correct": true,
+       "why": "Time to effective antibiotics drives survival in septic shock."
+      },
+      {
+       "t": "Plot the gentamicin level",
+       "correct": false,
+       "why": "Important, but the next dose is hours away."
+      },
+      {
+       "t": "Document the AUC of 455",
+       "correct": false,
+       "why": "On target; it can wait."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "Second?",
+     "options": [
+      {
+       "t": "Plot the gentamicin level and set the next dose time",
+       "correct": true,
+       "why": "The next dose time depends on the level."
+      },
+      {
+       "t": "The AUC note",
+       "correct": false,
+       "why": "Routine."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "For the septic patient (90 kg), what loading dose fits?",
+     "options": [
+      {
+       "t": "2,000 to 2,250 mg (about 22 to 25 mg/kg), infused per policy",
+       "correct": true,
+       "why": "Inside 20 to 35 mg/kg and under the 3,000 mg cap."
+      },
+      {
+       "t": "1,000 mg because she might have kidney problems",
+       "correct": false,
+       "why": "Loads are not reduced for kidney function."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Septic first dose, then level driven next doses, then documentation.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Rybak MJ, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+     "url": "https://doi.org/10.1093/ajhp/zxaa036",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Nicolau DP, et al. Experience with a once daily aminoglycoside program (Hartford). Antimicrob Agents Chemother 1995;39:650-655",
+     "url": "https://doi.org/10.1128/AAC.39.3.650",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
