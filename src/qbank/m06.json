@@ -1,0 +1,1107 @@
+{
+ "id": "m06",
+ "title": "Module 6 · Infectious Diseases and Stewardship",
+ "intro": "Sepsis timing and prolonged infusions, CAP, HAP and MRSA nares, cefepime toxicity, cUTI and asymptomatic bacteriuria, skin infections, meningitis, S. aureus and ESBL bacteremia, penicillin allergy, duplicates and the day 3 time out.",
+ "cases": [
+  {
+   "id": "id01",
+   "title": "Sepsis: the first hour",
+   "setting": "ED · septic shock",
+   "topics": [
+    "Sepsis",
+    "Timing"
+   ],
+   "stem": "A 68 year old woman, BP 82/50 after fluids, lactate 4.6, likely pneumonia. Antibiotic orders arrive.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How fast should antibiotics start?",
+     "options": [
+      {
+       "t": "Within 1 hour of recognition, because shock is present",
+       "correct": true,
+       "why": "SSC 2021 strong recommendation. Without shock and when sepsis is only possible, within 3 hours after rapid assessment."
+      },
+      {
+       "t": "Within 6 hours",
+       "correct": false,
+       "why": "Too slow when shock is present."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "What do you do to make that happen?",
+     "options": [
+      {
+       "t": "Verify the first doses STAT and get them sent or pulled right away",
+       "correct": true,
+       "why": "Your verification speed is part of the clock."
+      },
+      {
+       "t": "Give the full first dose even if the kidneys look bad, then adjust later doses",
+       "correct": true,
+       "why": "Load by weight, maintain by kidneys."
+      },
+      {
+       "t": "Give the shortest infusion drug first when several are ordered (for example a beta lactam push or short piggyback before vancomycin)",
+       "correct": true,
+       "why": "The broad gram negative agent usually matters most in the first minutes; vancomycin takes longer to infuse."
+      },
+      {
+       "t": "Wait for cultures to result before starting",
+       "correct": false,
+       "why": "Draw cultures first if it does not delay antibiotics, but never wait for results."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Shock: antibiotics in 1 hour. Full first doses. Fastest drug first.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Evans L, et al. Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143",
+     "url": "https://doi.org/10.1097/CCM.0000000000005337",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id02",
+   "title": "Prolonged beta lactam infusions",
+   "setting": "ICU · septic shock day 1",
+   "topics": [
+    "Sepsis",
+    "PK"
+   ],
+   "stem": "After the STAT first dose, the order is piperacillin tazobactam 4.5 g every 6 hours over 30 minutes.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does SSC 2021 suggest for beta lactam maintenance doses?",
+     "options": [
+      {
+       "t": "Prolonged (extended) infusion over standard infusion",
+       "correct": true,
+       "why": "Beta lactams kill based on time above the MIC; longer infusions keep levels above the MIC longer."
+      },
+      {
+       "t": "Faster push dosing",
+       "correct": false,
+       "why": "Opposite of the PK goal."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    },
+    {
+     "q": "Why does time matter for beta lactams but not as much for aminoglycosides?",
+     "options": [
+      {
+       "t": "Beta lactams are time dependent; aminoglycosides are concentration dependent",
+       "correct": true,
+       "why": "Different drugs, different PK goals."
+      },
+      {
+       "t": "They are the same",
+       "correct": false,
+       "why": "No."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Beta lactams: time above MIC. Prolonged infusion after the first dose.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Evans L, et al. Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143",
+     "url": "https://doi.org/10.1097/CCM.0000000000005337",
+     "mark": "✅✅"
+    },
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id03",
+   "title": "Community acquired pneumonia on the floor",
+   "setting": "Med surg · CAP admission",
+   "topics": [
+    "Pneumonia",
+    "CAP"
+   ],
+   "stem": "Moderate CAP, not ICU, no MRSA or Pseudomonas risk factors. No allergies.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which regimens fit ATS/IDSA 2019?",
+     "options": [
+      {
+       "t": "Ceftriaxone 1 to 2 g IV daily plus azithromycin 500 mg daily",
+       "correct": true,
+       "why": "Standard regimen."
+      },
+      {
+       "t": "Levofloxacin 750 mg daily or moxifloxacin 400 mg daily alone",
+       "correct": true,
+       "why": "Respiratory fluoroquinolone monotherapy is an option."
+      },
+      {
+       "t": "Vancomycin plus piperacillin tazobactam",
+       "correct": false,
+       "why": "Too broad without MRSA or Pseudomonas risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen",
+     "type": "multi"
+    },
+    {
+     "q": "How long?",
+     "options": [
+      {
+       "t": "At least 5 days, and until clinically stable",
+       "correct": true,
+       "why": "Most patients need 5 days."
+      },
+      {
+       "t": "14 days",
+       "correct": false,
+       "why": "Longer than needed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Duration"
+    },
+    {
+     "q": "Are steroids routine for CAP?",
+     "options": [
+      {
+       "t": "No; follow the sepsis guideline if refractory shock develops",
+       "correct": true,
+       "why": "ATS/IDSA 2019."
+      },
+      {
+       "t": "Yes, always",
+       "correct": false,
+       "why": "Not routine."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**CAP floor: ceftriaxone + azithromycin, or a respiratory FQ. 5 days.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Metlay JP, et al. ATS/IDSA community acquired pneumonia guideline. Am J Respir Crit Care Med 2019;200:e45-e67",
+     "url": "https://doi.org/10.1164/rccm.201908-1581ST",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "id04",
+   "title": "MRSA nares and stopping vancomycin",
+   "setting": "ICU · pneumonia day 2",
+   "topics": [
+    "Pneumonia",
+    "Stewardship"
+   ],
+   "stem": "Day 2 of vancomycin plus cefepime for pneumonia. MRSA nasal PCR is negative. Sputum culture grows normal flora.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Stop vancomycin: a negative MRSA nares result has a negative predictive value above 95% for MRSA pneumonia",
+       "correct": true,
+       "why": "One of the easiest stewardship wins every day."
+      },
+      {
+       "t": "Continue vancomycin for 14 days",
+       "correct": false,
+       "why": "No MRSA evidence."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Stewardship"
+    }
+   ],
+   "call": "\"The MRSA nares PCR is negative and the sputum has no MRSA. The negative predictive value is above 95%. May I stop vancomycin and continue cefepime?\"",
+   "monitor": "",
+   "pearl": "**Negative MRSA nares + no MRSA in cultures = stop vanc for pneumonia.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Kalil AC, et al. IDSA/ATS HAP and VAP guideline. Clin Infect Dis 2016;63:e61-e111",
+     "url": "https://doi.org/10.1093/cid/ciw353",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id05",
+   "title": "Hospital acquired pneumonia",
+   "setting": "Med surg · day 6 of admission",
+   "topics": [
+    "Pneumonia",
+    "HAP"
+   ],
+   "stem": "New pneumonia on day 6. No shock, not ventilated, no IV antibiotics in 90 days, local MRSA rate under 20%.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which single agents fit IDSA/ATS for HAP without high risk features?",
+     "options": [
+      {
+       "t": "Piperacillin tazobactam 4.5 g q6h",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Cefepime 2 g q8h",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Levofloxacin 750 mg daily",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Ceftriaxone plus azithromycin",
+       "correct": false,
+       "why": "Does not cover Pseudomonas, which HAP regimens need."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen",
+     "type": "multi"
+    },
+    {
+     "q": "When would you add a second antipseudomonal agent and MRSA coverage?",
+     "options": [
+      {
+       "t": "Septic shock, ventilation, IV antibiotics in the past 90 days, or high local resistance",
+       "correct": true,
+       "why": "High mortality or resistance risk."
+      },
+      {
+       "t": "Always",
+       "correct": false,
+       "why": "Only with risk factors."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Risk"
+    },
+    {
+     "q": "Duration?",
+     "options": [
+      {
+       "t": "7 days",
+       "correct": true,
+       "why": "IDSA/ATS 2016."
+      },
+      {
+       "t": "21 days",
+       "correct": false,
+       "why": "Too long."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Duration"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**HAP: antipseudomonal single agent unless high risk. 7 days.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Kalil AC, et al. IDSA/ATS HAP and VAP guideline. Clin Infect Dis 2016;63:e61-e111",
+     "url": "https://doi.org/10.1093/cid/ciw353",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "id06",
+   "title": "Cefepime and confusion",
+   "setting": "Med surg · new delirium",
+   "topics": [
+    "Safety",
+    "Cefepime"
+   ],
+   "stem": "A 79 year old on cefepime 2 g every 8 hours, CrCl 25 mL/min, is newly confused with jerking movements.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you suspect?",
+     "options": [
+      {
+       "t": "Cefepime neurotoxicity from accumulation in kidney impairment (can include nonconvulsive status epilepticus)",
+       "correct": true,
+       "why": "FDA 2012 alert: most cases had kidney impairment without dose adjustment."
+      },
+      {
+       "t": "Normal aging",
+       "correct": false,
+       "why": "Never assume."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Reduce or change the antibiotic per renal dosing, tell the team, and suggest an EEG if seizures are suspected",
+       "correct": true,
+       "why": "Symptoms usually improve after stopping or adjusting the dose."
+      },
+      {
+       "t": "Add haloperidol and continue",
+       "correct": false,
+       "why": "Treats the symptom, not the cause."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Confused on cefepime with poor kidneys: think drug, adjust the dose (CrCl 60 or less).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA safety alert: cefepime and nonconvulsive status epilepticus in kidney impairment (2012)",
+     "url": "https://www.drugs.com/fda-alerts/544-0.html",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "id07",
+   "title": "Pyelonephritis and complicated UTI",
+   "setting": "Med surg · fever and flank pain",
+   "topics": [
+    "UTI",
+    "cUTI"
+   ],
+   "stem": "Pyelonephritis, no sepsis. No fluoroquinolone in the past year.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which empiric options fit IDSA 2025?",
+     "options": [
+      {
+       "t": "Ceftriaxone 2 g IV daily",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "A fluoroquinolone (if not used in the past 12 months and local resistance allows)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Nitrofurantoin",
+       "correct": false,
+       "why": "Does not reach the kidneys or blood. Not for cUTI or pyelonephritis."
+      },
+      {
+       "t": "Oral fosfomycin",
+       "correct": false,
+       "why": "Same reason."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen",
+     "type": "multi"
+    },
+    {
+     "q": "How long?",
+     "options": [
+      {
+       "t": "7 days (5 to 7 with a fluoroquinolone), including with bacteremia",
+       "correct": true,
+       "why": "IDSA 2025."
+      },
+      {
+       "t": "14 days for everyone",
+       "correct": false,
+       "why": "Shorter is supported."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Duration"
+    },
+    {
+     "q": "She improves on day 2 and the E. coli is susceptible. Next step?",
+     "options": [
+      {
+       "t": "Switch to an oral option by susceptibility (for example TMP SMX DS BID, levofloxacin, cephalexin 1 g TID or amoxicillin clavulanate)",
+       "correct": true,
+       "why": "Oral step down is supported."
+      },
+      {
+       "t": "Keep IV for 14 days",
+       "correct": false,
+       "why": "Unneeded."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Step down"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**cUTI: ceftriaxone or FQ, 7 days, oral step down. No nitrofurantoin or fosfomycin for pyelo.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Trautner BW, et al. IDSA 2025 guideline on complicated UTI. Clin Infect Dis 2025",
+     "url": "https://doi.org/10.1093/cid/ciaf460",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "id08",
+   "title": "The positive urine culture",
+   "setting": "Med surg · fall, mild confusion",
+   "topics": [
+    "UTI",
+    "Stewardship"
+   ],
+   "stem": "An 84 year old admitted after a fall, mildly confused, no fever, no urinary symptoms. Urine culture grows E. coli. Ciprofloxacin is ordered.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is this?",
+     "options": [
+      {
+       "t": "Asymptomatic bacteriuria: do not treat",
+       "correct": true,
+       "why": "Confusion or a fall without urinary or systemic signs is not a reason to treat (IDSA 2019)."
+      },
+      {
+       "t": "A UTI that needs 14 days of antibiotics",
+       "correct": false,
+       "why": "No symptoms of infection."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "When IS asymptomatic bacteriuria screened and treated?",
+     "options": [
+      {
+       "t": "Pregnancy (4 to 7 days)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Before a urologic procedure with mucosal trauma",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Older adults with a catheter",
+       "correct": false,
+       "why": "No screening or treatment."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exceptions",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Bugs without symptoms = no antibiotics (except pregnancy and urology procedures).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AAFP: asymptomatic bacteriuria (IDSA 2019 guideline summary)",
+     "url": "https://www.aafp.org/afp/2020/0715/p99.html",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "id09",
+   "title": "Cellulitis or abscess?",
+   "setting": "ED · red leg",
+   "topics": [
+    "Skin",
+    "SSTI"
+   ],
+   "stem": "Two patients: (A) red, warm, spreading leg, no pus; (B) a 3 cm fluctuant abscess on the thigh.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Best plan for patient A (mild, nonpurulent)?",
+     "options": [
+      {
+       "t": "Cephalexin 500 mg QID (or 1 g q8h) for about 5 days",
+       "correct": true,
+       "why": "Nonpurulent cellulitis is usually strep; MRSA coverage is not routine."
+      },
+      {
+       "t": "TMP SMX alone",
+       "correct": false,
+       "why": "Weak strep coverage."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    },
+    {
+     "q": "Best plan for patient B?",
+     "options": [
+      {
+       "t": "Incision and drainage first; add TMP SMX DS or doxycycline because it is over 2 cm",
+       "correct": true,
+       "why": "Drainage is the main treatment."
+      },
+      {
+       "t": "Antibiotics only, no drainage",
+       "correct": false,
+       "why": "Drainage is the key step."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**No pus: strep coverage. Pus: drain it, then MRSA coverage if over 2 cm.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Stevens DL, et al. IDSA skin and soft tissue infection guideline. Clin Infect Dis 2014;59:e10-e52",
+     "url": "https://doi.org/10.1093/cid/ciu296",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "id10",
+   "title": "Bacterial meningitis",
+   "setting": "ED · fever, stiff neck",
+   "topics": [
+    "Meningitis",
+    "Empiric"
+   ],
+   "stem": "A 34 year old with suspected bacterial meningitis. No allergies.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Empiric regimen?",
+     "options": [
+      {
+       "t": "Vancomycin plus ceftriaxone 2 g IV every 12 hours",
+       "correct": true,
+       "why": "Note meningitis dosing of ceftriaxone is every 12 hours."
+      },
+      {
+       "t": "Ceftriaxone 1 g daily alone",
+       "correct": false,
+       "why": "Too low and missing resistant pneumococcus coverage."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    },
+    {
+     "q": "When does dexamethasone go in?",
+     "options": [
+      {
+       "t": "10 to 20 minutes before or with the first antibiotic dose, 0.15 mg/kg every 6 hours for 2 to 4 days; continue only if pneumococcal",
+       "correct": true,
+       "why": "Not after antibiotics have started."
+      },
+      {
+       "t": "After 24 hours of antibiotics",
+       "correct": false,
+       "why": "Too late."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "If she were 60 years old, what would you add?",
+     "options": [
+      {
+       "t": "Ampicillin 2 g IV every 4 hours for Listeria",
+       "correct": true,
+       "why": "Also for pregnancy and immunocompromise. Cephalosporins never cover Listeria."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Listeria risk rises after 50."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Meningitis: vanc + ceftriaxone 2 g q12h, dex before or with dose 1, add ampicillin if over 50.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Tunkel AR, et al. IDSA bacterial meningitis guideline. Clin Infect Dis 2004;39:1267-1284",
+     "url": "https://doi.org/10.1086/425368",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "id11",
+   "title": "S. aureus in the blood",
+   "setting": "Med surg · bacteremia",
+   "topics": [
+    "Bacteremia",
+    "S. aureus"
+   ],
+   "stem": "Blood cultures grow MSSA (methicillin susceptible S. aureus). The patient is on vancomycin.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Switch to cefazolin or an antistaphylococcal penicillin (nafcillin or oxacillin)",
+       "correct": true,
+       "why": "Beta lactams kill MSSA better than vancomycin."
+      },
+      {
+       "t": "Continue vancomycin because it covers MSSA",
+       "correct": false,
+       "why": "It covers it, but outcomes are worse than with a beta lactam."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Narrow"
+    },
+    {
+     "q": "What else always goes with S. aureus bacteremia?",
+     "options": [
+      {
+       "t": "Repeat blood cultures to document clearance",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Infectious diseases consultation and a search for the source (echocardiogram)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "At least 14 days of IV therapy from the first negative culture for uncomplicated cases",
+       "correct": true,
+       "why": "Complicated cases need longer."
+      },
+      {
+       "t": "A 5 day oral course",
+       "correct": false,
+       "why": "Not for S. aureus bacteremia."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Bundle",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**S. aureus in blood: never a contaminant. Beta lactam for MSSA, repeat cultures, ID, echo, 14 days or more.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Liu C, et al. IDSA MRSA guideline. Clin Infect Dis 2011;52:e18-e55",
+     "url": "https://doi.org/10.1093/cid/ciq146",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id12",
+   "title": "ESBL in the blood",
+   "setting": "ICU · E. coli bacteremia",
+   "topics": [
+    "Resistance",
+    "ESBL"
+   ],
+   "stem": "Blood cultures: E. coli resistant to ceftriaxone (ESBL producer). The patient is on piperacillin tazobactam, and it tests susceptible.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the evidence support?",
+     "options": [
+      {
+       "t": "Change to a carbapenem (for example meropenem or ertapenem)",
+       "correct": true,
+       "why": "MERINO: 30 day mortality was higher with piperacillin tazobactam than meropenem for ceftriaxone resistant E. coli and Klebsiella bacteremia."
+      },
+      {
+       "t": "Continue piperacillin tazobactam because it tested susceptible",
+       "correct": false,
+       "why": "The trial showed worse outcomes despite susceptibility."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Evidence"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**ESBL bacteremia: carbapenem (MERINO).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Harris PNA, et al. Piperacillin tazobactam vs meropenem for ceftriaxone resistant E. coli or Klebsiella bacteremia (MERINO). JAMA 2018;320:984-994",
+     "url": "https://doi.org/10.1001/jama.2018.12163",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id13",
+   "title": "Penicillin allergy label",
+   "setting": "Pre op · cefazolin ordered",
+   "topics": [
+    "Allergy",
+    "Beta lactams"
+   ],
+   "stem": "Allergy: \"penicillin, hives 20 years ago.\" Cefazolin 2 g is ordered for surgical prophylaxis. The surgeon asks for vancomycin \"to be safe.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you know about cefazolin and penicillin cross reactivity?",
+     "options": [
+      {
+       "t": "Cefazolin shares no side chain with other US beta lactams; cross reactivity is very low",
+       "correct": true,
+       "why": "Allergy is driven by the R1 side chain, not the beta lactam ring."
+      },
+      {
+       "t": "Up to 10% cross reactivity with all cephalosporins",
+       "correct": false,
+       "why": "That old number is outdated."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Give cefazolin; it is a better surgical prophylaxis agent than vancomycin",
+       "correct": true,
+       "why": "With a non anaphylactic, unconfirmed history, cephalosporins can be given without testing (2022 practice parameter). Vancomycin is less effective for MSSA and takes longer to infuse."
+      },
+      {
+       "t": "Vancomycin for everyone with a penicillin label",
+       "correct": false,
+       "why": "Worse outcomes and more resistance."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    },
+    {
+     "q": "What is the cefazolin prophylaxis dose and timing?",
+     "options": [
+      {
+       "t": "2 g IV (3 g if 120 kg or more) within 60 minutes before incision; redose every 4 hours during surgery",
+       "correct": true,
+       "why": "Vancomycin needs to start within 120 minutes because of its long infusion."
+      },
+      {
+       "t": "1 g after surgery",
+       "correct": false,
+       "why": "Prophylaxis must be on board at incision."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Penicillin hives: cefazolin is fine. 2 g (3 g if 120 kg+) within 60 minutes of incision.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Brameli, Stone, Phillips. J Allergy Clin Immunol Glob 2024 (cites the 2022 drug allergy practice parameter)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11609518",
+     "mark": "✅"
+    },
+    {
+     "t": "Nebraska Medicine: surgical antimicrobial prophylaxis guideline",
+     "url": "https://www.unmc.edu/intmed/_documents/id/asp/surgical-antimicrobial-surgical-prophylaxis.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id14",
+   "title": "Duplicate anaerobic coverage",
+   "setting": "Med surg · intraabdominal infection",
+   "topics": [
+    "Stewardship",
+    "Duplicates"
+   ],
+   "stem": "Orders: piperacillin tazobactam 4.5 g q6h plus metronidazole 500 mg q8h.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the issue?",
+     "options": [
+      {
+       "t": "Duplicate anaerobic coverage: piperacillin tazobactam already covers anaerobes",
+       "correct": true,
+       "why": "Same with carbapenems. Metronidazole adds side effects without benefit (except C. difficile, which needs oral therapy)."
+      },
+      {
+       "t": "No issue",
+       "correct": false,
+       "why": "Common duplication."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    }
+   ],
+   "call": "\"Piperacillin tazobactam already covers anaerobes. May I stop the metronidazole?\"",
+   "monitor": "",
+   "pearl": "**Pip tazo or a carbapenem + metronidazole = double anaerobes.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's antibiogram, sepsis order set and antimicrobial stewardship policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "id15",
+   "title": "Day 3 antibiotic time out",
+   "setting": "Med surg · stewardship round",
+   "topics": [
+    "Stewardship",
+    "Workflow"
+   ],
+   "stem": "You review every patient on antibiotics for day 3.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What questions do you ask on each one?",
+     "options": [
+      {
+       "t": "Are cultures back, and can we narrow?",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Can we switch to oral?",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Is there a stop date that matches guideline durations?",
+       "correct": true,
+       "why": "CAP 5 days, HAP 7, cUTI 7, cellulitis about 5."
+      },
+      {
+       "t": "Can we add more coverage just in case?",
+       "correct": false,
+       "why": "The opposite of stewardship."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Workflow",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Day 3: narrow, oral, stop date.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Metlay JP, et al. ATS/IDSA community acquired pneumonia guideline. Am J Respir Crit Care Med 2019;200:e45-e67",
+     "url": "https://doi.org/10.1164/rccm.201908-1581ST",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Kalil AC, et al. IDSA/ATS HAP and VAP guideline. Clin Infect Dis 2016;63:e61-e111",
+     "url": "https://doi.org/10.1093/cid/ciw353",
+     "mark": "✅"
+    },
+    {
+     "t": "Trautner BW, et al. IDSA 2025 guideline on complicated UTI. Clin Infect Dis 2025",
+     "url": "https://doi.org/10.1093/cid/ciaf460",
+     "mark": "✅✅"
+    }
+   ]
+  },
+  {
+   "id": "id16",
+   "title": "Shift simulation: ID calls",
+   "setting": "Night shift · 0100",
+   "topics": [
+    "ID",
+    "Prioritize"
+   ],
+   "stem": "Three items: (1) a new meningitis patient needs first doses; (2) an MSSA bacteremia patient is still on vancomycin; (3) a question about cephalexin dosing for discharge tomorrow.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which first?",
+     "options": [
+      {
+       "t": "The meningitis first doses (and dexamethasone timing)",
+       "correct": true,
+       "why": "Minutes matter."
+      },
+      {
+       "t": "The MSSA switch",
+       "correct": false,
+       "why": "Important, but it can follow."
+      },
+      {
+       "t": "Discharge question",
+       "correct": false,
+       "why": "Tomorrow."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "Second?",
+     "options": [
+      {
+       "t": "Recommend switching MSSA bacteremia to cefazolin",
+       "correct": true,
+       "why": "Better outcomes."
+      },
+      {
+       "t": "Discharge question",
+       "correct": false,
+       "why": "Last."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Meningitis now, MSSA switch next, discharge questions last.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Tunkel AR, et al. IDSA bacterial meningitis guideline. Clin Infect Dis 2004;39:1267-1284",
+     "url": "https://doi.org/10.1086/425368",
+     "mark": "✅✅"
+    },
+    {
+     "t": "Liu C, et al. IDSA MRSA guideline. Clin Infect Dis 2011;52:e18-e55",
+     "url": "https://doi.org/10.1093/cid/ciq146",
+     "mark": "✅"
+    }
+   ]
+  }
+ ]
+}
