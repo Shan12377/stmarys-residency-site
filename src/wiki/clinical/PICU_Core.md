@@ -32,7 +32,7 @@ Sources: AHA/AAP Pediatric Advanced Life Support guideline (2025, Part 8, Circul
 | Time | Step | Dose |
 |---|---|---|
 | 0 to 5 min | Stabilize, check glucose | Dextrose if low |
-| 5 to 20 min | Benzodiazepine | Lorazepam 0.1 mg/kg IV (max 4 mg), may repeat once; or midazolam IM 0.2 mg/kg (max 10 mg); or diazepam rectal |
+| 5 to 20 min | Benzodiazepine | Lorazepam 0.1 mg/kg IV (max 4 mg), may repeat once; or midazolam IM 10 mg (over 40 kg) or 5 mg (13 to 40 kg), single dose (AES 2016; updated 2026-10-23, was 0.2 mg/kg max 10 mg); or diazepam rectal |
 | 20 to 40 min | Second line (ESETT: similar efficacy) | Levetiracetam 60 mg/kg IV (max 4,500 mg); or fosphenytoin 20 mg PE/kg (max 1,500 mg PE); or valproate 40 mg/kg (max 3,000 mg) |
 | 40+ min | Refractory | Infusion (midazolam, pentobarbital, ketamine) with ICU and EEG |
 

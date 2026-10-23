@@ -1,0 +1,648 @@
+{
+ "id": "m12",
+ "title": "Module 12 · PICU and Pediatric Emergencies",
+ "intro": "The adult ceiling, PALS doses, adenosine and atropine, status epilepticus with ESETT, pediatric DKA and cerebral edema, RSI, withdrawal weans, fluids and dosing anchors, and poisonings.",
+ "cases": [
+  {
+   "id": "pi01",
+   "title": "The adult ceiling",
+   "setting": "Pediatrics · teenager admission",
+   "topics": [
+    "Pediatrics",
+    "Dosing rules"
+   ],
+   "stem": "A 15 year old, 82 kg. Order: acetaminophen 15 mg/kg PO every 6 hours = 1,230 mg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is wrong?",
+     "options": [
+      {
+       "t": "Pediatric mg/kg doses never exceed the adult dose: cap at 1,000 mg per dose and 4 g per day",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "1,230 mg is above the adult single dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Rule"
+    },
+    {
+     "q": "Which other pediatric checks run on every order?",
+     "options": [
+      {
+       "t": "Measured weight in kg, and actual vs ideal weight for obese children per drug",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Standard concentration in the pump library and a measurable volume",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "mg/kg/dose vs mg/kg/day",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Age in years only",
+       "correct": false,
+       "why": "Weight drives dosing."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Checks",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**mg/kg, but never above the adult dose.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pi02",
+   "title": "Pediatric arrest",
+   "setting": "PICU · code",
+   "topics": [
+    "PALS",
+    "Arrest"
+   ],
+   "stem": "A 20 kg child in asystole. IO in place.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Epinephrine dose?",
+     "options": [
+      {
+       "t": "0.01 mg/kg = 0.2 mg = 2 mL of 0.1 mg/mL, every 3 to 5 minutes (max 1 mg)",
+       "correct": true,
+       "why": "PALS 2025: as early as possible in nonshockable rhythms."
+      },
+      {
+       "t": "1 mg",
+       "correct": false,
+       "why": "Adult dose."
+      },
+      {
+       "t": "0.2 mL of 1 mg/mL",
+       "correct": false,
+       "why": "Same mg, but use the 0.1 mg/mL concentration to avoid errors."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Rhythm changes to VF, refractory to shocks. Amiodarone?",
+     "options": [
+      {
+       "t": "5 mg/kg = 100 mg, may repeat up to 15 mg/kg total",
+       "correct": true,
+       "why": "Max single 300 mg."
+      },
+      {
+       "t": "300 mg",
+       "correct": false,
+       "why": "Adult dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**PALS epi 0.01 mg/kg (0.1 mL/kg of 0.1 mg/mL). Amio 5 mg/kg.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/AAP 2025 Pediatric Advanced Life Support (AHA CPR and ECC 2025, Part 8)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pi03",
+   "title": "Pediatric SVT and bradycardia",
+   "setting": "PICU · rhythm problems",
+   "topics": [
+    "PALS",
+    "Peri arrest"
+   ],
+   "stem": "Two children: (A) 15 kg with SVT at 260, stable; (B) 10 kg with bradycardia from AV block.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Adenosine for A?",
+     "options": [
+      {
+       "t": "0.1 mg/kg = 1.5 mg rapid push with flush (max 6 mg); second dose 0.2 mg/kg (max 12 mg)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "6 mg",
+       "correct": false,
+       "why": "Too much for 15 kg."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Atropine for B?",
+     "options": [
+      {
+       "t": "0.02 mg/kg = 0.2 mg IV (max single dose 0.5 mg)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "1 mg",
+       "correct": false,
+       "why": "Adult dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Peds adenosine 0.1 then 0.2 mg/kg. Atropine 0.02 mg/kg (max 0.5).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "AHA/AAP 2025 Pediatric Advanced Life Support (AHA CPR and ECC 2025, Part 8)",
+     "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pi04",
+   "title": "Status epilepticus in a child",
+   "setting": "ED · seizing 8 minutes",
+   "topics": [
+    "Status epilepticus",
+    "Benzodiazepines"
+   ],
+   "stem": "A 25 kg child seizing for 8 minutes. No IV yet.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "First line without IV access?",
+     "options": [
+      {
+       "t": "Midazolam IM 5 mg (13 to 40 kg), single dose",
+       "correct": true,
+       "why": "AES 2016. Intranasal or buccal midazolam and rectal diazepam are other options."
+      },
+      {
+       "t": "Wait for IV access",
+       "correct": false,
+       "why": "Do not delay."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "No IV"
+    },
+    {
+     "q": "IV placed, still seizing 5 minutes later. Lorazepam dose?",
+     "options": [
+      {
+       "t": "0.1 mg/kg = 2.5 mg IV (max 4 mg), may repeat once",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "4 mg because that is the max",
+       "correct": false,
+       "why": "Dose by weight."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "IV"
+    },
+    {
+     "q": "Still seizing at 20 minutes. Second line options (ESETT: similar efficacy)?",
+     "options": [
+      {
+       "t": "Levetiracetam 60 mg/kg (1,500 mg, max 4,500 mg)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Fosphenytoin 20 mg PE/kg (500 mg PE, max 1,500 mg PE)",
+       "correct": true,
+       "why": "Dosed in phenytoin equivalents."
+      },
+      {
+       "t": "Valproate 40 mg/kg (1,000 mg, max 3,000 mg), avoiding it in suspected mitochondrial or liver disease",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "A third benzodiazepine dose",
+       "correct": false,
+       "why": "Benzodiazepines lose effect as seizures continue."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Second line",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**SE: benzo (IM midaz 5 or 10 mg, or lorazepam 0.1 mg/kg), then levetiracetam, fosphenytoin or valproate.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Glauser T, et al. AES guideline: treatment of convulsive status epilepticus in children and adults. Epilepsy Curr 2016;16:48-61",
+     "url": "https://doi.org/10.5698/1535-7597-16.1.48",
+     "mark": "✅"
+    },
+    {
+     "t": "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381:2103-2113",
+     "url": "https://doi.org/10.1056/NEJMoa1905795",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pi05",
+   "title": "Pediatric DKA",
+   "setting": "PICU · new type 1 diabetes",
+   "topics": [
+    "DKA",
+    "Pediatrics"
+   ],
+   "stem": "A 30 kg child in DKA. K 4.2.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Insulin plan?",
+     "options": [
+      {
+       "t": "0.05 to 0.1 units/kg/h IV (1.5 to 3 units/h), no bolus, started after the first hour of fluids",
+       "correct": true,
+       "why": "ISPAD 2022."
+      },
+      {
+       "t": "0.1 units/kg bolus then 0.1 units/kg/h",
+       "correct": false,
+       "why": "No bolus in children."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Insulin"
+    },
+    {
+     "q": "What emergency do you prepare for?",
+     "options": [
+      {
+       "t": "Cerebral edema: mannitol 0.5 to 1 g/kg over 10 to 15 minutes or 3% saline 2.5 to 5 mL/kg at the bedside",
+       "correct": true,
+       "why": "Warning signs: headache, falling heart rate, rising BP, altered mental status."
+      },
+      {
+       "t": "None",
+       "correct": false,
+       "why": "The main cause of DKA death in children."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prepare"
+    },
+    {
+     "q": "How do pediatric and adult potassium cutoffs differ?",
+     "options": [
+      {
+       "t": "Adults: hold insulin until K is 3.5 or more (2024 consensus). Children: replace potassium first if low; many protocols use 3.3; follow St. Mary's",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "They are identical",
+       "correct": false,
+       "why": "Know both."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Top 10%"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Peds DKA: no bolus, 0.05 to 0.1 units/kg/h, mannitol or 3% ready.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Glaser N, et al. ISPAD 2022 consensus guidelines: DKA and HHS. Pediatr Diabetes 2022;23:835-856",
+     "url": "https://doi.org/10.1111/pedi.13406",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pi06",
+   "title": "Pediatric RSI",
+   "setting": "PICU · intubation",
+   "topics": [
+    "RSI",
+    "Pediatrics"
+   ],
+   "stem": "A 12 kg toddler in septic shock needs intubation.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which induction agent fits septic shock?",
+     "options": [
+      {
+       "t": "Ketamine 1 to 2 mg/kg (12 to 24 mg)",
+       "correct": true,
+       "why": "Many protocols avoid etomidate in septic shock (adrenal suppression)."
+      },
+      {
+       "t": "Propofol 3 mg/kg",
+       "correct": false,
+       "why": "Hypotension."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Induction"
+    },
+    {
+     "q": "Paralytic?",
+     "options": [
+      {
+       "t": "Rocuronium 1 to 1.2 mg/kg (12 to 14 mg)",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Succinylcholine in a child with suspected muscular dystrophy",
+       "correct": false,
+       "why": "Hyperkalemic arrest risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Paralytic"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Peds septic shock RSI: ketamine + rocuronium.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pi07",
+   "title": "Iatrogenic withdrawal",
+   "setting": "PICU · day 9 of fentanyl and midazolam",
+   "topics": [
+    "Sedation",
+    "Withdrawal"
+   ],
+   "stem": "A child extubated after 9 days of fentanyl and midazolam infusions is irritable, sweaty, with diarrhea and tremors.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is this?",
+     "options": [
+      {
+       "t": "Iatrogenic opioid and benzodiazepine withdrawal (expected after 5 or more days of infusions)",
+       "correct": true,
+       "why": "Score with WAT-1."
+      },
+      {
+       "t": "New infection only",
+       "correct": false,
+       "why": "Consider it, but the pattern fits withdrawal."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What is the pharmacist role?",
+     "options": [
+      {
+       "t": "Write a wean plan, often with enteral methadone and lorazepam, and taper with scores",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Stop everything at once",
+       "correct": false,
+       "why": "Causes withdrawal."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Plan"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**5+ days of drips: expect withdrawal. WAT-1 and a wean.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "pi08",
+   "title": "Everyday pediatric doses and fluids",
+   "setting": "Pediatrics floor · admission orders",
+   "topics": [
+    "Pediatrics",
+    "Anchors"
+   ],
+   "stem": "A 20 kg child admitted for dehydration.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Maintenance fluid rate by Holliday Segar (4/2/1)?",
+     "options": [
+      {
+       "t": "60 mL/h: 40 for the first 10 kg + 20 for the next 10 kg",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "20 mL/h",
+       "correct": false,
+       "why": "Recheck the rule."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    },
+    {
+     "q": "Which fluid does AAP 2018 recommend for most hospitalized children?",
+     "options": [
+      {
+       "t": "Isotonic fluid with appropriate potassium and dextrose",
+       "correct": true,
+       "why": "Hypotonic fluids raised hyponatremia."
+      },
+      {
+       "t": "Hypotonic 0.2% saline",
+       "correct": false,
+       "why": "Not recommended for most."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Fluid"
+    },
+    {
+     "q": "Acetaminophen and ibuprofen doses for 20 kg?",
+     "options": [
+      {
+       "t": "Acetaminophen 300 mg every 6 hours (15 mg/kg); ibuprofen 200 mg every 6 to 8 hours (10 mg/kg)",
+       "correct": true,
+       "why": "Ibuprofen from 6 months of age."
+      },
+      {
+       "t": "Acetaminophen 1,000 mg",
+       "correct": false,
+       "why": "Adult dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Math"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**4/2/1, isotonic fluids, APAP 15 mg/kg, ibuprofen 10 mg/kg.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Feld LG, et al. AAP clinical practice guideline: maintenance IV fluids in children. Pediatrics 2018;142:e20183083",
+     "url": "https://doi.org/10.1542/peds.2018-3083",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "pi09",
+   "title": "Pediatric poisonings",
+   "setting": "ED · toddler ingestion",
+   "topics": [
+    "Toxicology",
+    "Pediatrics"
+   ],
+   "stem": "A toddler may have swallowed a grandparent's glipizide.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Beyond dextrose, which antidote prevents repeated lows?",
+     "options": [
+      {
+       "t": "Octreotide",
+       "correct": true,
+       "why": "Blocks insulin release from the pancreas."
+      },
+      {
+       "t": "Naloxone",
+       "correct": false,
+       "why": "Opioids."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Antidote"
+    },
+    {
+     "q": "Who do you call for help?",
+     "options": [
+      {
+       "t": "Poison Control: 1 800 222 1222",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "No one",
+       "correct": false,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Resource"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Sulfonylurea in a child: dextrose + octreotide, admit, call Poison Control.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's pediatric code sheet, drip library, DKA and sedation wean protocols (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
