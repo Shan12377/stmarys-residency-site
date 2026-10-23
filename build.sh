@@ -22,6 +22,7 @@ title: St. Mary's Virtual Residency
 {new}
 
 ## My Tools
+- <a href="/tools/qbank" target="_blank">Think Like a Pharmacist (question bank)</a>
 - <a href="/tools/verify_sim" target="_blank">Verification Simulator (orders and IV room)</a>
 - <a href="/tools/intervention_log" target="_blank">Intervention Log</a>
 - <a href="/tools/mtm_clinical_workbench" target="_blank">MTM Clinical Workbench</a>
@@ -41,6 +42,8 @@ sed 's/MTM_Clinical_Workbench\.html/mtm_clinical_workbench.html/g' "$G/src/tools
 sed 's/CMR_Command_Center\.html/cmr_command_center.html/g' "$G/src/tools/MTM_Clinical_Workbench.html" > public/tools/mtm_clinical_workbench.html
 cp "$G/src/tools/verify_sim.html" public/tools/verify_sim.html
 cp "$G/src/tools/intervention_log.html" public/tools/intervention_log.html
+cp "$G/src/tools/qbank.html" public/tools/qbank.html
+cp -r "$G/src/qbank" public/qbank
 echo '{"version":1,"include":["/api/*"],"exclude":[]}' > public/_routes.json
 rm -rf "$G/public" && cp -r public "$G/public"
 echo "built $(find "$G/public" -name '*.html' | wc -l) pages"

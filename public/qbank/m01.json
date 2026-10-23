@@ -1,0 +1,3017 @@
+{
+ "id": "m01",
+ "title": "Module 1 · Labor & Delivery",
+ "intro": "Severe blood pressure, magnesium, oxytocin, postpartum hemorrhage, GBS, intraamniotic infection, steroids, tocolysis, Rh, aspirin, induction, diabetes, and pregnancy and breastfeeding safety.",
+ "cases": [
+  {
+   "id": "ld01",
+   "title": "Is this blood pressure an emergency?",
+   "setting": "L&D triage · 11:40 p.m. · nurse call",
+   "topics": [
+    "Hypertension",
+    "Thresholds"
+   ],
+   "stem": "A nurse calls: \"My patient at 35 weeks has a BP of 164/104, repeated 15 minutes later at 166/106. The resident wants to know if we need to treat now.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What makes BP in pregnancy \"severe range\" and urgent to treat?",
+     "options": [
+      {
+       "t": "Systolic 160 or higher, or diastolic 110 or higher, lasting 15 minutes or more",
+       "correct": true,
+       "why": "Either number counts. 166 systolic on two readings 15 minutes apart qualifies even though the diastolic is under 110 (ACOG CO 767)."
+      },
+      {
+       "t": "Both systolic 160 or higher AND diastolic 110 or higher",
+       "correct": false,
+       "why": "It is either one, not both. Waiting for both delays treatment."
+      },
+      {
+       "t": "Any BP above 140/90",
+       "correct": false,
+       "why": "140/90 defines hypertension in pregnancy, but the urgent treatment threshold is 160/110."
+      },
+      {
+       "t": "Only if she has a headache",
+       "correct": false,
+       "why": "Symptoms add concern, but the numbers alone qualify."
+      }
+     ],
+     "teach": "Severe range BP raises stroke risk for the mother. That is why the clock matters.",
+     "where": "Vital signs flowsheet in the chart. Ask the nurse for the exact times of both readings.",
+     "kind": "Recognize"
+    },
+    {
+     "q": "How fast should treatment start once severe range BP is confirmed?",
+     "options": [
+      {
+       "t": "Within 30 to 60 minutes",
+       "correct": true,
+       "why": "ACOG CO 767: treat as soon as possible, within 30 to 60 minutes of confirmed severe range BP."
+      },
+      {
+       "t": "Within 4 hours",
+       "correct": false,
+       "why": "Too slow. Stroke risk rises with each hour of severe hypertension."
+      },
+      {
+       "t": "Only after a 24 hour urine protein",
+       "correct": false,
+       "why": "Diagnosis workup never delays treatment of severe BP."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "Which three drugs are first line for acute severe hypertension in pregnancy?",
+     "options": [
+      {
+       "t": "IV labetalol",
+       "correct": true,
+       "why": "First line (ACOG CO 767)."
+      },
+      {
+       "t": "IV hydralazine",
+       "correct": true,
+       "why": "First line (ACOG CO 767)."
+      },
+      {
+       "t": "Immediate release oral nifedipine",
+       "correct": true,
+       "why": "First line, and useful when there is no IV access (ACOG CO 767)."
+      },
+      {
+       "t": "IV enalaprilat",
+       "correct": false,
+       "why": "ACE inhibitors are contraindicated in pregnancy (fetal kidney injury)."
+      },
+      {
+       "t": "Sublingual nifedipine",
+       "correct": false,
+       "why": "Never sublingual: the BP can crash, which drops blood flow to the baby."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Choose drugs",
+     "type": "multi"
+    }
+   ],
+   "call": "**S:** Pharmacist calling about [patient] in L&D. **B:** 35 weeks, BP 164/104 then 166/106 fifteen minutes apart. **A:** That is persistent severe range BP, which ACOG says to treat within 30 to 60 minutes. **R:** I recommend labetalol 20 mg IV over 2 minutes now with a BP check in 10 minutes, unless she has asthma or heart block, in which case hydralazine or immediate release nifedipine.",
+   "monitor": "",
+   "pearl": "**160 OR 110, for 15 minutes, treat within 60.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 767: Emergent therapy for acute onset, severe hypertension during pregnancy and the postpartum period. Obstet Gynecol 2019",
+     "url": "https://doi.org/10.1097/AOG.0000000000003075",
+     "mark": "✅"
+    },
+    {
+     "t": "ACOG Practice Bulletin 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260",
+     "url": "https://doi.org/10.1097/AOG.0000000000003891",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's L&D order sets and policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ld02",
+   "title": "Labetalol step by step",
+   "setting": "L&D · severe range BP",
+   "topics": [
+    "Hypertension",
+    "Labetalol"
+   ],
+   "stem": "Labetalol 20 mg IV was given 10 minutes ago. BP now 162/108. No asthma, heart rate 88.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the next labetalol step?",
+     "options": [
+      {
+       "t": "Labetalol 40 mg IV over 2 minutes, recheck BP in 10 minutes",
+       "correct": true,
+       "why": "ACOG algorithm: 20 mg, then 40 mg, then 80 mg, each followed by a BP check at 10 minutes."
+      },
+      {
+       "t": "Repeat 20 mg",
+       "correct": false,
+       "why": "The dose escalates when BP stays high."
+      },
+      {
+       "t": "Labetalol 80 mg now",
+       "correct": false,
+       "why": "Skips the 40 mg step."
+      },
+      {
+       "t": "Wait 60 minutes and recheck",
+       "correct": false,
+       "why": "Labetalol IV works within minutes; the recheck is at 10 minutes."
+      }
+     ],
+     "teach": "Why 10 minutes: IV labetalol blocks alpha 1 and beta receptors quickly (onset about 2 to 5 minutes), so you know by 10 minutes if a dose worked.",
+     "where": "",
+     "kind": "Next dose"
+    },
+    {
+     "q": "After 40 mg the BP is still 160/106. Then 80 mg is given, and 10 minutes later BP is 161/104. What now?",
+     "options": [
+      {
+       "t": "Switch to IV hydralazine (10 mg over 2 minutes)",
+       "correct": true,
+       "why": "If BP stays severe after the 80 mg labetalol step, ACOG switches drugs rather than keep pushing labetalol."
+      },
+      {
+       "t": "Give labetalol 160 mg",
+       "correct": false,
+       "why": "Not part of the algorithm; the max cumulative IV labetalol is 300 mg."
+      },
+      {
+       "t": "Stop treatment; she has had enough drug",
+       "correct": false,
+       "why": "Severe BP still needs treatment."
+      }
+     ],
+     "teach": "If two drug classes fail, ACOG advises urgent consultation with maternal fetal medicine, internal medicine, anesthesia or critical care.",
+     "where": "",
+     "kind": "Switch"
+    },
+    {
+     "q": "Which patients should NOT get labetalol?",
+     "options": [
+      {
+       "t": "Asthma",
+       "correct": true,
+       "why": "Labetalol is a non selective beta blocker and can trigger bronchospasm."
+      },
+      {
+       "t": "Heart block or significant bradycardia",
+       "correct": true,
+       "why": "Beta blockade slows conduction further."
+      },
+      {
+       "t": "Decompensated heart failure",
+       "correct": true,
+       "why": "Beta blockade can worsen acute heart failure."
+      },
+      {
+       "t": "Gestational diabetes",
+       "correct": false,
+       "why": "Not a contraindication to labetalol for severe BP."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Contraindications",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "BP every 10 minutes during dosing, maternal heart rate, fetal heart rate tracing (neonatal bradycardia is possible).",
+   "pearl": "**Labetalol: 20, 40, 80, check every 10. Still high, switch to hydralazine.**",
+   "alternatives": "Asthma, heart block or heart failure: use hydralazine or immediate release nifedipine.",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 767: Emergent therapy for acute onset, severe hypertension during pregnancy and the postpartum period. Obstet Gynecol 2019",
+     "url": "https://doi.org/10.1097/AOG.0000000000003075",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's L&D order sets and policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ld03",
+   "title": "Hydralazine timing",
+   "setting": "L&D · BP still severe",
+   "topics": [
+    "Hypertension",
+    "Hydralazine"
+   ],
+   "stem": "A patient with asthma has BP 168/110. The team chooses IV hydralazine.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the starting dose and when do you recheck BP?",
+     "options": [
+      {
+       "t": "Hydralazine 5 to 10 mg IV over 2 minutes, recheck in 20 minutes",
+       "correct": true,
+       "why": "ACOG CO 767. Hydralazine relaxes arterial muscle directly and takes longer to peak (10 to 20 minutes), so the check is at 20 minutes."
+      },
+      {
+       "t": "Hydralazine 20 mg IV push, recheck in 5 minutes",
+       "correct": false,
+       "why": "Too much, too soon to judge."
+      },
+      {
+       "t": "Hydralazine 10 mg PO",
+       "correct": false,
+       "why": "This is an IV regimen for acute severe BP."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "BP is still severe 20 minutes after hydralazine 10 mg. What does ACOG recommend next?",
+     "options": [
+      {
+       "t": "Hydralazine 10 mg IV again, recheck in 20 minutes; if still high, switch to labetalol (only if no asthma) or seek consultation",
+       "correct": true,
+       "why": "For this asthmatic patient labetalol is a poor choice, so consultation and nifedipine are better next options."
+      },
+      {
+       "t": "Labetalol 20 mg right away regardless of asthma",
+       "correct": false,
+       "why": "Asthma makes labetalol risky."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Next step"
+    },
+    {
+     "q": "What side effects do you warn the nurse about with hydralazine?",
+     "options": [
+      {
+       "t": "Maternal hypotension, reflex tachycardia, headache",
+       "correct": true,
+       "why": "Direct vasodilation drops BP and the heart speeds up to compensate."
+      },
+      {
+       "t": "Fetal heart rate changes if maternal BP drops too fast",
+       "correct": true,
+       "why": "The placenta cannot regulate its own blood flow, so a fast maternal drop reduces flow to the baby."
+      },
+      {
+       "t": "Bronchospasm",
+       "correct": false,
+       "why": "That is a labetalol concern, not hydralazine."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Hydralazine: check at 20 minutes, watch for a fast drop and tachycardia.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 767: Emergent therapy for acute onset, severe hypertension during pregnancy and the postpartum period. Obstet Gynecol 2019",
+     "url": "https://doi.org/10.1097/AOG.0000000000003075",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld04",
+   "title": "No IV access",
+   "setting": "L&D · IV lost",
+   "topics": [
+    "Hypertension",
+    "Nifedipine"
+   ],
+   "stem": "BP 170/112. The IV just infiltrated and a new one will take time.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which first line option needs no IV?",
+     "options": [
+      {
+       "t": "Immediate release oral nifedipine 10 mg",
+       "correct": true,
+       "why": "ACOG CO 767 lists immediate release oral nifedipine as first line."
+      },
+      {
+       "t": "Nifedipine extended release 30 mg",
+       "correct": false,
+       "why": "Extended release is for chronic control, too slow for an emergency."
+      },
+      {
+       "t": "Sublingual nifedipine",
+       "correct": false,
+       "why": "Never sublingual or bitten: the whole dose absorbs at once and BP can crash."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Choose"
+    },
+    {
+     "q": "When do you recheck BP after the oral dose, and what is the next dose?",
+     "options": [
+      {
+       "t": "Recheck in 20 minutes; if still severe give 20 mg, recheck in 20 minutes, then 20 mg again; if still high, switch to labetalol",
+       "correct": true,
+       "why": "Oral nifedipine must be swallowed and absorbed (about 15 to 20 minutes), so the check is at 20 minutes."
+      },
+      {
+       "t": "Recheck in 5 minutes; repeat 10 mg",
+       "correct": false,
+       "why": "Too early to judge an oral dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "She is also on magnesium sulfate. What does the magnesium label warn about?",
+     "options": [
+      {
+       "t": "Caution when combined with nifedipine (both lower BP and can add neuromuscular effects)",
+       "correct": true,
+       "why": "The magnesium label warns against combining it with calcium channel blockers such as nifedipine. ACOG CO 767 notes the combination is still used for severe BP because data do not show a higher risk of neuromuscular blockade; monitor BP, reflexes and breathing closely."
+      },
+      {
+       "t": "They can never be used together",
+       "correct": false,
+       "why": "They are often used together with close monitoring."
+      },
+      {
+       "t": "No interaction",
+       "correct": false,
+       "why": "The label lists a caution."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Nifedipine IR: swallow it, check at 20.** Never under the tongue.",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 767: Emergent therapy for acute onset, severe hypertension during pregnancy and the postpartum period. Obstet Gynecol 2019",
+     "url": "https://doi.org/10.1097/AOG.0000000000003075",
+     "mark": "✅"
+    },
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld05",
+   "title": "Home lisinopril at 30 weeks",
+   "setting": "Admission med reconciliation · L&D",
+   "topics": [
+    "Hypertension",
+    "Pregnancy safety"
+   ],
+   "stem": "A 30 week pregnant patient with chronic hypertension lists home lisinopril 20 mg daily. She did not know she was pregnant until 14 weeks.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "ACE inhibitors (and ARBs) are contraindicated in pregnancy",
+       "correct": true,
+       "why": "They can cause fetal kidney injury, low amniotic fluid and growth restriction."
+      },
+      {
+       "t": "The dose is too low",
+       "correct": false,
+       "why": "The drug itself is the issue, not the dose."
+      },
+      {
+       "t": "No problem; continue home meds",
+       "correct": false,
+       "why": "This one must change."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Spot it"
+    },
+    {
+     "q": "Which oral agents are preferred for chronic hypertension in pregnancy?",
+     "options": [
+      {
+       "t": "Labetalol",
+       "correct": true,
+       "why": "Preferred first line."
+      },
+      {
+       "t": "Nifedipine extended release",
+       "correct": true,
+       "why": "Preferred first line."
+      },
+      {
+       "t": "Methyldopa",
+       "correct": true,
+       "why": "Safe, but now second line (more side effects such as sedation)."
+      },
+      {
+       "t": "Atenolol",
+       "correct": false,
+       "why": "Avoided: linked to fetal growth restriction and bradycardia."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternatives",
+     "type": "multi"
+    },
+    {
+     "q": "What else do you do?",
+     "options": [
+      {
+       "t": "Tell the team about the earlier exposure so the obstetric team can review fetal monitoring (for example amniotic fluid)",
+       "correct": true,
+       "why": "Exposure after the first trimester is the main concern for ACE inhibitors."
+      },
+      {
+       "t": "Nothing else",
+       "correct": false,
+       "why": "The exposure should be documented and communicated."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Follow up"
+    }
+   ],
+   "call": "**S/B:** 30 weeks, chronic hypertension, home lisinopril 20 mg. **A:** ACE inhibitors are contraindicated in pregnancy. **R:** Stop lisinopril and start labetalol or nifedipine ER; please let the OB team know about the exposure so they can check amniotic fluid.",
+   "monitor": "",
+   "pearl": "**No \"prils\" or \"sartans\" in pregnancy.** Labetalol or nifedipine ER instead.",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACC: Antihypertensive medications in pregnancy and lactation (2026)",
+     "url": "https://www.acc.org/latest-in-cardiology/articles/2026/07/02/15/04/antihypertensive-medications-in-pregnancy-and-lactation",
+     "mark": "✅"
+    },
+    {
+     "t": "Pregnancy and Lactation page (residency Drug Hub)",
+     "url": "/drug-hub/pregnancy_lactation",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld06",
+   "title": "Postpartum severe BP while breastfeeding",
+   "setting": "Postpartum unit · day 2",
+   "topics": [
+    "Hypertension",
+    "Lactation"
+   ],
+   "stem": "Day 2 after delivery, BP 162/100 twice, 15 minutes apart. She is breastfeeding.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Do the severe range rules still apply after delivery?",
+     "options": [
+      {
+       "t": "Yes, the same thresholds and timing apply postpartum",
+       "correct": true,
+       "why": "ACOG CO 767 covers pregnancy and the postpartum period."
+      },
+      {
+       "t": "No, postpartum BP can wait for a clinic visit",
+       "correct": false,
+       "why": "Postpartum preeclampsia and stroke happen."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "For ongoing oral treatment while breastfeeding, which agents are preferred?",
+     "options": [
+      {
+       "t": "Labetalol",
+       "correct": true,
+       "why": "Preferred in breastfeeding."
+      },
+      {
+       "t": "Nifedipine ER",
+       "correct": true,
+       "why": "Preferred in breastfeeding."
+      },
+      {
+       "t": "Enalapril",
+       "correct": true,
+       "why": "After delivery, enalapril and captopril are preferred ACE inhibitors for breastfeeding mothers."
+      },
+      {
+       "t": "Atenolol",
+       "correct": false,
+       "why": "Avoid in breastfeeding (infant hypotension, cyanosis reported)."
+      }
+     ],
+     "teach": "The pregnancy rule (no ACE inhibitors) ends at delivery. Breastfeeding has its own list.",
+     "where": "",
+     "kind": "Choose",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Postpartum: same severe BP rules. Breastfeeding: labetalol, nifedipine ER, enalapril.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 767: Emergent therapy for acute onset, severe hypertension during pregnancy and the postpartum period. Obstet Gynecol 2019",
+     "url": "https://doi.org/10.1097/AOG.0000000000003075",
+     "mark": "✅"
+    },
+    {
+     "t": "ACC: Antihypertensive medications in pregnancy and lactation (2026)",
+     "url": "https://www.acc.org/latest-in-cardiology/articles/2026/07/02/15/04/antihypertensive-medications-in-pregnancy-and-lactation",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld07",
+   "title": "Verifying the magnesium order",
+   "setting": "L&D · preeclampsia with severe features",
+   "topics": [
+    "Magnesium",
+    "Verification"
+   ],
+   "stem": "Order: magnesium sulfate 6 g IV over 20 minutes, then 2 g/h. Patient 32 weeks, preeclampsia with severe features, SCr 0.7, urine output 60 mL/h, reflexes 2+.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is magnesium for here?",
+     "options": [
+      {
+       "t": "Preventing eclamptic seizures",
+       "correct": true,
+       "why": "Magnesium is the drug of choice for seizure prophylaxis in preeclampsia with severe features (ACOG PB 222)."
+      },
+      {
+       "t": "Lowering blood pressure",
+       "correct": false,
+       "why": "Magnesium is not an antihypertensive; BP still needs its own drugs."
+      },
+      {
+       "t": "Stopping labor",
+       "correct": false,
+       "why": "Not its role here."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Indication"
+    },
+    {
+     "q": "Is the dose right?",
+     "options": [
+      {
+       "t": "Yes: load 4 to 6 g over 15 to 20 minutes, then 1 to 2 g/h",
+       "correct": true,
+       "why": "Matches ACOG PB 222. Kidney function and urine output are normal, so no adjustment."
+      },
+      {
+       "t": "No, the load should be 10 g IV",
+       "correct": false,
+       "why": "10 g is the IM regimen (5 g in each buttock), not IV."
+      },
+      {
+       "t": "No, the maintenance should be 5 g/h",
+       "correct": false,
+       "why": "Far too high."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Which safety checks do you make before verifying?",
+     "options": [
+      {
+       "t": "Premixed bag and a dedicated pump channel",
+       "correct": true,
+       "why": "Prevents mixing errors and accidental boluses."
+      },
+      {
+       "t": "Loading dose and maintenance programmed separately (bolus feature or separate bag), with an independent double check",
+       "correct": true,
+       "why": "The classic error is the loading bag running at the maintenance setting, or a large bag running wide open (ISMP)."
+      },
+      {
+       "t": "Calcium gluconate 1 g available at the bedside",
+       "correct": true,
+       "why": "The antidote should be ready before you start."
+      },
+      {
+       "t": "Run it on the same channel as oxytocin to save pumps",
+       "correct": false,
+       "why": "Never. Look alike bags and shared lines cause mix ups."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety",
+     "type": "multi"
+    },
+    {
+     "q": "How long does magnesium usually continue?",
+     "options": [
+      {
+       "t": "24 hours after delivery (or after the last seizure)",
+       "correct": true,
+       "why": "ACOG PB 222."
+      },
+      {
+       "t": "Until discharge",
+       "correct": false,
+       "why": "Too long."
+      },
+      {
+       "t": "Only until delivery",
+       "correct": false,
+       "why": "Seizures can happen after delivery, so it continues."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Duration"
+    }
+   ],
+   "call": "",
+   "monitor": "Deep tendon reflexes, respiratory rate, urine output (at least 100 mL per 4 hours), mental status, oxygen saturation; magnesium levels if kidney function is impaired or toxicity is suspected.",
+   "pearl": "**4 to 6 load, 1 to 2 an hour, 24 hours after delivery. Calcium at the bedside.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260",
+     "url": "https://doi.org/10.1097/AOG.0000000000003891",
+     "mark": "✅"
+    },
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "ISMP: High alert medications in acute care settings (TXA added 2024)",
+     "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld08",
+   "title": "Reflexes gone, breathing slow",
+   "setting": "L&D · 2:10 a.m. · nurse call",
+   "topics": [
+    "Magnesium",
+    "Toxicity"
+   ],
+   "stem": "On magnesium 2 g/h. Nurse: \"Reflexes are absent, respiratory rate 11, she is drowsy, urine output 15 mL/h for 2 hours.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is happening?",
+     "options": [
+      {
+       "t": "Magnesium toxicity, made worse by low urine output",
+       "correct": true,
+       "why": "Magnesium leaves only through the kidneys. Low urine output lets it build up."
+      },
+      {
+       "t": "Normal magnesium effect",
+       "correct": false,
+       "why": "Lost reflexes and slow breathing are toxicity signs."
+      },
+      {
+       "t": "An eclamptic seizure",
+       "correct": false,
+       "why": "No seizure is described."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "What do you recommend first?",
+     "options": [
+      {
+       "t": "Stop the magnesium infusion now",
+       "correct": true,
+       "why": "First step every time."
+      },
+      {
+       "t": "Calcium gluconate 1 g IV (10 mL of 10%) over about 3 minutes",
+       "correct": true,
+       "why": "Calcium competes with magnesium at nerves and muscles and reverses the effect quickly."
+      },
+      {
+       "t": "Support breathing and call the OB and anesthesia",
+       "correct": true,
+       "why": "Airway support may be needed."
+      },
+      {
+       "t": "Lower the rate to 1 g/h and recheck in an hour",
+       "correct": false,
+       "why": "With these signs, stop the infusion; do not just lower it."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act",
+     "type": "multi"
+    },
+    {
+     "q": "Why did reflexes disappear before breathing slowed?",
+     "options": [
+      {
+       "t": "Reflexes weaken at lower levels (about 4 mEq/L) than breathing problems (about 10 mEq/L)",
+       "correct": true,
+       "why": "That is why nurses check reflexes: they are the early alarm (FDA label)."
+      },
+      {
+       "t": "Reflexes and breathing fail at the same level",
+       "correct": false,
+       "why": "Reflexes go first."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Why"
+    },
+    {
+     "q": "What labs do you want?",
+     "options": [
+      {
+       "t": "STAT serum magnesium and creatinine",
+       "correct": true,
+       "why": "Confirms the level and the cause."
+      },
+      {
+       "t": "Lipase",
+       "correct": false,
+       "why": "Not related."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Labs"
+    }
+   ],
+   "call": "**S:** Pharmacist calling about [patient] on magnesium. **B:** 2 g/h, reflexes absent, RR 11, urine 15 mL/h for 2 hours. **A:** This looks like magnesium toxicity from poor kidney clearance. **R:** Stop the infusion now, give calcium gluconate 1 g IV over 3 minutes, support breathing, STAT magnesium level and creatinine. When she is stable, restart only at a lower rate if seizure prophylaxis is still needed.",
+   "monitor": "",
+   "pearl": "**Reflexes go before breathing. Stop the drip, give calcium.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "ACOG Practice Bulletin 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260",
+     "url": "https://doi.org/10.1097/AOG.0000000000003891",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld09",
+   "title": "Magnesium with poor kidneys",
+   "setting": "L&D · oliguria",
+   "topics": [
+    "Magnesium",
+    "Renal dosing"
+   ],
+   "stem": "New preeclampsia patient, SCr 1.9 mg/dL, urine output 20 mL/h. Magnesium is ordered 6 g load then 2 g/h.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the FDA label recommend for severe renal impairment?",
+     "options": [
+      {
+       "t": "Load 4 g, then 1 g/h, maximum 20 g per 48 hours, with serum magnesium levels",
+       "correct": true,
+       "why": "Because the kidneys are the only route out."
+      },
+      {
+       "t": "No load; 2 g/h",
+       "correct": false,
+       "why": "The load still matters for seizure protection."
+      },
+      {
+       "t": "Avoid magnesium completely",
+       "correct": false,
+       "why": "It is still the best seizure prophylaxis; adjust and monitor."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Adjust"
+    },
+    {
+     "q": "What target level does the label give for eclampsia?",
+     "options": [
+      {
+       "t": "2.5 to 5 mEq/L (3 to 6 mg/dL)",
+       "correct": true,
+       "why": "FDA label. Check which units your lab reports."
+      },
+      {
+       "t": "10 to 12 mEq/L",
+       "correct": false,
+       "why": "That is near the respiratory paralysis range."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Target"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Bad kidneys: 4 g, then 1 g/h, check levels.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld10",
+   "title": "Seizure while on magnesium",
+   "setting": "L&D · eclampsia",
+   "topics": [
+    "Magnesium",
+    "Emergency"
+   ],
+   "stem": "A patient on magnesium 2 g/h has a seizure.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the next magnesium step?",
+     "options": [
+      {
+       "t": "An extra 2 to 4 g IV over 5 minutes",
+       "correct": true,
+       "why": "ACOG PB 222. Then continue the infusion."
+      },
+      {
+       "t": "A new full 6 g load over 2 minutes",
+       "correct": false,
+       "why": "Too much too fast."
+      },
+      {
+       "t": "Stop magnesium and give only lorazepam",
+       "correct": false,
+       "why": "Magnesium is the primary treatment for eclamptic seizures."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What else do you think about?",
+     "options": [
+      {
+       "t": "Airway and safety, BP treatment if severe, and checking for toxicity before giving more",
+       "correct": true,
+       "why": "Check reflexes and breathing first so you do not push a toxic patient higher."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Think wider"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Seizure on magnesium: 2 to 4 g more over 5 minutes.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260",
+     "url": "https://doi.org/10.1097/AOG.0000000000003891",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld11",
+   "title": "Magnesium and myasthenia gravis",
+   "setting": "L&D · med history",
+   "topics": [
+    "Magnesium",
+    "Contraindications"
+   ],
+   "stem": "A patient with preeclampsia with severe features has myasthenia gravis on pyridostigmine.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Why is magnesium dangerous here?",
+     "options": [
+      {
+       "t": "Magnesium blocks neuromuscular transmission and can cause a myasthenic crisis with respiratory failure",
+       "correct": true,
+       "why": "Myasthenia gravis is a contraindication on the label."
+      },
+      {
+       "t": "Magnesium interacts with pyridostigmine absorption only",
+       "correct": false,
+       "why": "The danger is neuromuscular blockade."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Mechanism"
+    },
+    {
+     "q": "What do you do?",
+     "options": [
+      {
+       "t": "Call the OB team to choose a different seizure plan with neurology input",
+       "correct": true,
+       "why": "This is a team decision; give them the contraindication clearly."
+      },
+      {
+       "t": "Verify with a lower dose",
+       "correct": false,
+       "why": "Lower dose is still risky."
+      }
+     ],
+     "teach": "When the first line drug is contraindicated, your job is to say so clearly and help the team pick a plan, not to pick the drug alone.",
+     "where": "",
+     "kind": "Decide"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Myasthenia gravis: no magnesium.**",
+   "alternatives": "Alternative seizure prophylaxis is a team decision with neurology ⚠️ [VERIFY local practice].",
+   "sources": [
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld12",
+   "title": "Magnesium for fetal brain protection",
+   "setting": "L&D · preterm labor at 29 weeks",
+   "topics": [
+    "Magnesium",
+    "Neuroprotection"
+   ],
+   "stem": "A patient at 29 weeks is expected to deliver within hours. The OB orders magnesium \"for neuroprotection.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is this for?",
+     "options": [
+      {
+       "t": "Lowering the risk of cerebral palsy in babies born before 32 weeks",
+       "correct": true,
+       "why": "ACOG CO 455 supports magnesium before anticipated early preterm birth for fetal neuroprotection."
+      },
+      {
+       "t": "Stopping contractions",
+       "correct": false,
+       "why": "Magnesium is not used as a tocolytic for this purpose."
+      },
+      {
+       "t": "Seizure prevention for the mother",
+       "correct": false,
+       "why": "That is the preeclampsia use."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Indication"
+    },
+    {
+     "q": "Which regimen is used in one common protocol (based on the BEAM trial)?",
+     "options": [
+      {
+       "t": "6 g IV over 20 to 30 minutes, then 2 g/h for up to 12 hours or until delivery",
+       "correct": true,
+       "why": "One protocol example. Regimens differ between hospitals, so follow St. Mary's order set."
+      },
+      {
+       "t": "4 g load then 1 g/h for 5 days",
+       "correct": false,
+       "why": "Magnesium should not run beyond 5 to 7 days in pregnancy."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Before 32 weeks, magnesium protects the baby's brain.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 455: Magnesium sulfate before anticipated preterm birth for neuroprotection. Obstet Gynecol 2010;115:669-671",
+     "url": "https://doi.org/10.1097/AOG.0b013e3181d4ffa5",
+     "mark": "✅"
+    },
+    {
+     "t": "MAHEC protocol: magnesium for fetal neuroprotection (BEAM based regimen)",
+     "url": "https://mahec.net/images/uploads/publications/Magnesium_for_fetal_neuroprotection-revised.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's L&D order sets and policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ld13",
+   "title": "Magnesium running for a week",
+   "setting": "Antepartum unit · day 6",
+   "topics": [
+    "Magnesium",
+    "Safety"
+   ],
+   "stem": "A patient has been on magnesium for 6 days for preterm labor at another hospital and was transferred.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the FDA label warn about long magnesium courses in pregnancy?",
+     "options": [
+      {
+       "t": "Use beyond 5 to 7 days can cause fetal low calcium and bone problems, including fractures",
+       "correct": true,
+       "why": "FDA label warning (2013)."
+      },
+      {
+       "t": "No limit exists",
+       "correct": false,
+       "why": "There is a labeled limit."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    },
+    {
+     "q": "What do you do?",
+     "options": [
+      {
+       "t": "Flag the duration to the OB and ask about the goal of therapy",
+       "correct": true,
+       "why": "This is exactly the catch a pharmacist makes on transfer."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Magnesium: not beyond 5 to 7 days in pregnancy.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld14",
+   "title": "Oxytocin and the pump",
+   "setting": "L&D · induction",
+   "topics": [
+    "Oxytocin",
+    "High alert drugs"
+   ],
+   "stem": "An induction with oxytocin is running. The nurse reports 6 contractions in 10 minutes and a worrying fetal heart tracing.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is this called and what is the usual first move?",
+     "options": [
+      {
+       "t": "Tachysystole; the team usually lowers or stops the oxytocin",
+       "correct": true,
+       "why": "More than 5 contractions in 10 minutes. Oxytocin is an ISMP high alert drug."
+      },
+      {
+       "t": "Normal labor; increase the rate",
+       "correct": false,
+       "why": "Increasing would worsen it."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recognize"
+    },
+    {
+     "q": "Which safety practices protect oxytocin infusions?",
+     "options": [
+      {
+       "t": "One standard concentration in the smart pump library",
+       "correct": true,
+       "why": "Removes math and mixing errors."
+      },
+      {
+       "t": "Keeping oxytocin bags apart from magnesium bags and checking the label every time",
+       "correct": true,
+       "why": "Look alike bags on the same unit have caused mix ups."
+      },
+      {
+       "t": "Tracking total volume on long, high dose infusions",
+       "correct": true,
+       "why": "Oxytocin looks like antidiuretic hormone and can cause water retention and low sodium."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "Contraction pattern, fetal heart rate, fluid balance and sodium with long, high dose infusions.",
+   "pearl": "**Oxytocin: one concentration, one pump library, never next to magnesium.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ISMP: High alert medications in acute care settings (TXA added 2024)",
+     "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's L&D order sets and policies (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ld15",
+   "title": "Postpartum hemorrhage: first drug",
+   "setting": "L&D · just delivered · heavy bleeding",
+   "topics": [
+    "PPH"
+   ],
+   "stem": "Ten minutes after a vaginal delivery the patient is bleeding heavily. The uterus feels soft (uterine atony).",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the first line drug?",
+     "options": [
+      {
+       "t": "Oxytocin: 10 to 40 units in 500 to 1,000 mL IV, or 10 units IM",
+       "correct": true,
+       "why": "First line for atony (ACOG PB 183). It works in 1 to 2 minutes IV."
+      },
+      {
+       "t": "Methylergonovine first",
+       "correct": false,
+       "why": "Second line, and contraindicated in hypertension."
+      },
+      {
+       "t": "Tranexamic acid alone",
+       "correct": false,
+       "why": "TXA helps clotting but does not make the uterus contract; it is added, not a replacement."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "First line"
+    },
+    {
+     "q": "Why does making the uterus contract stop the bleeding?",
+     "options": [
+      {
+       "t": "The contracting muscle squeezes shut the open vessels where the placenta was attached",
+       "correct": true,
+       "why": "That is why uterotonics come first."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Mechanism"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Atony = oxytocin first.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168-e186",
+     "url": "https://doi.org/10.1097/AOG.0000000000002351",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld16",
+   "title": "Methylergonovine in a preeclamptic patient",
+   "setting": "L&D · PPH continues",
+   "topics": [
+    "PPH",
+    "Contraindications"
+   ],
+   "stem": "Bleeding continues despite oxytocin. The OB asks for methylergonovine. The patient had preeclampsia this pregnancy. BP 152/98.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Is methylergonovine safe here?",
+     "options": [
+      {
+       "t": "No: it is contraindicated in hypertension and preeclampsia",
+       "correct": true,
+       "why": "It constricts blood vessels as well as the uterus and can spike BP to stroke range."
+      },
+      {
+       "t": "Yes, at half dose",
+       "correct": false,
+       "why": "Lower dose does not remove the risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Contraindication"
+    },
+    {
+     "q": "What can you offer instead?",
+     "options": [
+      {
+       "t": "Carboprost 250 mcg IM, if she has no asthma",
+       "correct": true,
+       "why": "ACOG PB 183."
+      },
+      {
+       "t": "Misoprostol 600 to 1,000 mcg once",
+       "correct": true,
+       "why": "ACOG PB 183."
+      },
+      {
+       "t": "Tranexamic acid 1 g IV over 10 minutes if within 3 hours of birth",
+       "correct": true,
+       "why": "WOMAN trial."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternatives",
+     "type": "multi"
+    },
+    {
+     "q": "Methylergonovine also has a boxed warning about which drugs?",
+     "options": [
+      {
+       "t": "Strong CYP3A4 inhibitors (for example certain HIV protease inhibitors, clarithromycin, azole antifungals)",
+       "correct": true,
+       "why": "They raise methylergonovine levels and can cause severe vasospasm and ischemia (label boxed warning)."
+      },
+      {
+       "t": "Acetaminophen",
+       "correct": false,
+       "why": "No such warning."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    }
+   ],
+   "call": "**S/B:** PPH after oxytocin, history of preeclampsia, BP 152/98. **A:** Methylergonovine is contraindicated with hypertension and preeclampsia. **R:** Carboprost 250 mcg IM if no asthma, or misoprostol 800 mcg, and TXA 1 g IV over 10 minutes since we are within 3 hours of birth. Would you like those?",
+   "monitor": "",
+   "pearl": "**No \"Methergine\" with high BP.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168-e186",
+     "url": "https://doi.org/10.1097/AOG.0000000000002351",
+     "mark": "✅"
+    },
+    {
+     "t": "Methylergonovine prescribing information (boxed warning: CYP3A4 inhibitors), DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=methylergonovine",
+     "mark": "✅"
+    },
+    {
+     "t": "WOMAN Trial Collaborators. Early tranexamic acid in postpartum haemorrhage. Lancet 2017;389:2105-2116",
+     "url": "https://doi.org/10.1016/S0140-6736(17)30638-4",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld17",
+   "title": "Carboprost and asthma",
+   "setting": "L&D · PPH",
+   "topics": [
+    "PPH",
+    "Contraindications"
+   ],
+   "stem": "A patient with moderate persistent asthma is bleeding after delivery. BP 118/72. Oxytocin is running.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which second line drug do you avoid?",
+     "options": [
+      {
+       "t": "Carboprost",
+       "correct": true,
+       "why": "It is a prostaglandin F2 alpha drug that squeezes airway muscle too and can cause severe bronchospasm."
+      },
+      {
+       "t": "Methylergonovine",
+       "correct": false,
+       "why": "Her BP is normal, so methylergonovine is reasonable."
+      },
+      {
+       "t": "Misoprostol",
+       "correct": false,
+       "why": "Misoprostol is a prostaglandin E1 drug and is not a bronchoconstrictor concern here."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Contraindication"
+    },
+    {
+     "q": "What is the carboprost dosing limit you should know for other patients?",
+     "options": [
+      {
+       "t": "250 mcg IM every 15 to 90 minutes, maximum 8 doses (2 mg)",
+       "correct": true,
+       "why": "ACOG PB 183."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**No carboprost in asthma.** \"Carbo\" closes the airway.",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168-e186",
+     "url": "https://doi.org/10.1097/AOG.0000000000002351",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld18",
+   "title": "Asthma AND hypertension",
+   "setting": "L&D · PPH",
+   "topics": [
+    "PPH",
+    "Contraindications"
+   ],
+   "stem": "A patient with asthma and preeclampsia is still bleeding after oxytocin, 90 minutes after birth.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which options remain?",
+     "options": [
+      {
+       "t": "Misoprostol 600 to 1,000 mcg once",
+       "correct": true,
+       "why": "Neither contraindication applies."
+      },
+      {
+       "t": "Tranexamic acid 1 g IV over 10 minutes",
+       "correct": true,
+       "why": "Within 3 hours of birth."
+      },
+      {
+       "t": "Methylergonovine",
+       "correct": false,
+       "why": "Contraindicated with preeclampsia."
+      },
+      {
+       "t": "Carboprost",
+       "correct": false,
+       "why": "Contraindicated with asthma."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Choose",
+     "type": "multi"
+    },
+    {
+     "q": "What side effects come with misoprostol?",
+     "options": [
+      {
+       "t": "Fever and shivering",
+       "correct": true,
+       "why": "Common and expected; warn the team so they do not assume infection right away."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Counsel"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Asthma + hypertension: misoprostol and TXA.** Mechanical steps (massage, balloon, surgery) are the team's next options.",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168-e186",
+     "url": "https://doi.org/10.1097/AOG.0000000000002351",
+     "mark": "✅"
+    },
+    {
+     "t": "WOMAN Trial Collaborators. Early tranexamic acid in postpartum haemorrhage. Lancet 2017;389:2105-2116",
+     "url": "https://doi.org/10.1016/S0140-6736(17)30638-4",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld19",
+   "title": "TXA: the 3 hour clock",
+   "setting": "L&D · PPH",
+   "topics": [
+    "PPH",
+    "Tranexamic acid"
+   ],
+   "stem": "Bleeding started 2 hours after birth. The team asks for tranexamic acid.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the dose?",
+     "options": [
+      {
+       "t": "1 g IV over 10 minutes; a second 1 g after 30 minutes if bleeding continues",
+       "correct": true,
+       "why": "WOMAN trial regimen."
+      },
+      {
+       "t": "1 g IV push over 1 minute",
+       "correct": false,
+       "why": "Give slowly over 10 minutes; fast pushes cause low BP."
+      },
+      {
+       "t": "10 g IV",
+       "correct": false,
+       "why": "Not a TXA dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Why does timing matter?",
+     "options": [
+      {
+       "t": "The benefit on death from bleeding was seen when given within 3 hours of birth",
+       "correct": true,
+       "why": "WOMAN trial (Lancet 2017). Check the time of birth before you verify."
+      },
+      {
+       "t": "TXA works best after 6 hours",
+       "correct": false,
+       "why": "Benefit was early."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "How does TXA work?",
+     "options": [
+      {
+       "t": "It blocks the breakdown of clots (antifibrinolytic), so new clots stay in place",
+       "correct": true,
+       "why": "It does not make the uterus contract; it supports clotting."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Mechanism"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**TXA: 1 g over 10 minutes, within 3 hours of birth.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "WOMAN Trial Collaborators. Early tranexamic acid in postpartum haemorrhage. Lancet 2017;389:2105-2116",
+     "url": "https://doi.org/10.1016/S0140-6736(17)30638-4",
+     "mark": "✅"
+    },
+    {
+     "t": "ACOG Practice Bulletin 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168-e186",
+     "url": "https://doi.org/10.1097/AOG.0000000000002351",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld20",
+   "title": "TXA in the wrong syringe",
+   "setting": "OR · cesarean delivery",
+   "topics": [
+    "PPH",
+    "Tranexamic acid",
+    "Safety"
+   ],
+   "stem": "In the OR, TXA vials are stored next to bupivacaine for spinal anesthesia.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Why did ISMP add TXA injection to the high alert list in 2024?",
+     "options": [
+      {
+       "t": "Mix ups with look alike spinal anesthetic vials; TXA given into the spine is a potent neurotoxin, with about 50% mortality",
+       "correct": true,
+       "why": "Wrong route TXA causes seizures and arrhythmias."
+      },
+      {
+       "t": "Because TXA is expensive",
+       "correct": false,
+       "why": "It is a safety listing."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Why"
+    },
+    {
+     "q": "Which steps reduce that risk?",
+     "options": [
+      {
+       "t": "Store TXA away from neuraxial anesthetics",
+       "correct": true,
+       "why": "Physical separation."
+      },
+      {
+       "t": "Label TXA syringes clearly \"IV only\"",
+       "correct": true,
+       "why": "Clear route labeling."
+      },
+      {
+       "t": "Use premixed IV bags when possible",
+       "correct": true,
+       "why": "A bag cannot be mistaken for a spinal syringe."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prevent",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**TXA is IV only. Keep it away from spinal drugs.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ISMP: High alert medications in acute care settings (TXA added 2024)",
+     "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld21",
+   "title": "Who needs GBS prophylaxis?",
+   "setting": "L&D admission · labor",
+   "topics": [
+    "GBS",
+    "Indications"
+   ],
+   "stem": "Three patients arrive in labor: (A) GBS culture positive at 36 weeks; (B) GBS unknown, 39 weeks, membranes ruptured 20 hours ago; (C) GBS negative at 36 weeks, 39 weeks now, no fever.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Who gets intrapartum GBS antibiotics?",
+     "options": [
+      {
+       "t": "A: positive culture at 36 0/7 to 37 6/7 weeks",
+       "correct": true,
+       "why": "ACOG CO 797."
+      },
+      {
+       "t": "B: unknown status with rupture of membranes 18 hours or longer",
+       "correct": true,
+       "why": "Unknown status plus a risk factor (preterm, rupture 18 hours or more, fever 100.4 °F or higher, or positive rapid test) means treat."
+      },
+      {
+       "t": "C: negative culture, no risk factors",
+       "correct": false,
+       "why": "A negative culture within 5 weeks means no prophylaxis."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Who",
+     "type": "multi"
+    },
+    {
+     "q": "Which other histories mean \"treat\" no matter the culture?",
+     "options": [
+      {
+       "t": "GBS in the urine at any time this pregnancy",
+       "correct": true,
+       "why": "Marks heavy colonization."
+      },
+      {
+       "t": "A previous baby with invasive GBS disease",
+       "correct": true,
+       "why": "ACOG CO 797."
+      },
+      {
+       "t": "A prior cesarean",
+       "correct": false,
+       "why": "Not a GBS indication."
+      }
+     ],
+     "teach": "",
+     "where": "Prenatal record (culture date and result) in the chart; ask the nurse if records from the clinic arrived.",
+     "kind": "Who",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Positive, bacteriuria, prior sick baby, or unknown with a risk factor.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 797: Prevention of group B streptococcal early onset disease in newborns. Obstet Gynecol 2020;135:e51-e72",
+     "url": "https://doi.org/10.1097/AOG.0000000000003668",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld22",
+   "title": "GBS with no allergy",
+   "setting": "L&D · GBS positive",
+   "topics": [
+    "GBS",
+    "Dosing"
+   ],
+   "stem": "GBS positive, no allergies, 39 weeks, in active labor.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the preferred regimen?",
+     "options": [
+      {
+       "t": "Penicillin G 5 million units IV, then 2.5 to 3 million units IV every 4 hours until delivery",
+       "correct": true,
+       "why": "Preferred because it is narrow (ACOG CO 797)."
+      },
+      {
+       "t": "Ampicillin 2 g IV, then 1 g every 4 hours",
+       "correct": true,
+       "why": "An acceptable alternative."
+      },
+      {
+       "t": "Ceftriaxone 1 g daily",
+       "correct": false,
+       "why": "Not a GBS regimen."
+      },
+      {
+       "t": "Vancomycin 1 g every 12 hours",
+       "correct": false,
+       "why": "Reserved for high risk allergy with resistant or unknown susceptibilities."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen",
+     "type": "multi"
+    },
+    {
+     "q": "What counts as \"adequate\" prophylaxis for the newborn team?",
+     "options": [
+      {
+       "t": "Penicillin, ampicillin or cefazolin started at least 4 hours before delivery",
+       "correct": true,
+       "why": "The NICU uses this to decide how closely to watch the baby, so document start time clearly."
+      },
+      {
+       "t": "Any antibiotic at any time before delivery",
+       "correct": false,
+       "why": "Clindamycin and vancomycin do not count as adequate."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Adequate"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Pen G 5 million, then 2.5 to 3 million every 4 hours. Four hours before delivery = adequate.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 797: Prevention of group B streptococcal early onset disease in newborns. Obstet Gynecol 2020;135:e51-e72",
+     "url": "https://doi.org/10.1097/AOG.0000000000003668",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld23",
+   "title": "GBS and a childhood rash",
+   "setting": "L&D · allergy clarification",
+   "topics": [
+    "GBS",
+    "Allergies"
+   ],
+   "stem": "GBS positive. Allergy list: \"penicillin, rash as a child.\" Order: vancomycin.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How do you classify this allergy?",
+     "options": [
+      {
+       "t": "Low risk: no hives, anaphylaxis, angioedema or severe skin reaction",
+       "correct": true,
+       "why": "A childhood rash without those features is low risk."
+      },
+      {
+       "t": "High risk",
+       "correct": false,
+       "why": "High risk means anaphylaxis, angioedema, respiratory distress, urticaria, or severe delayed reactions."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Classify"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Cefazolin 2 g IV, then 1 g every 8 hours",
+       "correct": true,
+       "why": "ACOG CO 797 for low risk penicillin allergy. Cefazolin counts as adequate prophylaxis; vancomycin does not, and it adds kidney risk."
+      },
+      {
+       "t": "Keep vancomycin",
+       "correct": false,
+       "why": "Less effective for this purpose and not adequate prophylaxis for the baby."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recommend"
+    }
+   ],
+   "call": "**S/B:** GBS positive, allergy \"penicillin, rash as a child,\" vancomycin ordered. **A:** That is a low risk history; ACOG CO 797 recommends cefazolin, which also counts as adequate prophylaxis for the baby. **R:** Can I change to cefazolin 2 g IV, then 1 g every 8 hours?",
+   "monitor": "",
+   "pearl": "**Low risk penicillin allergy in labor = cefazolin.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 797: Prevention of group B streptococcal early onset disease in newborns. Obstet Gynecol 2020;135:e51-e72",
+     "url": "https://doi.org/10.1097/AOG.0000000000003668",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld24",
+   "title": "GBS and anaphylaxis to penicillin",
+   "setting": "L&D · high risk allergy",
+   "topics": [
+    "GBS",
+    "Allergies"
+   ],
+   "stem": "GBS positive. History of anaphylaxis to amoxicillin. 72 kg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you need before choosing clindamycin?",
+     "options": [
+      {
+       "t": "Susceptibility results, including testing for inducible clindamycin resistance",
+       "correct": true,
+       "why": "Clindamycin only if the isolate is susceptible."
+      },
+      {
+       "t": "Nothing; clindamycin always works",
+       "correct": false,
+       "why": "GBS resistance to clindamycin is common."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Data"
+    },
+    {
+     "q": "Susceptibilities are not available. Dose vancomycin.",
+     "options": [
+      {
+       "t": "Vancomycin 20 mg/kg IV every 8 hours, max 2 g per dose: about 1,440 mg (round per protocol, for example 1,500 mg)",
+       "correct": true,
+       "why": "ACOG CO 797 dosing. 72 x 20 = 1,440 mg."
+      },
+      {
+       "t": "Vancomycin 1 g every 12 hours",
+       "correct": false,
+       "why": "Older dosing; ACOG updated to weight based every 8 hours."
+      },
+      {
+       "t": "Vancomycin 20 mg/kg every 24 hours",
+       "correct": false,
+       "why": "Wrong interval for this use."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Calculate",
+     "seconds": 120
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Anaphylaxis: clindamycin if susceptible, otherwise vancomycin 20 mg/kg every 8 hours (max 2 g).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 797: Prevention of group B streptococcal early onset disease in newborns. Obstet Gynecol 2020;135:e51-e72",
+     "url": "https://doi.org/10.1097/AOG.0000000000003668",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld25",
+   "title": "Fever in labor: intraamniotic infection",
+   "setting": "L&D · maternal fever 39 °C",
+   "topics": [
+    "Intraamniotic infection",
+    "Antibiotics"
+   ],
+   "stem": "Laboring patient, temperature 39 °C, fetal tachycardia, foul smelling fluid. The OB diagnoses intraamniotic infection (chorioamnionitis). No allergies. 80 kg.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the usual first line regimen?",
+     "options": [
+      {
+       "t": "Ampicillin 2 g IV every 6 hours plus gentamicin",
+       "correct": true,
+       "why": "ACOG CO 712."
+      },
+      {
+       "t": "Penicillin G alone",
+       "correct": false,
+       "why": "GBS coverage only; this infection is polymicrobial."
+      },
+      {
+       "t": "Cefazolin alone",
+       "correct": false,
+       "why": "Not enough gram negative coverage alone."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    },
+    {
+     "q": "Which gentamicin options does ACOG list?",
+     "options": [
+      {
+       "t": "2 mg/kg load, then 1.5 mg/kg every 8 hours",
+       "correct": true,
+       "why": "Traditional dosing."
+      },
+      {
+       "t": "5 mg/kg IV every 24 hours",
+       "correct": true,
+       "why": "Once daily dosing; for 80 kg that is 400 mg."
+      },
+      {
+       "t": "1 mg/kg every 24 hours",
+       "correct": false,
+       "why": "Underdose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose",
+     "type": "multi"
+    },
+    {
+     "q": "She delivers by cesarean. What changes?",
+     "options": [
+      {
+       "t": "Give one more dose of the regimen plus clindamycin 900 mg IV or metronidazole 500 mg IV for anaerobic coverage",
+       "correct": true,
+       "why": "ACOG CO 712 (Merck table)."
+      },
+      {
+       "t": "Stop all antibiotics at delivery",
+       "correct": false,
+       "why": "After cesarean, one more dose plus anaerobic coverage."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Post delivery"
+    },
+    {
+     "q": "She delivers vaginally instead. What then?",
+     "options": [
+      {
+       "t": "No further doses are required",
+       "correct": true,
+       "why": "ACOG CO 712."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Post delivery"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Chorio: ampicillin + gentamicin. Cesarean: one more dose + anaerobes. Vaginal: stop.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 712: Intrapartum management of intraamniotic infection. Obstet Gynecol 2017;130:e95-e101",
+     "url": "https://doi.org/10.1097/AOG.0000000000002236",
+     "mark": "✅"
+    },
+    {
+     "t": "Merck Manual table: antibiotic regimens for intraamniotic infection (cites ACOG CO 712)",
+     "url": "https://www.merckmanuals.com/professional/multimedia/table/antibiotic-regimens-for-treatment-of-intraamniotic-infection",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld26",
+   "title": "Chorioamnionitis with penicillin allergy",
+   "setting": "L&D · fever · allergy",
+   "topics": [
+    "Intraamniotic infection",
+    "Allergies"
+   ],
+   "stem": "Same diagnosis, but the patient reports anaphylaxis to penicillin.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which regimen fits a severe penicillin allergy?",
+     "options": [
+      {
+       "t": "Clindamycin 900 mg IV every 8 hours (or vancomycin) plus gentamicin",
+       "correct": true,
+       "why": "ACOG CO 712."
+      },
+      {
+       "t": "Cefazolin plus gentamicin",
+       "correct": false,
+       "why": "That is the mild allergy option."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    },
+    {
+     "q": "And for a mild (low risk) penicillin allergy?",
+     "options": [
+      {
+       "t": "Cefazolin 2 g IV every 8 hours plus gentamicin",
+       "correct": true,
+       "why": "ACOG CO 712."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Mild allergy: cefazolin + gent. Severe: clindamycin or vancomycin + gent.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 712: Intrapartum management of intraamniotic infection. Obstet Gynecol 2017;130:e95-e101",
+     "url": "https://doi.org/10.1097/AOG.0000000000002236",
+     "mark": "✅"
+    },
+    {
+     "t": "Merck Manual table: antibiotic regimens for intraamniotic infection (cites ACOG CO 712)",
+     "url": "https://www.merckmanuals.com/professional/multimedia/table/antibiotic-regimens-for-treatment-of-intraamniotic-infection",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld27",
+   "title": "Antenatal steroids",
+   "setting": "Antepartum · preterm labor at 30 weeks",
+   "topics": [
+    "Antenatal steroids"
+   ],
+   "stem": "A patient at 30 weeks is in preterm labor. The OB orders betamethasone.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the regimen?",
+     "options": [
+      {
+       "t": "Betamethasone 12 mg IM every 24 hours for 2 doses",
+       "correct": true,
+       "why": "ACOG CO 713, for 24 0/7 to 33 6/7 weeks when delivery within 7 days is likely."
+      },
+      {
+       "t": "Betamethasone 12 mg IV once",
+       "correct": false,
+       "why": "It is given IM."
+      },
+      {
+       "t": "Dexamethasone 6 mg IM every 12 hours for 4 doses",
+       "correct": true,
+       "why": "An accepted alternative (ACOG CO 713)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Regimen",
+     "type": "multi"
+    },
+    {
+     "q": "What do steroids do for the baby?",
+     "options": [
+      {
+       "t": "Speed lung maturity and lower breathing problems, brain bleeds and death in preterm babies",
+       "correct": true,
+       "why": "They boost surfactant production."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Why"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Betamethasone 12 mg IM, two doses, 24 hours apart.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Committee Opinion 713: Antenatal corticosteroid therapy for fetal maturation. Obstet Gynecol 2017;130:e102-e109",
+     "url": "https://doi.org/10.1097/AOG.0000000000002237",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld28",
+   "title": "Late preterm steroids",
+   "setting": "Antepartum · 35 weeks",
+   "topics": [
+    "Antenatal steroids"
+   ],
+   "stem": "A patient at 35 weeks with likely delivery within 7 days. She has pregestational type 1 diabetes. The team asks about betamethasone.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which situations were NOT studied (or are excluded) for late preterm steroids?",
+     "options": [
+      {
+       "t": "Pregestational diabetes",
+       "correct": true,
+       "why": "Not studied in the ALPS trial; steroids also raise maternal glucose."
+      },
+      {
+       "t": "Multiple gestation (twins)",
+       "correct": true,
+       "why": "Not studied."
+      },
+      {
+       "t": "Chorioamnionitis",
+       "correct": true,
+       "why": "Excluded."
+      },
+      {
+       "t": "A prior course of steroids",
+       "correct": true,
+       "why": "Late preterm use is for patients without a prior course."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Criteria",
+     "type": "multi"
+    },
+    {
+     "q": "If late preterm steroids are given, what do you warn the newborn team about?",
+     "options": [
+      {
+       "t": "Neonatal hypoglycemia",
+       "correct": true,
+       "why": "Seen more often in ALPS."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Late preterm: singletons, no prior course, no chorio, not pregestational diabetes. Watch baby's glucose.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "MDedge: late preterm antenatal steroids (ALPS trial, ACOG)",
+     "url": "https://mdedge.com/content/start-offering-antenatal-corticosteroids-women-delivering-between-34-0/7-and-36-6/7-weeks",
+     "mark": "✅"
+    },
+    {
+     "t": "ACOG Committee Opinion 713: Antenatal corticosteroid therapy for fetal maturation. Obstet Gynecol 2017;130:e102-e109",
+     "url": "https://doi.org/10.1097/AOG.0000000000002237",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld29",
+   "title": "Indomethacin at 33 weeks",
+   "setting": "Antepartum · tocolysis",
+   "topics": [
+    "Tocolysis",
+    "Pregnancy safety"
+   ],
+   "stem": "Order: indomethacin 50 mg PO, then 25 mg every 6 hours for preterm contractions. Gestational age 33 weeks. Day 3 of therapy.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What are the two problems?",
+     "options": [
+      {
+       "t": "Indomethacin is used only before 32 weeks",
+       "correct": true,
+       "why": "After 32 weeks it can narrow the baby's ductus arteriosus."
+      },
+      {
+       "t": "It should not run longer than 48 hours",
+       "correct": true,
+       "why": "Longer use causes low amniotic fluid (oligohydramnios) and ductus problems."
+      },
+      {
+       "t": "The dose is too low",
+       "correct": false,
+       "why": "The dose is not the issue."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Spot it",
+     "type": "multi"
+    },
+    {
+     "q": "Why do NSAIDs affect the ductus?",
+     "options": [
+      {
+       "t": "The ductus stays open because of prostaglandins; NSAIDs block prostaglandins, so it can close too early",
+       "correct": true,
+       "why": "The same effect is used on purpose to close a PDA in preterm babies after birth."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Mechanism"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Indomethacin: under 32 weeks, under 48 hours.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "L&D Obstetrics Core page (residency)",
+     "url": "/clinical/ld_obstetrics_core",
+     "mark": "✅"
+    },
+    {
+     "t": "FDA: Avoid NSAIDs at 20 weeks or later in pregnancy (2020)",
+     "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld30",
+   "title": "Rh negative mother",
+   "setting": "Postpartum · day 1",
+   "topics": [
+    "Rh immune globulin"
+   ],
+   "stem": "Mother is Rh(D) negative, baby is Rh(D) positive. Delivered 20 hours ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is due and by when?",
+     "options": [
+      {
+       "t": "Rh(D) immune globulin 300 mcg IM within 72 hours of delivery",
+       "correct": true,
+       "why": "ACOG PB 181. Also given at about 28 weeks in pregnancy."
+      },
+      {
+       "t": "Nothing; it was given at 28 weeks",
+       "correct": false,
+       "why": "A postpartum dose is still needed when the baby is Rh positive."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "When might one 300 mcg vial not be enough?",
+     "options": [
+      {
+       "t": "Large fetal to maternal bleeding; a screening test (for example Kleihauer Betke) decides the number of vials",
+       "correct": true,
+       "why": "One 300 mcg vial covers about 30 mL of fetal whole blood."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Think wider"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Rh negative mom, Rh positive baby: 300 mcg within 72 hours.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 181: Prevention of Rh D alloimmunization. Obstet Gynecol 2017;130:e57-e70",
+     "url": "https://doi.org/10.1097/AOG.0000000000002232",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld31",
+   "title": "Aspirin to prevent preeclampsia",
+   "setting": "Prenatal clinic question",
+   "topics": [
+    "Preeclampsia prevention"
+   ],
+   "stem": "A 13 week pregnant patient with chronic hypertension asks if she should take aspirin.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the USPSTF recommend?",
+     "options": [
+      {
+       "t": "Low dose aspirin 81 mg daily after 12 weeks for people at high risk of preeclampsia",
+       "correct": true,
+       "why": "USPSTF 2021, grade B. Chronic hypertension is a high risk factor."
+      },
+      {
+       "t": "Aspirin 325 mg daily from conception",
+       "correct": false,
+       "why": "Wrong dose and timing."
+      },
+      {
+       "t": "No aspirin in pregnancy ever",
+       "correct": false,
+       "why": "Low dose aspirin is specifically recommended here, and it is the exception to the NSAID warning."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recommend"
+    },
+    {
+     "q": "Which are high risk factors (one is enough)?",
+     "options": [
+      {
+       "t": "Prior preeclampsia",
+       "correct": true,
+       "why": "High risk."
+      },
+      {
+       "t": "Multifetal pregnancy",
+       "correct": true,
+       "why": "High risk."
+      },
+      {
+       "t": "Pregestational diabetes, kidney disease, or autoimmune disease such as lupus",
+       "correct": true,
+       "why": "High risk."
+      },
+      {
+       "t": "Nulliparity alone",
+       "correct": false,
+       "why": "A moderate risk factor; two or more moderate factors may also qualify."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Who",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**81 mg after 12 weeks for high risk.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USPSTF 2021: Low dose aspirin to prevent preeclampsia (Grade B)",
+     "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/low-dose-aspirin-use-for-the-prevention-of-morbidity-and-mortality-from-preeclampsia-preventive-medication",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld32",
+   "title": "Misoprostol for cervical ripening",
+   "setting": "L&D · induction",
+   "topics": [
+    "Induction"
+   ],
+   "stem": "Order: misoprostol 25 mcg vaginally every 4 hours for cervical ripening. The patient had a cesarean delivery 2 years ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "Misoprostol is avoided for induction after a prior cesarean because of uterine rupture risk",
+       "correct": true,
+       "why": "ACOG advises against misoprostol in patients with a prior cesarean."
+      },
+      {
+       "t": "The dose should be 100 mcg",
+       "correct": false,
+       "why": "ACOG's schedule is 25 mcg every 3 to 6 hours."
+      },
+      {
+       "t": "No problem",
+       "correct": false,
+       "why": "The prior cesarean is a key catch."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Spot it"
+    },
+    {
+     "q": "For a patient without a uterine scar, what dosing does ACOG describe?",
+     "options": [
+      {
+       "t": "25 mcg vaginally every 3 to 6 hours",
+       "correct": true,
+       "why": "Lower doses mean less uterine hyperstimulation."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Prior cesarean: no misoprostol for induction.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ACOG Practice Bulletin 107: Induction of labor. Obstet Gynecol 2009;114:386-397",
+     "url": "https://doi.org/10.1097/AOG.0b013e3181b48ef5",
+     "mark": "✅"
+    },
+    {
+     "t": "AAFP: Vaginal misoprostol for cervical ripening in term pregnancy",
+     "url": "https://www.aafp.org/pubs/afp/issues/2006/0201/p511.html",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld33",
+   "title": "Enoxaparin and the epidural",
+   "setting": "L&D · anesthesia call",
+   "topics": [
+    "Anticoagulation",
+    "Neuraxial"
+   ],
+   "stem": "A patient on enoxaparin 40 mg SC daily got her last dose at 0600. Anesthesia wants to place an epidural at 1400.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Can the epidural go in at 1400?",
+     "options": [
+      {
+       "t": "No: prophylactic enoxaparin needs at least 12 hours before neuraxial placement, so not before 1800",
+       "correct": true,
+       "why": "Lovenox label and ASRA guidance."
+      },
+      {
+       "t": "Yes, 8 hours is enough",
+       "correct": false,
+       "why": "Bleeding into the spine can cause permanent paralysis (boxed warning)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "What if she were on a treatment dose (1 mg/kg every 12 hours)?",
+     "options": [
+      {
+       "t": "At least 24 hours",
+       "correct": true,
+       "why": "Treatment doses need longer."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    },
+    {
+     "q": "After the catheter is removed, when can the next dose go?",
+     "options": [
+      {
+       "t": "No sooner than 4 hours later",
+       "correct": true,
+       "why": "Lovenox label."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Timing"
+    }
+   ],
+   "call": "Call anesthesia and the OB now with the exact last dose time so they can plan; offer the earliest safe time (1800).",
+   "monitor": "",
+   "pearl": "**Enoxaparin before an epidural: 12 hours prophylaxis, 24 hours treatment, 4 hours after removal.**",
+   "alternatives": "ASRA published a 5th edition in 2025 with updated timing; check St. Mary's anesthesia policy ⚠️.",
+   "sources": [
+    {
+     "t": "FDA label, Lovenox (Sanofi)",
+     "url": "https://products.sanofi.us/lovenox/lovenox.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "Horlocker TT, et al. ASRA guidelines, 4th edition. Reg Anesth Pain Med 2018 (5th edition 2025: doi 10.1136/rapm-2024-105766)",
+     "url": "https://doi.org/10.1097/AAP.0000000000000763",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "ld34",
+   "title": "Gestational diabetes: which drug?",
+   "setting": "Antepartum · glucose above goal",
+   "topics": [
+    "Diabetes in pregnancy"
+   ],
+   "stem": "A patient with gestational diabetes is above glucose goals despite diet. A prescriber asks for metformin as first line.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the ADA 2025 Standards of Care say?",
+     "options": [
+      {
+       "t": "Metformin and glyburide should not be first line in pregnancy because both cross the placenta and may not reach goals; insulin is the preferred agent",
+       "correct": true,
+       "why": "ADA 2025, Section 15."
+      },
+      {
+       "t": "Metformin is first line",
+       "correct": false,
+       "why": "Not per ADA 2025."
+      },
+      {
+       "t": "SGLT2 inhibitors are preferred",
+       "correct": false,
+       "why": "Other oral and non insulin injectable drugs lack pregnancy safety data."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    },
+    {
+     "q": "What is a pharmacist's role here?",
+     "options": [
+      {
+       "t": "Recommend insulin per the guideline, and help with dosing, hypoglycemia teaching and monitoring",
+       "correct": true,
+       "why": "The prescriber decides; you give the evidence and practical support."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Role"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Pregnancy diabetes: insulin preferred. Metformin and glyburide cross the placenta.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ADA Standards of Care in Diabetes 2025, Section 15: Management of diabetes in pregnancy. Diabetes Care 2025;48:S306-S320",
+     "url": "https://doi.org/10.2337/dc25-S015",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld35",
+   "title": "NSAID for back pain at 24 weeks",
+   "setting": "Antepartum · pain",
+   "topics": [
+    "Pregnancy safety",
+    "NSAIDs"
+   ],
+   "stem": "Order: ibuprofen 600 mg every 6 hours as needed for back pain. Gestational age 24 weeks.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the FDA say?",
+     "options": [
+      {
+       "t": "Avoid NSAIDs from 20 weeks of pregnancy: risk of fetal kidney problems and low amniotic fluid",
+       "correct": true,
+       "why": "FDA 2020."
+      },
+      {
+       "t": "NSAIDs are fine until 36 weeks",
+       "correct": false,
+       "why": "The FDA warning starts at 20 weeks."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    },
+    {
+     "q": "Which NSAID use is the exception?",
+     "options": [
+      {
+       "t": "Low dose aspirin (81 mg) prescribed for preeclampsia prevention",
+       "correct": true,
+       "why": "Exempt from the FDA warning."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exception"
+    },
+    {
+     "q": "What do you suggest instead for pain?",
+     "options": [
+      {
+       "t": "Acetaminophen",
+       "correct": true,
+       "why": "Option for pain and fever in pregnancy."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternative"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**No NSAIDs from 20 weeks (except low dose aspirin).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA: Avoid NSAIDs at 20 weeks or later in pregnancy (2020)",
+     "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic",
+     "mark": "✅"
+    },
+    {
+     "t": "Pregnancy and Lactation page (residency Drug Hub, sourced to LactMed and FDA)",
+     "url": "/drug-hub/pregnancy_lactation",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld36",
+   "title": "Codeine for a breastfeeding mother",
+   "setting": "Postpartum · pain after cesarean",
+   "topics": [
+    "Lactation",
+    "Pain"
+   ],
+   "stem": "Order: acetaminophen with codeine for post cesarean pain. Mother is breastfeeding.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "Codeine (and tramadol) should be avoided while breastfeeding",
+       "correct": true,
+       "why": "Ultra rapid CYP2D6 metabolizers turn codeine into large amounts of morphine, which passes into milk; infant deaths have occurred (FDA 2017)."
+      },
+      {
+       "t": "No problem; codeine is weak",
+       "correct": false,
+       "why": "Genetics make it unpredictable."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Spot it"
+    },
+    {
+     "q": "What are better options?",
+     "options": [
+      {
+       "t": "Scheduled acetaminophen and ibuprofen (after delivery, NSAIDs are fine)",
+       "correct": true,
+       "why": "Good first line postpartum pain control; ibuprofen is a preferred NSAID in breastfeeding."
+      },
+      {
+       "t": "If an opioid is needed: low dose oxycodone for a short time, watching the baby for sleepiness and poor feeding",
+       "correct": true,
+       "why": "LactMed suggests limits (about 60 mg per day for 2 to 3 days with young infants)."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Alternatives",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Breastfeeding: no codeine, no tramadol.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA: Codeine and tramadol restrictions in children and breastfeeding (2017)",
+     "url": "https://www.fda.gov/Drugs/DrugSafety/ucm549679.htm",
+     "mark": "✅"
+    },
+    {
+     "t": "LactMed (NIH)",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
+     "mark": "✅"
+    },
+    {
+     "t": "Pregnancy and Lactation page (residency Drug Hub, sourced to LactMed and FDA)",
+     "url": "/drug-hub/pregnancy_lactation",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld37",
+   "title": "Is it safe while breastfeeding?",
+   "setting": "Postpartum · mother's question",
+   "topics": [
+    "Lactation",
+    "Drug information"
+   ],
+   "stem": "A breastfeeding mother asks whether a new medicine is safe for her baby.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which free reference is the primary source for breastfeeding questions?",
+     "options": [
+      {
+       "t": "LactMed (NIH)",
+       "correct": true,
+       "why": "Updated and specific to lactation."
+      },
+      {
+       "t": "The drug's pregnancy letter category",
+       "correct": false,
+       "why": "Letter categories were removed in 2015 by the FDA labeling rule."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Resource"
+    },
+    {
+     "q": "What number helps judge risk to the infant?",
+     "options": [
+      {
+       "t": "The relative infant dose (RID); under 10% is generally acceptable",
+       "correct": true,
+       "why": "RID compares the baby's dose from milk to the mother's weight adjusted dose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "Which drug features make breastfeeding safer?",
+     "options": [
+      {
+       "t": "Short half life",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "High protein binding",
+       "correct": true,
+       "why": ""
+      },
+      {
+       "t": "Low oral bioavailability",
+       "correct": true,
+       "why": "The baby absorbs little of what is in the milk."
+      },
+      {
+       "t": "Very long half life",
+       "correct": false,
+       "why": "Builds up in the baby."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Properties",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**LactMed, RID under 10%, short half life, high protein binding.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "LactMed (NIH)",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
+     "mark": "✅"
+    },
+    {
+     "t": "US Pharmacist: Medications and breastfeeding (2022)",
+     "url": "https://www.qgdigitalpublishing.com/article/Consult+Your+Pharmacist/4303347/752390/article.html",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld38",
+   "title": "Statin at the first prenatal visit",
+   "setting": "Med reconciliation · early pregnancy",
+   "topics": [
+    "Pregnancy safety"
+   ],
+   "stem": "A pregnant patient at 8 weeks lists atorvastatin for high cholesterol.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is current FDA guidance?",
+     "options": [
+      {
+       "t": "The blanket contraindication was removed (2021); most patients stop when pregnant, and very high risk patients may continue with their doctor",
+       "correct": true,
+       "why": "FDA 2021."
+      },
+      {
+       "t": "Statins are absolutely contraindicated for everyone",
+       "correct": false,
+       "why": "That changed in 2021."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Guideline"
+    },
+    {
+     "q": "And while breastfeeding?",
+     "options": [
+      {
+       "t": "Statins are not recommended while breastfeeding",
+       "correct": true,
+       "why": "Per the residency lactation reference."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Lactation"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Statins: usually stop in pregnancy; not while breastfeeding.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA: Removal of the statin pregnancy contraindication (2021)",
+     "url": "https://fda.gov/drugs/drug-safety-and-availability/fda-requests-removal-strongest-warning-against-using-cholesterol-lowering-statins-during-pregnancy",
+     "mark": "✅"
+    },
+    {
+     "t": "Pregnancy and Lactation page (residency Drug Hub, sourced to LactMed and FDA)",
+     "url": "/drug-hub/pregnancy_lactation",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld39",
+   "title": "Magnesium and breastfeeding",
+   "setting": "Postpartum · question from nurse",
+   "topics": [
+    "Lactation",
+    "Magnesium"
+   ],
+   "stem": "Mother is on postpartum magnesium for 24 hours and wants to breastfeed.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Is it compatible?",
+     "options": [
+      {
+       "t": "Yes: IV magnesium raises milk magnesium only slightly and infants absorb little",
+       "correct": true,
+       "why": "LactMed. It may delay milk coming in (mixed data)."
+      },
+      {
+       "t": "No, pump and discard for a week",
+       "correct": false,
+       "why": "Not needed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Answer"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Magnesium and breastfeeding: compatible.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "LactMed (NIH)",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "ld40",
+   "title": "Putting it together: night on L&D",
+   "setting": "L&D · 3 a.m. · several calls",
+   "topics": [
+    "Prioritizing",
+    "Mixed review"
+   ],
+   "stem": "Three calls at once: (1) a magnesium patient with absent reflexes and RR 10; (2) a GBS positive patient who needs her 4 hour penicillin dose; (3) a question about whether lanolin cream is safe while breastfeeding.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which first?",
+     "options": [
+      {
+       "t": "The magnesium patient: possible respiratory failure",
+       "correct": true,
+       "why": "Stop the infusion, calcium gluconate, airway support."
+      },
+      {
+       "t": "The penicillin dose",
+       "correct": false,
+       "why": "Time sensitive but not life threatening this minute."
+      },
+      {
+       "t": "The lanolin question",
+       "correct": false,
+       "why": "Can wait."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Triage"
+    },
+    {
+     "q": "Second?",
+     "options": [
+      {
+       "t": "The GBS penicillin dose (adequacy and newborn risk depend on timing)",
+       "correct": true,
+       "why": ""
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Triage"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Airway first, then time sensitive doses, then questions.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "FDA label, Magnesium Sulfate in 5% Dextrose Injection (Hospira, 2019)",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020488Orig1s024lbl.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "ACOG Committee Opinion 797: Prevention of group B streptococcal early onset disease in newborns. Obstet Gynecol 2020;135:e51-e72",
+     "url": "https://doi.org/10.1097/AOG.0000000000003668",
+     "mark": "✅"
+    }
+   ]
+  }
+ ]
+}

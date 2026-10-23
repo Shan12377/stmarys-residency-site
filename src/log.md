@@ -114,3 +114,5 @@
 - Open: 58 items; 34 need St. Mary's policies or order sets, 24 need more public sources.
 
 - 2026-10-21: Source upgrade. 55 summary sources now lead with the original (DOI checked in Crossref, labels on DailyMed, USP 797 on usp.org). Open item: recheck ASRA neuraxial hold times against the 5th edition (Kopp 2025).
+
+- 2026-10-23: Question bank pilot published (m00: 14 cases, m01: 40 cases). Audit fixes: vancomycin SBAR example changed to every 12 hours so "about double" is accurate; magnesium plus nifedipine explanation now matches the FDA label and ACOG CO 767. Magnesium label numbers confirmed (renal 4 g load, 1 g/h, 20 g per 48 h; target 2.5 to 5 mEq/L; reflexes fade above 4, may be absent at 10). Builders live in src/qbank_src.

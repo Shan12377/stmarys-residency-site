@@ -1,3 +1,4 @@
+- **2026-10-23:** New: **Think Like a Pharmacist** question bank (My Tools). Stepwise cases with why each answer is right or wrong, how a pharmacist thinks, where to find it and who to ask, an SBAR call, and focus sounds. Pilot: Hospital Pharmacy 101 (14 cases) and Labor & Delivery (40 cases).
 - **2026-10-21:** Fix for "could not load static asset": pages and audio are now served directly; only Listen and Explain go through the server functions.
 - **2026-10-21:** Every page now has the free natural voice. Tap **🔊 Listen to this page**.
 - **2026-10-21:** Free natural voice (Kokoro) for Listen, made once per page so there is no daily limit and no cost. Clinical modules first; the rest are being added.
