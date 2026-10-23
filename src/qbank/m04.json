@@ -1,0 +1,693 @@
+{
+ "id": "m04",
+ "title": "Module 4 · IV to PO Conversions",
+ "intro": "When to switch, the 1:1 drugs, the drugs that need a dose change, when not to switch, chelation, feeding tubes, linezolid interactions and how to run the daily IV to PO round.",
+ "cases": [
+  {
+   "id": "po01",
+   "title": "Is this patient ready for oral?",
+   "setting": "Med surg · day 3 pneumonia",
+   "topics": [
+    "IV to PO",
+    "Criteria"
+   ],
+   "stem": "Day 3 of IV levofloxacin for community acquired pneumonia. Afebrile 36 hours, heart rate 84, BP 128/76, eating breakfast, WBC down from 16 to 9.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which findings support switching to oral?",
+     "options": [
+      {
+       "t": "Working gut: eating and taking other oral meds",
+       "correct": true,
+       "why": "No vomiting, no ileus, no malabsorption."
+      },
+      {
+       "t": "Clinically improving and hemodynamically stable",
+       "correct": true,
+       "why": "Afebrile, normal vitals, falling WBC."
+      },
+      {
+       "t": "An oral drug with good absorption exists for this infection",
+       "correct": true,
+       "why": "Levofloxacin is about 99% absorbed."
+      },
+      {
+       "t": "The patient prefers IV",
+       "correct": false,
+       "why": "Preference matters, but the clinical criteria decide."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Criteria",
+     "type": "multi"
+    },
+    {
+     "q": "What is the oral levofloxacin dose if she is on 750 mg IV daily?",
+     "options": [
+      {
+       "t": "750 mg PO daily (1:1)",
+       "correct": true,
+       "why": "Levofloxacin oral absorption is nearly complete."
+      },
+      {
+       "t": "1,500 mg PO daily",
+       "correct": false,
+       "why": "No dose increase needed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Why switch at all?",
+     "options": [
+      {
+       "t": "Fewer line infections and phlebitis, earlier discharge, lower cost, less nursing time",
+       "correct": true,
+       "why": "IV to PO is one of the simplest high value interventions a pharmacist makes every day."
+      },
+      {
+       "t": "Oral drugs always work better",
+       "correct": false,
+       "why": "Not better; equivalent when absorption is good."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Why"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Gut works, patient improving, good oral drug: switch.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Cyriac JM, James E. Switch over from intravenous to oral therapy: a concise overview. J Pharmacol Pharmacother 2014;5:83-87",
+     "url": "https://doi.org/10.4103/0976-500X.130042",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's automatic IV to PO conversion policy and eligible drug list (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "po02",
+   "title": "The 1:1 drugs",
+   "setting": "Pharmacy · conversion list",
+   "topics": [
+    "IV to PO",
+    "Bioavailability"
+   ],
+   "stem": "You are learning the drugs that convert at the same dose because oral absorption is excellent.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which convert 1:1 IV to PO?",
+     "options": [
+      {
+       "t": "Levofloxacin and moxifloxacin",
+       "correct": true,
+       "why": "Nearly complete absorption."
+      },
+      {
+       "t": "Linezolid",
+       "correct": true,
+       "why": "About 100% absorbed."
+      },
+      {
+       "t": "Metronidazole",
+       "correct": true,
+       "why": "Nearly complete absorption."
+      },
+      {
+       "t": "Fluconazole",
+       "correct": true,
+       "why": "Over 90% absorbed."
+      },
+      {
+       "t": "Vancomycin for MRSA bacteremia",
+       "correct": false,
+       "why": "Oral vancomycin is not absorbed; it only treats C. difficile in the gut."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recall",
+     "type": "multi"
+    },
+    {
+     "q": "Which non antibiotics also convert about 1:1?",
+     "options": [
+      {
+       "t": "Levetiracetam",
+       "correct": true,
+       "why": "IV and oral are interchangeable at the same dose."
+      },
+      {
+       "t": "Acetaminophen (1 g IV = 1 g PO)",
+       "correct": true,
+       "why": "IV acetaminophen is mainly for patients who cannot swallow."
+      },
+      {
+       "t": "Pantoprazole 40 mg IV = 40 mg PO",
+       "correct": true,
+       "why": "Common automatic switch."
+      },
+      {
+       "t": "Furosemide",
+       "correct": false,
+       "why": "Oral furosemide is only about half absorbed and highly variable."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recall",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**1:1 club: levo, moxi, linezolid, metronidazole, fluconazole, levetiracetam, APAP, pantoprazole.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Cyriac JM, James E. Switch over from intravenous to oral therapy: a concise overview. J Pharmacol Pharmacother 2014;5:83-87",
+     "url": "https://doi.org/10.4103/0976-500X.130042",
+     "mark": "✅"
+    },
+    {
+     "t": "DailyMed prescribing information for each drug named (Clinical Pharmacology and Drug Interactions sections)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's automatic IV to PO conversion policy and eligible drug list (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "po03",
+   "title": "The drugs that do NOT convert 1:1",
+   "setting": "Pharmacy · conversion list",
+   "topics": [
+    "IV to PO",
+    "Dose changes"
+   ],
+   "stem": "A team asks for help converting several drugs before discharge.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Furosemide 40 mg IV twice daily. Roughly what oral dose gives similar effect?",
+     "options": [
+      {
+       "t": "About 80 mg PO twice daily (IV to PO roughly 1:2)",
+       "correct": true,
+       "why": "Oral bioavailability is about 50% and varies; watch weight and urine output after the switch."
+      },
+      {
+       "t": "40 mg PO twice daily",
+       "correct": false,
+       "why": "Usually gives less diuresis."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Ciprofloxacin 400 mg IV every 12 hours. Oral equivalent?",
+     "options": [
+      {
+       "t": "500 to 750 mg PO every 12 hours",
+       "correct": true,
+       "why": "Ciprofloxacin is about 70% absorbed, so the oral dose is higher."
+      },
+      {
+       "t": "400 mg PO every 12 hours",
+       "correct": false,
+       "why": "There is no 400 mg tablet, and absorption is incomplete."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Metoprolol tartrate 5 mg IV every 6 hours. Oral equivalent?",
+     "options": [
+      {
+       "t": "About 12.5 to 25 mg PO every 6 hours, or the same daily total as twice daily dosing",
+       "correct": true,
+       "why": "Oral metoprolol has large first pass loss; IV to PO is roughly 1:2.5. Titrate to heart rate and BP."
+      },
+      {
+       "t": "5 mg PO every 6 hours",
+       "correct": false,
+       "why": "Far too low."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "Levothyroxine: how does IV compare with oral?",
+     "options": [
+      {
+       "t": "IV doses are lower, often about 50 to 75% of the oral dose, because oral absorption is incomplete",
+       "correct": true,
+       "why": "The label estimates relative oral bioavailability at about 48 to 74% and advises caution when converting."
+      },
+      {
+       "t": "IV dose is double the oral",
+       "correct": false,
+       "why": "Reversed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Not 1:1: furosemide (x2 oral), cipro (higher oral), metoprolol (about x2.5 oral), levothyroxine (IV lower).**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Levothyroxine Sodium for Injection prescribing information (Drugs.com)",
+     "url": "https://drugs.com/pro/levothyroxine-injection.html",
+     "mark": "✅"
+    },
+    {
+     "t": "Cyriac JM, James E. Switch over from intravenous to oral therapy: a concise overview. J Pharmacol Pharmacother 2014;5:83-87",
+     "url": "https://doi.org/10.4103/0976-500X.130042",
+     "mark": "✅"
+    },
+    {
+     "t": "DailyMed prescribing information for each drug named (Clinical Pharmacology and Drug Interactions sections)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's automatic IV to PO conversion policy and eligible drug list (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "po04",
+   "title": "When NOT to switch",
+   "setting": "Med surg · S. aureus bacteremia",
+   "topics": [
+    "IV to PO",
+    "Exclusions"
+   ],
+   "stem": "A patient with MRSA bacteremia has been afebrile for 24 hours. The team asks about oral linezolid on day 3.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which situations usually stay IV, at least early?",
+     "options": [
+      {
+       "t": "S. aureus bacteremia (especially early, before source control and clearance)",
+       "correct": true,
+       "why": "High mortality infection; oral step down is only considered in selected patients after clearance and ID input."
+      },
+      {
+       "t": "Meningitis",
+       "correct": true,
+       "why": "Needs high central nervous system concentrations."
+      },
+      {
+       "t": "Endocarditis, at least initially",
+       "correct": true,
+       "why": "The POET trial showed partial oral therapy was noninferior in selected stable patients after at least 10 days IV; this is an ID team decision."
+      },
+      {
+       "t": "Uncomplicated pyelonephritis improving on day 2",
+       "correct": false,
+       "why": "A classic case for switching."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exclusions",
+     "type": "multi"
+    },
+    {
+     "q": "Which patient factors block an oral switch?",
+     "options": [
+      {
+       "t": "Vomiting, ileus, severe diarrhea, or malabsorption",
+       "correct": true,
+       "why": "The drug has to be absorbed."
+      },
+      {
+       "t": "NPO for surgery or unable to swallow with no feeding tube",
+       "correct": true,
+       "why": "No route."
+      },
+      {
+       "t": "Unstable vital signs or worsening infection",
+       "correct": true,
+       "why": "Not ready."
+      },
+      {
+       "t": "A normal appetite",
+       "correct": false,
+       "why": "That supports switching."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Exclusions",
+     "type": "multi"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Stay IV: S. aureus bacteremia early, meningitis, endocarditis (team decision), a gut that does not work.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Iversen K, et al. Partial oral versus intravenous antibiotic treatment of endocarditis (POET). N Engl J Med 2019;380:415-424",
+     "url": "https://doi.org/10.1056/NEJMoa1808312",
+     "mark": "✅"
+    },
+    {
+     "t": "Cyriac JM, James E. Switch over from intravenous to oral therapy: a concise overview. J Pharmacol Pharmacother 2014;5:83-87",
+     "url": "https://doi.org/10.4103/0976-500X.130042",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's automatic IV to PO conversion policy and eligible drug list (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "po05",
+   "title": "Chelation: the switch that fails",
+   "setting": "Med surg · discharge planning",
+   "topics": [
+    "IV to PO",
+    "Interactions"
+   ],
+   "stem": "Switched from IV to oral ciprofloxacin. The home med list includes calcium carbonate, a multivitamin with iron and zinc, and magnesium oxide.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem?",
+     "options": [
+      {
+       "t": "Calcium, magnesium, aluminum, iron and zinc bind fluoroquinolones in the gut and can cut absorption dramatically",
+       "correct": true,
+       "why": "The IV dose had no such problem; the oral switch creates the interaction."
+      },
+      {
+       "t": "No interaction",
+       "correct": false,
+       "why": "Chelation is one of the most common reasons oral antibiotics fail."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    },
+    {
+     "q": "What do you recommend?",
+     "options": [
+      {
+       "t": "Give ciprofloxacin at least 2 hours before or 6 hours after the minerals (per label), or hold the supplements during the course",
+       "correct": true,
+       "why": "Spacing or holding fixes it."
+      },
+      {
+       "t": "Double the ciprofloxacin dose",
+       "correct": false,
+       "why": "Raises toxicity without reliably fixing the binding."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    },
+    {
+     "q": "Which other oral antibiotics have the same chelation problem?",
+     "options": [
+      {
+       "t": "Tetracyclines (doxycycline, minocycline)",
+       "correct": true,
+       "why": "Same mechanism."
+      },
+      {
+       "t": "Amoxicillin",
+       "correct": false,
+       "why": "Not meaningfully affected."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Recall"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Quinolones and tetracyclines + Ca, Mg, Al, Fe, Zn = no absorption. Space them.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "DailyMed prescribing information for each drug named (Clinical Pharmacology and Drug Interactions sections)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "po06",
+   "title": "Feeding tube conversions",
+   "setting": "ICU · new NG tube with continuous feeds",
+   "topics": [
+    "IV to PO",
+    "Feeding tubes"
+   ],
+   "stem": "A patient on continuous tube feeds needs phenytoin and levothyroxine switched from IV to the tube.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the issue with phenytoin suspension and tube feeds?",
+     "options": [
+      {
+       "t": "Tube feeds can bind phenytoin and lower levels a lot; many protocols hold feeds 1 to 2 hours before and after each dose and monitor levels closely",
+       "correct": true,
+       "why": "Check a level after the switch and adjust."
+      },
+      {
+       "t": "No issue",
+       "correct": false,
+       "why": "This interaction is well known."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    },
+    {
+     "q": "Phenytoin capsules versus suspension: why can the dose change?",
+     "options": [
+      {
+       "t": "Extended capsules are phenytoin sodium (92% phenytoin); suspension and chewable tablets are phenytoin acid (100%)",
+       "correct": true,
+       "why": "Switching forms changes how much phenytoin the patient gets; small differences matter with its nonlinear kinetics."
+      },
+      {
+       "t": "They are identical",
+       "correct": false,
+       "why": "Salt form matters for phenytoin."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "Which products should NOT be crushed for the tube?",
+     "options": [
+      {
+       "t": "Extended release and enteric coated tablets",
+       "correct": true,
+       "why": "Check the ISMP Do Not Crush list and switch to an immediate release or liquid form."
+      },
+      {
+       "t": "Plain immediate release levothyroxine tablets",
+       "correct": false,
+       "why": "These can be crushed; give apart from feeds per protocol."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Tube feeds: phenytoin and feeds do not mix, salt forms differ, never crush ER or EC.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "DailyMed prescribing information for each drug named (Clinical Pharmacology and Drug Interactions sections)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's automatic IV to PO conversion policy and eligible drug list (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "po07",
+   "title": "Linezolid switch, interaction check",
+   "setting": "Med surg · VRE infection",
+   "topics": [
+    "IV to PO",
+    "Linezolid"
+   ],
+   "stem": "Switching IV linezolid 600 mg every 12 hours to oral. Home meds include sertraline.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What dose orally?",
+     "options": [
+      {
+       "t": "600 mg PO every 12 hours (1:1)",
+       "correct": true,
+       "why": "Linezolid is about 100% absorbed."
+      },
+      {
+       "t": "1,200 mg every 12 hours",
+       "correct": false,
+       "why": "No increase needed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Dose"
+    },
+    {
+     "q": "What interaction do you check?",
+     "options": [
+      {
+       "t": "Serotonin syndrome risk: linezolid is a weak MAO inhibitor, and sertraline is serotonergic",
+       "correct": true,
+       "why": "Talk with the team about the risk, monitoring, or alternatives. The same applies to IV linezolid; the switch is a good moment to catch it."
+      },
+      {
+       "t": "None",
+       "correct": false,
+       "why": "Linezolid plus SSRIs is a classic interaction."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interaction"
+    },
+    {
+     "q": "What lab do you watch on longer courses?",
+     "options": [
+      {
+       "t": "Platelets and blood counts (myelosuppression, usually after about 2 weeks)",
+       "correct": true,
+       "why": "Also watch for lactic acidosis and neuropathy with long use."
+      },
+      {
+       "t": "INR",
+       "correct": false,
+       "why": "Not the main concern."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Monitor"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Linezolid 1:1, but check for SSRIs and watch platelets.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "DailyMed prescribing information for each drug named (Clinical Pharmacology and Drug Interactions sections)",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "po08",
+   "title": "Doing the IV to PO round",
+   "setting": "Med surg · morning review",
+   "topics": [
+    "IV to PO",
+    "Workflow"
+   ],
+   "stem": "You run the daily IV to PO report for your units.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How do you make the switch happen?",
+     "options": [
+      {
+       "t": "Use St. Mary's automatic conversion policy when the drug and patient qualify, and document the change",
+       "correct": true,
+       "why": "Many hospitals let pharmacists switch qualifying drugs per protocol."
+      },
+      {
+       "t": "For drugs outside the protocol, recommend the switch to the prescriber with the criteria met and the exact oral dose",
+       "correct": true,
+       "why": "Make it easy to say yes."
+      },
+      {
+       "t": "Switch everything without checking the patient",
+       "correct": false,
+       "why": "Each patient must meet the criteria."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Workflow",
+     "type": "multi"
+    }
+   ],
+   "call": "\"Dr. ___, your patient in 412 is afebrile 48 hours, eating, and on IV metronidazole 500 mg every 8 hours. Oral metronidazole is nearly 100% absorbed. May I change it to 500 mg PO every 8 hours?\"",
+   "monitor": "",
+   "pearl": "**Run the report daily. Protocol where allowed, a clear recommendation everywhere else.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "Cyriac JM, James E. Switch over from intravenous to oral therapy: a concise overview. J Pharmacol Pharmacother 2014;5:83-87",
+     "url": "https://doi.org/10.4103/0976-500X.130042",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's automatic IV to PO conversion policy and eligible drug list (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}

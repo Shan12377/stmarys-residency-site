@@ -1,0 +1,1249 @@
+{
+ "id": "m03",
+ "title": "Module 3 · IV Room and USP 797",
+ "intro": "Your yearly sterile compounding competency (garbing, fingertip testing, media fill), rooms and air, cleaning, BUDs, vials, hazardous drugs, vincristine, diluent catches, parenteral nutrition and the final check.",
+ "cases": [
+  {
+   "id": "iv01",
+   "title": "Your sterile compounding competency",
+   "setting": "IV room · your first week",
+   "topics": [
+    "USP 797",
+    "Competency"
+   ],
+   "stem": "Before you can compound alone in the IV room, you must pass the sterile compounding competency. You will repeat parts of it on a schedule as long as you work there.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What does the competency include?",
+     "options": [
+      {
+       "t": "Training and a written or knowledge test",
+       "correct": true,
+       "why": "Initially, then at least every 12 months (USP 797)."
+      },
+      {
+       "t": "Garbing and hand hygiene, with gloved fingertip and thumb sampling",
+       "correct": true,
+       "why": "Proves you can put on garb without contaminating your gloves."
+      },
+      {
+       "t": "Aseptic manipulation: a media fill test, then gloved fingertip sampling and a surface sample of your work area",
+       "correct": true,
+       "why": "Proves your technique keeps a product sterile."
+      },
+      {
+       "t": "A typing speed test",
+       "correct": false,
+       "why": "Not part of USP 797."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Overview",
+     "type": "multi"
+    },
+    {
+     "q": "Before compounding alone the first time, how many gloved fingertip tests must you pass after garbing, and what result passes?",
+     "options": [
+      {
+       "t": "Three separate times, each with zero colony forming units (CFU)",
+       "correct": true,
+       "why": "Initial garbing qualification: three consecutive passes, action level is any growth above 0 CFU."
+      },
+      {
+       "t": "One time, up to 5 CFU",
+       "correct": false,
+       "why": "The first qualification is stricter: three times, zero growth."
+      },
+      {
+       "t": "None if you passed in pharmacy school",
+       "correct": false,
+       "why": "Each site qualifies its own compounders."
+      }
+     ],
+     "teach": "Zero growth means your gloves stayed clean while you garbed. That is the point of the whole sequence.",
+     "where": "St. Mary's IV room competency SOP and the IV room supervisor or trainer.",
+     "kind": "Numbers"
+    },
+    {
+     "q": "After the media fill test, the gloved fingertip action level is:",
+     "options": [
+      {
+       "t": "More than 3 CFU (total from both hands) fails",
+       "correct": true,
+       "why": "After a media fill, a small amount of growth is allowed. Above 3 CFU triggers retraining and retesting."
+      },
+      {
+       "t": "More than 0 CFU fails",
+       "correct": false,
+       "why": "That is the action level after garbing."
+      },
+      {
+       "t": "More than 20 CFU fails",
+       "correct": false,
+       "why": "Far too loose."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "How often must you repeat garbing and aseptic manipulation competency if you compound Category 1 and 2 CSPs?",
+     "options": [
+      {
+       "t": "At least every 6 months",
+       "correct": true,
+       "why": "Category 3 compounders repeat every 3 months. Training and knowledge assessment repeat at least every 12 months."
+      },
+      {
+       "t": "Every 2 years",
+       "correct": false,
+       "why": "Much more often than that."
+      },
+      {
+       "t": "Only once",
+       "correct": false,
+       "why": "Competency is ongoing."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Garb: 3 passes at 0 CFU to start. Media fill fingertip: above 3 CFU fails. Repeat every 6 months (Cat 1 and 2), training every 12 months.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "Open Exam Prep (BCSCP study guide): USP 797 personnel competency summary",
+     "url": "https://open-exam-prep.com/study-guides/bcscp/ch10-quality-management-competency/10-2-personnel-training-competency",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv02",
+   "title": "Garbing in the right order",
+   "setting": "IV room · ante room",
+   "topics": [
+    "USP 797",
+    "Garbing"
+   ],
+   "stem": "You walk into the ante room to garb.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the principle behind the garbing order?",
+     "options": [
+      {
+       "t": "Dirtiest to cleanest: start with what is closest to the floor and the dirtiest parts of you",
+       "correct": true,
+       "why": "Shoe covers and hair covers go on before you wash, so you do not touch clean hands to dirty items."
+      },
+      {
+       "t": "Cleanest to dirtiest",
+       "correct": false,
+       "why": "Reversed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Principle"
+    },
+    {
+     "q": "Put these in order: gown, shoe covers, wash hands, sterile gloves, hair cover and face mask.",
+     "options": [
+      {
+       "t": "Shoe covers, hair cover, face mask, wash hands, gown, sterile gloves",
+       "correct": true,
+       "why": "Gloves go on last, inside the buffer area or at the line of demarcation per SOP, and are sanitized with sterile 70% isopropyl alcohol."
+      },
+      {
+       "t": "Gloves, gown, wash hands, hair cover, shoe covers",
+       "correct": false,
+       "why": "Gloves first would contaminate them immediately."
+      },
+      {
+       "t": "Wash hands, gown, shoe covers, gloves, mask",
+       "correct": false,
+       "why": "You would touch your shoes after washing."
+      }
+     ],
+     "teach": "Your SOP is the final word on the exact order and where the line of demarcation is.",
+     "where": "St. Mary's garbing SOP (posted in the ante room).",
+     "kind": "Order"
+    },
+    {
+     "q": "How long is the hand wash?",
+     "options": [
+      {
+       "t": "At least 30 seconds with soap and water, nails cleaned, hands to elbows",
+       "correct": true,
+       "why": "Then dry with low lint towels and apply an alcohol based hand rub before sterile gloves."
+      },
+      {
+       "t": "5 seconds",
+       "correct": false,
+       "why": "Too short."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "What do you use on your gloves during compounding?",
+     "options": [
+      {
+       "t": "Sterile 70% isopropyl alcohol, applied often, especially after touching anything outside the hood",
+       "correct": true,
+       "why": "Let it dry. Wet alcohol is not yet working."
+      },
+      {
+       "t": "Nothing once gloves are on",
+       "correct": false,
+       "why": "Gloves pick up contamination; you sanitize them again and again."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Practice"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Dirty to clean: shoes, hair, mask, wash 30 seconds, gown, sterile gloves, sterile IPA.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "Florida DOH: USP 797 inspection checklist (2024)",
+     "url": "https://www.floridahealth.gov/licensing-and-regulation/enforcement/inspection-program/SterileCompounding-Revision1,USP7972022.August2024.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv03",
+   "title": "Media fill: what it proves",
+   "setting": "IV room · competency day",
+   "topics": [
+    "USP 797",
+    "Media fill"
+   ],
+   "stem": "Your trainer hands you bags and vials of growth medium (soybean casein digest) instead of real drugs.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the media fill test for?",
+     "options": [
+      {
+       "t": "To prove your aseptic technique by copying your most complex real manipulations with a growth medium",
+       "correct": true,
+       "why": "If any bacteria get in, the medium turns cloudy after incubation."
+      },
+      {
+       "t": "To test the hood airflow",
+       "correct": false,
+       "why": "That is certification of the hood."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "After incubation the medium is cloudy (turbid). What does that mean?",
+     "options": [
+      {
+       "t": "Failure: contamination got in. You stop compounding, get retrained, and repeat the full aseptic manipulation competency",
+       "correct": true,
+       "why": "If any part of the aseptic manipulation assessment fails, the whole assessment is repeated."
+      },
+      {
+       "t": "Normal; the medium is supposed to turn cloudy",
+       "correct": false,
+       "why": "Clear means pass. Cloudy means growth."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Interpret"
+    },
+    {
+     "q": "How is a media fill usually incubated under the 2023 chapter?",
+     "options": [
+      {
+       "t": "At 20 to 25 °C and 30 to 35 °C, at least 7 days each (14 days total)",
+       "correct": true,
+       "why": "Two temperature ranges catch both environmental organisms and organisms from skin. Follow your SOP for the order."
+      },
+      {
+       "t": "One hour in the refrigerator",
+       "correct": false,
+       "why": "Bacteria will not grow there."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Media fill: copy your hardest work with growth medium. Clear = pass. Cloudy = fail and repeat everything.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv04",
+   "title": "Rooms, ISO classes and pressure",
+   "setting": "IV room · orientation tour",
+   "topics": [
+    "USP 797",
+    "Facilities"
+   ],
+   "stem": "On your tour you see the hood, the buffer room and the ante room.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Match the area to its ISO class.",
+     "options": [
+      {
+       "t": "Hood (primary engineering control) ISO 5; buffer room ISO 7; ante room ISO 8 (ISO 7 if it opens into a negative pressure buffer room)",
+       "correct": true,
+       "why": "Lower ISO number = cleaner air."
+      },
+      {
+       "t": "All ISO 5",
+       "correct": false,
+       "why": "Only the hood is ISO 5."
+      },
+      {
+       "t": "Hood ISO 8, buffer ISO 5",
+       "correct": false,
+       "why": "Reversed."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "Which way should air flow between the buffer room and ante room for non hazardous compounding?",
+     "options": [
+      {
+       "t": "From the buffer room out to the ante room (buffer room positive pressure, at least 0.02 inch water column)",
+       "correct": true,
+       "why": "Positive pressure pushes dirty air away from where you compound."
+      },
+      {
+       "t": "From the ante room into the buffer room",
+       "correct": false,
+       "why": "That would pull dirtier air in."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Principle"
+    },
+    {
+     "q": "What is \"first air\"?",
+     "options": [
+      {
+       "t": "The HEPA filtered air coming out of the hood before it touches anything",
+       "correct": true,
+       "why": "Never block first air with your hands or other items between the filter and the critical site (needle, vial stopper, syringe tip)."
+      },
+      {
+       "t": "The air in the ante room",
+       "correct": false,
+       "why": "No."
+      }
+     ],
+     "teach": "Most contamination in a working hood comes from the compounder blocking first air or touching critical sites.",
+     "where": "",
+     "kind": "Technique"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**ISO 5 hood, ISO 7 buffer, ISO 8 ante. Buffer positive. Never block first air.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "Florida DOH: USP 797 inspection checklist (2024)",
+     "url": "https://www.floridahealth.gov/licensing-and-regulation/enforcement/inspection-program/SterileCompounding-Revision1,USP7972022.August2024.pdf",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "iv05",
+   "title": "Environmental monitoring and certification",
+   "setting": "IV room · quality binder",
+   "topics": [
+    "USP 797",
+    "Monitoring"
+   ],
+   "stem": "The IV room supervisor shows you the monitoring binder.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How often are the hoods and cleanroom certified?",
+     "options": [
+      {
+       "t": "At least every 6 months, and after major repairs or relocation",
+       "correct": true,
+       "why": "Certification checks airflow, HEPA filter integrity, particle counts and pressure."
+      },
+      {
+       "t": "Every 5 years",
+       "correct": false,
+       "why": "Much more often."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "Under the 2023 chapter, how often is surface sampling done in classified areas and hoods?",
+     "options": [
+      {
+       "t": "At least monthly",
+       "correct": true,
+       "why": "Viable air sampling is at least every 6 months."
+      },
+      {
+       "t": "Once a year",
+       "correct": false,
+       "why": "Too infrequent."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "A surface sample from the hood work surface grows mold. What happens?",
+     "options": [
+      {
+       "t": "It exceeds the action level: investigate, clean and disinfect (with a sporicidal agent), resample, and document corrective action",
+       "correct": true,
+       "why": "Any mold in an ISO 5 area needs investigation."
+      },
+      {
+       "t": "Ignore it if the count is low",
+       "correct": false,
+       "why": "Mold in ISO 5 is always a concern."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Act"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Certify every 6 months. Surface sample monthly. Air sample every 6 months.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv06",
+   "title": "Cleaning the hood",
+   "setting": "IV room · start of shift",
+   "topics": [
+    "USP 797",
+    "Cleaning"
+   ],
+   "stem": "It is the start of your IV room shift.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What three steps make up cleaning under USP 797?",
+     "options": [
+      {
+       "t": "Cleaning (remove residue), disinfecting (kill microbes) and applying sterile 70% IPA to remove residue",
+       "correct": true,
+       "why": "Some products clean and disinfect in one step; follow the product's contact (dwell) time."
+      },
+      {
+       "t": "Just spray alcohol and wipe immediately",
+       "correct": false,
+       "why": "Alcohol alone does not clean residue, and wiping before the dwell time ends means it did not work."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    },
+    {
+     "q": "Which direction do you clean the hood?",
+     "options": [
+      {
+       "t": "From the cleanest area to the dirtiest: top to bottom, back to front, away from the HEPA filter",
+       "correct": true,
+       "why": "You move contamination out of the hood, not deeper in."
+      },
+      {
+       "t": "From the front edge to the back",
+       "correct": false,
+       "why": "That pushes dirt toward the critical work area."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Technique"
+    },
+    {
+     "q": "How often is a sporicidal agent used in the hood?",
+     "options": [
+      {
+       "t": "At least monthly (and when contamination is suspected)",
+       "correct": true,
+       "why": "Spores resist ordinary disinfectants."
+      },
+      {
+       "t": "Never",
+       "correct": false,
+       "why": "Required on a schedule."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Clean, disinfect, IPA. Top to bottom, back to front. Sporicidal monthly.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv07",
+   "title": "Immediate use in an emergency",
+   "setting": "ED · code in progress",
+   "topics": [
+    "USP 797",
+    "Immediate use"
+   ],
+   "stem": "During a code, a nurse needs an amiodarone infusion mixed outside the IV room.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What are the immediate use rules?",
+     "options": [
+      {
+       "t": "No more than 3 different sterile products, simple aseptic technique, and administration must start within 4 hours of starting preparation",
+       "correct": true,
+       "why": "USP 797 immediate use. Label with ingredients, preparer and the 4 hour limit unless given right away."
+      },
+      {
+       "t": "Any number of products, use within 24 hours",
+       "correct": false,
+       "why": "That is not immediate use."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "Why is the window so short?",
+     "options": [
+      {
+       "t": "The product was made outside clean air, so bacteria have little time to grow before it is used",
+       "correct": true,
+       "why": "Short time limits the risk."
+      },
+      {
+       "t": "Amiodarone loses potency in 4 hours",
+       "correct": false,
+       "why": "The limit is about sterility, not stability."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Immediate use: 3 products max, start within 4 hours.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "iv08",
+   "title": "Category 1 or Category 2?",
+   "setting": "IV room · labeling",
+   "topics": [
+    "USP 797",
+    "BUD"
+   ],
+   "stem": "You prepare cefazolin 2 g in 100 mL NS in a hood located in a segregated compounding area (not a cleanroom suite).",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What category is this, and what is the maximum BUD?",
+     "options": [
+      {
+       "t": "Category 1: up to 12 hours at room temperature or 24 hours refrigerated",
+       "correct": true,
+       "why": "A hood in a segregated compounding area can only make Category 1."
+      },
+      {
+       "t": "Category 2: 10 days refrigerated",
+       "correct": false,
+       "why": "Category 2 needs a hood inside a classified cleanroom suite."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "The same bag made in the cleanroom suite from all sterile ingredients, no sterility test. Maximum BUD?",
+     "options": [
+      {
+       "t": "Category 2: 4 days room temperature, 10 days refrigerated, 45 days frozen",
+       "correct": true,
+       "why": "USP 797 (2023) Category 2, aseptically processed, sterile starting components, no sterility testing."
+      },
+      {
+       "t": "90 days refrigerated",
+       "correct": false,
+       "why": "Far beyond the chapter limits."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "If any starting ingredient is nonsterile (for example a bulk powder), the Category 2 BUD drops to:",
+     "options": [
+      {
+       "t": "1 day room temperature, 4 days refrigerated, 45 days frozen",
+       "correct": true,
+       "why": "Nonsterile starting components shorten the BUD."
+      },
+      {
+       "t": "No change",
+       "correct": false,
+       "why": "It is shorter."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "What also limits the BUD besides the USP category?",
+     "options": [
+      {
+       "t": "Chemical and physical stability of the drug in that diluent and container",
+       "correct": true,
+       "why": "The BUD is the shorter of the sterility limit and the stability limit. Check the label or Trissel's."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "Some drugs (for example ampicillin) are stable only hours."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Concept"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Cat 1: 12 h room, 24 h fridge. Cat 2 sterile ingredients: 4 / 10 / 45 days. Always the shorter of sterility and stability.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "Florida DOH: USP 797 inspection checklist (2024)",
+     "url": "https://www.floridahealth.gov/licensing-and-regulation/enforcement/inspection-program/SterileCompounding-Revision1,USP7972022.August2024.pdf",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv09",
+   "title": "Single dose and multiple dose vials",
+   "setting": "IV room · vial reuse",
+   "topics": [
+    "USP 797",
+    "Vials"
+   ],
+   "stem": "A single dose vial of ondansetron was punctured in the hood 6 hours ago. A multiple dose vial of insulin was opened 20 days ago.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Can you use the single dose vial again?",
+     "options": [
+      {
+       "t": "Yes, if it was opened and kept in ISO 5 air, up to 12 hours after first puncture",
+       "correct": true,
+       "why": "If punctured outside ISO 5, it must be used within 1 hour."
+      },
+      {
+       "t": "No, single dose means use once only, no exceptions",
+       "correct": false,
+       "why": "USP 797 allows up to 12 hours inside ISO 5."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "Can the multiple dose vial still be used?",
+     "options": [
+      {
+       "t": "Yes: 28 days after opening unless the manufacturer states otherwise",
+       "correct": true,
+       "why": "Date the vial when opened."
+      },
+      {
+       "t": "No: 7 days maximum",
+       "correct": false,
+       "why": "The default is 28 days."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Single dose vial: 12 h inside ISO 5, 1 h outside. Multiple dose vial: 28 days.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "iv10",
+   "title": "Hazardous drug compounding",
+   "setting": "IV room · oncology order",
+   "topics": [
+    "USP 800",
+    "Hazardous drugs"
+   ],
+   "stem": "An order arrives for cyclophosphamide, a NIOSH listed antineoplastic.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Where is it compounded?",
+     "options": [
+      {
+       "t": "In a containment hood (biological safety cabinet or CACI) inside a negative pressure room",
+       "correct": true,
+       "why": "Negative pressure keeps hazardous drug out of the rest of the pharmacy."
+      },
+      {
+       "t": "In the regular positive pressure hood",
+       "correct": false,
+       "why": "Positive pressure would push hazardous drug toward people."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Facility"
+    },
+    {
+     "q": "What protective equipment do you wear?",
+     "options": [
+      {
+       "t": "Two pairs of chemotherapy gloves tested to ASTM D6978",
+       "correct": true,
+       "why": "Change gloves on a schedule and when torn."
+      },
+      {
+       "t": "A disposable gown shown to resist hazardous drug permeation, closing in the back",
+       "correct": true,
+       "why": "Not a cloth lab coat."
+      },
+      {
+       "t": "A closed system transfer device when the dosage form allows (required for administration, recommended for compounding)",
+       "correct": true,
+       "why": "Reduces aerosol and spill exposure."
+      },
+      {
+       "t": "One pair of exam gloves",
+       "correct": false,
+       "why": "Not protective enough."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "PPE",
+     "type": "multi"
+    },
+    {
+     "q": "A nurse calls about a hazardous drug bag that leaked on the floor. What do you tell them?",
+     "options": [
+      {
+       "t": "Use the hazardous drug spill kit with full PPE, contain from the outside in, and dispose of waste as hazardous",
+       "correct": true,
+       "why": "Know where the spill kit is before you need it."
+      },
+      {
+       "t": "Wipe it with paper towels and throw them in the trash",
+       "correct": false,
+       "why": "Unsafe exposure and improper disposal."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Spill"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Hazardous drugs: negative pressure, double chemo gloves, chemo gown, CSTD, spill kit.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 800, Hazardous Drugs: Handling in Healthcare Settings",
+     "url": "https://www.usp.org/compounding/general-chapter-hazardous-drugs-handling-healthcare",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv11",
+   "title": "Vincristine: the never event",
+   "setting": "IV room · oncology",
+   "topics": [
+    "Safety",
+    "Vinca alkaloids"
+   ],
+   "stem": "A vincristine dose is ready to dispense. The oncology nurse asks for it in a syringe \"to make it faster.\"",
+   "chart": null,
+   "steps": [
+    {
+     "q": "How must vincristine be dispensed?",
+     "options": [
+      {
+       "t": "In a minibag (for example 25 to 50 mL), never a syringe",
+       "correct": true,
+       "why": "Given intrathecally by mistake, vincristine is almost always fatal. A minibag cannot be connected to a spinal needle."
+      },
+      {
+       "t": "In a syringe labeled \"For IV use only\"",
+       "correct": false,
+       "why": "Labels alone have failed; the minibag is the safeguard."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    }
+   ],
+   "call": "Explain the reason calmly: \"Vincristine is fatal if it is ever given into the spine, and the minibag makes that impossible. It is ready now in a minibag.\"",
+   "monitor": "",
+   "pearl": "**Vincristine: minibag only. Never a syringe.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ISMP: vincristine labeling and packaging changes to prevent wrong route (minibag dispensing)",
+     "url": "https://home.ecri.org/blogs/ismp-news/due-to-ismp-advocacy-vincristine-labeling-and-packaging-changed-to-prevent-wrong-route-administration",
+     "mark": "✅"
+    }
+   ]
+  },
+  {
+   "id": "iv12",
+   "title": "Diluent catches",
+   "setting": "IV room · checking bags",
+   "topics": [
+    "IV room",
+    "Diluents"
+   ],
+   "stem": "Four orders are waiting for your final check.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "Which of these are diluent errors?",
+     "options": [
+      {
+       "t": "Phenytoin in D5W",
+       "correct": true,
+       "why": "Phenytoin precipitates in dextrose. Use normal saline only, with a 0.22 micron in line filter, no faster than 50 mg/min in adults."
+      },
+      {
+       "t": "Liposomal amphotericin B in normal saline",
+       "correct": true,
+       "why": "Saline breaks the liposomes. Use D5W only, and flush lines with D5W."
+      },
+      {
+       "t": "Ampicillin in D5W for a long infusion",
+       "correct": true,
+       "why": "Ampicillin is much less stable in dextrose; normal saline is preferred."
+      },
+      {
+       "t": "Vancomycin in normal saline",
+       "correct": false,
+       "why": "Vancomycin is fine in NS or D5W."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch",
+     "type": "multi"
+    },
+    {
+     "q": "Nitroglycerin infusion: which container?",
+     "options": [
+      {
+       "t": "Glass or non PVC (polyolefin) bag with non PVC tubing",
+       "correct": true,
+       "why": "Nitroglycerin is absorbed into PVC plastic, so the patient gets less drug."
+      },
+      {
+       "t": "Any standard PVC bag",
+       "correct": false,
+       "why": "Loses drug into the plastic."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Phenytoin NS only. Ampho B D5W only. Ampicillin NS. Nitro: no PVC.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv13",
+   "title": "Parenteral nutrition: calcium and phosphate",
+   "setting": "IV room · TPN",
+   "topics": [
+    "IV room",
+    "Parenteral nutrition"
+   ],
+   "stem": "You are checking an adult PN order with high calcium and phosphate.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the main precipitation risk?",
+     "options": [
+      {
+       "t": "Calcium phosphate crystals, which can block lung vessels and have caused deaths",
+       "correct": true,
+       "why": "Check solubility with your compounder software or curves; temperature, pH, amino acid concentration and order of mixing all matter."
+      },
+      {
+       "t": "None",
+       "correct": false,
+       "why": "Calcium phosphate precipitation is a known fatal risk."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Safety"
+    },
+    {
+     "q": "Which filter for a 3 in 1 PN (lipids in the bag)?",
+     "options": [
+      {
+       "t": "1.2 micron filter",
+       "correct": true,
+       "why": "Lipid droplets clog a 0.22 micron filter. 2 in 1 PN (no lipid) uses 0.22 micron."
+      },
+      {
+       "t": "0.22 micron",
+       "correct": false,
+       "why": "Too small for lipid emulsions."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    },
+    {
+     "q": "What osmolarity limit applies for peripheral PN?",
+     "options": [
+      {
+       "t": "About 900 mOsm/L or less",
+       "correct": true,
+       "why": "Higher osmolarity damages peripheral veins; it needs a central line."
+      },
+      {
+       "t": "2,000 mOsm/L",
+       "correct": false,
+       "why": "That needs a central line."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Numbers"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**PN: watch Ca and Phos. 1.2 micron for lipids. Peripheral 900 mOsm/L max.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "ASPEN parenteral nutrition safety consensus (Ayers P, et al. JPEN 2014;38:296-333)",
+     "url": "https://doi.org/10.1177/0148607113511992",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv14",
+   "title": "Final check of a CSP",
+   "setting": "IV room · pharmacist verification",
+   "topics": [
+    "IV room",
+    "Final check"
+   ],
+   "stem": "A technician hands you a finished potassium chloride bag for your final check.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What do you verify?",
+     "options": [
+      {
+       "t": "The right drug, concentration and volume match the order, using the vials, syringe pull back, images or gravimetric data per SOP",
+       "correct": true,
+       "why": "You verify what went in, not just the label."
+      },
+      {
+       "t": "Label: patient, drug, concentration, total volume, BUD, storage, and any high alert warning",
+       "correct": true,
+       "why": "The label is what the nurse trusts."
+      },
+      {
+       "t": "Visual inspection: no particles, cloudiness, leaks or color change",
+       "correct": true,
+       "why": "Hold the bag against light and dark backgrounds."
+      },
+      {
+       "t": "The technician's word that it is right",
+       "correct": false,
+       "why": "Your check is independent."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Check",
+     "type": "multi"
+    },
+    {
+     "q": "The label says 40 mEq in 100 mL \"for peripheral use.\" What is wrong?",
+     "options": [
+      {
+       "t": "Concentrated potassium (40 mEq/100 mL) is a central line concentration; peripheral rates are usually limited to 10 mEq/h",
+       "correct": true,
+       "why": "Call before it leaves the IV room."
+      },
+      {
+       "t": "Nothing",
+       "correct": false,
+       "why": "This mismatch can burn a vein or cause dangerous rates."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Catch"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Final check: what went in, the label, and a look at the bag.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  },
+  {
+   "id": "iv15",
+   "title": "Shift simulation: IV room at 0600",
+   "setting": "IV room · morning batch",
+   "topics": [
+    "USP 797",
+    "Prioritize"
+   ],
+   "stem": "At 0600: (1) a first dose cefepime for a septic patient; (2) the morning batch of 40 routine piggybacks; (3) your hood certification sticker expired yesterday; (4) a TPN due at 2100.",
+   "chart": null,
+   "steps": [
+    {
+     "q": "What is the problem you must solve before compounding anything?",
+     "options": [
+      {
+       "t": "The hood certification lapsed; tell your supervisor and follow the SOP (use a certified hood, or limit to what policy allows)",
+       "correct": true,
+       "why": "Compounding in an uncertified hood violates USP 797."
+      },
+      {
+       "t": "Nothing; certification is paperwork",
+       "correct": false,
+       "why": "It proves the air is clean."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    },
+    {
+     "q": "Then what goes first?",
+     "options": [
+      {
+       "t": "The first dose cefepime for the septic patient",
+       "correct": true,
+       "why": "First doses for sepsis are time critical."
+      },
+      {
+       "t": "The TPN",
+       "correct": false,
+       "why": "Due at 2100."
+      },
+      {
+       "t": "The batch",
+       "correct": false,
+       "why": "Routine."
+      }
+     ],
+     "teach": "",
+     "where": "",
+     "kind": "Prioritize"
+    }
+   ],
+   "call": "",
+   "monitor": "",
+   "pearl": "**Clean air first, then first doses, then batch, then later items.**",
+   "alternatives": "",
+   "sources": [
+    {
+     "t": "USP General Chapter 797, Pharmaceutical Compounding: Sterile Preparations (2023 revision)",
+     "url": "https://www.usp.org/compounding/general-chapter-797",
+     "mark": "✅"
+    },
+    {
+     "t": "St. Mary's IV room SOPs, BUD policy and competency program (verify locally)",
+     "url": "",
+     "mark": "⚠️"
+    }
+   ]
+  }
+ ]
+}
