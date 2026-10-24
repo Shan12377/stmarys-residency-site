@@ -1,3 +1,4 @@
+- **2026-10-24:** Question bank focus sounds fixed for phones and headsets (now play like music, louder by default) and new options: **528 Hz with a 6 Hz theta beat**, the same with soft brown noise, and 528 Hz with a 10 Hz alpha beat.
 - **2026-10-23:** Question bank: every case now has a level (**Foundation, Staff, Top 10%**) with a level filter and a tip that moves you up or back based on your score. New **Module 15, Mixed Patients** (8 Top 10% cases that cross modules).
 - **2026-10-23:** Question bank complete: **Module 14, Practice Advancement** (MUE, QI vs research, PDSA, ARR, NNT and NNH with real trial numbers, noninferiority, inservices). All 15 modules, 208 cases.
 - **2026-10-23:** Question bank: new **Module 13, Medication Safety and Florida Law** (10 cases): high alert drugs, look alike names, abbreviations, weekly methotrexate, Joint Commission 2026, just culture, diversion and DEA reporting, Florida CE, E-FORCSE, discharge reconciliation.
