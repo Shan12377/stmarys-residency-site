@@ -121,7 +121,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "labetalol_ob",
+     "hydralazine_ob",
+     "nifedipine_ob"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld02",
@@ -231,7 +240,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "labetalol_ob",
+     "hydralazine_ob"
+    ],
+    "calc": "Labetalol so far: 20 + 40 + 80 = **140 mg** in about 30 minutes, BP still severe: switch class (hydralazine 10 mg IV) rather than giving more labetalol. The injection label caps cumulative repeated doses at 300 mg ⚠️.",
+    "whatif": []
+   }
   },
   {
    "id": "ld03",
@@ -321,7 +338,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "hydralazine_ob",
+     "labetalol_ob"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld04",
@@ -418,7 +443,8 @@
    "level": "Staff",
    "workup": {
     "drugs": [
-     "magnesium_ob"
+     "magnesium_ob",
+     "nifedipine_ob"
     ],
     "calc": "Nifedipine IR 10 mg PO, recheck 20 min, then 20 mg, recheck 20 min, then 20 mg; she is on magnesium, so watch BP and reflexes closely.",
     "whatif": []
@@ -522,7 +548,16 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "ace_pregnancy",
+     "labetalol_ob",
+     "nifedipine_ob"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld06",
@@ -599,7 +634,16 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "labetalol_ob",
+     "nifedipine_ob",
+     "ace_pregnancy"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld07",
@@ -1341,7 +1385,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "oxytocin"
+    ],
+    "calc": "Tachysystole: more than 5 contractions in 10 minutes. With a 30 units/500 mL bag (60 milliunits/mL), mL/h equals milliunits/min: a rate of 12 mL/h = 12 milliunits/min.",
+    "whatif": []
+   }
   },
   {
    "id": "ld15",
@@ -1401,7 +1452,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "oxytocin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld16",
@@ -1496,7 +1554,17 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "methylergonovine",
+     "carboprost",
+     "misoprostol_ob",
+     "txa_pph"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld17",
@@ -1557,7 +1625,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "carboprost",
+     "misoprostol_ob"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld18",
@@ -1629,7 +1705,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "misoprostol_ob",
+     "txa_pph"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld19",
@@ -1713,7 +1797,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "txa_pph"
+    ],
+    "calc": "Bleeding started 2 hours after birth: inside the 3 hour window. 1 g in 100 mL over 10 minutes = 600 mL/h for 10 minutes; second 1 g if bleeding continues after 30 minutes.",
+    "whatif": []
+   }
   },
   {
    "id": "ld20",
@@ -1781,7 +1872,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "txa_pph"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld21",
@@ -1854,7 +1952,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "gbs_abx"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld22",
@@ -1926,7 +2031,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "gbs_abx"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld23",
@@ -1987,7 +2099,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "gbs_abx"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld24",
@@ -2054,7 +2173,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "gbs_abx"
+    ],
+    "calc": "Vancomycin 20 mg/kg x 72 kg = 1,440 mg (round per protocol, for example 1,500 mg), every 8 hours, max 2 g per dose. Label rate (10 mg/min or slower): at least 150 minutes.",
+    "whatif": []
+   }
   },
   {
    "id": "ld25",
@@ -2162,7 +2288,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "chorio_abx"
+    ],
+    "calc": "Gentamicin for 80 kg: 2 mg/kg load = **160 mg**, then 1.5 mg/kg = **120 mg every 8 hours**; or 5 mg/kg = **400 mg every 24 hours**. Ampicillin 2 g every 6 hours.",
+    "whatif": []
+   }
   },
   {
    "id": "ld26",
@@ -2223,7 +2356,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "chorio_abx"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld27",
@@ -2284,7 +2424,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "antenatal_steroids"
+    ],
+    "calc": "Betamethasone 12 mg IM now and 12 mg IM in 24 hours. Fixed dose, not weight based.",
+    "whatif": []
+   }
   },
   {
    "id": "ld28",
@@ -2355,7 +2502,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "antenatal_steroids",
+     "gdm_insulin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld29",
@@ -2422,7 +2577,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "indomethacin_toco",
+     "nsaid_pregnancy"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld30",
@@ -2477,7 +2640,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "rhig"
+    ],
+    "calc": "Delivered 20 hours ago: inside 72 hours. One 300 mcg vial covers about 30 mL fetal whole blood; order a screen for larger bleeds.",
+    "whatif": []
+   }
   },
   {
    "id": "ld31",
@@ -2553,7 +2723,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "aspirin_ldp"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld32",
@@ -2618,7 +2795,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "misoprostol_ob"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld33",
@@ -2692,7 +2876,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "enox_neuraxial"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld34",
@@ -2752,7 +2943,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "gdm_insulin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld35",
@@ -2826,7 +3024,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "nsaid_pregnancy",
+     "aspirin_ldp"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld36",
@@ -2898,7 +3104,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "ob_pain_lactation"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld37",
@@ -2988,7 +3201,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "ob_pain_lactation"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld38",
@@ -3048,7 +3268,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "statin_preg"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ld39",
@@ -3167,7 +3394,8 @@
    "level": "Top 10%",
    "workup": {
     "drugs": [
-     "magnesium_ob"
+     "magnesium_ob",
+     "gbs_abx"
     ],
     "calc": "Absent reflexes + RR 10 = toxicity: stop the drip and give calcium gluconate 1 g first, before anything else on your list.",
     "whatif": []

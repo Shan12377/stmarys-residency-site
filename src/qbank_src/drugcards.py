@@ -37,5 +37,8 @@ CARDS = {
 ], [MG_LABEL_BAG, MG_LABEL_VIAL, ACOG_ECL, PB222, CO767, CO455, LACTMED, ISMP, LOCAL]),
 }
 
+from cards_ld import LD
+CARDS.update(LD)
+
 def write_cards(outdir):
     json.dump(CARDS, open(os.path.join(outdir, 'drugs.json'), 'w'), ensure_ascii=False, indent=1)

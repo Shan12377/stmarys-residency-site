@@ -29,3 +29,29 @@ W = {
 'ld04': {'drugs': ['magnesium_ob'], 'calc': 'Nifedipine IR 10 mg PO, recheck 20 min, then 20 mg, recheck 20 min, then 20 mg; she is on magnesium, so watch BP and reflexes closely.', 'whatif': []},
 'mx01': {'drugs': ['magnesium_ob'], 'calc': 'Urine 20 mL/h x 3 h (60 mL in 3 h, goal 75 mL) and SCr doubled: lower to 1 g/h per label, level now. Gentamicin adds kidney and neuromuscular risk.', 'whatif': []},
 }
+
+# Drug cards for the remaining L&D cases (cases above keep their own math).
+LINK = {
+ 'ld01': ['labetalol_ob', 'hydralazine_ob', 'nifedipine_ob'], 'ld02': ['labetalol_ob', 'hydralazine_ob'], 'ld03': ['hydralazine_ob', 'labetalol_ob'],
+ 'ld04': ['nifedipine_ob'], 'ld05': ['ace_pregnancy', 'labetalol_ob', 'nifedipine_ob'], 'ld06': ['labetalol_ob', 'nifedipine_ob', 'ace_pregnancy'],
+ 'ld14': ['oxytocin'], 'ld15': ['oxytocin'], 'ld16': ['methylergonovine', 'carboprost', 'misoprostol_ob', 'txa_pph'], 'ld17': ['carboprost', 'misoprostol_ob'],
+ 'ld18': ['misoprostol_ob', 'txa_pph'], 'ld19': ['txa_pph'], 'ld20': ['txa_pph'], 'ld21': ['gbs_abx'], 'ld22': ['gbs_abx'], 'ld23': ['gbs_abx'], 'ld24': ['gbs_abx'],
+ 'ld25': ['chorio_abx'], 'ld26': ['chorio_abx'], 'ld27': ['antenatal_steroids'], 'ld28': ['antenatal_steroids', 'gdm_insulin'], 'ld29': ['indomethacin_toco', 'nsaid_pregnancy'],
+ 'ld30': ['rhig'], 'ld31': ['aspirin_ldp'], 'ld32': ['misoprostol_ob'], 'ld33': ['enox_neuraxial'], 'ld34': ['gdm_insulin'], 'ld35': ['nsaid_pregnancy', 'aspirin_ldp'],
+ 'ld36': ['ob_pain_lactation'], 'ld37': ['ob_pain_lactation'], 'ld38': ['statin_preg'], 'ld40': ['magnesium_ob', 'gbs_abx'],
+ 'mx06': ['ob_pain_lactation', 'ace_pregnancy', 'labetalol_ob'], 'mx01': ['magnesium_ob', 'chorio_abx'],
+}
+CALC = {
+ 'ld02': 'Labetalol so far: 20 + 40 + 80 = **140 mg** in about 30 minutes, BP still severe: switch class (hydralazine 10 mg IV) rather than giving more labetalol. The injection label caps cumulative repeated doses at 300 mg ⚠️.',
+ 'ld14': 'Tachysystole: more than 5 contractions in 10 minutes. With a 30 units/500 mL bag (60 milliunits/mL), mL/h equals milliunits/min: a rate of 12 mL/h = 12 milliunits/min.',
+ 'ld19': 'Bleeding started 2 hours after birth: inside the 3 hour window. 1 g in 100 mL over 10 minutes = 600 mL/h for 10 minutes; second 1 g if bleeding continues after 30 minutes.',
+ 'ld24': 'Vancomycin 20 mg/kg x 72 kg = 1,440 mg (round per protocol, for example 1,500 mg), every 8 hours, max 2 g per dose. Label rate (10 mg/min or slower): at least 150 minutes.',
+ 'ld25': 'Gentamicin for 80 kg: 2 mg/kg load = **160 mg**, then 1.5 mg/kg = **120 mg every 8 hours**; or 5 mg/kg = **400 mg every 24 hours**. Ampicillin 2 g every 6 hours.',
+ 'ld27': 'Betamethasone 12 mg IM now and 12 mg IM in 24 hours. Fixed dose, not weight based.',
+ 'ld30': 'Delivered 20 hours ago: inside 72 hours. One 300 mcg vial covers about 30 mL fetal whole blood; order a screen for larger bleeds.',
+}
+for cid, drugs in LINK.items():
+    W.setdefault(cid, {'drugs': [], 'calc': '', 'whatif': []})
+    for d in drugs:
+        if d not in W[cid]['drugs']: W[cid]['drugs'].append(d)
+    if cid in CALC and not W[cid].get('calc'): W[cid]['calc'] = CALC[cid]
