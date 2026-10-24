@@ -85,7 +85,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "nc02",
@@ -152,7 +159,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "nc03",
@@ -246,7 +260,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "0.02 mg/kg x 3 kg = 0.06 mg = **0.6 mL** of 0.1 mg/mL IV; ETT would be 0.1 x 3 = 0.3 mg = 3 mL. Saline 10 mL/kg = 30 mL.",
+    "whatif": []
+   }
   },
   {
    "id": "nc04",
@@ -300,7 +321,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "nc05",
@@ -384,7 +412,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "nc06",
@@ -461,7 +496,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "nc07",
@@ -522,7 +564,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "1.1 kg: load 20 mg/kg = 22 mg; maintenance 5 mg/kg = 5.5 mg daily (caffeine citrate).",
+    "whatif": []
+   }
   },
   {
    "id": "nc08",
@@ -583,7 +632,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "nc09",
@@ -626,7 +682,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "D10W 2 mL/kg x 3.2 kg = **6.4 mL** (640 mg dextrose = 200 mg/kg).",
+    "whatif": []
+   }
   },
   {
    "id": "nc10",
@@ -687,7 +750,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "neonatal"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

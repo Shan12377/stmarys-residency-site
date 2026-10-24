@@ -85,7 +85,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "tr02",
@@ -169,7 +176,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "tr03",
@@ -254,7 +268,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "Ketamine 1 to 2 mg/kg x 85 = 85 to 170 mg; etomidate 0.3 x 85 = 25.5 mg; rocuronium 1 to 1.2 x 85 = 85 to 102 mg.",
+    "whatif": []
+   }
   },
   {
    "id": "tr04",
@@ -315,7 +336,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "kcentra",
+     "doacs",
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "tr05",
@@ -410,7 +440,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "Mannitol 0.25 to 1 g/kg x 80 = 20 to 80 g (20% = 100 to 400 mL).",
+    "whatif": []
+   }
   },
   {
    "id": "tr06",
@@ -482,7 +519,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "tr07",
@@ -549,7 +593,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "tr08",
@@ -615,7 +666,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "tr09",
@@ -676,7 +734,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "4 x 80 x 40 = **12,800 mL**; half = 6,400 mL by hour 8 from the burn; 2 hours gone, so 6,400 mL over 6 hours = **1,067 mL/h**, then 6,400 mL over 16 hours = 400 mL/h.",
+    "whatif": []
+   }
   },
   {
    "id": "tr10",
@@ -760,7 +825,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

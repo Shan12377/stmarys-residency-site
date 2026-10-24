@@ -103,7 +103,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "pressors"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cc02",
@@ -169,7 +176,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "pressors"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cc03",
@@ -248,7 +262,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "sedation_icu"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cc04",
@@ -332,7 +353,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "sedation_icu"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cc05",
@@ -416,7 +444,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "hyperk"
+    ],
+    "calc": "K 7.1 with peaked T waves = severe. Calcium gluconate 1 g now; regular insulin **5 units** (CrCl 15) + dextrose 25 g; glucose hourly x 4 to 6 h; binder and dialysis.",
+    "whatif": []
+   }
   },
   {
    "id": "cc06",
@@ -510,7 +545,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "hyponatremia_tx"
+    ],
+    "calc": "3% saline 100 to 150 mL over 10 to 20 min, up to about 3 times. Na 112: aim for about 116 to 118 in the first hours; no more than about 122 at 24 hours (10 per 24 h), 120 if high risk (8 per 24 h).",
+    "whatif": []
+   }
   },
   {
    "id": "cc07",
@@ -558,7 +600,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "icu_glucose"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cc08",
@@ -660,7 +709,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "dka_insulin",
+     "kcl_iv"
+    ],
+    "calc": "K 3.2: hold insulin, replace potassium. Then 0.1 units/kg/h x 70 kg = **7 units/h**; at glucose below 250: 0.05 units/kg/h = **3.5 units/h** plus dextrose.",
+    "whatif": []
+   }
   },
   {
    "id": "cc09",
@@ -744,7 +801,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "kcl_iv"
+    ],
+    "calc": "40 mEq at the 10 mEq/h peripheral limit = **4 hours**, not 1. Replace Mg 1.3 as well.",
+    "whatif": []
+   }
   },
   {
    "id": "cc10",
@@ -811,7 +875,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "sup"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cc11",
@@ -877,7 +948,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "hyperk",
+     "pressors"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

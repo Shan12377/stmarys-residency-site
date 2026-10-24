@@ -133,7 +133,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h02",
@@ -238,7 +245,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "(140 minus 70) x 80 / (72 x 1.6) = 5,600 / 115.2 = **48.6 mL/min**.",
+    "whatif": []
+   }
   },
   {
    "id": "h03",
@@ -314,7 +328,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h04",
@@ -413,7 +434,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h05",
@@ -483,7 +511,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h06",
@@ -554,7 +589,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h07",
@@ -643,7 +685,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h08",
@@ -731,7 +780,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h09",
@@ -808,7 +864,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h10",
@@ -875,7 +938,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h11",
@@ -927,7 +997,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h12",
@@ -974,7 +1051,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h13",
@@ -1045,7 +1129,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "h14",
@@ -1093,7 +1184,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "verify_basics"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

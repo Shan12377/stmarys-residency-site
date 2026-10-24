@@ -78,7 +78,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "betalactams",
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id02",
@@ -144,7 +152,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id03",
@@ -229,7 +244,15 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "abx_syndromes",
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id04",
@@ -277,7 +300,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "vancomycin",
+     "abx_syndromes"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id05",
@@ -367,7 +398,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "abx_syndromes",
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id06",
@@ -428,7 +467,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id07",
@@ -518,7 +564,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "abx_syndromes"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id08",
@@ -585,7 +638,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "abx_syndromes"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id09",
@@ -646,7 +706,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "abx_syndromes"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id10",
@@ -725,7 +792,16 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "abx_syndromes",
+     "betalactams",
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id11",
@@ -802,7 +878,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "abx_syndromes",
+     "betalactams",
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id12",
@@ -850,7 +935,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id13",
@@ -939,7 +1031,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id14",
@@ -982,7 +1081,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id15",
@@ -1046,7 +1152,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "abx_syndromes"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "id16",
@@ -1117,7 +1230,15 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "abx_syndromes",
+     "betalactams"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

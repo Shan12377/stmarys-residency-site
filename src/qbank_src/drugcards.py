@@ -38,7 +38,11 @@ CARDS = {
 }
 
 from cards_ld import LD
-CARDS.update(LD)
+from cards_pk import PK
+from cards_ac import AC
+from cards_icu import ICU
+from cards_rest import REST
+CARDS.update(LD); CARDS.update(PK); CARDS.update(AC); CARDS.update(ICU); CARDS.update(REST)
 
 def write_cards(outdir):
     json.dump(CARDS, open(os.path.join(outdir, 'drugs.json'), 'w'), ensure_ascii=False, indent=1)

@@ -83,7 +83,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd02",
@@ -168,7 +175,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd03",
@@ -222,7 +236,15 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "acls_drugs",
+     "hyperk"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd04",
@@ -283,7 +305,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd05",
@@ -344,7 +373,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "Naloxone 0.4 mg IV, repeat every 2 to 3 minutes as needed; 4 mg intranasal if no IV.",
+    "whatif": []
+   }
   },
   {
    "id": "cd06",
@@ -410,7 +446,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "Lipid 20%: 1.5 mL/kg x 70 kg = **105 mL** over 2 to 3 min, then 0.25 mL/kg/min = **17.5 mL/min**.",
+    "whatif": []
+   }
   },
   {
    "id": "cd07",
@@ -453,7 +496,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "Bicarbonate 1 to 2 mEq/kg (for 70 kg, 70 to 140 mEq = 1.4 to 2.8 ampules of 50 mEq), repeat to narrow QRS.",
+    "whatif": []
+   }
   },
   {
    "id": "cd08",
@@ -514,7 +564,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd09",
@@ -575,7 +632,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd10",
@@ -641,7 +705,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "cd11",
@@ -707,7 +778,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "acls_drugs"
+    ],
+    "calc": "Example for an 80 kg adult: dantrolene 2.5 mg/kg = **200 mg** IV, repeat until signs resolve.",
+    "whatif": []
+   }
   },
   {
    "id": "cd12",
@@ -789,7 +867,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "acls_drugs",
+     "pressors"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

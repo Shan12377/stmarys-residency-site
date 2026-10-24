@@ -883,5 +883,1515 @@
     "mark": "✅"
    }
   ]
+ },
+ "vancomycin": {
+  "title": "Vancomycin IV (and oral)",
+  "sections": [
+   [
+    "What it is for",
+    "Serious gram positive infections, especially MRSA (bacteremia, pneumonia, osteomyelitis, meningitis), and empiric coverage when MRSA is likely. **Oral** vancomycin only treats C. difficile ✅✅ [Rybak; IDSA 2021]."
+   ],
+   [
+    "How it works",
+    "Binds the D-Ala-D-Ala end of cell wall building blocks; too big to cross gram negative outer membranes. Kills slowly; total exposure (AUC) predicts success."
+   ],
+   [
+    "Target",
+    "AUC over 24 hours **400 to 600** (assuming MIC 1), by Bayesian software (preferred) or two levels; trough only dosing to 15 to 20 is no longer recommended for serious MRSA ✅ [Rybak]."
+   ],
+   [
+    "Dose and weight",
+    "**Load:** 20 to 35 mg/kg **actual** body weight, max 3,000 mg; obese 20 to 25 mg/kg, max 3,000 mg. **Maintenance:** 15 to 20 mg/kg every 8 to 12 hours with normal kidneys; obese usually 4,500 mg/day or less to start. **Children 3 months+:** 60 to 80 mg/kg/day divided every 6 to 8 hours. **Continuous infusion:** load 15 to 20 mg/kg, then 30 to 40 mg/kg/day (up to 60), target level 20 to 25. **Hemodialysis (after session):** load 25 mg/kg, then 7.5 mg/kg (low permeability) or 10 mg/kg (high permeability) after each session, pre dialysis levels at least weekly ✅ [Rybak]."
+   ],
+   [
+    "Show the math (two levels)",
+    "1. ke = ln(C1 / C2) / hours between draws. 2. Half life = 0.693 / ke. 3. Back extrapolate the true peak to the end of the infusion: Cmax = C1 x e^(ke x t). 4. Forward extrapolate the true trough to the end of the interval. 5. AUC per dose = infusion time x (Cmax + Cmin) / 2 + (Cmax minus Cmin) / ke. 6. AUC24 = AUC per dose x doses per day. 7. New dose = old dose x target AUC / current AUC (linear)."
+   ],
+   [
+    "Rate",
+    "Label: at least 60 minutes and no faster than 10 mg/min, whichever is longer (1,500 mg = 150 minutes). Many hospitals use a 1 g per hour policy ⚠️ [St. Mary's]. Too fast causes the **vancomycin infusion reaction** (flushing, itching, low BP): a rate reaction, not an allergy."
+   ],
+   [
+    "Kidneys and toxicity",
+    "Cleared by the kidneys. Kidney injury rises with AUC above 600, long courses, and other nephrotoxins (contrast, loop diuretics, aminoglycosides; piperacillin tazobactam has been reported to raise risk, mostly observational data) ✅ [Rybak]. Ototoxicity is rare."
+   ],
+   [
+    "Monitoring",
+    "SCr at least daily early, urine output, AUC within 24 to 48 hours for serious infection, and again when kidney function or the dose changes ✅ [Rybak]."
+   ],
+   [
+    "What if...",
+    "**Kidneys failing?** Same load; longer interval or smaller dose; level based dosing. **Flushing?** Pause, antihistamine, restart slower. **MRSA nares negative in pneumonia?** Consider stopping. **MSSA in blood?** Switch to cefazolin or nafcillin."
+   ],
+   [
+    "Alternatives",
+    "Linezolid (pneumonia, skin; watch platelets and serotonergic drugs), daptomycin (not for pneumonia), ceftaroline. For C. diff: fidaxomicin or oral vancomycin 125 mg four times daily for 10 days ✅ [IDSA 2021]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Rybak MJ, et al. Vancomycin consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+    "url": "https://doi.org/10.1093/ajhp/zxaa036",
+    "mark": "✅✅"
+   },
+   {
+    "t": "Vancomycin injection prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=vancomycin+injection",
+    "mark": "✅"
+   },
+   {
+    "t": "IDSA/SHEA 2021 C. difficile update. Clin Infect Dis 2021;73:e1029-e1044",
+    "url": "https://doi.org/10.1093/cid/ciab549",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "aminoglycoside": {
+  "title": "Gentamicin and tobramycin (aminoglycosides)",
+  "sections": [
+   [
+    "What they are for",
+    "Serious gram negative infections, often combined with a beta lactam; low dose gentamicin for gram positive synergy (enterococcal endocarditis)."
+   ],
+   [
+    "How they work",
+    "Bind the 30S ribosome; uptake needs oxygen, so no anaerobic activity. **Concentration dependent killing with a post antibiotic effect**: high peak, then a drug free gap."
+   ],
+   [
+    "Dosing weight",
+    "Ideal body weight (men 50 kg, women 45.5 kg, + 2.3 kg per inch over 5 feet). If actual is more than about 120% of ideal, use adjusted = IBW + 0.4 x (actual minus IBW). If actual is below ideal, use actual ⚠️ [protocol]."
+   ],
+   [
+    "Extended interval (Hartford)",
+    "7 mg/kg once; one random level 6 to 14 hours after the start; plot for every 24, 36 or 48 hours; on a line pick the longer; above the q48h zone stop scheduled doses and redose when below 1 mcg/mL ✅ [Nicolau 1995]. **Not for:** pregnancy, burns over 20%, ascites, CrCl below 20 or dialysis, endocarditis synergy, cystic fibrosis, children ✅ [Nicolau]."
+   ],
+   [
+    "Traditional",
+    "Label: 3 mg/kg/day divided every 8 hours (up to 5 mg/kg/day for life threatening infection). Peak 30 minutes after the end of a 30 minute infusion; trough just before the next dose. Avoid peaks above 12 and troughs above 2 mcg/mL ✅ [label]."
+   ],
+   [
+    "Synergy (endocarditis)",
+    "About 3 mg/kg/day divided (for example 1 mg/kg every 8 hours), peak 3 to 4, trough below 1 ✅ [AHA 2015]. For E. faecalis, ampicillin plus ceftriaxone avoids aminoglycoside toxicity ✅ [AHA 2015]."
+   ],
+   [
+    "Toxicity (boxed warning)",
+    "Kidney injury (usually reversible), ototoxicity (hearing and balance, often permanent), neuromuscular blockade ✅ [label]. Ask about ringing ears and dizziness every day."
+   ],
+   [
+    "Interactions",
+    "Loop diuretics (ears), vancomycin, amphotericin, contrast, NSAIDs (kidneys), neuromuscular blockers and magnesium (paralysis)."
+   ],
+   [
+    "What if...",
+    "**Rising creatinine?** Get a level, lengthen the interval or stop. **Ringing ears?** Call today; switch if cultures allow. **Obese?** Adjusted weight. **Neonate?** Unit chart by GA or PMA and PNA, never Hartford."
+   ],
+   [
+    "Alternatives",
+    "A beta lactam alone when susceptible; fluoroquinolones; for synergy in E. faecalis endocarditis, ampicillin plus ceftriaxone."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Nicolau DP, et al. Once daily aminoglycoside program (Hartford). Antimicrob Agents Chemother 1995;39:650-655",
+    "url": "https://doi.org/10.1128/AAC.39.3.650",
+    "mark": "✅"
+   },
+   {
+    "t": "Gentamicin injection prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin+injection",
+    "mark": "✅"
+   },
+   {
+    "t": "AHA 2015 infective endocarditis. Circulation 2015;132:1435-1486",
+    "url": "https://doi.org/10.1161/CIR.0000000000000296",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's pharmacy to dose vancomycin and aminoglycoside protocol (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "doacs": {
+  "title": "DOACs: apixaban, rivaroxaban, dabigatran, edoxaban",
+  "sections": [
+   [
+    "How they work",
+    "Apixaban, rivaroxaban, edoxaban: direct factor Xa inhibitors. Dabigatran: direct thrombin inhibitor. No routine INR monitoring."
+   ],
+   [
+    "Apixaban",
+    "**AF:** 5 mg BID; 2.5 mg BID only with **2 of 3**: age 80+, weight 60 kg or less, SCr 1.5+. **VTE:** 10 mg BID x 7 days, then 5 mg BID; after 6 months, 2.5 mg BID for extended treatment (CHEST 2021). Tablets may be crushed (water, D5W, apple juice or applesauce, or NG tube) ✅✅ [label; CHEST 2021]."
+   ],
+   [
+    "Rivaroxaban",
+    "**AF:** 20 mg daily with the evening meal; 15 mg if CrCl 15 to 50. **VTE:** 15 mg BID x 21 days, then 20 mg daily; 10 mg daily for extended treatment. **15 and 20 mg must be taken with food** ✅ [label]."
+   ],
+   [
+    "Dabigatran",
+    "**AF:** 150 mg BID; 75 mg BID if CrCl 15 to 30. **VTE:** after 5 to 10 days of parenteral therapy, 150 mg BID. **Never open or crush** (exposure rises about 75%) ✅ [label]."
+   ],
+   [
+    "Edoxaban",
+    "**AF:** 60 mg daily; 30 mg if CrCl 15 to 50; **do not use in AF with CrCl above 95** (less effective, boxed warning). **VTE:** after 5 to 10 days parenteral; 60 mg daily (30 mg if CrCl 15 to 50, weight 60 kg or less, or certain P-gp inhibitors) ✅ [label]."
+   ],
+   [
+    "Not for",
+    "Mechanical heart valves; high risk antiphospholipid syndrome (warfarin preferred); pregnancy (use LMWH); breastfeeding (labels advise against) ✅ [labels]."
+   ],
+   [
+    "Interactions",
+    "Avoid strong CYP3A4 and P-gp inducers (rifampin, carbamazepine, phenytoin, St. John's wort); caution with strong inhibitors. Never combine with another anticoagulant except during planned transitions."
+   ],
+   [
+    "Switching",
+    "From a heparin infusion: start the DOAC when the infusion stops. From enoxaparin: start at the time the next enoxaparin dose would be due ✅ [labels]."
+   ],
+   [
+    "Around procedures (PAUSE)",
+    "Apixaban, rivaroxaban, edoxaban: low bleed risk, skip 1 day before; high bleed risk, skip 2 days before (plus the day of). Dabigatran longer when CrCl is below 50. No bridging. Restart 24 hours after low risk and 48 to 72 hours after high risk surgery ✅✅ [PAUSE; CHEST 2022]."
+   ],
+   [
+    "Epidurals",
+    "Classic ASRA: hold 72 hours (apixaban, rivaroxaban, edoxaban), 120 hours dabigatran; restart 6 hours after catheter removal ⚠️ [5th edition now uses renal based holds; recheck]."
+   ],
+   [
+    "Reversal",
+    "Factor Xa inhibitors: 4F-PCC (commonly 50 units/kg or a fixed dose per protocol); andexanet withdrawn from the US market in December 2025. Dabigatran: idarucizumab 5 g IV ✅✅ [ICH 2022; TCTMD]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Eliquis (apixaban) prescribing information, Pfizer",
+    "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14028",
+    "mark": "✅✅"
+   },
+   {
+    "t": "Xarelto (rivaroxaban) prescribing information, DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=xarelto",
+    "mark": "✅"
+   },
+   {
+    "t": "Pradaxa (dabigatran) prescribing information (HemOnc)",
+    "url": "https://hemonc.org/docs/packageinsert/dabigatran.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "Savaysa (edoxaban) prescribing information, DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=savaysa",
+    "mark": "✅"
+   },
+   {
+    "t": "CHEST 2021 VTE guideline update. Chest 2021;160:e545-e608",
+    "url": "https://doi.org/10.1016/j.chest.2021.07.055",
+    "mark": "✅"
+   },
+   {
+    "t": "PAUSE. JAMA Intern Med 2019;179:1469-1478",
+    "url": "https://doi.org/10.1001/jamainternmed.2019.2431",
+    "mark": "✅"
+   },
+   {
+    "t": "CHEST 2022 perioperative antithrombotic guideline. Chest 2022;162:e207-e243",
+    "url": "https://doi.org/10.1016/j.chest.2022.07.025",
+    "mark": "✅"
+   },
+   {
+    "t": "ASRA 4th ed (2018); 5th ed 2025 doi 10.1136/rapm-2024-105766 to recheck",
+    "url": "https://doi.org/10.1097/AAP.0000000000000763",
+    "mark": "⚠️"
+   },
+   {
+    "t": "2022 AHA/ASA spontaneous ICH guideline. Stroke 2022;53:e282-e361",
+    "url": "https://doi.org/10.1161/STR.0000000000000407",
+    "mark": "✅✅"
+   },
+   {
+    "t": "TCTMD: andexanet alfa pulled from US market (Dec 2025)",
+    "url": "https://www.tctmd.com/news/andexanet-alfa-pulled-us-market",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's anticoagulation and reversal order sets (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "warfarin": {
+  "title": "Warfarin",
+  "sections": [
+   [
+    "How it works",
+    "Blocks vitamin K recycling, so the liver cannot finish factors II, VII, IX, X (and proteins C and S). Full effect takes days; half life about 20 to 60 hours."
+   ],
+   [
+    "When it is the right choice",
+    "Mechanical valves, high risk antiphospholipid syndrome, severe kidney disease in some settings, cost."
+   ],
+   [
+    "INR high, no bleeding",
+    "INR 4.5 to 10: hold, recheck; routine vitamin K not needed (Crowther 2009). INR above 10: hold and give oral vitamin K 2.5 to 5 mg ✅✅ [Crowther; Sunnybrook]."
+   ],
+   [
+    "Major bleeding",
+    "Hold; vitamin K 10 mg IV (slow); 4F-PCC by INR ✅✅ [Kcentra label; Sunnybrook]."
+   ],
+   [
+    "Interactions (the big ones)",
+    "Raise INR: TMP SMX, metronidazole, fluconazole, fluoroquinolones, amiodarone. Lower INR: rifampin, carbamazepine. New illness and diet changes too."
+   ],
+   [
+    "Around procedures",
+    "Stop about 5 days before. AF: do not bridge (CHEST 2022, BRIDGE). Very high risk (mechanical mitral valve, clot in last 3 months): bridging decided with cardiology or hematology ✅✅ [CHEST 2022]."
+   ],
+   [
+    "Pregnancy and lactation",
+    "Teratogenic (avoid in pregnancy except special cases); compatible with breastfeeding ✅ [LactMed]."
+   ],
+   [
+    "HIT",
+    "Never start warfarin alone in acute HIT; wait for platelets to recover (usually 150,000+) and overlap with a non heparin agent for at least 5 days ✅ [ASH 2018]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Crowther 2009, oral vitamin K vs placebo. Ann Intern Med 2009;150:293-300",
+    "url": "https://doi.org/10.7326/0003-4819-150-5-200903030-00005",
+    "mark": "✅"
+   },
+   {
+    "t": "Sunnybrook: reversal of warfarin over anticoagulation (vitamin K)",
+    "url": "https://sunnybrook.ca/uploads/Reversal_of_Warfarin_Over-Anitcoagulation_-_Focus_on_Vitamin_K.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "Kcentra prescribing information, DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+    "mark": "✅"
+   },
+   {
+    "t": "CHEST 2022 perioperative antithrombotic guideline. Chest 2022;162:e207-e243",
+    "url": "https://doi.org/10.1016/j.chest.2022.07.025",
+    "mark": "✅"
+   },
+   {
+    "t": "ASH 2018 HIT guideline. Blood Adv 2018;2:3360-3392",
+    "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's anticoagulation and reversal order sets (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "heparin_ufh": {
+  "title": "Unfractionated heparin",
+  "sections": [
+   [
+    "How it works",
+    "Supercharges antithrombin to inactivate thrombin (IIa) and factor Xa."
+   ],
+   [
+    "Dose",
+    "**VTE:** 80 units/kg bolus, then 18 units/kg/h (Raschke). **ACS:** 60 units/kg (max 4,000) then 12 units/kg/h (max 1,000 units/h). **Prophylaxis:** 5,000 units SC every 8 to 12 hours ✅✅ [Raschke; label]."
+   ],
+   [
+    "Weight",
+    "Actual body weight in most nomograms; some cap the dosing weight ⚠️ [protocol]."
+   ],
+   [
+    "Monitoring",
+    "aPTT or anti Xa 6 hours after the bolus and after every rate change; platelets and hemoglobin at baseline and every 2 to 3 days (HIT)."
+   ],
+   [
+    "Kidneys",
+    "Not renally cleared: often preferred when CrCl is very low or dialysis."
+   ],
+   [
+    "Safety",
+    "ISMP high alert; standard concentrations; never use benzyl alcohol preserved vials in neonates; read the concentration on every vial (look alike strengths)."
+   ],
+   [
+    "Reversal",
+    "Protamine 1 mg per 100 units given in the last 2 to 3 hours, maximum 50 mg, given slowly ✅ [ICH 2022]."
+   ],
+   [
+    "HIT",
+    "Platelet fall of 50% or more around day 5 to 10, or new clots: 4Ts; stop all heparin; start argatroban or another non heparin agent ✅ [ASH 2018]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Raschke 1993 weight based heparin nomogram. Ann Intern Med 1993;119:874-881",
+    "url": "https://doi.org/10.7326/0003-4819-119-9-199311010-00002",
+    "mark": "✅"
+   },
+   {
+    "t": "Heparin Sodium Injection prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=45dc6b8b-ed5d-40a2-8d9c-084c863ae93a&type=display",
+    "mark": "✅"
+   },
+   {
+    "t": "2022 AHA/ASA spontaneous ICH guideline. Stroke 2022;53:e282-e361",
+    "url": "https://doi.org/10.1161/STR.0000000000000407",
+    "mark": "✅✅"
+   },
+   {
+    "t": "ASH 2018 HIT guideline. Blood Adv 2018;2:3360-3392",
+    "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's anticoagulation and reversal order sets (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "enoxaparin": {
+  "title": "Enoxaparin (LMWH)",
+  "sections": [
+   [
+    "Dose",
+    "**Prophylaxis:** 40 mg SC daily (30 mg every 12 hours in some ortho or trauma protocols). **Treatment:** 1 mg/kg every 12 hours, or 1.5 mg/kg daily for inpatient DVT or PE ✅ [label]."
+   ],
+   [
+    "Kidneys",
+    "CrCl below 30: treatment 1 mg/kg every 24 hours; prophylaxis 30 mg daily ✅ [label]."
+   ],
+   [
+    "Weight",
+    "Actual weight for treatment; extremes of weight, pregnancy and kidney disease are where anti Xa levels help (peak about 4 hours after a dose at steady state) ✅ [label; lab]."
+   ],
+   [
+    "Epidurals",
+    "Hold 12 hours (prophylaxis) or 24 hours (treatment) before placement or removal; next dose 4 hours after removal ✅ [label; ASRA] ⚠️ 5th edition."
+   ],
+   [
+    "Reversal",
+    "Protamine partially reverses (about 60%): 1 mg per 1 mg enoxaparin within 8 hours; 0.5 mg per 1 mg if 8 to 12 hours ✅ [ICH 2022; label]."
+   ],
+   [
+    "HIT",
+    "Cross reacts with HIT antibodies: do not use in HIT."
+   ],
+   [
+    "Pregnancy and lactation",
+    "Preferred anticoagulant in pregnancy; compatible with breastfeeding ✅ [LactMed]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Lovenox prescribing information, Sanofi (2025)",
+    "url": "https://products.sanofi.us/lovenox/lovenox.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "ASRA 4th ed (2018); 5th ed 2025 doi 10.1136/rapm-2024-105766 to recheck",
+    "url": "https://doi.org/10.1097/AAP.0000000000000763",
+    "mark": "⚠️"
+   },
+   {
+    "t": "2022 AHA/ASA spontaneous ICH guideline. Stroke 2022;53:e282-e361",
+    "url": "https://doi.org/10.1161/STR.0000000000000407",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's anticoagulation and reversal order sets (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "kcentra": {
+  "title": "4F-PCC (Kcentra) and other reversal agents",
+  "sections": [
+   [
+    "Warfarin dosing (label)",
+    "INR 2 to below 4: 25 units/kg (max 2,500). INR 4 to 6: 35 units/kg (max 3,500). INR above 6: 50 units/kg (max 5,000). Dosing weight capped at 100 kg. Always give **vitamin K 10 mg IV** too. Repeat dosing not studied ✅ [label]."
+   ],
+   [
+    "Factor Xa inhibitors",
+    "Off label, commonly 50 units/kg or a fixed dose per protocol ✅ [ICH 2022]."
+   ],
+   [
+    "Contraindications and boxed warning",
+    "Known HIT (contains heparin); DIC. Boxed warning: arterial and venous clots ✅ [label]."
+   ],
+   [
+    "Rate",
+    "Per label, slow IV infusion over minutes; check St. Mary's product instructions ⚠️."
+   ],
+   [
+    "Other agents",
+    "Dabigatran: **idarucizumab 5 g IV** (two 2.5 g vials). Heparin: **protamine** (1 mg per 100 units in the last 2 to 3 hours, max 50 mg). Andexanet: withdrawn from the US in December 2025 ✅✅ [ICH 2022; TCTMD]."
+   ],
+   [
+    "If Kcentra is contraindicated (HIT history)",
+    "Vitamin K plus plasma (FFP), weighing volume, or another heparin free factor product if on formulary ⚠️ [St. Mary's]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Kcentra prescribing information, DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=kcentra",
+    "mark": "✅"
+   },
+   {
+    "t": "2022 AHA/ASA spontaneous ICH guideline. Stroke 2022;53:e282-e361",
+    "url": "https://doi.org/10.1161/STR.0000000000000407",
+    "mark": "✅✅"
+   },
+   {
+    "t": "TCTMD: andexanet alfa pulled from US market (Dec 2025)",
+    "url": "https://www.tctmd.com/news/andexanet-alfa-pulled-us-market",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's anticoagulation and reversal order sets (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "argatroban": {
+  "title": "Argatroban (HIT)",
+  "sections": [
+   [
+    "Dose",
+    "2 mcg/kg/min continuous infusion; 0.5 mcg/kg/min in moderate or severe hepatic impairment; adjust to aPTT 1.5 to 3 times baseline ✅ [label]."
+   ],
+   [
+    "Why it is chosen",
+    "Not renally cleared (hepatic), so it works in kidney failure."
+   ],
+   [
+    "Warfarin overlap",
+    "Argatroban raises the INR. Start warfarin only after platelets recover, overlap at least 5 days, and follow the label method for stopping argatroban ✅ [ASH 2018; label]."
+   ],
+   [
+    "Alternatives",
+    "Bivalirudin, fondaparinux, or a DOAC in stable patients per ASH 2018 ✅ [ASH]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Argatroban prescribing information (2019)",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/022485s013lbl.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "ASH 2018 HIT guideline. Blood Adv 2018;2:3360-3392",
+    "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+    "mark": "✅"
+   }
+  ]
+ },
+ "pressors": {
+  "title": "Vasopressors and steroids in septic shock (norepinephrine, vasopressin, epinephrine, dobutamine, hydrocortisone)",
+  "sections": [
+   [
+    "Order",
+    "Norepinephrine first to MAP 65; add vasopressin rather than raising norepinephrine; epinephrine next; dobutamine (or epinephrine) for poor heart function with low perfusion ✅✅ [SSC 2021]."
+   ],
+   [
+    "Steroids",
+    "Hydrocortisone 200 mg/day (50 mg IV every 6 hours or infusion) when norepinephrine or epinephrine is 0.25 mcg/kg/min or more for at least 4 hours ✅✅ [SSC 2021]."
+   ],
+   [
+    "Line",
+    "Central line preferred; short term peripheral start in a large proximal vein is acceptable while access is placed ✅ [SSC 2021]. Use St. Mary's standard concentrations only ⚠️."
+   ],
+   [
+    "Show the math",
+    "Norepinephrine 4 mg/250 mL = 16 mcg/mL. For 80 kg at 0.1 mcg/kg/min: 8 mcg/min x 60 = 480 mcg/h ÷ 16 = **30 mL/h**."
+   ],
+   [
+    "Extravasation",
+    "Stop, aspirate, remove the catheter, restart elsewhere, elevate; **phentolamine 5 to 10 mg in 10 to 15 mL NS** infiltrated into the area, best within 12 hours ✅ [label]."
+   ],
+   [
+    "Timing",
+    "Norepinephrine works and wears off within 1 to 2 minutes: never let the bag run dry; hang the next bag early."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143",
+    "url": "https://doi.org/10.1097/CCM.0000000000005337",
+    "mark": "✅✅"
+   },
+   {
+    "t": "Norepinephrine prescribing information (2022)",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215700s000lbl.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "sedation_icu": {
+  "title": "ICU analgesia and sedation (PADIS): fentanyl, propofol, dexmedetomidine, benzodiazepines",
+  "sections": [
+   [
+    "Order of care",
+    "Analgesia first, then sedation; light sedation (RASS) for most; CPOT or BPS when the patient cannot report pain ✅ [PADIS]."
+   ],
+   [
+    "Preferred sedatives",
+    "Propofol or dexmedetomidine over benzodiazepines ✅ [PADIS]."
+   ],
+   [
+    "Delirium",
+    "Screen (CAM-ICU or ICDSC); no routine antipsychotics to prevent or treat; dexmedetomidine when agitation blocks extubation ✅ [PADIS]."
+   ],
+   [
+    "Propofol",
+    "Hypotension; lipid calories (about 1.1 kcal/mL); triglycerides and CK on long infusions; **PRIS** risk above about 4 mg/kg/h (about 67 mcg/kg/min) and after 48 hours, especially with catecholamines or steroids: acidosis, bradycardia, rhabdomyolysis, high triglycerides; stop it ✅ [Kam 2007]."
+   ],
+   [
+    "Dexmedetomidine",
+    "Bradycardia and hypotension; little respiratory depression."
+   ],
+   [
+    "Withdrawal",
+    "After about 5 days or more of opioid or benzodiazepine infusions, wean rather than stop."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "PADIS guideline. Crit Care Med 2018;46:e825-e873",
+    "url": "https://doi.org/10.1097/CCM.0000000000003299",
+    "mark": "✅"
+   },
+   {
+    "t": "Kam and Cardone. Propofol infusion syndrome. Anaesthesia 2007;62:690-701",
+    "url": "https://doi.org/10.1111/j.1365-2044.2007.05055.x",
+    "mark": "✅"
+   }
+  ]
+ },
+ "hyperk": {
+  "title": "Hyperkalemia treatment (protect, shift, remove)",
+  "sections": [
+   [
+    "Protect",
+    "Calcium gluconate 1 g (10 mL of 10%) IV over 2 to 5 minutes, repeat in 5 minutes if ECG changes persist (some protocols use 3 g; calcium chloride 1 g centrally has about 3 times the calcium) ✅✅ [KDIGO; protocol] ⚠️ check order set."
+   ],
+   [
+    "Shift",
+    "Regular insulin 10 units IV with dextrose 25 g (D50 50 mL); **5 units** if kidney failure, low weight or elderly; glucose every hour for 4 to 6 hours. Nebulized albuterol 10 to 20 mg. Bicarbonate only if acidotic ✅✅ [KDIGO]."
+   ],
+   [
+    "Remove",
+    "Sodium zirconium cyclosilicate 10 g or patiromer 8.4 g; loop diuretic if urine is made; dialysis ✅✅ [KDIGO]."
+   ],
+   [
+    "Severity",
+    "Severe: K above 6.5, or 6.1 to 6.5 with ECG changes ✅ [KDIGO]."
+   ],
+   [
+    "Find the cause",
+    "ACE inhibitors, ARBs, spironolactone, trimethoprim, heparin, NSAIDs, potassium in fluids or TPN, missed dialysis, rhabdomyolysis."
+   ],
+   [
+    "Avoid",
+    "Succinylcholine in hyperkalemia or after burns or crush (24 to 48 hours on)."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "KDIGO dyskalemia conference. Kidney Int 2020;97:42-61",
+    "url": "https://doi.org/10.1016/j.kint.2019.09.018",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "hyponatremia_tx": {
+  "title": "Severe hyponatremia (3% saline)",
+  "sections": [
+   [
+    "Severe symptoms",
+    "3% saline 100 to 150 mL over 10 to 20 minutes, repeat up to about 3 times; goal a 4 to 6 mmol/L rise; 100 mL raises Na about 2 to 3 ✅✅ [Society for Endocrinology; ACEP]."
+   ],
+   [
+    "Limits",
+    "About 10 mmol/L in the first 24 hours, then 8 per 24 hours; 8 per 24 hours if high risk (alcohol use, low potassium, malnutrition, liver disease) ✅✅."
+   ],
+   [
+    "Overcorrection",
+    "Stop hypertonic fluid; hypotonic fluid with or without desmopressin ✅."
+   ],
+   [
+    "Evidence note",
+    "Newer data suggest osmotic demyelination is rare; follow St. Mary's protocol ✅ [MacMillan 2023]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Society for Endocrinology: emergency management of severe hyponatraemia (2022)",
+    "url": "https://www.endocrinology.org/media/xhrhxhxm/emergency-management-of-severe-and-moderately-severely-symptomatic-hyponatraemia-in-adult-patients-2022.pdf",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "dka_insulin": {
+  "title": "DKA insulin and potassium (adults, 2024 consensus)",
+  "sections": [
+   [
+    "Potassium first",
+    "K below 3.5: hold insulin, give potassium (about 10 mEq/h). K 3.5 to 5.0: add 10 to 20 mEq per liter of fluid and start insulin. K above 5.0: insulin only, recheck every 2 hours ✅✅ [2024 consensus]."
+   ],
+   [
+    "Insulin",
+    "Fixed rate regular insulin 0.1 units/kg/h, no routine bolus (only if IV access is delayed) ✅✅."
+   ],
+   [
+    "Glucose below 250",
+    "Add D5 or D10; lower insulin to 0.05 units/kg/h; keep insulin until ketones clear ✅✅."
+   ],
+   [
+    "Resolved",
+    "Beta hydroxybutyrate below 0.6 and pH 7.3 or more or bicarbonate 18 or more; give SC basal insulin 1 to 2 hours before stopping the drip ✅✅."
+   ],
+   [
+    "Fluids",
+    "Isotonic saline or balanced crystalloid 500 to 1,000 mL/h for 2 to 4 hours if heart and kidneys allow ✅."
+   ],
+   [
+    "Children",
+    "Different (ISPAD 2022): no bolus, 0.05 to 0.1 units/kg/h after the first hour of fluids, mannitol or 3% ready for cerebral edema."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Hyperglycemic crises consensus. Diabetes Care 2024;47:1257-1275",
+    "url": "https://doi.org/10.2337/dci24-0032",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "kcl_iv": {
+  "title": "IV potassium chloride",
+  "sections": [
+   [
+    "Never",
+    "IV push (cardiac arrest). Always a premixed bag on a pump ✅ [label]."
+   ],
+   [
+    "Rates",
+    "Peripheral usually no faster than 10 mEq/h; faster needs a central line and continuous ECG per policy; label allows up to 40 mEq/h only for urgent K below 2.0 with ECG changes or paralysis ✅ [label]."
+   ],
+   [
+    "Expected rise",
+    "About 0.1 mEq/L per 10 mEq in a stable patient (rough guide); recheck after equilibration, not from the infusing arm."
+   ],
+   [
+    "Magnesium",
+    "Replace low magnesium too, or potassium keeps leaking into urine."
+   ],
+   [
+    "Kidneys",
+    "Reduce or hold with poor urine output or rising creatinine."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Potassium Chloride Injection prescribing information (2019)",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/019904s020lbl.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "sup": {
+  "title": "Stress ulcer prophylaxis (PPI or H2 blocker)",
+  "sections": [
+   [
+    "Who",
+    "Critically ill adults with coagulopathy, shock or chronic liver disease ✅✅ [SCCM/ASHP 2024]."
+   ],
+   [
+    "Not",
+    "Ventilation alone is not an established indication; low risk patients on tube feeds."
+   ],
+   [
+    "Stop",
+    "When risk resolves or at ICU transfer: a common source of unneeded PPIs at discharge."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "SCCM/ASHP 2024 stress ulcer prophylaxis guideline",
+    "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib",
+    "mark": "✅✅"
+   }
+  ]
+ },
+ "icu_glucose": {
+  "title": "ICU glucose control",
+  "sections": [
+   [
+    "Target",
+    "Start insulin above 180; target 140 to 180 mg/dL ✅✅ [ADA; AACE]."
+   ],
+   [
+    "Why not tighter",
+    "NICE-SUGAR: 81 to 108 raised 90 day death (27.5% vs 24.9%) and severe hypoglycemia (6.8% vs 0.5%) ✅ [NICE-SUGAR]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "NICE-SUGAR. N Engl J Med 2009;360:1283-1297",
+    "url": "https://doi.org/10.1056/NEJMoa0810625",
+    "mark": "✅"
+   }
+  ]
+ },
+ "betalactams": {
+  "title": "Beta lactams in the hospital (cefazolin, ceftriaxone, cefepime, piperacillin tazobactam, meropenem)",
+  "sections": [
+   [
+    "Common adult doses (normal kidneys)",
+    "Cefazolin 2 g IV every 8 hours (3 g for surgical prophylaxis if 120 kg+). Ceftriaxone 1 to 2 g daily (**2 g every 12 hours for meningitis**). Cefepime 2 g every 8 hours. Piperacillin tazobactam 4.5 g every 6 hours. Meropenem 1 g every 8 hours (2 g every 8 hours for meningitis) ✅ [IDSA; CAP; HAP]."
+   ],
+   [
+    "How they kill",
+    "Time dependent: keep levels above the MIC; prolonged infusion after the first dose suggested in sepsis ✅ [SSC 2021]."
+   ],
+   [
+    "Kidneys",
+    "Full first dose, then adjust. **Cefepime:** adjust when CrCl is 60 or less; accumulation causes confusion, myoclonus, nonconvulsive status ✅ [FDA alert]."
+   ],
+   [
+    "Allergy",
+    "Cross reactivity follows the R1 side chain. Cefazolin shares no side chain with other US beta lactams. With an unconfirmed non anaphylactic penicillin history, cephalosporins can be given without testing ✅ [2022 practice parameter]."
+   ],
+   [
+    "Coverage pearls",
+    "Ceftriaxone: no Pseudomonas, no Listeria, no enterococcus. Cefepime and pip tazo: Pseudomonas. Pip tazo and carbapenems already cover anaerobes (no metronidazole needed). ESBL bacteremia: carbapenem (MERINO) ✅ [MERINO]."
+   ],
+   [
+    "Neonates",
+    "No ceftriaxone with IV calcium or with hyperbilirubinemia."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "ATS/IDSA CAP 2019. Am J Respir Crit Care Med 2019;200:e45-e67",
+    "url": "https://doi.org/10.1164/rccm.201908-1581ST",
+    "mark": "✅✅"
+   },
+   {
+    "t": "IDSA/ATS HAP and VAP 2016. Clin Infect Dis 2016;63:e61-e111",
+    "url": "https://doi.org/10.1093/cid/ciw353",
+    "mark": "✅"
+   },
+   {
+    "t": "IDSA bacterial meningitis 2004. Clin Infect Dis 2004;39:1267-1284",
+    "url": "https://doi.org/10.1086/425368",
+    "mark": "✅✅"
+   },
+   {
+    "t": "Surviving Sepsis Campaign 2021. Crit Care Med 2021;49:e1063-e1143",
+    "url": "https://doi.org/10.1097/CCM.0000000000005337",
+    "mark": "✅✅"
+   },
+   {
+    "t": "FDA safety alert: cefepime neurotoxicity (2012)",
+    "url": "https://www.drugs.com/fda-alerts/544-0.html",
+    "mark": "✅"
+   },
+   {
+    "t": "Beta lactam allergy review citing the 2022 practice parameter (J Allergy Clin Immunol Glob 2024)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11609518",
+    "mark": "✅"
+   },
+   {
+    "t": "MERINO. JAMA 2018;320:984-994",
+    "url": "https://doi.org/10.1001/jama.2018.12163",
+    "mark": "✅"
+   }
+  ]
+ },
+ "abx_syndromes": {
+  "title": "Empiric regimens and durations by syndrome",
+  "sections": [
+   [
+    "CAP (floor)",
+    "Ceftriaxone + azithromycin, or a respiratory fluoroquinolone alone; beta lactam + doxycycline if macrolide and FQ are both unsuitable; at least 5 days ✅✅ [CAP 2019]."
+   ],
+   [
+    "HAP",
+    "Antipseudomonal single agent (pip tazo, cefepime, levofloxacin, meropenem) unless high risk; MRSA coverage only with risk factors; 7 days; stop vancomycin if MRSA nares negative ✅ [HAP 2016]."
+   ],
+   [
+    "cUTI and pyelonephritis",
+    "Ceftriaxone, a fluoroquinolone (not used in 12 months) or TMP SMX by susceptibility; 7 days (5 to 7 with FQ); no nitrofurantoin or oral fosfomycin; oral step down when improving ✅✅ [IDSA 2025]."
+   ],
+   [
+    "Asymptomatic bacteriuria",
+    "Do not treat, except pregnancy and before urologic procedures with mucosal trauma ✅✅ [IDSA 2019]."
+   ],
+   [
+    "Skin",
+    "Nonpurulent: cephalexin or cefazolin about 5 days. Abscess: drain; TMP SMX or doxycycline if over 2 cm or high risk ✅✅."
+   ],
+   [
+    "Meningitis",
+    "Vancomycin + ceftriaxone 2 g every 12 hours; add ampicillin 2 g every 4 hours if over 50, pregnant or immunocompromised; dexamethasone 0.15 mg/kg every 6 hours started before or with the first dose ✅✅ [IDSA 2004]."
+   ],
+   [
+    "S. aureus bacteremia",
+    "MSSA: cefazolin or nafcillin/oxacillin (better than vancomycin); repeat cultures, ID consult, echo, at least 14 days IV for uncomplicated ✅ [IDSA MRSA 2011]."
+   ],
+   [
+    "C. difficile",
+    "Fidaxomicin 200 mg BID x 10 days preferred; oral vancomycin 125 mg QID x 10 days alternative."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "ATS/IDSA CAP 2019. Am J Respir Crit Care Med 2019;200:e45-e67",
+    "url": "https://doi.org/10.1164/rccm.201908-1581ST",
+    "mark": "✅✅"
+   },
+   {
+    "t": "IDSA/ATS HAP and VAP 2016. Clin Infect Dis 2016;63:e61-e111",
+    "url": "https://doi.org/10.1093/cid/ciw353",
+    "mark": "✅"
+   },
+   {
+    "t": "IDSA 2025 complicated UTI. Clin Infect Dis 2025",
+    "url": "https://doi.org/10.1093/cid/ciaf460",
+    "mark": "✅✅"
+   },
+   {
+    "t": "IDSA bacterial meningitis 2004. Clin Infect Dis 2004;39:1267-1284",
+    "url": "https://doi.org/10.1086/425368",
+    "mark": "✅✅"
+   },
+   {
+    "t": "IDSA MRSA guideline 2011. Clin Infect Dis 2011;52:e18-e55",
+    "url": "https://doi.org/10.1093/cid/ciq146",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "linezolid": {
+  "title": "Linezolid",
+  "sections": [
+   [
+    "Dose",
+    "600 mg IV or PO every 12 hours (1:1 oral) ✅ [label]."
+   ],
+   [
+    "Interactions",
+    "Weak MAO inhibitor: serotonin syndrome with SSRIs, SNRIs and other serotonergic drugs; tyramine foods in large amounts ✅ [label]."
+   ],
+   [
+    "Toxicity",
+    "Myelosuppression (platelets) usually after about 2 weeks; lactic acidosis, neuropathy with long use ✅ [label]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Linezolid prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=linezolid",
+    "mark": "✅"
+   }
+  ]
+ },
+ "acls_drugs": {
+  "title": "Adult cardiac arrest and peri arrest drugs (AHA 2025)",
+  "sections": [
+   [
+    "Epinephrine",
+    "1 mg IV/IO every 3 to 5 minutes: as soon as possible in asystole or PEA; after initial shocks fail in VF or pulseless VT ✅✅ [AHA 2025]."
+   ],
+   [
+    "Amiodarone / lidocaine",
+    "Refractory VF or pulseless VT: amiodarone 300 mg push, then 150 mg; or lidocaine 1 to 1.5 mg/kg, then 0.5 to 0.75 mg/kg. After ROSC: amiodarone 1 mg/min x 6 h, then 0.5 mg/min x 18 h ✅✅."
+   ],
+   [
+    "Not routine",
+    "Calcium, bicarbonate, magnesium only for specific causes; vasopressin offers no advantage over epinephrine."
+   ],
+   [
+    "Reversible causes",
+    "Hyperkalemia: calcium chloride 1 g (or gluconate 3 g), insulin + dextrose, bicarbonate if acidotic. Torsades: magnesium 1 to 2 g. Opioids: naloxone (ventilate first). Tricyclics: bicarbonate 1 to 2 mEq/kg. Local anesthetic: lipid 20% 1.5 mL/kg then 0.25 mL/kg/min, epinephrine 1 mcg/kg or less ✅✅ [AHA 2023 tox; ASRA]."
+   ],
+   [
+    "Peri arrest",
+    "Bradycardia: atropine 1 mg every 3 to 5 min (max 3 mg), then epinephrine 2 to 10 mcg/min, dopamine 5 to 20 mcg/kg/min or pacing. SVT: adenosine 6 mg then 12 mg rapid push with flush (3 mg with central line, transplant, dipyridamole). Anaphylaxis: epinephrine 0.5 mg IM thigh every 5 to 15 min ✅✅."
+   ],
+   [
+    "Malignant hyperthermia",
+    "Dantrolene 2.5 mg/kg IV, repeat to effect; know your product (Ryanodex reconstitutes faster) ✅ [MHAUS]."
+   ],
+   [
+    "After ROSC",
+    "SBP 90+ and MAP 65+, SpO2 92 to 98%, temperature below 37.5 °C with fever prevention ✅."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "AHA CPR and ECC guidelines (2025)",
+    "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+    "mark": "✅✅"
+   },
+   {
+    "t": "AHA 2023 focused update: cardiac arrest and toxicology. Circulation 2023",
+    "url": "https://doi.org/10.1161/CIR.0000000000001161",
+    "mark": "✅"
+   },
+   {
+    "t": "Third ASRA practice advisory on local anesthetic toxicity. Reg Anesth Pain Med 2018;43:113-123",
+    "url": "https://doi.org/10.1097/AAP.0000000000000720",
+    "mark": "✅"
+   },
+   {
+    "t": "NYSORA: updated malignant hyperthermia guidelines (MHAUS based)",
+    "url": "https://www.nysora.com/education-news/updated-guidelines-for-managing-malignant-hyperthermia/",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's ICU, antimicrobial and code protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "thrombolytics": {
+  "title": "Thrombolytics for acute ischemic stroke (tenecteplase, alteplase)",
+  "sections": [
+   [
+    "Choice",
+    "Either alteplase or tenecteplase in the 4.5 hour window (2026). Selected patients up to about 9 hours or unknown onset with advanced imaging ✅✅ [AIS 2026]."
+   ],
+   [
+    "Tenecteplase",
+    "**0.25 mg/kg IV bolus over 5 seconds, max 25 mg.** The STEMI dose is double: never use it. Flush with normal saline (precipitates with dextrose). Waste the excess so only the stroke dose is in the syringe."
+   ],
+   [
+    "Alteplase",
+    "**0.9 mg/kg, max 90 mg:** 10% bolus over 1 minute, 90% over 60 minutes; remove excess from the vial before hanging."
+   ],
+   [
+    "Show the math",
+    "Tenecteplase 82 kg: 0.25 x 82 = **20.5 mg** (4.1 mL of 5 mg/mL). Alteplase 70 kg: 63 mg total; 6.3 mg bolus; 56.7 mg over 60 minutes."
+   ],
+   [
+    "Gates before giving",
+    "BP below 185/110; glucose checked (treat if below 50); know the anticoagulant and last dose; contraindications include INR above 1.7, platelets below 100,000, therapeutic heparin or enoxaparin, recent DOAC dose; not for mild nondisabling symptoms."
+   ],
+   [
+    "After",
+    "BP below 180/105 for 24 hours (intensive lowering below 140 not recommended); no antithrombotics for 24 hours; neuro checks."
+   ],
+   [
+    "BP drugs",
+    "Labetalol 10 to 20 mg IV over 1 to 2 minutes (repeat once); nicardipine 5 mg/h, titrate 2.5 mg/h every 5 to 15 minutes (max 15); clevidipine 1 to 2 mg/h (max 21)."
+   ],
+   [
+    "Complications",
+    "Angioedema (worse with ACE inhibitors): stop; methylprednisolone, diphenhydramine, famotidine; epinephrine if worsening; icatibant or C1 esterase inhibitor may be considered. Bleeding: stop; cryoprecipitate 10 units; TXA 1 g IV over 10 minutes (or aminocaproic acid)."
+   ],
+   [
+    "Afterwards",
+    "Minor stroke or high risk TIA: aspirin + clopidogrel for 21 days (clopidogrel 300 to 600 mg load, then 75 mg), high intensity statin, glucose 140 to 180."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "AHA/ASA 2026 acute ischemic stroke guideline (Top Things to Know)",
+    "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "nimodipine": {
+  "title": "Nimodipine (aneurysmal SAH)",
+  "sections": [
+   [
+    "Dose",
+    "60 mg orally or by tube every 4 hours for 21 days; if BP drops, 30 mg every 2 hours ✅ [SAH 2023]."
+   ],
+   [
+    "Never IV",
+    "Boxed warning: deaths when capsule liquid was injected IV. Use oral or enteral syringes that cannot connect to IV lines, labeled oral only ✅."
+   ],
+   [
+    "Antiseizure",
+    "If used, levetiracetam is preferred over phenytoin ✅ [SAH 2023]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "2023 AHA/ASA aneurysmal SAH guideline. Stroke 2023;54:e314-e370",
+    "url": "https://doi.org/10.1161/STR.0000000000000436",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "trauma_drugs": {
+  "title": "Trauma bay drugs (TXA, calcium, RSI, osmotherapy, antibiotics, tetanus)",
+  "sections": [
+   [
+    "TXA",
+    "1 g IV over 10 minutes, then 1 g over 8 hours, only within 3 hours of injury (later may harm). Ask EMS what was given ✅✅ [CRASH-2]. TBI: CRASH-3 benefit in mild to moderate TBI within 3 hours ✅ [CRASH-3]."
+   ],
+   [
+    "Massive transfusion",
+    "Close to 1:1:1; calcium chloride 1 g (central) or calcium gluconate 3 g guided by ionized calcium (citrate binds calcium); watch potassium and temperature ✅ [PROPPR]."
+   ],
+   [
+    "RSI",
+    "Ketamine 1 to 2 mg/kg or etomidate 0.3 mg/kg (avoid full dose propofol in shock); rocuronium 1 to 1.2 mg/kg (sugammadex 16 mg/kg for immediate reversal); succinylcholine 1 to 1.5 mg/kg but never in hyperkalemia or 24 to 48 hours after burns, crush or spinal cord injury; start analgesia and sedation right after the tube."
+   ],
+   [
+    "TBI",
+    "Mannitol 0.25 to 1 g/kg, or 3% 250 mL, or 23.4% 30 mL central only (ISMP high alert); seizure prophylaxis 7 days; no steroids ✅ [BTF]."
+   ],
+   [
+    "Open fractures",
+    "Cefazolin 2 g (3 g if 120 kg+) within 1 hour; type III add gram negative coverage; penicillin for farm or soil contamination per protocol ⚠️."
+   ],
+   [
+    "Tetanus",
+    "Clean minor wound: booster if more than 10 years. Dirty wound: more than 5 years. Dirty + unknown or fewer than 3 doses: Tdap plus TIG 250 units IM ✅✅ [CDC]."
+   ],
+   [
+    "Burns",
+    "Parkland: 4 mL x kg x %TBSA of lactated Ringer's over 24 hours, half in the first 8 hours from the time of the burn."
+   ],
+   [
+    "Later",
+    "Enoxaparin prophylaxis once bleeding is stable (often 24 to 48 hours); multimodal pain for ribs; thiamine before glucose in alcohol use."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "CRASH-2. Lancet 2010;376:23-32",
+    "url": "https://doi.org/10.1016/S0140-6736(10)60835-5",
+    "mark": "✅✅"
+   },
+   {
+    "t": "CRASH-3. Lancet 2019;394:1713-1723",
+    "url": "https://doi.org/10.1016/S0140-6736(19)32233-0",
+    "mark": "✅"
+   },
+   {
+    "t": "PROPPR. JAMA 2015;313:471-482",
+    "url": "https://doi.org/10.1001/jama.2015.12",
+    "mark": "✅"
+   },
+   {
+    "t": "Brain Trauma Foundation 4th edition. Neurosurgery 2017;80:6-15",
+    "url": "https://doi.org/10.1227/NEU.0000000000001432",
+    "mark": "✅"
+   },
+   {
+    "t": "CDC: wound management to prevent tetanus",
+    "url": "https://www.cdc.gov/tetanus/hcp/clinical-guidance/",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "neonatal": {
+  "title": "Neonatal dosing essentials",
+  "sections": [
+   [
+    "Ages",
+    "GA = weeks at birth. PNA = days since birth. PMA = GA + weeks since birth. Many intervals depend on PMA and PNA."
+   ],
+   [
+    "Errors",
+    "Calculate mg/kg on every dose; leading zero, no trailing zero; mg/kg/dose vs mg/kg/day; preservative free products (benzyl alcohol causes gasping syndrome); read heparin concentrations every time."
+   ],
+   [
+    "NRP",
+    "Ventilation first. Epinephrine 0.1 mg/mL: IV/UVC 0.02 mg/kg (0.01 to 0.03); ETT 0.1 mg/kg (0.05 to 0.1); every 3 to 5 minutes. Normal saline 10 mL/kg over 5 to 10 minutes ✅✅ [NRP; LHSC]."
+   ],
+   [
+    "Routine",
+    "Vitamin K 0.5 to 1 mg IM; erythromycin 0.5% eye ointment; hepatitis B vaccine within 24 hours (+ HBIG within 12 hours if mom HBsAg positive)."
+   ],
+   [
+    "Sepsis",
+    "Early onset: ampicillin + gentamicin (unit chart). Meningitis: ampicillin + cefepime or ceftazidime (cefotaxime unavailable) ⚠️. HSV: acyclovir 20 mg/kg every 8 hours."
+   ],
+   [
+    "Ceftriaxone",
+    "Never with IV calcium in neonates; avoid in hyperbilirubinemia ✅ [label; AAP 2022]."
+   ],
+   [
+    "Caffeine",
+    "Citrate 20 mg/kg load, then 5 to 10 mg/kg daily; 2 mg citrate = 1 mg base."
+   ],
+   [
+    "Hypoglycemia",
+    "D10W 2 mL/kg, then infusion; never D50."
+   ],
+   [
+    "TPN",
+    "Calcium and phosphate solubility curve; phosphate early, calcium last; cysteine helps; independent double check."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "AHA/AAP 2025 neonatal resuscitation",
+    "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+    "mark": "✅"
+   },
+   {
+    "t": "LHSC NICU: epinephrine (neonatal resuscitation)",
+    "url": "https://www.lhsc.on.ca/nicu/epinephrine",
+    "mark": "✅✅"
+   },
+   {
+    "t": "AAP 2022 hyperbilirubinemia guideline. Pediatrics 2022",
+    "url": "https://doi.org/10.1542/peds.2022-058859",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "peds": {
+  "title": "Pediatric dosing and emergencies",
+  "sections": [
+   [
+    "Rule",
+    "mg/kg, never above the adult dose. Measured weight in kg."
+   ],
+   [
+    "PALS",
+    "Epinephrine 0.01 mg/kg (0.1 mL/kg of 0.1 mg/mL), max 1 mg; amiodarone 5 mg/kg (max 300), up to 15 mg/kg; lidocaine 1 mg/kg; adenosine 0.1 mg/kg (max 6) then 0.2 mg/kg (max 12); atropine 0.02 mg/kg (max 0.5); calcium chloride 20 mg/kg; dextrose 0.5 to 1 g/kg ✅ [PALS 2025]."
+   ],
+   [
+    "Status epilepticus",
+    "Midazolam IM 10 mg (over 40 kg) or 5 mg (13 to 40 kg); lorazepam 0.1 mg/kg IV (max 4), repeat once. Then levetiracetam 60 mg/kg (max 4,500), fosphenytoin 20 mg PE/kg (max 1,500), or valproate 40 mg/kg (max 3,000) ✅✅ [AES; ESETT]."
+   ],
+   [
+    "DKA",
+    "No bolus; insulin 0.05 to 0.1 units/kg/h after the first hour of fluids; mannitol 0.5 to 1 g/kg or 3% 2.5 to 5 mL/kg ready ✅ [ISPAD 2022]."
+   ],
+   [
+    "Everyday",
+    "Acetaminophen 15 mg/kg every 6 hours (max 75 mg/kg/day, 4 g); ibuprofen 10 mg/kg every 6 to 8 hours (6 months+); Holliday Segar 4/2/1; isotonic maintenance fluids ✅ [AAP 2018]."
+   ],
+   [
+    "Withdrawal",
+    "After 5+ days of opioid or benzodiazepine infusions: WAT-1 scoring and a wean (enteral methadone, lorazepam)."
+   ],
+   [
+    "Poisoning",
+    "Sulfonylurea: dextrose + octreotide. Poison Control 1 800 222 1222."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "AHA 2025 PALS",
+    "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+    "mark": "✅"
+   },
+   {
+    "t": "AES 2016 status epilepticus guideline. Epilepsy Curr 2016;16:48-61",
+    "url": "https://doi.org/10.5698/1535-7597-16.1.48",
+    "mark": "✅"
+   },
+   {
+    "t": "ESETT. N Engl J Med 2019;381:2103-2113",
+    "url": "https://doi.org/10.1056/NEJMoa1905795",
+    "mark": "✅"
+   },
+   {
+    "t": "ISPAD 2022 DKA guideline. Pediatr Diabetes 2022;23:835-856",
+    "url": "https://doi.org/10.1111/pedi.13406",
+    "mark": "✅"
+   },
+   {
+    "t": "AAP 2018 maintenance IV fluids. Pediatrics 2018",
+    "url": "https://doi.org/10.1542/peds.2018-3083",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "usp797": {
+  "title": "USP 797 and the IV room (topic card)",
+  "sections": [
+   [
+    "Competency",
+    "Training and knowledge every 12 months; garbing (gloved fingertip: 3 passes at 0 CFU to start) and aseptic technique (media fill + fingertip above 3 CFU fails + surface sample) every 6 months for Category 1 and 2, every 3 months for Category 3 ✅✅ [USP 797; summary]."
+   ],
+   [
+    "Garbing",
+    "Dirty to clean: shoe covers, hair cover, mask, wash 30 seconds, gown, sterile gloves, sterile 70% IPA often."
+   ],
+   [
+    "Rooms",
+    "ISO 5 hood, ISO 7 buffer, ISO 8 ante (ISO 7 if it opens to negative pressure); buffer positive at least 0.02 inch water column; never block first air."
+   ],
+   [
+    "Monitoring",
+    "Certification every 6 months; surface sampling at least monthly; viable air at least every 6 months; sporicidal cleaning at least monthly."
+   ],
+   [
+    "BUDs",
+    "Immediate use: 3 products max, start within 4 hours. Category 1: 12 hours room temperature, 24 hours refrigerated. Category 2 (sterile ingredients, no sterility test): 4 days, 10 days, 45 days frozen; with a nonsterile ingredient: 1, 4, 45. Always the shorter of sterility and stability."
+   ],
+   [
+    "Vials",
+    "Single dose: 12 hours if punctured in ISO 5 (1 hour outside). Multiple dose: 28 days unless labeled otherwise."
+   ],
+   [
+    "Hazardous (USP 800)",
+    "Containment hood in a negative pressure room; double ASTM D6978 gloves; chemo gown; CSTD; spill kit ✅ [USP 800]."
+   ],
+   [
+    "Catches",
+    "Phenytoin NS only (filter, max 50 mg/min); liposomal amphotericin D5W only; ampicillin in NS; nitroglycerin non PVC; vincristine minibag; 3 in 1 PN 1.2 micron filter; peripheral PN 900 mOsm/L or less; peripheral KCl 10 mEq/h."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "USP General Chapter 797 (2023)",
+    "url": "https://www.usp.org/compounding/general-chapter-797",
+    "mark": "✅"
+   },
+   {
+    "t": "Open Exam Prep: USP 797 personnel competency summary",
+    "url": "https://open-exam-prep.com/study-guides/bcscp/ch10-quality-management-competency/10-2-personnel-training-competency",
+    "mark": "✅"
+   },
+   {
+    "t": "USP General Chapter 800",
+    "url": "https://www.usp.org/compounding/general-chapter-hazardous-drugs-handling-healthcare",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "iv_po": {
+  "title": "IV to PO conversion (topic card)",
+  "sections": [
+   [
+    "Criteria",
+    "Working gut, taking other oral meds, improving and stable, an oral drug with good absorption."
+   ],
+   [
+    "1:1",
+    "Levofloxacin, moxifloxacin, linezolid, metronidazole, fluconazole, levetiracetam, acetaminophen, pantoprazole ✅ [Cyriac; labels]."
+   ],
+   [
+    "Dose changes",
+    "Furosemide about 1:2 (IV:PO); ciprofloxacin 400 mg IV = 500 to 750 mg PO; metoprolol about 1:2.5; levothyroxine IV is lower (about 50 to 75% of oral)."
+   ],
+   [
+    "Stay IV",
+    "S. aureus bacteremia early, meningitis, endocarditis initially (POET: partial oral therapy in selected stable patients after at least 10 days IV, an ID decision) ✅ [POET]."
+   ],
+   [
+    "Interactions",
+    "Quinolones and tetracyclines with Ca, Mg, Al, Fe, Zn (cipro 2 hours before or 6 hours after); phenytoin and tube feeds; phenytoin sodium (92%) vs acid (100%)."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Cyriac and James. IV to oral switch overview. J Pharmacol Pharmacother 2014;5:83-87",
+    "url": "https://doi.org/10.4103/0976-500X.130042",
+    "mark": "✅"
+   },
+   {
+    "t": "POET. N Engl J Med 2019;380:415-424",
+    "url": "https://doi.org/10.1056/NEJMoa1808312",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "safety": {
+  "title": "Medication safety and Florida law (topic card)",
+  "sections": [
+   [
+    "High alert",
+    "Insulin, anticoagulants, concentrated electrolytes, opioids, neuromuscular blockers, chemotherapy, magnesium, oxytocin, TXA injection (added 2024). Fix with standard concentrations, pump libraries, premixes, separate storage ✅✅ [ISMP]."
+   ],
+   [
+    "Abbreviations",
+    "No U, IU, QD, QOD, MS, MSO4, MgSO4, trailing zeros; always a leading zero."
+   ],
+   [
+    "Joint Commission 2026",
+    "National Performance Goals replaced the NPSGs; medication management covers labeling, anticoagulants, pharmacist review, override review, standard concentrations, stewardship ✅ [NPG]."
+   ],
+   [
+    "Controlled substances",
+    "Suspected diversion: report per policy, never confront alone. Theft or significant loss: DEA in writing within 1 business day, then Form 106 ✅ [21 CFR 1301.76]."
+   ],
+   [
+    "Florida",
+    "Renew every 2 years, 30 hours, 2 h medication errors, 2 h controlled substances, no live hours since 2025; immunization 3 h; consultant 24 h. E-FORCSE reporting by the next business day ✅✅ [Board]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "ISMP high alert medications (2024)",
+    "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+    "mark": "✅✅"
+   },
+   {
+    "t": "Joint Commission National Performance Goals (2026), Relias summary",
+    "url": "https://www.relias.com/blog/joint-commission-national-performance-goals-are-here",
+    "mark": "✅"
+   },
+   {
+    "t": "21 CFR 1301.76 (eCFR)",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/section-1301.76",
+    "mark": "✅"
+   },
+   {
+    "t": "Florida Board of Pharmacy: renewal",
+    "url": "https://floridaspharmacy.gov/pharmacist-renewal/",
+    "mark": "✅✅"
+   }
+  ]
+ },
+ "verify_basics": {
+  "title": "Order verification basics (topic card)",
+  "sections": [
+   [
+    "Order of checks",
+    "Patient (age, weight, allergies with reaction, pregnancy or breastfeeding), indication, labs (SCr, platelets, others by drug), drug and dose, duplicates and interactions, then decide."
+   ],
+   [
+    "CrCl",
+    "Cockcroft Gault: (140 minus age) x weight in kg / (72 x SCr), x 0.85 if female. Think about which weight in obesity, very low weights, and changing creatinine."
+   ],
+   [
+    "Allergies",
+    "Every allergy needs a reaction. Clarify vague labels; document tolerated drugs."
+   ],
+   [
+    "Who to call",
+    "The prescriber (or covering prescriber) changes orders; the nurse gives information; your supervisor helps when you disagree. Use SBAR."
+   ],
+   [
+    "Priorities",
+    "Life threatening now, then time sensitive (first doses, STAT), then routine, then questions."
+   ],
+   [
+    "Drug information",
+    "Get background, find the real question, search (Trissel's or King for Y site; LactMed; Lexicomp or Micromedex), answer clearly, document. No data for a Y site pair means do not run them together."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "ISMP high alert medications (2024)",
+    "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+    "mark": "✅✅"
+   },
+   {
+    "t": "St. Mary's protocols (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ },
+ "evidence": {
+  "title": "Reading trials (topic card)",
+  "sections": [
+   [
+    "Absolute vs relative",
+    "ARR = control rate minus treatment rate. RRR = ARR / control rate. NNT (or NNH) = 1 / ARR."
+   ],
+   [
+    "Worked",
+    "NICE-SUGAR 27.5 vs 24.9%: ARI 2.6, NNH about 38. AMPLIFY-EXT 8.8 vs 1.7%: ARR 7.1, NNT about 14. BRIDGE bleeding 3.2 vs 1.3%: NNH about 53."
+   ],
+   [
+    "Noninferiority",
+    "\"Not met\" means not proven as good, not proven worse."
+   ],
+   [
+    "Projects",
+    "MUE targets: high alert, high cost, high volume, new alert. Fix with order sets and pump limits. Ask the IRB before collecting data if you may present ✅ [ASHP MUE]."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "ASHP MUE guideline. Am J Health Syst Pharm 2021;78:168-175",
+    "url": "https://doi.org/10.1093/ajhp/zxaa393",
+    "mark": "✅"
+   }
+  ]
  }
 }

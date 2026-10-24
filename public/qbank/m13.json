@@ -83,7 +83,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms02",
@@ -137,7 +144,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms03",
@@ -191,7 +205,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms04",
@@ -257,7 +278,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms05",
@@ -334,7 +362,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms06",
@@ -395,7 +430,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms07",
@@ -479,7 +521,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms08",
@@ -569,7 +618,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms09",
@@ -635,7 +691,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "ms10",
@@ -694,7 +757,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "safety"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

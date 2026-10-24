@@ -73,7 +73,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pa02",
@@ -139,7 +146,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pa03",
@@ -200,7 +214,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pa04",
@@ -261,7 +282,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "ARI = 27.5 minus 24.9 = 2.6 points; NNH = 1 / 0.026 = **38**.",
+    "whatif": []
+   }
   },
   {
    "id": "pa05",
@@ -327,7 +355,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "ARR = 8.8 minus 1.7 = 7.1; NNT = 1 / 0.071 = **14**. BRIDGE: 3.2 minus 1.3 = 1.9; NNH = **53**.",
+    "whatif": []
+   }
   },
   {
    "id": "pa06",
@@ -388,7 +423,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pa07",
@@ -431,7 +473,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pa08",
@@ -474,7 +523,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "evidence"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

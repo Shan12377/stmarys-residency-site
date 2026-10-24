@@ -106,7 +106,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk02",
@@ -210,7 +217,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "Load for 80 kg: 20 to 25 mg/kg = 1,600 to 2,000 mg (guideline range 20 to 35, max 3,000). 2,000 mg at 10 mg/min = 200 minutes minimum by label.",
+    "whatif": []
+   }
   },
   {
    "id": "pk03",
@@ -304,7 +318,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "CrCl = (140 minus 58) x 72 / (72 x 1.0) = **82 mL/min**. 1,250 mg every 12 hours = 17.4 mg/kg per dose: inside 15 to 20 mg/kg.",
+    "whatif": []
+   }
   },
   {
    "id": "pk04",
@@ -439,7 +460,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk05",
@@ -505,7 +533,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk06",
@@ -600,7 +635,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk07",
@@ -672,7 +714,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk08",
@@ -743,7 +792,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "20 mg/kg x 160 kg = 3,200 mg, so the 3,000 mg cap applies. Maintenance usually 4,500 mg/day or less to start, then AUC.",
+    "whatif": []
+   }
   },
   {
    "id": "pk09",
@@ -809,7 +865,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "25 mg/kg x 70 kg = **1,750 mg** after dialysis; then 10 mg/kg = **700 mg** after each session (high permeability).",
+    "whatif": []
+   }
   },
   {
    "id": "pk10",
@@ -888,7 +951,14 @@
      "mark": "✅✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "Load 15 to 20 mg/kg x 75 = 1,125 to 1,500 mg; maintenance 30 to 40 mg/kg/day = 2,250 to 3,000 mg/day. AUC24 = level x 24 = 22 x 24 = **528**.",
+    "whatif": []
+   }
   },
   {
    "id": "pk11",
@@ -972,7 +1042,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "60 mg/kg/day x 20 kg = 1,200 mg/day = **300 mg every 6 hours**; 80 mg/kg/day = 400 mg every 6 hours.",
+    "whatif": []
+   }
   },
   {
    "id": "pk12",
@@ -1033,7 +1110,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "vancomycin"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk13",
@@ -1134,7 +1218,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Foundation"
+   "level": "Foundation",
+   "workup": {
+    "drugs": [
+     "aminoglycoside"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk14",
@@ -1228,7 +1319,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "aminoglycoside"
+    ],
+    "calc": "IBW = 50 + 2.3 x 10 = 73 kg; 110 / 73 = 151% so use adjusted: 73 + 0.4 x 37 = **87.8 kg**; 7 x 87.8 = **615 mg**.",
+    "whatif": []
+   }
   },
   {
    "id": "pk15",
@@ -1336,7 +1434,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "aminoglycoside"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk16",
@@ -1420,7 +1525,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "aminoglycoside"
+    ],
+    "calc": "ke = ln(7 / 1.2) / 7 h = 0.252 per hour; half life = 0.693 / 0.252 = **2.75 hours**.",
+    "whatif": []
+   }
   },
   {
    "id": "pk17",
@@ -1486,7 +1598,14 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "aminoglycoside"
+    ],
+    "calc": "Synergy for 70 kg: about 1 mg/kg = 70 mg every 8 hours; peak goal 3 to 4, trough below 1.",
+    "whatif": []
+   }
   },
   {
    "id": "pk18",
@@ -1553,7 +1672,14 @@
      "mark": "✅"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "aminoglycoside"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "pk19",
@@ -1648,7 +1774,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Staff"
+   "level": "Staff",
+   "workup": {
+    "drugs": [
+     "vancomycin",
+     "aminoglycoside"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

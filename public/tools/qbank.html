@@ -178,7 +178,7 @@ function workup(c, open) {
   return `<div class="wk"><h3>📋 Full pharmacist workup</h3>
     ${w && w.calc ? `<details ${open ? 'open' : ''}><summary>This patient: dose check and math</summary><p>${md(w.calc)}</p></details>` : ''}
     ${w && w.whatif && w.whatif.length ? `<details ${open ? 'open' : ''}><summary>What if... (think first, then tap)</summary>${w.whatif.map(([q, a]) => `<details class="qa"><summary>${md(q)}</summary><p>${md(a)}</p></details>`).join('')}</details>` : ''}
-    ${cards.map(k => `<details><summary>Drug card: ${esc(k.title)}</summary>${k.sections.map(([h, t]) => `<h4>${esc(h)}</h4><p>${md(t)}</p>`).join('')}<ol class="small">${k.sources.map(src).join('')}</ol></details>`).join('')}
+    ${cards.map(k => `<details><summary>📘 ${esc(k.title)}</summary>${k.sections.map(([h, t]) => `<h4>${esc(h)}</h4><p>${md(t)}</p>`).join('')}<ol class="small">${k.sources.map(src).join('')}</ol></details>`).join('')}
     <details ${cards.length ? '' : 'open'}><summary>${cards.length ? 'The 14 point checklist I run on every order' : 'Your 14 point workup (full drug card for this case coming soon)'}</summary><ol>${CHECK.map(x => `<li>${esc(x)}</li>`).join('')}</ol></details></div>`;
 }
 function renderStep() {

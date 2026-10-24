@@ -101,7 +101,8 @@
    "workup": {
     "drugs": [
      "magnesium_ob",
-     "chorio_abx"
+     "chorio_abx",
+     "aminoglycoside"
     ],
     "calc": "Urine 20 mL/h x 3 h (60 mL in 3 h, goal 75 mL) and SCr doubled: lower to 1 g/h per label, level now. Gentamicin adds kidney and neuromuscular risk.",
     "whatif": []
@@ -212,7 +213,17 @@
      "mark": "✅"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "vancomycin",
+     "betalactams",
+     "pressors",
+     "sup"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "mx03",
@@ -312,7 +323,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "kcentra",
+     "doacs",
+     "thrombolytics"
+    ],
+    "calc": "Age 84, weight 58 kg, SCr 1.6: **3 of 3** reduction criteria: her home dose should have been 2.5 mg BID.",
+    "whatif": []
+   }
   },
   {
    "id": "mx04",
@@ -403,7 +423,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "aminoglycoside",
+     "hyperk",
+     "trauma_drugs"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "mx05",
@@ -494,7 +523,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "dka_insulin",
+     "kcl_iv",
+     "abx_syndromes"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "mx06",
@@ -600,7 +638,10 @@
     "drugs": [
      "ob_pain_lactation",
      "ace_pregnancy",
-     "labetalol_ob"
+     "labetalol_ob",
+     "enoxaparin",
+     "warfarin",
+     "doacs"
     ],
     "calc": "",
     "whatif": []
@@ -700,7 +741,16 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "kcentra",
+     "warfarin",
+     "heparin_ufh"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   },
   {
    "id": "mx08",
@@ -796,7 +846,15 @@
      "mark": "⚠️"
     }
    ],
-   "level": "Top 10%"
+   "level": "Top 10%",
+   "workup": {
+    "drugs": [
+     "heparin_ufh",
+     "linezolid"
+    ],
+    "calc": "",
+    "whatif": []
+   }
   }
  ]
 }

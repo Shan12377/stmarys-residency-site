@@ -2176,7 +2176,8 @@
    "level": "Top 10%",
    "workup": {
     "drugs": [
-     "gbs_abx"
+     "gbs_abx",
+     "vancomycin"
     ],
     "calc": "Vancomycin 20 mg/kg x 72 kg = 1,440 mg (round per protocol, for example 1,500 mg), every 8 hours, max 2 g per dose. Label rate (10 mg/min or slower): at least 150 minutes.",
     "whatif": []
@@ -2291,7 +2292,8 @@
    "level": "Staff",
    "workup": {
     "drugs": [
-     "chorio_abx"
+     "chorio_abx",
+     "aminoglycoside"
     ],
     "calc": "Gentamicin for 80 kg: 2 mg/kg load = **160 mg**, then 1.5 mg/kg = **120 mg every 8 hours**; or 5 mg/kg = **400 mg every 24 hours**. Ampicillin 2 g every 6 hours.",
     "whatif": []
@@ -2879,7 +2881,8 @@
    "level": "Top 10%",
    "workup": {
     "drugs": [
-     "enox_neuraxial"
+     "enox_neuraxial",
+     "enoxaparin"
     ],
     "calc": "",
     "whatif": []

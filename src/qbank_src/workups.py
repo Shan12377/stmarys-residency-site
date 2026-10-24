@@ -55,3 +55,103 @@ for cid, drugs in LINK.items():
     for d in drugs:
         if d not in W[cid]['drugs']: W[cid]['drugs'].append(d)
     if cid in CALC and not W[cid].get('calc'): W[cid]['calc'] = CALC[cid]
+
+LINK2 = {c: ['vancomycin'] for c in 'pk01 pk02 pk03 pk04 pk05 pk06 pk07 pk08 pk09 pk10 pk11 pk12'.split()}
+LINK2.update({c: ['aminoglycoside'] for c in 'pk13 pk14 pk15 pk16 pk17 pk18'.split()})
+LINK2['pk19'] = ['vancomycin', 'aminoglycoside']; LINK2['ld24'] = ['gbs_abx', 'vancomycin']; LINK2['ld25'] = ['chorio_abx', 'aminoglycoside']
+LINK2['mx01'] = ['magnesium_ob', 'chorio_abx', 'aminoglycoside']; LINK2['mx02'] = ['vancomycin']; LINK2['mx04'] = ['aminoglycoside']
+CALC2 = {
+ 'pk02': 'Load for 80 kg: 20 to 25 mg/kg = 1,600 to 2,000 mg (guideline range 20 to 35, max 3,000). 2,000 mg at 10 mg/min = 200 minutes minimum by label.',
+ 'pk03': 'CrCl = (140 minus 58) x 72 / (72 x 1.0) = **82 mL/min**. 1,250 mg every 12 hours = 17.4 mg/kg per dose: inside 15 to 20 mg/kg.',
+ 'pk08': '20 mg/kg x 160 kg = 3,200 mg, so the 3,000 mg cap applies. Maintenance usually 4,500 mg/day or less to start, then AUC.',
+ 'pk09': '25 mg/kg x 70 kg = **1,750 mg** after dialysis; then 10 mg/kg = **700 mg** after each session (high permeability).',
+ 'pk10': 'Load 15 to 20 mg/kg x 75 = 1,125 to 1,500 mg; maintenance 30 to 40 mg/kg/day = 2,250 to 3,000 mg/day. AUC24 = level x 24 = 22 x 24 = **528**.',
+ 'pk11': '60 mg/kg/day x 20 kg = 1,200 mg/day = **300 mg every 6 hours**; 80 mg/kg/day = 400 mg every 6 hours.',
+ 'pk14': 'IBW = 50 + 2.3 x 10 = 73 kg; 110 / 73 = 151% so use adjusted: 73 + 0.4 x 37 = **87.8 kg**; 7 x 87.8 = **615 mg**.',
+ 'pk16': 'ke = ln(7 / 1.2) / 7 h = 0.252 per hour; half life = 0.693 / 0.252 = **2.75 hours**.',
+ 'pk17': 'Synergy for 70 kg: about 1 mg/kg = 70 mg every 8 hours; peak goal 3 to 4, trough below 1.',
+}
+for cid, drugs in LINK2.items():
+    W.setdefault(cid, {'drugs': [], 'calc': '', 'whatif': []})
+    for d in drugs:
+        if d not in W[cid]['drugs']: W[cid]['drugs'].append(d)
+    if cid in CALC2 and not W[cid].get('calc'): W[cid]['calc'] = CALC2[cid]
+
+LINK3 = {'ac01': ['doacs'], 'ac02': ['doacs'], 'ac03': ['doacs'], 'ac04': ['doacs'], 'ac05': ['doacs', 'warfarin'], 'ac06': ['doacs'],
+ 'ac07': ['warfarin'], 'ac08': ['warfarin', 'kcentra'], 'ac09': ['kcentra', 'doacs'], 'ac10': ['heparin_ufh'], 'ac11': ['heparin_ufh', 'argatroban', 'warfarin'],
+ 'ac12': ['enoxaparin'], 'ac13': ['doacs'], 'ac14': ['warfarin', 'enoxaparin'], 'ac15': ['heparin_ufh', 'doacs'], 'ac16': ['heparin_ufh', 'doacs'],
+ 'st04': ['doacs', 'warfarin'], 'st08': ['kcentra', 'doacs'], 'st09': ['kcentra', 'warfarin', 'heparin_ufh'], 'tr04': ['kcentra', 'doacs'],
+ 'mx03': ['kcentra', 'doacs'], 'mx07': ['kcentra', 'warfarin', 'heparin_ufh'], 'mx08': ['heparin_ufh'], 'ld33': ['enox_neuraxial', 'enoxaparin'], 'mx06': ['enoxaparin', 'warfarin', 'doacs']}
+CALC3 = {
+ 'ac01': 'Age 82 (meets 1), weight 64 kg (not 60 or less), SCr 1.2 (not 1.5 or more): **1 of 3** so **5 mg BID**.',
+ 'ac08': 'INR 5.4 is in the 4 to 6 band: 35 units/kg x 70 kg = **2,450 units** (under the 3,500 cap) + vitamin K 10 mg IV.',
+ 'ac10': '80 units/kg x 90 kg = **7,200 units** bolus; 18 units/kg/h x 90 = **1,620 units/h**. With 25,000 units in 250 mL (100 units/mL, check bag ⚠️): 16.2 mL/h.',
+ 'ac11': 'Platelets 260,000 to 110,000 = **58% fall**, day 7, new DVT: 4Ts intermediate to high. Argatroban 2 mcg/kg/min (no hepatic impairment).',
+ 'ac12': 'CrCl 24: 1 mg/kg x 75 kg = **75 mg every 24 hours** (not every 12).',
+ 'ac13': 'Surgery Friday, high bleed risk: no apixaban Wednesday or Thursday or Friday morning; Tuesday is the last dosing day (about 60 to 68 hours off).',
+ 'st08': '50 units/kg x 80 kg = **4,000 units** 4F-PCC (or St. Mary\'s fixed dose).',
+ 'st09': 'A: INR 3.1 (2 to below 4): 25 units/kg x 90 = **2,250 units** + vitamin K 10 mg IV. B: 1,400 units/h x 3 h = 4,200 units: protamine **42 mg** (max 50), slowly.',
+ 'mx03': 'Age 84, weight 58 kg, SCr 1.6: **3 of 3** reduction criteria: her home dose should have been 2.5 mg BID.',
+}
+for cid, drugs in LINK3.items():
+    W.setdefault(cid, {'drugs': [], 'calc': '', 'whatif': []})
+    for d in drugs:
+        if d not in W[cid]['drugs']: W[cid]['drugs'].append(d)
+    if cid in CALC3 and not W[cid].get('calc'): W[cid]['calc'] = CALC3[cid]
+
+LINK4 = {'id01': ['betalactams', 'vancomycin'], 'id02': ['betalactams'], 'id03': ['abx_syndromes', 'betalactams'], 'id04': ['vancomycin', 'abx_syndromes'],
+ 'id05': ['abx_syndromes', 'betalactams'], 'id06': ['betalactams'], 'id07': ['abx_syndromes'], 'id08': ['abx_syndromes'], 'id09': ['abx_syndromes'],
+ 'id10': ['abx_syndromes', 'betalactams', 'vancomycin'], 'id11': ['abx_syndromes', 'betalactams', 'vancomycin'], 'id12': ['betalactams'], 'id13': ['betalactams'],
+ 'id14': ['betalactams'], 'id15': ['abx_syndromes'], 'id16': ['abx_syndromes', 'betalactams'],
+ 'cc01': ['pressors'], 'cc02': ['pressors'], 'cc03': ['sedation_icu'], 'cc04': ['sedation_icu'], 'cc05': ['hyperk'], 'cc06': ['hyponatremia_tx'],
+ 'cc07': ['icu_glucose'], 'cc08': ['dka_insulin', 'kcl_iv'], 'cc09': ['kcl_iv'], 'cc10': ['sup'], 'cc11': ['hyperk', 'pressors'],
+ 'cd01': ['acls_drugs'], 'cd02': ['acls_drugs'], 'cd03': ['acls_drugs', 'hyperk'], 'cd04': ['acls_drugs'], 'cd05': ['acls_drugs'], 'cd06': ['acls_drugs'],
+ 'cd07': ['acls_drugs'], 'cd08': ['acls_drugs'], 'cd09': ['acls_drugs'], 'cd10': ['acls_drugs'], 'cd11': ['acls_drugs'], 'cd12': ['acls_drugs', 'pressors'],
+ 'mx02': ['vancomycin', 'betalactams', 'pressors', 'sup'], 'mx04': ['hyperk', 'aminoglycoside'], 'mx05': ['dka_insulin', 'kcl_iv', 'abx_syndromes'],
+ 'mx08': ['linezolid', 'heparin_ufh'], 'po07': ['linezolid'], 'ld40': ['magnesium_ob', 'gbs_abx']}
+CALC4 = {
+ 'cc05': 'K 7.1 with peaked T waves = severe. Calcium gluconate 1 g now; regular insulin **5 units** (CrCl 15) + dextrose 25 g; glucose hourly x 4 to 6 h; binder and dialysis.',
+ 'cc06': '3% saline 100 to 150 mL over 10 to 20 min, up to about 3 times. Na 112: aim for about 116 to 118 in the first hours; no more than about 122 at 24 hours (10 per 24 h), 120 if high risk (8 per 24 h).',
+ 'cc08': 'K 3.2: hold insulin, replace potassium. Then 0.1 units/kg/h x 70 kg = **7 units/h**; at glucose below 250: 0.05 units/kg/h = **3.5 units/h** plus dextrose.',
+ 'cc09': '40 mEq at the 10 mEq/h peripheral limit = **4 hours**, not 1. Replace Mg 1.3 as well.',
+ 'cd05': 'Naloxone 0.4 mg IV, repeat every 2 to 3 minutes as needed; 4 mg intranasal if no IV.',
+ 'cd06': 'Lipid 20%: 1.5 mL/kg x 70 kg = **105 mL** over 2 to 3 min, then 0.25 mL/kg/min = **17.5 mL/min**.',
+ 'cd07': 'Bicarbonate 1 to 2 mEq/kg (for 70 kg, 70 to 140 mEq = 1.4 to 2.8 ampules of 50 mEq), repeat to narrow QRS.',
+ 'cd11': 'Example for an 80 kg adult: dantrolene 2.5 mg/kg = **200 mg** IV, repeat until signs resolve.',
+}
+for cid, drugs in LINK4.items():
+    W.setdefault(cid, {'drugs': [], 'calc': '', 'whatif': []})
+    for d in drugs:
+        if d not in W[cid]['drugs']: W[cid]['drugs'].append(d)
+    if cid in CALC4 and not W[cid].get('calc'): W[cid]['calc'] = CALC4[cid]
+
+import json as _j, os as _o
+_SRC = {'m00': 'verify_basics', 'm03': 'usp797', 'm04': 'iv_po', 'm09': 'thrombolytics', 'm10': 'trauma_drugs', 'm11': 'neonatal', 'm12': 'peds', 'm13': 'safety', 'm14': 'evidence'}
+_IDS = {'m00': 'h', 'm03': 'iv', 'm04': 'po', 'm09': 'st', 'm10': 'tr', 'm11': 'nc', 'm12': 'pi', 'm13': 'ms', 'm14': 'pa'}
+def _link(cid, d):
+    W.setdefault(cid, {'drugs': [], 'calc': '', 'whatif': []})
+    if d not in W[cid]['drugs']: W[cid]['drugs'].append(d)
+for m, pre in _IDS.items():
+    for n in range(1, 41):
+        _link(f'{pre}{n:02d}', _SRC[m])
+_link('st10', 'nimodipine'); _link('iv14', 'kcl_iv'); _link('mx03', 'thrombolytics'); _link('mx04', 'trauma_drugs'); _link('tr10', 'trauma_drugs')
+CALC5 = {
+ 'h02': '(140 minus 70) x 80 / (72 x 1.6) = 5,600 / 115.2 = **48.6 mL/min**.',
+ 'st02': '0.25 mg/kg x 82 kg = **20.5 mg** = 4.1 mL of 5 mg/mL, over 5 seconds, saline flush.',
+ 'st03': '0.9 x 70 = **63 mg** total; bolus 6.3 mg over 1 minute; 56.7 mg over 60 minutes; waste 37 mg from a 100 mg vial before hanging.',
+ 'tr03': 'Ketamine 1 to 2 mg/kg x 85 = 85 to 170 mg; etomidate 0.3 x 85 = 25.5 mg; rocuronium 1 to 1.2 x 85 = 85 to 102 mg.',
+ 'tr05': 'Mannitol 0.25 to 1 g/kg x 80 = 20 to 80 g (20% = 100 to 400 mL).',
+ 'tr09': '4 x 80 x 40 = **12,800 mL**; half = 6,400 mL by hour 8 from the burn; 2 hours gone, so 6,400 mL over 6 hours = **1,067 mL/h**, then 6,400 mL over 16 hours = 400 mL/h.',
+ 'nc03': '0.02 mg/kg x 3 kg = 0.06 mg = **0.6 mL** of 0.1 mg/mL IV; ETT would be 0.1 x 3 = 0.3 mg = 3 mL. Saline 10 mL/kg = 30 mL.',
+ 'nc07': '1.1 kg: load 20 mg/kg = 22 mg; maintenance 5 mg/kg = 5.5 mg daily (caffeine citrate).',
+ 'nc09': 'D10W 2 mL/kg x 3.2 kg = **6.4 mL** (640 mg dextrose = 200 mg/kg).',
+ 'pi02': '20 kg: epinephrine 0.01 x 20 = 0.2 mg = **2 mL** of 0.1 mg/mL; amiodarone 5 x 20 = **100 mg**.',
+ 'pi03': 'Adenosine 0.1 x 15 = 1.5 mg, then 0.2 x 15 = 3 mg. Atropine 0.02 x 10 = 0.2 mg.',
+ 'pi04': '25 kg: lorazepam 0.1 x 25 = 2.5 mg; levetiracetam 60 x 25 = 1,500 mg; fosphenytoin 20 x 25 = 500 mg PE; valproate 40 x 25 = 1,000 mg.',
+ 'pi05': '30 kg: insulin 0.05 to 0.1 units/kg/h = 1.5 to 3 units/h; mannitol 0.5 to 1 g/kg = 15 to 30 g; 3% saline 2.5 to 5 mL/kg = 75 to 150 mL.',
+ 'pi08': '20 kg: 4/2/1 = 40 + 20 = **60 mL/h**; acetaminophen 300 mg; ibuprofen 200 mg.',
+ 'pa04': 'ARI = 27.5 minus 24.9 = 2.6 points; NNH = 1 / 0.026 = **38**.',
+ 'pa05': 'ARR = 8.8 minus 1.7 = 7.1; NNT = 1 / 0.071 = **14**. BRIDGE: 3.2 minus 1.3 = 1.9; NNH = **53**.',
+}
+for cid, t in CALC5.items():
+    if cid in W and not W[cid].get('calc'): W[cid]['calc'] = t
