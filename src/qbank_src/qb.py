@@ -21,7 +21,14 @@ def src(t, url, mark='✅'):
 
 def write(outdir, mid, title, intro, cases):
     from levels import level
-    for c in cases: c['level'] = level(c['id'])
+    from workups import W
+    from drugcards import write_cards, CARDS
+    for c in cases:
+        c['level'] = level(c['id'])
+        if c['id'] in W:
+            assert all(d in CARDS for d in W[c['id']]['drugs']), c['id']
+            c['workup'] = W[c['id']]
+    write_cards(outdir)
     ids = [c['id'] for c in cases]; assert len(ids) == len(set(ids)), 'duplicate case id'
     os.makedirs(outdir, exist_ok=True)
     json.dump({'id': mid, 'title': title, 'intro': intro, 'cases': cases}, open(f'{outdir}/{mid}.json', 'w'), ensure_ascii=False, indent=1)

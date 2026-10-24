@@ -1,0 +1,122 @@
+{
+ "magnesium_ob": {
+  "title": "Magnesium sulfate (preeclampsia, eclampsia, fetal neuroprotection)",
+  "sections": [
+   [
+    "What it is for",
+    "Seizure **prevention** in preeclampsia with severe features and **treatment** of eclamptic seizures; also fetal neuroprotection before 32 weeks. It is **not** a blood pressure drug: severe BP still needs labetalol, hydralazine or nifedipine ✅✅ [PB 222; CO 767]."
+   ],
+   [
+    "How it works",
+    "Blocks calcium at nerve endings and NMDA receptors in the brain, calming overexcited neurons; also relaxes smooth muscle. The same calcium blocking is why toxicity weakens reflexes, then breathing."
+   ],
+   [
+    "Approved dose (and where it comes from)",
+    "**IV:** load 4 to 6 g, then 1 to 2 g/h. The premixed bag label says load over 15 minutes; ACOG and the eclampsia checklist use 20 to 30 minutes ✅✅ [bag label; ACOG checklist; PB 222].\n**IM (no IV access):** 10 g of 50% solution (5 g in each buttock), then 4 to 5 g IM into alternate buttocks every 4 hours as needed ✅✅ [vial label; ACOG checklist].\n**Seizure while on magnesium:** extra 2 to 4 g IV over 5 minutes ✅ [PB 222].\n**Maximum:** 30 to 40 g in 24 hours; with severe renal insufficiency 20 g per 48 hours with frequent levels ✅✅ [vial label; bag label].\n**Fetal neuroprotection:** 6 g over 20 to 30 minutes, then 2 g/h up to 12 hours (BEAM based protocol) ✅ [CO 455; MAHEC protocol]."
+   ],
+   [
+    "Weight based?",
+    "**No.** Magnesium for preeclampsia is a **fixed dose** (grams), not mg/kg. Obese patients may reach lower levels on the same dose, which is one reason some teams use 2 g/h rather than 1 g/h and check levels ⚠️ [VERIFY St. Mary's protocol]."
+   ],
+   [
+    "Show the math",
+    "**1 g magnesium sulfate = 8.12 mEq magnesium** ✅ [vial label].\nExample bag 20 g in 500 mL = **40 mg/mL** (check the bag you actually stock ⚠️):\n• 6 g load = 6,000 mg ÷ 40 mg/mL = **150 mL**; over 20 minutes = 150 × 3 = **450 mL/h** for 20 minutes.\n• 2 g/h maintenance = 2,000 mg ÷ 40 = **50 mL/h**; 1 g/h = **25 mL/h**.\n• 24 hour total at 2 g/h after a 6 g load = 6 + 48 = **54 g**: above the 30 to 40 g per 24 h label maximum. Standard OB practice runs these doses; flag it as a reason levels and close monitoring matter, and follow the order set ⚠️.\nExample bag 4 g in 100 mL (40 mg/mL): the load is the same mL; many sites hang the load as its own bag so the pump cannot run the whole bag by mistake."
+   ],
+   [
+    "Rate and administration limits",
+    "**Never IV push** concentrated solution. The vial label says IV injection generally should not exceed **150 mg/min**, except in severe eclampsia with seizures; the obstetric load (4 to 6 g over 15 to 30 minutes, about 130 to 400 mg/min) is the recognized exception ✅ [vial label].\nThe 50% vial must be **diluted to 20% or less** for IV use ✅ [vial label].\nUse a **premixed bag, a dedicated pump channel**, and program the load and maintenance separately (bolus feature or a separate load bag), with an **independent double check** ✅ [ISMP high alert].\nKeep magnesium bags physically apart from oxytocin bags (look alike, both on L&D pumps) ✅ [ISMP]."
+   ],
+   [
+    "Contraindications and cautions",
+    "**Contraindicated:** myasthenia gravis, heart block or myocardial damage (label also lists diabetic coma) ✅ [bag label].\n**Renal failure:** the ACOG eclampsia checklist lists it as a contraindication; the label instead allows reduced dosing (4 g load, 1 g/h, max 20 g per 48 h) with frequent levels. This is a team decision ✅✅ [ACOG checklist; bag label].\n**Pregnancy duration:** continuous use beyond 5 to 7 days can cause fetal low calcium and bone problems ✅ [bag label]."
+   ],
+   [
+    "Interactions",
+    "**Nifedipine and other calcium channel blockers:** label warns against combining (hypotension, neuromuscular effects); ACOG still uses nifedipine for severe BP with close monitoring ✅✅ [bag label; CO 767].\n**Neuromuscular blockers** (rocuronium, succinylcholine): effect is prolonged; tell anesthesia she is on magnesium.\n**Aminoglycosides** (gentamicin): add neuromuscular blockade and kidney risk.\n**CNS depressants** (opioids, sedatives): additive respiratory depression."
+   ],
+   [
+    "Kidneys",
+    "Magnesium is cleared **only by the kidneys**. Before verifying, look at SCr and **urine output (goal at least 100 mL per 4 hours, about 25 mL/h)** ✅✅ [bag label; ACOG checklist]. Report urine output below 30 mL/h ✅ [ACOG checklist]."
+   ],
+   [
+    "Monitoring",
+    "Deep tendon (patellar) reflexes present; respiratory rate at least 16 (label) and act if below 12; urine output at least 100 mL per 4 hours; mental status, SpO2; serum magnesium if kidneys are impaired, symptoms appear or seizures recur ✅✅ [bag label; PB 222].\n**Target serum level:** 2.5 to 5 mEq/L (3 to 6 mg/dL) per label; ACOG sources quote about 4.8 to 8.4 mg/dL, so know which units your lab reports ⚠️ [VERIFY lab]."
+   ],
+   [
+    "Toxicity and antidote",
+    "Reflexes weaken above about **4 mEq/L**; may be absent at **10 mEq/L**, when respiratory paralysis is a risk ✅ [bag label].\n**Action:** stop the infusion, support breathing, **calcium gluconate 1 g IV (10 mL of 10%) over 2 to 3 minutes**, STAT magnesium level and creatinine ✅✅ [ACOG checklist (1 to 2 min); CO 767 (3 min)]. Keep calcium gluconate at the bedside before starting."
+   ],
+   [
+    "What if...",
+    "**Urine output 15 mL/h?** Still give the **loading dose** (it fills body water and does not depend on kidneys), then **lower or hold the maintenance**, check a level within a few hours and every 4 to 6 hours, and reassess reflexes and breathing hourly; label: 4 g load then 1 g/h, max 20 g per 48 h ✅ [bag label]. Call the OB now (below 30 mL/h). If true renal failure: discuss an alternative (below) ⚠️ [VERIFY order set].\n**No IV?** IM 10 g (5 g each buttock), then 5 g IM every 4 hours ✅✅.\n**Seizure despite magnesium?** 2 to 4 g IV over 5 minutes; if still seizing, lorazepam ✅.\n**Going to cesarean?** Continue through surgery; tell anesthesia (paralytics last longer).\n**Breastfeeding?** Compatible ✅ [LactMed]."
+   ],
+   [
+    "Alternatives when magnesium cannot be used",
+    "Magnesium is clearly better than phenytoin or diazepam for preventing and treating eclamptic seizures, so alternatives are only for contraindications (for example myasthenia gravis) ✅ [PB 222].\nACOG eclampsia checklist options: **lorazepam 2 to 4 mg IV** once (may repeat once after 10 to 15 min); **diazepam 5 to 10 mg IV** every 5 to 10 minutes (max 30 mg); **phenytoin 15 to 20 mg/kg IV** (may repeat 10 mg/kg after 20 min; avoid with hypotension); **levetiracetam 500 mg IV or PO**, may repeat in 12 hours (adjust for kidneys) ✅ [ACOG checklist]. Choose with OB and neurology."
+   ],
+   [
+    "How long",
+    "Usually **24 hours after delivery** (or 24 hours after the last seizure) ✅ [PB 222]."
+   ],
+   [
+    "Baby",
+    "Crosses the placenta: newborn may have low tone, weak reflexes and slow breathing; tell the pediatric team ✅ [bag label]."
+   ],
+   [
+    "Who to call and what to document",
+    "OB for dose, urine output and BP; anesthesia for any surgery or epidural; nursing for the monitoring schedule. Document the load time, maintenance rate, levels and any change."
+   ],
+   [
+    "Verify locally",
+    "Product and concentration stocked, pump library limits, order set for renal adjustment and IM backup, where calcium gluconate is kept."
+   ]
+  ],
+  "sources": [
+   {
+    "t": "Magnesium Sulfate in 5% Dextrose Injection, prescribing information (MedLibrary)",
+    "url": "https://medlibrary.org/lib/rx/meds/magnesium-sulfate-in-dextrose/",
+    "mark": "✅"
+   },
+   {
+    "t": "Magnesium Sulfate Injection USP 50% vial, prescribing information (Pfizer)",
+    "url": "https://www.pfizermedical.com/magnesium-sulfate-injection-usp-vial/dosage-admin",
+    "mark": "✅"
+   },
+   {
+    "t": "ACOG District II: Eclampsia checklist (Safe Motherhood Initiative)",
+    "url": "https://www.scdhhs.gov/sites/default/files/ACOG-District-II-Checklist-Eclampsia.pdf",
+    "mark": "✅"
+   },
+   {
+    "t": "ACOG Practice Bulletin 222: Gestational hypertension and preeclampsia (2020)",
+    "url": "https://doi.org/10.1097/AOG.0000000000003891",
+    "mark": "✅"
+   },
+   {
+    "t": "ACOG Committee Opinion 767: severe hypertension in pregnancy and postpartum (2019)",
+    "url": "https://doi.org/10.1097/AOG.0000000000003075",
+    "mark": "✅"
+   },
+   {
+    "t": "ACOG Committee Opinion 455: magnesium for fetal neuroprotection",
+    "url": "https://doi.org/10.1097/AOG.0b013e3181d4ffa5",
+    "mark": "✅"
+   },
+   {
+    "t": "LactMed (NIH)",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
+    "mark": "✅"
+   },
+   {
+    "t": "ISMP high alert medications in acute care settings (2024)",
+    "url": "https://home.ecri.org/blogs/ismp-resources/high-alert-medications-in-acute-care-settings",
+    "mark": "✅"
+   },
+   {
+    "t": "St. Mary's L&D magnesium order set, product list and pump library (verify locally)",
+    "url": "",
+    "mark": "⚠️"
+   }
+  ]
+ }
+}

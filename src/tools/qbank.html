@@ -8,7 +8,7 @@
 :root{--bg:#f3f5f8;--panel:#fff;--ink:#1d2733;--muted:#5d6b7a;--line:#d5dce4;--bar:#1f3b5a;--accent:#2f6fb0;--ok:#1e7a46;--okbg:#e6f4ec;--bad:#b3261e;--badbg:#fbe9e7;--warn:#9a5b00;--warnbg:#fff4e0;--chip:#e7edf4}
 @media (prefers-color-scheme:dark){:root{--bg:#12161c;--panel:#1b222b;--ink:#e6ebf1;--muted:#9aa7b5;--line:#2c3642;--bar:#0f2238;--accent:#6aa5e0;--ok:#4cc184;--okbg:#16301f;--bad:#ff7b72;--badbg:#3a1a18;--warn:#f0b35a;--warnbg:#3a2a10;--chip:#232c37}}
 *{box-sizing:border-box}
-body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);padding-bottom:140px}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);padding-bottom:90px}
 header{background:var(--bar);color:#fff;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
 header b{font-size:17px}header a{color:#cfe2ff}
 main{max-width:860px;margin:0 auto;padding:14px 16px 90px}
@@ -37,11 +37,19 @@ table.chart td:first-child{color:var(--muted);width:34%}
 .card{border:1px solid var(--line);border-radius:9px;padding:10px;cursor:pointer;background:var(--panel)}
 .card:hover{border-color:var(--accent)}
 select{max-width:100%}
+.wk details{border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:6px 0;background:var(--panel)}
+.wk summary{cursor:pointer;font-weight:600}
+.wk h4{margin:10px 0 2px}
+.wk .qa summary{font-weight:500}
 .lv{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;margin-left:6px;border:1px solid var(--line)}
 .lv.F{background:var(--okbg)}.lv.T{background:var(--badbg)}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;background:var(--line)}
 .dot.g{background:var(--ok)}.dot.r{background:var(--bad)}.dot.y{background:var(--warn)}
-#focus{position:fixed;left:0;right:0;bottom:0;background:var(--panel);border-top:1px solid var(--line);padding:8px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;z-index:5}
+#fpill{position:fixed;right:12px;bottom:12px;z-index:6;border-radius:22px;padding:9px 14px;font-weight:600;box-shadow:0 2px 10px rgba(0,0,0,.25);background:var(--panel)}
+#fpill.on{background:var(--accent);color:#fff;border-color:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(37,99,235,.25)}}
+#focus{position:fixed;left:8px;right:8px;bottom:64px;max-width:460px;margin-left:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;z-index:6;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+#focus[hidden]{display:none}
 input[type=range]{width:110px}
 a{color:var(--accent)}
 </style>
@@ -64,18 +72,20 @@ a{color:var(--accent)}
   </div>
   <div id="view"></div>
 </main>
-<div id="focus">
-  <b>🎧 Focus sound</b>
+<button id="fpill" aria-controls="focus">🎧 Focus sound</button>
+<div id="focus" hidden>
+  <b style="flex:1">🎧 Focus sound</b><button id="fclose" aria-label="Close">✕ Close</button>
+  <div style="flex-basis:100%"></div>
   <select id="snd" aria-label="Focus sound">
     <option value="">Off</option><option value="brown">Brown noise (deep, steady)</option><option value="pink">Pink noise (softer)</option>
     <option value="white">White noise</option><option value="rain">Rain</option>
     <option value="theta">528 Hz + 6 Hz theta beat (headphones)</option><option value="theta_brown">528 Hz theta beat + soft brown noise (headphones)</option>
     <option value="alpha">528 Hz + 10 Hz alpha beat (headphones)</option><option value="40">40 Hz gamma beat (headphones)</option>
   </select>
+  <button class="primary" id="fplay">▶ Play</button>
   <label class="small">Volume <input id="vol" type="range" min="0" max="1" step="0.01" value="0.6"></label>
   <span class="small muted" id="sndnote">Beats need stereo headphones (both ears). Noise blocks distractions; evidence that tones boost memory is limited.</span>
-  <span style="flex:1"></span>
-  <label class="small"><input type="checkbox" id="readq"> Read questions aloud</label>
+  <label class="small" style="flex-basis:100%"><input type="checkbox" id="readq"> Read questions aloud</label>
 </div>
 <script>
 // ponytail: progress lives in this browser (localStorage) with export/import; move to Cloudflare KV if she wants phone + Mac sync.
@@ -84,7 +94,7 @@ const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\n/g, '<b
 const KEY = 'qbank_progress_v1', DAY = 864e5, BOX = [0, 1, 3, 7, 21, 60];
 let prog = {}; try { prog = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(prog)); } catch {} };
-let modules = [], mod = null, mode = 'tutor', cur = null, lvl = '';
+let DRUGS = {}, modules = [], mod = null, mode = 'tutor', cur = null, lvl = '';
 const LV = { 'Foundation': 'F', 'Staff': 'S', 'Top 10%': 'T' };
 
 const MODES = [['tutor','Tutor'],['timed','Timed'],['missed','Missed'],['due','Due for review'],['browse','All cases']];
@@ -95,6 +105,7 @@ $('#levels').onclick = e => { const l = e.target.dataset.l; if (l !== undefined)
 
 async function load() {
   modules = await fetch('/qbank/index.json').then(r => r.json());
+  DRUGS = await fetch('/qbank/drugs.json', { cache: 'no-cache' }).then(r => r.json()).catch(() => ({}));
   $('#mod').innerHTML = modules.map(m => `<option value="${m.id}">${esc(m.title)} (${m.count})</option>`).join('');
   const want = new URLSearchParams(location.search).get('m');
   if (want) $('#mod').value = want;
@@ -160,6 +171,16 @@ function header(c) {
     <div>${(c.topics || []).map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
     <p>${md(c.stem)}</p>${chart}`;
 }
+const CHECK = ['Indication and goal: why is this drug ordered, and is it the right drug?', 'Approved dose for this indication, and the source (label vs guideline)', 'Weight based or fixed? Which weight (actual, ideal, adjusted)?', 'Show the math for this patient, including rate and volume', 'Route, rate limits, dilution, line and pump (compatibility)', 'Kidney and liver function: adjust?', 'Contraindications, boxed warnings, allergy, pregnancy and breastfeeding', 'Interactions and duplicates', 'Monitoring: what, when, target, toxicity signs', 'Antidote or rescue plan', 'What if the patient changes (kidneys, no IV, allergy, NPO)?', 'Alternatives: other routes, other drugs, second line', 'Who to call, what to say, what to document', 'What St. Mary\'s protocol says'];
+function workup(c, open) {
+  const w = c.workup, cards = (w ? w.drugs : []).map(d => DRUGS[d]).filter(Boolean);
+  const src = x => `<li>${esc(x.mark || '')} ${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.t)}</a>` : esc(x.t)}</li>`;
+  return `<div class="wk"><h3>📋 Full pharmacist workup</h3>
+    ${w && w.calc ? `<details ${open ? 'open' : ''}><summary>This patient: dose check and math</summary><p>${md(w.calc)}</p></details>` : ''}
+    ${w && w.whatif && w.whatif.length ? `<details ${open ? 'open' : ''}><summary>What if... (think first, then tap)</summary>${w.whatif.map(([q, a]) => `<details class="qa"><summary>${md(q)}</summary><p>${md(a)}</p></details>`).join('')}</details>` : ''}
+    ${cards.map(k => `<details><summary>Drug card: ${esc(k.title)}</summary>${k.sections.map(([h, t]) => `<h4>${esc(h)}</h4><p>${md(t)}</p>`).join('')}<ol class="small">${k.sources.map(src).join('')}</ol></details>`).join('')}
+    <details ${cards.length ? '' : 'open'}><summary>${cards.length ? 'The 14 point checklist I run on every order' : 'Your 14 point workup (full drug card for this case coming soon)'}</summary><ol>${CHECK.map(x => `<li>${esc(x)}</li>`).join('')}</ol></details></div>`;
+}
 function renderStep() {
   const { c, step } = cur, s = c.steps[step], multi = s.type === 'multi';
   clearInterval(cur.timer);
@@ -170,7 +191,9 @@ function renderStep() {
     <p style="font-weight:600;margin:6px 0">${md(s.q)}</p>
     <div id="opts">${s.options.map((o, i) => `<button class="opt" data-i="${i}">${md(o.t)}<div class="why" hidden></div></button>`).join('')}</div>
     <div id="after"></div>
-    <p class="row"><button class="primary" id="submit">Check answer</button><button id="quit">Back to list</button></p></div>`;
+    <p class="row"><button class="primary" id="submit">Check answer</button>${mode !== 'timed' ? '<button id="wkbtn">📋 Full workup</button>' : ''}<button id="quit">Back to list</button></p>
+    <div id="wkbox" hidden>${mode !== 'timed' ? workup(c, true) : ''}</div></div>`;
+  if ($('#wkbtn')) $('#wkbtn').onclick = () => { $('#wkbox').hidden = !$('#wkbox').hidden; };
   $('#opts').onclick = e => {
     const b = e.target.closest('.opt'); if (!b || cur.answered) return;
     const i = +b.dataset.i;
@@ -221,6 +244,7 @@ function finish() {
     ${c.monitor ? `<h3>Monitor</h3><p>${md(c.monitor)}</p>` : ''}
     ${c.pearl ? `<h3>Memory hook</h3><p>${md(c.pearl)}</p>` : ''}
     ${c.alternatives ? `<h3>If first line is not an option</h3><p>${md(c.alternatives)}</p>` : ''}
+    ${workup(c, true)}
     ${c.sources ? `<h3>Sources</h3><ol class="small">${c.sources.map(x => `<li>${esc(x.mark || '')} ${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.t)}</a>` : esc(x.t)}</li>`).join('')}</ol>` : ''}
     <p class="small muted">Teaching case, invented. Check St. Mary's order sets and policies before acting.</p>
     <p class="row"><button class="primary" id="nx">Next case</button><button id="again">Redo this case</button><button id="list">Back to list</button></p></div>`;
@@ -286,7 +310,15 @@ function sound(kind) {
     ? 'Playing. Left ear and right ear get slightly different tones; the beat only forms with stereo headphones (some Bluetooth headsets switch to mono during calls). Turn the phone volume up if it is faint.'
     : 'Playing. Turn the phone volume up if it is faint.';
 }
-$('#snd').onchange = e => sound(e.target.value);
+let playing = false;
+function setPlaying(on) {
+  playing = on; $('#fplay').textContent = on ? '■ Stop' : '▶ Play';
+  $('#fpill').classList.toggle('on', on); $('#fpill').textContent = on ? '🎧 Playing · tap to stop or change' : '🎧 Focus sound';
+}
+$('#fpill').onclick = () => { $('#focus').hidden = !$('#focus').hidden; };
+$('#fclose').onclick = () => { $('#focus').hidden = true; };
+$('#fplay').onclick = () => { if (playing) { sound(''); setPlaying(false); } else { if (!$('#snd').value) $('#snd').value = 'theta'; sound($('#snd').value); setPlaying(true); } };
+$('#snd').onchange = e => { if (!e.target.value) { sound(''); setPlaying(false); } else if (playing) sound(e.target.value); };
 $('#vol').oninput = e => { if (gain) gain.gain.value = +e.target.value; };
 load().catch(() => { $('#view').innerHTML = '<div class="panel">The question bank could not load. Refresh the page.</div>'; });
 </script>
