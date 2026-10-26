@@ -18,19 +18,24 @@
      "q": "What is the PMA?",
      "options": [
       {
-       "t": "32 weeks (GA 30 weeks + 2 weeks PNA)",
+       "t": "32 weeks (GA 30 + 2 weeks PNA)",
        "correct": true,
-       "why": "PMA = GA + weeks since birth."
+       "why": "PMA = GA + PNA."
       },
       {
-       "t": "30 weeks",
+       "t": "30 weeks (GA alone at birth)",
        "correct": false,
-       "why": "That is GA."
+       "why": "GA stays fixed; PMA moves forward."
       },
       {
-       "t": "14 days",
+       "t": "2 weeks (postnatal age only)",
        "correct": false,
-       "why": "That is PNA."
+       "why": "PNA is chronologic age, not PMA."
+      },
+      {
+       "t": "34 weeks (GA + 4 weeks PNA)",
+       "correct": false,
+       "why": "14 days is 2 weeks, not 4."
       }
      ],
      "teach": "",
@@ -41,14 +46,24 @@
      "q": "Which reference do you use to dose this baby?",
      "options": [
       {
-       "t": "Neofax or Lexicomp Pediatric and Neonatal (whichever St. Mary's uses), with the unit's interval charts",
+       "t": "Neofax or Lexicomp Pediatric, per unit charts",
        "correct": true,
-       "why": "Neonatal intervals depend on PMA and PNA."
+       "why": "Whichever St. Mary's uses."
       },
       {
-       "t": "Adult Lexicomp, scaled by weight",
+       "t": "Adult Lexicomp, scaled down by weight",
        "correct": false,
-       "why": "Never for neonates."
+       "why": "Neonatal kinetics differ (kidneys, body water)."
+      },
+      {
+       "t": "Pediatric doses for a 1 year old by weight",
+       "correct": false,
+       "why": "Infant intervals do not fit preterm neonates."
+      },
+      {
+       "t": "Harriet Lane only, without unit charts",
+       "correct": false,
+       "why": "Use the unit's chosen reference and charts."
       }
      ],
      "teach": "",
@@ -59,14 +74,24 @@
      "q": "Why does the weight on the order matter so much?",
      "options": [
       {
-       "t": "Babies lose weight the first week, and a decimal error in a tiny weight is a 10 fold dose error",
+       "t": "A decimal slip is a 10 fold error",
        "correct": true,
-       "why": "Confirm which weight (birth or current) the protocol uses."
+       "why": "Tiny weights; weight also changes in the first week."
       },
       {
-       "t": "It does not matter much",
+       "t": "Neonatal weights rarely change early",
        "correct": false,
-       "why": "It always matters."
+       "why": "They drop the first week, then rise."
+      },
+      {
+       "t": "Doses get rounded to whole mL anyway",
+       "correct": false,
+       "why": "Small volumes are measured precisely."
+      },
+      {
+       "t": "Weight only matters for fluid orders",
+       "correct": false,
+       "why": "Every dose is weight based."
       }
      ],
      "teach": "",
@@ -109,14 +134,24 @@
      "q": "What do you calculate?",
      "options": [
       {
-       "t": "0.5 mg / 1.2 kg = about 0.42 mg/kg: 4 to 8 times the usual range, and exactly 10 times 0.05 mg, a classic decimal slip",
+       "t": "0.42 mg/kg: about 4 to 8x the usual range",
        "correct": true,
-       "why": "Call before it goes. The expected dose is about 0.06 to 0.12 mg for 1.2 kg."
+       "why": "And exactly 10x 0.05 mg: a classic decimal slip."
       },
       {
-       "t": "Looks fine",
+       "t": "0.042 mg/kg: within the usual range",
        "correct": false,
-       "why": "Always calculate mg/kg for neonatal orders."
+       "why": "Decimal error in the check itself."
+      },
+      {
+       "t": "0.6 mg/kg: about 6 to 12x the usual range",
+       "correct": false,
+       "why": "Multiplied by weight instead of dividing."
+      },
+      {
+       "t": "0.1 mg/kg: the top of the usual range",
+       "correct": false,
+       "why": "Wrong math; 0.5 / 1.2 = 0.42."
       }
      ],
      "teach": "",
@@ -127,19 +162,29 @@
      "q": "Which writing rules prevent this?",
      "options": [
       {
-       "t": "Always a leading zero (0.05 mg), never a trailing zero (5.0 mg)",
+       "t": "Always a leading zero (0.05 mg); never trailing (5.0)",
        "correct": true,
-       "why": ""
+       "why": "ISMP."
       },
       {
        "t": "Check mg/kg/dose vs mg/kg/day on every order",
        "correct": true,
-       "why": "The most common pediatric error type."
+       "why": ""
       },
       {
-       "t": "Round to whole numbers",
+       "t": "Use a trailing zero to show precision (5.0 mg)",
        "correct": false,
-       "why": "Rounding creates errors in tiny doses."
+       "why": "5.0 can be misread as 50."
+      },
+      {
+       "t": "Round all doses to whole numbers",
+       "correct": false,
+       "why": "Neonatal doses are fractions of a mg."
+      },
+      {
+       "t": "Write \"u\" for units to save space",
+       "correct": false,
+       "why": "\"U\" is misread as 0 or 4."
       }
      ],
      "teach": "",
@@ -185,12 +230,22 @@
       {
        "t": "Effective ventilation",
        "correct": true,
-       "why": "Most newborn arrests are breathing problems."
+       "why": "NRP: most neonatal arrests are respiratory."
       },
       {
-       "t": "Epinephrine first",
+       "t": "Epinephrine before ventilation",
        "correct": false,
-       "why": "Ventilation comes first in newborns."
+       "why": "Ventilation comes first."
+      },
+      {
+       "t": "Sodium bicarbonate 2 mEq/kg",
+       "correct": false,
+       "why": "Not routine in NRP."
+      },
+      {
+       "t": "Atropine 0.02 mg/kg",
+       "correct": false,
+       "why": "Not an NRP drug."
       }
      ],
      "teach": "",
@@ -201,19 +256,24 @@
      "q": "Epinephrine dose through the UVC?",
      "options": [
       {
-       "t": "0.02 mg/kg (range 0.01 to 0.03): 0.06 mg = 0.6 mL of 0.1 mg/mL, every 3 to 5 minutes",
+       "t": "0.02 mg/kg IV: 0.06 mg (0.6 mL of 0.1 mg/mL)",
        "correct": true,
-       "why": "Use only the 0.1 mg/mL concentration."
+       "why": "Range 0.01 to 0.03; every 3 to 5 minutes (NRP)."
       },
       {
-       "t": "1 mg",
+       "t": "0.1 mg/kg IV: 0.3 mg (3 mL of 0.1 mg/mL)",
        "correct": false,
-       "why": "Adult dose: massive overdose."
+       "why": "0.1 mg/kg is the endotracheal dose; IV is 0.01 to 0.03."
       },
       {
-       "t": "0.1 mg/kg IV",
+       "t": "0.01 mg/kg IV: 0.03 mg (0.03 mL of 1 mg/mL)",
        "correct": false,
-       "why": "0.1 mg/kg is the endotracheal dose (range 0.05 to 0.1)."
+       "why": "Right range but wrong concentration; use 0.1 mg/mL."
+      },
+      {
+       "t": "1 mg IV: 10 mL of 0.1 mg/mL",
+       "correct": false,
+       "why": "The adult arrest dose."
       }
      ],
      "teach": "",
@@ -224,14 +284,24 @@
      "q": "Hypovolemia suspected (blood loss). Volume?",
      "options": [
       {
-       "t": "Normal saline 10 mL/kg (30 mL) over 5 to 10 minutes",
+       "t": "NS 10 mL/kg (30 mL) over 5 to 10 min",
        "correct": true,
-       "why": ""
+       "why": "NRP."
       },
       {
-       "t": "1 L bolus",
+       "t": "NS 20 mL/kg (60 mL) as rapid IV push",
        "correct": false,
-       "why": "Far too much."
+       "why": "The pediatric shock bolus, not NRP."
+      },
+      {
+       "t": "D10W 2 mL/kg (6 mL) as a bolus",
+       "correct": false,
+       "why": "For hypoglycemia, not volume."
+      },
+      {
+       "t": "Albumin 25% 10 mL/kg over 1 hour",
+       "correct": false,
+       "why": "Not an NRP volume choice."
       }
      ],
      "teach": "",
@@ -286,22 +356,27 @@
       {
        "t": "Vitamin K 0.5 to 1 mg IM once",
        "correct": true,
-       "why": "Prevents vitamin K deficiency bleeding."
+       "why": ""
       },
       {
-       "t": "Erythromycin 0.5% eye ointment once, both eyes",
+       "t": "Erythromycin 0.5% eye ointment, both eyes",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Hepatitis B vaccine plus hepatitis B immune globulin (HBIG) within 12 hours",
+       "t": "Hep B vaccine + HBIG within 12 hours",
        "correct": true,
-       "why": "Because mom is HBsAg positive."
+       "why": "HBsAg positive mother (CDC)."
       },
       {
-       "t": "Ceftriaxone 50 mg/kg",
+       "t": "Hep B vaccine alone, HBIG at 1 month",
        "correct": false,
-       "why": "Not routine."
+       "why": "HBIG within 12 hours."
+      },
+      {
+       "t": "Vitamin K 0.5 to 1 mg by mouth",
+       "correct": false,
+       "why": "IM is the standard."
       }
      ],
      "teach": "",
@@ -347,12 +422,22 @@
       {
        "t": "Ampicillin + gentamicin",
        "correct": true,
-       "why": "Covers GBS, E. coli and Listeria."
+       "why": ""
       },
       {
-       "t": "Ceftriaxone alone",
+       "t": "Ceftriaxone + gentamicin",
        "correct": false,
-       "why": "Misses Listeria and is avoided in neonates."
+       "why": "No Listeria coverage; ceftriaxone risks in neonates."
+      },
+      {
+       "t": "Vancomycin + gentamicin",
+       "correct": false,
+       "why": "Not the empiric early onset sepsis regimen; no MRSA risk here."
+      },
+      {
+       "t": "Ampicillin + azithromycin",
+       "correct": false,
+       "why": "Misses gram negatives."
       }
      ],
      "teach": "",
@@ -368,7 +453,17 @@
        "why": ""
       },
       {
-       "t": "Ampicillin is cheaper",
+       "t": "Ampicillin covers E. coli more reliably",
+       "correct": false,
+       "why": "E. coli is often ampicillin resistant; that is why gentamicin is added."
+      },
+      {
+       "t": "Cephalosporins do not cover GBS",
+       "correct": false,
+       "why": "They do."
+      },
+      {
+       "t": "Ampicillin penetrates CSF better",
        "correct": false,
        "why": "Not the reason."
       }
@@ -381,14 +476,24 @@
      "q": "How is gentamicin dosed in neonates?",
      "options": [
       {
-       "t": "By the unit chart using GA or PMA and PNA (for example a term neonate often about 4 mg/kg every 24 hours; preterm every 36 to 48 hours)",
+       "t": "By GA/PMA and PNA on the unit chart",
        "correct": true,
-       "why": "Example only: always use St. Mary's chart."
+       "why": "A term neonate is often about 4 mg/kg every 24 hours; preterm every 36 to 48 hours."
       },
       {
-       "t": "Adult Hartford 7 mg/kg",
+       "t": "Hartford nomogram, 7 mg/kg every 24 h",
        "correct": false,
-       "why": "Never in neonates."
+       "why": "The adult extended interval nomogram."
+      },
+      {
+       "t": "2.5 mg/kg every 8 h for every neonate",
+       "correct": false,
+       "why": "Older traditional dosing; not chart based."
+      },
+      {
+       "t": "4 mg/kg every 12 h for every neonate",
+       "correct": false,
+       "why": "Too frequent for immature kidneys."
       }
      ],
      "teach": "",
@@ -436,19 +541,29 @@
      "q": "What is wrong?",
      "options": [
       {
-       "t": "Ceftriaxone must not be given with IV calcium solutions in neonates (fatal precipitates)",
+       "t": "No ceftriaxone with IV calcium in neonates",
        "correct": true,
-       "why": "FDA labeling."
+       "why": "Fatal precipitates."
       },
       {
-       "t": "Ceftriaxone displaces bilirubin from albumin; avoid in hyperbilirubinemia (kernicterus risk)",
+       "t": "Ceftriaxone displaces bilirubin from albumin",
        "correct": true,
-       "why": ""
+       "why": "Kernicterus risk."
       },
       {
-       "t": "Nothing",
+       "t": "Ceftriaxone needs a gentamicin partner here",
        "correct": false,
-       "why": "Two problems."
+       "why": "Not the problem."
+      },
+      {
+       "t": "Ceftriaxone must be given IM only",
+       "correct": false,
+       "why": "Not the problem."
+      },
+      {
+       "t": "Nothing; it is fine at 10 days old",
+       "correct": false,
+       "why": "Both problems apply."
       }
      ],
      "teach": "",
@@ -460,14 +575,24 @@
      "q": "Which alternative cephalosporins are used for neonatal meningitis in the US now?",
      "options": [
       {
-       "t": "Cefepime or ceftazidime (with ampicillin), per unit protocol",
+       "t": "Cefepime or ceftazidime with ampicillin",
        "correct": true,
-       "why": "Cefotaxime is no longer available in the US."
+       "why": "Cefotaxime is no longer marketed in the US."
       },
       {
-       "t": "Ceftriaxone anyway",
+       "t": "Cefotaxime with ampicillin",
        "correct": false,
-       "why": "Contraindicated here."
+       "why": "No longer available in the US."
+      },
+      {
+       "t": "Ceftriaxone with a separate line",
+       "correct": false,
+       "why": "Still contraindicated with any IV calcium in neonates."
+      },
+      {
+       "t": "Cefazolin with ampicillin",
+       "correct": false,
+       "why": "Poor CSF penetration."
       }
      ],
      "teach": "",
@@ -520,14 +645,24 @@
      "q": "Is it right?",
      "options": [
       {
-       "t": "Yes: caffeine citrate 20 mg/kg load and 5 mg/kg daily (range 5 to 10)",
+       "t": "Yes: 20 mg/kg load, 5 mg/kg daily (citrate)",
        "correct": true,
-       "why": ""
+       "why": "Maintenance 5 to 10 mg/kg/day."
       },
       {
-       "t": "No, too high",
+       "t": "No: load should be 10 mg/kg citrate",
        "correct": false,
-       "why": "Within range."
+       "why": "10 mg/kg is a base load (= 20 citrate)."
+      },
+      {
+       "t": "No: maintenance should be 20 mg/kg daily",
+       "correct": false,
+       "why": "That is the load."
+      },
+      {
+       "t": "No: maintenance should be every 8 hours",
+       "correct": false,
+       "why": "Long half life; once daily."
       }
      ],
      "teach": "",
@@ -538,14 +673,24 @@
      "q": "The order says \"caffeine base.\" What changes?",
      "options": [
       {
-       "t": "Caffeine citrate 2 mg = caffeine base 1 mg; a base order at these numbers would be double the citrate dose",
+       "t": "Citrate 2 mg = base 1 mg; base order doubles it",
        "correct": true,
-       "why": "Know which salt the order and the product use."
+       "why": ""
       },
       {
-       "t": "Nothing",
+       "t": "Citrate 1 mg = base 2 mg; base order halves it",
        "correct": false,
-       "why": "Salt form doubles or halves the dose."
+       "why": "Reversed."
+      },
+      {
+       "t": "Citrate and base are equal by weight",
+       "correct": false,
+       "why": "Twofold difference."
+      },
+      {
+       "t": "Base is only an oral form; same dose",
+       "correct": false,
+       "why": "Salt vs base, not route."
       }
      ],
      "teach": "",
@@ -588,14 +733,24 @@
      "q": "What is the risk?",
      "options": [
       {
-       "t": "Look alike vials (10 units/mL vs 1,000 or 10,000 units/mL) have caused infant deaths",
+       "t": "Look alike vials (10 vs 10,000 units/mL)",
        "correct": true,
-       "why": "ISMP documented cases."
+       "why": "Infant deaths have occurred."
       },
       {
-       "t": "No risk",
+       "t": "Heparin flushes bind calcium in TPN",
        "correct": false,
-       "why": "Historic deaths."
+       "why": "Not the risk."
+      },
+      {
+       "t": "Heparin 10 units/mL needs dilution",
+       "correct": false,
+       "why": "Already the flush strength."
+      },
+      {
+       "t": "Heparin should never be used in NICU",
+       "correct": false,
+       "why": "Low dose flushes are used."
       }
      ],
      "teach": "",
@@ -606,14 +761,24 @@
      "q": "What do you verify?",
      "options": [
       {
-       "t": "Concentration on every heparin product and order; preservative free product; flush volume counted in total fluids",
+       "t": "Concentration, preservative free, volume",
        "correct": true,
-       "why": "Benzyl alcohol causes gasping syndrome in neonates."
+       "why": "Count flush volume in total fluids."
       },
       {
-       "t": "Only the drug name",
+       "t": "Only the drug name and the expiration",
        "correct": false,
-       "why": "Concentration is the danger."
+       "why": "Concentration is the killer."
+      },
+      {
+       "t": "Only the lot number",
+       "correct": false,
+       "why": "Not enough."
+      },
+      {
+       "t": "Only that the color of the cap matches",
+       "correct": false,
+       "why": "Caps are not reliable."
       }
      ],
      "teach": "",
@@ -656,14 +821,24 @@
      "q": "Bolus?",
      "options": [
       {
-       "t": "D10W 2 mL/kg IV (6.4 mL, 200 mg/kg), then an infusion",
+       "t": "D10W 2 mL/kg (6.4 mL), then infusion",
        "correct": true,
-       "why": ""
+       "why": "200 mg/kg of dextrose."
       },
       {
-       "t": "D50 25 mL",
+       "t": "D25W 2 mL/kg (6.4 mL), then infusion",
        "correct": false,
-       "why": "Adult concentration and dose: vein injury and rebound."
+       "why": "Too concentrated for neonates."
+      },
+      {
+       "t": "D50W 1 mL/kg (3.2 mL) by IV push",
+       "correct": false,
+       "why": "Adult concentration; injures veins and causes rebound."
+      },
+      {
+       "t": "D10W 20 mL/kg (64 mL) as one bolus",
+       "correct": false,
+       "why": "Ten times; that is a fluid bolus volume."
       }
      ],
      "teach": "",
@@ -706,14 +881,24 @@
      "q": "How do you reduce precipitation risk?",
      "options": [
       {
-       "t": "Check the solubility curve; add phosphate early and calcium last; cysteine helps by lowering pH",
+       "t": "Solubility curve; phosphate early, calcium last",
        "correct": true,
-       "why": ""
+       "why": "Cysteine lowers pH and helps."
       },
       {
-       "t": "Mix calcium and phosphate first together",
+       "t": "Add calcium and phosphate first, together",
        "correct": false,
-       "why": "Highest precipitation risk."
+       "why": "Classic precipitate."
+      },
+      {
+       "t": "Raise the pH by adding bicarbonate",
+       "correct": false,
+       "why": "Higher pH promotes precipitate."
+      },
+      {
+       "t": "Switch to calcium chloride for solubility",
+       "correct": false,
+       "why": "Chloride is less soluble with phosphate."
       }
      ],
      "teach": "",
@@ -724,14 +909,24 @@
      "q": "Who checks neonatal TPN?",
      "options": [
       {
-       "t": "Every neonatal TPN gets an independent double check",
+       "t": "An independent double check, every bag",
        "correct": true,
        "why": ""
       },
       {
-       "t": "One person is enough",
+       "t": "One pharmacist, if experienced",
        "correct": false,
-       "why": "High alert."
+       "why": "High alert; independent check required."
+      },
+      {
+       "t": "Only the compounding technician",
+       "correct": false,
+       "why": "Needs pharmacist verification."
+      },
+      {
+       "t": "Only when the TPN has a dose change",
+       "correct": false,
+       "why": "Every bag."
       }
      ],
      "teach": "",

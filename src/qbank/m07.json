@@ -18,14 +18,24 @@
      "q": "What is the MAP goal?",
      "options": [
       {
-       "t": "65 mmHg",
+       "t": "MAP of 65 mmHg",
        "correct": true,
-       "why": "SSC 2021."
+       "why": "SSC 2021 initial target."
       },
       {
-       "t": "90 mmHg",
+       "t": "MAP of 80 to 85 mmHg",
        "correct": false,
-       "why": "Higher targets add pressor harm without benefit for most patients."
+       "why": "SEPSISPAM: higher targets did not lower mortality; more arrhythmia."
+      },
+      {
+       "t": "MAP of 55 to 60 mmHg",
+       "correct": false,
+       "why": "Permissive targets of 60 to 65 were studied in older adults (65 trial), not below 60."
+      },
+      {
+       "t": "Systolic BP of 90 mmHg",
+       "correct": false,
+       "why": "A screening cutoff (qSOFA uses 100); SSC targets MAP."
       }
      ],
      "teach": "",
@@ -36,14 +46,24 @@
      "q": "What does SSC 2021 suggest next?",
      "options": [
       {
-       "t": "Add vasopressin rather than raising norepinephrine further",
+       "t": "Add vasopressin 0.03 units/min",
        "correct": true,
-       "why": "Vasopressin works on a different receptor (V1)."
+       "why": "SSC 2021: usually at norepinephrine 0.25 to 0.5 mcg/kg/min."
       },
       {
-       "t": "Switch to dopamine",
+       "t": "Switch norepinephrine to dopamine",
        "correct": false,
-       "why": "More arrhythmias; not suggested."
+       "why": "Dopamine causes more arrhythmias (SOAP II)."
+      },
+      {
+       "t": "Add phenylephrine as second agent",
+       "correct": false,
+       "why": "Not the SSC second agent; may lower cardiac output."
+      },
+      {
+       "t": "Add vasopressin 0.1 units/min",
+       "correct": false,
+       "why": "Doses above 0.03 to 0.04 units/min raise ischemia risk."
       }
      ],
      "teach": "",
@@ -54,14 +74,24 @@
      "q": "Norepinephrine has been at or above 0.25 mcg/kg/min for 4 hours. What else is suggested?",
      "options": [
       {
-       "t": "Hydrocortisone 200 mg/day IV (50 mg every 6 hours or an infusion)",
+       "t": "Hydrocortisone 200 mg/day IV",
        "correct": true,
-       "why": "For ongoing pressor need."
+       "why": "50 mg every 6 hours or an infusion (SSC 2021)."
       },
       {
-       "t": "Dexamethasone 20 mg",
+       "t": "Dexamethasone 6 mg IV daily",
        "correct": false,
-       "why": "Not the septic shock regimen."
+       "why": "The COVID 19 (RECOVERY) dose, not septic shock."
+      },
+      {
+       "t": "Methylprednisolone 1 g IV daily",
+       "correct": false,
+       "why": "A pulse dose for autoimmune disease."
+      },
+      {
+       "t": "Hydrocortisone 100 mg IV once",
+       "correct": false,
+       "why": "A single dose; SSC uses 200 mg/day until the pressor is off."
       }
      ],
      "teach": "",
@@ -74,12 +104,22 @@
       {
        "t": "Dobutamine (or switch to epinephrine)",
        "correct": true,
-       "why": "Inotropes support the pump."
+       "why": "SSC 2021 for low output with adequate MAP."
       },
       {
-       "t": "More vasopressin",
+       "t": "Raise vasopressin to 0.06 units/min",
        "correct": false,
-       "why": "Squeezing more does not fix a weak pump."
+       "why": "Vasopressin raises tone, not contractility."
+      },
+      {
+       "t": "Add phenylephrine 100 mcg/min",
+       "correct": false,
+       "why": "Pure alpha; can lower output further."
+      },
+      {
+       "t": "Milrinone 50 mcg/kg bolus",
+       "correct": false,
+       "why": "The bolus drops blood pressure; not the SSC suggestion."
       }
      ],
      "teach": "",
@@ -127,14 +167,24 @@
      "q": "What is the antidote and dose?",
      "options": [
       {
-       "t": "Phentolamine 5 to 10 mg diluted in 10 to 15 mL normal saline, infiltrated into the area as soon as possible",
+       "t": "Phentolamine 5 to 10 mg, infiltrated locally",
        "correct": true,
-       "why": "Norepinephrine label: best within 12 hours."
+       "why": "Diluted in 10 to 15 mL NS, as soon as possible (norepinephrine label)."
       },
       {
-       "t": "Hyaluronidase",
+       "t": "Hyaluronidase 150 units, infiltrated locally",
        "correct": false,
-       "why": "Used for some other extravasations, not vasopressors."
+       "why": "For non vasopressor extravasation such as hyperosmolar fluids."
+      },
+      {
+       "t": "Phentolamine 5 to 10 mg given IV push",
+       "correct": false,
+       "why": "Given locally, not systemically."
+      },
+      {
+       "t": "Dexrazoxane 1,000 mg/m2 given IV",
+       "correct": false,
+       "why": "For anthracycline extravasation."
       }
      ],
      "teach": "",
@@ -145,14 +195,24 @@
      "q": "What else do you tell the nurse?",
      "options": [
       {
-       "t": "Stop the infusion at that site, aspirate what you can, remove the catheter, restart the pressor at another site, elevate the limb",
+       "t": "Stop, aspirate, remove, restart elsewhere, elevate",
        "correct": true,
-       "why": "Never let the pressor stop: its effect ends in minutes."
+       "why": "Then document and monitor the site."
       },
       {
-       "t": "Leave it running and watch",
+       "t": "Stop, apply warm compresses, keep the line",
        "correct": false,
-       "why": "Ongoing tissue injury."
+       "why": "The catheter must come out; restart at another site."
+      },
+      {
+       "t": "Slow the rate by half and keep watching",
+       "correct": false,
+       "why": "Ischemia progresses."
+      },
+      {
+       "t": "Stop, apply ice packs, restart same site",
+       "correct": false,
+       "why": "Cold worsens vasoconstriction; never reuse the site."
       }
      ],
      "teach": "",
@@ -200,14 +260,24 @@
      "q": "What does PADIS 2018 recommend first?",
      "options": [
       {
-       "t": "Treat pain first (analgesia first), using CPOT or BPS if the patient cannot report pain",
+       "t": "Analgesia first, using CPOT or BPS",
        "correct": true,
-       "why": "Pain often causes agitation."
+       "why": "PADIS 2018."
       },
       {
        "t": "Deep sedation with a benzodiazepine",
        "correct": false,
-       "why": "Benzodiazepines prolong ventilation and raise delirium."
+       "why": "PADIS favors light sedation and non benzodiazepines."
+      },
+      {
+       "t": "Haloperidol 5 mg IV for agitation",
+       "correct": false,
+       "why": "Treats agitation before finding pain."
+      },
+      {
+       "t": "Restraints and a sedation holiday",
+       "correct": false,
+       "why": "Assess and treat pain first."
       }
      ],
      "teach": "",
@@ -218,14 +288,24 @@
      "q": "If sedation is still needed, which agents are preferred?",
      "options": [
       {
-       "t": "Propofol or dexmedetomidine over benzodiazepines, targeting light sedation",
+       "t": "Propofol or dexmedetomidine, light sedation",
        "correct": true,
        "why": "PADIS 2018."
       },
       {
-       "t": "Lorazepam infusion",
+       "t": "Lorazepam infusion, RASS of minus 3",
        "correct": false,
-       "why": "Benzodiazepines are not preferred."
+       "why": "Benzodiazepines and deep sedation worsen outcomes."
+      },
+      {
+       "t": "Midazolam infusion, RASS of 0 to minus 1",
+       "correct": false,
+       "why": "Light target, but benzodiazepine is not preferred."
+      },
+      {
+       "t": "Ketamine infusion as first line",
+       "correct": false,
+       "why": "An adjunct, not the preferred sedative."
       }
      ],
      "teach": "",
@@ -236,14 +316,24 @@
      "q": "Should haloperidol be given routinely to prevent delirium?",
      "options": [
       {
-       "t": "No: PADIS recommends against routine antipsychotics to prevent or treat delirium",
+       "t": "No; PADIS advises against routine use",
        "correct": true,
-       "why": "Screen with CAM-ICU or ICDSC and fix causes."
+       "why": "For prevention or treatment of delirium."
       },
       {
-       "t": "Yes, scheduled for everyone",
+       "t": "Yes, haloperidol 2 mg IV every 8 hours",
        "correct": false,
-       "why": "Not supported."
+       "why": "Routine use not recommended (also REDUCE trial)."
+      },
+      {
+       "t": "Yes, quetiapine 50 mg at bedtime",
+       "correct": false,
+       "why": "Same recommendation applies."
+      },
+      {
+       "t": "Only if the CAM ICU screen is negative",
+       "correct": false,
+       "why": "Not a prevention strategy."
       }
      ],
      "teach": "",
@@ -288,12 +378,22 @@
       {
        "t": "Propofol infusion syndrome (PRIS)",
        "correct": true,
-       "why": "Risk rises above about 4 mg/kg/h (about 67 mcg/kg/min) and after 48 hours, especially with catecholamines or steroids."
+       "why": "Risk above about 4 mg/kg/h (67 mcg/kg/min) for over 48 h."
       },
       {
-       "t": "Sepsis alone",
+       "t": "Sepsis related lactic acidosis only",
        "correct": false,
-       "why": "The pattern points to the drug."
+       "why": "Rising CK and triglycerides point to propofol."
+      },
+      {
+       "t": "Refeeding syndrome",
+       "correct": false,
+       "why": "Low phosphate, not CK and triglycerides."
+      },
+      {
+       "t": "Neuroleptic malignant syndrome",
+       "correct": false,
+       "why": "Needs a dopamine blocker exposure."
       }
      ],
      "teach": "",
@@ -304,14 +404,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Stop propofol and switch to another sedative",
+       "t": "Stop propofol and change sedative",
        "correct": true,
-       "why": "PRIS can be fatal."
+       "why": "Supportive care; consider dialysis."
       },
       {
-       "t": "Lower the dose by 10%",
+       "t": "Lower propofol by 10 mcg/kg/min",
        "correct": false,
-       "why": "Not enough when PRIS is suspected."
+       "why": "PRIS needs the drug stopped."
+      },
+      {
+       "t": "Keep propofol; add a statin",
+       "correct": false,
+       "why": "No role."
+      },
+      {
+       "t": "Keep propofol; add fenofibrate",
+       "correct": false,
+       "why": "Treats triglycerides, not PRIS."
       }
      ],
      "teach": "",
@@ -322,14 +432,24 @@
      "q": "What do you monitor on long propofol infusions?",
      "options": [
       {
-       "t": "Triglycerides and CK, plus pancreatitis signs; count propofol lipid calories in nutrition",
+       "t": "Triglycerides, CK and lipase",
        "correct": true,
-       "why": "Propofol is a lipid emulsion."
+       "why": "And count lipid calories (1.1 kcal/mL) in nutrition."
       },
       {
-       "t": "Nothing extra",
+       "t": "Serum sodium and osmolality",
        "correct": false,
-       "why": "Long infusions need monitoring."
+       "why": "Not a propofol issue."
+      },
+      {
+       "t": "TSH and free T4 weekly",
+       "correct": false,
+       "why": "Not a propofol issue."
+      },
+      {
+       "t": "Serum propofol drug levels",
+       "correct": false,
+       "why": "Not available or useful clinically."
       }
      ],
      "teach": "",
@@ -377,14 +497,24 @@
      "q": "What goes first?",
      "options": [
       {
-       "t": "Calcium gluconate 1 g (10 mL of 10%) IV over 2 to 5 minutes, repeat if ECG changes persist",
+       "t": "Calcium gluconate 1 g IV over 2 to 5 minutes",
        "correct": true,
-       "why": "Protects the heart; does not lower potassium. Some protocols use 3 g."
+       "why": "Repeat if ECG changes persist."
       },
       {
-       "t": "Patiromer",
+       "t": "Sodium zirconium cyclosilicate 10 g PO",
        "correct": false,
-       "why": "Works over hours."
+       "why": "Removes potassium over hours; does not protect the heart."
+      },
+      {
+       "t": "Regular insulin 10 units IV with dextrose",
+       "correct": false,
+       "why": "Shifts potassium but does not stabilize the membrane."
+      },
+      {
+       "t": "Sodium bicarbonate 50 mEq IV",
+       "correct": false,
+       "why": "Weak effect without acidosis; not first."
       }
      ],
      "teach": "",
@@ -395,14 +525,24 @@
      "q": "Then shift potassium. With her kidney failure, which insulin dose?",
      "options": [
       {
-       "t": "Regular insulin 5 units IV with dextrose 25 g, glucose checks hourly for 4 to 6 hours",
+       "t": "Insulin 5 units IV + dextrose 25 g",
        "correct": true,
-       "why": "Kidney failure slows insulin clearance, so late hypoglycemia is common."
+       "why": "Lower dose for kidney failure lowers hypoglycemia."
       },
       {
-       "t": "Regular insulin 20 units without dextrose",
+       "t": "Insulin 10 units IV + no dextrose",
        "correct": false,
-       "why": "Severe hypoglycemia risk."
+       "why": "Glucose is only 110; hypoglycemia risk."
+      },
+      {
+       "t": "Insulin 20 units IV + dextrose 25 g",
+       "correct": false,
+       "why": "Far too much insulin."
+      },
+      {
+       "t": "Insulin 10 units SC + dextrose 25 g",
+       "correct": false,
+       "why": "SC absorption is unreliable in emergencies."
       }
      ],
      "teach": "",
@@ -413,14 +553,24 @@
      "q": "How will the potassium actually leave the body?",
      "options": [
       {
-       "t": "A binder (sodium zirconium cyclosilicate 10 g or patiromer 8.4 g), and dialysis with her kidney failure",
+       "t": "A binder (SZC or patiromer) plus dialysis",
        "correct": true,
-       "why": "Insulin only hides potassium in cells for a few hours."
+       "why": "SZC 10 g or patiromer 8.4 g. Calcium, insulin and albuterol do not remove potassium."
       },
       {
-       "t": "Calcium removes it",
+       "t": "Calcium gluconate repeated every hour",
        "correct": false,
-       "why": "Calcium only protects."
+       "why": "Calcium stabilizes, does not remove."
+      },
+      {
+       "t": "Albuterol 10 to 20 mg by nebulizer",
+       "correct": false,
+       "why": "Shifts potassium into cells."
+      },
+      {
+       "t": "Insulin infusion until potassium is 4",
+       "correct": false,
+       "why": "Shifts potassium into cells."
       }
      ],
      "teach": "",
@@ -468,19 +618,24 @@
      "q": "What is the emergency treatment?",
      "options": [
       {
-       "t": "3% saline bolus (100 to 150 mL over 10 to 20 minutes), repeat up to about 3 times, aiming for a 4 to 6 mmol/L rise",
+       "t": "3% saline 100 to 150 mL bolus, up to 3 times",
        "correct": true,
-       "why": "A small rise stops symptoms."
+       "why": "Over 10 to 20 minutes each; aim for a 4 to 6 mmol/L rise."
       },
       {
-       "t": "Normal saline 1 L over 8 hours",
+       "t": "3% saline 500 mL as one bolus over 1 hour",
        "correct": false,
-       "why": "Too slow for a seizure."
+       "why": "Too much too fast; overcorrection risk."
       },
       {
-       "t": "Fluid restriction alone",
+       "t": "Normal saline 1 L given over 8 hours",
        "correct": false,
-       "why": "Too slow."
+       "why": "Too slow for a seizure; may worsen SIADH."
+      },
+      {
+       "t": "Fluid restriction to 1 L per day",
+       "correct": false,
+       "why": "For chronic, asymptomatic SIADH."
       }
      ],
      "teach": "",
@@ -491,14 +646,24 @@
      "q": "What is the limit on correction?",
      "options": [
       {
-       "t": "About 10 mmol/L in the first 24 hours and 8 per 24 hours after; 8 per 24 hours for high risk patients (alcohol use, low potassium, malnutrition, liver disease)",
+       "t": "About 10 in 24 h (8 if high risk)",
        "correct": true,
-       "why": "Fast correction risks osmotic demyelination."
+       "why": "High risk: alcohol use, low K, malnutrition, liver disease."
       },
       {
-       "t": "No limit",
+       "t": "About 12 in 24 h and 18 in 48 h",
        "correct": false,
-       "why": "There is a limit."
+       "why": "An older, higher limit."
+      },
+      {
+       "t": "About 4 in 24 h for all patients",
+       "correct": false,
+       "why": "That is the initial emergency goal, not the limit."
+      },
+      {
+       "t": "About 20 in 24 h if symptomatic",
+       "correct": false,
+       "why": "Causes osmotic demyelination."
       }
      ],
      "teach": "",
@@ -509,14 +674,24 @@
      "q": "Sodium rose 12 mmol/L in 12 hours. What now?",
      "options": [
       {
-       "t": "Stop hypertonic fluid; give hypotonic fluid with or without desmopressin per protocol",
+       "t": "Stop 3% saline; give D5W ± desmopressin",
        "correct": true,
-       "why": "Relowering is used for overcorrection."
+       "why": "Relower per protocol."
       },
       {
-       "t": "Keep going",
+       "t": "Continue 3% saline at a slower rate",
        "correct": false,
-       "why": "Overcorrection."
+       "why": "Already past the limit."
+      },
+      {
+       "t": "Switch to normal saline 100 mL/h",
+       "correct": false,
+       "why": "Still raises sodium."
+      },
+      {
+       "t": "Start tolvaptan 15 mg by mouth",
+       "correct": false,
+       "why": "Raises sodium further."
       }
      ],
      "teach": "",
@@ -569,14 +744,24 @@
      "q": "What target do ADA and AACE recommend?",
      "options": [
       {
-       "t": "Start insulin above 180; target 140 to 180 mg/dL",
+       "t": "Insulin above 180; target 140 to 180 mg/dL",
        "correct": true,
-       "why": ""
+       "why": "ADA Standards; NICE SUGAR."
       },
       {
-       "t": "80 to 110 mg/dL",
+       "t": "Target 80 to 110 mg/dL",
        "correct": false,
-       "why": "NICE-SUGAR: tight control raised 90 day death (27.5% vs 24.9%) and severe lows (6.8% vs 0.5%)."
+       "why": "NICE SUGAR: more deaths and hypoglycemia."
+      },
+      {
+       "t": "Target 110 to 140 mg/dL for all",
+       "correct": false,
+       "why": "May suit select patients only, without hypoglycemia."
+      },
+      {
+       "t": "Insulin above 250; target 200 to 250",
+       "correct": false,
+       "why": "Too loose."
       }
      ],
      "teach": "",
@@ -624,14 +809,24 @@
      "q": "Can the insulin infusion start now?",
      "options": [
       {
-       "t": "No: hold insulin and replace potassium until K is 3.5 or higher (2024 consensus)",
+       "t": "No: replace K first until K is 3.5 or more",
        "correct": true,
-       "why": "Insulin drives potassium into cells and can cause a fatal arrhythmia."
+       "why": "2024 consensus."
       },
       {
-       "t": "Yes, potassium does not matter",
+       "t": "Yes, with 20 mEq/L of KCl in fluids",
        "correct": false,
-       "why": "It is the first safety check."
+       "why": "Below 3.5 insulin can drop K dangerously."
+      },
+      {
+       "t": "Yes, if potassium is above 3.0",
+       "correct": false,
+       "why": "The threshold is 3.5."
+      },
+      {
+       "t": "Yes; insulin raises the potassium",
+       "correct": false,
+       "why": "Insulin drives K into cells."
       }
      ],
      "teach": "",
@@ -642,14 +837,24 @@
      "q": "Once K is 3.5, what insulin regimen?",
      "options": [
       {
-       "t": "Fixed rate IV regular insulin 0.1 units/kg/h (7 units/h), no routine bolus",
+       "t": "Regular insulin 0.1 units/kg/h (7 units/h)",
        "correct": true,
-       "why": "2024 consensus; a bolus only if IV access is delayed."
+       "why": "No routine bolus."
       },
       {
-       "t": "10 unit bolus then 2 units/h",
+       "t": "Regular insulin 0.14 units/kg/h (10 units/h)",
        "correct": false,
-       "why": "Too low and outdated."
+       "why": "The older 2009 no bolus rate; the 2024 consensus uses 0.1."
+      },
+      {
+       "t": "Regular insulin 0.05 units/kg/h (3.5 units/h)",
+       "correct": false,
+       "why": "The rate once glucose is near 250."
+      },
+      {
+       "t": "Insulin glargine 0.3 units/kg SC",
+       "correct": false,
+       "why": "Basal insulin, not the initial DKA drip."
       }
      ],
      "teach": "",
@@ -660,14 +865,24 @@
      "q": "Glucose falls to 230. What changes?",
      "options": [
       {
-       "t": "Add D5 or D10 to fluids and lower insulin to 0.05 units/kg/h; keep insulin running until ketones clear",
+       "t": "Add D5 or D10; lower insulin to 0.05/kg/h",
        "correct": true,
-       "why": "Glucose clears faster than acid."
+       "why": "Keep insulin until ketones clear."
       },
       {
-       "t": "Stop insulin",
+       "t": "Stop insulin; restart when glucose is 300",
        "correct": false,
-       "why": "Ketoacidosis would return."
+       "why": "Ketones keep building."
+      },
+      {
+       "t": "Keep 0.1 units/kg/h and add no dextrose",
+       "correct": false,
+       "why": "Hypoglycemia risk."
+      },
+      {
+       "t": "Switch now to sliding scale SC insulin",
+       "correct": false,
+       "why": "DKA is not resolved."
       }
      ],
      "teach": "",
@@ -678,14 +893,24 @@
      "q": "When can the drip stop?",
      "options": [
       {
-       "t": "DKA resolved (beta hydroxybutyrate below 0.6 and pH 7.3 or more or bicarbonate 18 or more) and SC basal insulin given 1 to 2 hours before stopping",
+       "t": "DKA resolved, SC basal given 1 to 2 h before",
        "correct": true,
-       "why": "Overlap prevents a gap with no insulin."
+       "why": "BHB below 0.6 and pH 7.3+ or bicarbonate 18+."
       },
       {
-       "t": "When glucose is normal",
+       "t": "Glucose below 200 mg/dL on two checks",
        "correct": false,
-       "why": "Glucose is not the endpoint."
+       "why": "Glucose falls before ketones clear."
+      },
+      {
+       "t": "Anion gap below 20 mEq/L once",
+       "correct": false,
+       "why": "Use the consensus resolution criteria."
+      },
+      {
+       "t": "After 24 hours on the drip",
+       "correct": false,
+       "why": "Time alone does not decide."
       }
      ],
      "teach": "",
@@ -734,14 +959,24 @@
      "q": "What is wrong?",
      "options": [
       {
-       "t": "40 mEq/h is far above the usual peripheral limit of 10 mEq/h",
+       "t": "40 mEq/h; peripheral limit is 10 mEq/h",
        "correct": true,
-       "why": "Faster rates need a central line and continuous ECG per policy; the label reserves up to 40 mEq/h for urgent K below 2.0 with ECG changes or paralysis."
+       "why": "Usual peripheral limit; check local policy."
       },
       {
-       "t": "Nothing",
+       "t": "KCl must be mixed in D5W only",
        "correct": false,
-       "why": "Dangerous rate."
+       "why": "Diluent is not the issue."
+      },
+      {
+       "t": "Nothing; 40 mEq/h suits K of 2.9",
+       "correct": false,
+       "why": "Unsafe peripherally."
+      },
+      {
+       "t": "It should be 40 mEq IV push instead",
+       "correct": false,
+       "why": "Never push KCl."
       }
      ],
      "teach": "",
@@ -752,14 +987,24 @@
      "q": "What else must be fixed?",
      "options": [
       {
-       "t": "Replace magnesium too; low magnesium makes potassium hard to correct",
+       "t": "Replace magnesium too",
        "correct": true,
-       "why": "Low Mg keeps the kidney losing potassium."
+       "why": "Low Mg makes K hard to correct."
       },
       {
-       "t": "Nothing else",
+       "t": "Replace phosphate first",
        "correct": false,
-       "why": "Magnesium matters."
+       "why": "Not the linked deficit."
+      },
+      {
+       "t": "Give calcium gluconate 1 g",
+       "correct": false,
+       "why": "Not indicated."
+      },
+      {
+       "t": "Check a cortisol level first",
+       "correct": false,
+       "why": "Not needed."
       }
      ],
      "teach": "",
@@ -772,12 +1017,22 @@
       {
        "t": "Never",
        "correct": true,
-       "why": "IV push potassium can cause cardiac arrest."
+       "why": "ISMP high alert; fatal."
       },
       {
-       "t": "Yes, slowly",
+       "t": "Yes, 10 mEq over 5 minutes",
        "correct": false,
-       "why": "Never."
+       "why": "Fatal arrhythmia."
+      },
+      {
+       "t": "Yes, in cardiac arrest only",
+       "correct": false,
+       "why": "Still never pushed."
+      },
+      {
+       "t": "Yes, if diluted to 10 mL first",
+       "correct": false,
+       "why": "Dilution in a syringe does not make it safe."
       }
      ],
      "teach": "",
@@ -837,7 +1092,17 @@
       {
        "t": "A: ventilator alone with tube feeds",
        "correct": false,
-       "why": "Mechanical ventilation alone is not an established indication."
+       "why": "SCCM/ASHP 2024 suggests against for patients without risk factors on enteral feeds."
+      },
+      {
+       "t": "A: any ICU stay longer than 48 hours",
+       "correct": false,
+       "why": "ICU stay alone is not an indication."
+      },
+      {
+       "t": "All three, because ICU patients bleed",
+       "correct": false,
+       "why": "Risk based, not universal."
       }
      ],
      "teach": "",
@@ -849,14 +1114,24 @@
      "q": "When should it stop?",
      "options": [
       {
-       "t": "When the risk resolves or at ICU transfer",
+       "t": "When the risk resolves or at transfer",
        "correct": true,
-       "why": "A common source of unneeded discharge PPIs."
+       "why": "Avoid continuing at discharge."
       },
       {
-       "t": "Never",
+       "t": "At hospital discharge, not before",
        "correct": false,
-       "why": "No."
+       "why": "Often continued by mistake."
+      },
+      {
+       "t": "After 6 weeks of treatment total",
+       "correct": false,
+       "why": "Not a prophylaxis duration."
+      },
+      {
+       "t": "Never; continue it lifelong",
+       "correct": false,
+       "why": "Long term PPI risks."
       }
      ],
      "teach": "",
@@ -901,12 +1176,22 @@
       {
        "t": "K 7.0 with wide QRS: calcium now",
        "correct": true,
-       "why": "Imminent arrest risk."
+       "why": ""
       },
       {
-       "t": "The pressor bag",
+       "t": "The pressor bag running out soon",
        "correct": false,
-       "why": "Twenty minutes allows calcium first, then the bag."
+       "why": "Second."
+      },
+      {
+       "t": "The PPI IV switch question",
+       "correct": false,
+       "why": "Routine."
+      },
+      {
+       "t": "The TPN label for tomorrow",
+       "correct": false,
+       "why": "Routine."
       }
      ],
      "teach": "",
@@ -917,14 +1202,24 @@
      "q": "Second?",
      "options": [
       {
-       "t": "Get the replacement pressor bag ready before the current one runs out",
+       "t": "Prepare the replacement pressor bag",
        "correct": true,
-       "why": "Norepinephrine wears off in minutes."
+       "why": "Before the current one runs out."
       },
       {
-       "t": "The PPI question",
+       "t": "Answer the PPI switch question",
        "correct": false,
        "why": "Routine."
+      },
+      {
+       "t": "Fix the TPN label for tomorrow",
+       "correct": false,
+       "why": "Routine."
+      },
+      {
+       "t": "Recheck the potassium in 4 hours",
+       "correct": false,
+       "why": "Planned follow up, not the next urgent task."
       }
      ],
      "teach": "",

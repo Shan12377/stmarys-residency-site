@@ -18,22 +18,22 @@
      "q": "Which criteria reduce apixaban to 2.5 mg BID in atrial fibrillation?",
      "options": [
       {
-       "t": "Any 2 of 3: age 80+, weight 60 kg or less, SCr 1.5+",
+       "t": "2 of 3: age 80+, weight 60 kg or less, SCr 1.5+",
        "correct": true,
        "why": "Eliquis label, AF."
       },
       {
-       "t": "CrCl 15 to 50 mL/min",
+       "t": "CrCl 15 to 50 mL/min by Cockcroft Gault",
        "correct": false,
-       "why": "That is the rivaroxaban and edoxaban AF reduction rule."
+       "why": "The rivaroxaban and edoxaban AF reduction rule."
       },
       {
-       "t": "CrCl 15 to 30 mL/min",
+       "t": "CrCl 15 to 30 mL/min by Cockcroft Gault",
        "correct": false,
-       "why": "That is the dabigatran AF reduction rule (75 mg BID)."
+       "why": "The dabigatran AF reduction rule (75 mg BID)."
       },
       {
-       "t": "Age 75 or older alone",
+       "t": "Age 75 or older, with or without other factors",
        "correct": false,
        "why": "Age 75 counts in CHA2DS2-VASc, not apixaban dosing."
       }
@@ -162,9 +162,9 @@
      "q": "What is the VTE treatment schedule?",
      "options": [
       {
-       "t": "15 mg BID x 21 days, then 20 mg daily (with food)",
+       "t": "15 mg BID x 21 days, then 20 mg daily",
        "correct": true,
-       "why": ""
+       "why": "With food."
       },
       {
        "t": "10 mg BID x 7 days, then 5 mg BID",
@@ -177,9 +177,9 @@
        "why": "The first phase is twice daily."
       },
       {
-       "t": "10 mg daily from the start",
+       "t": "20 mg daily from the first day onward",
        "correct": false,
-       "why": "10 mg daily is extended prevention after 6 months."
+       "why": "Skips the 21 day twice daily phase."
       }
      ],
      "teach": "",
@@ -408,22 +408,22 @@
      "q": "Which other condition is a classic reason to prefer warfarin over a DOAC?",
      "options": [
       {
-       "t": "High risk (triple positive) antiphospholipid syndrome",
+       "t": "Triple positive antiphospholipid syndrome",
        "correct": true,
        "why": "More clots on DOACs."
       },
       {
-       "t": "First DVT after knee surgery",
+       "t": "First DVT after a knee replacement",
        "correct": false,
        "why": "DOACs are fine."
       },
       {
-       "t": "Cancer associated VTE",
+       "t": "Cancer associated VTE on chemotherapy",
        "correct": false,
-       "why": "DOACs (for example apixaban) or LMWH are used."
+       "why": "DOACs or LMWH are used."
       },
       {
-       "t": "Atrial fibrillation with CrCl 60",
+       "t": "Atrial fibrillation with CrCl 60 mL/min",
        "correct": false,
        "why": "DOACs preferred."
       }
@@ -474,9 +474,9 @@
      "q": "What does CHEST 2021 suggest for extended treatment?",
      "options": [
       {
-       "t": "Apixaban 2.5 mg BID (or rivaroxaban 10 mg daily), review yearly",
+       "t": "Apixaban 2.5 mg BID, reviewed at least yearly",
        "correct": true,
-       "why": "CHEST 2021."
+       "why": "CHEST 2021 (or rivaroxaban 10 mg daily)."
       },
       {
        "t": "Stop at 6 months for all unprovoked VTE",
@@ -484,14 +484,14 @@
        "why": "High recurrence after stopping."
       },
       {
-       "t": "Apixaban 10 mg BID long term",
+       "t": "Apixaban 10 mg BID long term for protection",
        "correct": false,
-       "why": "10 mg BID is only for the first 7 days."
+       "why": "10 mg BID is the first 7 days only."
       },
       {
        "t": "Apixaban 5 mg BID for exactly 12 more months",
        "correct": false,
-       "why": "No set stop date; reduced dose is suggested."
+       "why": "No set stop date; reduced dose suggested."
       }
      ],
      "teach": "",
@@ -502,22 +502,22 @@
      "q": "When is extended treatment usually NOT recommended?",
      "options": [
       {
-       "t": "VTE from a major transient risk such as surgery",
+       "t": "VTE provoked by surgery (major transient risk)",
        "correct": true,
        "why": "Treat 3 months, then stop."
       },
       {
-       "t": "Unprovoked VTE with low bleeding risk",
+       "t": "Unprovoked VTE with a low bleeding risk",
        "correct": false,
        "why": "The group that benefits."
       },
       {
-       "t": "VTE with active cancer",
+       "t": "VTE with active cancer under treatment",
        "correct": false,
        "why": "Usually continued."
       },
       {
-       "t": "Recurrent unprovoked VTE",
+       "t": "A second unprovoked VTE event",
        "correct": false,
        "why": "Strong reason to continue."
       }
@@ -595,22 +595,22 @@
      "q": "What is the usual management for INR 4.5 to 10 without bleeding?",
      "options": [
       {
-       "t": "Hold warfarin and recheck; vitamin K usually not needed",
+       "t": "Hold warfarin and recheck the INR",
        "correct": true,
-       "why": "Crowther 2009 (INR 4.5 to 10)."
+       "why": "Crowther 2009: vitamin K usually not needed at INR 4.5 to 10."
       },
       {
        "t": "Oral vitamin K 2.5 to 5 mg now",
        "correct": false,
-       "why": "That is for INR above 10 without bleeding."
+       "why": "For INR above 10 without bleeding."
       },
       {
-       "t": "Vitamin K 10 mg IV now",
+       "t": "Vitamin K 10 mg IV now, slowly",
        "correct": false,
-       "why": "For major bleeding; causes warfarin resistance."
+       "why": "For major bleeding."
       },
       {
-       "t": "4F-PCC 25 units/kg",
+       "t": "4F-PCC 25 units/kg now",
        "correct": false,
        "why": "For major bleeding or urgent surgery."
       }
@@ -717,24 +717,24 @@
      "q": "What must be given with 4F-PCC?",
      "options": [
       {
-       "t": "Vitamin K 10 mg IV by slow infusion",
+       "t": "Vitamin K 10 mg IV, slowly",
        "correct": true,
        "why": "Prevents INR rebound."
       },
       {
-       "t": "Vitamin K 2.5 mg orally",
+       "t": "Vitamin K 2.5 mg by mouth",
        "correct": false,
        "why": "For INR above 10 without bleeding."
       },
       {
-       "t": "Protamine 50 mg IV",
+       "t": "Protamine 50 mg IV slowly",
        "correct": false,
        "why": "Reverses heparin."
       },
       {
        "t": "Tranexamic acid 1 g IV",
        "correct": false,
-       "why": "An adjunct in some bleeds, not the required partner."
+       "why": "Not the required partner."
       }
      ],
      "teach": "",
@@ -806,12 +806,12 @@
      "q": "What is the usual reversal in the US now?",
      "options": [
       {
-       "t": "4F-PCC (often 50 units/kg or a fixed dose)",
+       "t": "4F-PCC per protocol",
        "correct": true,
-       "why": "Andexanet withdrawn December 2025."
+       "why": "Often 50 units/kg or a fixed dose; andexanet withdrawn December 2025."
       },
       {
-       "t": "Andexanet alfa high dose",
+       "t": "Andexanet alfa, high dose",
        "correct": false,
        "why": "Withdrawn from the US market."
       },
@@ -821,7 +821,7 @@
        "why": "Warfarin only."
       },
       {
-       "t": "Protamine 1 mg per 100 units",
+       "t": "Protamine 50 mg IV",
        "correct": false,
        "why": "Heparin only."
       }
@@ -834,24 +834,24 @@
      "q": "And for dabigatran?",
      "options": [
       {
-       "t": "Idarucizumab 5 g IV (two 2.5 g vials)",
+       "t": "Idarucizumab 5 g IV",
        "correct": true,
-       "why": ""
+       "why": "Two 2.5 g vials."
       },
       {
-       "t": "4F-PCC 50 units/kg first",
+       "t": "4F-PCC 50 units/kg",
        "correct": false,
        "why": "Idarucizumab is the specific agent."
       },
       {
-       "t": "Idarucizumab 2.5 g IV once",
+       "t": "Idarucizumab 2.5 g IV",
        "correct": false,
        "why": "The dose is 5 g."
       },
       {
-       "t": "Hemodialysis only",
+       "t": "Hemodialysis alone",
        "correct": false,
-       "why": "Can remove dabigatran, but idarucizumab is first."
+       "why": "Second line."
       }
      ],
      "teach": "",
@@ -862,24 +862,24 @@
      "q": "What BP target does the 2022 ICH guideline suggest when lowering SBP?",
      "options": [
       {
-       "t": "About 140; avoid going below 130",
+       "t": "About 140; not below 130",
        "correct": true,
        "why": "ICH 2022."
       },
       {
-       "t": "Below 185/110",
+       "t": "Below 185/110 mmHg",
        "correct": false,
-       "why": "That is the gate before thrombolysis in ischemic stroke."
+       "why": "The gate before thrombolysis."
       },
       {
-       "t": "Below 180/105",
+       "t": "Below 180/105 mmHg",
        "correct": false,
-       "why": "That is the post thrombolysis limit."
+       "why": "The post thrombolysis limit."
       },
       {
-       "t": "About 110 to 120",
+       "t": "About 110 to 120 mmHg",
        "correct": false,
-       "why": "Too low; may harm brain perfusion."
+       "why": "Too low."
       }
      ],
      "teach": "",
@@ -1060,22 +1060,22 @@
      "q": "How do you estimate the chance of HIT?",
      "options": [
       {
-       "t": "4Ts: fall over 50%, day 5 to 10, clot, other causes",
+       "t": "4Ts: size of fall, timing, clot, other causes",
        "correct": true,
-       "why": ""
+       "why": "A fall over 50%, day 5 to 10."
       },
       {
-       "t": "Platelets below 100,000",
+       "t": "Platelets below 100,000 on any day",
        "correct": false,
        "why": "HIT is about the size of the fall."
       },
       {
-       "t": "Platelets below 50,000",
+       "t": "Platelets below 50,000 on any day",
        "correct": false,
-       "why": "Most HIT counts stay above 20,000 to 50,000."
+       "why": "Most HIT counts stay above that."
       },
       {
-       "t": "Any drop of 10,000 from baseline",
+       "t": "Any drop of 10,000 from the baseline",
        "correct": false,
        "why": "Too sensitive."
       }
@@ -1245,24 +1245,24 @@
      "q": "When would you check an anti Xa level?",
      "options": [
       {
-       "t": "Kidney disease, pregnancy, weight extremes; peak 4 h post dose",
+       "t": "Kidney disease, pregnancy, weight extremes",
        "correct": true,
-       "why": "At steady state."
+       "why": "Peak about 4 hours after a dose at steady state."
       },
       {
        "t": "Every patient, 6 hours after each dose",
        "correct": false,
-       "why": "6 hours is the UFH timing; not routine for all."
+       "why": "6 hours is UFH timing."
       },
       {
-       "t": "Trough before every dose",
+       "t": "Every patient, as a trough before doses",
        "correct": false,
-       "why": "Peaks are used."
+       "why": "Peaks are used in special populations."
       },
       {
-       "t": "Never; anti Xa does not measure enoxaparin",
+       "t": "Never; anti Xa cannot measure enoxaparin",
        "correct": false,
-       "why": "Anti Xa is the test for LMWH."
+       "why": "Anti Xa is the LMWH test."
       }
      ],
      "teach": "",
@@ -1454,24 +1454,24 @@
      "q": "Who may still be bridged?",
      "options": [
       {
-       "t": "Mechanical mitral valve or clot in the last 3 months",
+       "t": "Mechanical mitral valve or recent clot",
        "correct": true,
-       "why": "With cardiology or hematology."
+       "why": "Clot within 3 months; decided with cardiology or hematology."
       },
       {
-       "t": "Anyone over 75 years old",
+       "t": "Anyone over 75 years old on warfarin",
        "correct": false,
        "why": "Age alone does not decide."
       },
       {
-       "t": "Anyone with CHA2DS2-VASc 3",
+       "t": "Anyone with CHA2DS2-VASc of 3",
        "correct": false,
        "why": "This patient; not bridged."
       },
       {
        "t": "Nobody under any circumstances",
        "correct": false,
-       "why": "Some very high risk patients are bridged."
+       "why": "Some are bridged."
       }
      ],
      "teach": "",
@@ -1619,7 +1619,7 @@
      "q": "Which first?",
      "options": [
       {
-       "t": "The bleeding patient on the heparin drip",
+       "t": "The bleeding patient on heparin",
        "correct": true,
        "why": ""
       },
@@ -1629,9 +1629,9 @@
        "why": "Can wait."
       },
       {
-       "t": "The INR of 3.4",
+       "t": "The stable INR of 3.4",
        "correct": false,
-       "why": "Mildly high, stable."
+       "why": "Mildly high."
       },
       {
        "t": "Whichever call came in first",
@@ -1675,22 +1675,22 @@
      "q": "Can apixaban be crushed?",
      "options": [
       {
-       "t": "Yes: crushed in water, D5W or apple juice, or via NG",
+       "t": "Yes: crushed in water, D5W or juice",
        "correct": true,
-       "why": "Eliquis label."
+       "why": "Or via NG tube (Eliquis label)."
       },
       {
-       "t": "No: apixaban must be swallowed whole",
+       "t": "No: it must be swallowed whole",
        "correct": false,
        "why": "That is dabigatran."
       },
       {
-       "t": "Only if dissolved in milk",
+       "t": "Only if dissolved in milk first",
        "correct": false,
        "why": "Not a label option."
       },
       {
-       "t": "Only the 2.5 mg tablet may be crushed",
+       "t": "Only the 2.5 mg strength may be",
        "correct": false,
        "why": "Both strengths."
       }

@@ -18,14 +18,24 @@
      "q": "How fast should antibiotics start?",
      "options": [
       {
-       "t": "Within 1 hour of recognition, because shock is present",
+       "t": "Within 1 hour (shock is present)",
        "correct": true,
-       "why": "SSC 2021 strong recommendation. Without shock and when sepsis is only possible, within 3 hours after rapid assessment."
+       "why": "SSC 2021."
       },
       {
-       "t": "Within 6 hours",
+       "t": "Within 3 hours (possible sepsis, no shock)",
        "correct": false,
-       "why": "Too slow when shock is present."
+       "why": "3 hours is for possible sepsis without shock after rapid assessment."
+      },
+      {
+       "t": "Within 6 hours (old early goal directed window)",
+       "correct": false,
+       "why": "The 6 hour window was the old EGDT resuscitation bundle."
+      },
+      {
+       "t": "After cultures result, to avoid broad coverage",
+       "correct": false,
+       "why": "Never wait for results."
       }
      ],
      "teach": "",
@@ -36,24 +46,29 @@
      "q": "What do you do to make that happen?",
      "options": [
       {
-       "t": "Verify the first doses STAT and get them sent or pulled right away",
+       "t": "Verify first doses STAT and get them moving",
        "correct": true,
-       "why": "Your verification speed is part of the clock."
+       "why": ""
       },
       {
-       "t": "Give the full first dose even if the kidneys look bad, then adjust later doses",
+       "t": "Full first doses even with poor kidneys",
        "correct": true,
-       "why": "Load by weight, maintain by kidneys."
+       "why": "Load by weight."
       },
       {
-       "t": "Give the shortest infusion drug first when several are ordered (for example a beta lactam push or short piggyback before vancomycin)",
+       "t": "Shortest infusion drug first",
        "correct": true,
-       "why": "The broad gram negative agent usually matters most in the first minutes; vancomycin takes longer to infuse."
+       "why": "Usually the beta lactam before vancomycin."
       },
       {
-       "t": "Wait for cultures to result before starting",
+       "t": "Reduce the first beta lactam dose for CrCl 25",
        "correct": false,
-       "why": "Draw cultures first if it does not delay antibiotics, but never wait for results."
+       "why": "First doses are not reduced."
+      },
+      {
+       "t": "Hold antibiotics until blood cultures are drawn twice",
+       "correct": false,
+       "why": "Draw cultures if quick; never delay."
       }
      ],
      "teach": "",
@@ -103,14 +118,24 @@
      "q": "What does SSC 2021 suggest for beta lactam maintenance doses?",
      "options": [
       {
-       "t": "Prolonged (extended) infusion over standard infusion",
+       "t": "Prolonged (extended) infusion after the first dose",
        "correct": true,
-       "why": "Beta lactams kill based on time above the MIC; longer infusions keep levels above the MIC longer."
+       "why": "SSC 2021 suggestion."
       },
       {
-       "t": "Faster push dosing",
+       "t": "Faster 3 to 5 minute push for every dose",
        "correct": false,
-       "why": "Opposite of the PK goal."
+       "why": "Opposite of the time above MIC goal."
+      },
+      {
+       "t": "Once daily dosing to raise the peak",
+       "correct": false,
+       "why": "That is the aminoglycoside strategy."
+      },
+      {
+       "t": "Continuous infusion only for vancomycin",
+       "correct": false,
+       "why": "A vancomycin option, not the beta lactam suggestion."
       }
      ],
      "teach": "",
@@ -121,14 +146,24 @@
      "q": "Why does time matter for beta lactams but not as much for aminoglycosides?",
      "options": [
       {
-       "t": "Beta lactams are time dependent; aminoglycosides are concentration dependent",
+       "t": "Beta lactams: time; aminoglycosides: peak",
        "correct": true,
-       "why": "Different drugs, different PK goals."
+       "why": "Time above MIC vs peak/MIC."
       },
       {
-       "t": "They are the same",
+       "t": "Both kill by time above the MIC",
        "correct": false,
-       "why": "No."
+       "why": "Aminoglycosides are concentration dependent."
+      },
+      {
+       "t": "Both kill by peak concentration",
+       "correct": false,
+       "why": "Beta lactams are time dependent."
+      },
+      {
+       "t": "Beta lactams: AUC; aminoglycosides: time",
+       "correct": false,
+       "why": "AUC/MIC describes vancomycin; aminoglycosides are peak driven."
       }
      ],
      "teach": "",
@@ -176,19 +211,29 @@
      "q": "Which regimens fit ATS/IDSA 2019?",
      "options": [
       {
-       "t": "Ceftriaxone 1 to 2 g IV daily plus azithromycin 500 mg daily",
+       "t": "Ceftriaxone + azithromycin",
        "correct": true,
-       "why": "Standard regimen."
+       "why": ""
       },
       {
-       "t": "Levofloxacin 750 mg daily or moxifloxacin 400 mg daily alone",
+       "t": "Levofloxacin 750 mg or moxifloxacin 400 mg alone",
        "correct": true,
-       "why": "Respiratory fluoroquinolone monotherapy is an option."
+       "why": ""
       },
       {
-       "t": "Vancomycin plus piperacillin tazobactam",
+       "t": "Vancomycin + piperacillin tazobactam",
        "correct": false,
-       "why": "Too broad without MRSA or Pseudomonas risk."
+       "why": "For MRSA and Pseudomonas risk, which she lacks."
+      },
+      {
+       "t": "Azithromycin alone",
+       "correct": false,
+       "why": "Monotherapy is for outpatients without comorbidities."
+      },
+      {
+       "t": "Ceftriaxone alone",
+       "correct": false,
+       "why": "Needs atypical coverage."
       }
      ],
      "teach": "",
@@ -200,14 +245,24 @@
      "q": "How long?",
      "options": [
       {
-       "t": "At least 5 days, and until clinically stable",
+       "t": "At least 5 days and clinically stable",
        "correct": true,
-       "why": "Most patients need 5 days."
+       "why": "IDSA/ATS 2019."
       },
       {
-       "t": "14 days",
+       "t": "At least 7 days, as for HAP",
        "correct": false,
-       "why": "Longer than needed."
+       "why": "7 days is the HAP duration."
+      },
+      {
+       "t": "At least 10 days for inpatients",
+       "correct": false,
+       "why": "Older practice; longer than needed."
+      },
+      {
+       "t": "At least 3 days if afebrile",
+       "correct": false,
+       "why": "3 days is the cystitis style course; CAP minimum is 5."
       }
      ],
      "teach": "",
@@ -218,14 +273,24 @@
      "q": "Are steroids routine for CAP?",
      "options": [
       {
-       "t": "No; follow the sepsis guideline if refractory shock develops",
+       "t": "No; only for refractory shock per SSC",
        "correct": true,
-       "why": "ATS/IDSA 2019."
+       "why": ""
       },
       {
-       "t": "Yes, always",
+       "t": "Yes, dexamethasone for every inpatient",
        "correct": false,
        "why": "Not routine."
+      },
+      {
+       "t": "Yes, hydrocortisone for every inpatient",
+       "correct": false,
+       "why": "Only refractory shock."
+      },
+      {
+       "t": "Only for influenza pneumonia",
+       "correct": false,
+       "why": "Steroids are not routine for influenza pneumonia either."
       }
      ],
      "teach": "",
@@ -269,14 +334,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Stop vancomycin: a negative MRSA nares result has a negative predictive value above 95% for MRSA pneumonia",
+       "t": "Stop vancomycin (nares NPV above 95%)",
        "correct": true,
-       "why": "One of the easiest stewardship wins every day."
+       "why": "IDSA/ATS."
       },
       {
-       "t": "Continue vancomycin for 14 days",
+       "t": "Continue vancomycin for 7 days anyway",
        "correct": false,
        "why": "No MRSA evidence."
+      },
+      {
+       "t": "Switch vancomycin to linezolid",
+       "correct": false,
+       "why": "No MRSA coverage needed."
+      },
+      {
+       "t": "Repeat the nares PCR in 48 hours",
+       "correct": false,
+       "why": "Not needed."
       }
      ],
      "teach": "",
@@ -340,9 +415,14 @@
        "why": ""
       },
       {
-       "t": "Ceftriaxone plus azithromycin",
+       "t": "Ceftriaxone + azithromycin",
        "correct": false,
-       "why": "Does not cover Pseudomonas, which HAP regimens need."
+       "why": "A CAP regimen; no Pseudomonas coverage."
+      },
+      {
+       "t": "Vancomycin + meropenem",
+       "correct": false,
+       "why": "For high risk HAP only."
       }
      ],
      "teach": "",
@@ -354,12 +434,22 @@
      "q": "When would you add a second antipseudomonal agent and MRSA coverage?",
      "options": [
       {
-       "t": "Septic shock, ventilation, IV antibiotics in the past 90 days, or high local resistance",
+       "t": "Shock, ventilation, IV antibiotics in 90 days",
        "correct": true,
-       "why": "High mortality or resistance risk."
+       "why": "Or high local resistance."
       },
       {
-       "t": "Always",
+       "t": "Age over 65 or diabetes",
+       "correct": false,
+       "why": "Not HAP double coverage triggers."
+      },
+      {
+       "t": "Any hospital stay longer than 48 hours",
+       "correct": false,
+       "why": "That defines HAP, not double coverage."
+      },
+      {
+       "t": "Every patient with HAP",
        "correct": false,
        "why": "Only with risk factors."
       }
@@ -377,9 +467,19 @@
        "why": "IDSA/ATS 2016."
       },
       {
+       "t": "5 days",
+       "correct": false,
+       "why": "The CAP minimum."
+      },
+      {
+       "t": "14 days",
+       "correct": false,
+       "why": "Longer than needed."
+      },
+      {
        "t": "21 days",
        "correct": false,
-       "why": "Too long."
+       "why": "Far longer than needed."
       }
      ],
      "teach": "",
@@ -423,14 +523,24 @@
      "q": "What do you suspect?",
      "options": [
       {
-       "t": "Cefepime neurotoxicity from accumulation in kidney impairment (can include nonconvulsive status epilepticus)",
+       "t": "Cefepime neurotoxicity from accumulation",
        "correct": true,
-       "why": "FDA 2012 alert: most cases had kidney impairment without dose adjustment."
+       "why": "FDA 2012: mostly kidney impairment without adjustment."
       },
       {
-       "t": "Normal aging",
+       "t": "Hospital delirium from the infection",
        "correct": false,
-       "why": "Never assume."
+       "why": "Possible, but jerking with CrCl 25 on full dose points to cefepime."
+      },
+      {
+       "t": "Hypoglycemia from poor oral intake",
+       "correct": false,
+       "why": "Check glucose, but this pattern fits cefepime."
+      },
+      {
+       "t": "Serotonin syndrome",
+       "correct": false,
+       "why": "Cefepime is not serotonergic."
       }
      ],
      "teach": "",
@@ -441,14 +551,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Reduce or change the antibiotic per renal dosing, tell the team, and suggest an EEG if seizures are suspected",
+       "t": "Renally adjust or change; EEG if seizures suspected",
        "correct": true,
-       "why": "Symptoms usually improve after stopping or adjusting the dose."
+       "why": ""
       },
       {
-       "t": "Add haloperidol and continue",
+       "t": "Add haloperidol and continue the same dose",
        "correct": false,
        "why": "Treats the symptom, not the cause."
+      },
+      {
+       "t": "Add levetiracetam and continue the same dose",
+       "correct": false,
+       "why": "Leaves the cause in place."
+      },
+      {
+       "t": "Switch to cefazolin for broader coverage",
+       "correct": false,
+       "why": "Cefazolin is narrower, not broader."
       }
      ],
      "teach": "",
@@ -496,19 +616,24 @@
        "why": ""
       },
       {
-       "t": "A fluoroquinolone (if not used in the past 12 months and local resistance allows)",
+       "t": "A fluoroquinolone (none in the past year)",
        "correct": true,
        "why": ""
       },
       {
        "t": "Nitrofurantoin",
        "correct": false,
-       "why": "Does not reach the kidneys or blood. Not for cUTI or pyelonephritis."
+       "why": "No kidney or blood levels."
       },
       {
        "t": "Oral fosfomycin",
        "correct": false,
        "why": "Same reason."
+      },
+      {
+       "t": "Amoxicillin alone",
+       "correct": false,
+       "why": "High E. coli resistance."
       }
      ],
      "teach": "",
@@ -520,14 +645,24 @@
      "q": "How long?",
      "options": [
       {
-       "t": "7 days (5 to 7 with a fluoroquinolone), including with bacteremia",
+       "t": "7 days (5 to 7 with a fluoroquinolone)",
        "correct": true,
-       "why": "IDSA 2025."
+       "why": "Including bacteremia (IDSA 2025)."
       },
       {
-       "t": "14 days for everyone",
+       "t": "3 days, the same as for cystitis",
        "correct": false,
-       "why": "Shorter is supported."
+       "why": "Cystitis courses are short; pyelonephritis needs longer."
+      },
+      {
+       "t": "10 to 14 days for every patient",
+       "correct": false,
+       "why": "Longer than needed."
+      },
+      {
+       "t": "14 days because she is bacteremic",
+       "correct": false,
+       "why": "IDSA 2025 supports 7 days with bacteremia."
       }
      ],
      "teach": "",
@@ -538,14 +673,24 @@
      "q": "She improves on day 2 and the E. coli is susceptible. Next step?",
      "options": [
       {
-       "t": "Switch to an oral option by susceptibility (for example TMP SMX DS BID, levofloxacin, cephalexin 1 g TID or amoxicillin clavulanate)",
+       "t": "Oral step down by susceptibility",
        "correct": true,
+       "why": "For example TMP SMX DS BID, levofloxacin, cephalexin 1 g TID."
+      },
+      {
+       "t": "Keep IV for the whole 7 days",
+       "correct": false,
        "why": "Oral step down is supported."
       },
       {
-       "t": "Keep IV for 14 days",
+       "t": "Nitrofurantoin to finish the course",
        "correct": false,
-       "why": "Unneeded."
+       "why": "Not for pyelonephritis."
+      },
+      {
+       "t": "Stop antibiotics once afebrile",
+       "correct": false,
+       "why": "Finish the course."
       }
      ],
      "teach": "",
@@ -590,12 +735,22 @@
       {
        "t": "Asymptomatic bacteriuria: do not treat",
        "correct": true,
-       "why": "Confusion or a fall without urinary or systemic signs is not a reason to treat (IDSA 2019)."
+       "why": "IDSA 2019."
       },
       {
-       "t": "A UTI that needs 14 days of antibiotics",
+       "t": "UTI causing delirium: treat 7 days",
        "correct": false,
-       "why": "No symptoms of infection."
+       "why": "Confusion alone is not a reason to treat."
+      },
+      {
+       "t": "Cystitis: treat 3 days",
+       "correct": false,
+       "why": "No urinary symptoms."
+      },
+      {
+       "t": "Pyelonephritis: treat 7 days",
+       "correct": false,
+       "why": "No fever or flank pain."
       }
      ],
      "teach": "",
@@ -611,14 +766,24 @@
        "why": ""
       },
       {
-       "t": "Before a urologic procedure with mucosal trauma",
+       "t": "Before urologic procedures with mucosal trauma",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Older adults with a catheter",
+       "t": "Older adults with a urinary catheter",
        "correct": false,
        "why": "No screening or treatment."
+      },
+      {
+       "t": "Diabetes",
+       "correct": false,
+       "why": "No screening or treatment."
+      },
+      {
+       "t": "Before orthopedic joint surgery",
+       "correct": false,
+       "why": "Not recommended."
       }
      ],
      "teach": "",
@@ -662,14 +827,24 @@
      "q": "Best plan for patient A (mild, nonpurulent)?",
      "options": [
       {
-       "t": "Cephalexin 500 mg QID (or 1 g q8h) for about 5 days",
+       "t": "Cephalexin 500 mg QID for about 5 days",
        "correct": true,
-       "why": "Nonpurulent cellulitis is usually strep; MRSA coverage is not routine."
+       "why": "Strep coverage."
       },
       {
-       "t": "TMP SMX alone",
+       "t": "TMP SMX DS BID for about 5 days",
        "correct": false,
-       "why": "Weak strep coverage."
+       "why": "Weak strep coverage; for purulent infections."
+      },
+      {
+       "t": "Doxycycline 100 mg BID for about 5 days",
+       "correct": false,
+       "why": "Purulent (MRSA) option."
+      },
+      {
+       "t": "Clindamycin for 14 days",
+       "correct": false,
+       "why": "Longer than needed; resistance and C. diff risk."
       }
      ],
      "teach": "",
@@ -680,14 +855,24 @@
      "q": "Best plan for patient B?",
      "options": [
       {
-       "t": "Incision and drainage first; add TMP SMX DS or doxycycline because it is over 2 cm",
+       "t": "Drain it, then TMP SMX DS or doxycycline",
        "correct": true,
-       "why": "Drainage is the main treatment."
+       "why": "Over 2 cm."
       },
       {
-       "t": "Antibiotics only, no drainage",
+       "t": "Antibiotics only; skip the drainage",
        "correct": false,
        "why": "Drainage is the key step."
+      },
+      {
+       "t": "Cephalexin only, after drainage",
+       "correct": false,
+       "why": "Purulent infections need MRSA coverage."
+      },
+      {
+       "t": "IV vancomycin for 7 days",
+       "correct": false,
+       "why": "Not needed for a simple abscess."
       }
      ],
      "teach": "",
@@ -730,14 +915,24 @@
      "q": "Empiric regimen?",
      "options": [
       {
-       "t": "Vancomycin plus ceftriaxone 2 g IV every 12 hours",
+       "t": "Vancomycin + ceftriaxone 2 g every 12 hours",
        "correct": true,
-       "why": "Note meningitis dosing of ceftriaxone is every 12 hours."
+       "why": ""
       },
       {
-       "t": "Ceftriaxone 1 g daily alone",
+       "t": "Vancomycin + ceftriaxone 2 g every 24 hours",
        "correct": false,
-       "why": "Too low and missing resistant pneumococcus coverage."
+       "why": "Daily dosing is for pneumonia or pyelonephritis; meningitis is every 12 hours."
+      },
+      {
+       "t": "Ceftriaxone 2 g every 12 hours alone",
+       "correct": false,
+       "why": "Misses resistant pneumococcus."
+      },
+      {
+       "t": "Vancomycin + cefazolin 2 g every 8 hours",
+       "correct": false,
+       "why": "Cefazolin does not reach the CSF well."
       }
      ],
      "teach": "",
@@ -748,14 +943,24 @@
      "q": "When does dexamethasone go in?",
      "options": [
       {
-       "t": "10 to 20 minutes before or with the first antibiotic dose, 0.15 mg/kg every 6 hours for 2 to 4 days; continue only if pneumococcal",
+       "t": "10 to 20 minutes before or with dose 1",
        "correct": true,
-       "why": "Not after antibiotics have started."
+       "why": "0.15 mg/kg every 6 hours for 2 to 4 days; continue only if pneumococcal."
       },
       {
-       "t": "After 24 hours of antibiotics",
+       "t": "6 hours after the first antibiotic dose",
        "correct": false,
-       "why": "Too late."
+       "why": "Not after antibiotics start."
+      },
+      {
+       "t": "Only once CSF culture confirms pneumococcus",
+       "correct": false,
+       "why": "Start empirically, stop if not pneumococcal."
+      },
+      {
+       "t": "Only if the patient is in septic shock",
+       "correct": false,
+       "why": "That is hydrocortisone in septic shock."
       }
      ],
      "teach": "",
@@ -766,14 +971,24 @@
      "q": "If she were 60 years old, what would you add?",
      "options": [
       {
-       "t": "Ampicillin 2 g IV every 4 hours for Listeria",
+       "t": "Ampicillin 2 g every 4 hours",
        "correct": true,
-       "why": "Also for pregnancy and immunocompromise. Cephalosporins never cover Listeria."
+       "why": "Listeria."
       },
       {
-       "t": "Nothing",
+       "t": "Ampicillin 2 g every 6 hours",
        "correct": false,
-       "why": "Listeria risk rises after 50."
+       "why": "The intraamniotic infection dose."
+      },
+      {
+       "t": "Cefepime 2 g every 8 hours",
+       "correct": false,
+       "why": "Cephalosporins never cover Listeria."
+      },
+      {
+       "t": "Acyclovir 10 mg/kg every 8 hours",
+       "correct": false,
+       "why": "For suspected HSV, not Listeria."
       }
      ],
      "teach": "",
@@ -818,14 +1033,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Switch to cefazolin or an antistaphylococcal penicillin (nafcillin or oxacillin)",
+       "t": "Switch to cefazolin or nafcillin/oxacillin",
        "correct": true,
-       "why": "Beta lactams kill MSSA better than vancomycin."
+       "why": "Better than vancomycin for MSSA."
       },
       {
-       "t": "Continue vancomycin because it covers MSSA",
+       "t": "Continue vancomycin; it covers MSSA",
        "correct": false,
-       "why": "It covers it, but outcomes are worse than with a beta lactam."
+       "why": "Worse outcomes."
+      },
+      {
+       "t": "Switch to ceftriaxone 2 g daily",
+       "correct": false,
+       "why": "Less reliable than cefazolin for MSSA bacteremia."
+      },
+      {
+       "t": "Add rifampin to vancomycin",
+       "correct": false,
+       "why": "Not routine."
       }
      ],
      "teach": "",
@@ -836,24 +1061,29 @@
      "q": "What else always goes with S. aureus bacteremia?",
      "options": [
       {
-       "t": "Repeat blood cultures to document clearance",
+       "t": "Repeat blood cultures",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Infectious diseases consultation and a search for the source (echocardiogram)",
+       "t": "ID consult and echocardiogram",
        "correct": true,
        "why": ""
       },
       {
-       "t": "At least 14 days of IV therapy from the first negative culture for uncomplicated cases",
+       "t": "14 days or more of IV therapy if uncomplicated",
        "correct": true,
-       "why": "Complicated cases need longer."
+       "why": "From the first negative culture."
       },
       {
-       "t": "A 5 day oral course",
+       "t": "7 days total, like gram negative bacteremia",
        "correct": false,
-       "why": "Not for S. aureus bacteremia."
+       "why": "7 days applies to uncomplicated gram negative bacteremia."
+      },
+      {
+       "t": "Oral step down on day 2",
+       "correct": false,
+       "why": "Not for S. aureus."
       }
      ],
      "teach": "",
@@ -904,14 +1134,24 @@
      "q": "What does the evidence support?",
      "options": [
       {
-       "t": "Change to a carbapenem (for example meropenem or ertapenem)",
+       "t": "Change to a carbapenem",
        "correct": true,
-       "why": "MERINO: 30 day mortality was higher with piperacillin tazobactam than meropenem for ceftriaxone resistant E. coli and Klebsiella bacteremia."
+       "why": "MERINO."
       },
       {
-       "t": "Continue piperacillin tazobactam because it tested susceptible",
+       "t": "Continue pip tazo because it tested susceptible",
        "correct": false,
-       "why": "The trial showed worse outcomes despite susceptibility."
+       "why": "MERINO showed higher mortality."
+      },
+      {
+       "t": "Change to ceftriaxone 2 g daily",
+       "correct": false,
+       "why": "Resistant."
+      },
+      {
+       "t": "Change to cefepime 2 g every 8 hours",
+       "correct": false,
+       "why": "Not reliable for ESBL bacteremia."
       }
      ],
      "teach": "",
@@ -959,14 +1199,24 @@
      "q": "What do you know about cefazolin and penicillin cross reactivity?",
      "options": [
       {
-       "t": "Cefazolin shares no side chain with other US beta lactams; cross reactivity is very low",
+       "t": "Cefazolin shares no side chain with other US beta lactams",
        "correct": true,
-       "why": "Allergy is driven by the R1 side chain, not the beta lactam ring."
+       "why": ""
       },
       {
-       "t": "Up to 10% cross reactivity with all cephalosporins",
+       "t": "About 10% cross reactivity with all cephalosporins",
        "correct": false,
-       "why": "That old number is outdated."
+       "why": "An outdated estimate."
+      },
+      {
+       "t": "Cross reactivity follows the beta lactam ring",
+       "correct": false,
+       "why": "It follows the R1 side chain."
+      },
+      {
+       "t": "Cefazolin shares a side chain with amoxicillin",
+       "correct": false,
+       "why": "Cephalexin and cefadroxil do; cefazolin does not."
       }
      ],
      "teach": "",
@@ -977,14 +1227,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Give cefazolin; it is a better surgical prophylaxis agent than vancomycin",
+       "t": "Give cefazolin; it beats vancomycin for prophylaxis",
        "correct": true,
-       "why": "With a non anaphylactic, unconfirmed history, cephalosporins can be given without testing (2022 practice parameter). Vancomycin is less effective for MSSA and takes longer to infuse."
+       "why": "2022 practice parameter."
       },
       {
-       "t": "Vancomycin for everyone with a penicillin label",
+       "t": "Vancomycin for any penicillin allergy label",
        "correct": false,
-       "why": "Worse outcomes and more resistance."
+       "why": "Worse outcomes."
+      },
+      {
+       "t": "Clindamycin as the standard alternative",
+       "correct": false,
+       "why": "For confirmed severe beta lactam allergy."
+      },
+      {
+       "t": "Skin test before any cephalosporin",
+       "correct": false,
+       "why": "Not needed for non anaphylactic history."
       }
      ],
      "teach": "",
@@ -995,12 +1255,22 @@
      "q": "What is the cefazolin prophylaxis dose and timing?",
      "options": [
       {
-       "t": "2 g IV (3 g if 120 kg or more) within 60 minutes before incision; redose every 4 hours during surgery",
+       "t": "2 g (3 g if 120 kg+) within 60 min; redose every 4 h",
        "correct": true,
-       "why": "Vancomycin needs to start within 120 minutes because of its long infusion."
+       "why": ""
       },
       {
-       "t": "1 g after surgery",
+       "t": "2 g within 120 minutes; redose every 6 hours",
+       "correct": false,
+       "why": "120 minutes is the vancomycin and fluoroquinolone window."
+      },
+      {
+       "t": "1 g within 60 minutes; redose every 8 hours",
+       "correct": false,
+       "why": "Underdosed."
+      },
+      {
+       "t": "2 g after closure, then every 8 hours for 3 days",
        "correct": false,
        "why": "Prophylaxis must be on board at incision."
       }
@@ -1055,14 +1325,24 @@
      "q": "What is the issue?",
      "options": [
       {
-       "t": "Duplicate anaerobic coverage: piperacillin tazobactam already covers anaerobes",
+       "t": "Duplicate anaerobic coverage",
        "correct": true,
-       "why": "Same with carbapenems. Metronidazole adds side effects without benefit (except C. difficile, which needs oral therapy)."
+       "why": "Pip tazo already covers anaerobes."
       },
       {
-       "t": "No issue",
+       "t": "Duplicate gram negative coverage",
        "correct": false,
-       "why": "Common duplication."
+       "why": "Metronidazole has no gram negative aerobic activity."
+      },
+      {
+       "t": "Missing MRSA coverage",
+       "correct": false,
+       "why": "Not indicated without risk."
+      },
+      {
+       "t": "Missing enterococcal coverage",
+       "correct": false,
+       "why": "Pip tazo covers E. faecalis."
       }
      ],
      "teach": "",
@@ -1105,7 +1385,7 @@
      "q": "What questions do you ask on each one?",
      "options": [
       {
-       "t": "Are cultures back, and can we narrow?",
+       "t": "Cultures back: can we narrow?",
        "correct": true,
        "why": ""
       },
@@ -1115,14 +1395,19 @@
        "why": ""
       },
       {
-       "t": "Is there a stop date that matches guideline durations?",
+       "t": "Is there a stop date matching guidelines?",
        "correct": true,
-       "why": "CAP 5 days, HAP 7, cUTI 7, cellulitis about 5."
+       "why": ""
       },
       {
-       "t": "Can we add more coverage just in case?",
+       "t": "Can we add coverage just in case?",
        "correct": false,
-       "why": "The opposite of stewardship."
+       "why": "Opposite of stewardship."
+      },
+      {
+       "t": "Can we extend to 14 days to be safe?",
+       "correct": false,
+       "why": "Shorter is supported."
       }
      ],
      "teach": "",
@@ -1176,19 +1461,24 @@
      "q": "Which first?",
      "options": [
       {
-       "t": "The meningitis first doses (and dexamethasone timing)",
+       "t": "Meningitis first doses and dexamethasone",
        "correct": true,
-       "why": "Minutes matter."
+       "why": ""
       },
       {
-       "t": "The MSSA switch",
+       "t": "The MSSA switch to cefazolin",
        "correct": false,
-       "why": "Important, but it can follow."
+       "why": "Second."
       },
       {
-       "t": "Discharge question",
+       "t": "The cephalexin discharge question",
        "correct": false,
-       "why": "Tomorrow."
+       "why": "Last."
+      },
+      {
+       "t": "Writing the stewardship note",
+       "correct": false,
+       "why": "After care."
       }
      ],
      "teach": "",
@@ -1199,14 +1489,24 @@
      "q": "Second?",
      "options": [
       {
-       "t": "Recommend switching MSSA bacteremia to cefazolin",
+       "t": "Recommend cefazolin for the MSSA patient",
        "correct": true,
-       "why": "Better outcomes."
+       "why": ""
       },
       {
-       "t": "Discharge question",
+       "t": "Answer the cephalexin discharge question",
        "correct": false,
        "why": "Last."
+      },
+      {
+       "t": "Order a vancomycin trough for the MSSA patient",
+       "correct": false,
+       "why": "Vancomycin should be stopped."
+      },
+      {
+       "t": "Repeat the meningitis patient's CT",
+       "correct": false,
+       "why": "Not a pharmacy task."
       }
      ],
      "teach": "",

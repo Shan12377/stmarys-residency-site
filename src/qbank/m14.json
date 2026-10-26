@@ -18,19 +18,29 @@
      "q": "What makes a strong first MUE topic?",
      "options": [
       {
-       "t": "A high alert, high risk, high cost or high volume drug, or one with a new safety alert",
+       "t": "High alert, high risk, high cost or high volume",
        "correct": true,
-       "why": "ASHP MUE guideline."
+       "why": "Or a drug with a new safety alert."
       },
       {
-       "t": "Criteria that come straight from a label or guideline, and a small enough patient number to review by hand",
+       "t": "Criteria from a label or guideline; small sample",
        "correct": true,
-       "why": "For example magnesium on L&D."
+       "why": "Small enough to review by hand."
       },
       {
-       "t": "Whatever topic is easiest to publish, without asking leadership",
+       "t": "Whatever is easiest to publish, no leadership input",
        "correct": false,
-       "why": "Ask your manager what helps the department."
+       "why": "Align with hospital priorities."
+      },
+      {
+       "t": "A rarely used drug with no clear criteria",
+       "correct": false,
+       "why": "Too few cases and nothing to measure against."
+      },
+      {
+       "t": "Every drug on formulary at once",
+       "correct": false,
+       "why": "Too broad to finish."
       }
      ],
      "teach": "",
@@ -42,14 +52,24 @@
      "q": "Which kind of fix does the MUE method favor when results miss targets?",
      "options": [
       {
-       "t": "Hard wired changes: order sets, pump library limits, defaults",
+       "t": "Hard wired: order sets, pump limits, defaults",
        "correct": true,
-       "why": "They work even on a busy night."
+       "why": "Forcing functions beat education."
       },
       {
-       "t": "Reminder emails",
+       "t": "Reminder emails to every prescriber",
        "correct": false,
-       "why": "Weakest fix."
+       "why": "Weak; fades quickly."
+      },
+      {
+       "t": "A one time staff in service",
+       "correct": false,
+       "why": "Education alone is weak."
+      },
+      {
+       "t": "A new policy document on the intranet",
+       "correct": false,
+       "why": "Rules alone are weak."
       }
      ],
      "teach": "",
@@ -97,14 +117,24 @@
      "q": "Is it QI or research?",
      "options": [
       {
-       "t": "QI for your own hospital usually is not research, but if you plan to present or publish, ask the IRB for a determination before collecting data",
+       "t": "Usually QI; ask the IRB before collecting data",
        "correct": true,
-       "why": "Research = systematic work for generalizable knowledge with human subjects."
+       "why": "If you plan to present or publish."
       },
       {
-       "t": "Posters never need IRB input",
+       "t": "Research; a full IRB protocol is always needed",
        "correct": false,
-       "why": "Ask first."
+       "why": "Local QI usually is not research."
+      },
+      {
+       "t": "QI; posters never need IRB input",
+       "correct": false,
+       "why": "Ask for a determination before presenting."
+      },
+      {
+       "t": "Ask the IRB after the poster is accepted",
+       "correct": false,
+       "why": "Too late; ask before collecting data."
       }
      ],
      "teach": "",
@@ -115,12 +145,22 @@
      "q": "Where can patient data from the project go?",
      "options": [
       {
-       "t": "Only inside St. Mary's systems, de identified for any presentation",
+       "t": "Inside St. Mary's systems; de identified to present",
        "correct": true,
-       "why": ""
+       "why": "HIPAA."
       },
       {
-       "t": "Your personal laptop or email",
+       "t": "A personal laptop, if password protected",
+       "correct": false,
+       "why": "Never on personal devices."
+      },
+      {
+       "t": "Personal email to work on at home",
+       "correct": false,
+       "why": "Never."
+      },
+      {
+       "t": "A public cloud folder shared with the team",
        "correct": false,
        "why": "Never."
       }
@@ -172,12 +212,22 @@
       {
        "t": "What are we trying to accomplish?",
        "correct": true,
-       "why": "Then: how will we know a change is an improvement, and what change can we make?"
+       "why": "IHI Model for Improvement."
       },
       {
-       "t": "Who is to blame?",
+       "t": "How will we know a change is better?",
        "correct": false,
-       "why": ""
+       "why": "The second question."
+      },
+      {
+       "t": "What change will result in improvement?",
+       "correct": false,
+       "why": "The third question."
+      },
+      {
+       "t": "Who caused the documentation gap?",
+       "correct": false,
+       "why": "Not a QI question."
       }
      ],
      "teach": "",
@@ -188,14 +238,24 @@
      "q": "How do you test a fix?",
      "options": [
       {
-       "t": "A small Plan Do Study Act cycle: try it on one unit or one shift, measure, adjust",
+       "t": "A small PDSA on one unit or shift",
        "correct": true,
-       "why": ""
+       "why": "Plan Do Study Act: try, measure, adjust."
       },
       {
        "t": "Roll it out hospital wide on day one",
        "correct": false,
        "why": "Test small first."
+      },
+      {
+       "t": "Run a randomized trial for 12 months",
+       "correct": false,
+       "why": "Research design; QI tests rapidly."
+      },
+      {
+       "t": "Wait for next year's MUE to recheck",
+       "correct": false,
+       "why": "Too slow."
       }
      ],
      "teach": "",
@@ -238,14 +298,24 @@
      "q": "Absolute risk increase with tight control?",
      "options": [
       {
-       "t": "2.6 percentage points (27.5 minus 24.9)",
+       "t": "2.6 percentage points",
        "correct": true,
-       "why": ""
+       "why": "27.5 minus 24.9."
       },
       {
-       "t": "10%",
+       "t": "10.4% (2.6 / 24.9)",
        "correct": false,
-       "why": "That is close to the relative increase (2.6 / 24.9)."
+       "why": "That is the relative risk increase."
+      },
+      {
+       "t": "27.5 percentage points",
+       "correct": false,
+       "why": "The event rate, not the difference."
+      },
+      {
+       "t": "1.1 (27.5 / 24.9)",
+       "correct": false,
+       "why": "That is the relative risk."
       }
      ],
      "teach": "",
@@ -258,12 +328,22 @@
       {
        "t": "About 38 (1 / 0.026)",
        "correct": true,
-       "why": "Treat about 38 patients with tight control and one extra dies."
+       "why": ""
       },
       {
-       "t": "2.6",
+       "t": "About 26 (1 / 0.038)",
        "correct": false,
-       "why": "Invert the absolute difference."
+       "why": "Inverted digits."
+      },
+      {
+       "t": "About 10 (1 / 0.104)",
+       "correct": false,
+       "why": "Uses the relative increase."
+      },
+      {
+       "t": "About 4 (1 / 0.26)",
+       "correct": false,
+       "why": "Decimal error."
       }
      ],
      "teach": "",
@@ -306,14 +386,24 @@
      "q": "Absolute risk reduction and NNT?",
      "options": [
       {
-       "t": "ARR 7.1 points; NNT about 14 for 12 months",
+       "t": "ARR 7.1 points; NNT about 14",
        "correct": true,
-       "why": "1 / 0.071 = 14."
+       "why": "Over 12 months."
       },
       {
-       "t": "ARR 81%; NNT 1",
+       "t": "ARR 81 points; NNT about 1",
        "correct": false,
-       "why": "81% is the relative reduction, not absolute."
+       "why": "81% is the relative reduction."
+      },
+      {
+       "t": "ARR 7.1 points; NNT about 71",
+       "correct": false,
+       "why": "NNT = 1 / 0.071."
+      },
+      {
+       "t": "ARR 1.7 points; NNT about 59",
+       "correct": false,
+       "why": "Uses the apixaban rate alone."
       }
      ],
      "teach": "",
@@ -326,12 +416,22 @@
       {
        "t": "About 53 (1 / 0.019)",
        "correct": true,
-       "why": "Bridge about 53 patients and one extra has major bleeding."
+       "why": ""
       },
       {
-       "t": "About 2",
+       "t": "About 31 (1 / 0.032)",
        "correct": false,
-       "why": "Recheck."
+       "why": "Uses the bridging rate alone."
+      },
+      {
+       "t": "About 77 (1 / 0.013)",
+       "correct": false,
+       "why": "Uses the no bridging rate alone."
+      },
+      {
+       "t": "About 2 (3.2 / 1.3)",
+       "correct": false,
+       "why": "That is the relative risk."
       }
      ],
      "teach": "",
@@ -379,14 +479,24 @@
      "q": "What does \"noninferiority not met\" mean?",
      "options": [
       {
-       "t": "The trial could not prove reduced dose is not meaningfully worse at preventing recurrence; it does not prove it is worse either",
+       "t": "It did not prove reduced dose is not worse",
        "correct": true,
-       "why": ""
+       "why": "It does not prove it is worse either."
       },
       {
-       "t": "Reduced dose is proven dangerous",
+       "t": "It proved reduced dose is worse",
        "correct": false,
-       "why": "Not what the result says."
+       "why": "Failure to show noninferiority is not proof of inferiority."
+      },
+      {
+       "t": "It proved both doses are equal",
+       "correct": false,
+       "why": "Not shown."
+      },
+      {
+       "t": "It proved reduced dose is superior",
+       "correct": false,
+       "why": "Not tested that way."
       }
      ],
      "teach": "",
@@ -397,14 +507,24 @@
      "q": "How do you use this at the bedside?",
      "options": [
       {
-       "t": "Weigh lower bleeding against uncertain recurrence protection for each patient, alongside CHEST 2021 guidance",
+       "t": "Weigh the bleeding vs recurrence trade",
        "correct": true,
-       "why": ""
+       "why": "For each patient, alongside CHEST 2021."
       },
       {
-       "t": "Ignore it",
+       "t": "Use full dose for every patient",
        "correct": false,
-       "why": ""
+       "why": "Ignores the bleeding difference."
+      },
+      {
+       "t": "Use reduced dose for every patient",
+       "correct": false,
+       "why": "Ignores the uncertainty."
+      },
+      {
+       "t": "Ignore it; it failed its endpoint",
+       "correct": false,
+       "why": "Still informative."
       }
      ],
      "teach": "",
@@ -447,14 +567,24 @@
      "q": "What do you track?",
      "options": [
       {
-       "t": "Interventions by category (renal dose, allergy clarified, IV to PO, duplicates, errors caught), with no patient identifiers in your own notes",
+       "t": "Interventions by category, no identifiers",
        "correct": true,
-       "why": "Use the official system for patient level documentation."
+       "why": "Renal dose, allergy, IV to PO, duplicates, errors caught."
       },
       {
-       "t": "Nothing; it is all in your head",
+       "t": "Nothing; it is all in memory",
        "correct": false,
-       "why": "Undocumented work is invisible."
+       "why": "Untracked work is invisible."
+      },
+      {
+       "t": "Patient names and MRNs in a notebook",
+       "correct": false,
+       "why": "Never keep identifiers."
+      },
+      {
+       "t": "Only the hours worked each shift",
+       "correct": false,
+       "why": "Does not show value."
       }
      ],
      "teach": "",
@@ -497,14 +627,24 @@
      "q": "Which outline works best for 15 minutes?",
      "options": [
       {
-       "t": "Why it matters (high alert), what the nurse sees first (reflexes before breathing), the numbers, the antidote, one case, 3 questions",
+       "t": "Why, what nurses see, numbers, antidote",
        "correct": true,
-       "why": "Short, practical, case based."
+       "why": "Reflexes before breathing; one case; end with 3 questions."
       },
       {
        "t": "Forty slides of pharmacokinetics",
        "correct": false,
-       "why": "Too long for the audience and time."
+       "why": "Too much for 15 minutes."
+      },
+      {
+       "t": "A handout and no discussion time",
+       "correct": false,
+       "why": "Less retention."
+      },
+      {
+       "t": "Read the package insert aloud",
+       "correct": false,
+       "why": "Not focused on nurse actions."
       }
      ],
      "teach": "",

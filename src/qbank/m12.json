@@ -18,14 +18,24 @@
      "q": "What is wrong?",
      "options": [
       {
-       "t": "Pediatric mg/kg doses never exceed the adult dose: cap at 1,000 mg per dose and 4 g per day",
+       "t": "Never above the adult dose: cap 1,000 mg",
        "correct": true,
-       "why": ""
+       "why": "And 4 g per day."
       },
       {
-       "t": "Nothing",
+       "t": "Fine: 15 mg/kg applies at any weight",
        "correct": false,
-       "why": "1,230 mg is above the adult single dose."
+       "why": "Weight based doses are capped at the adult dose."
+      },
+      {
+       "t": "Use 10 mg/kg instead: 820 mg",
+       "correct": false,
+       "why": "Not the fix; use the adult cap."
+      },
+      {
+       "t": "Cap at 650 mg, the pediatric maximum",
+       "correct": false,
+       "why": "650 mg is a common adult tablet dose, not the cap."
       }
      ],
      "teach": "",
@@ -36,12 +46,12 @@
      "q": "Which other pediatric checks run on every order?",
      "options": [
       {
-       "t": "Measured weight in kg, and actual vs ideal weight for obese children per drug",
+       "t": "Measured weight in kg; actual vs ideal per drug",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Standard concentration in the pump library and a measurable volume",
+       "t": "Standard concentration and a measurable volume",
        "correct": true,
        "why": ""
       },
@@ -51,9 +61,14 @@
        "why": ""
       },
       {
-       "t": "Age in years only",
+       "t": "Weight in pounds as reported by the parent",
        "correct": false,
-       "why": "Weight drives dosing."
+       "why": "Always measured kg."
+      },
+      {
+       "t": "Age in years alone to pick the dose",
+       "correct": false,
+       "why": "Weight based."
       }
      ],
      "teach": "",
@@ -97,19 +112,24 @@
      "q": "Epinephrine dose?",
      "options": [
       {
-       "t": "0.01 mg/kg = 0.2 mg = 2 mL of 0.1 mg/mL, every 3 to 5 minutes (max 1 mg)",
+       "t": "0.01 mg/kg = 0.2 mg = 2 mL of 0.1 mg/mL",
        "correct": true,
-       "why": "PALS 2025: as early as possible in nonshockable rhythms."
+       "why": "Every 3 to 5 minutes, max 1 mg (PALS)."
       },
       {
-       "t": "1 mg",
+       "t": "0.1 mg/kg = 2 mg = 2 mL of 1 mg/mL",
        "correct": false,
-       "why": "Adult dose."
+       "why": "The endotracheal dose; IV/IO is 0.01 mg/kg."
       },
       {
-       "t": "0.2 mL of 1 mg/mL",
+       "t": "0.01 mg/kg = 0.2 mg = 2 mL of 1 mg/mL",
        "correct": false,
-       "why": "Same mg, but use the 0.1 mg/mL concentration to avoid errors."
+       "why": "Right dose but 10x volume with the 1 mg/mL product."
+      },
+      {
+       "t": "1 mg = 10 mL of 0.1 mg/mL",
+       "correct": false,
+       "why": "The adult dose."
       }
      ],
      "teach": "",
@@ -120,14 +140,24 @@
      "q": "Rhythm changes to VF, refractory to shocks. Amiodarone?",
      "options": [
       {
-       "t": "5 mg/kg = 100 mg, may repeat up to 15 mg/kg total",
+       "t": "5 mg/kg = 100 mg, repeat to 15 mg/kg",
        "correct": true,
-       "why": "Max single 300 mg."
+       "why": "PALS."
       },
       {
-       "t": "300 mg",
+       "t": "300 mg IV push, then 150 mg",
        "correct": false,
-       "why": "Adult dose."
+       "why": "The adult dose."
+      },
+      {
+       "t": "1 mg/kg = 20 mg, repeat to 3 mg/kg",
+       "correct": false,
+       "why": "That is lidocaine dosing."
+      },
+      {
+       "t": "15 mg/kg = 300 mg as a single dose",
+       "correct": false,
+       "why": "15 mg/kg is the total, not one dose."
       }
      ],
      "teach": "",
@@ -175,14 +205,24 @@
      "q": "Adenosine for A?",
      "options": [
       {
-       "t": "0.1 mg/kg = 1.5 mg rapid push with flush (max 6 mg); second dose 0.2 mg/kg (max 12 mg)",
+       "t": "0.1 mg/kg = 1.5 mg (max 6), then 0.2 mg/kg",
        "correct": true,
-       "why": ""
+       "why": "Rapid push with flush; second dose max 12 mg."
       },
       {
-       "t": "6 mg",
+       "t": "6 mg rapid push, then 12 mg",
        "correct": false,
-       "why": "Too much for 15 kg."
+       "why": "The adult dose."
+      },
+      {
+       "t": "0.2 mg/kg = 3 mg first, then 0.4 mg/kg",
+       "correct": false,
+       "why": "Starts with the second dose."
+      },
+      {
+       "t": "0.01 mg/kg = 0.15 mg, then 0.02 mg/kg",
+       "correct": false,
+       "why": "Ten times too low."
       }
      ],
      "teach": "",
@@ -193,14 +233,24 @@
      "q": "Atropine for B?",
      "options": [
       {
-       "t": "0.02 mg/kg = 0.2 mg IV (max single dose 0.5 mg)",
+       "t": "0.02 mg/kg = 0.2 mg IV (max single 0.5 mg)",
        "correct": true,
-       "why": ""
+       "why": "PALS."
       },
       {
-       "t": "1 mg",
+       "t": "1 mg IV, repeat to 3 mg",
        "correct": false,
-       "why": "Adult dose."
+       "why": "The adult dose."
+      },
+      {
+       "t": "0.2 mg/kg = 2 mg IV (max single 3 mg)",
+       "correct": false,
+       "why": "Ten times."
+      },
+      {
+       "t": "0.01 mg/kg = 0.1 mg IV (max single 1 mg)",
+       "correct": false,
+       "why": "Confused with the epinephrine dose."
       }
      ],
      "teach": "",
@@ -243,14 +293,24 @@
      "q": "First line without IV access?",
      "options": [
       {
-       "t": "Midazolam IM 5 mg (13 to 40 kg), single dose",
+       "t": "Midazolam IM 5 mg (13 to 40 kg), once",
        "correct": true,
-       "why": "AES 2016. Intranasal or buccal midazolam and rectal diazepam are other options."
+       "why": "RAMPART; 10 mg above 40 kg."
       },
       {
-       "t": "Wait for IV access",
+       "t": "Midazolam IM 10 mg (above 13 kg), once",
        "correct": false,
-       "why": "Do not delay."
+       "why": "10 mg is for above 40 kg."
+      },
+      {
+       "t": "Lorazepam IM 4 mg, once",
+       "correct": false,
+       "why": "Slow, erratic IM absorption."
+      },
+      {
+       "t": "Diazepam IM 10 mg, once",
+       "correct": false,
+       "why": "Erratic IM absorption; rectal or IV used instead."
       }
      ],
      "teach": "",
@@ -261,14 +321,24 @@
      "q": "IV placed, still seizing 5 minutes later. Lorazepam dose?",
      "options": [
       {
-       "t": "0.1 mg/kg = 2.5 mg IV (max 4 mg), may repeat once",
+       "t": "0.1 mg/kg = 2.5 mg IV (max 4 mg), repeat once",
        "correct": true,
        "why": ""
       },
       {
-       "t": "4 mg because that is the max",
+       "t": "4 mg IV, because that is the maximum dose",
        "correct": false,
-       "why": "Dose by weight."
+       "why": "The cap, not the dose; 0.1 mg/kg here."
+      },
+      {
+       "t": "0.05 mg/kg = 1.25 mg IV, repeat every 5 min",
+       "correct": false,
+       "why": "Underdosed; limited repeats."
+      },
+      {
+       "t": "0.2 mg/kg = 5 mg IV, max 8 mg",
+       "correct": false,
+       "why": "Above the max."
       }
      ],
      "teach": "",
@@ -279,24 +349,29 @@
      "q": "Still seizing at 20 minutes. Second line options (ESETT: similar efficacy)?",
      "options": [
       {
-       "t": "Levetiracetam 60 mg/kg (1,500 mg, max 4,500 mg)",
+       "t": "Levetiracetam 60 mg/kg (1,500 mg, max 4,500)",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Fosphenytoin 20 mg PE/kg (500 mg PE, max 1,500 mg PE)",
-       "correct": true,
-       "why": "Dosed in phenytoin equivalents."
-      },
-      {
-       "t": "Valproate 40 mg/kg (1,000 mg, max 3,000 mg), avoiding it in suspected mitochondrial or liver disease",
+       "t": "Fosphenytoin 20 mg PE/kg (500 mg PE, max 1,500)",
        "correct": true,
        "why": ""
       },
       {
-       "t": "A third benzodiazepine dose",
+       "t": "Valproate 40 mg/kg (1,000 mg, max 3,000)",
+       "correct": true,
+       "why": "Avoid in mitochondrial or liver disease."
+      },
+      {
+       "t": "A third dose of benzodiazepine",
        "correct": false,
-       "why": "Benzodiazepines lose effect as seizures continue."
+       "why": "Move to second line after two doses."
+      },
+      {
+       "t": "Levetiracetam 20 mg/kg (500 mg)",
+       "correct": false,
+       "why": "Underdosed for status (ESETT used 60)."
       }
      ],
      "teach": "",
@@ -350,14 +425,24 @@
      "q": "Insulin plan?",
      "options": [
       {
-       "t": "0.05 to 0.1 units/kg/h IV (1.5 to 3 units/h), no bolus, started after the first hour of fluids",
+       "t": "0.05 to 0.1 units/kg/h, no bolus, after hour 1",
        "correct": true,
-       "why": "ISPAD 2022."
+       "why": "1.5 to 3 units/h; start after the first hour of fluids (ISPAD)."
       },
       {
-       "t": "0.1 units/kg bolus then 0.1 units/kg/h",
+       "t": "0.1 units/kg bolus, then 0.1 units/kg/h",
        "correct": false,
-       "why": "No bolus in children."
+       "why": "Boluses raise cerebral edema risk in children."
+      },
+      {
+       "t": "0.14 units/kg/h, no bolus, start at once",
+       "correct": false,
+       "why": "An adult no bolus rate; start after initial fluids."
+      },
+      {
+       "t": "1 unit/kg/h IV, no bolus, after hour 1",
+       "correct": false,
+       "why": "Ten times."
       }
      ],
      "teach": "",
@@ -368,14 +453,24 @@
      "q": "What emergency do you prepare for?",
      "options": [
       {
-       "t": "Cerebral edema: mannitol 0.5 to 1 g/kg over 10 to 15 minutes or 3% saline 2.5 to 5 mL/kg at the bedside",
+       "t": "Cerebral edema: mannitol or 3% saline ready",
        "correct": true,
-       "why": "Warning signs: headache, falling heart rate, rising BP, altered mental status."
+       "why": "Mannitol 0.5 to 1 g/kg or 3% 2.5 to 5 mL/kg."
       },
       {
-       "t": "None",
+       "t": "Hypoglycemia: D50 at the bedside",
        "correct": false,
-       "why": "The main cause of DKA death in children."
+       "why": "Glucose is watched, but cerebral edema is the killer."
+      },
+      {
+       "t": "Hyperkalemia: calcium at the bedside",
+       "correct": false,
+       "why": "Potassium falls with insulin."
+      },
+      {
+       "t": "Anaphylaxis to insulin",
+       "correct": false,
+       "why": "Rare."
       }
      ],
      "teach": "",
@@ -386,14 +481,24 @@
      "q": "How do pediatric and adult potassium cutoffs differ?",
      "options": [
       {
-       "t": "Adults: hold insulin until K is 3.5 or more (2024 consensus). Children: replace potassium first if low; many protocols use 3.3; follow St. Mary's",
+       "t": "Adult: K 3.5+; child: per protocol (often 3.3)",
        "correct": true,
-       "why": ""
+       "why": "Follow St. Mary's pediatric protocol."
       },
       {
-       "t": "They are identical",
+       "t": "They are identical: 3.5 in both",
        "correct": false,
-       "why": "Know both."
+       "why": "Pediatric protocols differ."
+      },
+      {
+       "t": "Children: start insulin at any potassium",
+       "correct": false,
+       "why": "Low K must be replaced first."
+      },
+      {
+       "t": "Adults: K 3.3+; child: K 4.0+",
+       "correct": false,
+       "why": "Not the cutoffs."
       }
      ],
      "teach": "",
@@ -443,12 +548,22 @@
       {
        "t": "Ketamine 1 to 2 mg/kg (12 to 24 mg)",
        "correct": true,
-       "why": "Many protocols avoid etomidate in septic shock (adrenal suppression)."
+       "why": "Preserves blood pressure."
       },
       {
-       "t": "Propofol 3 mg/kg",
+       "t": "Propofol 3 mg/kg IV (36 mg total)",
        "correct": false,
-       "why": "Hypotension."
+       "why": "Drops BP in shock."
+      },
+      {
+       "t": "Etomidate 3 mg/kg IV (36 mg total)",
+       "correct": false,
+       "why": "Ten times (usual 0.3 mg/kg); also debated in sepsis."
+      },
+      {
+       "t": "Ketamine 10 mg/kg IV (120 mg total)",
+       "correct": false,
+       "why": "Ten times."
       }
      ],
      "teach": "",
@@ -464,9 +579,19 @@
        "why": ""
       },
       {
-       "t": "Succinylcholine in a child with suspected muscular dystrophy",
+       "t": "Succinylcholine with suspected dystrophy",
        "correct": false,
        "why": "Hyperkalemic arrest risk."
+      },
+      {
+       "t": "Rocuronium 0.1 mg/kg (1.2 mg)",
+       "correct": false,
+       "why": "Ten times too low."
+      },
+      {
+       "t": "Vecuronium 0.01 mg/kg (0.12 mg)",
+       "correct": false,
+       "why": "A priming dose only."
       }
      ],
      "teach": "",
@@ -509,14 +634,24 @@
      "q": "What is this?",
      "options": [
       {
-       "t": "Iatrogenic opioid and benzodiazepine withdrawal (expected after 5 or more days of infusions)",
+       "t": "Opioid and benzodiazepine withdrawal",
        "correct": true,
-       "why": "Score with WAT-1."
+       "why": "Iatrogenic; expected after 5 or more days of infusions."
       },
       {
-       "t": "New infection only",
+       "t": "A new infection; start antibiotics",
        "correct": false,
-       "why": "Consider it, but the pattern fits withdrawal."
+       "why": "Pattern fits withdrawal; check the WAT 1 score."
+      },
+      {
+       "t": "Serotonin syndrome from fentanyl",
+       "correct": false,
+       "why": "Withdrawal pattern after stopping infusions."
+      },
+      {
+       "t": "ICU delirium; give haloperidol",
+       "correct": false,
+       "why": "Treat withdrawal first."
       }
      ],
      "teach": "",
@@ -527,14 +662,24 @@
      "q": "What is the pharmacist role?",
      "options": [
       {
-       "t": "Write a wean plan, often with enteral methadone and lorazepam, and taper with scores",
+       "t": "Wean plan (methadone, lorazepam), taper by scores",
        "correct": true,
-       "why": ""
+       "why": "WAT 1 guided."
       },
       {
        "t": "Stop everything at once",
        "correct": false,
-       "why": "Causes withdrawal."
+       "why": "Causes this."
+      },
+      {
+       "t": "Restart the fentanyl infusion at full rate",
+       "correct": false,
+       "why": "Not a plan."
+      },
+      {
+       "t": "Clonidine alone, no taper",
+       "correct": false,
+       "why": "An adjunct only."
       }
      ],
      "teach": "",
@@ -577,14 +722,24 @@
      "q": "Maintenance fluid rate by Holliday Segar (4/2/1)?",
      "options": [
       {
-       "t": "60 mL/h: 40 for the first 10 kg + 20 for the next 10 kg",
+       "t": "60 mL/h: 40 for first 10 kg + 20 for next 10",
        "correct": true,
-       "why": ""
+       "why": "4/2/1 rule."
       },
       {
-       "t": "20 mL/h",
+       "t": "80 mL/h: 4 mL/kg/h for all 20 kg",
        "correct": false,
-       "why": "Recheck the rule."
+       "why": "4 mL/kg/h applies to the first 10 kg only."
+      },
+      {
+       "t": "50 mL/h: 40 for first 10 kg + 10 for next 10",
+       "correct": false,
+       "why": "2 mL/kg/h for kg 11 to 20."
+      },
+      {
+       "t": "20 mL/h: 1 mL/kg/h for all 20 kg",
+       "correct": false,
+       "why": "1 mL/kg/h applies beyond 20 kg."
       }
      ],
      "teach": "",
@@ -595,14 +750,24 @@
      "q": "Which fluid does AAP 2018 recommend for most hospitalized children?",
      "options": [
       {
-       "t": "Isotonic fluid with appropriate potassium and dextrose",
+       "t": "Isotonic fluid with potassium and dextrose",
        "correct": true,
-       "why": "Hypotonic fluids raised hyponatremia."
+       "why": "AAP 2018: reduces hyponatremia."
       },
       {
-       "t": "Hypotonic 0.2% saline",
+       "t": "Hypotonic 0.2% saline with dextrose",
        "correct": false,
-       "why": "Not recommended for most."
+       "why": "Hyponatremia risk."
+      },
+      {
+       "t": "Hypotonic 0.45% saline for all ages",
+       "correct": false,
+       "why": "AAP 2018 recommends isotonic."
+      },
+      {
+       "t": "D5W alone with no sodium",
+       "correct": false,
+       "why": "Severe hyponatremia."
       }
      ],
      "teach": "",
@@ -613,14 +778,24 @@
      "q": "Acetaminophen and ibuprofen doses for 20 kg?",
      "options": [
       {
-       "t": "Acetaminophen 300 mg every 6 hours (15 mg/kg); ibuprofen 200 mg every 6 to 8 hours (10 mg/kg)",
+       "t": "APAP 300 mg q6h; ibuprofen 200 mg q6 to 8h",
        "correct": true,
-       "why": "Ibuprofen from 6 months of age."
+       "why": "15 mg/kg and 10 mg/kg."
       },
       {
-       "t": "Acetaminophen 1,000 mg",
+       "t": "APAP 200 mg q6h; ibuprofen 300 mg q6 to 8h",
        "correct": false,
-       "why": "Adult dose."
+       "why": "Doses swapped."
+      },
+      {
+       "t": "APAP 600 mg q6h; ibuprofen 400 mg q6 to 8h",
+       "correct": false,
+       "why": "Double."
+      },
+      {
+       "t": "APAP 1,000 mg q6h; ibuprofen 600 mg q6h",
+       "correct": false,
+       "why": "Adult doses."
       }
      ],
      "teach": "",
@@ -665,12 +840,22 @@
       {
        "t": "Octreotide",
        "correct": true,
-       "why": "Blocks insulin release from the pancreas."
+       "why": "Blocks insulin release."
+      },
+      {
+       "t": "Glucagon",
+       "correct": false,
+       "why": "Raises glucose briefly; can provoke more insulin release."
       },
       {
        "t": "Naloxone",
        "correct": false,
        "why": "Opioids."
+      },
+      {
+       "t": "Flumazenil",
+       "correct": false,
+       "why": "Benzodiazepines."
       }
      ],
      "teach": "",
@@ -686,9 +871,19 @@
        "why": ""
       },
       {
-       "t": "No one",
+       "t": "The drug manufacturer hotline",
        "correct": false,
-       "why": ""
+       "why": "Poison Control first."
+      },
+      {
+       "t": "FDA MedWatch",
+       "correct": false,
+       "why": "For reporting, not treatment."
+      },
+      {
+       "t": "ISMP error reporting",
+       "correct": false,
+       "why": "Not a treatment line."
       }
      ],
      "teach": "",

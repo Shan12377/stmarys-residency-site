@@ -20,12 +20,22 @@
       {
        "t": "Not yet: BP must be below 185/110 first",
        "correct": true,
-       "why": "Treat the BP, then give the lytic."
+       "why": "AHA/ASA 2026."
       },
       {
-       "t": "Yes, BP does not matter",
+       "t": "Not yet: BP must be below 180/105 first",
        "correct": false,
-       "why": "High BP raises bleeding risk."
+       "why": "180/105 is the limit after thrombolysis, for 24 hours."
+      },
+      {
+       "t": "Not yet: BP must be below 140/90 first",
+       "correct": false,
+       "why": "Too strict; delays treatment."
+      },
+      {
+       "t": "Yes: BP limits apply only to alteplase",
+       "correct": false,
+       "why": "Same limit for tenecteplase."
       }
      ],
      "teach": "",
@@ -36,24 +46,29 @@
      "q": "Which BP drugs fit?",
      "options": [
       {
-       "t": "Labetalol 10 to 20 mg IV over 1 to 2 minutes (may repeat once)",
+       "t": "Labetalol 10 to 20 mg IV over 1 to 2 min, may repeat",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Nicardipine infusion 5 mg/h, titrate by 2.5 mg/h every 5 to 15 minutes (max 15 mg/h)",
+       "t": "Nicardipine 5 mg/h, up 2.5 mg/h every 5 to 15 min",
+       "correct": true,
+       "why": "Max 15 mg/h."
+      },
+      {
+       "t": "Clevidipine 1 to 2 mg/h, titrate to max 21 mg/h",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Clevidipine 1 to 2 mg/h, titrate (max 21 mg/h)",
-       "correct": true,
-       "why": ""
-      },
-      {
-       "t": "Sublingual nifedipine",
+       "t": "Nifedipine 10 mg sublingual, may repeat once",
        "correct": false,
-       "why": "Uncontrolled drops in BP."
+       "why": "Unpredictable, sudden drops; avoid."
+      },
+      {
+       "t": "Hydralazine 20 mg IV every 20 min as first line",
+       "correct": false,
+       "why": "Not a listed first line agent; unpredictable."
       }
      ],
      "teach": "",
@@ -65,14 +80,24 @@
      "q": "Why check glucose before thrombolysis?",
      "options": [
       {
-       "t": "Low glucose (below 50) can mimic a stroke",
+       "t": "Glucose below 50 can mimic a stroke",
        "correct": true,
-       "why": "Treat it and reassess."
+       "why": "Correct it first; above 400 also mimics."
       },
       {
-       "t": "It does not matter",
+       "t": "Glucose above 140 forbids thrombolysis",
        "correct": false,
-       "why": "A classic mimic."
+       "why": "Hyperglycemia is treated, not a contraindication."
+      },
+      {
+       "t": "Glucose sets the thrombolytic dose",
+       "correct": false,
+       "why": "Dose is by weight."
+      },
+      {
+       "t": "Glucose must be below 180 to treat",
+       "correct": false,
+       "why": "Not a gate."
       }
      ],
      "teach": "",
@@ -120,14 +145,24 @@
      "q": "What is the stroke dose?",
      "options": [
       {
-       "t": "0.25 mg/kg IV bolus over 5 seconds, max 25 mg: 20.5 mg",
+       "t": "0.25 mg/kg bolus, max 25 mg: 20.5 mg",
        "correct": true,
-       "why": "Many sites use a weight band chart; follow it."
+       "why": "Over 5 seconds."
       },
       {
-       "t": "0.5 mg/kg up to 50 mg (cardiac dose)",
+       "t": "0.5 mg/kg bolus, max 50 mg: 41 mg",
        "correct": false,
-       "why": "The STEMI dose is double. A classic, dangerous mix up."
+       "why": "The STEMI (cardiac) dose."
+      },
+      {
+       "t": "0.4 mg/kg bolus, max 40 mg: 32.8 mg",
+       "correct": false,
+       "why": "Studied in EXTEND IA TNK part 2; no benefit over 0.25."
+      },
+      {
+       "t": "0.9 mg/kg, max 90 mg: 73.8 mg",
+       "correct": false,
+       "why": "The alteplase dose."
       }
      ],
      "teach": "",
@@ -138,14 +173,24 @@
      "q": "Tenecteplase or alteplase per the 2026 guideline?",
      "options": [
       {
-       "t": "Either is endorsed in the 4.5 hour window",
+       "t": "Either agent, within the 4.5 hour window",
        "correct": true,
-       "why": "Tenecteplase is a single bolus, which reduces mixing and infusion errors."
+       "why": "AHA/ASA 2026."
       },
       {
-       "t": "Only alteplase",
+       "t": "Alteplase only; tenecteplase is off label",
        "correct": false,
-       "why": "Outdated."
+       "why": "Guideline endorses either."
+      },
+      {
+       "t": "Tenecteplase only after 3 hours",
+       "correct": false,
+       "why": "Either agent in 0 to 4.5 hours."
+      },
+      {
+       "t": "Tenecteplase only with an LVO",
+       "correct": false,
+       "why": "Either agent for eligible patients."
       }
      ],
      "teach": "",
@@ -156,14 +201,24 @@
      "q": "What safety steps do you take when preparing it?",
      "options": [
       {
-       "t": "Independent double check of drug (tenecteplase vs alteplase) and dose, and waste the excess so only the stroke dose is in the syringe",
+       "t": "Double check drug and dose; waste the excess",
        "correct": true,
-       "why": "Look alike packaging and the 50 mg vial are known risks."
+       "why": "Tenecteplase and alteplase names look alike."
       },
       {
-       "t": "Flush with D5W",
+       "t": "Reconstitute with D5W and shake well",
        "correct": false,
-       "why": "Tenecteplase can precipitate with dextrose; use normal saline."
+       "why": "Use the supplied diluent; swirl gently."
+      },
+      {
+       "t": "Draw up the full 50 mg vial to save time",
+       "correct": false,
+       "why": "Overdose risk; waste the excess."
+      },
+      {
+       "t": "Give over 1 minute, followed by an infusion",
+       "correct": false,
+       "why": "That is alteplase; tenecteplase is one bolus."
       }
      ],
      "teach": "",
@@ -216,14 +271,24 @@
      "q": "What are the total, bolus and infusion amounts?",
      "options": [
       {
-       "t": "Total 63 mg (0.9 mg/kg); bolus 6.3 mg over 1 minute; 56.7 mg over 60 minutes",
+       "t": "63 mg total; 6.3 mg bolus; 56.7 mg over 60 min",
        "correct": true,
-       "why": "Max total 90 mg."
+       "why": "0.9 mg/kg, 10% bolus over 1 minute."
       },
       {
-       "t": "Total 90 mg for everyone",
+       "t": "90 mg total; 9 mg bolus; 81 mg over 60 min",
        "correct": false,
-       "why": "90 mg is the cap, not the dose."
+       "why": "90 mg is the max, for 100 kg or more."
+      },
+      {
+       "t": "63 mg total; 15 mg bolus; 48 mg over 60 min",
+       "correct": false,
+       "why": "A 15 mg bolus is the STEMI regimen."
+      },
+      {
+       "t": "70 mg total; 7 mg bolus; 63 mg over 60 min",
+       "correct": false,
+       "why": "Uses 1 mg/kg."
       }
      ],
      "teach": "",
@@ -234,14 +299,24 @@
      "q": "What happens to the extra drug in the vial?",
      "options": [
       {
-       "t": "Remove and waste the excess before hanging the bag so the patient cannot get more than the calculated dose",
+       "t": "Remove and waste it before hanging the bag",
        "correct": true,
-       "why": "Overdose risk if the whole vial is infused."
+       "why": "Prevents giving more than the calculated dose."
       },
       {
-       "t": "Infuse it all",
+       "t": "Infuse the vial remainder after the dose",
        "correct": false,
        "why": "Overdose."
+      },
+      {
+       "t": "Return the vial to the stroke box",
+       "correct": false,
+       "why": "Reconstituted; must be wasted."
+      },
+      {
+       "t": "Save it for a repeat bolus at 24 hours",
+       "correct": false,
+       "why": "No repeat dosing."
       }
      ],
      "teach": "",
@@ -291,7 +366,7 @@
       {
        "t": "Apixaban taken 3 hours ago",
        "correct": true,
-       "why": "Recent DOAC dose: bleeding risk."
+       "why": "DOAC within 48 hours."
       },
       {
        "t": "Platelets 72,000",
@@ -301,17 +376,22 @@
       {
        "t": "INR 2.4 on warfarin",
        "correct": true,
-       "why": "Above 1.7."
+       "why": "INR above 1.7."
       },
       {
-       "t": "Mild, nondisabling symptoms that do not affect daily activities",
+       "t": "Mild, nondisabling symptoms",
        "correct": true,
-       "why": "Not recommended for mild nondisabling stroke."
+       "why": "PRISMS, ARAMIS: no benefit."
       },
       {
-       "t": "Last known well 2 hours ago, BP 170/90, no anticoagulant, disabling deficit",
+       "t": "LKW 2 h, BP 170/90, disabling deficit",
        "correct": false,
-       "why": "This is a candidate."
+       "why": "A candidate."
+      },
+      {
+       "t": "Glucose 220 that is being treated",
+       "correct": false,
+       "why": "Not a contraindication."
       }
      ],
      "teach": "",
@@ -323,14 +403,24 @@
      "q": "A patient woke up with symptoms (unknown onset). Is thrombolysis ever possible?",
      "options": [
       {
-       "t": "Yes, in selected patients with advanced imaging (for example DWI FLAIR or perfusion mismatch), up to about 9 hours",
+       "t": "Yes, with advanced imaging, up to about 9 h",
        "correct": true,
-       "why": "2026 guideline."
+       "why": "DWI FLAIR or perfusion mismatch (2026 guideline)."
       },
       {
-       "t": "Never",
+       "t": "Yes, if it is less than 24 hours since bedtime",
        "correct": false,
-       "why": "Imaging can select patients."
+       "why": "Needs imaging selection; 24 h is a thrombectomy window."
+      },
+      {
+       "t": "No; unknown onset is always excluded",
+       "correct": false,
+       "why": "Imaging selected patients may be treated."
+      },
+      {
+       "t": "Yes, if NIHSS is above 25",
+       "correct": false,
+       "why": "Severity does not define eligibility here."
       }
      ],
      "teach": "",
@@ -380,14 +470,24 @@
      "q": "What is happening and why?",
      "options": [
       {
-       "t": "Orolingual angioedema; plasmin raises bradykinin and ACE inhibitors block its breakdown",
+       "t": "Orolingual angioedema: more bradykinin",
        "correct": true,
-       "why": ""
+       "why": "Plasmin raises bradykinin; ACE inhibitors block its breakdown."
       },
       {
-       "t": "Allergic reaction to saline",
+       "t": "A histamine allergy to the alteplase",
        "correct": false,
-       "why": "No."
+       "why": "Mostly bradykinin, not histamine."
+      },
+      {
+       "t": "An allergy to the saline diluent",
+       "correct": false,
+       "why": "Not plausible."
+      },
+      {
+       "t": "Hemorrhage into the tongue",
+       "correct": false,
+       "why": "Swelling is angioedema."
       }
      ],
      "teach": "",
@@ -398,14 +498,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Stop the infusion; methylprednisolone, diphenhydramine and famotidine; epinephrine if worsening; icatibant or C1 esterase inhibitor may be considered; protect the airway",
+       "t": "Stop it; steroid, H1 and H2 blockers; epi if worse",
        "correct": true,
-       "why": ""
+       "why": "Icatibant or C1 esterase inhibitor may be considered; protect the airway."
       },
       {
-       "t": "Continue and observe",
+       "t": "Continue the infusion; give diphenhydramine",
        "correct": false,
-       "why": "Airway risk."
+       "why": "Stop the infusion."
+      },
+      {
+       "t": "Stop it and give FFP and cryoprecipitate",
+       "correct": false,
+       "why": "For bleeding, not angioedema."
+      },
+      {
+       "t": "Stop it and give tranexamic acid 1 g IV",
+       "correct": false,
+       "why": "For bleeding, not angioedema."
       }
      ],
      "teach": "",
@@ -448,14 +558,24 @@
      "q": "What is wrong?",
      "options": [
       {
-       "t": "No antithrombotics for 24 hours after thrombolysis (unless specifically indicated), usually until a repeat scan",
+       "t": "No antithrombotics for 24 h after thrombolysis",
        "correct": true,
-       "why": "Bleeding risk."
+       "why": "Usually until a repeat scan."
       },
       {
-       "t": "Nothing",
+       "t": "Aspirin is fine; only hold enoxaparin",
        "correct": false,
-       "why": "Wrong timing."
+       "why": "Both wait 24 hours."
+      },
+      {
+       "t": "Enoxaparin is fine; only hold aspirin",
+       "correct": false,
+       "why": "Both wait 24 hours."
+      },
+      {
+       "t": "Aspirin dose should be 81 mg, not 325",
+       "correct": false,
+       "why": "The timing is the problem."
       }
      ],
      "teach": "",
@@ -468,12 +588,22 @@
       {
        "t": "Below 180/105",
        "correct": true,
-       "why": "Intensive lowering below 140 is not recommended (2026)."
+       "why": "For 24 hours after thrombolysis."
       },
       {
-       "t": "Below 120/80",
+       "t": "Below 185/110",
        "correct": false,
-       "why": "Too low."
+       "why": "The gate before thrombolysis."
+      },
+      {
+       "t": "Below 140/90",
+       "correct": false,
+       "why": "Not the post thrombolysis goal."
+      },
+      {
+       "t": "Below 220/120",
+       "correct": false,
+       "why": "The permissive goal without thrombolysis."
       }
      ],
      "teach": "",
@@ -521,14 +651,24 @@
      "q": "What antiplatelet plan fits?",
      "options": [
       {
-       "t": "Aspirin plus clopidogrel for 21 days (clopidogrel 300 to 600 mg load, then 75 mg; aspirin load then 81 mg), then one antiplatelet",
+       "t": "Aspirin + clopidogrel 21 days, then one agent",
        "correct": true,
-       "why": "2026 update allows NIHSS up to 5 and starts within 72 hours."
+       "why": "Clopidogrel 300 to 600 mg load, then 75 mg (CHANCE, POINT)."
       },
       {
-       "t": "Aspirin plus clopidogrel for a year",
+       "t": "Aspirin + clopidogrel for 12 months",
        "correct": false,
-       "why": "Long DAPT raises bleeding."
+       "why": "12 months is an ACS duration; more bleeding."
+      },
+      {
+       "t": "Aspirin + clopidogrel for 90 days",
+       "correct": false,
+       "why": "POINT used 90 days; most benefit was early, bleeding later."
+      },
+      {
+       "t": "Apixaban 5 mg BID for secondary prevention",
+       "correct": false,
+       "why": "No atrial fibrillation; antiplatelets are used."
       }
      ],
      "teach": "",
@@ -556,7 +696,12 @@
       {
        "t": "Routine seizure prophylaxis",
        "correct": false,
-       "why": "Not indicated."
+       "why": "Not recommended."
+      },
+      {
+       "t": "Glucose 80 to 110 in hospital",
+       "correct": false,
+       "why": "Too tight."
       }
      ],
      "teach": "",
@@ -600,14 +745,24 @@
      "q": "Reversal?",
      "options": [
       {
-       "t": "4F-PCC (commonly 50 units/kg, 4,000 units, or a fixed dose per protocol)",
+       "t": "4F-PCC per protocol (often 50 units/kg)",
        "correct": true,
-       "why": "Andexanet was withdrawn in December 2025."
+       "why": "Andexanet withdrawn from the US in 2025."
       },
       {
-       "t": "Vitamin K 10 mg",
+       "t": "Andexanet alfa, low dose regimen",
        "correct": false,
-       "why": "Only for warfarin."
+       "why": "Withdrawn from the US market."
+      },
+      {
+       "t": "Idarucizumab 5 g IV",
+       "correct": false,
+       "why": "Dabigatran only."
+      },
+      {
+       "t": "Vitamin K 10 mg IV slowly",
+       "correct": false,
+       "why": "Warfarin only."
       }
      ],
      "teach": "",
@@ -618,14 +773,24 @@
      "q": "BP target?",
      "options": [
       {
-       "t": "Target SBP about 140 (range 130 to 150); avoid below 130",
+       "t": "SBP about 140 mmHg",
        "correct": true,
-       "why": "ICH 2022."
+       "why": "AHA/ASA ICH 2022; avoid below 130."
       },
       {
-       "t": "Below 110",
+       "t": "SBP below 185 mmHg",
        "correct": false,
-       "why": "Too low."
+       "why": "The ischemic stroke pre thrombolysis gate."
+      },
+      {
+       "t": "SBP below 160 mmHg",
+       "correct": false,
+       "why": "Older, looser target."
+      },
+      {
+       "t": "SBP below 110 mmHg",
+       "correct": false,
+       "why": "Too low; harm below 130."
       }
      ],
      "teach": "",
@@ -636,14 +801,24 @@
      "q": "Should she get platelets if she also takes aspirin?",
      "options": [
       {
-       "t": "No, unless going to neurosurgery (PATCH: harm with transfusion)",
+       "t": "No, unless she goes to neurosurgery",
        "correct": true,
-       "why": ""
+       "why": "PATCH: harm with platelet transfusion."
       },
       {
-       "t": "Yes, always",
+       "t": "Yes, 1 unit for every aspirin user",
        "correct": false,
-       "why": "PATCH showed worse outcomes."
+       "why": "PATCH showed harm."
+      },
+      {
+       "t": "Yes, if platelets are below 150,000",
+       "correct": false,
+       "why": "Not the reason to transfuse."
+      },
+      {
+       "t": "Desmopressin 0.4 mcg/kg is required",
+       "correct": false,
+       "why": "May be considered; not required."
       }
      ],
      "teach": "",
@@ -703,14 +878,24 @@
      "q": "Patient A?",
      "options": [
       {
-       "t": "4F-PCC 25 units/kg (INR 2 to below 4): 2,250 units + vitamin K 10 mg IV",
+       "t": "4F-PCC 25 units/kg (2,250 units) + vitamin K 10 mg",
        "correct": true,
-       "why": ""
+       "why": "INR 2 to below 4; Kcentra label."
       },
       {
-       "t": "FFP only",
+       "t": "4F-PCC 35 units/kg (3,150 units) + vitamin K 10 mg",
        "correct": false,
-       "why": "4F-PCC works faster with less volume."
+       "why": "The INR 4 to 6 dose."
+      },
+      {
+       "t": "4F-PCC 50 units/kg (4,500 units) + vitamin K 10 mg",
+       "correct": false,
+       "why": "The INR above 6 dose (max 5,000 units)."
+      },
+      {
+       "t": "FFP 2 units with vitamin K 10 mg IV",
+       "correct": false,
+       "why": "Slower, volume heavy; PCC preferred."
       }
      ],
      "teach": "",
@@ -721,14 +906,24 @@
      "q": "Patient B: protamine dose?",
      "options": [
       {
-       "t": "About 42 mg (1 mg per 100 units given in the last 2 to 3 hours: 4,200 units), max 50 mg",
+       "t": "About 42 mg (1 mg per 100 units, last 2 to 3 h)",
        "correct": true,
-       "why": "Give slowly; watch for hypotension and anaphylaxis."
+       "why": "4,200 units; max 50 mg per dose."
       },
       {
-       "t": "100 mg",
+       "t": "About 14 mg (1 mg per 100 units, last hour)",
        "correct": false,
-       "why": "Over the 50 mg cap."
+       "why": "Counts only one hour."
+      },
+      {
+       "t": "About 84 mg (1 mg per 50 units, last 3 h)",
+       "correct": false,
+       "why": "Double; above the 50 mg max."
+      },
+      {
+       "t": "A fixed 100 mg dose for all patients",
+       "correct": false,
+       "why": "Above the max; excess protamine is an anticoagulant."
       }
      ],
      "teach": "",
@@ -779,14 +974,24 @@
      "q": "What is the regimen?",
      "options": [
       {
-       "t": "Nimodipine 60 mg orally or by tube every 4 hours for 21 days; 30 mg every 2 hours if BP drops",
+       "t": "60 mg every 4 h for 21 days",
        "correct": true,
-       "why": "SAH 2023."
+       "why": "30 mg every 2 hours if BP drops (nimodipine label)."
       },
       {
-       "t": "Nimodipine IV infusion",
+       "t": "60 mg every 6 h for 14 days",
        "correct": false,
-       "why": "Never IV."
+       "why": "Wrong interval and duration."
+      },
+      {
+       "t": "30 mg every 8 h for 21 days",
+       "correct": false,
+       "why": "Too low."
+      },
+      {
+       "t": "IV infusion for 21 days",
+       "correct": false,
+       "why": "No IV product in the US."
       }
      ],
      "teach": "",
@@ -797,14 +1002,24 @@
      "q": "What is the critical safety step?",
      "options": [
       {
-       "t": "Use an oral or enteral syringe that cannot connect to IV lines, labeled for oral use only",
+       "t": "Use an oral syringe that cannot connect to IV",
        "correct": true,
-       "why": "IV injection of capsule contents has caused deaths (boxed warning)."
+       "why": "Label it \"for oral use only\"; IV nimodipine deaths occurred."
       },
       {
-       "t": "A standard luer lock syringe is fine",
+       "t": "Use a luer lock syringe with a red cap",
        "correct": false,
-       "why": "Can connect to IV."
+       "why": "Luer lock fits IV lines."
+      },
+      {
+       "t": "Use a standard syringe and flush the line",
+       "correct": false,
+       "why": "Same risk."
+      },
+      {
+       "t": "Ask the nurse to give it slowly IV",
+       "correct": false,
+       "why": "Fatal."
       }
      ],
      "teach": "",

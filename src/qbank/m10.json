@@ -18,14 +18,24 @@
      "q": "What is the TXA regimen?",
      "options": [
       {
-       "t": "1 g IV over 10 minutes, then 1 g over 8 hours (CRASH-2)",
+       "t": "1 g IV over 10 min, then 1 g over 8 hours",
        "correct": true,
-       "why": ""
+       "why": "CRASH-2."
       },
       {
-       "t": "2 g IV push over 1 minute",
+       "t": "1 g IV over 10 min, then 1 g over 24 hours",
        "correct": false,
-       "why": "Some EMS systems give 2 g; the hospital regimen is CRASH-2 per protocol."
+       "why": "The second gram runs over 8 hours."
+      },
+      {
+       "t": "1 g IV over 10 min only, no infusion",
+       "correct": false,
+       "why": "Missing the 8 hour infusion (except some prehospital bolus protocols)."
+      },
+      {
+       "t": "10 mg/kg IV, then 1 mg/kg/h for 24 hours",
+       "correct": false,
+       "why": "A cardiac surgery style regimen."
       }
      ],
      "teach": "",
@@ -36,14 +46,24 @@
      "q": "What is the time limit and why?",
      "options": [
       {
-       "t": "Within 3 hours of injury; benefit is greatest early and later use may be harmful",
+       "t": "Within 3 hours of injury; later may harm",
        "correct": true,
-       "why": "CRASH-2 analysis by time to treatment."
+       "why": "CRASH-2: benefit greatest early; harm after 3 hours."
       },
       {
-       "t": "Any time in the first 24 hours",
+       "t": "Within 3 hours of hospital arrival",
        "correct": false,
-       "why": "Late TXA was associated with more bleeding deaths."
+       "why": "The clock starts at injury, not arrival."
+      },
+      {
+       "t": "Within 6 hours of injury",
+       "correct": false,
+       "why": "Bleeding deaths rose when started after 3 hours."
+      },
+      {
+       "t": "Within 24 hours if still bleeding",
+       "correct": false,
+       "why": "Late use may harm."
       }
      ],
      "teach": "",
@@ -54,14 +74,24 @@
      "q": "What do you ask EMS first?",
      "options": [
       {
-       "t": "The exact injury time and whether any TXA was already given",
+       "t": "Injury time and any TXA given",
        "correct": true,
-       "why": "Prevents double dosing and late dosing."
+       "why": "Prevents a late start or a duplicate dose."
       },
       {
-       "t": "Nothing",
+       "t": "The patient's home medication list",
        "correct": false,
-       "why": "Two key questions."
+       "why": "Useful later; TXA timing first."
+      },
+      {
+       "t": "Whether a tourniquet was placed",
+       "correct": false,
+       "why": "A surgical team question."
+      },
+      {
+       "t": "The blood alcohol level",
+       "correct": false,
+       "why": "Not a TXA decision."
       }
      ],
      "teach": "",
@@ -111,12 +141,22 @@
       {
        "t": "Citrate in stored blood binds calcium",
        "correct": true,
-       "why": "Low calcium weakens the heart and worsens clotting."
+       "why": ""
       },
       {
-       "t": "Kidney failure",
+       "t": "Kidney failure lowers calcium",
        "correct": false,
-       "why": "Not the main cause here."
+       "why": "Not acute in trauma."
+      },
+      {
+       "t": "Low albumin from bleeding",
+       "correct": false,
+       "why": "Ionized calcium is already corrected for albumin."
+      },
+      {
+       "t": "Magnesium excess from transfusion",
+       "correct": false,
+       "why": "Not the mechanism."
       }
      ],
      "teach": "",
@@ -127,14 +167,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Calcium chloride 1 g IV (central preferred) or calcium gluconate 3 g IV, guided by ionized calcium",
+       "t": "CaCl 1 g IV (central) or gluconate 3 g IV",
        "correct": true,
-       "why": "1 g chloride has about 3 times the calcium of 1 g gluconate."
+       "why": "Guided by ionized calcium."
       },
       {
-       "t": "Calcium gluconate 1 g once",
+       "t": "Calcium gluconate 1 g IV once only",
        "correct": false,
-       "why": "Usually too little in massive transfusion."
+       "why": "One third of the calcium in 1 g chloride; usually too little."
+      },
+      {
+       "t": "Calcium chloride 1 g IM",
+       "correct": false,
+       "why": "Never IM; tissue necrosis."
+      },
+      {
+       "t": "Wait until transfusion ends to treat",
+       "correct": false,
+       "why": "Low calcium worsens bleeding and shock now."
       }
      ],
      "teach": "",
@@ -145,14 +195,24 @@
      "q": "What ratio of products do trauma programs aim for?",
      "options": [
       {
-       "t": "Close to 1:1:1 plasma, platelets and red cells",
+       "t": "Near 1:1:1 plasma, platelets, RBC",
        "correct": true,
-       "why": "PROPPR and ACS TQIP."
+       "why": "PROPPR."
       },
       {
-       "t": "Red cells only",
+       "t": "1:1:2 plasma, platelets, red cells",
        "correct": false,
-       "why": "Worsens coagulopathy."
+       "why": "PROPPR arm with no mortality benefit at 24 h and 30 d."
+      },
+      {
+       "t": "Red cells only until labs return",
+       "correct": false,
+       "why": "Causes coagulopathy."
+      },
+      {
+       "t": "Crystalloid 2 L before any blood",
+       "correct": false,
+       "why": "Large crystalloid volumes worsen trauma outcomes."
       }
      ],
      "teach": "",
@@ -202,17 +262,27 @@
       {
        "t": "Ketamine 1 to 2 mg/kg (85 to 170 mg)",
        "correct": true,
-       "why": "Supports BP."
+       "why": ""
       },
       {
        "t": "Etomidate 0.3 mg/kg (about 25 mg)",
        "correct": true,
-       "why": "Hemodynamically neutral; single dose adrenal suppression."
+       "why": ""
       },
       {
-       "t": "Full dose propofol 2.5 mg/kg",
+       "t": "Propofol 2.5 mg/kg (about 210 mg)",
        "correct": false,
-       "why": "Hypotension in shock."
+       "why": "Drops blood pressure; at most a much reduced dose."
+      },
+      {
+       "t": "Midazolam 0.3 mg/kg (about 25 mg)",
+       "correct": false,
+       "why": "Slow onset and hypotension."
+      },
+      {
+       "t": "Ketamine 10 mg/kg (850 mg)",
+       "correct": false,
+       "why": "Ten times the dose."
       }
      ],
      "teach": "",
@@ -224,14 +294,24 @@
      "q": "Which paralytic, and how long does it last?",
      "options": [
       {
-       "t": "Rocuronium 1 to 1.2 mg/kg (85 to 100 mg); lasts 45 to 60 minutes",
+       "t": "Rocuronium 1 to 1.2 mg/kg; lasts 45 to 60 min",
        "correct": true,
-       "why": "Reversal: sugammadex 16 mg/kg for immediate reversal."
+       "why": ""
       },
       {
-       "t": "Succinylcholine in a patient with a crush injury from 3 days ago",
+       "t": "Rocuronium 0.6 mg/kg; lasts 5 to 10 min",
        "correct": false,
-       "why": "Hyperkalemia risk after 24 to 48 hours."
+       "why": "0.6 mg/kg is the non RSI dose; it lasts about 30 to 40 minutes."
+      },
+      {
+       "t": "Succinylcholine 1.5 mg/kg in a 3 day old crush",
+       "correct": false,
+       "why": "Hyperkalemia risk after 48 to 72 hours in crush and burns."
+      },
+      {
+       "t": "Vecuronium 0.01 mg/kg; lasts 5 to 10 min",
+       "correct": false,
+       "why": "A priming dose; not an RSI dose."
       }
      ],
      "teach": "",
@@ -242,14 +322,24 @@
      "q": "What must start right after the tube is in?",
      "options": [
       {
-       "t": "Analgesia and sedation (for example fentanyl, then propofol or dexmedetomidine as BP allows)",
+       "t": "Analgesia and sedation, as BP allows",
        "correct": true,
-       "why": "Etomidate wears off in minutes while rocuronium lasts an hour: awareness under paralysis."
+       "why": "Rocuronium outlasts the induction drug: awake paralysis risk."
       },
       {
        "t": "Nothing until the patient moves",
        "correct": false,
-       "why": "A paralyzed patient cannot move."
+       "why": "Paralysis hides awareness."
+      },
+      {
+       "t": "A second rocuronium dose now",
+       "correct": false,
+       "why": "Paralysis without sedation."
+      },
+      {
+       "t": "Haloperidol 5 mg IV for agitation",
+       "correct": false,
+       "why": "Not sedation for intubation."
       }
      ],
      "teach": "",
@@ -292,14 +382,24 @@
      "q": "What is your first job?",
      "options": [
       {
-       "t": "Identify the exact anticoagulant and the time of the last dose",
+       "t": "Identify the anticoagulant and last dose time",
        "correct": true,
-       "why": "Reversal depends on both."
+       "why": ""
       },
       {
-       "t": "Order vitamin K for everyone",
+       "t": "Give vitamin K 10 mg IV to every patient",
        "correct": false,
-       "why": "Only works for warfarin."
+       "why": "Only warfarin."
+      },
+      {
+       "t": "Give protamine 50 mg IV empirically",
+       "correct": false,
+       "why": "Only heparins."
+      },
+      {
+       "t": "Order an anti Xa level and wait",
+       "correct": false,
+       "why": "Do not delay reversal planning."
       }
      ],
      "teach": "",
@@ -310,14 +410,24 @@
      "q": "She takes rivaroxaban, last dose 4 hours ago. Reversal?",
      "options": [
       {
-       "t": "4F-PCC per protocol (commonly 50 units/kg or a fixed dose)",
+       "t": "4F-PCC per protocol",
        "correct": true,
-       "why": "Andexanet is no longer available in the US."
+       "why": "Often 50 units/kg or a fixed dose; andexanet withdrawn from the US in 2025."
       },
       {
-       "t": "Protamine",
+       "t": "Protamine 1 mg per 100 units",
        "correct": false,
        "why": "Heparin only."
+      },
+      {
+       "t": "Idarucizumab 5 g IV push",
+       "correct": false,
+       "why": "Dabigatran only."
+      },
+      {
+       "t": "Vitamin K 10 mg IV slowly",
+       "correct": false,
+       "why": "Warfarin only."
       }
      ],
      "teach": "",
@@ -364,17 +474,27 @@
       {
        "t": "Mannitol 0.25 to 1 g/kg IV (20 to 80 g)",
        "correct": true,
-       "why": "Watch volume status and serum osmolality."
+       "why": ""
       },
       {
-       "t": "Hypertonic saline: 3% 250 mL, or 23.4% 30 mL through a central line only",
+       "t": "3% saline 250 mL, or 23.4% 30 mL central only",
        "correct": true,
-       "why": "23.4% is ISMP high alert; never peripheral."
+       "why": ""
       },
       {
-       "t": "Dexamethasone 10 mg IV",
+       "t": "Dexamethasone 10 mg IV every 6 hours",
        "correct": false,
-       "why": "Steroids are not recommended in TBI (CRASH trial)."
+       "why": "CRASH: steroids increased death in TBI."
+      },
+      {
+       "t": "23.4% saline 30 mL through a peripheral IV",
+       "correct": false,
+       "why": "Central line only."
+      },
+      {
+       "t": "Mannitol 2 g/kg IV (160 g)",
+       "correct": false,
+       "why": "Above the usual range."
       }
      ],
      "teach": "",
@@ -386,14 +506,24 @@
      "q": "Seizure prophylaxis in severe TBI?",
      "options": [
       {
-       "t": "For 7 days (phenytoin per BTF; levetiracetam is widely used)",
+       "t": "For the first 7 days",
        "correct": true,
-       "why": "Check St. Mary's choice."
+       "why": "Brain Trauma Foundation 4th edition: phenytoin; levetiracetam widely used."
       },
       {
-       "t": "Lifelong",
+       "t": "For 30 days after discharge",
        "correct": false,
-       "why": "Early prophylaxis only."
+       "why": "Prophylaxis does not prevent late seizures."
+      },
+      {
+       "t": "For life after any severe TBI",
+       "correct": false,
+       "why": "Not supported."
+      },
+      {
+       "t": "Not used in severe TBI",
+       "correct": false,
+       "why": "Recommended for early seizures."
       }
      ],
      "teach": "",
@@ -404,14 +534,24 @@
      "q": "TXA in TBI?",
      "options": [
       {
-       "t": "CRASH-3: benefit in mild to moderate TBI when given within 3 hours",
+       "t": "CRASH-3: helps mild to moderate TBI within 3 h",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Never",
+       "t": "CRASH-3: helps severe TBI at any time",
        "correct": false,
-       "why": "CRASH-3 supports early use in selected patients."
+       "why": "No clear benefit in severe TBI."
+      },
+      {
+       "t": "CRASH-3: helps all TBI within 8 hours",
+       "correct": false,
+       "why": "Benefit within 3 hours."
+      },
+      {
+       "t": "CRASH-3: TXA raised seizures and deaths",
+       "correct": false,
+       "why": "No increase in vascular events or seizures."
       }
      ],
      "teach": "",
@@ -464,14 +604,24 @@
      "q": "First antibiotic and dose?",
      "options": [
       {
-       "t": "Cefazolin 3 g IV (120 kg or more) as soon as possible, within 1 hour",
+       "t": "Cefazolin 3 g IV within 1 hour",
        "correct": true,
-       "why": ""
+       "why": "120 kg or more."
       },
       {
-       "t": "Cefazolin 1 g",
+       "t": "Cefazolin 2 g IV within 1 hour",
        "correct": false,
-       "why": "Underdosed for weight."
+       "why": "The dose under 120 kg."
+      },
+      {
+       "t": "Cefazolin 1 g IV within 1 hour",
+       "correct": false,
+       "why": "Underdosed."
+      },
+      {
+       "t": "Vancomycin 1 g IV within 2 hours",
+       "correct": false,
+       "why": "Not first line; weight based if used."
       }
      ],
      "teach": "",
@@ -482,19 +632,29 @@
      "q": "What else for type III?",
      "options": [
       {
-       "t": "Add gram negative coverage (for example ceftriaxone or gentamicin per protocol)",
+       "t": "Add gram negative coverage per protocol",
        "correct": true,
-       "why": ""
+       "why": "For example ceftriaxone or gentamicin."
       },
       {
-       "t": "Add penicillin for farm or soil contamination per protocol",
+       "t": "Add penicillin for soil contamination",
        "correct": true,
-       "why": "Clostridium coverage."
+       "why": "Clostridium; per protocol."
       },
       {
-       "t": "Nothing else",
+       "t": "Add vancomycin for every type III",
        "correct": false,
-       "why": "Type III needs more coverage."
+       "why": "Only with MRSA risk."
+      },
+      {
+       "t": "Add metronidazole for every type III",
+       "correct": false,
+       "why": "Not routine."
+      },
+      {
+       "t": "Add fluconazole for soil exposure",
+       "correct": false,
+       "why": "Not routine."
       }
      ],
      "teach": "",
@@ -548,14 +708,24 @@
        "why": ""
       },
       {
-       "t": "Tetanus immune globulin 250 units IM, because the history is unknown and the wound is dirty",
+       "t": "Tetanus immune globulin 250 units IM",
        "correct": true,
-       "why": "CDC."
+       "why": "Unknown history and a dirty wound."
+      },
+      {
+       "t": "Tetanus immune globulin 3,000 units IM",
+       "correct": false,
+       "why": "A treatment dose for clinical tetanus."
+      },
+      {
+       "t": "Tetanus immune globulin in the same syringe as Tdap",
+       "correct": false,
+       "why": "Separate syringes and sites."
       },
       {
        "t": "Nothing if he feels fine",
        "correct": false,
-       "why": "Tetanus can be fatal."
+       "why": "Tetanus has a long incubation."
       }
      ],
      "teach": "",
@@ -567,14 +737,24 @@
      "q": "Clean minor wound, fully vaccinated, last dose 7 years ago. Vaccine?",
      "options": [
       {
-       "t": "No: for clean minor wounds, a booster is due only if more than 10 years",
+       "t": "No; booster only if over 10 years for clean wounds",
        "correct": true,
-       "why": "For dirty wounds, more than 5 years."
+       "why": "CDC."
       },
       {
-       "t": "Yes, always",
+       "t": "Yes; booster if over 5 years for any wound",
        "correct": false,
-       "why": "Not needed here."
+       "why": "5 years applies to dirty wounds."
+      },
+      {
+       "t": "Yes; plus tetanus immune globulin",
+       "correct": false,
+       "why": "TIG only for unknown or fewer than 3 doses with dirty wounds."
+      },
+      {
+       "t": "Yes; every ER visit needs a booster",
+       "correct": false,
+       "why": "Not needed."
       }
      ],
      "teach": "",
@@ -617,14 +797,24 @@
      "q": "VTE prophylaxis?",
      "options": [
       {
-       "t": "Enoxaparin (commonly 30 mg every 12 hours or 40 mg daily, adjusted by weight and anti Xa per protocol) once bleeding risk allows, often within 24 to 48 hours",
+       "t": "Enoxaparin per protocol once bleeding allows",
        "correct": true,
-       "why": "Trauma patients have high clot risk."
+       "why": "Often 30 mg q12h or 40 mg daily, adjusted by weight and anti Xa."
       },
       {
-       "t": "Aspirin alone",
+       "t": "Warfarin to INR 2 to 3, starting today",
        "correct": false,
-       "why": "Not the trauma standard for this risk."
+       "why": "Slow, hard to reverse; not trauma prophylaxis."
+      },
+      {
+       "t": "Hold all prophylaxis for 7 days",
+       "correct": false,
+       "why": "Delay raises VTE."
+      },
+      {
+       "t": "Heparin 5,000 units every 24 hours",
+       "correct": false,
+       "why": "Subtherapeutic interval."
       }
      ],
      "teach": "",
@@ -635,14 +825,24 @@
      "q": "Pain plan for rib fractures?",
      "options": [
       {
-       "t": "Multimodal: scheduled acetaminophen, regional blocks, NSAIDs if no bleeding or kidney concern, low dose ketamine, opioids as needed",
+       "t": "Multimodal: APAP, blocks, ketamine",
        "correct": true,
-       "why": "Better breathing and less opioid."
+       "why": "NSAIDs if safe; opioids as needed."
       },
       {
-       "t": "Opioids alone",
+       "t": "Opioids alone, around the clock",
        "correct": false,
-       "why": "Respiratory depression and pneumonia risk."
+       "why": "More respiratory compromise."
+      },
+      {
+       "t": "Scheduled NSAIDs alone, no opioids",
+       "correct": false,
+       "why": "Bleeding risk; often not enough."
+      },
+      {
+       "t": "Gabapentin alone as first line",
+       "correct": false,
+       "why": "An adjunct only."
       }
      ],
      "teach": "",
@@ -690,14 +890,24 @@
      "q": "Calculate the 24 hour fluid.",
      "options": [
       {
-       "t": "4 mL x 80 kg x 40 = 12,800 mL lactated Ringer's over 24 hours",
+       "t": "4 x 80 x 40 = 12,800 mL LR in 24 h",
        "correct": true,
-       "why": "Parkland."
+       "why": "Parkland; ABA now suggests starting at 2 to 4 mL/kg/%TBSA."
       },
       {
-       "t": "1,280 mL",
+       "t": "2 x 80 x 40 = 6,400 mL LR in 24 h",
        "correct": false,
-       "why": "Check the math."
+       "why": "The lower ABA start; Parkland uses 4."
+      },
+      {
+       "t": "4 x 80 x 40 = 1,280 mL LR in 24 h",
+       "correct": false,
+       "why": "Decimal error."
+      },
+      {
+       "t": "4 x 80 x 40 = 12,800 mL NS in 8 h",
+       "correct": false,
+       "why": "Wrong fluid and time."
       }
      ],
      "teach": "",
@@ -708,14 +918,24 @@
      "q": "How much in the first 8 hours, and from when?",
      "options": [
       {
-       "t": "Half (6,400 mL) in the first 8 hours from the time of the burn, so 6,400 mL over the next 6 hours",
+       "t": "6,400 mL over the next 6 hours",
        "correct": true,
-       "why": "The clock starts at the burn, not arrival."
+       "why": "Half by hour 8 after the burn; 2 hours have passed."
       },
       {
        "t": "6,400 mL over 8 hours from arrival",
        "correct": false,
-       "why": "Two hours are already gone."
+       "why": "Clock starts at the burn."
+      },
+      {
+       "t": "3,200 mL over the next 8 hours",
+       "correct": false,
+       "why": "Half of the total goes in the first 8 hours from the burn."
+      },
+      {
+       "t": "12,800 mL over the next 8 hours",
+       "correct": false,
+       "why": "Only half."
       }
      ],
      "teach": "",
@@ -758,14 +978,24 @@
      "q": "First?",
      "options": [
       {
-       "t": "GSW patient: TXA, RSI drugs, calcium for transfusion",
+       "t": "GSW: TXA, RSI drugs, calcium",
        "correct": true,
-       "why": "Hemorrhagic shock."
+       "why": ""
       },
       {
-       "t": "CIWA question",
+       "t": "The late cefazolin first",
+       "correct": false,
+       "why": "Second."
+      },
+      {
+       "t": "The CIWA question first",
        "correct": false,
        "why": "Last."
+      },
+      {
+       "t": "Whichever call came in first",
+       "correct": false,
+       "why": "Triage by harm."
       }
      ],
      "teach": "",
@@ -778,12 +1008,22 @@
       {
        "t": "Get the late cefazolin given",
        "correct": true,
-       "why": "Delays raise infection risk."
+       "why": ""
       },
       {
-       "t": "CIWA",
+       "t": "Answer the CIWA question",
        "correct": false,
-       "why": ""
+       "why": "Last."
+      },
+      {
+       "t": "Write the trauma code note",
+       "correct": false,
+       "why": "After care."
+      },
+      {
+       "t": "Restock the trauma bay",
+       "correct": false,
+       "why": "Later."
       }
      ],
      "teach": "",
@@ -799,9 +1039,19 @@
        "why": "Prevents Wernicke encephalopathy."
       },
       {
-       "t": "Nothing",
+       "t": "Folic acid",
        "correct": false,
-       "why": ""
+       "why": "Given, but not the step before glucose."
+      },
+      {
+       "t": "Magnesium",
+       "correct": false,
+       "why": "Often replaced, but thiamine first."
+      },
+      {
+       "t": "Phenobarbital",
+       "correct": false,
+       "why": "Treats withdrawal, not glucose timing."
       }
      ],
      "teach": "",

@@ -20,14 +20,24 @@
      "q": "Before any antibiotic, what do you do about the magnesium?",
      "options": [
       {
-       "t": "Check reflexes, breathing and a serum magnesium level now; ask the team to lower the rate (label: 1 g/h maintenance in severe renal impairment or oliguria, max 20 g per 48 h)",
+       "t": "Check reflexes, RR and Mg level; lower the rate",
        "correct": true,
-       "why": "Low urine output means magnesium is building up."
+       "why": "Label: renal impairment maintenance 1 g/h; hold if UO below 100 mL per 4 h."
       },
       {
-       "t": "Nothing, magnesium does not depend on the kidneys",
+       "t": "Continue 2 g/h; UO above 15 mL/h is enough",
        "correct": false,
-       "why": "Magnesium is cleared by the kidneys."
+       "why": "Label requires 100 mL per 4 hours (25 mL/h)."
+      },
+      {
+       "t": "Stop magnesium and give calcium gluconate 1 g",
+       "correct": false,
+       "why": "Calcium is for toxicity signs, which are not described yet."
+      },
+      {
+       "t": "Raise to 3 g/h now that fever is present",
+       "correct": false,
+       "why": "Accumulation risk with falling kidney function."
       }
      ],
      "teach": "",
@@ -38,12 +48,22 @@
      "q": "Antibiotics for intraamniotic infection?",
      "options": [
       {
-       "t": "Ampicillin 2 g IV every 6 hours plus gentamicin",
+       "t": "Ampicillin 2 g IV q6h plus gentamicin",
        "correct": true,
-       "why": "ACOG CO 712."
+       "why": "ACOG."
       },
       {
-       "t": "Vancomycin alone",
+       "t": "Ampicillin 2 g IV q4h plus gentamicin",
+       "correct": false,
+       "why": "Every 4 hours is the meningitis interval."
+      },
+      {
+       "t": "Cefazolin 2 g IV q8h plus gentamicin",
+       "correct": false,
+       "why": "The alternative for mild penicillin allergy; she has none."
+      },
+      {
+       "t": "Vancomycin 1 g IV q12h alone",
        "correct": false,
        "why": "Misses gram negatives."
       }
@@ -56,14 +76,24 @@
      "q": "How do falling kidney function and magnesium change your gentamicin thinking?",
      "options": [
       {
-       "t": "Kidney function is changing, so avoid assuming normal clearance: use levels and dose by kinetics; and know magnesium plus aminoglycosides both cause neuromuscular blockade",
+       "t": "Use levels, not normal clearance; watch Mg synergy",
        "correct": true,
-       "why": "Gentamicin label warns about neuromuscular blockade with other blocking drugs. Watch breathing closely."
+       "why": "Magnesium plus aminoglycosides both block the neuromuscular junction."
       },
       {
-       "t": "Give 7 mg/kg by the Hartford nomogram",
+       "t": "Hartford 7 mg/kg; SCr 1.3 is still normal",
        "correct": false,
-       "why": "Pregnancy and unstable kidney function are Hartford exclusions."
+       "why": "Rising SCr and low UO mean clearance is falling."
+      },
+      {
+       "t": "Gentamicin 5 mg/kg q24h; no levels needed",
+       "correct": false,
+       "why": "Changing kidneys need levels."
+      },
+      {
+       "t": "Double the gentamicin to overcome fever",
+       "correct": false,
+       "why": "Raises toxicity."
       }
      ],
      "teach": "",
@@ -125,14 +155,24 @@
      "q": "Vancomycin first dose?",
      "options": [
       {
-       "t": "Load 20 to 35 mg/kg actual weight (for example 2,000 mg), not reduced for kidneys; then choose maintenance by kidneys and levels",
+       "t": "Load 20 to 35 mg/kg (about 2,000 mg), full",
        "correct": true,
-       "why": ""
+       "why": "Not reduced for kidneys; maintenance by kidneys and levels (Rybak 2020, max 3 g)."
       },
       {
-       "t": "1,000 mg because of the kidneys",
+       "t": "1,000 mg, reduced for CrCl 25",
        "correct": false,
-       "why": "Underdosed load."
+       "why": "Loads are not reduced for kidneys."
+      },
+      {
+       "t": "15 mg/kg (1,200 mg) every 12 hours",
+       "correct": false,
+       "why": "Maintenance style dosing; too frequent for CrCl 25."
+      },
+      {
+       "t": "3,500 mg (about 45 mg/kg) once",
+       "correct": false,
+       "why": "Above the 3 g max."
       }
      ],
      "teach": "",
@@ -143,14 +183,24 @@
      "q": "Cefepime?",
      "options": [
       {
-       "t": "Give the full first dose now, then adjust maintenance for CrCl 25 to avoid neurotoxicity",
+       "t": "Full first dose now; adjust maintenance",
        "correct": true,
-       "why": "FDA alert: neurotoxicity mostly with kidney impairment and no adjustment."
+       "why": "For CrCl 25, to avoid neurotoxicity."
       },
       {
-       "t": "2 g every 8 hours continued",
+       "t": "Continue 2 g q8h for the whole course",
        "correct": false,
-       "why": "Accumulates."
+       "why": "Accumulation and neurotoxicity risk."
+      },
+      {
+       "t": "Halve the first dose to 1 g now",
+       "correct": false,
+       "why": "First doses are not reduced."
+      },
+      {
+       "t": "Hold cefepime until CrCl improves",
+       "correct": false,
+       "why": "Never delay antibiotics in shock."
       }
      ],
      "teach": "",
@@ -161,24 +211,29 @@
      "q": "Other bundle items?",
      "options": [
       {
-       "t": "Hydrocortisone 200 mg/day (pressor 0.25 or more for over 4 hours)",
+       "t": "Hydrocortisone 200 mg/day",
+       "correct": true,
+       "why": "Norepinephrine 0.25 or more for over 4 hours."
+      },
+      {
+       "t": "Vasopressin added, not more norepinephrine",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Add vasopressin rather than raising norepinephrine",
+       "t": "Stress ulcer prophylaxis (shock)",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Stress ulcer prophylaxis is indicated (shock)",
-       "correct": true,
-       "why": ""
-      },
-      {
-       "t": "Tight glucose 80 to 110",
+       "t": "Tight glucose 80 to 110 mg/dL",
        "correct": false,
-       "why": "140 to 180."
+       "why": "Target 140 to 180."
+      },
+      {
+       "t": "Dexamethasone 6 mg daily for 10 days",
+       "correct": false,
+       "why": "The COVID 19 regimen."
       }
      ],
      "teach": "",
@@ -241,19 +296,24 @@
      "q": "Reversal and BP?",
      "options": [
       {
-       "t": "4F-PCC per protocol, SBP target about 140 (not below 130)",
+       "t": "4F-PCC; SBP about 140 (not below 130)",
        "correct": true,
-       "why": ""
+       "why": "ICH 2022; andexanet withdrawn from the US in 2025."
       },
       {
-       "t": "Vitamin K and SBP below 110",
+       "t": "Vitamin K 10 mg IV; SBP below 110",
        "correct": false,
-       "why": ""
+       "why": "Warfarin reversal; too low a BP target."
       },
       {
-       "t": "Andexanet",
+       "t": "Andexanet alfa; SBP below 160",
        "correct": false,
-       "why": "Withdrawn from the US market in 2025."
+       "why": "Withdrawn from the US market."
+      },
+      {
+       "t": "Idarucizumab 5 g; SBP about 140",
+       "correct": false,
+       "why": "Dabigatran only."
       }
      ],
      "teach": "",
@@ -264,14 +324,24 @@
      "q": "Looking back at her home dose, what do you notice?",
      "options": [
       {
-       "t": "She meets 3 of 3 apixaban reduction criteria (age 80+, weight 60 kg or less, SCr 1.5+), so her dose should have been 2.5 mg BID",
+       "t": "Should have been 2.5 mg BID (3 of 3 criteria)",
        "correct": true,
-       "why": "An overdose contributed to bleeding risk. Report it and fix it before any restart."
+       "why": "Age 80+, weight 60 kg or less, SCr 1.5+."
       },
       {
-       "t": "Her dose was correct",
+       "t": "Correct: only 2 of 3 criteria are met",
        "correct": false,
-       "why": "Check the criteria."
+       "why": "All three are met."
+      },
+      {
+       "t": "Should have been 2.5 mg daily",
+       "correct": false,
+       "why": "Not an AF dose."
+      },
+      {
+       "t": "Should have been stopped for SCr 1.6",
+       "correct": false,
+       "why": "Apixaban is still used; dose reduced."
       }
      ],
      "teach": "",
@@ -282,14 +352,24 @@
      "q": "When can VTE prophylaxis start?",
      "options": [
       {
-       "t": "Heparin or enoxaparin prophylaxis is reasonable 24 to 48 hours after the bleed is stable",
+       "t": "24 to 48 h after the bleed is stable",
        "correct": true,
-       "why": "ICH 2022."
+       "why": "Heparin or enoxaparin (ICH 2022)."
       },
       {
-       "t": "Never",
+       "t": "Never after any ICH, for life",
        "correct": false,
-       "why": "Immobile patients clot."
+       "why": "VTE risk is high; prophylaxis is reasonable."
+      },
+      {
+       "t": "Full dose apixaban on day 2",
+       "correct": false,
+       "why": "Treatment dose is a different decision."
+      },
+      {
+       "t": "Only after 14 days in hospital",
+       "correct": false,
+       "why": "Earlier is reasonable once stable."
       }
      ],
      "teach": "",
@@ -351,14 +431,24 @@
      "q": "Hyperkalemia plan?",
      "options": [
       {
-       "t": "Calcium first, then insulin and dextrose (consider 5 units with kidney injury), then remove potassium (binder, dialysis)",
+       "t": "Calcium, then insulin + dextrose, then removal",
        "correct": true,
-       "why": ""
+       "why": "Consider 5 units with kidney injury; binder, dialysis."
       },
       {
-       "t": "Calcium lowers potassium, so that is enough",
+       "t": "Calcium alone; it lowers the potassium",
        "correct": false,
-       "why": "Calcium only protects the heart."
+       "why": "Calcium stabilizes but does not lower K."
+      },
+      {
+       "t": "Binder alone; it works within minutes",
+       "correct": false,
+       "why": "Binders take hours."
+      },
+      {
+       "t": "Insulin 20 units IV with no dextrose",
+       "correct": false,
+       "why": "Hypoglycemia risk."
       }
      ],
      "teach": "",
@@ -369,14 +459,24 @@
      "q": "Paralytic for the reintubation?",
      "options": [
       {
-       "t": "Rocuronium; avoid succinylcholine (crush injury after 24 to 48 hours and K 6.8)",
+       "t": "Rocuronium; avoid succinylcholine",
        "correct": true,
-       "why": "Succinylcholine can cause a hyperkalemic arrest."
+       "why": "Crush injury after 24 to 48 hours and K 6.8."
       },
       {
-       "t": "Succinylcholine",
+       "t": "Succinylcholine 1.5 mg/kg",
        "correct": false,
-       "why": "Dangerous here."
+       "why": "Raises K further; arrest risk."
+      },
+      {
+       "t": "Succinylcholine at half dose",
+       "correct": false,
+       "why": "Still raises potassium."
+      },
+      {
+       "t": "Vecuronium 0.01 mg/kg",
+       "correct": false,
+       "why": "A priming dose only."
       }
      ],
      "teach": "",
@@ -387,14 +487,24 @@
      "q": "What about the gentamicin?",
      "options": [
       {
-       "t": "Rhabdomyolysis and falling urine output: ask whether a non nephrotoxic option covers the fracture, and check levels if it continues",
+       "t": "Ask for a non nephrotoxic option; levels if continued",
        "correct": true,
-       "why": "Stacked kidney risks."
+       "why": "Rhabdomyolysis and falling urine output."
       },
       {
-       "t": "Continue without change",
+       "t": "Continue the same gentamicin dose",
        "correct": false,
-       "why": ""
+       "why": "Nephrotoxicity risk."
+      },
+      {
+       "t": "Raise gentamicin for better bone penetration",
+       "correct": false,
+       "why": "Raises toxicity."
+      },
+      {
+       "t": "Stop all antibiotics for the fracture",
+       "correct": false,
+       "why": "Coverage is still needed."
       }
      ],
      "teach": "",
@@ -451,14 +561,24 @@
      "q": "Insulin first?",
      "options": [
       {
-       "t": "No: replace potassium to 3.5 or more before insulin (2024 consensus); replace magnesium too",
+       "t": "No: replace K to 3.5+, and Mg, first",
        "correct": true,
-       "why": ""
+       "why": "2024 consensus."
       },
       {
-       "t": "Yes",
+       "t": "Yes: start insulin with KCl in the fluids",
        "correct": false,
-       "why": ""
+       "why": "K below 3.5 risks arrhythmia with insulin."
+      },
+      {
+       "t": "Yes: K above 3.0 is enough to start",
+       "correct": false,
+       "why": "Threshold is 3.5."
+      },
+      {
+       "t": "Yes: give a 10 unit bolus first",
+       "correct": false,
+       "why": "No bolus, and K is too low."
       }
      ],
      "teach": "",
@@ -469,14 +589,24 @@
      "q": "What is the hidden danger in this order set?",
      "options": [
       {
-       "t": "QTc 510 with low K and low Mg, plus azithromycin and ondansetron (both prolong QT): torsades risk",
+       "t": "QTc 510, low K and Mg, plus QT drugs",
        "correct": true,
-       "why": "Fix electrolytes and consider a non QT prolonging plan."
+       "why": "Azithromycin and ondansetron prolong QT: torsades risk."
       },
       {
-       "t": "None",
+       "t": "Ceftriaxone with calcium containing fluids",
        "correct": false,
-       "why": ""
+       "why": "A neonatal concern, not adult."
+      },
+      {
+       "t": "Insulin drip with dextrose fluids",
+       "correct": false,
+       "why": "Standard DKA care."
+      },
+      {
+       "t": "Azithromycin and ceftriaxone duplication",
+       "correct": false,
+       "why": "Different coverage; not duplicates."
       }
      ],
      "teach": "",
@@ -487,14 +617,24 @@
      "q": "Which CAP option avoids adding QT risk?",
      "options": [
       {
-       "t": "Ceftriaxone plus doxycycline (the ATS/IDSA alternative when a macrolide should be avoided)",
+       "t": "Ceftriaxone plus doxycycline",
        "correct": true,
+       "why": "ATS/IDSA alternative when a macrolide should be avoided."
+      },
+      {
+       "t": "Levofloxacin 750 mg alone",
+       "correct": false,
        "why": "Fluoroquinolones also prolong QT."
       },
       {
-       "t": "Levofloxacin alone",
+       "t": "Ceftriaxone plus moxifloxacin",
        "correct": false,
-       "why": "Also prolongs QT."
+       "why": "QT prolonging and duplicate."
+      },
+      {
+       "t": "Ceftriaxone plus clarithromycin",
+       "correct": false,
+       "why": "Another QT prolonging macrolide."
       }
      ],
      "teach": "",
@@ -552,17 +692,27 @@
       {
        "t": "Enoxaparin",
        "correct": true,
-       "why": "Large molecule, minimal milk transfer, not orally absorbed by the infant."
+       "why": ""
       },
       {
        "t": "Warfarin",
        "correct": true,
-       "why": "Compatible per LactMed."
+       "why": ""
+      },
+      {
+       "t": "Unfractionated heparin",
+       "correct": true,
+       "why": "Not transferred into milk."
       },
       {
        "t": "Apixaban",
        "correct": false,
-       "why": "Labels advise against breastfeeding on DOACs (limited data)."
+       "why": "Limited data; avoid while breastfeeding (ASH)."
+      },
+      {
+       "t": "Rivaroxaban",
+       "correct": false,
+       "why": "Limited data; avoid while breastfeeding."
       }
      ],
      "teach": "",
@@ -576,12 +726,22 @@
       {
        "t": "Labetalol, nifedipine ER or enalapril",
        "correct": true,
-       "why": "The pregnancy ban on ACE inhibitors ends at delivery."
+       "why": "ACOG; enalapril is compatible with breastfeeding."
       },
       {
-       "t": "Lisinopril is contraindicated because she was pregnant",
+       "t": "Lisinopril is contraindicated after pregnancy",
        "correct": false,
-       "why": "Not after delivery; enalapril is the studied option."
+       "why": "ACE inhibitors are avoided in pregnancy, not postpartum."
+      },
+      {
+       "t": "Atenolol, preferred for breastfeeding",
+       "correct": false,
+       "why": "Concentrates in milk; less preferred."
+      },
+      {
+       "t": "Methyldopa, preferred postpartum",
+       "correct": false,
+       "why": "Linked to postpartum depression; not first choice postpartum."
       }
      ],
      "teach": "",
@@ -592,14 +752,24 @@
      "q": "And the codeine?",
      "options": [
       {
-       "t": "Avoid codeine (and tramadol) while breastfeeding; use scheduled acetaminophen and ibuprofen, short low dose oxycodone if needed",
+       "t": "Avoid codeine and tramadol",
        "correct": true,
-       "why": "FDA 2017."
+       "why": "Scheduled acetaminophen and ibuprofen; short low dose oxycodone if needed (FDA 2017)."
       },
       {
-       "t": "Fine",
+       "t": "Fine at standard doses for 7 days",
        "correct": false,
-       "why": ""
+       "why": "Ultrarapid metabolizers expose the infant to morphine."
+      },
+      {
+       "t": "Fine if the infant is over 1 week old",
+       "correct": false,
+       "why": "Risk at any age while breastfeeding."
+      },
+      {
+       "t": "Switch to tramadol 50 mg every 6 hours",
+       "correct": false,
+       "why": "Same FDA warning."
       }
      ],
      "teach": "",
@@ -663,14 +833,24 @@
      "q": "Can you give Kcentra (4F-PCC)?",
      "options": [
       {
-       "t": "No: Kcentra contains heparin and is contraindicated with known HIT",
+       "t": "No: Kcentra contains heparin; HIT contraindicates",
        "correct": true,
        "why": "Kcentra label."
       },
       {
-       "t": "Yes",
+       "t": "Yes: heparin content is too small to matter",
        "correct": false,
-       "why": "Check the contraindication."
+       "why": "Labeled contraindication."
+      },
+      {
+       "t": "Yes: HIT from 2023 is no longer relevant",
+       "correct": false,
+       "why": "Label lists known HIT; follow policy."
+      },
+      {
+       "t": "Yes: if given with vitamin K",
+       "correct": false,
+       "why": "Does not remove the heparin."
       }
      ],
      "teach": "",
@@ -681,14 +861,24 @@
      "q": "What do you recommend instead?",
      "options": [
       {
-       "t": "Vitamin K 10 mg IV plus plasma (FFP), with the team weighing volume, or a heparin free factor product if St. Mary's stocks one",
+       "t": "Vitamin K 10 mg IV plus plasma (FFP)",
        "correct": true,
-       "why": "Check what is on formulary."
+       "why": "Team weighs volume; or a heparin free factor product if stocked."
       },
       {
-       "t": "Nothing; wait for vitamin K",
+       "t": "Vitamin K 10 mg IV only; wait 24 hours",
        "correct": false,
-       "why": "Active bleed."
+       "why": "Too slow for a bleed."
+      },
+      {
+       "t": "Protamine 50 mg IV",
+       "correct": false,
+       "why": "Reverses heparin, not warfarin."
+      },
+      {
+       "t": "Andexanet alfa",
+       "correct": false,
+       "why": "Withdrawn, and not for warfarin."
       }
      ],
      "teach": "",
@@ -701,17 +891,27 @@
       {
        "t": "Heparin flushes and heparin coated catheters",
        "correct": true,
-       "why": "ASH 2018."
+       "why": ""
       },
       {
        "t": "Enoxaparin",
        "correct": true,
-       "why": "Cross reacts."
+       "why": "Cross reacts with HIT antibodies."
       },
       {
-       "t": "Nothing else",
-       "correct": false,
+       "t": "Heparin containing products like Kcentra",
+       "correct": true,
        "why": ""
+      },
+      {
+       "t": "Fondaparinux",
+       "correct": false,
+       "why": "Used as an HIT alternative; little cross reactivity."
+      },
+      {
+       "t": "Argatroban",
+       "correct": false,
+       "why": "An HIT treatment."
       }
      ],
      "teach": "",
@@ -768,19 +968,29 @@
      "q": "What are the leading causes?",
      "options": [
       {
-       "t": "Linezolid myelosuppression (usually after about 2 weeks)",
+       "t": "Linezolid myelosuppression (after ~2 weeks)",
        "correct": true,
        "why": ""
       },
       {
-       "t": "HIT is possible, but the timing (day 15) and another clear cause lower the 4Ts score",
+       "t": "HIT possible; timing and other cause lower 4Ts",
        "correct": true,
-       "why": "The 4Ts includes \"other causes.\""
+       "why": ""
       },
       {
-       "t": "Lab error only",
+       "t": "Sertraline induced thrombocytopenia",
        "correct": false,
-       "why": ""
+       "why": "Rare; not the leading cause."
+      },
+      {
+       "t": "Lab error only; no action",
+       "correct": false,
+       "why": "Recheck, but treat as real."
+      },
+      {
+       "t": "Pseudothrombocytopenia from EDTA",
+       "correct": false,
+       "why": "Possible but not a leading cause here."
       }
      ],
      "teach": "",
@@ -792,14 +1002,24 @@
      "q": "What else about linezolid and sertraline?",
      "options": [
       {
-       "t": "Serotonin syndrome risk: monitor and discuss",
+       "t": "Serotonin syndrome: monitor",
        "correct": true,
-       "why": ""
+       "why": "Linezolid is a weak MAO inhibitor; discuss with the team."
       },
       {
-       "t": "No interaction",
+       "t": "QT prolongation is the main concern",
        "correct": false,
-       "why": ""
+       "why": "Serotonin is the classic warning."
+      },
+      {
+       "t": "Linezolid lowers sertraline levels",
+       "correct": false,
+       "why": "Not the interaction."
+      },
+      {
+       "t": "No interaction between the two",
+       "correct": false,
+       "why": "FDA warning exists."
       }
      ],
      "teach": "",
@@ -810,14 +1030,24 @@
      "q": "Next step?",
      "options": [
       {
-       "t": "Calculate the 4Ts with the team, consider HIT testing if intermediate, and ask ID about an alternative to linezolid",
+       "t": "Score 4Ts, test if needed, ask ID",
        "correct": true,
-       "why": ""
+       "why": "HIT testing if intermediate; ask ID about an alternative to linezolid."
       },
       {
-       "t": "Transfuse platelets",
+       "t": "Transfuse platelets to above 150,000",
        "correct": false,
-       "why": "Not routine."
+       "why": "No bleeding; platelets can worsen HIT clots."
+      },
+      {
+       "t": "Start argatroban for all thrombocytopenia",
+       "correct": false,
+       "why": "Only if HIT is likely."
+      },
+      {
+       "t": "Stop heparin and do nothing else",
+       "correct": false,
+       "why": "Incomplete."
       }
      ],
      "teach": "",

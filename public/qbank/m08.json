@@ -18,19 +18,24 @@
      "q": "What drug and when?",
      "options": [
       {
-       "t": "Epinephrine 1 mg IV as soon as possible, then every 3 to 5 minutes",
+       "t": "Epinephrine 1 mg IV now, then every 3 to 5 min",
        "correct": true,
-       "why": "For nonshockable rhythms, early epinephrine (AHA 2025)."
+       "why": "Non shockable rhythm: give as soon as possible (AHA)."
       },
       {
-       "t": "Amiodarone 300 mg",
+       "t": "Epinephrine 1 mg IV after the second shock",
        "correct": false,
-       "why": "Amiodarone is for shockable rhythms."
+       "why": "That timing is for VF/pVT; asystole is not shocked."
       },
       {
-       "t": "Atropine 1 mg",
+       "t": "Atropine 1 mg IV every 3 to 5 min, max 3 mg",
        "correct": false,
-       "why": "Atropine is no longer in the arrest algorithm."
+       "why": "Removed from arrest algorithms in 2010; it is a bradycardia drug."
+      },
+      {
+       "t": "Vasopressin 40 units IV in place of epinephrine",
+       "correct": false,
+       "why": "Removed from the adult algorithm in 2015; no added benefit."
       }
      ],
      "teach": "",
@@ -41,24 +46,29 @@
      "q": "What is your job during the code?",
      "options": [
       {
-       "t": "Call out epinephrine timing (\"Epi due in one minute\")",
+       "t": "Call out epinephrine timing (\"Epi due in 1 minute\")",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Prepare the next doses and ask about reversible causes (H's and T's)",
+       "t": "Prepare the next doses; prompt the H's and T's",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Confirm weight and allergies, and help document drugs and times",
+       "t": "Confirm weight and allergies; help record drugs and times",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Run the code",
+       "t": "Run the code and assign compressor roles",
        "correct": false,
-       "why": "The code leader runs the code; you run the medications."
+       "why": "The code leader runs the code."
+      },
+      {
+       "t": "Decide when to stop resuscitation",
+       "correct": false,
+       "why": "A physician decision."
       }
      ],
      "teach": "",
@@ -107,14 +117,24 @@
      "q": "When does epinephrine go in for VF?",
      "options": [
       {
-       "t": "After the initial defibrillation attempts fail (commonly after the second shock), then every 3 to 5 minutes",
+       "t": "After the second shock, then every 3 to 5 min",
        "correct": true,
-       "why": "Shock first in shockable rhythms."
+       "why": "AHA: after initial defibrillation attempts fail."
       },
       {
-       "t": "Before the first shock",
+       "t": "Before the first shock, then every 3 to 5 min",
        "correct": false,
-       "why": "Defibrillation comes first."
+       "why": "Shock first in VF; that early timing is for non shockable rhythms."
+      },
+      {
+       "t": "After the third shock, with amiodarone 300 mg",
+       "correct": false,
+       "why": "The third shock is when amiodarone or lidocaine is added."
+      },
+      {
+       "t": "Only after 10 minutes of CPR with no ROSC",
+       "correct": false,
+       "why": "No such delay."
       }
      ],
      "teach": "",
@@ -125,19 +145,29 @@
      "q": "Still VF after the third shock. Which antiarrhythmic?",
      "options": [
       {
-       "t": "Amiodarone 300 mg IV/IO push, then 150 mg if needed",
+       "t": "Amiodarone 300 mg IV/IO push, then 150 mg",
        "correct": true,
-       "why": "AHA 2025."
+       "why": ""
       },
       {
        "t": "Lidocaine 1 to 1.5 mg/kg, then 0.5 to 0.75 mg/kg",
        "correct": true,
-       "why": "An accepted alternative."
+       "why": ""
       },
       {
-       "t": "Adenosine 6 mg",
+       "t": "Amiodarone 150 mg over 10 minutes, then 1 mg/min",
        "correct": false,
-       "why": "For stable SVT, not VF."
+       "why": "The stable VT and post ROSC dosing."
+      },
+      {
+       "t": "Procainamide 20 to 50 mg/min, max 17 mg/kg",
+       "correct": false,
+       "why": "For stable wide complex tachycardia, not arrest."
+      },
+      {
+       "t": "Adenosine 6 mg, then 12 mg",
+       "correct": false,
+       "why": "For stable SVT."
       }
      ],
      "teach": "",
@@ -149,14 +179,24 @@
      "q": "Are calcium, bicarbonate or magnesium routine in arrest?",
      "options": [
       {
-       "t": "No: only for specific causes (hyperkalemia, torsades, tricyclic overdose)",
+       "t": "No; only for specific causes",
        "correct": true,
-       "why": ""
+       "why": "Hyperkalemia, torsades, tricyclic overdose, known acidosis."
       },
       {
-       "t": "Yes, every code",
+       "t": "Yes, calcium chloride 1 g every code",
        "correct": false,
-       "why": "Not routine."
+       "why": "Routine calcium is not helpful (and may harm)."
+      },
+      {
+       "t": "Yes, bicarbonate 1 mEq/kg every 10 min",
+       "correct": false,
+       "why": "Routine bicarbonate is not recommended."
+      },
+      {
+       "t": "Yes, magnesium 2 g in every VF arrest",
+       "correct": false,
+       "why": "Only for torsades."
       }
      ],
      "teach": "",
@@ -199,7 +239,7 @@
      "q": "What do you have ready?",
      "options": [
       {
-       "t": "Calcium chloride 1 g IV (or calcium gluconate 3 g)",
+       "t": "Calcium chloride 1 g IV (or gluconate 3 g)",
        "correct": true,
        "why": ""
       },
@@ -209,14 +249,19 @@
        "why": ""
       },
       {
-       "t": "Sodium bicarbonate 50 mEq if acidotic",
+       "t": "Sodium bicarbonate 50 mEq IV if acidotic",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Amiodarone 300 mg",
+       "t": "Calcium gluconate 1 g as the full arrest dose",
        "correct": false,
-       "why": "Not for PEA from hyperkalemia."
+       "why": "Gluconate has a third of the calcium; 3 g matches 1 g chloride."
+      },
+      {
+       "t": "Sodium zirconium cyclosilicate 10 g by tube",
+       "correct": false,
+       "why": "Works over hours; not an arrest drug."
       }
      ],
      "teach": "",
@@ -261,14 +306,24 @@
      "q": "Which drug besides defibrillation?",
      "options": [
       {
-       "t": "Magnesium sulfate 1 to 2 g IV push (in arrest)",
+       "t": "Magnesium sulfate 1 to 2 g IV push",
        "correct": true,
-       "why": "Magnesium stabilizes the heart in torsades."
+       "why": "Torsades in arrest."
       },
       {
-       "t": "Procainamide",
+       "t": "Magnesium sulfate 4 to 6 g IV over 20 min",
        "correct": false,
-       "why": "Prolongs QT."
+       "why": "The eclampsia load."
+      },
+      {
+       "t": "Procainamide 20 to 50 mg/min IV",
+       "correct": false,
+       "why": "Prolongs QT further."
+      },
+      {
+       "t": "Amiodarone 300 mg IV push alone",
+       "correct": false,
+       "why": "Prolongs QT; magnesium is the drug for torsades."
       }
      ],
      "teach": "",
@@ -279,14 +334,24 @@
      "q": "After ROSC, what do you do with the med list?",
      "options": [
       {
-       "t": "Stop QT prolonging drugs, check and replace K and Mg, and use CredibleMeds to review the list",
+       "t": "Stop QT drugs; replace K and Mg; check CredibleMeds",
        "correct": true,
-       "why": ""
+       "why": "Keep K above 4 and Mg above 2 commonly."
       },
       {
-       "t": "Nothing",
+       "t": "Continue methadone; stop only ondansetron",
        "correct": false,
-       "why": "Find the cause."
+       "why": "Review both; methadone dose or alternative must be addressed."
+      },
+      {
+       "t": "Swap ondansetron for haloperidol for nausea",
+       "correct": false,
+       "why": "Also prolongs QT."
+      },
+      {
+       "t": "Switch ondansetron to droperidol for nausea",
+       "correct": false,
+       "why": "Droperidol carries a boxed QT warning."
       }
      ],
      "teach": "",
@@ -329,14 +394,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Ventilate (bag mask) and give naloxone 0.4 mg IV, repeating or increasing as needed (up to 2 mg); 4 mg intranasal if no IV",
+       "t": "Bag mask breaths and naloxone 0.4 mg IV",
        "correct": true,
-       "why": "Breathing support first; small IV doses avoid severe withdrawal in opioid dependent patients."
+       "why": "Repeat or increase to 2 mg; 4 mg intranasal if no IV."
       },
       {
-       "t": "Wait to see if they wake up",
+       "t": "Naloxone 2 mg IV only, no ventilation",
        "correct": false,
-       "why": "RR 4 is life threatening."
+       "why": "Ventilate first; large doses cause abrupt withdrawal."
+      },
+      {
+       "t": "Flumazenil 0.2 mg IV over 30 seconds",
+       "correct": false,
+       "why": "Reverses benzodiazepines, not opioids."
+      },
+      {
+       "t": "Sternal rub and a recheck in 15 minutes",
+       "correct": false,
+       "why": "RR 4 needs treatment now."
       }
      ],
      "teach": "",
@@ -347,14 +422,24 @@
      "q": "Why might naloxone wear off before the opioid?",
      "options": [
       {
-       "t": "Naloxone lasts about 30 to 90 minutes; many opioids last longer, so repeat doses or an infusion may be needed",
+       "t": "Naloxone lasts 30 to 90 min; opioids can last longer",
        "correct": true,
-       "why": "Keep monitoring after the patient wakes."
+       "why": "Repeat doses or an infusion may be needed."
       },
       {
-       "t": "It never wears off",
+       "t": "Naloxone lasts 12 to 24 hours like methadone",
        "correct": false,
-       "why": "It does."
+       "why": "Methadone is the long one."
+      },
+      {
+       "t": "Naloxone is cleared faster in kidney failure",
+       "correct": false,
+       "why": "Duration is short in everyone."
+      },
+      {
+       "t": "Naloxone is inactivated by the PCA opioid",
+       "correct": false,
+       "why": "Not the mechanism."
       }
      ],
      "teach": "",
@@ -397,14 +482,24 @@
      "q": "What is the antidote and dose?",
      "options": [
       {
-       "t": "Lipid emulsion 20%: 1.5 mL/kg (105 mL) bolus over 2 to 3 minutes, then 0.25 mL/kg/min",
+       "t": "Lipid 20%: 1.5 mL/kg bolus, then 0.25 mL/kg/min",
        "correct": true,
-       "why": "ASRA checklist."
+       "why": "105 mL over 2 to 3 minutes for 70 kg (ASRA)."
       },
       {
-       "t": "Naloxone",
+       "t": "Lipid 20%: 15 mL/kg bolus, then 2.5 mL/kg/min",
        "correct": false,
-       "why": "Not an opioid problem."
+       "why": "Ten times the dose."
+      },
+      {
+       "t": "Propofol 1 mg/kg IV for the seizure",
+       "correct": false,
+       "why": "Propofol is a lipid but too little and depresses the heart."
+      },
+      {
+       "t": "Naloxone 0.4 mg IV, repeated every 2 min",
+       "correct": false,
+       "why": "Not an opioid toxicity."
       }
      ],
      "teach": "",
@@ -417,12 +512,22 @@
       {
        "t": "Smaller doses: 1 mcg/kg or less",
        "correct": true,
-       "why": "ASRA: high dose epinephrine can worsen the outcome."
+       "why": "ASRA LAST checklist."
       },
       {
-       "t": "Double the usual dose",
+       "t": "Standard 1 mg every 3 to 5 minutes",
        "correct": false,
-       "why": "Opposite."
+       "why": "Large epinephrine doses worsen LAST outcomes."
+      },
+      {
+       "t": "Double: 2 mg every 3 to 5 minutes",
+       "correct": false,
+       "why": "Harmful."
+      },
+      {
+       "t": "Replace epinephrine with vasopressin",
+       "correct": false,
+       "why": "Vasopressin is not recommended in LAST."
       }
      ],
      "teach": "",
@@ -470,14 +575,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Sodium bicarbonate 1 to 2 mEq/kg IV, repeat to narrow the QRS",
+       "t": "Sodium bicarbonate 1 to 2 mEq/kg IV, repeat",
        "correct": true,
-       "why": "Sodium load plus alkalinization."
+       "why": "To narrow the QRS; aim pH 7.45 to 7.55."
       },
       {
-       "t": "Procainamide",
+       "t": "Procainamide 20 to 50 mg/min IV",
        "correct": false,
-       "why": "Worsens sodium channel block."
+       "why": "Class IA; worsens sodium channel block."
+      },
+      {
+       "t": "Physostigmine 1 to 2 mg IV slowly",
+       "correct": false,
+       "why": "Contraindicated in TCA overdose (seizures, asystole)."
+      },
+      {
+       "t": "Flumazenil 0.2 mg IV for co ingestion",
+       "correct": false,
+       "why": "Can trigger seizures in TCA overdose."
       }
      ],
      "teach": "",
@@ -520,14 +635,24 @@
      "q": "First drug?",
      "options": [
       {
-       "t": "Atropine 1 mg IV every 3 to 5 minutes, max 3 mg",
+       "t": "Atropine 1 mg IV every 3 to 5 min, max 3 mg",
        "correct": true,
-       "why": "AHA adult bradycardia."
+       "why": "AHA 2020."
       },
       {
-       "t": "Adenosine",
+       "t": "Atropine 0.5 mg IV every 3 to 5 min, max 3 mg",
        "correct": false,
-       "why": "Wrong rhythm."
+       "why": "The older dose before 2020."
+      },
+      {
+       "t": "Adenosine 6 mg rapid IV push",
+       "correct": false,
+       "why": "For SVT; slows the heart further."
+      },
+      {
+       "t": "Epinephrine 1 mg IV push every 3 min",
+       "correct": false,
+       "why": "The arrest dose."
       }
      ],
      "teach": "",
@@ -538,14 +663,24 @@
      "q": "No response. Next options?",
      "options": [
       {
-       "t": "Epinephrine infusion 2 to 10 mcg/min, dopamine 5 to 20 mcg/kg/min, or pacing",
+       "t": "Epinephrine 2 to 10 mcg/min, dopamine, or pacing",
        "correct": true,
-       "why": ""
+       "why": "Dopamine 5 to 20 mcg/kg/min."
       },
       {
-       "t": "Metoprolol",
+       "t": "Isoproterenol 20 mcg/min as first choice",
        "correct": false,
-       "why": "Slows it further."
+       "why": "Possible, but not the AHA first options."
+      },
+      {
+       "t": "Dopamine 1 to 3 mcg/kg/min \"renal dose\"",
+       "correct": false,
+       "why": "Too low; no renal benefit."
+      },
+      {
+       "t": "Atropine 1 mg more, above the 3 mg max",
+       "correct": false,
+       "why": "Beyond 3 mg adds no effect."
       }
      ],
      "teach": "",
@@ -588,14 +723,24 @@
      "q": "How is adenosine given?",
      "options": [
       {
-       "t": "Rapid IV push followed immediately by a saline flush",
+       "t": "Rapid IV push, then an immediate saline flush",
        "correct": true,
        "why": "Half life under 10 seconds."
       },
       {
-       "t": "Slow over 2 minutes",
+       "t": "Slow IV push over 1 to 2 minutes, no flush",
        "correct": false,
-       "why": "It would be destroyed before reaching the heart."
+       "why": "It breaks down before reaching the heart."
+      },
+      {
+       "t": "IV piggyback over 15 minutes",
+       "correct": false,
+       "why": "Never works this way."
+      },
+      {
+       "t": "Rapid push into the lower leg vein",
+       "correct": false,
+       "why": "Use a large proximal (antecubital) vein."
       }
      ],
      "teach": "",
@@ -608,12 +753,22 @@
       {
        "t": "3 mg first (instead of 6 mg)",
        "correct": true,
-       "why": "Also for heart transplant and dipyridamole or carbamazepine. Caffeine and theophylline blunt the effect."
+       "why": "Central line or on dipyridamole; heart transplant also lower."
       },
       {
-       "t": "12 mg first",
+       "t": "12 mg first (instead of 6 mg)",
        "correct": false,
-       "why": "Too much through a central line."
+       "why": "12 mg is the second peripheral dose."
+      },
+      {
+       "t": "6 mg first, same as peripheral",
+       "correct": false,
+       "why": "Central lines deliver it faster and stronger."
+      },
+      {
+       "t": "0.1 mg/kg first, max 6 mg",
+       "correct": false,
+       "why": "The pediatric dose."
       }
      ],
      "teach": "",
@@ -656,19 +811,24 @@
      "q": "First drug and route?",
      "options": [
       {
-       "t": "Epinephrine 0.5 mg IM (1 mg/mL) in the outer thigh, repeat every 5 to 15 minutes",
+       "t": "Epinephrine 0.5 mg IM (1 mg/mL), outer thigh",
        "correct": true,
-       "why": "Antihistamines and steroids are add ons, not first line."
+       "why": "Repeat every 5 to 15 minutes."
       },
       {
-       "t": "Diphenhydramine 50 mg IV first",
+       "t": "Diphenhydramine 50 mg IV as the first drug",
        "correct": false,
-       "why": "Does not treat airway or shock."
+       "why": "Antihistamines do not treat shock or airway swelling."
       },
       {
-       "t": "Epinephrine 1 mg IV push (cardiac arrest dose)",
+       "t": "Epinephrine 1 mg IV push (0.1 mg/mL)",
        "correct": false,
-       "why": "IV push 1 mg in a patient with a pulse can cause arrhythmia and severe hypertension."
+       "why": "The arrest dose; dangerous with a pulse."
+      },
+      {
+       "t": "Epinephrine 0.5 mg SC into the upper arm",
+       "correct": false,
+       "why": "SC is slower; IM thigh is preferred."
       }
      ],
      "teach": "",
@@ -679,14 +839,24 @@
      "q": "Not responding to IM doses. Next?",
      "options": [
       {
-       "t": "Epinephrine infusion and fluids, with the team",
+       "t": "Epinephrine infusion and IV fluids",
        "correct": true,
-       "why": ""
+       "why": "Refractory anaphylaxis, with the team."
       },
       {
-       "t": "More diphenhydramine",
+       "t": "More diphenhydramine 50 mg IV",
        "correct": false,
-       "why": "Not enough."
+       "why": "Does not treat shock."
+      },
+      {
+       "t": "Methylprednisolone 125 mg IV alone",
+       "correct": false,
+       "why": "Slow; does not treat shock."
+      },
+      {
+       "t": "Famotidine 20 mg IV and observe",
+       "correct": false,
+       "why": "An adjunct only."
       }
      ],
      "teach": "",
@@ -729,14 +899,24 @@
      "q": "What is the drug and dose?",
      "options": [
       {
-       "t": "Dantrolene 2.5 mg/kg IV, repeated until signs resolve",
+       "t": "Dantrolene 2.5 mg/kg IV, repeat until resolved",
        "correct": true,
        "why": "MHAUS."
       },
       {
-       "t": "Acetaminophen",
+       "t": "Dantrolene 1 mg/kg IV once, max 10 mg/kg",
        "correct": false,
-       "why": "Does not treat the cause."
+       "why": "1 mg/kg is too low a starting dose; repeat as needed."
+      },
+      {
+       "t": "Acetaminophen 1 g IV and cooling only",
+       "correct": false,
+       "why": "Does not stop the muscle reaction."
+      },
+      {
+       "t": "Bromocriptine 2.5 mg by tube",
+       "correct": false,
+       "why": "For neuroleptic malignant syndrome."
       }
      ],
      "teach": "",
@@ -747,14 +927,24 @@
      "q": "What pharmacist detail matters most?",
      "options": [
       {
-       "t": "Knowing where the MH cart is and which product you stock (Ryanodex reconstitutes much faster than Dantrium)",
+       "t": "Where the MH cart is and which product you stock",
        "correct": true,
-       "why": "Dantrium takes many vials and time."
+       "why": "Ryanodex reconstitutes much faster than Dantrium."
       },
       {
-       "t": "None",
+       "t": "That dantrolene must be refrigerated",
        "correct": false,
-       "why": "Speed saves lives."
+       "why": "Stored at room temperature."
+      },
+      {
+       "t": "That dantrolene needs a 0.2 micron filter",
+       "correct": false,
+       "why": "Not the key detail."
+      },
+      {
+       "t": "That dantrolene is only given IM",
+       "correct": false,
+       "why": "Given IV."
       }
      ],
      "teach": "",
@@ -802,24 +992,29 @@
      "q": "Which targets are common?",
      "options": [
       {
-       "t": "SBP at least 90 and MAP at least 65; norepinephrine usual first pressor",
+       "t": "SBP at least 90 and MAP at least 65",
        "correct": true,
        "why": ""
       },
       {
-       "t": "SpO2 about 92 to 98%, avoiding both low oxygen and too much",
+       "t": "SpO2 about 92 to 98%, avoiding hyperoxia",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Temperature control: keep below 37.5 °C with strict fever prevention",
+       "t": "Temperature control with fever prevention",
        "correct": true,
-       "why": "AHA 2023 after TTM2."
+       "why": "Keep below 37.5 °C."
       },
       {
-       "t": "Glucose 80 to 110",
+       "t": "SpO2 100% on FiO2 1.0 for 24 hours",
        "correct": false,
-       "why": "Tight control is not recommended."
+       "why": "Hyperoxia may harm the brain."
+      },
+      {
+       "t": "Glucose 80 to 110 mg/dL",
+       "correct": false,
+       "why": "Too tight; hypoglycemia risk."
       }
      ],
      "teach": "",
@@ -831,14 +1026,24 @@
      "q": "Amiodarone infusion after VF. Usual regimen?",
      "options": [
       {
-       "t": "1 mg/min for 6 hours, then 0.5 mg/min for 18 hours (after the 150 mg load if not already given)",
+       "t": "1 mg/min for 6 h, then 0.5 mg/min for 18 h",
        "correct": true,
-       "why": "Amiodarone label regimen."
+       "why": "After the 150 mg load if not already given."
       },
       {
-       "t": "10 mg/min",
+       "t": "0.5 mg/min for 6 h, then 1 mg/min for 18 h",
        "correct": false,
-       "why": "Far too much."
+       "why": "Reversed."
+      },
+      {
+       "t": "2 mg/min for 6 h, then 1 mg/min for 18 h",
+       "correct": false,
+       "why": "Double."
+      },
+      {
+       "t": "10 mg/min for 15 min, then 1 mg/min",
+       "correct": false,
+       "why": "Confuses the 150 mg over 10 min load rate."
       }
      ],
      "teach": "",

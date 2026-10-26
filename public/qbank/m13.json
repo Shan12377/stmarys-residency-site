@@ -28,19 +28,24 @@
        "why": ""
       },
       {
-       "t": "Concentrated potassium chloride and potassium phosphate injection",
+       "t": "Concentrated KCl and potassium phosphate injection",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Tranexamic acid injection (added in 2024)",
+       "t": "Tranexamic acid injection (added 2024)",
        "correct": true,
-       "why": "Mix ups with spinal anesthetic vials; intrathecal TXA is a potent neurotoxin."
+       "why": "Wrong route (intrathecal) errors."
       },
       {
-       "t": "Oral amoxicillin",
+       "t": "Oral amoxicillin suspension",
        "correct": false,
        "why": "Not high alert."
+      },
+      {
+       "t": "Ondansetron injection",
+       "correct": false,
+       "why": "Not on the list."
       }
      ],
      "teach": "",
@@ -52,14 +57,24 @@
      "q": "Which safeguards work best?",
      "options": [
       {
-       "t": "Standard concentrations matched to smart pump libraries, premixes, and removing concentrated electrolytes from units",
+       "t": "Smart pump libraries and premixes",
        "correct": true,
-       "why": "System fixes beat \"be careful.\""
+       "why": "Standard concentrations matched to pumps; remove concentrated electrolytes from units."
       },
       {
-       "t": "Telling staff to try harder",
+       "t": "Retraining staff after each error",
        "correct": false,
-       "why": "Weak."
+       "why": "Education alone is a weak fix (ISMP hierarchy)."
+      },
+      {
+       "t": "Warning stickers on high alert vials",
+       "correct": false,
+       "why": "Weak; people stop seeing them."
+      },
+      {
+       "t": "A new policy that staff must sign",
+       "correct": false,
+       "why": "Rules and policies are weak fixes."
       }
      ],
      "teach": "",
@@ -114,7 +129,7 @@
       {
        "t": "Include the indication on orders",
        "correct": true,
-       "why": "Celecoxib for pain vs citalopram for depression."
+       "why": ""
       },
       {
        "t": "Separate storage and barcode scanning",
@@ -122,9 +137,14 @@
        "why": ""
       },
       {
-       "t": "Storing them alphabetically side by side",
+       "t": "Store them alphabetically side by side",
        "correct": false,
-       "why": "Causes picking errors."
+       "why": "Promotes picking errors."
+      },
+      {
+       "t": "Use brand names only on orders",
+       "correct": false,
+       "why": "Brand names also look and sound alike (Celebrex vs Celexa)."
       }
      ],
      "teach": "",
@@ -168,24 +188,29 @@
      "q": "What is wrong?",
      "options": [
       {
-       "t": "MSO4 can be misread as magnesium sulfate: write morphine sulfate",
+       "t": "MSO4 reads as magnesium sulfate: write morphine",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Trailing zero (2.0) can be read as 20",
+       "t": "Trailing zero: 2.0 can be read as 20",
        "correct": true,
        "why": ""
       },
       {
-       "t": "\"U\" can be read as 0 or 4, and \"QD\" as QID",
+       "t": "\"U\" can read as 0 or 4; \"QD\" as QID",
        "correct": true,
-       "why": "Write \"units\" and \"daily.\""
+       "why": ""
       },
       {
-       "t": "Nothing",
+       "t": "\"PRN\" is on the Do Not Use list",
        "correct": false,
-       "why": ""
+       "why": "PRN is acceptable."
+      },
+      {
+       "t": "\"q4h\" must be written \"every 4 hours\"",
+       "correct": false,
+       "why": "Acceptable, though spelling out is safest."
       }
      ],
      "teach": "",
@@ -229,14 +254,24 @@
      "q": "What is the problem?",
      "options": [
       {
-       "t": "Oral methotrexate for RA is usually weekly; daily dosing has caused deaths",
+       "t": "RA methotrexate is weekly; daily has killed",
        "correct": true,
-       "why": "A classic ISMP best practice: default to weekly and require the indication."
+       "why": "ISMP."
       },
       {
-       "t": "Nothing",
+       "t": "15 mg is above the RA maximum of 7.5 mg",
        "correct": false,
-       "why": "Dangerous."
+       "why": "RA doses often reach 15 to 25 mg weekly."
+      },
+      {
+       "t": "Methotrexate needs folinic acid daily",
+       "correct": false,
+       "why": "Folic acid is given; the frequency is the danger."
+      },
+      {
+       "t": "Nothing; daily is fine for RA",
+       "correct": false,
+       "why": "Fatal errors."
       }
      ],
      "teach": "",
@@ -247,14 +282,24 @@
      "q": "What do you do?",
      "options": [
       {
-       "t": "Confirm with the patient and outpatient pharmacy, and enter it as weekly with the day of the week",
+       "t": "Confirm, then enter weekly with the day",
        "correct": true,
-       "why": ""
+       "why": "Check with the patient and outpatient pharmacy."
       },
       {
-       "t": "Verify as daily",
+       "t": "Verify as daily, as written at home",
        "correct": false,
-       "why": ""
+       "why": "Fatal risk."
+      },
+      {
+       "t": "Change to 2.5 mg daily to be safe",
+       "correct": false,
+       "why": "Still daily; confirm the real regimen."
+      },
+      {
+       "t": "Hold it and discharge without it",
+       "correct": false,
+       "why": "Clarify; do not drop the therapy."
       }
      ],
      "teach": "",
@@ -302,14 +347,24 @@
      "q": "What replaced the National Patient Safety Goals in January 2026?",
      "options": [
       {
-       "t": "14 National Performance Goals (existing requirements reorganized)",
+       "t": "14 National Performance Goals",
        "correct": true,
-       "why": "Saying this shows you are current."
+       "why": "Existing requirements reorganized (TJC, January 2026)."
       },
       {
        "t": "Nothing; NPSGs continue unchanged",
        "correct": false,
-       "why": "Outdated."
+       "why": "Replaced in January 2026."
+      },
+      {
+       "t": "A new set of 20 NPSGs for hospitals",
+       "correct": false,
+       "why": "Not the change."
+      },
+      {
+       "t": "CMS Conditions of Participation alone",
+       "correct": false,
+       "why": "TJC standards still apply."
       }
      ],
      "teach": "",
@@ -330,7 +385,7 @@
        "why": ""
       },
       {
-       "t": "Pharmacist review of orders, dispensing cabinet override review, and standardized concentrations",
+       "t": "Order review, override review, standard concentrations",
        "correct": true,
        "why": ""
       },
@@ -340,9 +395,14 @@
        "why": ""
       },
       {
-       "t": "Parking policy",
+       "t": "Hand hygiene compliance audits",
        "correct": false,
-       "why": ""
+       "why": "Infection prevention, not medication management."
+      },
+      {
+       "t": "Two patient identifiers before care",
+       "correct": false,
+       "why": "Patient identification goal."
       }
      ],
      "teach": "",
@@ -386,14 +446,24 @@
      "q": "What do you do?",
      "options": [
       {
-       "t": "Fix it, then report the near miss in St. Mary's reporting system",
+       "t": "Fix it, then report the near miss",
        "correct": true,
-       "why": "Reports find system causes (look alike names, two patients with similar names)."
+       "why": "In St. Mary's reporting system."
       },
       {
-       "t": "Fix it and say nothing",
+       "t": "Fix it and say nothing; no harm",
        "correct": false,
-       "why": "Lost lesson for the system."
+       "why": "Near misses reveal system gaps."
+      },
+      {
+       "t": "Report only if the dose reached the patient",
+       "correct": false,
+       "why": "Near misses are reported too."
+      },
+      {
+       "t": "Tell the nurse to report it instead",
+       "correct": false,
+       "why": "Your verification; you report it."
       }
      ],
      "teach": "",
@@ -404,14 +474,24 @@
      "q": "In a just culture, how is a human slip treated?",
      "options": [
       {
-       "t": "Console the person and fix the system; coach at risk behavior; act on reckless behavior",
+       "t": "Console the person; fix the system",
        "correct": true,
-       "why": ""
+       "why": "Just culture: console a slip, coach at risk behavior, act on reckless behavior."
       },
       {
-       "t": "Punish every error",
+       "t": "Punish every error to deter others",
        "correct": false,
        "why": "Drives errors underground."
+      },
+      {
+       "t": "Ignore all errors to protect morale",
+       "correct": false,
+       "why": "At risk and reckless behavior need action."
+      },
+      {
+       "t": "Suspend after a second human slip",
+       "correct": false,
+       "why": "Slips are consoled and the system fixed."
       }
      ],
      "teach": "",
@@ -454,14 +534,24 @@
      "q": "What does this suggest and what do you do?",
      "options": [
       {
-       "t": "Possible diversion: follow St. Mary's policy to report to the pharmacy manager or diversion team right away; do not investigate alone or confront",
+       "t": "Possible diversion: report per policy now",
        "correct": true,
-       "why": ""
+       "why": "To the pharmacy manager or diversion team; do not investigate alone or confront."
       },
       {
        "t": "Adjust the count and move on",
        "correct": false,
-       "why": "Never."
+       "why": "Ignores diversion signals."
+      },
+      {
+       "t": "Confront the nurse directly today",
+       "correct": false,
+       "why": "Follow policy; do not confront."
+      },
+      {
+       "t": "Wait for a third discrepancy first",
+       "correct": false,
+       "why": "Report now."
       }
      ],
      "teach": "",
@@ -472,14 +562,24 @@
      "q": "If theft or significant loss is confirmed, what does federal law require of the registrant?",
      "options": [
       {
-       "t": "Notify the DEA in writing within 1 business day of discovery, then file DEA Form 106",
+       "t": "DEA in writing within 1 business day; Form 106",
        "correct": true,
-       "why": "21 CFR 1301.76(b). The pharmacy leadership handles the filing."
+       "why": "21 CFR 1301.76."
       },
       {
-       "t": "Nothing",
+       "t": "DEA Form 106 within 30 days only",
        "correct": false,
-       "why": "Reporting is required."
+       "why": "Initial written notice is within 1 business day."
+      },
+      {
+       "t": "DEA Form 41 within 1 business day",
+       "correct": false,
+       "why": "Form 41 is for destruction."
+      },
+      {
+       "t": "Board of Pharmacy only, within 7 days",
+       "correct": false,
+       "why": "Federal law requires DEA notice."
       }
      ],
      "teach": "",
@@ -490,14 +590,24 @@
      "q": "Which waste practice prevents diversion?",
      "options": [
       {
-       "t": "Witnessed waste documented in real time by a second licensed person",
+       "t": "Witnessed waste, documented in real time",
        "correct": true,
-       "why": ""
+       "why": "By a second licensed person."
       },
       {
-       "t": "Waste later when convenient",
+       "t": "Waste later, when it is convenient",
        "correct": false,
-       "why": "Opens the door to diversion."
+       "why": "Diversion risk."
+      },
+      {
+       "t": "Waste alone, then document the amount",
+       "correct": false,
+       "why": "Needs a witness."
+      },
+      {
+       "t": "Waste in the sharps container unwitnessed",
+       "correct": false,
+       "why": "Needs a witness."
       }
      ],
      "teach": "",
@@ -547,12 +657,22 @@
       {
        "t": "Every 2 years; 30 hours per renewal",
        "correct": true,
-       "why": "Report CE in CE Broker."
+       "why": "Florida Board of Pharmacy."
       },
       {
-       "t": "Every year; 15 hours",
+       "t": "Every year; 15 hours per renewal",
        "correct": false,
-       "why": ""
+       "why": "Florida is biennial."
+      },
+      {
+       "t": "Every 2 years; 24 hours per renewal",
+       "correct": false,
+       "why": "24 extra hours apply to consultant pharmacists."
+      },
+      {
+       "t": "Every 3 years; 45 hours per renewal",
+       "correct": false,
+       "why": "Not Florida."
       }
      ],
      "teach": "",
@@ -563,14 +683,24 @@
      "q": "Which topics are required each renewal?",
      "options": [
       {
-       "t": "2 hours medication errors and 2 hours controlled substances (Board approved)",
+       "t": "2 h med errors, 2 h controlled drugs",
        "correct": true,
-       "why": "Plus 1 hour HIV/AIDS at the first renewal."
+       "why": "Board approved courses."
       },
       {
-       "t": "10 live hours",
+       "t": "5 h pain management and 2 h ethics",
        "correct": false,
-       "why": "The live hour requirement was removed in 2025."
+       "why": "Not the Florida required topics."
+      },
+      {
+       "t": "1 h HIV/AIDS and 2 h ethics",
+       "correct": false,
+       "why": "Not the current required pair."
+      },
+      {
+       "t": "3 h immunization for every pharmacist",
+       "correct": false,
+       "why": "Only if certified to immunize."
       }
      ],
      "teach": "",
@@ -581,7 +711,7 @@
      "q": "Other renewal requirements?",
      "options": [
       {
-       "t": "3 hours every 2 years if certified to give immunizations",
+       "t": "3 hours every 2 years if certified to immunize",
        "correct": true,
        "why": ""
       },
@@ -591,9 +721,19 @@
        "why": ""
       },
       {
-       "t": "A practical exam",
+       "t": "A practical exam each renewal",
        "correct": false,
-       "why": ""
+       "why": "Not required."
+      },
+      {
+       "t": "An MPJE retake every 6 years",
+       "correct": false,
+       "why": "Not required."
+      },
+      {
+       "t": "A new background check each renewal",
+       "correct": false,
+       "why": "Not a renewal requirement."
       }
      ],
      "teach": "",
@@ -642,14 +782,24 @@
      "q": "What does Florida require of dispensers?",
      "options": [
       {
-       "t": "Report controlled substance dispensing to E-FORCSE by the close of the next business day",
+       "t": "Report to E-FORCSE by close of next business day",
        "correct": true,
-       "why": "Institutional pharmacies that only administer to inpatients can file an exemption."
+       "why": "Florida PDMP."
       },
       {
-       "t": "No reporting",
+       "t": "Report to E-FORCSE within 7 days",
        "correct": false,
-       "why": ""
+       "why": "The older Florida deadline."
+      },
+      {
+       "t": "Report to the DEA within 1 business day",
+       "correct": false,
+       "why": "DEA notice is for theft or loss."
+      },
+      {
+       "t": "No reporting for hospital discharges",
+       "correct": false,
+       "why": "Outpatient dispensing is reported."
       }
      ],
      "teach": "",
@@ -660,14 +810,24 @@
      "q": "Why check the PDMP before filling?",
      "options": [
       {
-       "t": "To spot overlapping prescriptions, multiple prescribers or pharmacies, and high combined doses",
+       "t": "Spot overlaps, many prescribers, high doses",
        "correct": true,
-       "why": ""
+       "why": "Multiple pharmacies too."
       },
       {
-       "t": "It is only for police",
+       "t": "It is only for law enforcement use",
        "correct": false,
-       "why": ""
+       "why": "A clinical safety tool."
+      },
+      {
+       "t": "To confirm insurance coverage",
+       "correct": false,
+       "why": "Not its purpose."
+      },
+      {
+       "t": "To check the prescriber's DEA renewal",
+       "correct": false,
+       "why": "Not its purpose."
       }
      ],
      "teach": "",
@@ -715,12 +875,12 @@
      "q": "What do you check?",
      "options": [
       {
-       "t": "Each home drug: continue, change or stop, with clear instructions (for example whether warfarin restarts and when)",
+       "t": "Each home drug: continue, change or stop",
        "correct": true,
-       "why": ""
+       "why": "For example whether and when warfarin restarts."
       },
       {
-       "t": "Duplicates between home and hospital drugs (omeprazole and pantoprazole)",
+       "t": "Duplicates: omeprazole and pantoprazole",
        "correct": true,
        "why": ""
       },
@@ -730,9 +890,14 @@
        "why": ""
       },
       {
+       "t": "Restart all home drugs as before",
+       "correct": false,
+       "why": "Aspirin and warfarin after a GI bleed need decisions."
+      },
+      {
        "t": "Nothing; discharge is the doctor's job",
        "correct": false,
-       "why": "Transitions are where errors happen."
+       "why": "Reconciliation is a pharmacist role."
       }
      ],
      "teach": "",

@@ -645,9 +645,9 @@
      "q": "What is the issue with phenytoin suspension and tube feeds?",
      "options": [
       {
-       "t": "Feeds bind it; hold feeds 1 to 2 h around doses",
+       "t": "Feeds bind it; hold feeds around each dose",
        "correct": true,
-       "why": "Monitor levels closely."
+       "why": "Often 1 to 2 hours before and after; monitor levels."
       },
       {
        "t": "Feeds speed up phenytoin metabolism",
@@ -822,7 +822,7 @@
      "q": "What lab do you watch on longer courses?",
      "options": [
       {
-       "t": "Platelets and counts after about 2 weeks",
+       "t": "Platelets and counts after 2 weeks",
        "correct": true,
        "why": "Myelosuppression."
       },
