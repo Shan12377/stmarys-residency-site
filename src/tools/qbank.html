@@ -184,8 +184,6 @@ function workup(c, open) {
     ${cards.map(k => `<details><summary>📘 ${esc(k.title)}</summary>${k.sections.map(([h, t]) => `<h4>${esc(h)}</h4><p>${md(t)}</p>`).join('')}<ol class="small">${k.sources.map(src).join('')}</ol></details>`).join('')}
     <details ${cards.length ? '' : 'open'}><summary>${cards.length ? 'The 14 point checklist I run on every order' : 'Your 14 point workup (full drug card for this case coming soon)'}</summary><ol>${CHECK.map(x => `<li>${esc(x)}</li>`).join('')}</ol></details></div>`;
 }
-// ponytail: options reshuffle on every render so the right answer never sits in a predictable spot.
-const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 function renderStep() {
   const { c, step } = cur, s = c.steps[step], multi = s.type === 'multi';
   clearInterval(cur.timer);
@@ -194,7 +192,7 @@ function renderStep() {
     <div class="prog"><i style="width:${(step / c.steps.length) * 100}%"></i></div>
     <div class="small muted">Step ${step + 1} of ${c.steps.length}${s.kind ? ' · ' + esc(s.kind) : ''}${multi ? ' · choose all that apply' : ''}<span id="clock"></span></div>
     <p style="font-weight:600;margin:6px 0">${md(s.q)}</p>
-    <div id="opts">${shuffle(s.options.map((o, i) => i)).map(i => `<button class="opt" data-i="${i}">${md(s.options[i].t)}<div class="why" hidden></div></button>`).join('')}</div>
+    <div id="opts">${s.options.map((o, i) => `<button class="opt" data-i="${i}">${md(o.t)}<div class="why" hidden></div></button>`).join('')}</div>
     <div id="after"></div>
     <p class="row"><button class="primary" id="submit">Check answer</button>${mode !== 'timed' ? '<button id="wkbtn">📋 Full workup</button>' : ''}<button id="quit">Back to list</button></p>
     <div id="wkbox" hidden>${mode !== 'timed' ? workup(c, true) : ''}</div></div>`;
