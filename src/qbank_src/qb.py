@@ -29,6 +29,16 @@ def write(outdir, mid, title, intro, cases):
             assert all(d in CARDS for d in W[c['id']]['drugs']), c['id']
             c['workup'] = W[c['id']]
     write_cards(outdir)
+    import glob, importlib.util
+    RW = {}
+    for f in sorted(glob.glob(os.path.join(os.path.dirname(__file__), 'rw_*.py'))):
+        sp = importlib.util.spec_from_file_location(os.path.basename(f)[:-3], f); m = importlib.util.module_from_spec(sp); sp.loader.exec_module(m); RW.update(m.R)
+    for c in cases:
+        for k, st in enumerate(c['steps']):
+            if (c['id'], k) in RW:
+                st['options'] = [O(t, ok, why) for t, ok, why in RW[(c['id'], k)]]
+                assert any(o['correct'] for o in st['options']), (c['id'], k)
+                assert st.get('type') == 'multi' or sum(o['correct'] for o in st['options']) == 1, ('single answer step has several correct', c['id'], k)
     ids = [c['id'] for c in cases]; assert len(ids) == len(set(ids)), 'duplicate case id'
     os.makedirs(outdir, exist_ok=True)
     json.dump({'id': mid, 'title': title, 'intro': intro, 'cases': cases}, open(f'{outdir}/{mid}.json', 'w'), ensure_ascii=False, indent=1)
