@@ -587,7 +587,7 @@
      "q": "When do you recheck exposure after a dose change?",
      "options": [
       {
-       "t": "Near the new steady state, and whenever kidneys change",
+       "t": "Near new steady state and with kidney changes",
        "correct": true,
        "why": "Bayesian tools allow earlier checks."
       },

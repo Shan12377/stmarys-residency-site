@@ -20,22 +20,27 @@
       {
        "t": "Working gut: eating and taking other oral meds",
        "correct": true,
-       "why": "No vomiting, no ileus, no malabsorption."
+       "why": ""
       },
       {
-       "t": "Clinically improving and hemodynamically stable",
+       "t": "Improving and hemodynamically stable",
        "correct": true,
-       "why": "Afebrile, normal vitals, falling WBC."
+       "why": ""
       },
       {
-       "t": "An oral drug with good absorption exists for this infection",
+       "t": "A well absorbed oral option exists",
        "correct": true,
        "why": "Levofloxacin is about 99% absorbed."
       },
       {
-       "t": "The patient prefers IV",
+       "t": "Afebrile for at least 7 days",
        "correct": false,
-       "why": "Preference matters, but the clinical criteria decide."
+       "why": "Most criteria use 24 to 48 hours afebrile."
+      },
+      {
+       "t": "WBC fully normal for 72 hours",
+       "correct": false,
+       "why": "Improving WBC is enough."
       }
      ],
      "teach": "",
@@ -49,12 +54,22 @@
       {
        "t": "750 mg PO daily (1:1)",
        "correct": true,
-       "why": "Levofloxacin oral absorption is nearly complete."
+       "why": ""
+      },
+      {
+       "t": "500 mg PO daily",
+       "correct": false,
+       "why": "500 mg is an older levofloxacin dose; IV and PO are equivalent at 750 mg."
+      },
+      {
+       "t": "750 mg PO every 12 hours",
+       "correct": false,
+       "why": "Doubles the dose."
       },
       {
        "t": "1,500 mg PO daily",
        "correct": false,
-       "why": "No dose increase needed."
+       "why": "No adjustment for oral absorption needed."
       }
      ],
      "teach": "",
@@ -65,14 +80,24 @@
      "q": "Why switch at all?",
      "options": [
       {
-       "t": "Fewer line infections and phlebitis, earlier discharge, lower cost, less nursing time",
+       "t": "Fewer line infections, earlier discharge, lower cost",
        "correct": true,
-       "why": "IV to PO is one of the simplest high value interventions a pharmacist makes every day."
+       "why": ""
       },
       {
-       "t": "Oral drugs always work better",
+       "t": "Oral antibiotics penetrate the lungs better",
        "correct": false,
-       "why": "Not better; equivalent when absorption is good."
+       "why": "Not generally true."
+      },
+      {
+       "t": "Oral dosing avoids kidney adjustment",
+       "correct": false,
+       "why": "Renal adjustment applies by either route."
+      },
+      {
+       "t": "IV levofloxacin cannot be given beyond 3 days",
+       "correct": false,
+       "why": "No such limit."
       }
      ],
      "teach": "",
@@ -122,27 +147,32 @@
       {
        "t": "Levofloxacin and moxifloxacin",
        "correct": true,
-       "why": "Nearly complete absorption."
+       "why": ""
       },
       {
        "t": "Linezolid",
        "correct": true,
-       "why": "About 100% absorbed."
+       "why": ""
       },
       {
        "t": "Metronidazole",
        "correct": true,
-       "why": "Nearly complete absorption."
+       "why": ""
       },
       {
        "t": "Fluconazole",
        "correct": true,
-       "why": "Over 90% absorbed."
+       "why": ""
       },
       {
-       "t": "Vancomycin for MRSA bacteremia",
+       "t": "Ciprofloxacin",
        "correct": false,
-       "why": "Oral vancomycin is not absorbed; it only treats C. difficile in the gut."
+       "why": "About 70% absorbed: 400 mg IV = 500 to 750 mg PO."
+      },
+      {
+       "t": "Vancomycin (for systemic infection)",
+       "correct": false,
+       "why": "Oral vancomycin is not absorbed."
       }
      ],
      "teach": "",
@@ -156,22 +186,27 @@
       {
        "t": "Levetiracetam",
        "correct": true,
-       "why": "IV and oral are interchangeable at the same dose."
+       "why": ""
       },
       {
-       "t": "Acetaminophen (1 g IV = 1 g PO)",
+       "t": "Acetaminophen",
        "correct": true,
-       "why": "IV acetaminophen is mainly for patients who cannot swallow."
+       "why": ""
       },
       {
-       "t": "Pantoprazole 40 mg IV = 40 mg PO",
+       "t": "Pantoprazole",
        "correct": true,
-       "why": "Common automatic switch."
+       "why": ""
       },
       {
        "t": "Furosemide",
        "correct": false,
-       "why": "Oral furosemide is only about half absorbed and highly variable."
+       "why": "About 50% absorbed: roughly 1:2."
+      },
+      {
+       "t": "Metoprolol",
+       "correct": false,
+       "why": "Large first pass loss: roughly 1:2.5."
       }
      ],
      "teach": "",
@@ -225,14 +260,24 @@
      "q": "Furosemide 40 mg IV twice daily. Roughly what oral dose gives similar effect?",
      "options": [
       {
-       "t": "About 80 mg PO twice daily (IV to PO roughly 1:2)",
+       "t": "About 80 mg PO twice daily (1:2)",
        "correct": true,
-       "why": "Oral bioavailability is about 50% and varies; watch weight and urine output after the switch."
+       "why": "Oral bioavailability about 50%, variable."
       },
       {
-       "t": "40 mg PO twice daily",
+       "t": "40 mg PO twice daily (1:1)",
        "correct": false,
-       "why": "Usually gives less diuresis."
+       "why": "Usually less diuresis."
+      },
+      {
+       "t": "160 mg PO twice daily (1:4)",
+       "correct": false,
+       "why": "Overestimates; may cause overdiuresis."
+      },
+      {
+       "t": "20 mg PO twice daily (2:1)",
+       "correct": false,
+       "why": "Reversed."
       }
      ],
      "teach": "",
@@ -245,12 +290,22 @@
       {
        "t": "500 to 750 mg PO every 12 hours",
        "correct": true,
-       "why": "Ciprofloxacin is about 70% absorbed, so the oral dose is higher."
+       "why": "About 70% absorbed."
       },
       {
-       "t": "400 mg PO every 12 hours",
+       "t": "400 mg PO every 12 hours (1:1)",
        "correct": false,
-       "why": "There is no 400 mg tablet, and absorption is incomplete."
+       "why": "1:1 is the levofloxacin rule, not ciprofloxacin."
+      },
+      {
+       "t": "750 mg PO once daily",
+       "correct": false,
+       "why": "That is levofloxacin dosing."
+      },
+      {
+       "t": "250 mg PO every 12 hours",
+       "correct": false,
+       "why": "Too low for serious infection."
       }
      ],
      "teach": "",
@@ -261,14 +316,24 @@
      "q": "Metoprolol tartrate 5 mg IV every 6 hours. Oral equivalent?",
      "options": [
       {
-       "t": "About 12.5 to 25 mg PO every 6 hours, or the same daily total as twice daily dosing",
+       "t": "About 12.5 to 25 mg PO every 6 hours",
        "correct": true,
-       "why": "Oral metoprolol has large first pass loss; IV to PO is roughly 1:2.5. Titrate to heart rate and BP."
+       "why": "Roughly 1:2.5; titrate to heart rate and BP."
       },
       {
-       "t": "5 mg PO every 6 hours",
+       "t": "5 mg PO every 6 hours (1:1)",
        "correct": false,
-       "why": "Far too low."
+       "why": "Far too low orally."
+      },
+      {
+       "t": "50 mg PO every 6 hours (1:10)",
+       "correct": false,
+       "why": "Overestimates."
+      },
+      {
+       "t": "25 mg ER once daily",
+       "correct": false,
+       "why": "Lower daily total and a different product."
       }
      ],
      "teach": "",
@@ -279,14 +344,24 @@
      "q": "Levothyroxine: how does IV compare with oral?",
      "options": [
       {
-       "t": "IV doses are lower, often about 50 to 75% of the oral dose, because oral absorption is incomplete",
+       "t": "IV is lower: about 50 to 75% of oral",
        "correct": true,
-       "why": "The label estimates relative oral bioavailability at about 48 to 74% and advises caution when converting."
+       "why": "Label relative bioavailability about 48 to 74%."
       },
       {
-       "t": "IV dose is double the oral",
+       "t": "IV equals oral, microgram for microgram",
+       "correct": false,
+       "why": "Overdoses with IV."
+      },
+      {
+       "t": "IV is about double the oral dose",
        "correct": false,
        "why": "Reversed."
+      },
+      {
+       "t": "IV is about 25% of the oral dose",
+       "correct": false,
+       "why": "Too low."
       }
      ],
      "teach": "",
@@ -344,24 +419,29 @@
      "q": "Which situations usually stay IV, at least early?",
      "options": [
       {
-       "t": "S. aureus bacteremia (especially early, before source control and clearance)",
+       "t": "S. aureus bacteremia, early",
        "correct": true,
-       "why": "High mortality infection; oral step down is only considered in selected patients after clearance and ID input."
+       "why": "Oral step down only in selected patients after clearance, with ID."
       },
       {
        "t": "Meningitis",
        "correct": true,
-       "why": "Needs high central nervous system concentrations."
+       "why": ""
       },
       {
        "t": "Endocarditis, at least initially",
        "correct": true,
-       "why": "The POET trial showed partial oral therapy was noninferior in selected stable patients after at least 10 days IV; this is an ID team decision."
+       "why": "POET: partial oral therapy after at least 10 days IV in selected stable patients."
       },
       {
-       "t": "Uncomplicated pyelonephritis improving on day 2",
+       "t": "Pyelonephritis improving on day 2",
        "correct": false,
        "why": "A classic case for switching."
+      },
+      {
+       "t": "Community acquired pneumonia improving on day 3",
+       "correct": false,
+       "why": "Also a classic case for switching."
       }
      ],
      "teach": "",
@@ -373,24 +453,29 @@
      "q": "Which patient factors block an oral switch?",
      "options": [
       {
-       "t": "Vomiting, ileus, severe diarrhea, or malabsorption",
+       "t": "Vomiting, ileus, severe diarrhea or malabsorption",
        "correct": true,
-       "why": "The drug has to be absorbed."
+       "why": ""
       },
       {
-       "t": "NPO for surgery or unable to swallow with no feeding tube",
+       "t": "NPO with no feeding tube",
        "correct": true,
-       "why": "No route."
+       "why": ""
       },
       {
-       "t": "Unstable vital signs or worsening infection",
+       "t": "Unstable vitals or worsening infection",
        "correct": true,
-       "why": "Not ready."
+       "why": ""
       },
       {
-       "t": "A normal appetite",
+       "t": "Age over 80 years",
        "correct": false,
-       "why": "That supports switching."
+       "why": "Age alone does not block a switch."
+      },
+      {
+       "t": "CrCl below 30 mL/min",
+       "correct": false,
+       "why": "Adjust the dose; route can still be oral."
       }
      ],
      "teach": "",
@@ -444,14 +529,24 @@
      "q": "What is the problem?",
      "options": [
       {
-       "t": "Calcium, magnesium, aluminum, iron and zinc bind fluoroquinolones in the gut and can cut absorption dramatically",
+       "t": "Ca, Mg, Al, Fe and Zn bind ciprofloxacin",
        "correct": true,
-       "why": "The IV dose had no such problem; the oral switch creates the interaction."
+       "why": "Absorption can drop dramatically."
       },
       {
-       "t": "No interaction",
+       "t": "Calcium speeds ciprofloxacin clearance",
        "correct": false,
-       "why": "Chelation is one of the most common reasons oral antibiotics fail."
+       "why": "The problem is binding in the gut, not clearance."
+      },
+      {
+       "t": "Ciprofloxacin depletes magnesium",
+       "correct": false,
+       "why": "Not the interaction."
+      },
+      {
+       "t": "Iron raises ciprofloxacin levels",
+       "correct": false,
+       "why": "It lowers absorption."
       }
      ],
      "teach": "",
@@ -462,14 +557,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Give ciprofloxacin at least 2 hours before or 6 hours after the minerals (per label), or hold the supplements during the course",
+       "t": "Cipro 2 h before or 6 h after the minerals",
        "correct": true,
-       "why": "Spacing or holding fixes it."
+       "why": "Per label; or hold supplements during the course."
+      },
+      {
+       "t": "Cipro 6 h before or 2 h after the minerals",
+       "correct": false,
+       "why": "Reversed."
+      },
+      {
+       "t": "Take them together with food",
+       "correct": false,
+       "why": "Food with calcium (dairy) still binds."
       },
       {
        "t": "Double the ciprofloxacin dose",
        "correct": false,
-       "why": "Raises toxicity without reliably fixing the binding."
+       "why": "Raises toxicity without fixing binding."
       }
      ],
      "teach": "",
@@ -482,12 +587,22 @@
       {
        "t": "Tetracyclines (doxycycline, minocycline)",
        "correct": true,
-       "why": "Same mechanism."
+       "why": ""
       },
       {
-       "t": "Amoxicillin",
+       "t": "Beta lactams (amoxicillin, cephalexin)",
        "correct": false,
        "why": "Not meaningfully affected."
+      },
+      {
+       "t": "Macrolides (azithromycin)",
+       "correct": false,
+       "why": "Not the chelation problem."
+      },
+      {
+       "t": "Linezolid",
+       "correct": false,
+       "why": "Not affected."
       }
      ],
      "teach": "",
@@ -530,14 +645,24 @@
      "q": "What is the issue with phenytoin suspension and tube feeds?",
      "options": [
       {
-       "t": "Tube feeds can bind phenytoin and lower levels a lot; many protocols hold feeds 1 to 2 hours before and after each dose and monitor levels closely",
+       "t": "Feeds bind it; hold feeds 1 to 2 h around doses",
        "correct": true,
-       "why": "Check a level after the switch and adjust."
+       "why": "Monitor levels closely."
       },
       {
-       "t": "No issue",
+       "t": "Feeds speed up phenytoin metabolism",
        "correct": false,
-       "why": "This interaction is well known."
+       "why": "Binding, not metabolism."
+      },
+      {
+       "t": "Feeds have no effect on phenytoin",
+       "correct": false,
+       "why": "Well known interaction."
+      },
+      {
+       "t": "Feeds raise phenytoin blood levels",
+       "correct": false,
+       "why": "They lower absorption."
       }
      ],
      "teach": "",
@@ -548,14 +673,24 @@
      "q": "Phenytoin capsules versus suspension: why can the dose change?",
      "options": [
       {
-       "t": "Extended capsules are phenytoin sodium (92% phenytoin); suspension and chewable tablets are phenytoin acid (100%)",
+       "t": "Capsules 92% phenytoin (sodium); liquid 100% (acid)",
        "correct": true,
-       "why": "Switching forms changes how much phenytoin the patient gets; small differences matter with its nonlinear kinetics."
+       "why": ""
       },
       {
-       "t": "They are identical",
+       "t": "Capsules 100% (acid); liquid 92% (sodium)",
        "correct": false,
-       "why": "Salt form matters for phenytoin."
+       "why": "Reversed."
+      },
+      {
+       "t": "Both forms are phenytoin acid at 100%",
+       "correct": false,
+       "why": "Capsules are the sodium salt."
+      },
+      {
+       "t": "Only IV phenytoin is the sodium salt",
+       "correct": false,
+       "why": "Extended capsules are too."
       }
      ],
      "teach": "",
@@ -568,12 +703,22 @@
       {
        "t": "Extended release and enteric coated tablets",
        "correct": true,
-       "why": "Check the ISMP Do Not Crush list and switch to an immediate release or liquid form."
+       "why": "Check the ISMP Do Not Crush list."
       },
       {
        "t": "Plain immediate release levothyroxine tablets",
        "correct": false,
-       "why": "These can be crushed; give apart from feeds per protocol."
+       "why": "Can be crushed."
+      },
+      {
+       "t": "Plain immediate release metoprolol tartrate tablets",
+       "correct": false,
+       "why": "Can be crushed; the succinate ER cannot."
+      },
+      {
+       "t": "Acetaminophen regular tablets",
+       "correct": false,
+       "why": "Can be crushed (liquid preferred)."
       }
      ],
      "teach": "",
@@ -623,12 +768,22 @@
       {
        "t": "600 mg PO every 12 hours (1:1)",
        "correct": true,
-       "why": "Linezolid is about 100% absorbed."
+       "why": ""
       },
       {
-       "t": "1,200 mg every 12 hours",
+       "t": "600 mg PO daily",
        "correct": false,
-       "why": "No increase needed."
+       "why": "Halves exposure."
+      },
+      {
+       "t": "1,200 mg PO every 12 hours",
+       "correct": false,
+       "why": "Doubles."
+      },
+      {
+       "t": "400 mg PO every 12 hours",
+       "correct": false,
+       "why": "Not a standard dose."
       }
      ],
      "teach": "",
@@ -639,14 +794,24 @@
      "q": "What interaction do you check?",
      "options": [
       {
-       "t": "Serotonin syndrome risk: linezolid is a weak MAO inhibitor, and sertraline is serotonergic",
+       "t": "Serotonin syndrome (weak MAO inhibition)",
        "correct": true,
-       "why": "Talk with the team about the risk, monitoring, or alternatives. The same applies to IV linezolid; the switch is a good moment to catch it."
+       "why": ""
       },
       {
-       "t": "None",
+       "t": "QT prolongation with sertraline",
        "correct": false,
-       "why": "Linezolid plus SSRIs is a classic interaction."
+       "why": "The key issue is serotonin."
+      },
+      {
+       "t": "Linezolid lowers sertraline levels",
+       "correct": false,
+       "why": "Not the interaction."
+      },
+      {
+       "t": "Bleeding from combined platelet effects",
+       "correct": false,
+       "why": "Not the classic warning."
       }
      ],
      "teach": "",
@@ -657,14 +822,24 @@
      "q": "What lab do you watch on longer courses?",
      "options": [
       {
-       "t": "Platelets and blood counts (myelosuppression, usually after about 2 weeks)",
+       "t": "Platelets and counts after about 2 weeks",
        "correct": true,
-       "why": "Also watch for lactic acidosis and neuropathy with long use."
+       "why": "Myelosuppression."
       },
       {
-       "t": "INR",
+       "t": "INR weekly during the course",
        "correct": false,
-       "why": "Not the main concern."
+       "why": "Warfarin monitoring."
+      },
+      {
+       "t": "Serum potassium every day",
+       "correct": false,
+       "why": "Not a linezolid issue."
+      },
+      {
+       "t": "TSH once a month",
+       "correct": false,
+       "why": "Not a linezolid issue."
       }
      ],
      "teach": "",
@@ -708,19 +883,24 @@
      "q": "How do you make the switch happen?",
      "options": [
       {
-       "t": "Use St. Mary's automatic conversion policy when the drug and patient qualify, and document the change",
+       "t": "Use the automatic conversion protocol when eligible",
        "correct": true,
-       "why": "Many hospitals let pharmacists switch qualifying drugs per protocol."
+       "why": "Document the change."
       },
       {
-       "t": "For drugs outside the protocol, recommend the switch to the prescriber with the criteria met and the exact oral dose",
+       "t": "Recommend to the prescriber with criteria and dose",
        "correct": true,
-       "why": "Make it easy to say yes."
+       "why": "Make yes easy."
       },
       {
-       "t": "Switch everything without checking the patient",
+       "t": "Switch everything on day 3 without checking",
        "correct": false,
-       "why": "Each patient must meet the criteria."
+       "why": "Each patient must meet criteria."
+      },
+      {
+       "t": "Wait for the prescriber to ask",
+       "correct": false,
+       "why": "Proactive switching is the pharmacist's value."
       }
      ],
      "teach": "",

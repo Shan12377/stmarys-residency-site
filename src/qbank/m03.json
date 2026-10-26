@@ -80,12 +80,12 @@
      "q": "After the media fill test, the gloved fingertip action level is:",
      "options": [
       {
-       "t": "More than 3 CFU total (both hands) fails",
+       "t": "More than 3 CFU total fails",
        "correct": true,
-       "why": "After the media fill."
+       "why": "After the media fill (both hands)."
       },
       {
-       "t": "More than 0 CFU fails",
+       "t": "More than 0 CFU total fails",
        "correct": false,
        "why": "That is the action level after garbing."
       },
@@ -388,24 +388,24 @@
      "q": "How is a media fill usually incubated under the 2023 chapter?",
      "options": [
       {
-       "t": "20 to 25 °C and 30 to 35 °C, at least 7 days each",
+       "t": "20 to 25 °C and 30 to 35 °C, 7 days each",
        "correct": true,
        "why": "2023 chapter."
       },
       {
        "t": "30 to 35 °C only, for 48 to 72 hours",
        "correct": false,
-       "why": "That resembles gloved fingertip plate incubation, not media fill."
+       "why": "Resembles fingertip plate incubation, not media fill."
       },
       {
-       "t": "2 to 8 °C for 14 days",
+       "t": "2 to 8 °C, refrigerated, for 14 days",
        "correct": false,
        "why": "Refrigeration stops growth."
       },
       {
        "t": "20 to 25 °C only, for 5 to 7 days",
        "correct": false,
-       "why": "Both temperature ranges are needed."
+       "why": "Both ranges are needed."
       }
      ],
      "teach": "",
@@ -511,20 +511,20 @@
       {
        "t": "HEPA filtered air before it touches anything",
        "correct": true,
-       "why": "Never block it with hands or items."
+       "why": "Never block it."
       },
       {
-       "t": "Air in the ante room after garbing",
+       "t": "Air in the ante room right after garbing",
        "correct": false,
        "why": "Not first air."
       },
       {
-       "t": "The first air change of the shift",
+       "t": "The first full air change of the shift",
        "correct": false,
        "why": "Not a USP term."
       },
       {
-       "t": "Air returning to the HEPA filter",
+       "t": "Room air drawn back into the HEPA filter",
        "correct": false,
        "why": "That air has already touched surfaces."
       }
@@ -574,22 +574,22 @@
      "q": "How often are the hoods and cleanroom certified?",
      "options": [
       {
-       "t": "At least every 6 months and after major repairs",
+       "t": "Every 6 months and after major repairs",
        "correct": true,
        "why": ""
       },
       {
-       "t": "At least every 12 months",
+       "t": "Every 12 months and after major repairs",
        "correct": false,
        "why": "12 months is the training cycle."
       },
       {
-       "t": "At least monthly",
+       "t": "Every month and after major repairs",
        "correct": false,
        "why": "Monthly is surface sampling."
       },
       {
-       "t": "At least every 3 months",
+       "t": "Every 3 months and after major repairs",
        "correct": false,
        "why": "3 months is the Category 3 competency cycle."
       }
@@ -723,24 +723,24 @@
      "q": "Which direction do you clean the hood?",
      "options": [
       {
-       "t": "Top to bottom, back to front, away from the HEPA",
+       "t": "Top to bottom, back to front, away from HEPA",
        "correct": true,
        "why": ""
       },
       {
-       "t": "Front to back, toward the HEPA filter",
+       "t": "Front to back, moving toward the HEPA filter",
        "correct": false,
        "why": "Pushes dirt into the critical area."
       },
       {
-       "t": "Bottom to top, back to front",
+       "t": "Bottom to top, then back to front",
        "correct": false,
        "why": "Drips fall onto cleaned areas."
       },
       {
-       "t": "Circular motions from the center out",
+       "t": "Circles from the center of the work surface",
        "correct": false,
-       "why": "Not the USP recommended pattern."
+       "why": "Not the recommended pattern."
       }
      ],
      "teach": "",
@@ -751,22 +751,22 @@
      "q": "How often is a sporicidal agent used in the hood?",
      "options": [
       {
-       "t": "At least monthly, and when contamination is suspected",
+       "t": "At least monthly (and if contamination suspected)",
        "correct": true,
        "why": ""
       },
       {
-       "t": "At least weekly",
+       "t": "At least weekly, on the same day each week",
        "correct": false,
-       "why": "More often than required (allowed, not required)."
+       "why": "More often than required."
       },
       {
-       "t": "At least every 6 months",
+       "t": "At least every 6 months, at certification",
        "correct": false,
        "why": "6 months is certification and air sampling."
       },
       {
-       "t": "Only after a positive surface sample",
+       "t": "Only after a positive surface sample result",
        "correct": false,
        "why": "It is scheduled, not only reactive."
       }
@@ -1208,22 +1208,22 @@
      "q": "A nurse calls about a hazardous drug bag that leaked on the floor. What do you tell them?",
      "options": [
       {
-       "t": "Spill kit, full PPE, contain outside in, hazardous waste",
+       "t": "Spill kit and full PPE; contain from outside in",
        "correct": true,
-       "why": ""
+       "why": "Dispose of waste as hazardous."
       },
       {
-       "t": "Paper towels, then regular trash",
+       "t": "Paper towels, then the regular trash bin",
        "correct": false,
        "why": "Exposure and improper disposal."
       },
       {
-       "t": "Bleach directly on the spill, then mop",
+       "t": "Pour bleach directly on it, then mop it up",
        "correct": false,
-       "why": "Contain first with the spill kit; deactivation follows the kit steps."
+       "why": "Contain first with the spill kit."
       },
       {
-       "t": "Leave it for environmental services",
+       "t": "Leave it for environmental services staff",
        "correct": false,
        "why": "Trained staff with PPE contain it."
       }
@@ -1427,24 +1427,24 @@
      "q": "What is the main precipitation risk?",
      "options": [
       {
-       "t": "Calcium phosphate crystals blocking lung vessels",
+       "t": "Calcium phosphate crystals in lung vessels",
        "correct": true,
        "why": "Deaths have occurred."
       },
       {
        "t": "Lipid emulsion breaking (oiling out)",
        "correct": false,
-       "why": "A 3 in 1 stability risk, not the calcium phosphate risk."
+       "why": "A 3 in 1 stability risk."
       },
       {
-       "t": "Vitamin degradation from light",
+       "t": "Vitamin breakdown from light exposure",
        "correct": false,
-       "why": "A potency issue, not a fatal precipitate."
+       "why": "Potency, not a fatal precipitate."
       },
       {
-       "t": "Dextrose caramelization in the bag",
+       "t": "Dextrose caramelizing inside the bag",
        "correct": false,
-       "why": "Not a PN compounding risk."
+       "why": "Not a PN risk."
       }
      ],
      "teach": "",
@@ -1582,22 +1582,22 @@
      "q": "The label says 40 mEq in 100 mL \"for peripheral use.\" What is wrong?",
      "options": [
       {
-       "t": "40 mEq/100 mL is a central concentration; peripheral max about 10 mEq/h",
+       "t": "Central concentration; peripheral max about 10 mEq/h",
        "correct": true,
-       "why": ""
+       "why": "40 mEq/100 mL."
       },
       {
-       "t": "The bag needs a 1.2 micron filter",
+       "t": "It needs a 1.2 micron in line filter added",
        "correct": false,
        "why": "Filter choice is not the problem."
       },
       {
-       "t": "KCl must be in D5W, not NS",
+       "t": "KCl must be mixed in D5W rather than NS",
        "correct": false,
        "why": "Diluent is not the problem."
       },
       {
-       "t": "Nothing; label wording is cosmetic",
+       "t": "Nothing; the label wording is cosmetic",
        "correct": false,
        "why": "Route mismatch is dangerous."
       }
@@ -1676,12 +1676,12 @@
      "q": "Then what goes first?",
      "options": [
       {
-       "t": "The first dose cefepime for the septic patient",
+       "t": "The first dose cefepime for sepsis",
        "correct": true,
        "why": ""
       },
       {
-       "t": "The TPN due at 2100",
+       "t": "The TPN that is due at 2100",
        "correct": false,
        "why": "Due tonight."
       },
