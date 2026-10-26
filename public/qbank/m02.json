@@ -18,24 +18,24 @@
      "q": "What does vancomycin exposure need to reach for serious MRSA infection?",
      "options": [
       {
-       "t": "An AUC over 24 hours of 400 to 600 (assuming MIC 1)",
+       "t": "AUC24 of 400 to 600 (assuming MIC 1)",
        "correct": true,
-       "why": "The 2020 consensus guideline target for serious MRSA infection (Rybak 2020, Recommendation 1)."
+       "why": "Rybak 2020, Recommendation 1."
       },
       {
-       "t": "A trough of 15 to 20 mcg/mL",
+       "t": "Trough of 15 to 20 mcg/mL",
        "correct": false,
-       "why": "Trough only dosing to 15 to 20 is no longer recommended: it overshoots AUC in many patients and raises kidney injury."
+       "why": "The 2009 trough target; no longer recommended for serious MRSA because it overshoots AUC and raises kidney injury."
       },
       {
-       "t": "A peak above 40 mcg/mL",
+       "t": "Trough of 10 to 15 mcg/mL",
        "correct": false,
-       "why": "Vancomycin kill depends on total exposure over time, not on a high peak."
+       "why": "Older target for less serious infections; troughs are no longer the dosing goal."
       },
       {
-       "t": "Any detectable level",
+       "t": "AUC24 of 600 to 800 (assuming MIC 1)",
        "correct": false,
-       "why": "Too low exposure risks treatment failure."
+       "why": "Above 600 is where kidney injury risk climbs."
       }
      ],
      "teach": "Vancomycin is **time and exposure dependent**. Think \"area under the curve,\" the total drug the bug sees over a day, not one number at one moment.",
@@ -46,19 +46,24 @@
      "q": "What is the preferred way to estimate AUC?",
      "options": [
       {
-       "t": "Bayesian software using one or two levels",
+       "t": "Bayesian software with one or two levels",
        "correct": true,
-       "why": "Preferred by the guideline: works with levels drawn at any time, even before steady state."
+       "why": "Preferred."
       },
       {
-       "t": "Two levels (a peak and a trough) with first order equations",
+       "t": "Two levels (peak and trough) with first order equations",
        "correct": true,
-       "why": "An accepted alternative when Bayesian software is not available."
+       "why": "Acceptable alternative."
       },
       {
-       "t": "One trough only, compared to 15 to 20",
+       "t": "A single trough compared with 15 to 20 mcg/mL",
        "correct": false,
-       "why": "This is the old method the guideline moved away from."
+       "why": "Trough only monitoring is no longer recommended."
+      },
+      {
+       "t": "A single peak 1 hour after the infusion",
+       "correct": false,
+       "why": "A peak alone cannot estimate AUC without a model."
       }
      ],
      "teach": "",
@@ -70,19 +75,24 @@
      "q": "When should the AUC target be reached?",
      "options": [
       {
-       "t": "Preferably within the first 24 to 48 hours",
+       "t": "Within the first 24 to 48 hours",
        "correct": true,
-       "why": "Early target attainment matters in serious infection (Rybak 2020, Recommendation 3)."
+       "why": "Rybak 2020, Recommendation 3."
       },
       {
-       "t": "Within a week",
+       "t": "Within the first 72 to 96 hours",
        "correct": false,
        "why": "Too slow for bacteremia."
       },
       {
-       "t": "Only after the third day of therapy",
+       "t": "At the third or fourth dose, at steady state only",
        "correct": false,
-       "why": "Waiting for full steady state delays good exposure; Bayesian tools let you dose early."
+       "why": "Steady state helps two level math, but Bayesian tools let you dose earlier."
+      },
+      {
+       "t": "Within 7 days, before the first weekly review",
+       "correct": false,
+       "why": "Far too late."
       }
      ],
      "teach": "",
@@ -130,19 +140,24 @@
      "q": "Should the first (loading) dose be reduced for her kidney function?",
      "options": [
       {
-       "t": "No. The loading dose depends on body size (volume of distribution), not on kidney function",
+       "t": "No: the load depends on body size, not kidneys",
        "correct": true,
-       "why": "Kidney function decides how much and how often you give after the first dose. The load fills the \"bucket.\""
+       "why": "Load by weight, maintain by kidneys."
       },
       {
-       "t": "Yes, cut it in half",
+       "t": "Yes: cut the load in half when CrCl is under 50",
        "correct": false,
-       "why": "An underdosed first dose leaves a septic patient without effective exposure for a day or more."
+       "why": "Halving is a maintenance adjustment idea, never for the load."
       },
       {
-       "t": "Skip the load and start maintenance",
+       "t": "Yes: give 15 mg/kg instead of 25 mg/kg",
        "correct": false,
-       "why": "Critically ill patients are the ones who benefit most from a load."
+       "why": "15 mg/kg is a maintenance dose size, not a reduced load."
+      },
+      {
+       "t": "No load: start maintenance every 24 hours",
+       "correct": false,
+       "why": "Critically ill patients benefit most from a load."
       }
      ],
      "teach": "**Load by weight, maintain by kidneys.** That one sentence prevents a very common error.",
@@ -153,19 +168,24 @@
      "q": "What loading dose range does the guideline allow, and what maximum?",
      "options": [
       {
-       "t": "20 to 35 mg/kg actual body weight, maximum 3,000 mg",
+       "t": "20 to 35 mg/kg actual weight, max 3,000 mg",
        "correct": true,
-       "why": "Rybak 2020, Recommendation 10. For her, 20 to 25 mg/kg is 1,600 to 2,000 mg."
+       "why": "Rybak 2020, Recommendation 10."
       },
       {
-       "t": "10 mg/kg, maximum 1,000 mg",
+       "t": "20 to 25 mg/kg actual weight, max 3,000 mg",
        "correct": false,
-       "why": "Too low for a load."
+       "why": "That narrower range is the obesity recommendation."
       },
       {
-       "t": "50 mg/kg with no maximum",
+       "t": "15 to 20 mg/kg actual weight, max 2,000 mg",
        "correct": false,
-       "why": "Above the guideline range; the cap is 3,000 mg."
+       "why": "15 to 20 mg/kg is the maintenance dose and the continuous infusion load."
+      },
+      {
+       "t": "25 mg/kg actual weight, then 7.5 to 10 mg/kg",
+       "correct": false,
+       "why": "That is the hemodialysis load and maintenance."
       }
      ],
      "teach": "",
@@ -176,19 +196,24 @@
      "q": "You choose 2,000 mg. By the FDA label rate (no faster than 10 mg/min), how long is the minimum infusion?",
      "options": [
       {
-       "t": "200 minutes (about 3 hours 20 minutes)",
+       "t": "200 minutes (3 hours 20 minutes)",
        "correct": true,
-       "why": "2,000 mg divided by 10 mg/min = 200 minutes. Many hospitals use a faster 1 g per hour policy; follow St. Mary's."
+       "why": "2,000 mg / 10 mg/min."
       },
       {
-       "t": "60 minutes",
+       "t": "120 minutes (2 hours)",
        "correct": false,
-       "why": "Too fast for 2,000 mg by the label rate."
+       "why": "That follows a 1 g per hour policy, not the 10 mg/min label rate."
       },
       {
-       "t": "20 minutes",
+       "t": "60 minutes (1 hour)",
        "correct": false,
-       "why": "Far too fast: high risk of vancomycin infusion reaction and hypotension."
+       "why": "60 minutes is the label minimum for doses up to about 600 mg at 10 mg/min."
+      },
+      {
+       "t": "100 minutes (1 hour 40 minutes)",
+       "correct": false,
+       "why": "That is 1,000 mg at 10 mg/min."
       }
      ],
      "teach": "Infusion time is a safety check you do on every vancomycin order. Fast infusion causes flushing, itching and low BP (infusion reaction, not a true allergy).",
@@ -243,17 +268,22 @@
       {
        "t": "About 82 mL/min",
        "correct": true,
-       "why": "(140 minus 58) x 72 / (72 x 1.0) = 82 mL/min."
+       "why": "(140 minus 58) x 72 / (72 x 1.0)."
       },
       {
-       "t": "About 41 mL/min",
+       "t": "About 70 mL/min",
        "correct": false,
-       "why": "Check the formula: (140 minus age) x weight / (72 x SCr)."
+       "why": "That applies the 0.85 female factor to a man."
       },
       {
-       "t": "About 120 mL/min",
+       "t": "About 58 mL/min",
        "correct": false,
-       "why": "Recheck the arithmetic."
+       "why": "That subtracts age from 116 instead of 140."
+      },
+      {
+       "t": "About 98 mL/min",
+       "correct": false,
+       "why": "That uses an SCr of about 0.8."
       }
      ],
      "teach": "",
@@ -264,19 +294,24 @@
      "q": "Which starting regimen fits the usual adult range (15 to 20 mg/kg every 8 to 12 hours)?",
      "options": [
       {
-       "t": "1,250 mg IV every 12 hours (about 17 mg/kg)",
+       "t": "1,250 mg every 12 hours (about 17 mg/kg)",
        "correct": true,
-       "why": "Inside the guideline range for normal kidney function. Then confirm with levels."
+       "why": "Inside 15 to 20 mg/kg every 8 to 12 hours."
       },
       {
-       "t": "500 mg IV every 24 hours",
+       "t": "1,250 mg every 24 hours (about 17 mg/kg)",
        "correct": false,
-       "why": "Much too low for normal kidneys."
+       "why": "Every 24 hours fits reduced kidney function, not CrCl 82."
       },
       {
-       "t": "2,500 mg IV every 8 hours",
+       "t": "1,750 mg every 12 hours (about 24 mg/kg)",
        "correct": false,
-       "why": "About 35 mg/kg every 8 hours: far above the range."
+       "why": "Above the 20 mg/kg maintenance range; 25 mg/kg is a loading dose size."
+      },
+      {
+       "t": "750 mg every 12 hours (about 10 mg/kg)",
+       "correct": false,
+       "why": "10 mg/kg is the high flux dialysis maintenance size."
       }
      ],
      "teach": "",
@@ -287,14 +322,24 @@
      "q": "When will you get levels?",
      "options": [
       {
-       "t": "Early, so an AUC estimate is available within 24 to 48 hours (often around the third or fourth dose with two levels, or sooner with Bayesian software)",
+       "t": "Early, so AUC is known within 24 to 48 hours",
        "correct": true,
-       "why": "Serious infection and a long course both call for AUC monitoring."
+       "why": "Serious infection and a long course need AUC monitoring."
+      },
+      {
+       "t": "Only if creatinine rises during treatment",
+       "correct": false,
+       "why": "Waiting for injury is too late."
+      },
+      {
+       "t": "Weekly, starting at the end of week one",
+       "correct": false,
+       "why": "Weekly pre dialysis levels apply to hemodialysis, not here."
       },
       {
        "t": "Never, because his kidneys are normal",
        "correct": false,
-       "why": "Long, serious courses need monitoring even with normal kidneys."
+       "why": "Long serious courses need monitoring."
       }
      ],
      "teach": "",
@@ -342,19 +387,24 @@
      "q": "Step 1: calculate the elimination rate constant (ke).",
      "options": [
       {
-       "t": "ke = ln(30/10) / 9.5 h = about 0.116 per hour",
+       "t": "ln(30/10) / 9.5 h = 0.116 per hour",
        "correct": true,
-       "why": "Time between the two levels: 11.5 minus 2 = 9.5 hours. ln(3) = 1.099; 1.099 / 9.5 = 0.116 per hour."
+       "why": "Time between draws: 11.5 minus 2 = 9.5 hours."
       },
       {
-       "t": "ke = (30 minus 10) / 12 = 1.67 per hour",
+       "t": "ln(30/10) / 12 h = 0.092 per hour",
        "correct": false,
-       "why": "Elimination is exponential, so you need the natural log of the ratio, and the time between the actual draws."
+       "why": "Uses the dosing interval instead of the time between the two draws."
       },
       {
-       "t": "ke = 0.693 / 12",
+       "t": "(30 minus 10) / 9.5 h = 2.1 per hour",
        "correct": false,
-       "why": "That would assume a 12 hour half life; you calculate the half life from ke, not the reverse."
+       "why": "Elimination is exponential; you need the natural log of the ratio."
+      },
+      {
+       "t": "log10(30/10) / 9.5 h = 0.050 per hour",
+       "correct": false,
+       "why": "ke uses the natural log, not log base 10."
       }
      ],
      "teach": "**ke = ln(C1 / C2) / time between the draws.** Half life = 0.693 / ke. Here half life is about 6 hours.",
@@ -365,19 +415,24 @@
      "q": "Step 2: estimate the true peak at the end of the infusion (1 hour after the start).",
      "options": [
       {
-       "t": "About 33.7 mcg/mL (30 x e raised to 0.116 x 1)",
+       "t": "About 33.7 mcg/mL",
        "correct": true,
-       "why": "Back extrapolate 1 hour: 30 x 1.123 = 33.7."
+       "why": "30 x e^(0.116 x 1)."
       },
       {
-       "t": "30 mcg/mL",
+       "t": "30 mcg/mL (as drawn)",
        "correct": false,
-       "why": "The drawn level is 1 hour after the end of the infusion; the true end of infusion peak is higher."
+       "why": "The draw was 1 hour after the infusion ended; the true end of infusion peak is higher."
       },
       {
-       "t": "60 mcg/mL",
+       "t": "About 37.8 mcg/mL",
        "correct": false,
-       "why": "Too high: one hour of decay at this ke is only about 12%."
+       "why": "Extrapolates back 2 hours (to the start of the infusion) instead of 1."
+      },
+      {
+       "t": "About 26.7 mcg/mL",
+       "correct": false,
+       "why": "Extrapolates in the wrong direction (forward in time)."
       }
      ],
      "teach": "",
@@ -388,14 +443,24 @@
      "q": "Step 3: estimate the true trough at the end of the interval (12 hours).",
      "options": [
       {
-       "t": "About 9.4 mcg/mL (10 x e raised to minus 0.116 x 0.5)",
+       "t": "About 9.4 mcg/mL",
        "correct": true,
-       "why": "Forward extrapolate 30 minutes: 10 x 0.944 = 9.4."
+       "why": "10 x e^(minus 0.116 x 0.5)."
       },
       {
-       "t": "10 mcg/mL",
+       "t": "10 mcg/mL (as drawn)",
        "correct": false,
-       "why": "Close, but the draw was 30 minutes early."
+       "why": "The draw was 30 minutes before the end of the interval."
+      },
+      {
+       "t": "About 8.9 mcg/mL",
+       "correct": false,
+       "why": "Extrapolates forward 1 hour instead of 30 minutes."
+      },
+      {
+       "t": "About 10.6 mcg/mL",
+       "correct": false,
+       "why": "Extrapolates in the wrong direction."
       }
      ],
      "teach": "",
@@ -406,19 +471,24 @@
      "q": "Step 4: calculate AUC for one dose, then AUC over 24 hours. Infusion part = infusion time x (Cmax + Cmin) / 2. Elimination part = (Cmax minus Cmin) / ke.",
      "options": [
       {
-       "t": "Infusion part 21.6 + elimination part 209.6 = 231 per dose; x 2 doses = AUC24 about 462",
+       "t": "About 462 (231 per dose x 2)",
        "correct": true,
-       "why": "1 x (33.7 + 9.4) / 2 = 21.6. (33.7 minus 9.4) / 0.116 = 209.6. Total 231.2 per 12 hours, so about 462 mg·h/L per day."
+       "why": "Infusion part 21.6 + elimination part 209.6 = 231 per 12 hours."
       },
       {
-       "t": "AUC24 about 231",
+       "t": "About 231 (one dose only)",
        "correct": false,
-       "why": "That is one dose interval. Multiply by 24 / 12 = 2."
+       "why": "That is one interval; multiply by 24/12."
       },
       {
-       "t": "AUC24 about 960",
+       "t": "About 384 (drawn levels, no extrapolation)",
        "correct": false,
-       "why": "Recheck the math; that would be well above the toxic range."
+       "why": "Using the drawn 30 and 10 underestimates the true area."
+      },
+      {
+       "t": "About 924 (231 x 4)",
+       "correct": false,
+       "why": "Multiplied by 4 doses; every 12 hours is 2 doses per day."
       }
      ],
      "teach": "",
@@ -429,19 +499,24 @@
      "q": "AUC24 is about 462. What do you do?",
      "options": [
       {
-       "t": "Continue the current regimen and keep monitoring kidney function",
+       "t": "Continue the regimen; keep watching kidney function",
        "correct": true,
        "why": "462 is inside 400 to 600."
       },
       {
-       "t": "Increase the dose because the trough is only 10",
+       "t": "Increase the dose: the trough of 10 is below 15",
        "correct": false,
-       "why": "This is exactly the old trough thinking the guideline moved away from. The AUC is on target."
+       "why": "Trough thinking; the AUC is on target."
       },
       {
-       "t": "Decrease the dose",
+       "t": "Decrease the dose: AUC above 400 raises kidney risk",
        "correct": false,
-       "why": "Not needed; the AUC is on target."
+       "why": "Risk climbs above 600, not 400."
+      },
+      {
+       "t": "Change to every 8 hours to raise the trough",
+       "correct": false,
+       "why": "Same trough error; AUC is on target."
       }
      ],
      "teach": "A trough of 10 can go with a perfect AUC. Pushing the trough to 15 to 20 would push this AUC far over 600.",
@@ -484,19 +559,24 @@
      "q": "Vancomycin follows linear kinetics. What new total dose reaches about 500?",
      "options": [
       {
-       "t": "About 1,500 mg every 12 hours (1,000 x 500/320 = 1,560; round to 1,500, predicted AUC about 480)",
+       "t": "1,500 mg every 12 hours (predicted AUC about 480)",
        "correct": true,
-       "why": "Linear kinetics: AUC changes in proportion to the dose when the interval and kidney function stay the same."
+       "why": "1,000 x 500/320 = 1,560, rounded to 1,500."
       },
       {
-       "t": "2,500 mg every 12 hours",
+       "t": "1,250 mg every 12 hours (predicted AUC about 400)",
        "correct": false,
-       "why": "That predicts an AUC near 800: toxic range."
+       "why": "Lands on the bottom edge of the range, below the 500 goal."
       },
       {
-       "t": "Keep 1,000 mg and recheck in a week",
+       "t": "2,000 mg every 12 hours (predicted AUC about 640)",
        "correct": false,
-       "why": "An AUC of 320 is below target for a serious infection."
+       "why": "Above 600: kidney injury risk."
+      },
+      {
+       "t": "1,500 mg every 24 hours (predicted AUC about 240)",
+       "correct": false,
+       "why": "Halves the daily exposure."
       }
      ],
      "teach": "**New dose = old dose x (target AUC / current AUC).** Round to a measurable dose and recheck after the change.",
@@ -507,14 +587,24 @@
      "q": "When do you recheck exposure after a dose change?",
      "options": [
       {
-       "t": "After the new regimen is close to steady state, or sooner with Bayesian software; and any time kidney function changes",
+       "t": "Near the new steady state, and whenever kidneys change",
        "correct": true,
-       "why": "Recheck is required when the dose or the kidneys change."
+       "why": "Bayesian tools allow earlier checks."
       },
       {
-       "t": "Never; one level is enough for the whole course",
+       "t": "Only at the end of the planned course",
        "correct": false,
-       "why": "Kidney function changes during illness; exposure changes with it."
+       "why": "Too late to adjust."
+      },
+      {
+       "t": "Every day for the whole course",
+       "correct": false,
+       "why": "More often than needed when stable."
+      },
+      {
+       "t": "Never again once one AUC is on target",
+       "correct": false,
+       "why": "Kidney function changes during illness."
       }
      ],
      "teach": "",
@@ -557,14 +647,24 @@
      "q": "What is happening?",
      "options": [
       {
-       "t": "Drug exposure is above 600 and kidney injury is starting",
+       "t": "AUC above 600 with early kidney injury",
        "correct": true,
-       "why": "AUC above 600 is linked to higher risk of acute kidney injury."
+       "why": "SCr up about 67%."
       },
       {
-       "t": "This is expected and needs no change",
+       "t": "Expected creatinine rise from piperacillin tazobactam alone",
        "correct": false,
-       "why": "A 67% rise in creatinine meets the definition of kidney injury."
+       "why": "The combination is linked to AKI, but the AUC of 780 is the fixable part."
+      },
+      {
+       "t": "Contrast nephropathy from a recent scan",
+       "correct": false,
+       "why": "Possible contributor; nothing in the case suggests contrast."
+      },
+      {
+       "t": "Lab variation; repeat the SCr in a week",
+       "correct": false,
+       "why": "A 67% rise meets the AKI definition."
       }
      ],
      "teach": "",
@@ -575,24 +675,29 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Hold the next dose, recheck a level, and restart at a lower dose or longer interval guided by the new AUC",
+       "t": "Hold the next dose, recheck a level, restart lower by AUC",
        "correct": true,
-       "why": "The fastest way to protect the kidneys is to stop more drug going in until the level falls."
+       "why": ""
       },
       {
-       "t": "Ask if MRSA is actually suspected or confirmed, and whether vancomycin is still needed",
+       "t": "Ask whether MRSA coverage is still needed",
        "correct": true,
-       "why": "Stewardship: if cultures do not show MRSA, stopping vancomycin is the best kidney protection."
+       "why": "Stopping vancomycin is the best kidney protection."
       },
       {
-       "t": "Ask whether piperacillin tazobactam could be changed (for example to cefepime) if coverage allows",
+       "t": "Ask about changing pip tazo (for example to cefepime)",
        "correct": true,
-       "why": "Observational studies link vancomycin plus piperacillin tazobactam to more kidney injury; it is a reasonable question to raise."
+       "why": "The combination is linked to more AKI in observational studies."
       },
       {
-       "t": "Add furosemide to protect the kidneys",
+       "t": "Add furosemide to flush the kidneys",
        "correct": false,
-       "why": "Loop diuretics do not protect the kidneys and can add to the problem."
+       "why": "Loop diuretics do not protect kidneys and add ototoxicity with aminoglycosides."
+      },
+      {
+       "t": "Switch to a continuous infusion at the same daily dose",
+       "correct": false,
+       "why": "Same daily exposure, same AUC."
       }
      ],
      "teach": "",
@@ -604,14 +709,24 @@
      "q": "How strong is the evidence that piperacillin tazobactam increases vancomycin kidney injury?",
      "options": [
       {
-       "t": "Mostly observational; the guideline says it has been reported to raise the risk",
+       "t": "Mostly observational; reported to raise the risk",
        "correct": true,
-       "why": "Raise it as a risk, not as proven cause. Whether creatinine changes reflect true injury is still debated."
+       "why": "Rybak 2020 language."
       },
       {
-       "t": "Proven by large randomized trials",
+       "t": "Proven by several large randomized trials",
        "correct": false,
-       "why": "The data are mostly observational."
+       "why": "No large RCT proves it."
+      },
+      {
+       "t": "Disproven; the creatinine rise is only a lab effect",
+       "correct": false,
+       "why": "Debated, not disproven."
+      },
+      {
+       "t": "Shown only in children, not adults",
+       "correct": false,
+       "why": "Signals exist in both."
       }
      ],
      "teach": "",
@@ -659,14 +774,24 @@
      "q": "What is this most likely?",
      "options": [
       {
-       "t": "Vancomycin infusion reaction (histamine release from a fast infusion)",
+       "t": "Vancomycin infusion reaction (rate related)",
        "correct": true,
-       "why": "Rate related, not IgE mediated. Flushing of the upper body and itching are classic."
+       "why": "Histamine release."
       },
       {
-       "t": "Anaphylaxis requiring permanent allergy listing",
+       "t": "IgE mediated anaphylaxis needing epinephrine",
        "correct": false,
-       "why": "No hypotension, airway symptoms or wheeze. Listing it as an allergy wrongly can block a needed drug later."
+       "why": "No hypotension, wheeze or airway swelling."
+      },
+      {
+       "t": "DRESS syndrome from a new drug exposure",
+       "correct": false,
+       "why": "Appears days to weeks into therapy."
+      },
+      {
+       "t": "Linear IgA bullous dermatosis",
+       "correct": false,
+       "why": "A rare blistering reaction days into therapy."
       }
      ],
      "teach": "",
@@ -677,19 +802,24 @@
      "q": "What do you tell the nurse?",
      "options": [
       {
-       "t": "Pause the infusion, give an antihistamine (for example diphenhydramine) if ordered, and restart at a slower rate once symptoms ease",
+       "t": "Pause, antihistamine if ordered, restart slower",
        "correct": true,
-       "why": "Most patients tolerate the drug when infused more slowly."
+       "why": ""
       },
       {
-       "t": "Document it as an infusion reaction, not an allergy, and consider antihistamine before future doses with a longer infusion time",
+       "t": "Document as infusion reaction, not allergy; longer infusion next time",
        "correct": true,
-       "why": "Accurate documentation protects the patient later."
+       "why": ""
       },
       {
-       "t": "Stop vancomycin forever and switch to daptomycin",
+       "t": "Stop vancomycin permanently and switch to daptomycin",
        "correct": false,
        "why": "Not needed for an infusion reaction."
+      },
+      {
+       "t": "Give epinephrine 0.5 mg IM now",
+       "correct": false,
+       "why": "That is the anaphylaxis treatment."
       }
      ],
      "teach": "",
@@ -738,19 +868,24 @@
      "q": "Which loading dose does the guideline suggest in obesity?",
      "options": [
       {
-       "t": "20 to 25 mg/kg actual body weight, maximum 3,000 mg",
+       "t": "20 to 25 mg/kg actual weight, max 3,000 mg",
        "correct": true,
-       "why": "Rybak 2020, Recommendation 12. 20 mg/kg x 160 kg = 3,200 mg, so the cap of 3,000 mg applies."
+       "why": "Rybak 2020, Recommendation 12."
       },
       {
-       "t": "25 mg/kg ideal body weight",
+       "t": "20 to 35 mg/kg actual weight, max 3,000 mg",
        "correct": false,
-       "why": "Vancomycin loading uses actual body weight."
+       "why": "That is the general critical illness range."
       },
       {
-       "t": "35 mg/kg actual weight with no cap",
+       "t": "25 mg/kg ideal body weight, no maximum",
        "correct": false,
-       "why": "That is 5,600 mg: far above the 3,000 mg cap."
+       "why": "Loading uses actual weight, and the cap is 3,000 mg."
+      },
+      {
+       "t": "25 mg/kg adjusted body weight, max 2,000 mg",
+       "correct": false,
+       "why": "Adjusted weight is an aminoglycoside concept."
       }
      ],
      "teach": "",
@@ -761,14 +896,24 @@
      "q": "What is a usual ceiling for the empiric daily maintenance total in obese patients?",
      "options": [
       {
-       "t": "Usually not above 4,500 mg per day, depending on kidney function",
+       "t": "Usually 4,500 mg/day or less to start",
        "correct": true,
-       "why": "Then let AUC monitoring guide changes."
+       "why": "Then AUC guides changes."
       },
       {
-       "t": "No ceiling; give 20 mg/kg every 8 hours by actual weight (9,600 mg/day)",
+       "t": "Usually 3,000 mg/day or less to start",
        "correct": false,
-       "why": "Clearance does not rise in proportion to weight. This overshoots badly."
+       "why": "3,000 mg is the single loading dose cap."
+      },
+      {
+       "t": "20 mg/kg every 8 hours by actual weight (9,600 mg/day)",
+       "correct": false,
+       "why": "Clearance does not rise with weight in proportion."
+      },
+      {
+       "t": "Usually 2,000 mg/day or less to start",
+       "correct": false,
+       "why": "Underdoses most obese patients with normal kidneys."
       }
      ],
      "teach": "",
@@ -816,14 +961,24 @@
      "q": "What loading dose does the guideline list after dialysis?",
      "options": [
       {
-       "t": "25 mg/kg (about 1,750 mg)",
+       "t": "25 mg/kg after the session (about 1,750 mg)",
        "correct": true,
-       "why": "Rybak 2020, Recommendation 13: 25 mg/kg after dialysis ends, for either dialyzer type."
+       "why": "Rybak 2020, Recommendation 13."
+      },
+      {
+       "t": "35 mg/kg during the session (high permeability)",
+       "correct": false,
+       "why": "Intradialytic loading is 30 to 35 mg/kg; this dose is given after dialysis."
+      },
+      {
+       "t": "15 mg/kg after the session",
+       "correct": false,
+       "why": "15 mg/kg is a typical maintenance dose size."
       },
       {
        "t": "5 mg/kg because the kidneys do not work",
        "correct": false,
-       "why": "The load fills the volume of distribution regardless of kidney function."
+       "why": "The load fills volume regardless of kidneys."
       }
      ],
      "teach": "",
@@ -834,14 +989,24 @@
      "q": "What maintenance dose follows, and how is it monitored?",
      "options": [
       {
-       "t": "About 10 mg/kg after each session (high permeability), with a pre dialysis level at least weekly; pre dialysis levels of 15 to 20 likely reach the AUC target",
+       "t": "About 10 mg/kg after each session; pre HD level weekly",
        "correct": true,
-       "why": "Dialysis removes vancomycin, so you redose after each session and check the level before dialysis."
+       "why": "Pre dialysis levels of 15 to 20 likely reach the AUC target."
       },
       {
-       "t": "A dose every day with daily troughs",
+       "t": "About 7.5 mg/kg after each session; pre HD level weekly",
        "correct": false,
-       "why": "Dosing is tied to the dialysis schedule."
+       "why": "7.5 mg/kg is for low permeability dialyzers."
+      },
+      {
+       "t": "About 15 mg/kg daily with daily troughs",
+       "correct": false,
+       "why": "Dosing follows the dialysis schedule."
+      },
+      {
+       "t": "About 25 mg/kg after each session, no levels",
+       "correct": false,
+       "why": "25 mg/kg is the load."
       }
      ],
      "teach": "",
@@ -889,14 +1054,24 @@
      "q": "What does the guideline suggest for loading and maintenance?",
      "options": [
       {
-       "t": "Load 15 to 20 mg/kg, then 30 to 40 mg/kg per day (up to 60) as a continuous infusion",
+       "t": "Load 15 to 20 mg/kg, then 30 to 40 mg/kg/day",
        "correct": true,
-       "why": "Rybak 2020, Recommendation 7."
+       "why": "Rybak 2020, Recommendation 7 (up to 60 mg/kg/day)."
       },
       {
-       "t": "No load; 10 mg/kg per day",
+       "t": "Load 20 to 35 mg/kg, then 15 to 20 mg/kg every 12 h",
        "correct": false,
-       "why": "Too low."
+       "why": "Intermittent dosing."
+      },
+      {
+       "t": "No load, then 60 to 80 mg/kg/day",
+       "correct": false,
+       "why": "60 to 80 mg/kg/day is the pediatric range."
+      },
+      {
+       "t": "Load 25 mg/kg, then 10 mg/kg/day",
+       "correct": false,
+       "why": "Close to hemodialysis dosing."
       }
      ],
      "teach": "",
@@ -909,12 +1084,22 @@
       {
        "t": "About 528 (22 x 24)",
        "correct": true,
-       "why": "With a continuous infusion, AUC24 = steady state concentration x 24. The guideline target level is 20 to 25."
+       "why": "Continuous infusion: AUC24 = Css x 24."
       },
       {
-       "t": "22",
+       "t": "About 264 (22 x 12)",
        "correct": false,
-       "why": "Multiply by 24 hours."
+       "why": "Multiplies by 12 hours instead of 24."
+      },
+      {
+       "t": "About 22 (the level itself)",
+       "correct": false,
+       "why": "The level is not the AUC."
+      },
+      {
+       "t": "About 1,056 (22 x 48)",
+       "correct": false,
+       "why": "Multiplies by 48 hours."
       }
      ],
      "teach": "",
@@ -925,14 +1110,24 @@
      "q": "What line issue matters most with continuous vancomycin?",
      "options": [
       {
-       "t": "Y site compatibility with other drugs running in the same line, since it runs all day",
+       "t": "Y site compatibility with drugs in the line",
        "correct": true,
-       "why": "Check Trissel's for every drug sharing the line, or give it a dedicated lumen."
+       "why": "It runs all day."
       },
       {
-       "t": "None",
+       "t": "Light protection for the bag and tubing",
        "correct": false,
-       "why": "A drug running 24 hours meets every other drug in that line."
+       "why": "Not required."
+      },
+      {
+       "t": "PVC free tubing to prevent adsorption",
+       "correct": false,
+       "why": "Matters for nitroglycerin and insulin."
+      },
+      {
+       "t": "A 0.22 micron in line filter",
+       "correct": false,
+       "why": "Needed for phenytoin, not routine here."
       }
      ],
      "teach": "",
@@ -975,14 +1170,24 @@
      "q": "Which empiric total daily dose range does the guideline suggest for children 3 months and older?",
      "options": [
       {
-       "t": "60 to 80 mg/kg per day divided every 6 to 8 hours",
+       "t": "60 to 80 mg/kg/day divided every 6 to 8 hours",
        "correct": true,
-       "why": "Children clear vancomycin faster than adults; older lower doses often underdose. Children under 12 often need the upper end."
+       "why": "Children 3 months and older (Rybak 2020)."
       },
       {
-       "t": "15 mg/kg once daily",
+       "t": "45 to 60 mg/kg/day divided every 6 to 8 hours",
        "correct": false,
-       "why": "Far too low for a child with normal kidneys."
+       "why": "Older empiric dosing the guideline says may be insufficient."
+      },
+      {
+       "t": "15 to 20 mg/kg every 8 to 12 hours",
+       "correct": false,
+       "why": "Adult maintenance."
+      },
+      {
+       "t": "30 to 40 mg/kg/day as a continuous infusion",
+       "correct": false,
+       "why": "Adult continuous infusion maintenance."
       }
      ],
      "teach": "",
@@ -995,12 +1200,22 @@
       {
        "t": "300 mg every 6 hours",
        "correct": true,
-       "why": "60 x 20 = 1,200 mg per day, divided by 4 = 300 mg."
+       "why": "60 x 20 = 1,200 mg/day / 4."
+      },
+      {
+       "t": "400 mg every 6 hours",
+       "correct": false,
+       "why": "That is 80 mg/kg/day, the top of the range, not 60."
       },
       {
        "t": "1,200 mg every 6 hours",
        "correct": false,
-       "why": "That is the whole day's dose given four times."
+       "why": "The whole day's dose given four times."
+      },
+      {
+       "t": "400 mg every 8 hours",
+       "correct": false,
+       "why": "That is 60 mg/kg/day divided every 8 hours, not every 6."
       }
      ],
      "teach": "",
@@ -1011,14 +1226,24 @@
      "q": "Which reference do you open for pediatric dosing?",
      "options": [
       {
-       "t": "A pediatric reference (Lexicomp Pediatric or Harriet Lane) and St. Mary's pediatric protocol",
+       "t": "A pediatric reference and St. Mary's pediatric protocol",
        "correct": true,
-       "why": "Never use the adult section for a child."
+       "why": "Lexicomp Pediatric or Harriet Lane."
       },
       {
-       "t": "The adult Lexicomp monograph",
+       "t": "The adult Lexicomp monograph, scaled by weight",
        "correct": false,
-       "why": "Adult doses do not translate by weight alone."
+       "why": "Adult doses do not scale safely."
+      },
+      {
+       "t": "NeoFax, since it covers all children",
+       "correct": false,
+       "why": "NeoFax is for neonates."
+      },
+      {
+       "t": "The FDA label adult section",
+       "correct": false,
+       "why": "Use the pediatric section or a pediatric reference."
       }
      ],
      "teach": "",
@@ -1066,14 +1291,24 @@
      "q": "What is wrong?",
      "options": [
       {
-       "t": "IV vancomycin does not reach the colon; C. difficile needs oral vancomycin",
+       "t": "IV vancomycin does not reach the colon",
        "correct": true,
-       "why": "Vancomycin is poorly absorbed from the gut and IV drug does not get into the colon lumen in useful amounts."
+       "why": "C. difficile needs oral therapy."
       },
       {
-       "t": "Nothing",
+       "t": "The IV dose is too low; use 1.5 g every 12 hours",
        "correct": false,
-       "why": "IV vancomycin does not treat C. difficile colitis."
+       "why": "Raising the IV dose still does not reach the colon."
+      },
+      {
+       "t": "IV vancomycin is fine but needs an AUC target",
+       "correct": false,
+       "why": "AUC dosing is for systemic infections."
+      },
+      {
+       "t": "C. difficile requires IV metronidazole only",
+       "correct": false,
+       "why": "Metronidazole is a fallback; the preferred agents are oral."
       }
      ],
      "teach": "",
@@ -1084,14 +1319,24 @@
      "q": "What does the IDSA/SHEA 2021 update recommend for a first episode?",
      "options": [
       {
-       "t": "Fidaxomicin 200 mg twice daily for 10 days preferred; oral vancomycin 125 mg four times daily for 10 days is an acceptable alternative",
+       "t": "Fidaxomicin 200 mg BID x 10 days preferred",
        "correct": true,
-       "why": "Fidaxomicin is preferred because it lowers recurrence; vancomycin is the common alternative, often for cost or access."
+       "why": "IDSA/SHEA 2021; oral vancomycin 125 mg QID x 10 days is the alternative."
       },
       {
-       "t": "Metronidazole 500 mg three times daily as first choice for everyone",
+       "t": "Oral vancomycin 500 mg QID x 10 days",
        "correct": false,
-       "why": "Metronidazole is now only for nonsevere disease when the others are unavailable."
+       "why": "500 mg QID is for fulminant disease."
+      },
+      {
+       "t": "Metronidazole 500 mg TID x 10 days",
+       "correct": false,
+       "why": "Only for nonsevere disease when the others are unavailable."
+      },
+      {
+       "t": "Pulsed fidaxomicin after 5 days of BID",
+       "correct": false,
+       "why": "Extended pulsed dosing is a recurrence option."
       }
      ],
      "teach": "",
@@ -1134,14 +1379,24 @@
      "q": "What kind of killing do aminoglycosides show?",
      "options": [
       {
-       "t": "Concentration dependent killing with a post antibiotic effect",
+       "t": "Concentration dependent with a post antibiotic effect",
        "correct": true,
-       "why": "Higher peaks kill faster, and bacteria stay suppressed for hours after levels fall. That is why one large dose a day works."
+       "why": ""
       },
       {
-       "t": "Time dependent killing like beta lactams",
+       "t": "Time dependent, like beta lactams",
        "correct": false,
-       "why": "That describes penicillins and cephalosporins."
+       "why": "Beta lactams depend on time above MIC."
+      },
+      {
+       "t": "AUC dependent with no post antibiotic effect",
+       "correct": false,
+       "why": "AUC/MIC describes vancomycin."
+      },
+      {
+       "t": "Bacteriostatic, needing constant levels",
+       "correct": false,
+       "why": "Aminoglycosides are bactericidal."
       }
      ],
      "teach": "",
@@ -1154,22 +1409,27 @@
       {
        "t": "Kidney injury (usually reversible)",
        "correct": true,
-       "why": "Watch creatinine and urine output."
+       "why": ""
       },
       {
-       "t": "Ototoxicity, hearing and balance (often irreversible)",
+       "t": "Ototoxicity (often irreversible)",
        "correct": true,
-       "why": "Ask about ringing in the ears, hearing loss and dizziness."
+       "why": ""
       },
       {
        "t": "Neuromuscular blockade",
        "correct": true,
-       "why": "A boxed warning: caution with paralytics and myasthenia gravis."
+       "why": ""
       },
       {
-       "t": "Red man syndrome",
+       "t": "Vancomycin infusion reaction",
        "correct": false,
-       "why": "That is vancomycin."
+       "why": "Vancomycin only."
+      },
+      {
+       "t": "QT prolongation",
+       "correct": false,
+       "why": "A fluoroquinolone and macrolide concern."
       }
      ],
      "teach": "",
@@ -1181,19 +1441,24 @@
      "q": "Which drugs add to aminoglycoside toxicity?",
      "options": [
       {
-       "t": "Loop diuretics (ototoxicity)",
+       "t": "Loop diuretics (ears)",
        "correct": true,
-       "why": "Furosemide and gentamicin together raise hearing risk."
+       "why": ""
       },
       {
-       "t": "Vancomycin, amphotericin B, IV contrast, NSAIDs (kidney)",
+       "t": "Vancomycin, amphotericin B, contrast, NSAIDs (kidneys)",
        "correct": true,
-       "why": "Stacking nephrotoxins raises kidney injury."
+       "why": ""
       },
       {
-       "t": "Acetaminophen",
+       "t": "Rifampin (induces aminoglycoside metabolism)",
        "correct": false,
-       "why": "Not a meaningful interaction."
+       "why": "Aminoglycosides are not metabolized; they are cleared unchanged by the kidneys."
+      },
+      {
+       "t": "Proton pump inhibitors (reduce absorption)",
+       "correct": false,
+       "why": "IV aminoglycosides are not absorbed from the gut anyway."
       }
      ],
      "teach": "",
@@ -1244,17 +1509,22 @@
       {
        "t": "73 kg",
        "correct": true,
-       "why": "50 + 2.3 x 10 = 73 kg."
-      },
-      {
-       "t": "110 kg",
-       "correct": false,
-       "why": "That is his actual weight."
+       "why": "50 + 2.3 x 10."
       },
       {
        "t": "68.5 kg",
        "correct": false,
-       "why": "That would use the female formula (45.5 base)."
+       "why": "Female formula (45.5 base)."
+      },
+      {
+       "t": "87.8 kg",
+       "correct": false,
+       "why": "That is his adjusted body weight."
+      },
+      {
+       "t": "77.9 kg",
+       "correct": false,
+       "why": "Uses 2.54 (cm per inch) instead of 2.3 kg per inch."
       }
      ],
      "teach": "",
@@ -1265,19 +1535,24 @@
      "q": "His actual weight is 151% of ideal. Which weight do you dose on?",
      "options": [
       {
-       "t": "Adjusted body weight: IBW + 0.4 x (actual minus IBW) = 73 + 0.4 x 37 = about 88 kg",
+       "t": "Adjusted: 73 + 0.4 x 37 = about 88 kg",
        "correct": true,
-       "why": "Aminoglycosides stay mostly in body water, and fat holds little water. Most protocols switch to adjusted weight above about 120% of IBW."
+       "why": "Above about 120% of ideal."
       },
       {
-       "t": "Actual weight, 110 kg",
+       "t": "Actual: 110 kg",
        "correct": false,
        "why": "Overdoses obese patients."
       },
       {
-       "t": "Ideal weight always",
+       "t": "Ideal: 73 kg",
        "correct": false,
-       "why": "Underdoses obese patients, since some extra water goes with extra weight."
+       "why": "Underdoses; some extra body water comes with extra weight."
+      },
+      {
+       "t": "Adjusted: 73 + 0.25 x 37 = about 82 kg",
+       "correct": false,
+       "why": "0.25 is a factor some protocols use for other drugs; aminoglycosides use 0.4."
       }
      ],
      "teach": "Know three weights cold: **actual, ideal, adjusted.** Write all three in your note.",
@@ -1288,14 +1563,24 @@
      "q": "What is the 7 mg/kg dose?",
      "options": [
       {
-       "t": "About 615 mg (7 x 87.8), rounded per protocol, for example 620 mg",
+       "t": "About 615 mg (7 x 87.8)",
        "correct": true,
-       "why": "Round to the nearest 10 or 20 mg per your protocol."
+       "why": "Round per protocol."
       },
       {
-       "t": "770 mg",
+       "t": "About 770 mg (7 x 110)",
        "correct": false,
-       "why": "That uses actual weight."
+       "why": "Actual weight."
+      },
+      {
+       "t": "About 511 mg (7 x 73)",
+       "correct": false,
+       "why": "Ideal weight."
+      },
+      {
+       "t": "About 439 mg (5 x 87.8)",
+       "correct": false,
+       "why": "5 mg/kg is the once daily intraamniotic infection dose."
       }
      ],
      "teach": "",
@@ -1343,14 +1628,24 @@
      "q": "Is the level timing valid for the Hartford nomogram?",
      "options": [
       {
-       "t": "Yes: 10 hours after the start, inside the 6 to 14 hour window",
+       "t": "Yes: 10 hours after the start, inside 6 to 14 hours",
        "correct": true,
-       "why": "The nomogram was built for a single level 6 to 14 hours after the start of a 7 mg/kg dose."
+       "why": "Nicolau 1995."
       },
       {
-       "t": "No: the level must be a trough just before the next dose",
+       "t": "No: it must be a trough just before the next dose",
        "correct": false,
-       "why": "Hartford uses one random level, not a trough."
+       "why": "Traditional dosing uses troughs; Hartford uses one random level."
+      },
+      {
+       "t": "No: it must be drawn 1 to 2 hours after the start",
+       "correct": false,
+       "why": "That is a peak (for vancomycin two level AUC)."
+      },
+      {
+       "t": "No: it must be drawn 18 to 24 hours after the start",
+       "correct": false,
+       "why": "Outside the nomogram window."
       }
      ],
      "teach": "",
@@ -1361,14 +1656,24 @@
      "q": "The level falls exactly on the line between the q24h and q36h zones. Which interval?",
      "options": [
       {
-       "t": "q36h, the longer interval",
+       "t": "Every 36 hours (the longer interval)",
        "correct": true,
-       "why": "On a line, choose the longer interval. Safer for the kidneys and ears."
+       "why": ""
       },
       {
-       "t": "q24h",
+       "t": "Every 24 hours (the shorter interval)",
        "correct": false,
-       "why": "On a line you choose the longer interval."
+       "why": "On a line choose the longer."
+      },
+      {
+       "t": "Every 48 hours, to be safe",
+       "correct": false,
+       "why": "Skips a zone."
+      },
+      {
+       "t": "Repeat the level before choosing",
+       "correct": false,
+       "why": "Not needed; the rule decides."
       }
      ],
      "teach": "",
@@ -1379,14 +1684,24 @@
      "q": "Another patient's level is above the q48h zone. What do you do?",
      "options": [
       {
-       "t": "Do not schedule a dose; follow serial levels and redose when the level is below 1 mcg/mL (or switch approach)",
+       "t": "Hold doses; redose when the level is below 1",
        "correct": true,
-       "why": "Above the q48h zone means clearance is too slow for this method."
+       "why": "Clearance too slow for the method."
       },
       {
        "t": "Give the next dose in 48 hours anyway",
        "correct": false,
-       "why": "The patient still has too much drug on board."
+       "why": "Too much drug still on board."
+      },
+      {
+       "t": "Give 3.5 mg/kg every 48 hours instead",
+       "correct": false,
+       "why": "Not a Hartford step."
+      },
+      {
+       "t": "Switch to 1 mg/kg every 8 hours now",
+       "correct": false,
+       "why": "That is synergy dosing."
       }
      ],
      "teach": "",
@@ -1397,19 +1712,24 @@
      "q": "Which patients should NOT be dosed with the Hartford method?",
      "options": [
       {
-       "t": "Pregnancy, burns over 20%, ascites, CrCl below 20 mL/min or dialysis",
+       "t": "Pregnancy, burns over 20%, ascites, CrCl below 20 or dialysis",
        "correct": true,
-       "why": "These groups were excluded from the original study because their kinetics differ."
+       "why": "Original exclusions."
       },
       {
-       "t": "Endocarditis (synergy dosing), cystic fibrosis, children",
+       "t": "Endocarditis synergy, cystic fibrosis, children",
        "correct": true,
-       "why": "Each needs its own regimen."
+       "why": ""
       },
       {
-       "t": "A healthy adult with pyelonephritis and normal kidneys",
+       "t": "Adults over 65 with normal kidney function",
        "correct": false,
-       "why": "This is the classic good candidate."
+       "why": "Age alone was not an exclusion."
+      },
+      {
+       "t": "Adults with obesity using adjusted weight",
+       "correct": false,
+       "why": "Obese adults can use Hartford with a dosing weight per protocol."
       }
      ],
      "teach": "",
@@ -1458,14 +1778,24 @@
      "q": "When are the peak and trough drawn?",
      "options": [
       {
-       "t": "Peak 30 minutes after the end of the 30 minute infusion; trough just before the next dose",
+       "t": "Peak 30 min after a 30 min infusion; trough before next dose",
        "correct": true,
-       "why": "The 30 minute wait after the infusion lets the drug finish distributing."
+       "why": ""
       },
       {
-       "t": "Both at random times",
+       "t": "Peak 1 to 2 hours after the infusion; trough at random",
        "correct": false,
-       "why": "Traditional dosing needs timed peaks and troughs."
+       "why": "The 1 to 2 hour peak is the vancomycin AUC draw."
+      },
+      {
+       "t": "One random level 6 to 14 hours after the start",
+       "correct": false,
+       "why": "That is Hartford."
+      },
+      {
+       "t": "Trough only, 30 minutes before the next dose",
+       "correct": false,
+       "why": "Traditional dosing needs both."
       }
      ],
      "teach": "",
@@ -1476,14 +1806,24 @@
      "q": "What are the usual safety limits on the label for traditional dosing?",
      "options": [
       {
-       "t": "Avoid peaks above 12 mcg/mL and troughs above 2 mcg/mL",
+       "t": "Avoid peaks above 12 and troughs above 2 mcg/mL",
        "correct": true,
-       "why": "Gentamicin label: prolonged concentrations above these raise toxicity."
+       "why": "Gentamicin label."
       },
       {
-       "t": "Peak above 25 is the goal",
+       "t": "Avoid peaks above 35 and troughs above 10 mcg/mL",
        "correct": false,
-       "why": "That is above the label safety limit for gentamicin (amikacin uses higher numbers)."
+       "why": "Those are amikacin label limits."
+      },
+      {
+       "t": "Keep troughs at 15 to 20 mcg/mL",
+       "correct": false,
+       "why": "The old vancomycin trough target."
+      },
+      {
+       "t": "Keep peaks at 3 to 4 and troughs below 1 mcg/mL",
+       "correct": false,
+       "why": "Synergy targets for endocarditis."
       }
      ],
      "teach": "",
@@ -1494,14 +1834,24 @@
      "q": "Levels: 7.0 mcg/mL drawn 1 hour after the start, 1.2 mcg/mL drawn 8 hours after the start. What is the half life?",
      "options": [
       {
-       "t": "About 2.8 hours: ke = ln(7/1.2) / 7 = 0.252 per hour; 0.693 / 0.252 = 2.75 h",
+       "t": "About 2.75 hours",
        "correct": true,
-       "why": "Same exponential math as vancomycin."
+       "why": "ke = ln(7/1.2)/7 = 0.252; 0.693/0.252."
       },
       {
-       "t": "About 7 hours",
+       "t": "About 3.15 hours",
        "correct": false,
-       "why": "Recheck: use ln of the ratio over the 7 hours between draws."
+       "why": "Uses 8 hours (the interval) instead of 7 hours between draws."
+      },
+      {
+       "t": "About 6.4 hours",
+       "correct": false,
+       "why": "Uses log base 10 instead of the natural log."
+      },
+      {
+       "t": "About 0.25 hours",
+       "correct": false,
+       "why": "That number is ke, not the half life."
       }
      ],
      "teach": "",
@@ -1549,14 +1899,24 @@
      "q": "How is synergy dosing different from gram negative dosing?",
      "options": [
       {
-       "t": "Lower doses: about 3 mg/kg per day in divided doses (for example 1 mg/kg every 8 hours), targeting a peak of 3 to 4 and a trough below 1",
+       "t": "1 mg/kg every 8 hours; peak 3 to 4, trough below 1",
        "correct": true,
-       "why": "For synergy, gentamicin helps the cell wall drug kill; you do not need high gram negative peaks (AHA 2015)."
+       "why": "AHA 2015 synergy dosing."
       },
       {
-       "t": "7 mg/kg once daily by Hartford",
+       "t": "7 mg/kg once daily by the Hartford nomogram",
        "correct": false,
-       "why": "Hartford is not for endocarditis synergy."
+       "why": "Endocarditis is a Hartford exclusion."
+      },
+      {
+       "t": "5 mg/kg once daily, adjusted by levels",
+       "correct": false,
+       "why": "Gram negative extended interval dosing."
+      },
+      {
+       "t": "2 mg/kg load, then 1.5 mg/kg every 8 hours",
+       "correct": false,
+       "why": "The intraamniotic infection regimen."
       }
      ],
      "teach": "",
@@ -1567,14 +1927,24 @@
      "q": "What alternative avoids aminoglycoside toxicity for E. faecalis endocarditis?",
      "options": [
       {
-       "t": "Ampicillin plus ceftriaxone (double beta lactam)",
+       "t": "Ampicillin plus ceftriaxone",
        "correct": true,
-       "why": "AHA 2015 lists it as a reasonable option, especially with kidney risk or high level aminoglycoside resistance."
+       "why": "AHA 2015."
       },
       {
-       "t": "Vancomycin alone",
+       "t": "Vancomycin plus gentamicin",
        "correct": false,
-       "why": "Not preferred for susceptible E. faecalis."
+       "why": "Keeps the aminoglycoside and adds vancomycin kidney risk."
+      },
+      {
+       "t": "Daptomycin alone",
+       "correct": false,
+       "why": "An option for resistant enterococci, not the standard alternative here."
+      },
+      {
+       "t": "Ampicillin plus cefazolin",
+       "correct": false,
+       "why": "Cefazolin lacks the PBP binding that gives ceftriaxone synergy."
       }
      ],
      "teach": "",
@@ -1622,14 +1992,24 @@
      "q": "What is the concern?",
      "options": [
       {
-       "t": "Aminoglycoside ototoxicity (cochlear and vestibular), made more likely by the long course and the loop diuretic",
+       "t": "Aminoglycoside ototoxicity, worsened by furosemide",
        "correct": true,
-       "why": "Ototoxicity is often irreversible, so early action matters."
+       "why": "Cochlear and vestibular."
       },
       {
-       "t": "Normal side effect, continue",
+       "t": "Benign positional vertigo unrelated to drugs",
        "correct": false,
-       "why": "Never ignore ear symptoms on an aminoglycoside."
+       "why": "Never assume with an aminoglycoside."
+      },
+      {
+       "t": "Furosemide alone; gentamicin does not affect the ear",
+       "correct": false,
+       "why": "Both are ototoxic."
+      },
+      {
+       "t": "Vancomycin ototoxicity",
+       "correct": false,
+       "why": "She is not on vancomycin."
       }
      ],
      "teach": "",
@@ -1640,19 +2020,24 @@
      "q": "What do you recommend?",
      "options": [
       {
-       "t": "Tell the team today; ask whether gentamicin can be stopped or switched based on cultures (for example to a beta lactam)",
+       "t": "Tell the team today; switch if cultures allow",
        "correct": true,
-       "why": "Most urinary gram negatives have options with less toxicity."
+       "why": ""
       },
       {
-       "t": "Check levels and kidney function, and review the need for furosemide",
+       "t": "Check levels and kidney function; review furosemide",
        "correct": true,
-       "why": "High troughs and stacked ototoxins raise risk."
+       "why": ""
       },
       {
        "t": "Suggest an audiology evaluation",
        "correct": true,
-       "why": "Documents the baseline of damage."
+       "why": ""
+      },
+      {
+       "t": "Lower the dose by 25% and continue",
+       "correct": false,
+       "why": "Damage may be permanent; stopping beats lowering."
       }
      ],
      "teach": "",
@@ -1697,19 +2082,24 @@
      "q": "What do you do first?",
      "options": [
       {
-       "t": "Get the septic patient's vancomycin loading dose ordered and sent",
+       "t": "Order and send the septic patient's vancomycin load",
        "correct": true,
-       "why": "Time to effective antibiotics drives survival in septic shock."
+       "why": "Time to antibiotics drives survival."
       },
       {
-       "t": "Plot the gentamicin level",
+       "t": "Plot the gentamicin level first, since it is ready",
        "correct": false,
-       "why": "Important, but the next dose is hours away."
+       "why": "The next dose is hours away."
       },
       {
-       "t": "Document the AUC of 455",
+       "t": "Document the AUC of 455 first",
        "correct": false,
-       "why": "On target; it can wait."
+       "why": "On target; routine."
+      },
+      {
+       "t": "Call the stable patient's team about the AUC",
+       "correct": false,
+       "why": "Not needed now."
       }
      ],
      "teach": "",
@@ -1722,12 +2112,22 @@
       {
        "t": "Plot the gentamicin level and set the next dose time",
        "correct": true,
-       "why": "The next dose time depends on the level."
+       "why": ""
       },
       {
-       "t": "The AUC note",
+       "t": "Write the AUC note for the stable patient",
        "correct": false,
-       "why": "Routine."
+       "why": "Last."
+      },
+      {
+       "t": "Recheck the septic patient's CrCl",
+       "correct": false,
+       "why": "Maintenance can wait for labs."
+      },
+      {
+       "t": "Order a vancomycin trough for the septic patient",
+       "correct": false,
+       "why": "Too early."
       }
      ],
      "teach": "",
@@ -1738,14 +2138,24 @@
      "q": "For the septic patient (90 kg), what loading dose fits?",
      "options": [
       {
-       "t": "2,000 to 2,250 mg (about 22 to 25 mg/kg), infused per policy",
+       "t": "2,000 to 2,250 mg (about 22 to 25 mg/kg)",
        "correct": true,
-       "why": "Inside 20 to 35 mg/kg and under the 3,000 mg cap."
+       "why": "Within 20 to 35 mg/kg, under 3,000 mg."
       },
       {
-       "t": "1,000 mg because she might have kidney problems",
+       "t": "1,000 mg, in case her kidneys are poor",
        "correct": false,
-       "why": "Loads are not reduced for kidney function."
+       "why": "Loads are not reduced for kidneys."
+      },
+      {
+       "t": "3,150 mg (35 mg/kg)",
+       "correct": false,
+       "why": "Above the 3,000 mg cap."
+      },
+      {
+       "t": "1,350 mg (15 mg/kg)",
+       "correct": false,
+       "why": "15 mg/kg is a maintenance dose."
       }
      ],
      "teach": "",

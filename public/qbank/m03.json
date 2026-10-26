@@ -18,24 +18,29 @@
      "q": "What does the competency include?",
      "options": [
       {
-       "t": "Training and a written or knowledge test",
+       "t": "Training plus a knowledge test",
        "correct": true,
-       "why": "Initially, then at least every 12 months (USP 797)."
+       "why": "Initially, then at least every 12 months."
       },
       {
-       "t": "Garbing and hand hygiene, with gloved fingertip and thumb sampling",
+       "t": "Garbing and hand hygiene with gloved fingertip sampling",
        "correct": true,
-       "why": "Proves you can put on garb without contaminating your gloves."
+       "why": ""
       },
       {
-       "t": "Aseptic manipulation: a media fill test, then gloved fingertip sampling and a surface sample of your work area",
+       "t": "Media fill, fingertip sampling and a surface sample",
        "correct": true,
-       "why": "Proves your technique keeps a product sterile."
+       "why": "The aseptic manipulation competency."
       },
       {
-       "t": "A typing speed test",
+       "t": "Viable air sampling of the room by the compounder",
        "correct": false,
-       "why": "Not part of USP 797."
+       "why": "Air sampling is facility monitoring (every 6 months), not a personnel competency."
+      },
+      {
+       "t": "Hood certification performed by the compounder",
+       "correct": false,
+       "why": "Certification is done by a qualified certifier every 6 months."
       }
      ],
      "teach": "",
@@ -47,19 +52,24 @@
      "q": "Before compounding alone the first time, how many gloved fingertip tests must you pass after garbing, and what result passes?",
      "options": [
       {
-       "t": "Three separate times, each with zero colony forming units (CFU)",
+       "t": "Three times, each with zero CFU",
        "correct": true,
-       "why": "Initial garbing qualification: three consecutive passes, action level is any growth above 0 CFU."
+       "why": "Initial garbing qualification: action level above 0 CFU."
       },
       {
-       "t": "One time, up to 5 CFU",
+       "t": "Three times, each with 3 CFU or fewer",
        "correct": false,
-       "why": "The first qualification is stricter: three times, zero growth."
+       "why": "Above 3 CFU is the action level after a media fill, not after garbing."
       },
       {
-       "t": "None if you passed in pharmacy school",
+       "t": "Once, with zero CFU",
        "correct": false,
-       "why": "Each site qualifies its own compounders."
+       "why": "Initial qualification needs three consecutive passes."
+      },
+      {
+       "t": "Once, with 3 CFU or fewer",
+       "correct": false,
+       "why": "Mixes the media fill action level with a single test."
       }
      ],
      "teach": "Zero growth means your gloves stayed clean while you garbed. That is the point of the whole sequence.",
@@ -70,9 +80,9 @@
      "q": "After the media fill test, the gloved fingertip action level is:",
      "options": [
       {
-       "t": "More than 3 CFU (total from both hands) fails",
+       "t": "More than 3 CFU total (both hands) fails",
        "correct": true,
-       "why": "After a media fill, a small amount of growth is allowed. Above 3 CFU triggers retraining and retesting."
+       "why": "After the media fill."
       },
       {
        "t": "More than 0 CFU fails",
@@ -80,7 +90,12 @@
        "why": "That is the action level after garbing."
       },
       {
-       "t": "More than 20 CFU fails",
+       "t": "More than 1 CFU per hand fails",
+       "correct": false,
+       "why": "Not the USP 797 level."
+      },
+      {
+       "t": "More than 10 CFU total fails",
        "correct": false,
        "why": "Far too loose."
       }
@@ -95,17 +110,22 @@
       {
        "t": "At least every 6 months",
        "correct": true,
-       "why": "Category 3 compounders repeat every 3 months. Training and knowledge assessment repeat at least every 12 months."
+       "why": "Category 1 and 2 compounders."
       },
       {
-       "t": "Every 2 years",
+       "t": "At least every 3 months",
        "correct": false,
-       "why": "Much more often than that."
+       "why": "Every 3 months applies to Category 3 compounders."
       },
       {
-       "t": "Only once",
+       "t": "At least every 12 months",
        "correct": false,
-       "why": "Competency is ongoing."
+       "why": "12 months is the training and knowledge test cycle (and supervisors who do not compound)."
+      },
+      {
+       "t": "At least every 24 months",
+       "correct": false,
+       "why": "No USP 797 competency runs every 2 years."
       }
      ],
      "teach": "",
@@ -158,14 +178,24 @@
      "q": "What is the principle behind the garbing order?",
      "options": [
       {
-       "t": "Dirtiest to cleanest: start with what is closest to the floor and the dirtiest parts of you",
+       "t": "Dirtiest to cleanest",
        "correct": true,
-       "why": "Shoe covers and hair covers go on before you wash, so you do not touch clean hands to dirty items."
+       "why": "Shoe and hair covers before washing."
       },
       {
        "t": "Cleanest to dirtiest",
        "correct": false,
        "why": "Reversed."
+      },
+      {
+       "t": "Top of the body to the bottom",
+       "correct": false,
+       "why": "Shoe covers go on first."
+      },
+      {
+       "t": "Any order, as long as gloves go on last",
+       "correct": false,
+       "why": "Order matters to avoid touching dirty items with clean hands."
       }
      ],
      "teach": "",
@@ -176,19 +206,24 @@
      "q": "Put these in order: gown, shoe covers, wash hands, sterile gloves, hair cover and face mask.",
      "options": [
       {
-       "t": "Shoe covers, hair cover, face mask, wash hands, gown, sterile gloves",
+       "t": "Shoe covers, hair cover, mask, wash, gown, sterile gloves",
        "correct": true,
-       "why": "Gloves go on last, inside the buffer area or at the line of demarcation per SOP, and are sanitized with sterile 70% isopropyl alcohol."
+       "why": ""
       },
       {
-       "t": "Gloves, gown, wash hands, hair cover, shoe covers",
+       "t": "Wash, shoe covers, hair cover, mask, gown, sterile gloves",
        "correct": false,
-       "why": "Gloves first would contaminate them immediately."
+       "why": "Touching shoe covers after washing recontaminates hands."
       },
       {
-       "t": "Wash hands, gown, shoe covers, gloves, mask",
+       "t": "Shoe covers, hair cover, mask, gown, wash, sterile gloves",
        "correct": false,
-       "why": "You would touch your shoes after washing."
+       "why": "The gown goes on after washing."
+      },
+      {
+       "t": "Hair cover, mask, wash, gown, shoe covers, sterile gloves",
+       "correct": false,
+       "why": "Shoe covers after the gown recontaminate hands and gown."
       }
      ],
      "teach": "Your SOP is the final word on the exact order and where the line of demarcation is.",
@@ -199,14 +234,24 @@
      "q": "How long is the hand wash?",
      "options": [
       {
-       "t": "At least 30 seconds with soap and water, nails cleaned, hands to elbows",
+       "t": "At least 30 seconds, nails cleaned, to the elbows",
        "correct": true,
-       "why": "Then dry with low lint towels and apply an alcohol based hand rub before sterile gloves."
+       "why": ""
       },
       {
-       "t": "5 seconds",
+       "t": "At least 15 seconds, hands and wrists only",
        "correct": false,
-       "why": "Too short."
+       "why": "Too short and too limited."
+      },
+      {
+       "t": "At least 20 seconds, as in routine patient care",
+       "correct": false,
+       "why": "20 seconds is general hand hygiene; compounding needs at least 30."
+      },
+      {
+       "t": "At least 2 minutes with a scrub brush",
+       "correct": false,
+       "why": "Brushes are not required and can damage skin."
       }
      ],
      "teach": "",
@@ -217,14 +262,24 @@
      "q": "What do you use on your gloves during compounding?",
      "options": [
       {
-       "t": "Sterile 70% isopropyl alcohol, applied often, especially after touching anything outside the hood",
+       "t": "Sterile 70% IPA, reapplied often, allowed to dry",
        "correct": true,
-       "why": "Let it dry. Wet alcohol is not yet working."
+       "why": ""
       },
       {
-       "t": "Nothing once gloves are on",
+       "t": "Nonsterile 70% IPA, since gloves are already sterile",
        "correct": false,
-       "why": "Gloves pick up contamination; you sanitize them again and again."
+       "why": "Sterile IPA is required inside ISO 5."
+      },
+      {
+       "t": "Alcohol based hand rub applied over the gloves",
+       "correct": false,
+       "why": "Hand rub is for bare hands before gloving."
+      },
+      {
+       "t": "Nothing once sterile gloves are on",
+       "correct": false,
+       "why": "Gloves pick up contamination."
       }
      ],
      "teach": "",
@@ -277,14 +332,24 @@
      "q": "What is the media fill test for?",
      "options": [
       {
-       "t": "To prove your aseptic technique by copying your most complex real manipulations with a growth medium",
+       "t": "Prove aseptic technique with growth medium",
        "correct": true,
-       "why": "If any bacteria get in, the medium turns cloudy after incubation."
+       "why": "Copies your most complex manipulations."
       },
       {
-       "t": "To test the hood airflow",
+       "t": "Test the hood's HEPA filter integrity",
        "correct": false,
-       "why": "That is certification of the hood."
+       "why": "That is certification."
+      },
+      {
+       "t": "Measure particle counts in the buffer room",
+       "correct": false,
+       "why": "That is certification."
+      },
+      {
+       "t": "Check that the BUD on labels is correct",
+       "correct": false,
+       "why": "Unrelated."
       }
      ],
      "teach": "",
@@ -295,14 +360,24 @@
      "q": "After incubation the medium is cloudy (turbid). What does that mean?",
      "options": [
       {
-       "t": "Failure: contamination got in. You stop compounding, get retrained, and repeat the full aseptic manipulation competency",
+       "t": "Failure: retrain and repeat the whole competency",
        "correct": true,
-       "why": "If any part of the aseptic manipulation assessment fails, the whole assessment is repeated."
+       "why": "If any part fails, the whole aseptic assessment is repeated."
       },
       {
-       "t": "Normal; the medium is supposed to turn cloudy",
+       "t": "Normal: growth medium always turns cloudy",
        "correct": false,
-       "why": "Clear means pass. Cloudy means growth."
+       "why": "Clear means pass."
+      },
+      {
+       "t": "Failure: repeat only the fingertip sample",
+       "correct": false,
+       "why": "The whole aseptic manipulation assessment is repeated."
+      },
+      {
+       "t": "Pass, if fewer than 3 units are cloudy",
+       "correct": false,
+       "why": "Any turbid unit is a failure."
       }
      ],
      "teach": "",
@@ -313,14 +388,24 @@
      "q": "How is a media fill usually incubated under the 2023 chapter?",
      "options": [
       {
-       "t": "At 20 to 25 °C and 30 to 35 °C, at least 7 days each (14 days total)",
+       "t": "20 to 25 °C and 30 to 35 °C, at least 7 days each",
        "correct": true,
-       "why": "Two temperature ranges catch both environmental organisms and organisms from skin. Follow your SOP for the order."
+       "why": "2023 chapter."
       },
       {
-       "t": "One hour in the refrigerator",
+       "t": "30 to 35 °C only, for 48 to 72 hours",
        "correct": false,
-       "why": "Bacteria will not grow there."
+       "why": "That resembles gloved fingertip plate incubation, not media fill."
+      },
+      {
+       "t": "2 to 8 °C for 14 days",
+       "correct": false,
+       "why": "Refrigeration stops growth."
+      },
+      {
+       "t": "20 to 25 °C only, for 5 to 7 days",
+       "correct": false,
+       "why": "Both temperature ranges are needed."
       }
      ],
      "teach": "",
@@ -368,19 +453,24 @@
      "q": "Match the area to its ISO class.",
      "options": [
       {
-       "t": "Hood (primary engineering control) ISO 5; buffer room ISO 7; ante room ISO 8 (ISO 7 if it opens into a negative pressure buffer room)",
+       "t": "Hood ISO 5; buffer ISO 7; ante ISO 8",
        "correct": true,
-       "why": "Lower ISO number = cleaner air."
+       "why": "Ante ISO 7 if it opens to a negative pressure buffer room."
       },
       {
-       "t": "All ISO 5",
+       "t": "Hood ISO 5; buffer ISO 8; ante ISO 7",
+       "correct": false,
+       "why": "Buffer and ante are reversed."
+      },
+      {
+       "t": "Hood ISO 7; buffer ISO 7; ante ISO 8",
+       "correct": false,
+       "why": "The hood must be ISO 5."
+      },
+      {
+       "t": "Hood ISO 5; buffer ISO 5; ante ISO 7",
        "correct": false,
        "why": "Only the hood is ISO 5."
-      },
-      {
-       "t": "Hood ISO 8, buffer ISO 5",
-       "correct": false,
-       "why": "Reversed."
       }
      ],
      "teach": "",
@@ -391,14 +481,24 @@
      "q": "Which way should air flow between the buffer room and ante room for non hazardous compounding?",
      "options": [
       {
-       "t": "From the buffer room out to the ante room (buffer room positive pressure, at least 0.02 inch water column)",
+       "t": "Buffer to ante (buffer positive, at least 0.02 inch)",
        "correct": true,
-       "why": "Positive pressure pushes dirty air away from where you compound."
+       "why": "For non hazardous compounding."
       },
       {
-       "t": "From the ante room into the buffer room",
+       "t": "Ante to buffer (buffer negative, 0.01 to 0.03 inch)",
        "correct": false,
-       "why": "That would pull dirtier air in."
+       "why": "Negative pressure is for hazardous drug rooms (USP 800)."
+      },
+      {
+       "t": "No airflow between rooms (equal pressure)",
+       "correct": false,
+       "why": "Pressure difference protects the buffer room."
+      },
+      {
+       "t": "Buffer to hallway, skipping the ante room",
+       "correct": false,
+       "why": "Air flows clean to less clean through the ante room."
       }
      ],
      "teach": "",
@@ -409,14 +509,24 @@
      "q": "What is \"first air\"?",
      "options": [
       {
-       "t": "The HEPA filtered air coming out of the hood before it touches anything",
+       "t": "HEPA filtered air before it touches anything",
        "correct": true,
-       "why": "Never block first air with your hands or other items between the filter and the critical site (needle, vial stopper, syringe tip)."
+       "why": "Never block it with hands or items."
       },
       {
-       "t": "The air in the ante room",
+       "t": "Air in the ante room after garbing",
        "correct": false,
-       "why": "No."
+       "why": "Not first air."
+      },
+      {
+       "t": "The first air change of the shift",
+       "correct": false,
+       "why": "Not a USP term."
+      },
+      {
+       "t": "Air returning to the HEPA filter",
+       "correct": false,
+       "why": "That air has already touched surfaces."
       }
      ],
      "teach": "Most contamination in a working hood comes from the compounder blocking first air or touching critical sites.",
@@ -464,14 +574,24 @@
      "q": "How often are the hoods and cleanroom certified?",
      "options": [
       {
-       "t": "At least every 6 months, and after major repairs or relocation",
+       "t": "At least every 6 months and after major repairs",
        "correct": true,
-       "why": "Certification checks airflow, HEPA filter integrity, particle counts and pressure."
+       "why": ""
       },
       {
-       "t": "Every 5 years",
+       "t": "At least every 12 months",
        "correct": false,
-       "why": "Much more often."
+       "why": "12 months is the training cycle."
+      },
+      {
+       "t": "At least monthly",
+       "correct": false,
+       "why": "Monthly is surface sampling."
+      },
+      {
+       "t": "At least every 3 months",
+       "correct": false,
+       "why": "3 months is the Category 3 competency cycle."
       }
      ],
      "teach": "",
@@ -484,10 +604,20 @@
       {
        "t": "At least monthly",
        "correct": true,
-       "why": "Viable air sampling is at least every 6 months."
+       "why": "2023 chapter."
       },
       {
-       "t": "Once a year",
+       "t": "At least every 6 months",
+       "correct": false,
+       "why": "6 months is viable air sampling and certification."
+      },
+      {
+       "t": "At least weekly",
+       "correct": false,
+       "why": "More often than required."
+      },
+      {
+       "t": "At least every 12 months",
        "correct": false,
        "why": "Too infrequent."
       }
@@ -500,14 +630,24 @@
      "q": "A surface sample from the hood work surface grows mold. What happens?",
      "options": [
       {
-       "t": "It exceeds the action level: investigate, clean and disinfect (with a sporicidal agent), resample, and document corrective action",
+       "t": "Investigate, sporicidal clean, resample, document",
        "correct": true,
-       "why": "Any mold in an ISO 5 area needs investigation."
+       "why": "Any mold in ISO 5 needs action."
       },
       {
-       "t": "Ignore it if the count is low",
+       "t": "Ignore it if the count is under the action level",
        "correct": false,
-       "why": "Mold in ISO 5 is always a concern."
+       "why": "Mold in ISO 5 always needs investigation."
+      },
+      {
+       "t": "Clean with sterile IPA only and continue",
+       "correct": false,
+       "why": "IPA does not kill spores."
+      },
+      {
+       "t": "Wait for the next 6 month certification",
+       "correct": false,
+       "why": "Too late."
       }
      ],
      "teach": "",
@@ -555,14 +695,24 @@
      "q": "What three steps make up cleaning under USP 797?",
      "options": [
       {
-       "t": "Cleaning (remove residue), disinfecting (kill microbes) and applying sterile 70% IPA to remove residue",
+       "t": "Clean, disinfect, then apply sterile 70% IPA",
        "correct": true,
-       "why": "Some products clean and disinfect in one step; follow the product's contact (dwell) time."
+       "why": "Respect each product's contact time."
       },
       {
-       "t": "Just spray alcohol and wipe immediately",
+       "t": "Spray sterile IPA and wipe immediately",
        "correct": false,
-       "why": "Alcohol alone does not clean residue, and wiping before the dwell time ends means it did not work."
+       "why": "IPA alone does not clean residue; wiping too soon defeats contact time."
+      },
+      {
+       "t": "Disinfect first, then clean, then IPA",
+       "correct": false,
+       "why": "Cleaning removes residue first."
+      },
+      {
+       "t": "Sporicidal agent daily instead of cleaning",
+       "correct": false,
+       "why": "Sporicidal is at least monthly, on top of routine cleaning."
       }
      ],
      "teach": "",
@@ -573,14 +723,24 @@
      "q": "Which direction do you clean the hood?",
      "options": [
       {
-       "t": "From the cleanest area to the dirtiest: top to bottom, back to front, away from the HEPA filter",
+       "t": "Top to bottom, back to front, away from the HEPA",
        "correct": true,
-       "why": "You move contamination out of the hood, not deeper in."
+       "why": ""
       },
       {
-       "t": "From the front edge to the back",
+       "t": "Front to back, toward the HEPA filter",
        "correct": false,
-       "why": "That pushes dirt toward the critical work area."
+       "why": "Pushes dirt into the critical area."
+      },
+      {
+       "t": "Bottom to top, back to front",
+       "correct": false,
+       "why": "Drips fall onto cleaned areas."
+      },
+      {
+       "t": "Circular motions from the center out",
+       "correct": false,
+       "why": "Not the USP recommended pattern."
       }
      ],
      "teach": "",
@@ -591,14 +751,24 @@
      "q": "How often is a sporicidal agent used in the hood?",
      "options": [
       {
-       "t": "At least monthly (and when contamination is suspected)",
+       "t": "At least monthly, and when contamination is suspected",
        "correct": true,
-       "why": "Spores resist ordinary disinfectants."
+       "why": ""
       },
       {
-       "t": "Never",
+       "t": "At least weekly",
        "correct": false,
-       "why": "Required on a schedule."
+       "why": "More often than required (allowed, not required)."
+      },
+      {
+       "t": "At least every 6 months",
+       "correct": false,
+       "why": "6 months is certification and air sampling."
+      },
+      {
+       "t": "Only after a positive surface sample",
+       "correct": false,
+       "why": "It is scheduled, not only reactive."
       }
      ],
      "teach": "",
@@ -646,14 +816,24 @@
      "q": "What are the immediate use rules?",
      "options": [
       {
-       "t": "No more than 3 different sterile products, simple aseptic technique, and administration must start within 4 hours of starting preparation",
+       "t": "3 sterile products max; start within 4 hours",
        "correct": true,
-       "why": "USP 797 immediate use. Label with ingredients, preparer and the 4 hour limit unless given right away."
+       "why": "Immediate use."
       },
       {
-       "t": "Any number of products, use within 24 hours",
+       "t": "3 sterile products max; start within 12 hours",
        "correct": false,
-       "why": "That is not immediate use."
+       "why": "12 hours is the Category 1 room temperature BUD."
+      },
+      {
+       "t": "5 sterile products max; start within 4 hours",
+       "correct": false,
+       "why": "The limit is 3."
+      },
+      {
+       "t": "3 sterile products max; start within 1 hour",
+       "correct": false,
+       "why": "1 hour applies to a single dose vial punctured outside ISO 5."
       }
      ],
      "teach": "",
@@ -664,14 +844,24 @@
      "q": "Why is the window so short?",
      "options": [
       {
-       "t": "The product was made outside clean air, so bacteria have little time to grow before it is used",
+       "t": "Made outside clean air: little time for growth",
        "correct": true,
-       "why": "Short time limits the risk."
+       "why": ""
       },
       {
-       "t": "Amiodarone loses potency in 4 hours",
+       "t": "Amiodarone degrades within 4 hours",
        "correct": false,
        "why": "The limit is about sterility, not stability."
+      },
+      {
+       "t": "Code drugs are always given within 1 hour",
+       "correct": false,
+       "why": "Not the reason."
+      },
+      {
+       "t": "Only pharmacists may compound beyond 4 hours",
+       "correct": false,
+       "why": "Not the reason."
       }
      ],
      "teach": "",
@@ -714,14 +904,24 @@
      "q": "What category is this, and what is the maximum BUD?",
      "options": [
       {
-       "t": "Category 1: up to 12 hours at room temperature or 24 hours refrigerated",
+       "t": "Category 1: 12 h room temp or 24 h refrigerated",
        "correct": true,
-       "why": "A hood in a segregated compounding area can only make Category 1."
+       "why": "A hood in a segregated area makes Category 1 only."
       },
       {
-       "t": "Category 2: 10 days refrigerated",
+       "t": "Category 2: 4 days room temp or 10 days refrigerated",
        "correct": false,
-       "why": "Category 2 needs a hood inside a classified cleanroom suite."
+       "why": "Category 2 needs a cleanroom suite."
+      },
+      {
+       "t": "Immediate use: 4 hours",
+       "correct": false,
+       "why": "It was made in a hood, not under immediate use rules."
+      },
+      {
+       "t": "Category 1: 24 h room temp or 48 h refrigerated",
+       "correct": false,
+       "why": "Category 1 limits are 12 and 24 hours."
       }
      ],
      "teach": "",
@@ -732,14 +932,24 @@
      "q": "The same bag made in the cleanroom suite from all sterile ingredients, no sterility test. Maximum BUD?",
      "options": [
       {
-       "t": "Category 2: 4 days room temperature, 10 days refrigerated, 45 days frozen",
+       "t": "4 days room temp, 10 days fridge, 45 days frozen",
        "correct": true,
-       "why": "USP 797 (2023) Category 2, aseptically processed, sterile starting components, no sterility testing."
+       "why": "Sterile starting ingredients, no sterility test."
       },
       {
-       "t": "90 days refrigerated",
+       "t": "1 day room temp, 4 days fridge, 45 days frozen",
        "correct": false,
-       "why": "Far beyond the chapter limits."
+       "why": "That is Category 2 with a nonsterile ingredient."
+      },
+      {
+       "t": "30 days room temp, 45 days fridge, 60 days frozen",
+       "correct": false,
+       "why": "That requires a passed sterility test."
+      },
+      {
+       "t": "12 hours room temp, 24 hours fridge",
+       "correct": false,
+       "why": "That is Category 1."
       }
      ],
      "teach": "",
@@ -750,14 +960,24 @@
      "q": "If any starting ingredient is nonsterile (for example a bulk powder), the Category 2 BUD drops to:",
      "options": [
       {
-       "t": "1 day room temperature, 4 days refrigerated, 45 days frozen",
+       "t": "1 day room temp, 4 days fridge, 45 days frozen",
        "correct": true,
-       "why": "Nonsterile starting components shorten the BUD."
+       "why": ""
       },
       {
-       "t": "No change",
+       "t": "4 days room temp, 10 days fridge, 45 days frozen",
        "correct": false,
-       "why": "It is shorter."
+       "why": "That is all sterile ingredients."
+      },
+      {
+       "t": "12 hours room temp, 24 hours fridge",
+       "correct": false,
+       "why": "Category 1 limits."
+      },
+      {
+       "t": "No change; sterility of ingredients does not matter",
+       "correct": false,
+       "why": "It shortens the BUD."
       }
      ],
      "teach": "",
@@ -768,14 +988,24 @@
      "q": "What also limits the BUD besides the USP category?",
      "options": [
       {
-       "t": "Chemical and physical stability of the drug in that diluent and container",
+       "t": "Chemical and physical stability of the drug",
        "correct": true,
-       "why": "The BUD is the shorter of the sterility limit and the stability limit. Check the label or Trissel's."
+       "why": "The BUD is the shorter of sterility and stability."
       },
       {
-       "t": "Nothing",
+       "t": "The manufacturer's expiration date on the vial",
        "correct": false,
-       "why": "Some drugs (for example ampicillin) are stable only hours."
+       "why": "Vial expiration limits the vial, but the CSP BUD comes from USP limits and stability."
+      },
+      {
+       "t": "The patient's expected length of stay",
+       "correct": false,
+       "why": "Irrelevant."
+      },
+      {
+       "t": "The pump's programmed infusion time",
+       "correct": false,
+       "why": "Irrelevant."
       }
      ],
      "teach": "",
@@ -828,14 +1058,24 @@
      "q": "Can you use the single dose vial again?",
      "options": [
       {
-       "t": "Yes, if it was opened and kept in ISO 5 air, up to 12 hours after first puncture",
+       "t": "Yes: up to 12 hours if punctured and kept in ISO 5",
        "correct": true,
-       "why": "If punctured outside ISO 5, it must be used within 1 hour."
+       "why": ""
       },
       {
-       "t": "No, single dose means use once only, no exceptions",
+       "t": "Yes: up to 28 days, like a multiple dose vial",
        "correct": false,
-       "why": "USP 797 allows up to 12 hours inside ISO 5."
+       "why": "28 days is the multiple dose vial rule."
+      },
+      {
+       "t": "Yes: up to 1 hour only",
+       "correct": false,
+       "why": "1 hour applies when punctured outside ISO 5."
+      },
+      {
+       "t": "No: single dose vials are always one entry only",
+       "correct": false,
+       "why": "USP allows 12 hours inside ISO 5."
       }
      ],
      "teach": "",
@@ -846,14 +1086,24 @@
      "q": "Can the multiple dose vial still be used?",
      "options": [
       {
-       "t": "Yes: 28 days after opening unless the manufacturer states otherwise",
+       "t": "Yes: 28 days after opening unless labeled otherwise",
        "correct": true,
-       "why": "Date the vial when opened."
+       "why": ""
       },
       {
-       "t": "No: 7 days maximum",
+       "t": "No: 14 days after opening is the limit",
        "correct": false,
-       "why": "The default is 28 days."
+       "why": "Not the USP default."
+      },
+      {
+       "t": "No: 12 hours after first puncture",
+       "correct": false,
+       "why": "That is the single dose vial rule."
+      },
+      {
+       "t": "Yes: until the manufacturer expiration date",
+       "correct": false,
+       "why": "Opening starts the 28 day clock."
       }
      ],
      "teach": "",
@@ -896,14 +1146,24 @@
      "q": "Where is it compounded?",
      "options": [
       {
-       "t": "In a containment hood (biological safety cabinet or CACI) inside a negative pressure room",
+       "t": "Containment hood in a negative pressure room",
        "correct": true,
-       "why": "Negative pressure keeps hazardous drug out of the rest of the pharmacy."
+       "why": "USP 800."
       },
       {
-       "t": "In the regular positive pressure hood",
+       "t": "Laminar airflow hood in a positive pressure room",
        "correct": false,
-       "why": "Positive pressure would push hazardous drug toward people."
+       "why": "Pushes hazardous drug toward people."
+      },
+      {
+       "t": "Containment hood in a positive pressure room",
+       "correct": false,
+       "why": "The room must be negative."
+      },
+      {
+       "t": "Any hood if the compounder wears double gloves",
+       "correct": false,
+       "why": "Engineering controls come first."
       }
      ],
      "teach": "",
@@ -914,24 +1174,29 @@
      "q": "What protective equipment do you wear?",
      "options": [
       {
-       "t": "Two pairs of chemotherapy gloves tested to ASTM D6978",
+       "t": "Two pairs of ASTM D6978 chemotherapy gloves",
        "correct": true,
-       "why": "Change gloves on a schedule and when torn."
+       "why": ""
       },
       {
-       "t": "A disposable gown shown to resist hazardous drug permeation, closing in the back",
+       "t": "A permeation resistant gown that closes in the back",
        "correct": true,
-       "why": "Not a cloth lab coat."
+       "why": ""
       },
       {
-       "t": "A closed system transfer device when the dosage form allows (required for administration, recommended for compounding)",
+       "t": "A closed system transfer device when possible",
        "correct": true,
-       "why": "Reduces aerosol and spill exposure."
+       "why": "Required for administration, recommended for compounding."
       },
       {
-       "t": "One pair of exam gloves",
+       "t": "One pair of sterile nitrile exam gloves",
        "correct": false,
        "why": "Not protective enough."
+      },
+      {
+       "t": "A cloth lab coat over scrubs",
+       "correct": false,
+       "why": "Absorbs hazardous drug."
       }
      ],
      "teach": "",
@@ -943,14 +1208,24 @@
      "q": "A nurse calls about a hazardous drug bag that leaked on the floor. What do you tell them?",
      "options": [
       {
-       "t": "Use the hazardous drug spill kit with full PPE, contain from the outside in, and dispose of waste as hazardous",
+       "t": "Spill kit, full PPE, contain outside in, hazardous waste",
        "correct": true,
-       "why": "Know where the spill kit is before you need it."
+       "why": ""
       },
       {
-       "t": "Wipe it with paper towels and throw them in the trash",
+       "t": "Paper towels, then regular trash",
        "correct": false,
-       "why": "Unsafe exposure and improper disposal."
+       "why": "Exposure and improper disposal."
+      },
+      {
+       "t": "Bleach directly on the spill, then mop",
+       "correct": false,
+       "why": "Contain first with the spill kit; deactivation follows the kit steps."
+      },
+      {
+       "t": "Leave it for environmental services",
+       "correct": false,
+       "why": "Trained staff with PPE contain it."
       }
      ],
      "teach": "",
@@ -998,14 +1273,24 @@
      "q": "How must vincristine be dispensed?",
      "options": [
       {
-       "t": "In a minibag (for example 25 to 50 mL), never a syringe",
+       "t": "In a minibag, never a syringe",
        "correct": true,
-       "why": "Given intrathecally by mistake, vincristine is almost always fatal. A minibag cannot be connected to a spinal needle."
+       "why": "Intrathecal vincristine is almost always fatal; a minibag cannot connect to a spinal needle."
       },
       {
        "t": "In a syringe labeled \"For IV use only\"",
        "correct": false,
-       "why": "Labels alone have failed; the minibag is the safeguard."
+       "why": "Labels alone have failed."
+      },
+      {
+       "t": "In a syringe with a non luer connector",
+       "correct": false,
+       "why": "ISMP still recommends the minibag."
+      },
+      {
+       "t": "In a syringe, kept in a separate bin from intrathecal drugs",
+       "correct": false,
+       "why": "Separation helps, but the minibag is the safeguard."
       }
      ],
      "teach": "",
@@ -1050,22 +1335,27 @@
       {
        "t": "Phenytoin in D5W",
        "correct": true,
-       "why": "Phenytoin precipitates in dextrose. Use normal saline only, with a 0.22 micron in line filter, no faster than 50 mg/min in adults."
+       "why": "Precipitates; NS only, 0.22 micron filter, max 50 mg/min."
       },
       {
        "t": "Liposomal amphotericin B in normal saline",
        "correct": true,
-       "why": "Saline breaks the liposomes. Use D5W only, and flush lines with D5W."
+       "why": "Saline breaks the liposomes; D5W only."
       },
       {
        "t": "Ampicillin in D5W for a long infusion",
        "correct": true,
-       "why": "Ampicillin is much less stable in dextrose; normal saline is preferred."
+       "why": "Much less stable in dextrose."
       },
       {
        "t": "Vancomycin in normal saline",
        "correct": false,
-       "why": "Vancomycin is fine in NS or D5W."
+       "why": "Fine in NS or D5W."
+      },
+      {
+       "t": "Cefazolin in D5W",
+       "correct": false,
+       "why": "Compatible."
       }
      ],
      "teach": "",
@@ -1077,14 +1367,24 @@
      "q": "Nitroglycerin infusion: which container?",
      "options": [
       {
-       "t": "Glass or non PVC (polyolefin) bag with non PVC tubing",
+       "t": "Glass or polyolefin bag with non PVC tubing",
        "correct": true,
-       "why": "Nitroglycerin is absorbed into PVC plastic, so the patient gets less drug."
+       "why": "Nitroglycerin is absorbed into PVC."
       },
       {
-       "t": "Any standard PVC bag",
+       "t": "Standard PVC bag with a 0.22 micron filter",
        "correct": false,
-       "why": "Loses drug into the plastic."
+       "why": "Filters do not stop PVC absorption."
+      },
+      {
+       "t": "Amber PVC bag to protect from light",
+       "correct": false,
+       "why": "Light is not the main issue; PVC is."
+      },
+      {
+       "t": "Any bag, with a higher starting rate to compensate",
+       "correct": false,
+       "why": "Unpredictable dosing."
       }
      ],
      "teach": "",
@@ -1127,14 +1427,24 @@
      "q": "What is the main precipitation risk?",
      "options": [
       {
-       "t": "Calcium phosphate crystals, which can block lung vessels and have caused deaths",
+       "t": "Calcium phosphate crystals blocking lung vessels",
        "correct": true,
-       "why": "Check solubility with your compounder software or curves; temperature, pH, amino acid concentration and order of mixing all matter."
+       "why": "Deaths have occurred."
       },
       {
-       "t": "None",
+       "t": "Lipid emulsion breaking (oiling out)",
        "correct": false,
-       "why": "Calcium phosphate precipitation is a known fatal risk."
+       "why": "A 3 in 1 stability risk, not the calcium phosphate risk."
+      },
+      {
+       "t": "Vitamin degradation from light",
+       "correct": false,
+       "why": "A potency issue, not a fatal precipitate."
+      },
+      {
+       "t": "Dextrose caramelization in the bag",
+       "correct": false,
+       "why": "Not a PN compounding risk."
       }
      ],
      "teach": "",
@@ -1147,12 +1457,22 @@
       {
        "t": "1.2 micron filter",
        "correct": true,
-       "why": "Lipid droplets clog a 0.22 micron filter. 2 in 1 PN (no lipid) uses 0.22 micron."
+       "why": "Lipid droplets clog 0.22 micron filters."
       },
       {
-       "t": "0.22 micron",
+       "t": "0.22 micron filter",
        "correct": false,
-       "why": "Too small for lipid emulsions."
+       "why": "For 2 in 1 PN without lipid."
+      },
+      {
+       "t": "5 micron filter",
+       "correct": false,
+       "why": "Used for some drugs drawn from ampules (filter needles), not PN."
+      },
+      {
+       "t": "No filter needed with lipids",
+       "correct": false,
+       "why": "A 1.2 micron filter is used."
       }
      ],
      "teach": "",
@@ -1165,12 +1485,22 @@
       {
        "t": "About 900 mOsm/L or less",
        "correct": true,
-       "why": "Higher osmolarity damages peripheral veins; it needs a central line."
+       "why": ""
       },
       {
-       "t": "2,000 mOsm/L",
+       "t": "About 1,500 mOsm/L or less",
        "correct": false,
-       "why": "That needs a central line."
+       "why": "Requires a central line."
+      },
+      {
+       "t": "About 600 mOsm/L or less",
+       "correct": false,
+       "why": "Lower than the usual limit."
+      },
+      {
+       "t": "No limit if the IV is in a large vein",
+       "correct": false,
+       "why": "The limit still applies."
       }
      ],
      "teach": "",
@@ -1218,24 +1548,29 @@
      "q": "What do you verify?",
      "options": [
       {
-       "t": "The right drug, concentration and volume match the order, using the vials, syringe pull back, images or gravimetric data per SOP",
+       "t": "What went in: vials, pull back, images or weight",
        "correct": true,
-       "why": "You verify what went in, not just the label."
+       "why": ""
       },
       {
-       "t": "Label: patient, drug, concentration, total volume, BUD, storage, and any high alert warning",
+       "t": "Full label: patient, drug, concentration, volume, BUD",
        "correct": true,
-       "why": "The label is what the nurse trusts."
+       "why": ""
       },
       {
-       "t": "Visual inspection: no particles, cloudiness, leaks or color change",
+       "t": "Visual check for particles, cloudiness, leaks",
        "correct": true,
-       "why": "Hold the bag against light and dark backgrounds."
+       "why": ""
       },
       {
-       "t": "The technician's word that it is right",
+       "t": "The technician's confirmation that it is right",
        "correct": false,
        "why": "Your check is independent."
+      },
+      {
+       "t": "The patient's insurance coverage",
+       "correct": false,
+       "why": "Not a CSP check."
       }
      ],
      "teach": "",
@@ -1247,14 +1582,24 @@
      "q": "The label says 40 mEq in 100 mL \"for peripheral use.\" What is wrong?",
      "options": [
       {
-       "t": "Concentrated potassium (40 mEq/100 mL) is a central line concentration; peripheral rates are usually limited to 10 mEq/h",
+       "t": "40 mEq/100 mL is a central concentration; peripheral max about 10 mEq/h",
        "correct": true,
-       "why": "Call before it leaves the IV room."
+       "why": ""
       },
       {
-       "t": "Nothing",
+       "t": "The bag needs a 1.2 micron filter",
        "correct": false,
-       "why": "This mismatch can burn a vein or cause dangerous rates."
+       "why": "Filter choice is not the problem."
+      },
+      {
+       "t": "KCl must be in D5W, not NS",
+       "correct": false,
+       "why": "Diluent is not the problem."
+      },
+      {
+       "t": "Nothing; label wording is cosmetic",
+       "correct": false,
+       "why": "Route mismatch is dangerous."
       }
      ],
      "teach": "",
@@ -1303,14 +1648,24 @@
      "q": "What is the problem you must solve before compounding anything?",
      "options": [
       {
-       "t": "The hood certification lapsed; tell your supervisor and follow the SOP (use a certified hood, or limit to what policy allows)",
+       "t": "Certification lapsed: tell the supervisor, follow the SOP",
        "correct": true,
        "why": "Compounding in an uncertified hood violates USP 797."
       },
       {
-       "t": "Nothing; certification is paperwork",
+       "t": "Nothing: certification is paperwork only",
        "correct": false,
        "why": "It proves the air is clean."
+      },
+      {
+       "t": "Run a surface sample, then compound if clean",
+       "correct": false,
+       "why": "A surface sample does not replace certification."
+      },
+      {
+       "t": "Compound only Category 2 products until recertified",
+       "correct": false,
+       "why": "Category 2 needs certified controls too."
       }
      ],
      "teach": "",
@@ -1323,17 +1678,22 @@
       {
        "t": "The first dose cefepime for the septic patient",
        "correct": true,
-       "why": "First doses for sepsis are time critical."
+       "why": ""
       },
       {
-       "t": "The TPN",
+       "t": "The TPN due at 2100",
        "correct": false,
-       "why": "Due at 2100."
+       "why": "Due tonight."
       },
       {
-       "t": "The batch",
+       "t": "The morning batch of 40 piggybacks",
        "correct": false,
        "why": "Routine."
+      },
+      {
+       "t": "Restocking the hood for the day",
+       "correct": false,
+       "why": "After the first dose."
       }
      ],
      "teach": "",

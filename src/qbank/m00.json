@@ -17,24 +17,24 @@
      "q": "What do you look at before you even read the drug?",
      "options": [
       {
-       "t": "The patient: name, age, weight, allergies (with the reaction), pregnancy or breastfeeding status",
+       "t": "Patient first: age, weight, allergies with reactions, pregnancy",
        "correct": true,
-       "why": "Every dose decision depends on who the patient is. A wrong weight or a missed allergy makes a correct looking order dangerous."
+       "why": "Every dose decision depends on who the patient is."
       },
       {
-       "t": "The price of the drug",
+       "t": "Indication first, then weight and kidney function later",
        "correct": false,
-       "why": "Cost matters for formulary work, but it is not part of the safety check on a new order."
+       "why": "Indication is step two; without patient basics (weight, allergy) you cannot judge it."
       },
       {
-       "t": "Which nurse is assigned",
+       "t": "Drug first: check the dose against the usual range",
        "correct": false,
-       "why": "Useful later if you need to call, but it does not tell you if the order is safe."
+       "why": "Checking the drug before the patient misses wrong patient, allergy and weight errors."
       },
       {
-       "t": "Whether the prescriber is an attending or a resident",
+       "t": "Duplicates first: scan the MAR for other anticoagulants",
        "correct": false,
-       "why": "Every order gets the same check no matter who wrote it."
+       "why": "Duplicate checking is a later step in the routine."
       }
      ],
      "teach": "Build the habit: **patient first, then indication, then drug.** Experienced pharmacists check the same things in the same order so nothing gets skipped at 3 a.m.",
@@ -45,19 +45,24 @@
      "q": "Why does the indication matter for enoxaparin?",
      "options": [
       {
-       "t": "The same drug has very different doses for prevention vs treatment of a clot",
+       "t": "Prophylaxis and treatment doses differ several fold",
        "correct": true,
-       "why": "Enoxaparin 40 mg daily is a prophylaxis dose. Treatment is 1 mg/kg every 12 hours. If the patient actually has a clot, 40 mg daily is a big underdose."
+       "why": "40 mg daily (prophylaxis) vs 1 mg/kg every 12 hours (treatment)."
       },
       {
-       "t": "It does not matter; 40 mg is the standard dose for everyone",
+       "t": "Indication decides the needle size and injection site",
        "correct": false,
-       "why": "40 mg is standard only for medical prophylaxis with normal kidney function."
+       "why": "Administration technique does not depend on indication."
       },
       {
-       "t": "It changes which nurse gives it",
+       "t": "Indication decides whether anti Xa levels are routine",
        "correct": false,
-       "why": "Indication drives the dose, not the staffing."
+       "why": "Anti Xa levels are for special populations (kidneys, pregnancy, extremes of weight), not set by indication alone."
+      },
+      {
+       "t": "Indication only matters for billing and coding",
+       "correct": false,
+       "why": "It drives the dose."
       }
      ],
      "teach": "If you cannot name why a drug is ordered, you cannot judge the dose. When the indication is missing, look at the problem list and admission note, then ask.",
@@ -68,24 +73,29 @@
      "q": "Which lab do you need before you verify enoxaparin?",
      "options": [
       {
-       "t": "Serum creatinine, so you can estimate creatinine clearance",
+       "t": "Serum creatinine, to estimate CrCl",
        "correct": true,
-       "why": "Enoxaparin is cleared by the kidneys. If CrCl is below 30 mL/min, prophylaxis drops to 30 mg daily (FDA label)."
-      },
-      {
-       "t": "Hemoglobin A1c",
-       "correct": false,
-       "why": "Diabetes control does not change the enoxaparin dose."
-      },
-      {
-       "t": "Lipid panel",
-       "correct": false,
-       "why": "Not related to anticoagulant dosing."
+       "why": "Enoxaparin dosing changes below CrCl 30."
       },
       {
        "t": "Platelets",
        "correct": true,
-       "why": "Low platelets raise bleeding risk and can be a clue to heparin induced thrombocytopenia (HIT). Check a baseline."
+       "why": "Baseline for HIT and bleeding risk."
+      },
+      {
+       "t": "aPTT, to set the enoxaparin dose",
+       "correct": false,
+       "why": "aPTT monitors unfractionated heparin; enoxaparin barely changes it."
+      },
+      {
+       "t": "INR, to set the enoxaparin dose",
+       "correct": false,
+       "why": "INR monitors warfarin."
+      },
+      {
+       "t": "Hemoglobin A1c",
+       "correct": false,
+       "why": "Not relevant to anticoagulant dosing."
       }
      ],
      "teach": "Renal function and platelets are the two labs to check on every anticoagulant. You will learn the Cockcroft Gault formula in the next case.",
@@ -99,17 +109,22 @@
       {
        "t": "Verify the order as written",
        "correct": true,
-       "why": "Indication, dose, kidney function and duplicates all check out."
+       "why": "CrCl 62, normal platelets, no epidural, no duplicates: 40 mg daily is correct."
       },
       {
-       "t": "Change it to 30 mg daily",
+       "t": "Change it to 30 mg daily for her age",
        "correct": false,
-       "why": "The 30 mg dose is for CrCl below 30 mL/min."
+       "why": "30 mg daily is the prophylaxis dose when CrCl is below 30, not an age rule."
       },
       {
-       "t": "Hold it until the team calls you",
+       "t": "Change it to 30 mg every 12 hours",
        "correct": false,
-       "why": "There is no problem to fix; holding delays clot prevention."
+       "why": "30 mg every 12 hours is an orthopedic or trauma prophylaxis regimen."
+      },
+      {
+       "t": "Change it to 1 mg/kg every 24 hours",
+       "correct": false,
+       "why": "That is the treatment dose when CrCl is below 30."
       }
      ],
      "teach": "Verifying is also a decision. When everything checks out, verify and move on, so you have time for the orders that need you.",
@@ -159,17 +174,22 @@
       {
        "t": "Cockcroft Gault creatinine clearance",
        "correct": true,
-       "why": "Most label renal dosing tables were built using Cockcroft Gault, so it is the usual formula for drug dosing."
+       "why": "Most labels base renal adjustments on Cockcroft Gault."
       },
       {
-       "t": "Body mass index",
+       "t": "CKD-EPI eGFR (2021, race free)",
        "correct": false,
-       "why": "BMI describes weight for height, not kidney function."
+       "why": "eGFR stages kidney disease; many labels and pharmacy protocols still dose by Cockcroft Gault."
       },
       {
-       "t": "The anion gap",
+       "t": "MDRD eGFR",
        "correct": false,
-       "why": "That is an acid base calculation."
+       "why": "An older staging equation, not the label dosing standard."
+      },
+      {
+       "t": "Schwartz equation",
+       "correct": false,
+       "why": "Used for children."
       }
      ],
      "teach": "CrCl (mL/min) = [(140 minus age) x weight in kg] / (72 x SCr), times 0.85 for females.",
@@ -182,22 +202,22 @@
       {
        "t": "About 49 mL/min",
        "correct": true,
-       "why": "(140 minus 70) x 80 = 5,600. 72 x 1.6 = 115.2. 5,600 / 115.2 = 48.6 mL/min."
+       "why": "(140 minus 70) x 80 / (72 x 1.6) = 48.6."
       },
       {
-       "t": "About 69 mL/min",
+       "t": "About 44 mL/min",
        "correct": false,
-       "why": "Check the denominator: 72 x 1.6, not 72 alone with rounding."
+       "why": "That uses ideal body weight (73 kg) instead of the actual weight asked for."
       },
       {
        "t": "About 41 mL/min",
        "correct": false,
-       "why": "That would be the female value (x 0.85). He is male."
+       "why": "That applies the 0.85 female factor to a male patient."
       },
       {
-       "t": "About 122 mL/min",
+       "t": "About 78 mL/min",
        "correct": false,
-       "why": "That skips the creatinine in the denominator."
+       "why": "That uses an SCr of 1.0, a rounding practice sometimes used for low SCr in older adults, not for 1.6."
       }
      ],
      "teach": "Write it out every time on paper or in the calculator. Rounding early causes errors.",
@@ -209,19 +229,24 @@
      "q": "When should you stop and think about which weight to use?",
      "options": [
       {
-       "t": "When the patient is obese, very thin, or the weight looks wrong for the height",
+       "t": "Obesity, very low weight, or an unlikely weight",
        "correct": true,
-       "why": "Weight choice (actual, ideal or adjusted) changes the result a lot. Follow St. Mary's policy for which weight to use."
+       "why": "Choose actual, ideal or adjusted weight per protocol."
       },
       {
-       "t": "Never; always use actual weight",
+       "t": "Only when the patient is over 65 years old",
        "correct": false,
-       "why": "In obesity, actual weight can overestimate clearance."
+       "why": "Age is already in the formula."
       },
       {
-       "t": "Only for children",
+       "t": "Only when SCr is above 2.0 mg/dL",
        "correct": false,
-       "why": "Weight choice matters in adults too."
+       "why": "SCr does not decide which weight to use."
+      },
+      {
+       "t": "Only for drugs that are dosed in mg/kg",
+       "correct": false,
+       "why": "Weight choice affects CrCl for every renally dosed drug."
       }
      ],
      "teach": "Also be careful when creatinine is changing fast (acute kidney injury). A single value can make CrCl look better than it is.",
@@ -269,19 +294,24 @@
      "q": "What is your first move?",
      "options": [
       {
-       "t": "Find out what the reaction actually was",
+       "t": "Ask what the reaction actually was",
        "correct": true,
-       "why": "A childhood rash is very different from anaphylaxis. The reaction decides what is safe."
+       "why": "Most penicillin labels are not true allergy; the reaction decides the next step."
       },
       {
-       "t": "Reject cefazolin because the patient is allergic to penicillin",
+       "t": "Change to vancomycin to avoid any cross reactivity",
        "correct": false,
-       "why": "Cefazolin has a different side chain and very low cross reactivity. Rejecting it may push the team to a worse drug."
+       "why": "Vancomycin is less effective for MSSA and strep skin infections."
       },
       {
-       "t": "Verify without looking further",
+       "t": "Change to clindamycin as the standard alternative",
        "correct": false,
-       "why": "Allergy checks are part of every antibiotic order."
+       "why": "Clindamycin is for confirmed severe allergy; resistance is common."
+      },
+      {
+       "t": "Verify cefazolin; cross reactivity is always zero",
+       "correct": false,
+       "why": "Cefazolin cross reactivity is very low, but you still clarify and document."
       }
      ],
      "teach": "\"Allergy\" lists are often wrong or vague. Clarifying them is one of the highest value things a pharmacist does.",
@@ -292,19 +322,24 @@
      "q": "The patient says: \"I got an itchy rash as a kid. I had cephalexin last year with no problem.\" What now?",
      "options": [
       {
-       "t": "Verify cefazolin and update the allergy entry with the reaction and the tolerated cephalosporin",
+       "t": "Verify cefazolin; record the rash and the tolerated cephalexin",
        "correct": true,
-       "why": "Low risk history plus a tolerated cephalosporin. Documenting the details helps every future pharmacist."
+       "why": "Documentation helps every future prescriber."
       },
       {
-       "t": "Ask for a vancomycin order instead",
+       "t": "Request vancomycin, since any rash means avoid beta lactams",
        "correct": false,
-       "why": "Vancomycin is less effective for typical cellulitis and has more toxicity."
+       "why": "A benign childhood rash is low risk."
       },
       {
-       "t": "Hold until an allergist sees the patient",
+       "t": "Hold the antibiotic until an allergist sees the patient",
        "correct": false,
-       "why": "Not needed for a low risk history."
+       "why": "Delays treatment for a low risk history."
+      },
+      {
+       "t": "Remove the allergy entirely without telling anyone",
+       "correct": false,
+       "why": "Delabeling follows policy and documentation."
       }
      ],
      "teach": "Your documentation outlives your shift. Write the reaction, the date and what was tolerated.",
@@ -352,19 +387,24 @@
      "q": "Who can change the order?",
      "options": [
       {
-       "t": "The prescriber (or the covering prescriber at night)",
+       "t": "The prescriber, or the covering prescriber at night",
        "correct": true,
-       "why": "Only a prescriber can change the order, unless a pharmacy protocol lets you adjust it (for example a pharmacy to dose vancomycin policy)."
+       "why": "Only a prescriber (or a protocol) changes an order."
       },
       {
-       "t": "The patient's nurse",
+       "t": "The charge nurse, after talking with you",
        "correct": false,
-       "why": "The nurse is your partner and a great source of information, but cannot change the order."
+       "why": "Nurses can relay information but do not change orders."
       },
       {
-       "t": "The pharmacy technician",
+       "t": "You alone, because pharmacists can always change doses",
        "correct": false,
-       "why": "Technicians support you but do not change orders."
+       "why": "Only with a pharmacy to dose protocol or collaborative agreement."
+      },
+      {
+       "t": "The pharmacy technician entering the order",
+       "correct": false,
+       "why": "Not within technician scope."
       }
      ],
      "teach": "At night the daytime prescriber is usually not the one to call. Find out who is covering (night float, hospitalist, on call resident).",
@@ -375,19 +415,24 @@
      "q": "Does St. Mary's let pharmacists adjust vancomycin without calling?",
      "options": [
       {
-       "t": "Check the policy: many hospitals have a pharmacy to dose protocol",
+       "t": "Check the policy: many hospitals have pharmacy to dose",
        "correct": true,
-       "why": "If a protocol covers it, you may adjust and document. If not, you call."
+       "why": "If St. Mary's protocol covers vancomycin, you can adjust and document."
       },
       {
-       "t": "Yes, always, at every hospital",
+       "t": "Yes: Florida law lets any pharmacist change any dose",
        "correct": false,
-       "why": "Authority depends on each hospital's protocols."
+       "why": "Changes need a protocol or prescriber authorization."
       },
       {
-       "t": "No, never",
+       "t": "No: pharmacists may never change a dose in Florida",
        "correct": false,
-       "why": "Many hospitals do allow pharmacy dosing for vancomycin and aminoglycosides."
+       "why": "Pharmacy to dose protocols exist."
+      },
+      {
+       "t": "Only after the attending signs a new order each day",
+       "correct": false,
+       "why": "Protocols remove that need."
       }
      ],
      "teach": "",
@@ -398,19 +443,24 @@
      "q": "The prescriber says, \"Just verify it,\" and you still believe it is unsafe. What next?",
      "options": [
       {
-       "t": "Explain the risk once more with your source, then follow the chain of command if you still disagree",
+       "t": "Explain the risk once more with a source, then escalate",
        "correct": true,
-       "why": "Most hospitals have an escalation path: senior pharmacist or pharmacy supervisor, then the attending or medical director. Never verify an order you believe will harm the patient."
+       "why": "Chain of command when patient safety is at stake."
       },
       {
-       "t": "Verify it; the prescriber is responsible",
+       "t": "Verify it, because the prescriber takes the responsibility",
        "correct": false,
-       "why": "You are responsible for what you verify."
+       "why": "You share responsibility for what you verify."
       },
       {
-       "t": "Delete the order",
+       "t": "Delete the order and tell the nurse to hold the drug",
        "correct": false,
-       "why": "You cannot remove a prescriber's order on your own."
+       "why": "Never delete an order unilaterally."
+      },
+      {
+       "t": "Verify it but write a note that you disagreed",
+       "correct": false,
+       "why": "Documentation does not protect the patient."
       }
      ],
      "teach": "Escalating is not confrontation. Say: \"I'm not comfortable verifying this dose because [reason, source]. I'm going to involve my supervisor so we can settle it quickly.\"",
@@ -459,17 +509,22 @@
       {
        "t": "The MAR (medication administration record)",
        "correct": true,
-       "why": "The MAR shows what was scheduled, what was given, when, and by whom, plus doses held or refused."
+       "why": "Shows what was given and when."
       },
       {
-       "t": "The order itself",
+       "t": "The active order in the order profile",
        "correct": false,
-       "why": "An order shows what should be given, not what was given."
+       "why": "Shows what should be given, not what was."
       },
       {
-       "t": "The pharmacy dispensing log",
+       "t": "The dispensing cabinet removal log",
        "correct": false,
-       "why": "Dispensed does not mean administered."
+       "why": "Shows what was removed, not given."
+      },
+      {
+       "t": "The pharmacy verification history",
+       "correct": false,
+       "why": "Shows what you verified."
       }
      ],
      "teach": "Learn the difference: **ordered** (order), **dispensed** (pharmacy or cabinet), **given** (MAR). Errors live in the gaps between them.",
@@ -480,19 +535,24 @@
      "q": "The MAR shows the dose as \"not given, patient off unit.\" What matters most now?",
      "options": [
       {
-       "t": "Getting the dose given as soon as possible and adjusting the next dose time if needed",
+       "t": "Give the dose as soon as possible and retime the next dose",
        "correct": true,
-       "why": "For time sensitive drugs like antibiotics, a missed dose matters. Work out the timing with the nurse."
+       "why": "For time sensitive antibiotics, the missed dose matters most."
       },
       {
-       "t": "Writing an incident report before anything else",
+       "t": "File an event report first, then give the dose",
        "correct": false,
-       "why": "Reporting may be right later, but the patient comes first."
+       "why": "Report after the patient is safe."
       },
       {
-       "t": "Nothing, the next dose is fine",
+       "t": "Skip the dose and give the next one on schedule",
        "correct": false,
-       "why": "Skipping antibiotic doses can lead to treatment failure."
+       "why": "A missed antibiotic dose can fail treatment."
+      },
+      {
+       "t": "Give a double dose at the next scheduled time",
+       "correct": false,
+       "why": "Never double to catch up."
       }
      ],
      "teach": "",
@@ -535,19 +595,24 @@
      "q": "When is a cabinet override appropriate?",
      "options": [
       {
-       "t": "Emergencies where waiting for pharmacist review would harm the patient, using drugs on the approved override list",
+       "t": "True emergencies using drugs on the approved override list",
        "correct": true,
-       "why": "Override exists for urgent situations. The list of drugs allowed on override is set by policy."
+       "why": "Joint Commission expects policies and override review."
       },
       {
-       "t": "Any time the nurse is busy",
+       "t": "Any time the pharmacist has not verified within 15 minutes",
        "correct": false,
-       "why": "Convenience overrides skip the pharmacist safety check."
+       "why": "Delay alone is not an emergency."
       },
       {
-       "t": "Never",
+       "t": "Any drug, as long as a second nurse witnesses it",
        "correct": false,
-       "why": "Codes and true emergencies need fast access."
+       "why": "Witnessing is for controlled substance waste, not override rules."
+      },
+      {
+       "t": "Never; every dose must be verified first",
+       "correct": false,
+       "why": "Overrides exist for emergencies."
       }
      ],
      "teach": "The Joint Commission expects hospitals to have policies for dispensing cabinets and to review overrides.",
@@ -558,14 +623,24 @@
      "q": "What is your job after an override?",
      "options": [
       {
-       "t": "Review the order as soon as possible as if it had not been given yet, and follow up if there is a problem",
+       "t": "Review the order as if not yet given, and follow up",
        "correct": true,
-       "why": "Retrospective review still catches errors, and the next doses depend on your review."
+       "why": "Your review still matters for the next doses."
       },
       {
-       "t": "Nothing, the drug was already given",
+       "t": "Nothing, because the dose was already given",
        "correct": false,
-       "why": "Later doses and monitoring still need your review."
+       "why": "Future doses and errors still need review."
+      },
+      {
+       "t": "Report the nurse for using override",
+       "correct": false,
+       "why": "Overrides in emergencies are appropriate."
+      },
+      {
+       "t": "Reverse the dispense in the cabinet",
+       "correct": false,
+       "why": "Inventory fixes do not replace clinical review."
       }
      ],
      "teach": "",
@@ -613,19 +688,24 @@
      "q": "Which do you handle first?",
      "options": [
       {
-       "t": "The code and the stroke alert, at the same time if needed (call for backup)",
+       "t": "The code and the stroke alert together (call backup)",
        "correct": true,
-       "why": "Both are life threatening and time critical. Codes and stroke alerts come before everything else. If you are alone, ask the nurse supervisor or a second pharmacist for help."
+       "why": "Both are life threatening and time critical."
       },
       {
-       "t": "The routine antibiotic, because it was first in the queue",
+       "t": "The STAT antibiotic, since first doses are time sensitive",
        "correct": false,
-       "why": "First in is not most urgent."
+       "why": "Important, but after life threatening events."
       },
       {
-       "t": "The discharge question, because it is easy",
+       "t": "The crush question, since it takes 30 seconds",
        "correct": false,
-       "why": "Easy is not urgent."
+       "why": "Fast does not beat life threatening."
+      },
+      {
+       "t": "The queue in order received, to be fair to everyone",
+       "correct": false,
+       "why": "Triage by harm if delayed."
       }
      ],
      "teach": "Sort by **harm if delayed**: life threatening now, then time sensitive (first antibiotic doses, STAT orders), then routine, then questions for later.",
@@ -638,12 +718,22 @@
       {
        "t": "The new antibiotic order (time sensitive first dose)",
        "correct": true,
-       "why": "First doses of antibiotics are time sensitive, especially in sepsis."
+       "why": ""
       },
       {
-       "t": "The discharge interaction question",
+       "t": "The discharge interaction question for tomorrow",
        "correct": false,
-       "why": "That can wait until morning or later in the shift."
+       "why": "Can wait."
+      },
+      {
+       "t": "The crush question before the antibiotic",
+       "correct": false,
+       "why": "The first dose is more time sensitive."
+      },
+      {
+       "t": "Documentation of the code before anything else",
+       "correct": false,
+       "why": "Document after time sensitive care."
       }
      ],
      "teach": "",
@@ -654,14 +744,24 @@
      "q": "The crush question: how do you answer it fast and correctly?",
      "options": [
       {
-       "t": "Check the ISMP Do Not Crush list and the product (extended release, enteric coated)",
+       "t": "ISMP Do Not Crush list and the exact product",
        "correct": true,
-       "why": "Crushing extended release products can dump a full day's dose at once."
+       "why": "Extended release and enteric coated products are classic no crush."
       },
       {
-       "t": "Tell the nurse it is always fine to crush",
+       "t": "Trissel's IV compatibility for the tablet",
        "correct": false,
-       "why": "Many products cannot be crushed."
+       "why": "Trissel's covers IV compatibility, not crushing."
+      },
+      {
+       "t": "LactMed entry for the drug being crushed",
+       "correct": false,
+       "why": "Breastfeeding reference."
+      },
+      {
+       "t": "The pregnancy and lactation label section",
+       "correct": false,
+       "why": "Unrelated to crushing."
       }
      ],
      "teach": "",
@@ -708,19 +808,24 @@
      "q": "What do you ask before you answer?",
      "options": [
       {
-       "t": "Which drug, what concentration, and what else is running in that line",
+       "t": "Which drug, its concentration, and what else runs",
        "correct": true,
-       "why": "Compatibility depends on the exact drugs and concentrations. Background questions turn a vague question into an answerable one."
+       "why": "Compatibility depends on all three."
       },
       {
-       "t": "Nothing, just say yes",
+       "t": "How long the heparin drip has been running",
        "correct": false,
-       "why": "Guessing causes precipitates and blocked lines."
+       "why": "Not the compatibility question."
       },
       {
-       "t": "The nurse's years of experience",
+       "t": "The patient's weight and kidney function",
        "correct": false,
-       "why": "Not relevant to compatibility."
+       "why": "Dosing, not compatibility."
+      },
+      {
+       "t": "Whether the line is peripheral or central",
+       "correct": false,
+       "why": "Line type matters for some drugs, but you need the drugs and concentrations."
       }
      ],
      "teach": "Systematic approach: get the background, figure out the real question, search, answer clearly, and document.",
@@ -731,19 +836,24 @@
      "q": "Where do you look for Y site compatibility?",
      "options": [
       {
-       "t": "A compatibility reference such as Trissel's or King Guide (through St. Mary's), or the free Stabilis site",
+       "t": "Trissel's or the King Guide (or free Stabilis)",
        "correct": true,
-       "why": "These list drug pairs tested together."
+       "why": ""
       },
       {
-       "t": "A general search engine",
+       "t": "LactMed (NIH) drug compatibility pages",
        "correct": false,
-       "why": "Results are unreliable for compatibility."
+       "why": "LactMed covers breastfeeding only."
       },
       {
-       "t": "The drug's marketing website",
+       "t": "The ISMP Do Not Crush list for IV drugs",
        "correct": false,
-       "why": "Not a compatibility reference."
+       "why": "Oral dosage forms only."
+      },
+      {
+       "t": "NeoFax neonatal dosing monographs only",
+       "correct": false,
+       "why": "Dosing reference; some compatibility, not the primary source."
       }
      ],
      "teach": "",
@@ -754,14 +864,24 @@
      "q": "You cannot find data for this pair. What do you tell the nurse?",
      "options": [
       {
-       "t": "No data means do not run them together; use a separate line or flush between",
+       "t": "No data: do not run them together; separate line or flush",
        "correct": true,
-       "why": "Absence of data is not proof of safety."
+       "why": "Absence of data is treated as incompatible."
       },
       {
-       "t": "It is probably fine",
+       "t": "No data: probably fine if the concentrations are low",
        "correct": false,
-       "why": "\"Probably\" is not an answer for an IV line."
+       "why": "Concentration can change compatibility, but no data means avoid."
+      },
+      {
+       "t": "No data: run them together and watch for cloudiness",
+       "correct": false,
+       "why": "Precipitates can be invisible."
+      },
+      {
+       "t": "No data: mix them in the same bag instead",
+       "correct": false,
+       "why": "Admixture compatibility is a separate, stricter question."
       }
      ],
      "teach": "",
@@ -804,19 +924,24 @@
      "q": "What does \"high alert\" mean?",
      "options": [
       {
-       "t": "Errors with these drugs are more likely to cause serious harm",
+       "t": "Errors with these drugs are more likely to cause harm",
        "correct": true,
-       "why": "High alert drugs are not always used wrongly more often, but when an error happens the harm is bigger (ISMP)."
+       "why": "ISMP definition."
       },
       {
-       "t": "They are used more often than other drugs",
+       "t": "They are the most often prescribed drugs",
        "correct": false,
        "why": "Frequency is not the definition."
       },
       {
-       "t": "They are more expensive",
+       "t": "They need a second pharmacist to verify by law",
        "correct": false,
-       "why": "Not related."
+       "why": "Double checks are policy based, not a legal definition."
+      },
+      {
+       "t": "They are all controlled substances",
+       "correct": false,
+       "why": "Many are not (insulin, heparin)."
       }
      ],
      "teach": "",
@@ -827,24 +952,29 @@
      "q": "Which safeguards help most with high alert infusions?",
      "options": [
       {
-       "t": "Standard concentrations matched to the smart pump library",
+       "t": "Standard concentrations matched to the pump library",
        "correct": true,
-       "why": "Removes math and custom mixing errors."
+       "why": ""
       },
       {
        "t": "Independent double checks where policy requires them",
        "correct": true,
-       "why": "A second person checks independently, not by just looking over the first person's shoulder."
+       "why": ""
       },
       {
        "t": "Premixed bags when available",
        "correct": true,
-       "why": "Fewer manipulations, fewer errors."
+       "why": ""
       },
       {
-       "t": "Writing \"be careful\" on the label",
+       "t": "Custom concentrations for each patient's fluid needs",
        "correct": false,
-       "why": "Warnings without a system change rarely prevent errors."
+       "why": "Custom concentrations defeat pump safety limits."
+      },
+      {
+       "t": "Storing insulin vials next to heparin vials for speed",
+       "correct": false,
+       "why": "Look alike storage causes mix ups."
       }
      ],
      "teach": "",
@@ -888,19 +1018,24 @@
      "q": "What is wrong with these orders?",
      "options": [
       {
-       "t": "\"U\" can be misread as 0 or 4; write \"units\"",
+       "t": "\"U\" can be misread as 0 or 4: write \"units\"",
        "correct": true,
-       "why": "10U can become 100."
+       "why": ""
       },
       {
        "t": "A trailing zero (2.0 mg) can be misread as 20 mg",
        "correct": true,
-       "why": "Write 2 mg."
+       "why": ""
       },
       {
-       "t": "Nothing; these are standard",
+       "t": "\"IV\" must be written as \"intravenous\"",
        "correct": false,
-       "why": "Both are on the Joint Commission Do Not Use list."
+       "why": "\"IV\" is acceptable; \"IU\" is the Do Not Use item."
+      },
+      {
+       "t": "\"PRN\" is on the Do Not Use list",
+       "correct": false,
+       "why": "PRN is acceptable."
       }
      ],
      "teach": "",
@@ -914,12 +1049,22 @@
       {
        "t": "A leading zero: 0.5 mg",
        "correct": true,
-       "why": ".5 mg can be misread as 5 mg."
+       "why": ""
       },
       {
-       "t": ".5 mg",
+       "t": "No zero: .5 mg",
        "correct": false,
-       "why": "Missing leading zero is a Do Not Use item."
+       "why": "The decimal can be missed: read as 5 mg."
+      },
+      {
+       "t": "A trailing zero: 0.50 mg",
+       "correct": false,
+       "why": "Trailing zeros are on the Do Not Use list."
+      },
+      {
+       "t": "A fraction: 1/2 mg",
+       "correct": false,
+       "why": "Fractions invite misreading."
       }
      ],
      "teach": "",
@@ -961,19 +1106,24 @@
      "q": "Should you report it?",
      "options": [
       {
-       "t": "Yes, report near misses through St. Mary's reporting system",
+       "t": "Yes: report near misses in St. Mary's reporting system",
        "correct": true,
-       "why": "Near misses show where the system is weak before someone is hurt."
+       "why": "Near misses show system weaknesses for free."
       },
       {
-       "t": "No, nothing happened",
+       "t": "No: reports are only for errors that reached the patient",
        "correct": false,
-       "why": "The next time it may not be caught."
+       "why": "Near misses are reported too."
       },
       {
-       "t": "Only if the prescriber agrees",
+       "t": "Only if the prescriber agrees to the report",
        "correct": false,
-       "why": "Reporting does not need permission."
+       "why": "No permission needed."
+      },
+      {
+       "t": "Only to ISMP, not internally",
+       "correct": false,
+       "why": "Internal reporting comes first; ISMP reporting is optional and voluntary."
       }
      ],
      "teach": "In a just culture, human error gets support, at risk behavior gets coaching, and reckless behavior gets action. Reports fix systems, not people.",
@@ -1020,19 +1170,24 @@
      "q": "What goes in your handoff?",
      "options": [
       {
-       "t": "Pending issues, who you are waiting on, what you recommended, and what to do if the callback does not come",
+       "t": "Pending items, who you wait on, and what to do if no callback",
        "correct": true,
-       "why": "The next pharmacist should be able to finish your work without starting over."
+       "why": "Hand off what is pending, not what is done."
       },
       {
-       "t": "Only finished work",
+       "t": "Only what you finished, so nothing gets repeated",
        "correct": false,
-       "why": "Finished work is already documented; pending items get lost."
+       "why": "Finished work needs no handoff."
       },
       {
-       "t": "Nothing; they will see it in the queue",
+       "t": "Nothing; the next pharmacist will find it in the queue",
        "correct": false,
-       "why": "Pending callbacks are not visible in the queue."
+       "why": "Callbacks are not in the queue."
+      },
+      {
+       "t": "Everything you did on the shift in time order",
+       "correct": false,
+       "why": "Too long; the next pharmacist needs the open items."
       }
      ],
      "teach": "",
@@ -1074,24 +1229,29 @@
      "q": "Which sources make the home list accurate?",
      "options": [
       {
-       "t": "The patient or family, using open questions (\"What do you take for your heart?\")",
+       "t": "The patient or family, using open questions",
        "correct": true,
-       "why": "Start with the person, then confirm."
+       "why": ""
       },
       {
-       "t": "Outpatient pharmacy fill history or a call to their pharmacy",
+       "t": "Outpatient pharmacy fill history or a call to the pharmacy",
        "correct": true,
-       "why": "Shows what was actually filled, with strength and directions."
+       "why": ""
       },
       {
        "t": "Pill bottles brought from home",
        "correct": true,
-       "why": "Confirms product and strength."
+       "why": ""
       },
       {
-       "t": "Guessing the usual dose",
+       "t": "The last discharge summary from 2 years ago, as is",
        "correct": false,
-       "why": "Guessing creates errors that follow the patient home."
+       "why": "Useful as a starting point, but out of date without confirmation."
+      },
+      {
+       "t": "The usual dose for each drug class",
+       "correct": false,
+       "why": "Guessing creates errors."
       }
      ],
      "teach": "",
@@ -1103,14 +1263,24 @@
      "q": "Why does it matter in the hospital?",
      "options": [
       {
-       "t": "Missed home drugs (for example a beta blocker) can cause withdrawal, and wrong doses carry into the discharge list",
+       "t": "Missed home drugs cause withdrawal; errors carry to discharge",
        "correct": true,
-       "why": "Errors at admission often become errors at discharge."
+       "why": "For example beta blocker withdrawal."
       },
       {
-       "t": "It only matters for billing",
+       "t": "It only matters for billing and insurance",
        "correct": false,
-       "why": "It is a safety process."
+       "why": ""
+      },
+      {
+       "t": "It only matters for controlled substances",
+       "correct": false,
+       "why": ""
+      },
+      {
+       "t": "It only matters after discharge, not during the stay",
+       "correct": false,
+       "why": "Inpatient omissions cause harm too."
       }
      ],
      "teach": "",
@@ -1153,14 +1323,24 @@
      "q": "Where do you look for alternatives and the plan?",
      "options": [
       {
-       "t": "ASHP Drug Shortages for status and alternatives, plus St. Mary's written substitution protocol",
+       "t": "ASHP shortage list plus St. Mary's substitution protocol",
        "correct": true,
-       "why": "The Joint Commission expects hospitals to have shortage plans and substitution protocols."
+       "why": "Joint Commission expects written substitution protocols."
       },
       {
-       "t": "Tell prescribers to use whatever they like",
+       "t": "FDA Orange Book therapeutic equivalence ratings",
        "correct": false,
-       "why": "Uncoordinated substitutions cause dosing errors."
+       "why": "The Orange Book lists generic equivalence, not shortage alternatives."
+      },
+      {
+       "t": "The FDA Purple Book",
+       "correct": false,
+       "why": "Biologic and biosimilar listings."
+      },
+      {
+       "t": "Each prescriber chooses their own substitute",
+       "correct": false,
+       "why": "Uncoordinated substitution causes errors."
       }
      ],
      "teach": "",
